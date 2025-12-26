@@ -4,9 +4,9 @@
 
 ### Business Technology & Data Management Professional
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-93C5FD?style=for-the-badge&logo=github&logoColor=white)](https://jadexzhao.my.canva.site/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-60A5FA?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
-[![Email](https://img.shields.io/badge/Email-DBEAFE?style=for-the-badge&logo=gmail&logoColor=1E3A8A)](mailto:jadexzhao@outlook.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-06B6D4?style=for-the-badge&logo=github&logoColor=white)](https://jadexzhao.my.canva.site/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0891B2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
+[![Email](https://img.shields.io/badge/Email-0D9488?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jadexzhao@outlook.com)
 
 </div>
 
@@ -93,4 +93,3 @@ Open to **full-time opportunities** in Business Technology, Data Management, and
 - **Resume:** [resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
 - **Location:** New York, NY
 - **Graduating:** Spring 2027
-
