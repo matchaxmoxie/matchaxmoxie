@@ -32,7 +32,7 @@ class JadeZhao:
 
 Business Technology & Data Management professional specializing in AI solutions, data engineering, and technical program management. Currently leading initiatives at an early-stage venture, with experience in technology consulting and enterprise AI implementations.
 
-**Education:** BS Informatics @ Indiana University Bloomington (2027) | **Location:** New York, NY | **Status:** Open to opportunities
+BS Informatics @ Indiana University Bloomington (2027) | New York, NY | Open to opportunities
 
 ---
 
