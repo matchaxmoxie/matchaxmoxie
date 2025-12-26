@@ -2,26 +2,106 @@
 
 <div align="center">
 
-### Business Technology & Data Management
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-06B6D4?style=for-the-badge&logo=github&logoColor=white)](https://jadexzhao.my.canva.site/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0891B2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
-[![Email](https://img.shields.io/badge/Email-0D9488?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jadexzhao@outlook.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=ffffff)](https://jadexzhao.my.canva.site/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
+[![Email](https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
 
 </div>
 
 ---
 
-Building AI solutions and managing technical programs. Currently at an early-stage venture.
+## About Me
 
-**Tech:** `Python` `SQL` `AI/LLM` `Data Engineering` `Privacy & Compliance`
+Business Technology & Data Management professional specializing in AI solutions, data engineering, and technical program management. Currently leading initiatives at an early-stage venture, with experience in technology consulting and enterprise AI implementations.
 
-**Education:** BS Informatics @ Indiana University Bloomington (2027)
+- 🎓 Pursuing **BS in Informatics** @ Indiana University Bloomington (Class of 2027)
+- 💼 Currently working as **Member** @ Early-Stage Venture
+- 📍 Based in **New York, NY**
+- 🎯 Open to full-time opportunities in Business Technology, Data Management, and AI consulting
+
+---
+
+## Experience
+
+### Member @ Early-Stage Venture
+
+**2025 - Present**
+
+Leading business technology and data management initiatives across data research, strategy, and technology product development.
+
+### AI & Engineering Consultant @ Technology Consulting
+
+**2024 - 2025**
+
+- Managed portfolios of technical features and AI solutions for enterprise platforms
+- Established and scaled data investigation and compliance programs
+- Designed and architected AI solutions for automation, driving significant value-creation
+
+### AI & Analytics Analyst @ Technology Consulting
+
+**2023 - 2025**
+
+- Conducted deep data investigations and AI analyses to detect business anomalies
+- Designed and deployed AI-powered compliance and data management solutions
+- Advanced AI-driven compliance and data management programs
+
+---
+
+## Skills
+
+### Technical
+
+`Python` `SQL` `Tableau` `Power BI` `Agentic AI` `Large Language Models (LLM)` `Prompt Engineering`
+
+### Functional
+
+`Technical Program Management` `Stakeholder Management` `Privacy & Regulatory Compliance` `Data Governance` `Strategic Analysis`
+
+---
+
+## Featured Projects
+
+### Privacy Compliance Automation
+
+Established and scaled technical privacy investigation programs, managing portfolios of technical features. Built agentic AI solutions for compliance automation, improving operational efficiency.
+
+**Tech Stack:** Python, LangChain, SQL, OpenAI API, pandas
+
+### Strategic AI Consulting
+
+Enabled technology, media, and telecom (TMT) clients in determining their strategic AI direction. Designed and architected AI solutions and proof of concepts, driving significant value-creation.
+
+**Tech Stack:** Python, LLM APIs, Prompt Engineering, Data Analysis
+
+### Data Investigations & Analysis
+
+Conducted deep data investigations with state-of-the-art AI tooling to support ongoing compliance and product integrity. Performed data analysis and developed visualizations to inform strategic recommendations.
+
+**Tech Stack:** Python, SQL, Tableau, Power BI, pandas, numpy
+
+---
+
+## Education
+
+- **BS in Informatics** - Indiana University Bloomington (Class of 2027)
+- **Business Cognate** - Business, Data, and Technology
+- **Luddy Direct Admit** & **Hudson & Holland Scholar** (full-ride merit scholarship)
+
+---
+
+## Contact
+
+Open to full-time opportunities in Business Technology, Data Management, and AI consulting.
+
+- 📧 **Email:** [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
+- 💼 **LinkedIn:** [linkedin.com/in/jadexzhao](https://www.linkedin.com/in/jadexzhao)
+- 🌐 **Portfolio:** [jadexzhao.my.canva.site](https://jadexzhao.my.canva.site/)
+- 📄 **Resume:** [resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
 
 ---
 
 <div align="center">
 
-[Portfolio](https://jadexzhao.my.canva.site/) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [Resume](https://jlzhao.pages.iu.edu/resume.pdf)
+*Building scalable solutions that drive operational efficiency and strategic value*
 
 </div>
