@@ -28,90 +28,56 @@ class JadeZhao:
 
 ---
 
-## About Me
+## About
 
 Business Technology & Data Management professional specializing in AI solutions, data engineering, and technical program management. Currently leading initiatives at an early-stage venture, with experience in technology consulting and enterprise AI implementations.
 
-- Pursuing **BS in Informatics** @ Indiana University Bloomington (Class of 2027)
-- Currently working as **Member** @ Early-Stage Venture
-- Based in **New York, NY**
-- Open to full-time opportunities in Business Technology, Data Management, and AI consulting
+**Education:** BS Informatics @ Indiana University Bloomington (2027) | **Location:** New York, NY | **Status:** Open to opportunities
 
 ---
 
 ## Experience
 
-### Member @ Early-Stage Venture
-
-**2025 - Present**
-
+**Member** @ Early-Stage Venture | *2025 - Present*
 Leading business technology and data management initiatives across data research, strategy, and technology product development.
 
-### AI & Engineering Consultant @ Technology Consulting
+**AI & Engineering Consultant** @ Technology Consulting | *2024 - 2025*
+Managed portfolios of technical features and AI solutions for enterprise platforms. Established and scaled data investigation and compliance programs. Designed and architected AI solutions for automation.
 
-**2024 - 2025**
-
-- Managed portfolios of technical features and AI solutions for enterprise platforms
-- Established and scaled data investigation and compliance programs
-- Designed and architected AI solutions for automation, driving significant value-creation
-
-### AI & Analytics Analyst @ Technology Consulting
-
-**2023 - 2025**
-
-- Conducted deep data investigations and AI analyses to detect business anomalies
-- Designed and deployed AI-powered compliance and data management solutions
-- Advanced AI-driven compliance and data management programs
+**AI & Analytics Analyst** @ Technology Consulting | *2023 - 2025*
+Conducted deep data investigations and AI analyses to detect business anomalies. Designed and deployed AI-powered compliance and data management solutions.
 
 ---
 
 ## Skills
 
-### Technical
+**Technical:** `Python` `SQL` `Tableau` `Power BI` `Agentic AI` `LLM` `Prompt Engineering`
 
-`Python` `SQL` `Tableau` `Power BI` `Agentic AI` `Large Language Models (LLM)` `Prompt Engineering`
-
-### Functional
-
-`Technical Program Management` `Stakeholder Management` `Privacy & Regulatory Compliance` `Data Governance` `Strategic Analysis`
+**Functional:** `Technical Program Management` `Stakeholder Management` `Privacy & Compliance` `Data Governance` `Strategic Analysis`
 
 ---
 
-## Featured Projects
+## Projects
 
-### Privacy Compliance Automation
+**Privacy Compliance Automation**
+Established and scaled technical privacy investigation programs. Built agentic AI solutions for compliance automation.
+*Tech: Python, LangChain, SQL, OpenAI API, pandas*
 
-Established and scaled technical privacy investigation programs, managing portfolios of technical features. Built agentic AI solutions for compliance automation, improving operational efficiency.
+**Strategic AI Consulting**
+Enabled TMT clients in determining strategic AI direction. Designed and architected AI solutions and proof of concepts.
+*Tech: Python, LLM APIs, Prompt Engineering*
 
-**Tech Stack:** Python, LangChain, SQL, OpenAI API, pandas
-
-### Strategic AI Consulting
-
-Enabled technology, media, and telecom (TMT) clients in determining their strategic AI direction. Designed and architected AI solutions and proof of concepts, driving significant value-creation.
-
-**Tech Stack:** Python, LLM APIs, Prompt Engineering, Data Analysis
-
-### Data Investigations & Analysis
-
-Conducted deep data investigations with state-of-the-art AI tooling to support ongoing compliance and product integrity. Performed data analysis and developed visualizations to inform strategic recommendations.
-
-**Tech Stack:** Python, SQL, Tableau, Power BI, pandas, numpy
+**Data Investigations & Analysis**
+Conducted deep data investigations with AI tooling. Performed analysis and developed visualizations for strategic recommendations.
+*Tech: Python, SQL, Tableau, Power BI, pandas, numpy*
 
 ---
 
 ## Education
 
-- **BS in Informatics** - Indiana University Bloomington (Class of 2027)
-- **Business Cognate** - Business, Data, and Technology
-- **Luddy Direct Admit** & **Hudson & Holland Scholar** (full-ride merit scholarship)
-
----
-
-## Contact
-
-Open to full-time opportunities in Business Technology, Data Management, and AI consulting.
-
-- **Resume:** [resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
+**BS in Informatics** - Indiana University Bloomington (Class of 2027)
+Business Cognate: Business, Data, and Technology
+Luddy Direct Admit & Hudson & Holland Scholar
 
 ---
 
