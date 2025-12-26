@@ -1,10 +1,28 @@
 # Jade Zhao
 
+```python
+class JadeZhao:
+    """Business Technology & Data Management Professional"""
+  
+    def __init__(self):
+        self.name = "Jade Zhao"
+        self.location = "New York, NY"
+        self.education = "BS Informatics @ Indiana University Bloomington (2027)"
+        self.role = "Member @ Early-Stage Venture"
+        self.focus = ["Business Technology", "Data Management", "AI Solutions"]
+  
+    def get_skills(self):
+        return {
+            "technical": ["Python", "SQL", "Tableau", "Power BI", "Agentic AI", "LLM"],
+            "functional": ["Technical Program Management", "Privacy & Compliance", "Data Engineering"]
+        }
+```
+
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=ffffff)](https://jadexzhao.my.canva.site/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
-[![Email](https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-15803D?style=for-the-badge&logo=github&logoColor=ffffff)](https://jadexzhao.my.canva.site/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-15803D?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
+[![Email](https://img.shields.io/badge/Email-15803D?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
 
 </div>
 
@@ -14,10 +32,10 @@
 
 Business Technology & Data Management professional specializing in AI solutions, data engineering, and technical program management. Currently leading initiatives at an early-stage venture, with experience in technology consulting and enterprise AI implementations.
 
-- 🎓 Pursuing **BS in Informatics** @ Indiana University Bloomington (Class of 2027)
-- 💼 Currently working as **Member** @ Early-Stage Venture
-- 📍 Based in **New York, NY**
-- 🎯 Open to full-time opportunities in Business Technology, Data Management, and AI consulting
+- Pursuing **BS in Informatics** @ Indiana University Bloomington (Class of 2027)
+- Currently working as **Member** @ Early-Stage Venture
+- Based in **New York, NY**
+- Open to full-time opportunities in Business Technology, Data Management, and AI consulting
 
 ---
 
@@ -93,10 +111,7 @@ Conducted deep data investigations with state-of-the-art AI tooling to support o
 
 Open to full-time opportunities in Business Technology, Data Management, and AI consulting.
 
-- 📧 **Email:** [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
-- 💼 **LinkedIn:** [linkedin.com/in/jadexzhao](https://www.linkedin.com/in/jadexzhao)
-- 🌐 **Portfolio:** [jadexzhao.my.canva.site](https://jadexzhao.my.canva.site/)
-- 📄 **Resume:** [resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
+- **Resume:** [resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf)
 
 ---
 
