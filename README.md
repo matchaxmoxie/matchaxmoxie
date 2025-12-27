@@ -16,7 +16,7 @@ class JadeZhao:
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-2D5016?style=for-the-badge&logo=github&logoColor=ffffff)](https://sites.google.com/view/jadexzhao/home)
+[![Portfolio](https://img.shields.io/badge/Portfolio-2D5016?style=for-the-badge&logo=github&logoColor=ffffff)](https://sites.google.com/view/jadexzhao)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-2D5016?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
 [![Email](https://img.shields.io/badge/Email-2D5016?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
 
@@ -189,7 +189,7 @@ Business Cognate: Business, Data, and Technology
 
 ### Connect With Me
 
-[Portfolio](https://sites.google.com/view/jadexzhao/home) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
+[Portfolio](https://sites.google.com/view/jadexzhao) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
 
 I welcome opportunities to discuss AI strategy, technical program management roles, and collaborative projects focused on human-centered technology solutions. Whether you find me coding in a cafe or grabbing 小笼包 between meetings, I'm always ready to talk about building tech that serves real people.
 
