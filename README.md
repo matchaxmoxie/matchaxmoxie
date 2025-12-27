@@ -2,16 +2,16 @@
 
 ```python
 class JadeZhao:
-    """First-generation Chinese-American technologist specializing in human-centered AI"""
+    """First-gen Chinese-American • Building AI that serves people"""
   
     def __init__(self):
-        self.location = "New York, NY"
-        self.vibe = "Fast-paced innovation with thoughtful execution"
-        self.focus = ["AI Strategy", "Technical Program Management", "Data Strategy"]
-        self.fuel = ["小笼包", "波霸奶茶", "late-night 烧烤", "好奇心"]
-        self.work_style = "Fast but thoughtful, like balancing soup dumplings on chopsticks"
-        self.approach = "Human-centered design • Ethical AI • Inclusive technology"
+        self.vibe = "Restaurant kid → Girls Who Code → AI Strategist"
+        self.location = "NYC"
+        self.fuel = ["小笼包", "波霸奶茶", "好奇心"]
         self.philosophy = "以人为本 (people-first, always)"
+      
+    def approach(self):
+        return "Start with humans → Add AI → Keep it ethical"
 ```
 
 <div align="center">
@@ -20,147 +20,127 @@ class JadeZhao:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-2D5016?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
 [![Email](https://img.shields.io/badge/Email-2D5016?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
 
-**New York, NY 🗽** • **IU Bloomington '27** • **Fueled by 小笼包 & 波霸奶茶** • **Open to Opportunities**
+**NYC** • **IU Bloomington '27** • **Open to opportunities**
 
 </div>
 
 ---
 
-## Professional Summary
+## 你好, I'm Jade
 
-AI Strategy and Technical Program Management professional specializing in human-centered artificial intelligence solutions. Proven track record of architecting AI systems that prioritize user experience, driving strategic data initiatives, and leading cross-functional technical programs from concept to production.
+**Building AI that serves people, not the other way around.**
 
-**Core Focus:** AI Strategy, Technical Program Management, Data Strategy, Human-Centered Design
+First-gen Chinese-American • Underrepresented in STEM • Silly goose (傻鹅) on the loose
 
-**Approach:** Building ethical, accessible technology that amplifies human potential and creates measurable value.
+I grew up in my family's restaurant (364 days a year!) learning 坚持不懈 (perseverance) and the art of serving people well. Didn't see myself in tech until **Girls Who Code** showed me I belonged. Now I build human-centered AI with that same service-first mindset.
 
----
-
-## Background & Journey
-
-My path to technology didn't start in a garage with a computer. It started in my family's restaurant, where I spent 364 days a year learning what it means to serve people well.
-
-As a first-generation Chinese-American college student and underrepresented in STEM, I grew up working alongside my parents in our restaurant. Between taking orders and clearing tables, I learned 坚持不懈 (perseverance), hard work, and the value of putting people first. I couldn't wait to go to college, but during breaks, I was right back at work.
-
-I didn't see myself in technology until **Girls Who Code** showed me I belonged. Suddenly, I realized I could take everything I learned about service and apply it to building technology that helps people.
-
-That realization led me to earn a full-ride scholarship to Indiana University Bloomington (Luddy Direct Admit, Hudson & Holland Scholar). Those restaurant days taught me something crucial: the best service puts people first. Now I apply that same principle to AI and technology.
-
-**Guiding Principle:** 以人为本 (people-first). Whether serving customers in a busy restaurant or serving users in tech, it's about making lives better. That work ethic runs deep.
-
-**Passions:** Grant writing, making technology accessible to everyone, building ethical AI that serves communities. Best thinking happens over 波霸奶茶 (boba) or late-night 烧烤.
+**What I do:** AI Strategy • Technical PM • Data Storytelling
+**Fueled by:** 波霸奶茶 (boba) • 小笼包 (soup dumplings) • Late-night 烧烤
 
 ---
 
-## Professional Experience
+## The Journey
 
-### Member | Early-Stage Venture
+**饭店 → Tech** • 364 days/year in family restaurant → Girls Who Code → Full ride to IU Bloomington (Luddy Direct Admit, Hudson & Holland Scholar)
 
-*January 2025 - Present*
+**The lesson:** 以人为本 (people-first). Whether serving soup dumplings or serving users, make lives better.
 
-Leading AI and data strategy initiatives with focus on product development and real-world impact.
-
-- Directing AI strategy across product development, research, and technology roadmaps
-- Managing technical programs for data infrastructure and AI feature development
-- Architecting scalable frameworks and establishing technical standards
-- Delivering human-centered solutions addressing complex user needs
-
-### AI & Engineering Consultant | Technology Consulting
-
-*August 2024 - December 2025*
-
-Led AI solution development and technical program management for enterprise platforms.
-
-- Achieved **60%+ reduction** in manual work through scaled data investigation programs
-- Architected end-to-end agentic AI systems with LLM orchestration
-- Managed technical program delivery across engineering, product, and business stakeholders
-- Developed and implemented strategic AI roadmaps focused on measurable outcomes
-
-**Key Achievement:** Successfully transitioned AI strategies from planning to production implementation.
-
-### AI & Analytics Analyst | Technology Consulting
-
-*June 2023 - August 2025*
-
-Conducted data-driven investigations and built AI-powered solutions for complex business challenges.
-
-- Performed deep data investigations identifying patterns with direct user impact
-- Developed AI-powered compliance and data management platforms
-- Created executive-level analytics and visualizations informing strategic decisions
-- Automated data pipelines improving operational efficiency
-
-**Key Achievement:** Delivered insights that directly informed executive decision-making and strategic direction.
+**The passion:** Grant writing • Making tech accessible • Building ethical AI
 
 ---
 
-## Core Philosophy
+## Experience
 
-Every technical decision begins with a fundamental question: **How does this improve someone's life?**
+### Early-Stage Venture | Member | *2025 - Present*
 
-This philosophy manifests in four principles:
+Leading AI strategy and technical PM for products people love.
 
-- 🔒 **Ethics First** - Privacy, fairness, and transparency as foundational requirements
-- 👥 **Human-Centered Design** - Technical decisions driven by genuine user needs
-- ♿ **Universal Accessibility** - Technology that serves all people, not just some
-- 💡 **Meaningful Impact** - Prioritizing substance over superficial innovation
+- AI strategy: product development, research, roadmaps
+- Technical PM: data infrastructure, AI features
+- Shipping: human-centered solutions that solve real problems
 
----
+### Technology Consulting | AI & Engineering Consultant | *2024 - 2025*
 
-## Technical Competencies
+Built AI solutions that made people's lives easier.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+- **60%+ reduction** in manual work through investigation programs
+- Architected agentic AI systems + LLM orchestration
+- Led technical PM across engineering, product, business teams
+- AI strategies that got implemented, not just presented
 
-**Technical Proficiencies:** Python • SQL • Tableau • Power BI • pandas • numpy • LangChain • OpenAI API • Agentic AI • Prompt Engineering • RAG Systems • ETL Pipelines • Data Visualization
+### Technology Consulting | AI & Analytics Analyst | *2023 - 2025*
 
-**Languages:** English (Native), Mandarin Chinese - 普通话 (Fluent)
+Solved real problems with data and AI.
 
-**Work Style:** Always grinding, always learning • **Best Ideas:** Over 小笼包 and late-night conversations
-
----
-
-## Featured Projects
-
-### Strategic AI Consulting & Architecture
-
-Partnered with enterprise clients to develop human-centered AI strategies, translating ambiguous requirements into actionable, user-focused solutions.
-
-**Key Outcomes:**
-
-- Enabled strategic AI direction aligned with human value and business objectives
-- Reduced time-to-market by **40%** while maintaining strong usability standards
-- Developed ethical implementation frameworks adopted across client organizations
-
-**Technologies:** Python, LLM APIs, Prompt Engineering, LangChain
+- Deep investigations finding patterns impacting real people
+- Built AI-powered compliance + data management solutions
+- Created visualizations telling compelling stories
+- Automated pipelines (life's too short for repetitive work)
 
 ---
 
-### Privacy Compliance Automation Platform
+## My Philosophy
 
-Designed and implemented agentic AI system for privacy compliance, prioritizing contextual understanding and individual rights protection.
+***How does this make someone's life better?***
 
-**Key Outcomes:**
-
-- Successfully processed **10,000+ compliance cases** with high accuracy
-- Achieved **70% reduction** in manual review requirements
-- Implemented AI decision engines prioritizing human dignity and privacy rights
-
-**Technologies:** Python, LangChain, SQL, OpenAI API, pandas
+**Ethics first** • **Users at center** • **Accessibility matters** • **Impact > hype**
 
 ---
 
-### Data Investigations & Strategic Analysis
+## What I Bring
 
-Built automated systems for data investigation and strategic analysis, uncovering actionable insights from complex datasets.
+**Human-Centered AI**
 
-**Key Outcomes:**
+- AI strategy + ethical solutions
+- Agentic AI + LLM orchestration
+- LangChain • OpenAI • RAG systems
+- Privacy-first data governance
+- Prompt engineering
 
-- Identified critical patterns with measurable impact on end users
-- Delivered human-centered narratives informing C-level decision-making
-- Automated monitoring systems providing proactive, timely insights
+**Technical PM**
 
-**Technologies:** Python, SQL, Tableau, Power BI, pandas, numpy
+- Cross-functional coordination
+- Stakeholder management
+- User-centered roadmaps
+- Agile delivery + risk mitigation
+- Quality people can feel
+
+**Tech:** `Python` `SQL` `Tableau` `Power BI` `pandas` `numpy` `LangChain` `LLM APIs` `Agentic AI` `Prompt Engineering` `RAG Systems`
+**Languages:** English • Mandarin (普通话)
+
+---
+
+## Projects
+
+### Strategic AI Consulting
+
+Turned "we want AI" into solutions people loved.
+
+- ✅ Strategic AI direction focused on human value
+- ✅ **40% faster time-to-market** with usability focus
+- ✅ Ethical frameworks that got used
+
+`Python • LLM APIs • Prompt Engineering • LangChain`
+
+### Privacy Compliance Automation
+
+Agentic AI protecting people's privacy at scale.
+
+- ✅ **10,000+ cases processed** protecting rights
+- ✅ **70% reduction** in manual review
+- ✅ AI prioritizing human dignity
+
+`Python • LangChain • SQL • OpenAI API • pandas`
+
+### Data Investigations
+
+Finding human stories in numbers.
+
+- ✅ Patterns impacting real people
+- ✅ Stories executives could act on
+- ✅ Proactive insights at the right time
+
+`Python • SQL • Tableau • Power BI • pandas • numpy`
 
 ---
 
@@ -171,28 +151,26 @@ Indiana University Bloomington | Expected Graduation: May 2027
 Business Cognate: Business, Data, and Technology
 
 **Honors & Recognition:**
-🏆 Luddy School of Informatics Direct Admit
-🏆 Hudson & Holland Scholar (Full-Ride Merit Scholarship)
+• Luddy School of Informatics Direct Admit
+• Hudson & Holland Scholar (Full-Ride Merit Scholarship)
 
 ---
 
 <div align="center">
 
-## Let's Build Something Meaningful Together
+## Let's build AI that serves people
 
-***Creating technology that serves people and amplifies human potential***
+***One 波霸奶茶 (boba) break at a time***
 
-加油! 一起加油!
-*(Let's go forward together)*
+**加油! • 一起加油!**
+*(Let's go! • Let's do this together!)*
 
 ---
 
-### Connect With Me
+### Get in touch
 
 [Portfolio](https://sites.google.com/view/jadexzhao) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
 
-I welcome opportunities to discuss AI strategy, technical program management roles, and collaborative projects focused on human-centered technology solutions. Whether you find me coding in a cafe or grabbing 小笼包 between meetings, I'm always ready to talk about building tech that serves real people.
-
-*P.S. - Best conversations happen over boba or soup dumplings. Inbox is open!* 🥟🧋
+Want to talk AI strategy? Need soup dumpling recommendations? Inbox is open!
 
 </div>
