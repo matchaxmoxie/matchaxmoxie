@@ -6,7 +6,10 @@ class JadeZhao:
   
     def __init__(self):
         self.location = "New York, NY"
+        self.vibe = "Fast-paced innovation with thoughtful execution"
         self.focus = ["AI Strategy", "Technical Program Management", "Data Strategy"]
+        self.fuel = ["小笼包", "波霸奶茶", "late-night 烧烤", "好奇心"]
+        self.work_style = "Fast but thoughtful, like balancing soup dumplings on chopsticks"
         self.approach = "Human-centered design • Ethical AI • Inclusive technology"
         self.philosophy = "以人为本 (people-first, always)"
 ```
@@ -17,7 +20,7 @@ class JadeZhao:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-2D5016?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
 [![Email](https://img.shields.io/badge/Email-2D5016?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
 
-**New York, NY** • **Indiana University Bloomington, Class of 2027** • **Open to Opportunities**
+**New York, NY 🗽** • **IU Bloomington '27** • **Fueled by 小笼包 & 波霸奶茶** • **Open to Opportunities**
 
 </div>
 
@@ -43,9 +46,9 @@ I didn't see myself in technology until **Girls Who Code** showed me I belonged.
 
 That realization led me to earn a full-ride scholarship to Indiana University Bloomington (Luddy Direct Admit, Hudson & Holland Scholar). Those restaurant days taught me something crucial: the best service puts people first. Now I apply that same principle to AI and technology.
 
-**Guiding Principle:** 以人为本 (people-first). Whether serving customers or serving users, it's about making lives better.
+**Guiding Principle:** 以人为本 (people-first). Whether serving customers in a busy restaurant or serving users in tech, it's about making lives better. That work ethic runs deep.
 
-**Passions:** Grant writing, making technology accessible to everyone, building ethical AI that serves communities
+**Passions:** Grant writing, making technology accessible to everyone, building ethical AI that serves communities. Best thinking happens over 波霸奶茶 (boba) or late-night 烧烤.
 
 ---
 
@@ -111,7 +114,9 @@ This philosophy manifests in four principles:
 
 **Technical Proficiencies:** Python • SQL • Tableau • Power BI • pandas • numpy • LangChain • OpenAI API • Agentic AI • Prompt Engineering • RAG Systems • ETL Pipelines • Data Visualization
 
-**Languages:** English (Native), Mandarin Chinese (Fluent)
+**Languages:** English (Native), Mandarin Chinese - 普通话 (Fluent)
+
+**Work Style:** Always grinding, always learning • **Best Ideas:** Over 小笼包 and late-night conversations
 
 ---
 
@@ -186,6 +191,8 @@ Business Cognate: Business, Data, and Technology
 
 [Portfolio](https://sites.google.com/view/jadexzhao/home) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
 
-I welcome opportunities to discuss AI strategy, technical program management roles, and collaborative projects focused on human-centered technology solutions.
+I welcome opportunities to discuss AI strategy, technical program management roles, and collaborative projects focused on human-centered technology solutions. Whether you find me coding in a cafe or grabbing 小笼包 between meetings, I'm always ready to talk about building tech that serves real people.
+
+*P.S. - Best conversations happen over boba or soup dumplings. Inbox is open!* 🥟🧋
 
 </div>
