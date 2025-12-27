@@ -35,11 +35,17 @@ AI Strategy and Technical Program Management professional specializing in human-
 
 ## Background & Journey
 
-First-generation Chinese-American college student from an underrepresented background in STEM. Developed strong work ethic and service-oriented mindset working in family business before discovering technology through Girls Who Code. Earned full-ride scholarship to Indiana University Bloomington (Luddy Direct Admit, Hudson & Holland Scholar).
+My path to technology didn't start in a garage with a computer. It started in my family's restaurant, where I spent 364 days a year learning what it means to serve people well.
 
-**Guiding Principle:** 以人为本 (people-first). Bringing the same commitment to service excellence to technology and AI development.
+As a first-generation Chinese-American college student and underrepresented in STEM, I grew up working alongside my parents in our restaurant. Between taking orders and clearing tables, I learned 坚持不懈 (perseverance), hard work, and the value of putting people first. I couldn't wait to go to college, but during breaks, I was right back at work.
 
-**Additional Interests:** Grant writing, technology accessibility initiatives, ethical AI advocacy
+I didn't see myself in technology until **Girls Who Code** showed me I belonged. Suddenly, I realized I could take everything I learned about service and apply it to building technology that helps people.
+
+That realization led me to earn a full-ride scholarship to Indiana University Bloomington (Luddy Direct Admit, Hudson & Holland Scholar). Those restaurant days taught me something crucial: the best service puts people first. Now I apply that same principle to AI and technology.
+
+**Guiding Principle:** 以人为本 (people-first). Whether serving customers or serving users, it's about making lives better.
+
+**Passions:** Grant writing, making technology accessible to everyone, building ethical AI that serves communities
 
 ---
 
@@ -178,7 +184,7 @@ Business Cognate: Business, Data, and Technology
 
 ### Connect With Me
 
-[Portfolio](https://sites.google.com/view/jadexzhao/home) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
+[Portfolio](https://sites.google.com/view/jadexzhao/home) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
 
 I welcome opportunities to discuss AI strategy, technical program management roles, and collaborative projects focused on human-centered technology solutions.
 
