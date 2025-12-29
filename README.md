@@ -16,7 +16,7 @@ class JadeZhao:
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-2D5016?style=for-the-badge&logo=github&logoColor=ffffff)](https://sites.google.com/view/jadexzhao)
+[![Portfolio](https://img.shields.io/badge/Portfolio-2D5016?style=for-the-badge&logo=github&logoColor=ffffff)](https://bit.ly/matchaxmoxie)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-2D5016?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
 [![Email](https://img.shields.io/badge/Email-2D5016?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
 
@@ -51,7 +51,7 @@ I grew up in my family's restaurant (364 days a year!) learning 坚持不懈 (pe
 
 ## Experience
 
-### Early-Stage Venture | Member | *2025 - Present*
+### SunQuest Property Solutions LLC | Member | *2025 - Present*
 
 Leading AI strategy and technical PM for products people love.
 
@@ -59,7 +59,7 @@ Leading AI strategy and technical PM for products people love.
 - Technical PM: data infrastructure, AI features
 - Shipping: human-centered solutions that solve real problems
 
-### Technology Consulting | AI & Engineering Consultant | *2024 - 2025*
+### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *2024 - 2025*
 
 Built AI solutions that made people's lives easier.
 
@@ -68,7 +68,7 @@ Built AI solutions that made people's lives easier.
 - Led technical PM across engineering, product, business teams
 - AI strategies that got implemented, not just presented
 
-### Technology Consulting | AI & Analytics Analyst | *2023 - 2025*
+### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *2023 - 2025*
 
 Solved real problems with data and AI.
 
@@ -169,7 +169,7 @@ Business Cognate: Business, Data, and Technology
 
 ### Get in touch
 
-[Portfolio](https://sites.google.com/view/jadexzhao) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
+[Portfolio](https://bit.ly/matchaxmoxie) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
 
 Want to talk AI strategy? Need soup dumpling recommendations? Inbox is open!
 
