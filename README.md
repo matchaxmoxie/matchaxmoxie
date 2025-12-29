@@ -59,7 +59,7 @@ Leading AI strategy and technical PM for products people love.
 - Technical PM: data infrastructure, AI features
 - Shipping: human-centered solutions that solve real problems
 
-### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *2024 - 2025*
+### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *Jun 2024 - Dec 2025*
 
 Built AI solutions that made people's lives easier.
 
@@ -68,7 +68,7 @@ Built AI solutions that made people's lives easier.
 - Led technical PM across engineering, product, business teams
 - AI strategies that got implemented, not just presented
 
-### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *2023 - 2025*
+### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *Jan 2024 - May 2024*
 
 Solved real problems with data and AI.
 
