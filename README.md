@@ -112,33 +112,33 @@ Solved real problems with data and AI.
 
 ## Projects
 
-### Business Technology Strategy & Implementation
+### Strategic AI Consulting
 
-Aligned AI initiatives with business goals and digital transformation.
+Turned "we want AI" into solutions people loved.
 
-- ✅ Technology initiatives aligned with strategic business objectives
-- ✅ **40% faster product delivery** through data-informed prioritization
-- ✅ Technology governance frameworks balancing innovation and risk
+- ✅ Strategic AI direction focused on human value
+- ✅ **40% faster time-to-market** with usability focus
+- ✅ Ethical frameworks that got used
 
-`Python • LLM APIs • LangChain`
+`Python • LLM APIs • Prompt Engineering • LangChain`
 
-### AI-Driven Business Process Automation
+### Privacy Compliance Automation
 
-Automated compliance workflows with AI at scale.
+Agentic AI protecting people's privacy at scale.
 
-- ✅ **10,000+ cases processed** reducing operational costs by **70%**
-- ✅ Cross-functional AI integration with business processes
-- ✅ Balanced regulatory requirements with business objectives
+- ✅ **10,000+ cases processed** protecting rights
+- ✅ **70% reduction** in manual review
+- ✅ AI prioritizing human dignity
 
 `Python • LangChain • SQL • OpenAI API • pandas`
 
-### Business Intelligence & Data Analytics Platform
+### Data Investigations
 
-Transformed business data into strategic insights.
+Finding human stories in numbers.
 
-- ✅ Analytics infrastructure translating data into actionable insights
-- ✅ Executive dashboards enabling leadership to optimize resources
-- ✅ Predictive monitoring for business performance metrics
+- ✅ Patterns impacting real people
+- ✅ Stories executives could act on
+- ✅ Proactive insights at the right time
 
 `Python • SQL • Tableau • Power BI • pandas • numpy`
 
