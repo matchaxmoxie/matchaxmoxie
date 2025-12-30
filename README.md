@@ -37,7 +37,7 @@ class JadeZhao:
 
 ## 你好, I'm Jade
 
-**AI Strategy & Technical Program Management | 60%+ efficiency gains | 70% cost reduction**
+**AI Strategy & Technical Program Management**
 
 First-generation Chinese-American AI strategist and technical program manager. **Girls Who Code** alumna → **Hudson & Holland Scholar** (full-ride merit scholarship) at Indiana University Bloomington. Specialized in architecting scalable AI systems, leading cross-functional technical programs, and implementing data-driven solutions with quantifiable impact.
 
