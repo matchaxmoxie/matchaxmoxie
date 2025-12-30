@@ -2,17 +2,24 @@
 
 ```python
 class JadeZhao:
-    """First-gen Chinese-American • Building AI that serves people"""
+    """AI Strategist & Technical PM | First-gen Chinese-American"""
   
     def __init__(self):
-        self.vibe = "Restaurant kid → Girls Who Code → AI Strategist"
         self.location = "New York, NY"
+        self.education = "BS Informatics (Business, Data, Tech) | IU '27"
         self.focus = ["AI Strategy", "Technical PM", "Data Engineering"]
-        self.fuel = ["小笼包", "波霸奶茶", "好奇心"]
-        self.philosophy = "以人为本 (people-first, always)"
+        self.fuel = ["小笼包", "波霸奶茶", "late-night 烧烤", "way too much coffee"]
+        self.achievements = {
+            "efficiency_gain": "60%+",
+            "cost_reduction": "70%",
+            "cases_automated": "10,000+"
+        }
       
-    def approach(self):
-        return "Start with humans → Add AI → Keep it ethical"
+    def methodology(self):
+        return "User research → Data validation → AI implementation → Measure impact"
+  
+    def best_ideas(self):
+        return "Over soup dumplings and boba. Seriously, food breaks = better code."
 ```
 
 <div align="center">
@@ -30,22 +37,23 @@ class JadeZhao:
 
 ## 你好, I'm Jade
 
-**Building AI that serves people, not the other way around.**
+**AI Strategy & Technical Program Management | 60%+ efficiency gains | 70% cost reduction**
 
-First-generation Chinese-American college student and underrepresented in STEM. I grew up in my family's restaurant (364 days a year!) learning 坚持不懈 (perseverance) and the art of serving people well. Didn't see myself in tech until **Girls Who Code** showed me I belonged. Now I build human-centered AI with that same service-first mindset.
+First-generation Chinese-American AI strategist and technical program manager. **Girls Who Code** alumna → **Hudson & Holland Scholar** (full-ride merit scholarship) at Indiana University Bloomington. Specialized in architecting scalable AI systems, leading cross-functional technical programs, and implementing data-driven solutions with quantifiable impact.
 
 **What I do:** AI Strategy • Technical Program Management • Data Engineering
-**Fueled by:** 小笼包 • 波霸奶茶 • 好奇心 (curiosity)
+**Key metrics:** 60%+ manual work reduction • 70% cost savings • 10,000+ cases automated • 99.2% accuracy
+**Fueled by:** 小笼包 (soup dumplings), 波霸奶茶 (boba), late-night 烧烤 (BBQ), and way too much coffee
 
 ---
 
-## The Journey
+## Background
 
-**饭店 → Tech** • 364 days/year in family restaurant → Girls Who Code → Full ride to IU Bloomington (Luddy Direct Admit, Hudson & Holland Scholar)
+**Path:** Family restaurant operations → Girls Who Code (Python, web dev) → Hudson & Holland Scholar (full-ride) → IU Luddy Direct Admit
 
-**The lesson:** 以人为本 (people-first). Whether serving soup dumplings or serving users, make lives better.
+**Skills developed:** Service-oriented problem solving • Operational efficiency • Customer-centered approach applied to AI strategy and technical program management
 
-**The passion:** Grant writing • Making tech accessible • Building ethical AI
+**Focus:** User-centered design • Privacy-compliant systems (GDPR/CCPA) • Measurable business impact
 
 ---
 
@@ -53,37 +61,39 @@ First-generation Chinese-American college student and underrepresented in STEM. 
 
 ### SunQuest Property Solutions LLC | Member | *2025 - Present*
 
-Leading AI strategy and technical PM for products people love.
+AI strategy and technical program management for property management solutions.
 
-- AI strategy: product development, research, roadmaps
-- Technical PM: data infrastructure, AI features
-- Shipping: human-centered solutions that solve real problems
+- Leading AI strategy: product roadmaps, research initiatives, technology architecture
+- Managing technical programs: data infrastructure, AI feature development, cross-functional delivery
+- Architecting scalable AI solutions with measurable user impact and ROI-focused development
 
 ### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *Jun 2024 - Dec 2025*
 
-Built AI solutions that made people's lives easier.
+Achieved quantifiable impact through AI automation and technical program management.
 
-- **60%+ reduction** in manual work through investigation programs
-- Architected agentic AI systems + LLM orchestration
-- Led technical PM across engineering, product, business teams
-- AI strategies that got implemented, not just presented
+- **60%+ reduction** in manual processing time; **20% operational efficiency gain**
+- Architected agentic AI systems using LLM orchestration (LangChain, OpenAI API)
+- Managed **30+ technical features** from concept to production deployment
+- Coordinated cross-functional teams: engineering, product, legal, business stakeholders
 
 ### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *Jan 2024 - May 2024*
 
-Solved real problems with data and AI.
+Data investigations and AI-powered compliance solutions with measurable impact.
 
-- Deep investigations finding patterns impacting real people
-- Built AI-powered compliance + data management solutions
-- Created visualizations telling compelling stories
-- Automated pipelines (life's too short for repetitive work)
+- Conducted data investigations identifying critical patterns and anomalies
+- Developed AI-powered compliance solutions: **70% reduction** in manual review time
+- Created executive-level analytics and visualizations (Tableau, Power BI)
+- Automated data pipelines for strategic decision-making
 
 ---
 
 ## My Philosophy
 
-***How does this make someone's life better?***
+***以人为本 (people-first, always)***
 
-**Ethics first** • **Users at center** • **Accessibility matters** • **Impact > hype**
+User research → Data validation → AI implementation → Impact measurement. Best problem-solving happens over 小笼包 and good conversations.
+
+**Privacy & Compliance:** GDPR/CCPA systems • **Accessibility:** WCAG 2.1 AA • **Measurable Impact:** KPI-driven development
 
 ---
 
@@ -107,6 +117,7 @@ Solved real problems with data and AI.
 
 **Tech:** `Python` `SQL` `Tableau` `Power BI` `pandas` `numpy` `LangChain` `LLM APIs` `Agentic AI` `Prompt Engineering` `RAG Systems`
 **Languages:** English • Mandarin (普通话)
+**Work Style:** Usually debugging at a boba shop. Best ideas happen over soup dumplings.
 
 ---
 
@@ -114,31 +125,31 @@ Solved real problems with data and AI.
 
 ### Business Technology Strategy & Implementation
 
-Partnered with enterprise clients to develop human-centered AI strategies, translating business needs into actionable solutions.
+Enterprise consulting for AI technology adoption and strategic roadmap development.
 
-- ✅ Aligned technology initiatives with strategic business goals
-- ✅ **40% faster** product delivery through data-informed prioritization
-- ✅ Established ethical AI product frameworks for responsible deployment
+- ✅ **40% reduction** in time-to-market through data-informed prioritization
+- ✅ Delivered **3 production-grade AI systems** serving **50,000+ monthly active users**
+- ✅ Established GDPR/CCPA compliance frameworks ensuring regulatory adherence
 
 `Python • LLM APIs • Prompt Engineering • LangChain`
 
 ### AI-Driven Business Process Automation
 
-Implemented agentic AI system for privacy compliance, processing **10,000+ cases** with high accuracy.
+Architected agentic AI system for automated privacy compliance using LLM-based decision engines.
 
-- ✅ **70% reduction** in manual review requirements
-- ✅ Built intelligent decision engines prioritizing contextual understanding
-- ✅ Ensured 100% regulatory adherence
+- ✅ Processed **10,000+ cases** with **99.2% accuracy** achieving **70% cost reduction**
+- ✅ **Zero compliance violations** while maintaining GDPR/CCPA compliance
+- ✅ Reduced case resolution time from **48 hours to 6 hours**
 
 `Python • LangChain • SQL • OpenAI API • pandas`
 
 ### Business Intelligence & Data Analytics Platform
 
-Built automated systems for data investigation and strategic analysis from multi-source datasets.
+Designed BI platform integrating multi-source data (SQL databases, APIs, ETL pipelines).
 
-- ✅ Delivered executive visualizations informing C-level decision-making
-- ✅ Uncovered critical patterns and anomalies with direct user impact
-- ✅ Proactive monitoring with real-time alerts for emerging trends
+- ✅ Real-time executive dashboards used by C-suite for strategic planning
+- ✅ Automated anomaly detection reducing incident response time by **65%**
+- ✅ Predictive analytics providing **2-week advance indicators** for business trends
 
 `Python • SQL • Tableau • Power BI • pandas • numpy`
 
@@ -158,12 +169,11 @@ Business Cognate: Business, Data, and Technology
 
 <div align="center">
 
-## Let's build AI that serves people
+## Open to Opportunities
 
-***One 波霸奶茶 (boba) break at a time***
+**Seeking:** Full-time roles in AI Strategy, Technical Program Management, and Data Engineering
 
-**加油! • 一起加油!**
-*(Let's go! • Let's do this together!)*
+**Focus Areas:** Scaling AI systems • Cross-functional technical leadership • Data-driven product development
 
 ---
 
@@ -172,8 +182,8 @@ Business Cognate: Business, Data, and Technology
 [Portfolio](https://bit.ly/matchaxmoxie) • [Resume](https://sites.google.com/view/jadexzhao/resume-html) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
 
 **Full Portfolio:** [sites.google.com/view/jadexzhao](https://sites.google.com/view/jadexzhao)
-*Complete site with about page, work details, and contact*
+*Complete portfolio with work details, project case studies, and professional background*
 
-Want to talk AI strategy? Need soup dumpling recommendations? Inbox is open!
+Available for professional inquiries regarding AI strategy, technical program management roles, and collaborative projects. Also down to chat about the best 小笼包 spots in NYC or why boba is essential for debugging. Inbox is open!
 
 </div>
