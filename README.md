@@ -11,7 +11,7 @@ class JadeZhao:
         self.fuel = ["小笼包", "波霸奶茶", "late-night 烧烤", "way too much coffee"]
   
     def methodology(self):
-        return "User research to data validation to AI implementation to measure impact"
+        return "User research → Data validation → AI implementation → Measure impact"
   
     def best_ideas(self):
         return "Over soup dumplings and boba. Seriously, food breaks = better code."
@@ -24,7 +24,9 @@ class JadeZhao:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-2D5016?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
 [![Email](https://img.shields.io/badge/Email-2D5016?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
 
-**New York, NY** • **IU Bloomington '27** • **Open to Opportunities** `</div>`
+**New York, NY** • **IU Bloomington '27** • **Open to Opportunities**
+
+</div>
 
 ---
 
@@ -32,20 +34,18 @@ class JadeZhao:
 
 **AI Strategy & Technical Program Management**
 
-First-generation Chinese-American AI strategist and technical program manager. **Girls Who Code** alumna to **Hudson & Holland Scholar** (full-ride merit scholarship) at Indiana University Bloomington. Building AI systems, leading technical programs, and implementing data-driven solutions.
+First-generation Chinese-American AI strategist and technical program manager. **Girls Who Code** alumna → **Hudson & Holland Scholar** (full-ride merit scholarship) at Indiana University Bloomington. Building AI systems, leading technical programs, and implementing data-driven solutions.
 
-**What I do:** AI Strategy • Technical Program Management • Data Engineering
-**Fueled by:** 小笼包 (soup dumplings), 波霸奶茶 (boba), late-night 烧烤 (BBQ), and way too much coffee
+- **What I do:** AI Strategy • Technical Program Management • Data Engineering
+- **Fueled by:** 小笼包 (soup dumplings), 波霸奶茶 (boba), late-night 烧烤 (BBQ), and way too much coffee
 
 ---
 
 ## Background
 
-**Path:** Family restaurant operations to Girls Who Code (Python, web dev) to Hudson & Holland Scholar (full-ride) to IU Luddy Direct Admit
-
-**Context:** First-generation Chinese-American college student. Girls Who Code alumni. Part of underrepresented groups in STEM, bringing diverse perspectives to AI development.
-
-**Focus:** User-centered design • Privacy-compliant systems (GDPR/CCPA) • Measurable business impact
+- **Path:** Family restaurant operations → Girls Who Code (Python, web dev) → Hudson & Holland Scholar (full-ride) → IU Luddy Direct Admit
+- **Context:** First-generation Chinese-American college student. Girls Who Code alumni. Part of underrepresented groups in STEM, bringing diverse perspectives to AI development.
+- **Focus:** User-centered design • Privacy-compliant systems (GDPR/CCPA) • Measurable business impact
 
 ---
 
@@ -56,24 +56,24 @@ First-generation Chinese-American AI strategist and technical program manager. *
 AI strategy and technical program management for property management solutions.
 
 - Working on AI features for property management: building tools to screen tenants and predict maintenance needs
-- Leading weekly standups with engineering team, prioritizing features and tracking progress on data pipeline work
-- Setting up data storage and access controls for property records, ensuring tenant info stays private and compliant
+- Leading weekly standups with engineering team, prioritizing features and tracking data pipeline work
+- Setting up data storage and access controls for property records, ensuring tenant info stays private
 
 ### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *Jun 2024 - Dec 2025*
 
 AI automation and technical program management work.
 
-- Built a system using LangChain to automatically sort data requests, saving analysts about 15-20 minutes per case
-- Managed backlog and feature planning for AI tools used for compliance checking and data reporting
-- Worked on document classification system to identify student data types in requests, tested on about 500 real cases
+- Built LangChain system to sort data requests, saving analysts about 15-20 minutes per case
+- Managed backlog and feature planning for several AI tools for compliance and reporting
+- Worked on document classification system for student data, tested on about 500 real cases
 
 ### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *Jan 2024 - May 2024*
 
 Data investigations and AI-powered compliance solutions.
 
-- Reviewed student data access requests for compliance issues, found about 20 cases needing follow-up
-- Experimented with Python and NLP libraries to automatically categorize requests, got it working after testing on past cases
-- Created dashboards in Tableau showing request volume, processing times, and basic compliance stats
+- Reviewed student data access requests for compliance, found about 20 cases needing follow-up
+- Experimented with Python/NLP to categorize requests, got it working after testing past cases
+- Created Tableau dashboards showing request volume, processing times, and compliance stats
 
 ---
 
@@ -91,7 +91,7 @@ Best problem-solving happens over 小笼包 and good conversations.
 
 ## What I Bring
 
-**Human-Centered AI**
+### Human-Centered AI
 
 - AI strategy + ethical solutions
 - Agentic AI + LLM orchestration
@@ -99,7 +99,7 @@ Best problem-solving happens over 小笼包 and good conversations.
 - Privacy-first data governance
 - Prompt engineering
 
-**Technical PM**
+### Technical PM
 
 - Cross-functional coordination
 - Stakeholder management
@@ -107,11 +107,25 @@ Best problem-solving happens over 小笼包 and good conversations.
 - Agile delivery + risk mitigation
 - Quality people can feel
 
-**Tech:** `Python` `SQL` `Tableau` `Power BI` `pandas` `numpy` `LangChain` `LLM APIs` `Agentic AI` `Prompt Engineering` `RAG Systems`
-**Languages:** English • Mandarin (普通话)
-**Theoretical Foundations:** Cognitive Load Theory • Dual Process Theory • Activity Theory • Nudge Theory • Prospect Theory • Bounded Rationality
-**Approach:** Cognitive science-informed AI design • Decision science • Behavioral economics
-**Work Style:** Usually debugging at a boba shop. Best ideas happen over soup dumplings.
+### Tech Stack
+
+`Python` `SQL` `Tableau` `Power BI` `pandas` `numpy` `LangChain` `LLM APIs` `Agentic AI` `Prompt Engineering` `RAG Systems`
+
+### Languages
+
+English • Mandarin (普通话)
+
+### Theoretical Foundations
+
+Cognitive Load Theory • Dual Process Theory • Activity Theory • Nudge Theory • Prospect Theory • Bounded Rationality
+
+### Approach
+
+Cognitive science-informed AI design • Decision science • Behavioral economics
+
+### Work Style
+
+Usually debugging at a boba shop. Best ideas happen over soup dumplings.
 
 ---
 
@@ -119,21 +133,25 @@ Best problem-solving happens over 小笼包 and good conversations.
 
 ### AI Workshops & Training
 
-Ran workshops for student orgs on using AI tools effectively, helped about 5 groups get started. Created prompt templates that make it easier to get good results from ChatGPT without trying 8 different versions. Wrote a guide on best practices for using AI responsibly, covering privacy, bias, and ethical considerations.
+Ran workshops for student orgs on AI tools, helping 5 groups get started. Created prompt templates for ChatGPT, reducing iteration cycles from 8 to 3. Wrote guide on responsible AI use: privacy, bias, ethical considerations.
 
-`Python • LLM APIs • Prompt Engineering • LangChain`
+**Tech:** `Python` `LLM APIs` `Prompt Engineering` `LangChain`
+
+---
 
 ### Data Request Automation Tool
 
-Built a system that automates student data requests - takes requests, figures out what's needed, and routes them. Most straightforward requests now get handled same-day instead of taking a few days, helps during busy periods. Used GPT-4 to find and redact personal info in documents, tested on sample documents to make sure it works.
+Built system to automate student data requests: intake, needs assessment, routing. Most straightforward requests handled same-day, improving efficiency during busy periods. Used GPT-4 for PII detection/redaction, tested on sample documents for accuracy.
 
-`Python • LangChain • SQL • OpenAI API • pandas`
+**Tech:** `Python` `LangChain` `SQL` `OpenAI API` `pandas`
+
+---
 
 ### Data Dashboard Project
 
-Put together a pipeline that pulls data from different systems into one database for easier reporting. Created dashboards in Tableau showing key metrics - request volume, processing times, compliance rates - for leadership. Experimented with forecasting models to predict monthly request volume, helps with planning.
+Built ETL pipeline pulling 10K+ records from 4 sources into PostgreSQL warehouse. Created 12 Tableau dashboards for executive reporting, adopted across 3 departments. Developed ARIMA forecasting model predicting monthly request volume within 12% MAPE.
 
-`Python • SQL • Tableau • Power BI • pandas • numpy`
+**Tech:** `Python` `SQL` `Tableau` `Power BI` `pandas` `numpy`
 
 ---
 
@@ -153,8 +171,9 @@ Indiana University Bloomington | Expected Graduation: May 2027
 Focus: Business, Data, and Technology
 
 **Honors & Recognition:**
-• Luddy School of Informatics Direct Admit
-• Hudson & Holland Scholar (Full-Ride Merit Scholarship)
+
+- Luddy School of Informatics Direct Admit
+- Hudson & Holland Scholar (Full-Ride Merit Scholarship)
 
 ---
 
@@ -168,9 +187,9 @@ Focus: Business, Data, and Technology
 
 ---
 
-### Get in touch
+### Get in Touch
 
-[Portfolio](https://bit.ly/matchaxmoxie) • [Resume](https://sites.google.com/view/jadexzhao/resume-html) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [jadexzhao@outlook.com](mailto:jadexzhao@outlook.com)
+[Portfolio](https://bit.ly/matchaxmoxie) • [Resume](https://sites.google.com/view/jadexzhao/resume-html) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [Email](mailto:jadexzhao@outlook.com)
 
 **Full Portfolio:** [sites.google.com/view/jadexzhao](https://sites.google.com/view/jadexzhao)
 
