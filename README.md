@@ -180,7 +180,7 @@ Designed BI platform integrating multi-source data (SQL databases, APIs, ETL pip
 
 **Bachelor of Science in Informatics**
 Indiana University Bloomington | Expected Graduation: May 2027
-Business Minor: Business, Data, and Technology
+Focus: Business, Data, and Technology
 
 **Honors & Recognition:**
 • Luddy School of Informatics Direct Admit
