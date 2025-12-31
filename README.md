@@ -66,7 +66,7 @@ AI strategy and technical program management for property management solutions.
 Achieved quantifiable impact through AI automation and technical program management.
 
 - Architected agentic AI systems using LLM orchestration (LangChain, OpenAI API)
-- Managed 30+ technical features from concept to production deployment
+- Managed technical features from concept to production deployment
 - Coordinated cross-functional teams: engineering, product, legal, business stakeholders
 
 ### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *Jan 2024 - May 2024*
@@ -133,7 +133,7 @@ Best problem-solving happens over 小笼包 and good conversations.
 
 Enterprise consulting for AI technology adoption and strategic roadmap development. Applied **Nudge Theory** (Thaler & Sunstein, 2008) and **Technology Acceptance Model** (Davis, 1989) to optimize user adoption patterns.
 
-- Delivered production-grade AI systems serving 50,000+ monthly active users
+- Delivered production-grade AI systems serving thousands of monthly active users
 - Established GDPR/CCPA compliance frameworks ensuring regulatory adherence
 - Reduced time-to-market through data-informed prioritization
 
@@ -143,9 +143,9 @@ Enterprise consulting for AI technology adoption and strategic roadmap developme
 
 Architected agentic AI system for automated privacy compliance using LLM-based decision engines. Designed using **Prospect Theory** (Kahneman & Tversky, 1979) and **Bayesian Decision Theory** (Pearl, 1988).
 
-- Processed 10,000+ cases with 99.2% accuracy
+- Processed thousands of cases with high accuracy
 - Zero compliance violations while maintaining GDPR/CCPA compliance
-- Reduced case resolution time from 48 hours to 6 hours
+- Significantly reduced case resolution time
 
 `Python • LangChain • SQL • OpenAI API • pandas`
 
