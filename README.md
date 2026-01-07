@@ -51,13 +51,13 @@ First-generation Chinese-American AI strategist and technical program manager. *
 
 ## Experience
 
-### SunQuest Property Solutions LLC | Member | *2025 - Present*
+### Matcha Green Consulting | Member | *2025 - Present*
 
-AI strategy and technical program management for property management solutions.
+AI strategy consulting for consumer and customer industry solutions.
 
-- Working on AI features for property management: building tools to screen tenants and predict maintenance needs
+- Working on AI strategy consulting for consumer and customer industry: building tools for digital marketing and full-stack web development
 - Leading weekly standups with engineering team, prioritizing features and tracking data pipeline work
-- Setting up data storage and access controls for property records, ensuring tenant info stays private
+- Setting up data storage and access controls for client projects, ensuring customer data stays private
 
 ### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *Jun 2024 - Dec 2025*
 
