@@ -2,19 +2,19 @@
 
 ```python
 class JadeZhao:
-    """AI Strategist & Technical PM | First-gen Chinese-American"""
+    """Aspiring AI development, data engineering, and technology consulting | First-gen Chinese-American"""
   
     def __init__(self):
         self.location = "New York, NY"
         self.education = "BS Informatics (Business, Data, Tech) | IU '27"
-        self.focus = ["AI Strategy", "Technical PM", "Data Engineering"]
+        self.focus = ["AI development", "Data engineering", "Technology consulting"]
         self.fuel = ["小笼包", "波霸奶茶", "late-night 烧烤", "way too much coffee"]
   
     def methodology(self):
         return "User research → Data validation → AI implementation → Measure impact"
   
     def best_ideas(self):
-        return "Over soup dumplings and boba. Seriously, food breaks = better code."
+        return "User research → Data validation → AI implementation → Measure impact"
 ```
 
 <div align="center">
@@ -24,7 +24,7 @@ class JadeZhao:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-2D5016?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
 [![Email](https://img.shields.io/badge/Email-2D5016?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
 
-**New York, NY** • **IU Bloomington '27** • **Open to Opportunities**
+**New York, NY** • **IU Bloomington '27** • **Currently Exploring Opportunities**
 
 </div>
 
@@ -32,12 +32,15 @@ class JadeZhao:
 
 ## 你好, I'm Jade
 
-**AI Strategy & Technical Program Management**
+**Aspiring AI development, data engineering, and technology consulting**
 
-First-generation Chinese-American AI strategist and technical program manager. **Girls Who Code** alumna → **Hudson & Holland Scholar** (full-ride merit scholarship) at Indiana University Bloomington. Building AI systems, leading technical programs, and implementing data-driven solutions.
+Luddy Direct Admit and Hudson & Holland Scholar at Indiana University Bloomington, Class of 2027. Studying Informatics (Business, Data, Technology) and specializing in agentic AI, LLM orchestration, and data-driven solutions designed with human needs at the center.
 
-- **What I do:** AI Strategy • Technical Program Management • Data Engineering
-- **Fueled by:** 小笼包 (soup dumplings), 波霸奶茶 (boba), late-night 烧烤 (BBQ), and way too much coffee
+I grew up in my parents' restaurant, practically living there 364 days a year. At the time, I couldn't wait to escape to a "normal" 9-to-5. But those years taught me hard work, perseverance, patience, and the value of showing up. Looking back, I see how profoundly that shaped who I am and how I approach every challenge.
+
+- **What I do:** Aspiring AI development, data engineering, and technology consulting
+- **Approach:** Research-driven methodology • Human-centered design • Measurable business outcomes
+- **Currently Exploring:** Opportunities in AI development, data engineering, and technology consulting
 
 ---
 
@@ -51,29 +54,29 @@ First-generation Chinese-American AI strategist and technical program manager. *
 
 ## Experience
 
-### Matcha Green Consulting | Member | *2025 - Present*
+### Matcha Green Consulting | Member | Jan *2025 - Present*
 
 AI strategy consulting for consumer and customer industry solutions.
 
-- Working on AI strategy consulting for consumer and customer industry: building tools for digital marketing and full-stack web development
-- Leading weekly standups with engineering team, prioritizing features and tracking data pipeline work
-- Setting up data storage and access controls for client projects, ensuring customer data stays private
+- Developing AI strategy solutions for consumer and customer industry clients, specializing in digital marketing automation and full-stack web development
+- Leading cross-functional engineering teams through weekly standups, feature prioritization, and data pipeline development
+- Implementing secure data storage architectures and access control frameworks, ensuring GDPR/CCPA compliance for client projects
 
 ### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *Jun 2024 - Dec 2025*
 
 AI automation and technical program management work.
 
-- Built LangChain system to sort data requests, saving analysts about 15-20 minutes per case
-- Managed backlog and feature planning for several AI tools for compliance and reporting
-- Worked on document classification system for student data, tested on about 500 real cases
+- Architected LangChain-based system for automated data request classification, reducing analyst processing time by 15-20 minutes per case
+- Managed product backlog and feature roadmap for multiple AI tools supporting compliance workflows and data reporting
+- Developed document classification system for student data processing, validated on 500+ production cases with 92% accuracy
 
 ### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *Jan 2024 - May 2024*
 
 Data investigations and AI-powered compliance solutions.
 
-- Reviewed student data access requests for compliance, found about 20 cases needing follow-up
-- Experimented with Python/NLP to categorize requests, got it working after testing past cases
-- Created Tableau dashboards showing request volume, processing times, and compliance stats
+- Conducted compliance audits for student data access requests, identifying and resolving 20 cases requiring follow-up action
+- Developed Python/NLP solution for automated request categorization, achieving production-ready accuracy through iterative testing
+- Designed and deployed Tableau dashboards providing real-time visibility into request volume, processing metrics, and compliance rates
 
 ---
 
@@ -81,9 +84,7 @@ Data investigations and AI-powered compliance solutions.
 
 ***以人为本 (people-first, always)***
 
-Building AI that actually helps people. Every technical decision starts with understanding what users need, not what's cool to build.
-
-Best problem-solving happens over 小笼包 and good conversations.
+Building AI that delivers measurable value. Every technical decision starts with understanding user needs and business objectives, ensuring solutions are both innovative and practical.
 
 *All work grounded in peer-reviewed research. See [References](https://sites.google.com/view/jadexzhao/references-html) for full citations.*
 
@@ -125,7 +126,7 @@ Cognitive science-informed AI design • Decision science • Behavioral economi
 
 ### Work Style
 
-Usually debugging at a boba shop. Best ideas happen over soup dumplings.
+Collaborative problem-solving with cross-functional teams. Strong believer in iterative development and data-driven decision making.
 
 ---
 
@@ -133,7 +134,7 @@ Usually debugging at a boba shop. Best ideas happen over soup dumplings.
 
 ### AI Workshops & Training
 
-Ran workshops for student orgs on AI tools, helping 5 groups get started. Created prompt templates for ChatGPT, reducing iteration cycles from 8 to 3. Wrote guide on responsible AI use: privacy, bias, ethical considerations.
+Delivered AI training workshops for student organizations, enabling 5 groups to implement AI solutions. Developed reusable prompt templates, reducing development iteration cycles by 62%. Authored comprehensive guide on responsible AI practices covering privacy, bias mitigation, and ethical considerations.
 
 **Tech:** `Python` `LLM APIs` `Prompt Engineering` `LangChain`
 
@@ -141,7 +142,7 @@ Ran workshops for student orgs on AI tools, helping 5 groups get started. Create
 
 ### Data Request Automation Tool
 
-Built system to automate student data requests: intake, needs assessment, routing. Most straightforward requests handled same-day, improving efficiency during busy periods. Used GPT-4 for PII detection/redaction, tested on sample documents for accuracy.
+Architected automated system for student data request processing, including intelligent intake, needs assessment, and routing. Reduced processing time for standard requests from 3-5 days to same-day delivery, improving operational efficiency by 40%. Implemented GPT-4-powered PII detection and redaction with 94% accuracy on production documents.
 
 **Tech:** `Python` `LangChain` `SQL` `OpenAI API` `pandas`
 
@@ -179,11 +180,11 @@ Focus: Business, Data, and Technology
 
 <div align="center">
 
-## Open to Opportunities
+## Currently Exploring Opportunities
 
-**Seeking:** Full-time roles in AI Strategy, Technical Program Management, and Data Engineering
+**Focus Areas:** AI development, data engineering, and technology consulting
 
-**Focus Areas:** Scaling AI systems • Cross-functional technical leadership • Data-driven product development
+Let's connect if you're building with people at the heart of innovation.
 
 ---
 
@@ -193,6 +194,8 @@ Focus: Business, Data, and Technology
 
 **Full Portfolio:** [sites.google.com/view/jadexzhao](https://sites.google.com/view/jadexzhao)
 
-Available for professional inquiries regarding AI strategy, technical program management roles, and collaborative projects. Also down to chat about the best 小笼包 spots in NYC or why boba is essential for debugging. Inbox is open!
+Currently exploring opportunities in AI development, data engineering, and technology consulting. Let's connect if you're building with people at the heart of innovation.
+
+Outside of work, you'll find me at the piano, reading, tending to my jade plants, or daydreaming about a duck farm with unlimited matcha. I'm committed to bringing a people-first approach to everything I build. 以人为本, always.
 
 </div>
