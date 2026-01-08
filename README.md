@@ -6,7 +6,7 @@ class JadeZhao:
   
     def __init__(self):
         self.location = "New York, NY"
-        self.education = "BS Informatics (Business, Data, Tech) | IU '27"
+        self.education = "BS Informatics (Business & Society) | IU '27"
         self.focus = ["AI development", "Data engineering", "Technology consulting"]
         self.fuel = ["小笼包", "波霸奶茶", "late-night 烧烤", "way too much coffee"]
   
@@ -34,9 +34,7 @@ class JadeZhao:
 
 **Aspiring AI development, data engineering, and technology consulting**
 
-Luddy Direct Admit and Hudson & Holland Scholar at Indiana University Bloomington, Class of 2027. Studying Informatics (Business, Data, Technology) and specializing in agentic AI, LLM orchestration, and data-driven solutions designed with human needs at the center.
-
-I grew up in my parents' restaurant, practically living there 364 days a year. At the time, I couldn't wait to escape to a "normal" 9-to-5. But those years taught me hard work, perseverance, patience, and the value of showing up. Looking back, I see how profoundly that shaped who I am and how I approach every challenge.
+Luddy Direct Admit and Hudson & Holland Scholar at Indiana University Bloomington, Class of 2027. Studying Informatics (Business & Society) and specializing in agentic AI, LLM orchestration, and data-driven solutions designed with human needs at the center.
 
 - **What I do:** Aspiring AI development, data engineering, and technology consulting
 - **Approach:** Research-driven methodology • Human-centered design • Measurable business outcomes
@@ -46,7 +44,7 @@ I grew up in my parents' restaurant, practically living there 364 days a year. A
 
 ## Background
 
-- **Path:** Family restaurant operations → Girls Who Code (Python, web dev) → Hudson & Holland Scholar (full-ride) → IU Luddy Direct Admit
+- **Path:** Girls Who Code (Python, web dev) → Hudson & Holland Scholar (full-ride) → IU Luddy Direct Admit
 - **Context:** First-generation Chinese-American college student. Girls Who Code alumni. Part of underrepresented groups in STEM, bringing diverse perspectives to AI development.
 - **Focus:** User-centered design • Privacy-compliant systems (GDPR/CCPA) • Measurable business impact
 
@@ -169,7 +167,7 @@ Built ETL pipeline pulling 10K+ records from 4 sources into PostgreSQL warehouse
 
 **Bachelor of Science in Informatics**
 Indiana University Bloomington | Expected Graduation: May 2027
-Focus: Business, Data, and Technology
+Focus: Business & Society
 
 **Honors & Recognition:**
 
