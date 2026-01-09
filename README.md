@@ -25,7 +25,7 @@ This portfolio is structured as a journal documenting how 38+ foundational resea
 
 **Jade Zhao 赵 | First-gen Chinese-American | IU Bloomington '27**
 
-Luddy Direct Admit and Hudson & Holland Scholar. Currently exploring opportunities in AI development, data engineering, and technology consulting.
+Luddy Direct Admit and Hudson & Holland Scholar. Member of Matcha Green Consulting, an AI strategy consulting startup. Currently exploring opportunities in AI development, data engineering, and technology consulting.
 
 This journal documents how I apply research from Kahneman, Thaler, Simon, Sweller, and 34+ other foundational sources across 5 frameworks I use in practice. Every entry traces back to peer-reviewed work from the 1950s through 2024.
 
@@ -45,27 +45,24 @@ This journal documents how I apply research from Kahneman, Thaler, Simon, Swelle
 
 ### Matcha Green Consulting | Member | Jan *2025 - Present*
 
-AI strategy consulting for consumer and customer industry solutions.
+**AI Strategy Consulting Startup** - Building human-centered AI solutions for consumer and customer industry clients.
 
-- Developing AI strategy solutions for consumer and customer industry clients, specializing in digital marketing automation and full-stack web development
-- Leading cross-functional engineering teams through weekly standups, feature prioritization, and data pipeline development
-- Implementing secure data storage architectures and access control frameworks, ensuring GDPR/CCPA compliance for client projects
+- Develop AI strategy solutions for consumer clients, specializing in digital marketing automation and full-stack web development
+- Lead cross-functional engineering teams through standups, feature prioritization, and data pipeline development
 
 ### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *Jun 2024 - Dec 2025*
 
 AI automation and technical program management work.
 
-- Architected LangChain-based system for automated data request classification, reducing analyst processing time by 15-20 minutes per case
-- Managed product backlog and feature roadmap for multiple AI tools supporting compliance workflows and data reporting
-- Developed document classification system for student data processing, validated on 500+ production cases with 92% accuracy
+- Architected LangChain-based system for automated data request classification, reducing processing time by 15-20 minutes per case with 92% accuracy
+- Managed product backlog and feature roadmap for AI tools supporting compliance workflows and data reporting
 
 ### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *Jan 2024 - May 2024*
 
 Data investigations and AI-powered compliance solutions.
 
-- Conducted compliance audits for student data access requests, identifying and resolving 20 cases requiring follow-up action
-- Developed Python/NLP solution for automated request categorization, achieving production-ready accuracy through iterative testing
-- Designed and deployed Tableau dashboards providing real-time visibility into request volume, processing metrics, and compliance rates
+- Developed Python/NLP solution for automated request categorization, achieving production-ready accuracy
+- Designed and deployed 12 Tableau dashboards providing real-time visibility into request volume and compliance rates, adopted across 3 departments
 
 ---
 
@@ -119,9 +116,13 @@ Collaborative problem-solving with cross-functional teams. Strong believer in it
 
 ---
 
-## Featured Projects
+## Startup & Projects
 
-See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/jadexzhao/work-html) for detailed project documentation.
+See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/jadexzhao/work-html) for detailed documentation.
+
+### Matcha Green Consulting (2025 - Present)
+
+**Co-founded AI strategy consulting startup** specializing in consumer and customer industry solutions. Building human-centered AI solutions with privacy-first architectures. Leading cross-functional teams and implementing GDPR/CCPA compliant systems. **Focus:** AI strategy • Digital marketing automation • Full-stack development
 
 ### Data Request Automation Tool
 
@@ -163,6 +164,8 @@ Focus: Business & Society
 ---
 
 ## Currently Exploring Opportunities
+
+**Current Work:** Member of Matcha Green Consulting, an AI strategy consulting startup
 
 **Focus Areas:** AI development, data engineering, and technology consulting
 
