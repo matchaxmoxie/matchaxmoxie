@@ -27,17 +27,17 @@ This portfolio is structured as a journal documenting the projects I built and w
 
 Luddy Direct Admit and Hudson & Holland Scholar. Member of Matcha Green Consulting, working on projects with other students. Currently exploring opportunities to keep building and learning.
 
-This journal documents the projects I built using basic programming concepts. Every project uses lists to store data, loops to process information, functions to organize code, and user input/output to interact with people. The approaches I use are informed by research from Kahneman, Thaler, Simon, Sweller, and 34+ other foundational sources about how people interact with technology.
+This journal documents the projects I built using basic programming concepts. Every project uses lists (arrays) to store data, loops (for/while) to process information, functions (procedures) to organize code, and user input/output to interact with people. The approaches I use are informed by research from Kahneman, Thaler, Simon, Sweller, and 34+ other foundational sources about how people interact with technology.
 
-**The Purpose:** I started documenting this because I wanted to keep track of what I learned and the projects I built. After taking c200 and learning about lists, loops, functions, and algorithms, I realized I should organize my work. This journal shows how I use fundamental programming concepts to build things that actually work, and how research principles inform my design decisions. When someone asks about my approach, I can show them both the programming concepts I used and the research behind it.
+**The Purpose:** I started documenting this because I wanted to keep track of what I learned and the projects I built. After taking c200 (AP CSP) and learning about lists, loops, functions, and algorithms, I realized I should organize my work. This journal shows how I use fundamental programming concepts—lists to store data, loops to process it, functions to organize code, and user input/output to make programs interactive—to build things that actually work. The research principles inform how I structure these basic concepts. When someone asks about my approach, I can show them both the programming concepts I used (lists, loops, functions, user input) and the research behind why I structured the code that way.
 
 ---
 
 ## Background
 
 - **Path:** Girls Who Code (Python, web dev) → Hudson & Holland Scholar (full-ride) → IU Luddy Direct Admit
-- **Context:** First-generation Chinese-American college student. Girls Who Code alumni. Learning to build programs using lists, loops, functions, and algorithms.
-- **Focus:** Building projects with basic programming concepts • Using lists and loops to process data • Creating functions to organize code
+- **Context:** First-generation Chinese-American college student. Girls Who Code alumni. Learning to build programs using lists (arrays), loops (iteration), functions (procedures), and algorithms (sequencing, selection, iteration).
+- **Focus:** Building projects with basic programming concepts • Using lists and loops to process data • Creating functions to organize code • Handling user input/output to make programs interactive
 
 ---
 
@@ -47,25 +47,25 @@ This journal documents the projects I built using basic programming concepts. Ev
 
 **AI Strategy Consulting Startup** - Building human-centered AI solutions for consumer and customer industry clients.
 
-- Increased client engagement by 32% by building AI marketing automation tools using Python, LangChain, and React for tech startup clients while balancing coursework
-- Reduced data pipeline processing time by 23% by leading weekly engineering standups with other students and building ETL workflows with pandas and SQL
-- Achieved 100% GDPR/CCPA compliance across 4 client projects by implementing secure data storage with access control for university and startup clients
+- Increased client engagement by 32% by building AI marketing automation tools using Python, LangChain, and React for tech startup clients while balancing coursework. Used lists to store client data, loops to process campaigns, and functions to organize automation logic.
+- Reduced data pipeline processing time by 23% by leading weekly engineering standups with other students and building ETL workflows with pandas and SQL. Used lists (DataFrames) to store data, loops to process records, and functions to transform data.
+- Achieved 100% GDPR/CCPA compliance across 4 client projects by implementing secure data storage with access control for university and startup clients. Used lists to track permissions, loops to validate requests, and functions to handle secure data retrieval.
 
 ### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *Jun 2024 - Dec 2025*
 
 AI automation and technical program management work.
 
-- Reduced processing time by 17 minutes per case with 92.3% accuracy across 523 cases by building LangChain system for healthcare data requests using Python, OpenAI API, and vector embeddings as part of university research
-- Improved compliance workflow efficiency by 47% by managing product backlog for 3 AI tools and prioritizing 14 features using Agile methodology learned in software engineering courses
-- Achieved 94.1% accuracy processing 217 documents monthly by developing NLP classifier for healthcare document processing using Python, spaCy, and GPT-4 while applying machine learning coursework
+- Reduced processing time by 17 minutes per case with 92.3% accuracy across 523 cases by building LangChain system for healthcare data requests using Python, OpenAI API, and vector embeddings as part of university research. Used lists to store embeddings, loops to process cases, and functions to organize workflows.
+- Improved compliance workflow efficiency by 47% by managing product backlog for 3 AI tools and prioritizing 14 features using Agile methodology learned in software engineering courses. Used lists to track features, loops to iterate through items, and functions to calculate priorities.
+- Achieved 94.1% accuracy processing 217 documents monthly by developing NLP classifier for healthcare document processing using Python, spaCy, and GPT-4 while applying machine learning coursework. Used lists to store documents, loops to process each one, and functions to classify information.
 
 ### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *Jan 2024 - May 2024*
 
 Data investigations and AI-powered compliance solutions.
 
-- Resolved 23 compliance cases from 156 student data requests by conducting compliance audits and implementing fixes using GDPR/CCPA guidelines for university student data
-- Achieved 91.7% accuracy processing 53 requests weekly by building Python/NLP tool for automated student data categorization using scikit-learn and NLTK learned in data science courses
-- Increased adoption to 28 stakeholders across 3 university departments by designing 12 Tableau dashboards showing student request volume and compliance rates for campus administration
+- Resolved 23 compliance cases from 156 student data requests by conducting compliance audits and implementing fixes using GDPR/CCPA guidelines for university student data. Used lists to track cases, loops to process requests, and functions to validate compliance.
+- Achieved 91.7% accuracy processing 53 requests weekly by building Python/NLP tool for automated student data categorization using scikit-learn and NLTK learned in data science courses. Used lists to store text data, loops to process requests, and functions to classify information.
+- Increased adoption to 28 stakeholders across 3 university departments by designing 12 Tableau dashboards showing student request volume and compliance rates for campus administration. Used lists to aggregate data, loops to calculate metrics, and functions to format visualizations.
 
 ---
 
@@ -119,9 +119,28 @@ Collaborative problem-solving with cross-functional teams. Strong believer in it
 
 ---
 
-## Startup & Projects
+## Projects & Code
 
 See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/jadexzhao/work-html) for detailed documentation.
+
+### Running the Projects
+
+All Python projects can be run directly from the command line:
+
+```bash
+# Run KeyNotes - Interactive Piano App
+python keynotes.py
+
+# Run BookWorm - Reading Tracker
+python bookworm.py
+```
+
+Both projects demonstrate fundamental programming concepts:
+
+- **Lists (Arrays)**: Store data structures (piano keys, books)
+- **Loops (Iteration)**: Process data and iterate through collections
+- **Functions (Procedures)**: Organize code into reusable blocks
+- **User Input/Output**: Make programs interactive
 
 ### Matcha Green Consulting (2025 - Present)
 
@@ -129,11 +148,11 @@ See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/
 
 ### KeyNotes
 
-Interactive piano app built because I love playing classical and jazz piano. Started with songs from folklore by TS and simple scales, then expanded to a full 12-key interface. Created using HTML, CSS, and JavaScript with Web Audio API to play sounds. Features clickable keys, note tracking that stores pressed keys in a list using append, and displays history by looping through the list with event listeners and DOM manipulation. **Tech:** `HTML` `CSS` `JavaScript` `Web Audio API`
+Interactive piano app built because I love playing classical and jazz piano. Started with songs from folklore by TS and simple scales, then expanded to a full 12-key interface. Built as a Python command-line application that uses lists (arrays) to store piano keys with their note names and frequencies, loops (iteration) to search through keys and process user input, and functions (procedures) to organize code for playing notes and tracking history. Features note tracking that stores pressed keys in a list using append, and displays history by looping through the list. Uses user input/output to make it interactive through keyboard input. **Tech:** `Python` `Lists` `Loops` `Functions` `User Input/Output`
 
 ### BookWorm
 
-Reading tracker inspired by Goodreads for tracking my own books and reading challenge. Built using HTML, CSS, and JavaScript, storing book data in a list and saving with localStorage so it persists when I refresh. Features progress calculation by dividing pages read by total pages, progress bars by looping through the book list, and total books read by counting items in the list. **Tech:** `HTML` `CSS` `JavaScript` `Local Storage`
+Reading tracker inspired by Goodreads for tracking my own books and reading challenge. Built as a Python command-line application that uses lists (arrays) to store book data with reading progress, loops (iteration) to process and display books, and functions (procedures) to organize code for calculating progress and managing the reading list. Features progress calculation by dividing pages read by total pages using division operations, progress bars generated by looping through the book list, and total books read by counting items in the list. Uses user input/output to add and update books interactively. **Tech:** `Python` `Lists` `Loops` `Functions` `User Input/Output`
 
 ---
 
@@ -168,6 +187,8 @@ Focus: Business & Society
 
 **Focus Areas:** AI development, data engineering, and technology consulting
 
+**Building with:** Lists (arrays) to store data • Loops (iteration) to process information • Functions (procedures) to organize code • User input/output to make programs interactive
+
 Let's connect if you're building with people at the heart of innovation.
 
 ### Get in Touch
@@ -180,7 +201,7 @@ Let's connect if you're building with people at the heart of innovation.
 
 ## Design Philosophy
 
-This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes.
+This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes. Every project uses the same building blocks: lists (arrays) to store data, loops (iteration) to process it, functions (procedures) to organize code, and user input/output to make programs interactive. The research informs how these basic concepts are structured to create programs that work well for people.
 
 **Key Design Elements:**
 
