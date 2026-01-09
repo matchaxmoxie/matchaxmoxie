@@ -1,21 +1,12 @@
-# Jade Zhao 赵
+# Jade's Journal of AI Research, Strategy & Social Design
 
-```python
-class JadeZhao:
-    """Aspiring AI development, data engineering, and technology consulting | First-gen Chinese-American"""
-  
-    def __init__(self):
-        self.location = "New York, NY"
-        self.education = "BS Informatics (Business & Society) | IU '27"
-        self.focus = ["AI development", "Data engineering", "Technology consulting"]
-        self.fuel = ["小笼包", "波霸奶茶", "late-night 烧烤", "way too much coffee"]
-  
-    def methodology(self):
-        return "User research → Data validation → AI implementation → Measure impact"
-  
-    def best_ideas(self):
-        return "User research → Data validation → AI implementation → Measure impact"
-```
+**Forensic Documentation of Research-to-Practice Application**
+
+This portfolio is structured as a journal documenting how 38+ foundational research sources inform applied AI development methodologies. Think of it like a journalist's source file - every framework traces back to peer-reviewed research, properly cited and verifiable.
+
+**Why this format?** When exploring opportunities in AI development, data engineering, or technology consulting, credibility matters. This journal provides the foundation that prevents credibility challenges. It's forensic filing - showing exactly where methods come from, not vague "best practices."
+
+**Structure:** The journal is organized into chapters, each accessible through consistent navigation across all pages. All pages are hosted on Google Sites and fully linked together.
 
 <div align="center">
 
@@ -30,15 +21,15 @@ class JadeZhao:
 
 ---
 
-## 你好, I'm Jade
+## About This Journal
 
-**Aspiring AI development, data engineering, and technology consulting**
+**Jade Zhao 赵 | First-gen Chinese-American | IU Bloomington '27**
 
-Luddy Direct Admit and Hudson & Holland Scholar at Indiana University Bloomington, Class of 2027. Studying Informatics (Business & Society) and specializing in agentic AI, LLM orchestration, and data-driven solutions designed with human needs at the center.
+Luddy Direct Admit and Hudson & Holland Scholar. Currently exploring opportunities in AI development, data engineering, and technology consulting.
 
-- **What I do:** Aspiring AI development, data engineering, and technology consulting
-- **Approach:** Research-driven methodology • Human-centered design • Measurable business outcomes
-- **Currently Exploring:** Opportunities in AI development, data engineering, and technology consulting
+This journal documents how I apply research from Kahneman, Thaler, Simon, Sweller, and 34+ other foundational sources across 5 frameworks I use in practice. Every entry traces back to peer-reviewed work from the 1950s through 2024.
+
+**The Purpose:** I started documenting this because I kept getting asked where my methods come from. After working with 38 foundational sources over two years, I needed to organize this information. Not for presentation, but because transparency matters when building systems people rely on. When someone asks about my methodology, I can reference the research. When someone asks about my approach, I can show the foundation.
 
 ---
 
@@ -78,13 +69,13 @@ Data investigations and AI-powered compliance solutions.
 
 ---
 
-## Philosophy
+## Research Foundation
 
-***以人为本 (people-first, always)***
+**38+ peer-reviewed sources • 9 disciplines • 3 Nobel Prize winners • 70+ years of research**
 
-Building AI that delivers measurable value. Every technical decision starts with understanding user needs and business objectives, ensuring solutions are both innovative and practical.
+These are the principles I reference when making design decisions. Prospect theory (Kahneman, 1979). Nudge theory (Thaler, 2008). Cognitive load theory (Sweller, 1988). Bounded rationality (Simon, 1955).
 
-*All work grounded in peer-reviewed research. See [References](https://sites.google.com/view/jadexzhao/references-html) for full citations.*
+All citations formatted in APA 7th Edition for verification. See [Chapter III: Research Foundation](https://sites.google.com/view/jadexzhao/references-html) for complete documentation.
 
 ---
 
@@ -130,36 +121,29 @@ Collaborative problem-solving with cross-functional teams. Strong believer in it
 
 ## Featured Projects
 
-### AI Workshops & Training
-
-Delivered AI training workshops for student organizations, enabling 5 groups to implement AI solutions. Developed reusable prompt templates, reducing development iteration cycles by 62%. Authored comprehensive guide on responsible AI practices covering privacy, bias mitigation, and ethical considerations.
-
-**Tech:** `Python` `LLM APIs` `Prompt Engineering` `LangChain`
-
----
+See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/jadexzhao/work-html) for detailed project documentation.
 
 ### Data Request Automation Tool
 
-Architected automated system for student data request processing, including intelligent intake, needs assessment, and routing. Reduced processing time for standard requests from 3-5 days to same-day delivery, improving operational efficiency by 40%. Implemented GPT-4-powered PII detection and redaction with 94% accuracy on production documents.
+Architected automated system for student data request processing. Reduced processing time from 3-5 days to same-day delivery. Implemented GPT-4-powered PII detection with 94% accuracy. **Tech:** `Python` `LangChain` `SQL` `OpenAI API`
 
-**Tech:** `Python` `LangChain` `SQL` `OpenAI API` `pandas`
+### AI Workshops & Training
 
----
+Delivered AI training workshops for student organizations. Developed reusable prompt templates, reducing iteration cycles by 62%. **Tech:** `Python` `LLM APIs` `Prompt Engineering` `LangChain`
 
-### Data Dashboard Project
+### Analytics Dashboards
 
-Built ETL pipeline pulling 10K+ records from 4 sources into PostgreSQL warehouse. Created 12 Tableau dashboards for executive reporting, adopted across 3 departments. Developed ARIMA forecasting model predicting monthly request volume within 12% MAPE.
-
-**Tech:** `Python` `SQL` `Tableau` `Power BI` `pandas` `numpy`
+Built ETL pipeline pulling 10K+ records into PostgreSQL warehouse. Created 12 Tableau dashboards adopted across 3 departments. **Tech:** `Python` `SQL` `Tableau` `Power BI`
 
 ---
 
-## Quick Links
+## Journal Structure
 
-- **[Full Portfolio](https://sites.google.com/view/jadexzhao)** - Complete website with all details
-- **[Work &amp; Projects](https://sites.google.com/view/jadexzhao/work-html)** - Detailed experience and project deep-dives
-- **[My Story](https://sites.google.com/view/jadexzhao/about-html)** - Personal journey and background
-- **[Research References](https://sites.google.com/view/jadexzhao/references-html)** - 38+ academic citations (APA format)
+- **[Home / Table of Contents](https://sites.google.com/view/jadexzhao)** - Journal cover and navigation hub
+- **[Chapter I: The Development Journey](https://sites.google.com/view/jadexzhao/about-html)** - Personal journey from Girls Who Code to AI strategy
+- **[Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/jadexzhao/work-html)** - Real-world applications and experience
+- **[Chapter III: Research Foundation](https://sites.google.com/view/jadexzhao/references-html)** - Forensic documentation of 38+ sources (APA format)
+- **[Contact](https://sites.google.com/view/jadexzhao/contact-html)** - Connect for opportunities and collaboration
 
 ---
 
@@ -176,7 +160,7 @@ Focus: Business & Society
 
 ---
 
-<div align="center">
+---
 
 ## Currently Exploring Opportunities
 
@@ -184,16 +168,25 @@ Focus: Business & Society
 
 Let's connect if you're building with people at the heart of innovation.
 
----
-
 ### Get in Touch
 
-[Portfolio](https://bit.ly/matchaxmoxie) • [Resume](https://sites.google.com/view/jadexzhao/resume-html) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [Email](mailto:jadexzhao@outlook.com)
+[Portfolio](https://bit.ly/matchaxmoxie) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [Email](mailto:jadexzhao@outlook.com)
 
-**Full Portfolio:** [sites.google.com/view/jadexzhao](https://sites.google.com/view/jadexzhao)
+**Full Journal:** [sites.google.com/view/jadexzhao](https://sites.google.com/view/jadexzhao)
 
-Currently exploring opportunities in AI development, data engineering, and technology consulting. Let's connect if you're building with people at the heart of innovation.
+---
 
-Outside of work, you'll find me at the piano, reading, tending to my jade plants, or daydreaming about a duck farm with unlimited matcha. I'm committed to bringing a people-first approach to everything I build. 以人为本, always.
+## Design Philosophy
 
-</div>
+This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes.
+
+**Key Design Elements:**
+
+- Paper texture backgrounds with ruled lines
+- Handwritten-style fonts for dates and margin notes
+- Journal page styling with binding margins
+- Research sketches, strategy cards, and design diagrams
+- Consistent green color palette throughout
+- Chapter-based organization
+
+All pages are fully linked and accessible. Navigation is consistent across all sections, making it easy to move between chapters and explore the research foundation behind each project.
