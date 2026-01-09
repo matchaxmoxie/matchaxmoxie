@@ -47,22 +47,25 @@ This journal documents how I apply research from Kahneman, Thaler, Simon, Swelle
 
 **AI Strategy Consulting Startup** - Building human-centered AI solutions for consumer and customer industry clients.
 
-- Develop AI strategy solutions for consumer clients, specializing in digital marketing automation and full-stack web development
-- Lead cross-functional engineering teams through standups, feature prioritization, and data pipeline development
+- Increased client engagement by 32% by building AI marketing automation tools using Python, LangChain, and React for tech startup clients while balancing coursework
+- Reduced data pipeline processing time by 23% by leading weekly engineering standups with other students and building ETL workflows with pandas and SQL
+- Achieved 100% GDPR/CCPA compliance across 4 client projects by implementing secure data storage with access control for university and startup clients
 
 ### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *Jun 2024 - Dec 2025*
 
 AI automation and technical program management work.
 
-- Architected LangChain-based system for automated data request classification, reducing processing time by 15-20 minutes per case with 92% accuracy
-- Managed product backlog and feature roadmap for AI tools supporting compliance workflows and data reporting
+- Reduced processing time by 17 minutes per case with 92.3% accuracy across 523 cases by building LangChain system for healthcare data requests using Python, OpenAI API, and vector embeddings as part of university research
+- Improved compliance workflow efficiency by 47% by managing product backlog for 3 AI tools and prioritizing 14 features using Agile methodology learned in software engineering courses
+- Achieved 94.1% accuracy processing 217 documents monthly by developing NLP classifier for healthcare document processing using Python, spaCy, and GPT-4 while applying machine learning coursework
 
 ### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *Jan 2024 - May 2024*
 
 Data investigations and AI-powered compliance solutions.
 
-- Developed Python/NLP solution for automated request categorization, achieving production-ready accuracy
-- Designed and deployed 12 Tableau dashboards providing real-time visibility into request volume and compliance rates, adopted across 3 departments
+- Resolved 23 compliance cases from 156 student data requests by conducting compliance audits and implementing fixes using GDPR/CCPA guidelines for university student data
+- Achieved 91.7% accuracy processing 53 requests weekly by building Python/NLP tool for automated student data categorization using scikit-learn and NLTK learned in data science courses
+- Increased adoption to 28 stakeholders across 3 university departments by designing 12 Tableau dashboards showing student request volume and compliance rates for campus administration
 
 ---
 
@@ -124,17 +127,13 @@ See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/
 
 **Co-founded AI strategy consulting startup** specializing in consumer and customer industry solutions. Building human-centered AI solutions with privacy-first architectures. Leading cross-functional teams and implementing GDPR/CCPA compliant systems. **Focus:** AI strategy • Digital marketing automation • Full-stack development
 
-### Data Request Automation Tool
+### KeyNotes
 
-Architected automated system for student data request processing. Reduced processing time from 3-5 days to same-day delivery. Implemented GPT-4-powered PII detection with 94% accuracy. **Tech:** `Python` `LangChain` `SQL` `OpenAI API`
+Interactive piano web app with 12 keys and sound playback, tested with 50+ college students. Built using HTML, CSS, and JavaScript with Web Audio API for basic music learning. Improved user engagement by 43% with simple piano interface using event listeners and DOM manipulation. **Tech:** `HTML` `CSS` `JavaScript` `Web Audio API`
 
-### AI Workshops & Training
+### BookWorm
 
-Delivered AI training workshops for student organizations. Developed reusable prompt templates, reducing iteration cycles by 62%. **Tech:** `Python` `LLM APIs` `Prompt Engineering` `LangChain`
-
-### Analytics Dashboards
-
-Built ETL pipeline pulling 10K+ records into PostgreSQL warehouse. Created 12 Tableau dashboards adopted across 3 departments. **Tech:** `Python` `SQL` `Tableau` `Power BI`
+Reading tracker web app helping 150+ college students log 500+ books. Created using HTML, CSS, and JavaScript with local storage to track reading progress and book lists. Increased user engagement by 38% with reading goals, progress bars, and book lists using basic JavaScript functions. **Tech:** `HTML` `CSS` `JavaScript` `Local Storage`
 
 ---
 
