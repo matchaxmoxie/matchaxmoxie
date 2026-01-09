@@ -129,11 +129,11 @@ See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/
 
 ### KeyNotes
 
-Interactive piano web app with 12 keys and sound playback, tested with 50+ college students. Built using HTML, CSS, and JavaScript with Web Audio API for basic music learning. Improved user engagement by 43% with simple piano interface using event listeners and DOM manipulation. **Tech:** `HTML` `CSS` `JavaScript` `Web Audio API`
+Interactive piano app built because I love playing classical and jazz piano. Started with songs from folklore by TS and simple scales, then expanded to a full 12-key interface. Created using HTML, CSS, and JavaScript with Web Audio API to play sounds. Features clickable keys, note tracking that stores pressed keys in a list, and displays history using event listeners and DOM manipulation. **Tech:** `HTML` `CSS` `JavaScript` `Web Audio API`
 
 ### BookWorm
 
-Reading tracker web app helping 150+ college students log 500+ books. Created using HTML, CSS, and JavaScript with local storage to track reading progress and book lists. Increased user engagement by 38% with reading goals, progress bars, and book lists using basic JavaScript functions. **Tech:** `HTML` `CSS` `JavaScript` `Local Storage`
+Reading tracker inspired by Goodreads for tracking my own books and reading challenge. Built using HTML, CSS, and JavaScript, storing book data in a list and saving with localStorage. Features progress calculation by dividing pages read by total pages, progress bars using loops, and total books read by counting items in the list. **Tech:** `HTML` `CSS` `JavaScript` `Local Storage`
 
 ---
 
