@@ -1,10 +1,10 @@
 # Jade's Journal of AI Research, Strategy & Social Design
 
-**Forensic Documentation of Research-to-Practice Application**
+**A Journal of My Programming Journey**
 
-This portfolio is structured as a journal documenting how 38+ foundational research sources inform applied AI development methodologies. Think of it like a journalist's source file - every framework traces back to peer-reviewed research, properly cited and verifiable.
+This portfolio is structured as a journal documenting the projects I built and what I learned. It shows how I use basic programming concepts like lists, loops, functions, and user input to build things that work, informed by research I've read about how people use technology.
 
-**Why this format?** When exploring opportunities in AI development, data engineering, or technology consulting, credibility matters. This journal provides the foundation that prevents credibility challenges. It's forensic filing - showing exactly where methods come from, not vague "best practices."
+**Why this format?** I wanted to keep track of my projects and show how I use fundamental programming concepts. This journal shows exactly what I built, how I built it, what programming concepts I used, and the research principles that inform my design decisions.
 
 **Structure:** The journal is organized into chapters, each accessible through consistent navigation across all pages. All pages are hosted on Google Sites and fully linked together.
 
@@ -25,19 +25,19 @@ This portfolio is structured as a journal documenting how 38+ foundational resea
 
 **Jade Zhao 赵 | First-gen Chinese-American | IU Bloomington '27**
 
-Luddy Direct Admit and Hudson & Holland Scholar. Member of Matcha Green Consulting, an AI strategy consulting startup. Currently exploring opportunities in AI development, data engineering, and technology consulting.
+Luddy Direct Admit and Hudson & Holland Scholar. Member of Matcha Green Consulting, working on projects with other students. Currently exploring opportunities to keep building and learning.
 
-This journal documents how I apply research from Kahneman, Thaler, Simon, Sweller, and 34+ other foundational sources across 5 frameworks I use in practice. Every entry traces back to peer-reviewed work from the 1950s through 2024.
+This journal documents the projects I built using basic programming concepts. Every project uses lists to store data, loops to process information, functions to organize code, and user input/output to interact with people. The approaches I use are informed by research from Kahneman, Thaler, Simon, Sweller, and 34+ other foundational sources about how people interact with technology.
 
-**The Purpose:** I started documenting this because I kept getting asked where my methods come from. After working with 38 foundational sources over two years, I needed to organize this information. Not for presentation, but because transparency matters when building systems people rely on. When someone asks about my methodology, I can reference the research. When someone asks about my approach, I can show the foundation.
+**The Purpose:** I started documenting this because I wanted to keep track of what I learned and the projects I built. After taking c200 and learning about lists, loops, functions, and algorithms, I realized I should organize my work. This journal shows how I use fundamental programming concepts to build things that actually work, and how research principles inform my design decisions. When someone asks about my approach, I can show them both the programming concepts I used and the research behind it.
 
 ---
 
 ## Background
 
 - **Path:** Girls Who Code (Python, web dev) → Hudson & Holland Scholar (full-ride) → IU Luddy Direct Admit
-- **Context:** First-generation Chinese-American college student. Girls Who Code alumni. Part of underrepresented groups in STEM, bringing diverse perspectives to AI development.
-- **Focus:** User-centered design • Privacy-compliant systems (GDPR/CCPA) • Measurable business impact
+- **Context:** First-generation Chinese-American college student. Girls Who Code alumni. Learning to build programs using lists, loops, functions, and algorithms.
+- **Focus:** Building projects with basic programming concepts • Using lists and loops to process data • Creating functions to organize code
 
 ---
 
@@ -129,11 +129,11 @@ See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/
 
 ### KeyNotes
 
-Interactive piano app built because I love playing classical and jazz piano. Started with songs from folklore by TS and simple scales, then expanded to a full 12-key interface. Created using HTML, CSS, and JavaScript with Web Audio API to play sounds. Features clickable keys, note tracking that stores pressed keys in a list, and displays history using event listeners and DOM manipulation. **Tech:** `HTML` `CSS` `JavaScript` `Web Audio API`
+Interactive piano app built because I love playing classical and jazz piano. Started with songs from folklore by TS and simple scales, then expanded to a full 12-key interface. Created using HTML, CSS, and JavaScript with Web Audio API to play sounds. Features clickable keys, note tracking that stores pressed keys in a list using append, and displays history by looping through the list with event listeners and DOM manipulation. **Tech:** `HTML` `CSS` `JavaScript` `Web Audio API`
 
 ### BookWorm
 
-Reading tracker inspired by Goodreads for tracking my own books and reading challenge. Built using HTML, CSS, and JavaScript, storing book data in a list and saving with localStorage. Features progress calculation by dividing pages read by total pages, progress bars using loops, and total books read by counting items in the list. **Tech:** `HTML` `CSS` `JavaScript` `Local Storage`
+Reading tracker inspired by Goodreads for tracking my own books and reading challenge. Built using HTML, CSS, and JavaScript, storing book data in a list and saving with localStorage so it persists when I refresh. Features progress calculation by dividing pages read by total pages, progress bars by looping through the book list, and total books read by counting items in the list. **Tech:** `HTML` `CSS` `JavaScript` `Local Storage`
 
 ---
 
