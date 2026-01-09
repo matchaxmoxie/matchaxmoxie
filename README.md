@@ -125,7 +125,7 @@ See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/
 
 ### Matcha Green Consulting (2025 - Present)
 
-**Co-founded AI strategy consulting startup** specializing in consumer and customer industry solutions. Building human-centered AI solutions with privacy-first architectures. Leading cross-functional teams and implementing GDPR/CCPA compliant systems. **Focus:** AI strategy • Digital marketing automation • Full-stack development
+**AI strategy consulting startup** specializing in consumer and customer industry solutions. Building human-centered AI solutions with privacy-first architectures. Working with cross-functional teams and implementing GDPR/CCPA compliant systems. **Focus:** AI strategy • Digital marketing automation • Full-stack development
 
 ### KeyNotes
 
