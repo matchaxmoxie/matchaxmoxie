@@ -1,10 +1,10 @@
 # Jade's Journal of AI Research, Strategy & Social Design
 
-**A Journal of My Programming Journey**
+**A Journal of Agentic AI Development**
 
-This portfolio is structured as a journal documenting the projects I built and what I learned. It shows how I use basic programming concepts like lists, loops, functions, and user input to build things that work, informed by research I've read about how people use technology.
+This portfolio is structured as a journal documenting my work building agentic AI systems that operate autonomously and make decisions in real-time. It shows how I deploy agents across healthcare, education, nonprofit, and small business contexts, designing systems that process data continuously, adapt to changing conditions, and maintain human oversight—creating solutions that help people while operating within defined boundaries.
 
-**Why this format?** I wanted to keep track of my projects and show how I use fundamental programming concepts. This journal shows exactly what I built, how I built it, what programming concepts I used, and the research principles that inform my design decisions.
+**Why this format?** I wanted to document how I apply research frameworks to bridge human psychology and AI systems, designing agents that enhance rather than replace human capabilities. This journal shows exactly what I built, how I built it, and the research principles that inform my design decisions.
 
 **Structure:** The journal is organized into chapters, each accessible through consistent navigation across all pages. All pages are hosted on Google Sites and fully linked together.
 
@@ -23,49 +23,53 @@ This portfolio is structured as a journal documenting the projects I built and w
 
 ## About This Journal
 
-**Jade Zhao 赵 | First-gen Chinese-American | IU Bloomington '27**
+**Jade (玉) Zhao | She/Her | First-gen Chinese-American | IU Bloomington '27**
 
-Luddy Direct Admit and Hudson & Holland Scholar. Member of Matcha Green Consulting, working on projects with other students. Currently exploring opportunities to keep building and learning.
+Luddy Direct Admit and Hudson & Holland Scholar. Currently working on projects at Matcha Green Consulting, building AI agents that automate workflows. Previously worked at Luddy Center for AI deploying systems that process data in real-time and make autonomous decisions within defined boundaries.
 
-This journal documents the projects I built using basic programming concepts. Every project uses lists (arrays) to store data, loops (for/while) to process information, functions (procedures) to organize code, and user input/output to interact with people. The approaches I use are informed by research from Kahneman, Thaler, Simon, Sweller, and 34+ other foundational sources about how people interact with technology.
+This journal documents my work building AI systems that operate autonomously and make decisions in real-time. I specialize in agentic AI systems that automate workflows and process data in real-time, maintaining human oversight and transparent operations. The approaches I use are informed by research from Kahneman, Thaler, Simon, Sweller, and 38+ other foundational sources about how people interact with technology and make decisions.
 
-**The Purpose:** I started documenting this because I wanted to keep track of what I learned and the projects I built. After learning about lists, loops, functions, and algorithms, I realized I should organize my work. This journal shows how I use fundamental programming concepts (lists to store data, loops to process it, functions to organize code, and user input/output to make programs interactive) to build things that actually work. The research principles inform how I structure these basic concepts. When someone asks about my approach, I can show them both the programming concepts I used (lists, loops, functions, user input) and the research behind why I structured the code that way.
+**The Purpose:** I started documenting this because I wanted to show how I apply research frameworks to bridge human psychology and AI systems. This journal is my love letter to the work—documenting how I deploy agents across healthcare, education, nonprofit, and small business contexts. Every project is built with care, thoughtfulness, and a deep respect for the people who will use it. When someone asks about my approach, I can show them both the systems I built and the research behind why I designed them that way.
 
 ---
 
 ## Background
 
-- **Path:** Girls Who Code (Python, web dev) → Hudson & Holland Scholar (full-ride) → IU Luddy Direct Admit
-- **Context:** First-generation Chinese-American college student. Girls Who Code alumni. Learning to build programs using lists (arrays), loops (iteration), functions (procedures), and algorithms (sequencing, selection, iteration).
-- **Focus:** Building projects with basic programming concepts • Using lists and loops to process data • Creating functions to organize code • Handling user input/output to make programs interactive
+- **Path:** Girls Who Code (web dev) → Hudson & Holland Scholar (full-ride) → IU Luddy Direct Admit → Agentic AI Specialist
+- **Context:** First-generation Chinese-American college student. Girls Who Code alumni. Specializing in agentic AI systems that automate workflows and process data in real-time.
+- **Focus:** Building agentic AI systems • Real-time data processing • Autonomous decision-making within boundaries • Human oversight and transparent operations
 
 ---
 
 ## Experience
 
-### Matcha Green Consulting | Member | Jan *2025 - Present*
+### Undergraduate Research Assistant | *May 2024 - Dec 2025*
 
-**AI Strategy Consulting Startup** - Building human-centered AI solutions for consumer and customer industry clients.
+**Indiana University Luddy School of Informatics, Computing, and Engineering** - Healthcare AI systems
 
-- Increased client engagement by 32% by building AI marketing automation tools using Python, LangChain, and React for tech startup clients while balancing coursework. Used lists to store client data, loops to process campaigns, and functions to organize automation logic.
-- Reduced data pipeline processing time by 23% by leading weekly engineering standups with other students and building ETL workflows with pandas and SQL. Used lists (DataFrames) to store data, loops to process records, and functions to transform data.
-- Achieved 100% GDPR/CCPA compliance across 4 client projects by implementing secure data storage with access control for university and startup clients. Used lists to track permissions, loops to validate requests, and functions to handle secure data retrieval.
+- Designed intelligent, HIPAA-compliant database systems integrated with agentic AI to automatically ingest and process multimodal patient data from EHRs, wearables, and labs in real time. This setup cuts manual entry errors, delivers instant reliable insights for programs supporting vulnerable populations, and uses encryption plus role-based controls to keep everything secure.
+- Built agentic AI monitoring systems that continuously scan live data streams for anomalies or risks, only routing necessary alerts to clinical teams. Early tests show this can reduce administrative workload by 25-40%, consistent with industry reports on AI scribes and automation, enabling faster interventions, better outcomes, and less burnout for healthcare workers.
 
-### Luddy Center for Artificial Intelligence | AI & Engineering Consultant | *Jun 2024 - Dec 2025*
+### AI Client Team Lead | *Jan 2024 - Dec 2025*
 
-AI automation and technical program management work.
+**Laurie Burns McRobbie Serve IT Clinic, Luddy School, Indiana University** - Educational AI systems
 
-- Reduced processing time by 17 minutes per case with 92.3% accuracy across 523 cases by building LangChain system for healthcare data requests using Python, OpenAI API, and vector embeddings as part of university research. Used lists to store embeddings, loops to process cases, and functions to organize workflows.
-- Improved compliance workflow efficiency by 47% by managing product backlog for 3 AI tools and prioritizing 14 features using Agile methodology learned in software engineering courses. Used lists to track features, loops to iterate through items, and functions to calculate priorities.
-- Achieved 94.1% accuracy processing 217 documents monthly by developing NLP classifier for healthcare document processing using Python, spaCy, and GPT-4 while applying machine learning coursework. Used lists to store documents, loops to process each one, and functions to classify information.
+- Led development of agentic AI tutoring platforms that autonomously analyze real-time student performance, dynamically adjust lesson difficulty, generate custom problems, and deliver targeted feedback. Integrated seamlessly with tools like Canvas and Blackboard, these create truly personalized experiences that boost engagement and critical thinking.
+- Implemented ethical safeguards including transparent audit trails, regular bias checks across demographics, and clear guidelines to keep educators fully in control. This automation handles grading, prep, and routine feedback, saving teachers up to several hours weekly while ensuring AI acts as a helpful co-pilot, not a replacement.
 
-### Luddy Center for Artificial Intelligence | AI & Analytics Analyst | *Jan 2024 - May 2024*
+### Photographer | *May 2020 - Aug 2025*
 
-Data investigations and AI-powered compliance solutions.
+**Jade🪴 (Freelance)** - Small business automation
 
-- Resolved 23 compliance cases from 156 student data requests by conducting compliance audits and implementing fixes using GDPR/CCPA guidelines for university student data. Used lists to track cases, loops to process requests, and functions to validate compliance.
-- Achieved 91.7% accuracy processing 53 requests weekly by building Python/NLP tool for automated student data categorization using scikit-learn and NLTK learned in data science courses. Used lists to store text data, loops to process requests, and functions to classify information.
-- Increased adoption to 28 stakeholders across 3 university departments by designing 12 Tableau dashboards showing student request volume and compliance rates for campus administration. Used lists to aggregate data, loops to calculate metrics, and functions to format visualizations.
+- Handled complete client projects using agentic AI tools to autonomously manage scheduling, email follow-ups, calendar optimization, and admin reminders. This frees up significant time each week for pure creative shooting and deeper client relationships, making professional photography more accessible and efficient for small businesses.
+- Developed AI-assisted creative workflows that quickly generate concepts, iterate on edits, and refine visuals into polished, brand-aligned marketing assets. Clients see faster delivery, consistently higher quality, and meaningful cost savings.
+
+### Web Designer | *May 2019 - Dec 2024*
+
+**Girls Who Code** - Nonprofit technology
+
+- Designed and launched responsive websites enhanced with agentic AI for real-time visitor behavior analysis and dynamic personalization of content, layouts, and calls-to-action. This increases engagement, lowers bounce rates, and helps nonprofits connect better with supporters.
+- Created AI-optimized marketing materials that autonomously generate, A/B test, and refine variations of emails, social posts, and appeals based on donor patterns and performance data. This drives more resonant outreach, measurable donation lifts, and efficient scaling.
 
 ---
 
@@ -81,25 +85,25 @@ All citations formatted in APA 7th Edition for verification. See [Chapter III: R
 
 ## What I Bring
 
-### Human-Centered AI
+### Agentic AI Systems
 
-- AI strategy + ethical solutions
-- Agentic AI + LLM orchestration
-- LangChain • OpenAI • RAG systems
-- Privacy-first data governance
-- Prompt engineering
+- Building autonomous agents that process data in real-time
+- Autonomous decision-making within defined boundaries
+- Real-time data processing and continuous adaptation
+- Human oversight and transparent operations
+- LangChain • LLM APIs • RAG Systems • Prompt Engineering
 
-### Technical PM
+### Human-Centered Design
 
-- Cross-functional coordination
-- Stakeholder management
-- User-centered roadmaps
-- Agile delivery + risk mitigation
-- Quality people can feel
+- Ensuring systems maintain human oversight
+- Transparent decision-making processes
+- Ethical safeguards and bias detection
+- Privacy-first data governance (HIPAA, GDPR/CCPA)
+- Systems that enhance rather than replace human capabilities
 
 ### Tech Stack
 
-`Python` `SQL` `Tableau` `Power BI` `pandas` `numpy` `LangChain` `LLM APIs` `Agentic AI` `Prompt Engineering` `RAG Systems`
+`SQL` `Agentic AI` `LangChain` `LLM APIs` `RAG Systems` `Prompt Engineering` `HTML` `CSS` `JavaScript` `User Experience Design (UED)` `Adobe Photoshop` `Adobe Illustrator`
 
 ### Languages
 
@@ -107,52 +111,37 @@ English • Mandarin (普通话)
 
 ### Theoretical Foundations
 
-Cognitive Load Theory • Dual Process Theory • Activity Theory • Nudge Theory • Prospect Theory • Bounded Rationality
+Cognitive Load Theory • Dual Process Theory • Activity Theory • Nudge Theory • Prospect Theory • Bounded Rationality • Human-Centered AI • AI Ethics
 
 ### Approach
 
-Cognitive science-informed AI design • Decision science • Behavioral economics
+Effective agentic AI strategies start with understanding how people make decisions and collaborate. I apply research frameworks to bridge human psychology and AI systems, designing agents that enhance rather than replace human capabilities.
 
 ### Work Style
 
-Collaborative problem-solving with cross-functional teams. Strong believer in iterative development and data-driven decision making.
+Collaborative problem-solving with cross-functional teams. Strong believer in building systems with care, thoughtfulness, and deep respect for the people who will use them.
 
 ---
 
-## Projects & Code
+## Projects & Work
 
 See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/jadexzhao/work-html) for detailed documentation.
 
-### Running the Projects
+### Healthcare AI Systems
 
-All Python projects can be run directly from the command line:
+**Undergraduate Research Assistant** - Built database systems that automatically process and organize patient data for healthcare programs serving vulnerable populations. Created AI agents that monitor data streams in real-time, flagging potential issues and routing cases to appropriate workflows—freeing healthcare staff from administrative tasks so they can focus on direct patient care.
 
-```bash
-# Run KeyNotes - Interactive Piano App
-python keynotes.py
+### Educational AI Systems
 
-# Run BookWorm - Reading Tracker
-python bookworm.py
-```
+**AI Client Team Lead** - Led a team building AI tutoring systems that learn from each student interaction and adapt in real-time. Designed agents that handle grading, generate personalized study materials, and provide instant feedback—all while keeping educators in control through transparent decision-making and clear oversight mechanisms.
 
-Both projects demonstrate fundamental programming concepts:
+### Nonprofit Technology
 
-- **Lists (Arrays)**: Store data structures (piano keys, books)
-- **Loops (Iteration)**: Process data and iterate through collections
-- **Functions (Procedures)**: Organize code into reusable blocks
-- **User Input/Output**: Make programs interactive
+**Web Designer** - Designed websites for nonprofits that automatically optimize content based on how visitors interact with the site. Built AI systems that generate and test marketing variations in real-time, helping organizations discover what messaging resonates most with their communities and drives meaningful engagement.
 
-### Matcha Green Consulting (2025 - Present)
+### Small Business Automation
 
-**AI strategy consulting startup** specializing in consumer and customer industry solutions. Building human-centered AI solutions with privacy-first architectures. Working with cross-functional teams and implementing GDPR/CCPA compliant systems. **Focus:** AI strategy • Digital marketing automation • Full-stack development
-
-### KeyNotes
-
-Interactive piano app built because I love playing classical and jazz piano. Started with songs from folklore by TS and simple scales, then expanded to a full 12-key interface. Built as a Python command-line application that uses lists (arrays) to store piano keys with their note names and frequencies, loops (iteration) to search through keys and process user input, and functions (procedures) to organize code for playing notes and tracking history. Features note tracking that stores pressed keys in a list using append, and displays history by looping through the list. Uses user input/output to make it interactive through keyboard input. **Tech:** `Python` `Lists` `Loops` `Functions` `User Input/Output`
-
-### BookWorm
-
-Reading tracker inspired by Goodreads for tracking my own books and reading challenge. Built as a Python command-line application that uses lists (arrays) to store book data with reading progress, loops (iteration) to process and display books, and functions (procedures) to organize code for calculating progress and managing the reading list. Features progress calculation by dividing pages read by total pages using division operations, progress bars generated by looping through the book list, and total books read by counting items in the list. Uses user input/output to add and update books interactively. **Tech:** `Python` `Lists` `Loops` `Functions` `User Input/Output`
+**Photographer** - Built AI workflows that handle client scheduling, email management, and project tracking automatically. Created creative systems that generate design concepts and iterate through variations, helping small businesses get professional-quality work faster and at a fraction of traditional costs.
 
 ---
 
@@ -168,14 +157,21 @@ Reading tracker inspired by Goodreads for tracking my own books and reading chal
 
 ## Education
 
-**Bachelor of Science in Informatics**
-Indiana University Bloomington | Expected Graduation: May 2027
+**Bachelor of Science - BS, Informatics**
+Indiana University Bloomington | 2023 - 2027
+Grade: 3.70
 Focus: Business & Society
+
+**Activities and societies:** IU Student Life, Luddy's ServeIT Clinic, and FIRST at IU
 
 **Honors & Recognition:**
 
-- Luddy School of Informatics Direct Admit
 - Hudson & Holland Scholar (Full-Ride Merit Scholarship)
+- Luddy Direct Admit
+- Luddy Study Abroad & HIEP Grant (International Scholarship) - Jan 2026
+
+**High School:** Cathedral High School (2019 - 2023)
+Grade: 4.00 • High Honors, AP Scholar, and Community Service Award (200+ hours)
 
 ---
 
@@ -183,13 +179,13 @@ Focus: Business & Society
 
 ## Currently Exploring Opportunities
 
-**Current Work:** Member of Matcha Green Consulting, an AI strategy consulting startup
+**Current Work:** Working on projects at Matcha Green Consulting, building AI agents that automate workflows
 
-**Focus Areas:** AI development, data engineering, and technology consulting
+**Focus Areas:** Agentic AI development, data engineering, and technology consulting
 
-**Building with:** Lists (arrays) to store data • Loops (iteration) to process information • Functions (procedures) to organize code • User input/output to make programs interactive
+**Specializing in:** Building systems that operate autonomously • Real-time data processing • Adaptive systems that respond instantly to changing conditions • Human oversight and transparent operations
 
-Let's connect if you're building with people at the heart of innovation.
+I'm actively seeking 2026 internships, full-time roles, or collaborations in AI development, data engineering, and tech consulting. Let's connect if you're building agentic AI systems that help people.
 
 ### Get in Touch
 
@@ -201,15 +197,16 @@ Let's connect if you're building with people at the heart of innovation.
 
 ## Design Philosophy
 
-This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes. Every project uses the same building blocks: lists (arrays) to store data, loops (iteration) to process it, functions (procedures) to organize code, and user input/output to make programs interactive. The research informs how these basic concepts are structured to create programs that work well for people.
+This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes. Every project demonstrates how I deploy agents that make decisions in real-time, process data continuously, and adapt to changing conditions—all while maintaining human oversight and transparent operations.
 
 **Key Design Elements:**
 
-- Paper texture backgrounds with ruled lines
+- Paper texture backgrounds with warm, loving tones
 - Handwritten-style fonts for dates and margin notes
 - Journal page styling with binding margins
 - Research sketches, strategy cards, and design diagrams
-- Consistent green color palette throughout
+- Warm color palette with coral, pink, and rose tones
 - Chapter-based organization
+- Gentle animations and smooth transitions
 
-All pages are fully linked and accessible. Navigation is consistent across all sections, making it easy to move between chapters and explore the research foundation behind each project.
+All pages are fully linked and accessible. Navigation is consistent across all sections, making it easy to move between chapters and explore the research foundation behind each project. Built with care, thoughtfulness, and a deep respect for the people who will use it.
