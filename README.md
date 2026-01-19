@@ -183,7 +183,7 @@ I'm actively seeking 2026 internships, full-time roles, or collaborations in AI 
 
 ## Design Philosophy
 
-This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes. Every project demonstrates how I deploy agents that make decisions in real-time, process data continuously, and adapt to changing conditions—all while maintaining human oversight and transparent operations.
+This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes. Every project demonstrates how I deploy agents that make decisions in real-time, process data continuously, and adapt to changing conditions, all while maintaining human oversight and transparent operations.
 
 **Key Design Elements:**
 
