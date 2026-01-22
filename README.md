@@ -2,7 +2,7 @@
 
 **A Journal of Agentic AI Development**
 
-This portfolio is structured as a journal documenting my work building agentic AI systems that operate autonomously and make decisions in real-time. It shows how I deploy agents across healthcare, education, nonprofit, and small business contexts, designing systems that process data continuously, adapt to changing conditions, and maintain human oversight—creating solutions that help people while operating within defined boundaries.
+This portfolio is structured as a journal documenting my work building agentic AI systems that operate autonomously and make decisions in real-time. It shows how I deploy agents across healthcare, education, nonprofit, and small business contexts, designing systems that process data continuously, adapt to changing conditions, and maintain human oversight - creating solutions that help people while operating within defined boundaries.
 
 **Why this format?** I wanted to document how I apply research frameworks to bridge human psychology and AI systems, designing agents that enhance rather than replace human capabilities. This journal shows exactly what I built, how I built it, and the research principles that inform my design decisions.
 
@@ -29,7 +29,7 @@ Luddy Direct Admit and Hudson & Holland Scholar. Currently working on projects a
 
 This journal documents my work building AI systems that operate autonomously and make decisions in real-time. I specialize in agentic AI systems that automate workflows and process data in real-time, maintaining human oversight and transparent operations. The approaches I use are informed by research from Kahneman, Thaler, Simon, Sweller, and 38+ other foundational sources about how people interact with technology and make decisions.
 
-**The Purpose:** I started documenting this because I wanted to show how I apply research frameworks to bridge human psychology and AI systems. This journal is my love letter to the work—documenting how I deploy agents across healthcare, education, and nonprofit contexts. Every project is built with care, thoughtfulness, and a deep respect for the people who will use it. When someone asks about my approach, I can show them both the systems I built and the research behind why I designed them that way.
+**The Purpose:** I started documenting this because I wanted to show how I apply research frameworks to bridge human psychology and AI systems. This journal is my love letter to the work - documenting how I deploy agents across healthcare, education, and nonprofit contexts. Every project is built with care, thoughtfulness, and a deep respect for the people who will use it. When someone asks about my approach, I can show them both the systems I built and the research behind why I designed them that way.
 
 ---
 
@@ -183,7 +183,7 @@ I'm actively seeking 2026 internships, full-time roles, or collaborations in AI 
 
 ## Design Philosophy
 
-This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes. Every project demonstrates how I deploy agents that make decisions in real-time, process data continuously, and adapt to changing conditions, all while maintaining human oversight and transparent operations.
+This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes. Every project demonstrates how I deploy agents that make decisions in real-time, process data continuously, and adapt to changing conditions - all while maintaining human oversight and transparent operations.
 
 **Key Design Elements:**
 
@@ -196,3 +196,16 @@ This portfolio is designed as a journal - forensic documentation of how research
 - Gentle animations and smooth transitions
 
 All pages are fully linked and accessible. Navigation is consistent across all sections, making it easy to move between chapters and explore the research foundation behind each project. Built with care, thoughtfulness, and a deep respect for the people who will use it.
+
+---
+
+## Academic Enhancement Roadmap
+
+Planned upgrades to make the journal feel more academically driven and research-forward:
+
+- Add structured abstracts for each case study (problem, method, results, limitations, future work).
+- Introduce a consistent methodology section (data sources, evaluation protocol, baselines, and ethics checks).
+- Publish reproducibility artifacts (datasets where allowed, code snippets, prompts, and experiment logs).
+- Surface citations inline with the projects and link back to the reference list (APA + DOI when available).
+- Include a “Research Outputs” page (posters, talks, papers, preprints, and accepted venues).
+- Add a metrics glossary and validation appendix to clarify how impact numbers were measured.
