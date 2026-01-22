@@ -153,11 +153,15 @@ Focus: Business & Society
 
 **Activities and societies:** IU Student Life, Luddy's ServeIT Clinic, and FIRST at IU
 
+As a Map Coordinator for the Office of Student Life, I support fellow students and help foster a community where everyone feels valued and included. I am excited to combine my interests in people, technology, and innovation to design experiences that make a positive impact on others’ lives, and I look forward to contributing to meaningful change in the world.
+
 **Honors & Recognition:**
 
 - Hudson & Holland Scholar (Full-Ride Merit Scholarship)
 - Luddy Direct Admit
 - Luddy Study Abroad & HIEP Grant (International Scholarship) - Jan 2026
+
+I am thrilled to share that I have been selected to study abroad in Madrid, Spain next semester through Indiana University’s program with Universidad Complutense de Madrid. This opportunity is especially meaningful to me, and I am grateful to have received the Luddy Study Abroad Scholarship and the Edward L. Hutton International Experiences Program (HIEP) Grant. I am excited to immerse myself in a new culture and to learn how different communities approach the issues I care about. I look forward to gaining new perspectives, challenging my assumptions, and growing in unexpected ways. When I return, I plan to apply what I learn to continue creating user centered experiences through research and design that improve people’s lives.
 
 ---
 
