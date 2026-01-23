@@ -34,25 +34,21 @@ New York, NY | IU Bloomington '27 | Open to Opportunities
 
 **Jade L. Zhao 赵**
 
-Junior at Indiana University. Informatics major (Business and Society concentration). Hudson and Holland Scholar. Graduating 2027.
+Junior at IU Bloomington. Informatics major, Business and Society concentration. Hudson and Holland Scholar. Graduating 2027.
 
-I'm interested in agentic AI: systems that plan, decide, and act on their own within limits you set. Not chatbots. Agents. The kind showing up in healthcare (EHRs flagging risks before doctors see them) and education (tutoring that adapts to how you're actually learning, not just what lesson comes next).
+I like building things that work. Right now that means agentic AI: systems that can plan, decide, and act on their own within limits you set.
 
-I build AI that keeps humans in control. Clear boundaries, transparent decisions, override buttons that work. Skills: Python, SQL, LangChain, prompt engineering, figuring out why the model did what it did.
-
-Looking for internships or full-time roles in AI development, data engineering, or tech consulting for 2026.
+Skills: Python, SQL, LangChain, prompt engineering. Looking for internships or full-time roles in AI development, data engineering, or tech consulting for 2026.
 
 ---
 
-## Being Chinese American
+## Why Red and Gold?
 
-Growing up, I translated documents, navigated systems my parents couldn't read, and learned to code-switch between home and everywhere else. That experience shapes how I think about technology: who gets access, who gets left behind, and what it means to build systems that actually serve people.
+It's Lunar New Year season. The colors are lucky. 🧧
 
-As a first-generation student, I didn't always know the "right" way to do things. Nobody in my family had done this before. So I try to be thorough. Every citation is real. Every source I read. That matters to me.
+## Connect
 
-If you're a first-gen student, an immigrant kid figuring things out, or someone who didn't have a roadmap for this industry, I get it. Feel free to reach out even if it's just to talk.
-
-加油 (jiāyóu). We got this.
+If you're working on interesting problems in AI, data, or tech consulting, I'd like to hear about it. Also happy to chat with other students figuring things out. 加油.
 
 ---
 
