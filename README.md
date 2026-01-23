@@ -34,13 +34,13 @@ New York, NY | IU Bloomington '27 | Open to Opportunities
 
 **Jade L. Zhao 赵**
 
-I'm pursuing a B.S. in Informatics with a concentration in Business and Society at Indiana University's Luddy School, where I was admitted as a Hudson and Holland Scholar. I'll graduate in 2027.
+Junior at Indiana University. Informatics major (Business and Society concentration). Hudson and Holland Scholar. Graduating 2027.
 
-What draws me to this field right now is the shift toward agentic AI, systems that don't just respond but plan, decide, and act. I'm particularly interested in how these technologies are showing up in healthcare (think real-time risk monitoring through EHRs and wearables) and education (adaptive tutoring that actually meets students where they are).
+I'm interested in agentic AI: systems that plan, decide, and act on their own within limits you set. Not chatbots. Agents. The kind showing up in healthcare (EHRs flagging risks before doctors see them) and education (tutoring that adapts to how you're actually learning, not just what lesson comes next).
 
-My focus is on building AI that works for people: human-centered, scalable, grounded in solid data practices. I've developed skills in analytical problem-solving, LLM operations, and AI engineering.
+I build AI that keeps humans in control. Clear boundaries, transparent decisions, override buttons that work. Skills: Python, SQL, LangChain, prompt engineering, figuring out why the model did what it did.
 
-I'm looking for internships, full-time opportunities, or collaborations in AI development, data engineering, or tech consulting for 2026.
+Looking for internships or full-time roles in AI development, data engineering, or tech consulting for 2026.
 
 ---
 
