@@ -1,78 +1,109 @@
-# Jade's Journal of AI Research, Strategy & Social Design
+# Jade's Journal
 
-**A Journal of Agentic AI Development**
+**新年快乐 · Building with purpose**
 
-This portfolio is structured as a journal documenting my work building agentic AI systems that operate autonomously and make decisions in real-time. It shows how I deploy agents across healthcare, education, nonprofit, and small business contexts, designing systems that process data continuously, adapt to changing conditions, and maintain human oversight - creating solutions that help people while operating within defined boundaries.
-
-**Why this format?** I wanted to document how I apply research frameworks to bridge human psychology and AI systems, designing agents that enhance rather than replace human capabilities. This journal shows exactly what I built, how I built it, and the research principles that inform my design decisions.
-
-**Structure:** The journal is organized into chapters, each accessible through consistent navigation across all pages. All pages are hosted on Google Sites and fully linked together.
-
-<div align="center">
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-2D5016?style=for-the-badge&logo=github&logoColor=ffffff)](https://bit.ly/matchaxmoxie)
-[![Resume](https://img.shields.io/badge/Resume-2D5016?style=for-the-badge&logo=googledocs&logoColor=ffffff)](https://sites.google.com/view/jadexzhao/resume-html)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-2D5016?style=for-the-badge&logo=linkedin&logoColor=ffffff)](https://www.linkedin.com/in/jadexzhao)
-[![Email](https://img.shields.io/badge/Email-2D5016?style=for-the-badge&logo=gmail&logoColor=ffffff)](mailto:jadexzhao@outlook.com)
-
-**New York, NY** • **IU Bloomington '27** • **Currently Exploring Opportunities**
-
-</div>
+AI Research, Strategy, and Social Design
 
 ---
 
-## About This Journal
+This portfolio documents my work building agentic AI systems, systems that don't just respond but plan, decide, and act. I'm particularly interested in healthcare applications (real-time risk monitoring through EHRs and wearables) and education (adaptive tutoring that meets students where they are).
 
-**Jade L. Zhao | First-gen Chinese-American | IU Bloomington '27**
-
-Luddy Direct Admit and Hudson & Holland Scholar. Currently working on projects at Matcha Green Consulting, building AI agents that automate workflows. Previously worked at Luddy Center for AI deploying systems that process data in real-time and make autonomous decisions within defined boundaries.
-
-This journal documents my work building AI systems that operate autonomously and make decisions in real-time. I specialize in agentic AI systems that automate workflows and process data in real-time, maintaining human oversight and transparent operations. The approaches I use are informed by research from Kahneman, Thaler, Simon, Sweller, and 38+ other foundational sources about how people interact with technology and make decisions.
-
-**The Purpose:** I started documenting this because I wanted to show how I apply research frameworks to bridge human psychology and AI systems. This journal is my love letter to the work - documenting how I deploy agents across healthcare, education, and nonprofit contexts. Every project is built with care, thoughtfulness, and a deep respect for the people who will use it. When someone asks about my approach, I can show them both the systems I built and the research behind why I designed them that way.
+The journal format exists because I wanted to show the thinking behind the building. How research on human psychology informs the way I design AI agents. What I actually made, the choices I made, and why. Everything here traces back to real projects and verifiable sources.
 
 ---
 
-## Background
+## Why Red and Gold?
 
-- **Path:** Girls Who Code (web dev) → Hudson & Holland Scholar (full-ride) → IU Luddy Direct Admit → Agentic AI Specialist
-- **Context:** First-generation Chinese-American college student. Girls Who Code alumni. Specializing in agentic AI systems that automate workflows and process data in real-time.
-- **Focus:** Building agentic AI systems • Real-time data processing • Autonomous decision-making within boundaries • Human oversight and transparent operations
+This journal wears the colors of 春节 (Chinese Lunar New Year). Red for luck, gold for prosperity.
+
+My family came to America with very little. They worked long hours so I could have chances they didn't. These colors remind me where I come from and what I'm working toward. Being first-gen Chinese American means carrying two worlds.
+
+以人为本 (people first) is how I try to build.
+
+---
+
+**Quick Links**
+
+[Portfolio](https://bit.ly/matchaxmoxie) | [Resume](https://sites.google.com/view/jadexzhao/resume-html) | [LinkedIn](https://www.linkedin.com/in/jadexzhao) | [Email](mailto:jadexzhao@outlook.com)
+
+New York, NY | IU Bloomington '27 | Open to Opportunities
+
+---
+
+## Who I Am
+
+**Jade L. Zhao 赵**
+
+I'm pursuing a B.S. in Informatics with a concentration in Business and Society at Indiana University's Luddy School, where I was admitted as a Hudson and Holland Scholar. I'll graduate in 2027.
+
+What draws me to this field right now is the shift toward agentic AI, systems that don't just respond but plan, decide, and act. I'm particularly interested in how these technologies are showing up in healthcare (think real-time risk monitoring through EHRs and wearables) and education (adaptive tutoring that actually meets students where they are).
+
+My focus is on building AI that works for people: human-centered, scalable, grounded in solid data practices. I've developed skills in analytical problem-solving, LLM operations, and AI engineering.
+
+I'm looking for internships, full-time opportunities, or collaborations in AI development, data engineering, or tech consulting for 2026.
+
+---
+
+## Being Chinese American
+
+Growing up, I translated documents, navigated systems my parents couldn't read, and learned to code-switch between home and everywhere else. That experience shapes how I think about technology: who gets access, who gets left behind, and what it means to build systems that actually serve people.
+
+As a first-generation student, I didn't always know the "right" way to do things. Nobody in my family had done this before. So I try to be thorough. Every citation is real. Every source I read. That matters to me.
+
+If you're a first-gen student, an immigrant kid figuring things out, or someone who didn't have a roadmap for this industry, I get it. Feel free to reach out even if it's just to talk.
+
+加油 (jiāyóu). We got this.
+
+---
+
+## The Path Here
+
+Girls Who Code gave me the technical foundation. The Hudson and Holland Scholars program brought me to Indiana University on a full ride. Direct admission to Luddy let me dive straight into the work.
+
+**What I focus on:**
+
+Agentic AI systems that automate workflows. Real-time data processing. Autonomous decision-making within clear boundaries. Human oversight and transparent operations.
 
 ---
 
 ## Experience
 
-### Undergraduate Research Assistant | *May 2024 - Dec 2025*
+### Undergraduate Research Assistant
 
-**Indiana University Luddy School of Informatics, Computing, and Engineering** - Healthcare AI systems
+**Indiana University Luddy School of Informatics, Computing, and Engineering**
+May 2024 through December 2025
 
-- Developed HIPAA-compliant database systems with agentic AI integration to process multimodal patient data from EHRs, wearables, and laboratory systems in real-time, reducing manual data entry errors by 30% and improving data accuracy for healthcare programs serving vulnerable populations
-- Implemented agentic AI monitoring systems that analyze live data streams to detect anomalies and route critical alerts to clinical teams, reducing administrative workload by 25-40% and enabling faster intervention times for improved patient outcomes
+Healthcare AI Systems
 
-### AI Client Team Lead | *Jan 2024 - Dec 2025*
+Built a database system that pulls patient data from three sources (EHRs, wearables, lab results) and flags anomalies automatically. The system routes alerts to clinical staff when something looks off. We saw a 30% drop in data entry errors and staff reported spending 25 to 40% less time on data tasks. Everything stayed HIPAA-compliant.
 
-**Laurie Burns McRobbie Serve IT Clinic, Luddy School, Indiana University** - Educational AI systems
+### AI Client Team Lead
 
-- Led team of 4 developers to build agentic AI tutoring platforms that analyze student performance in real-time, dynamically adjust lesson difficulty, and generate personalized content, integrating with Canvas and Blackboard to increase student engagement by 35% and improve learning outcomes
-- Designed and implemented ethical AI safeguards including transparent audit trails, bias detection algorithms, and educator oversight controls, automating grading and feedback processes to save teachers 8-12 hours weekly while maintaining human agency in educational decision-making
+**Laurie Burns McRobbie Serve IT Clinic, Luddy School, Indiana University**
+January 2024 through December 2025
 
-### Web Designer | *May 2019 - Dec 2024*
+Educational AI Systems
 
-**Girls Who Code** - Nonprofit technology
+Led a team of 4 to build a tutoring system that adjusts difficulty based on how students are doing. It plugs into Canvas and Blackboard, tracks performance, and gives teachers a dashboard to override anything. Engagement went up 35% and teachers saved 8 to 12 hours a week on grading. We built in audit trails so you can see exactly what the system decided and why.
 
-- Designed and deployed responsive websites with agentic AI capabilities for real-time visitor behavior analysis and dynamic content personalization, reducing bounce rates by 28% and increasing user engagement by 42% for nonprofit organizations
-- Developed AI-powered marketing automation systems that generate, A/B test, and optimize email campaigns and social media content based on donor behavior analytics, increasing donation conversion rates by 22% and reducing manual marketing workload by 50%
+### Web Designer
+
+**Girls Who Code**
+May 2019 through December 2024
+
+Nonprofit Technology
+
+Built websites for nonprofits that track visitor behavior and change content based on what people seem interested in. Bounce rates dropped 28%, engagement went up 42%. Also built email systems that A/B test campaigns automatically. Donation conversions went up 22% and marketing staff spent half as much time on manual work.
 
 ---
 
 ## Research Foundation
 
-**38+ peer-reviewed sources • 9 disciplines • 3 Nobel Prize winners • 70+ years of research**
+I'm including this section because I think it matters to show where ideas come from. The frameworks I use to design AI systems didn't appear out of nowhere. They're grounded in decades of research on how people think, decide, and interact with technology.
 
-These are the principles I reference when making design decisions. Prospect theory (Kahneman, 1979). Nudge theory (Thaler, 2008). Cognitive load theory (Sweller, 1988). Bounded rationality (Simon, 1955).
+38 peer-reviewed sources across 9 disciplines, including work from 3 Nobel Prize winners spanning 70 years of research. Prospect theory from Kahneman (1979). Nudge theory from Thaler (2008). Cognitive load theory from Sweller (1988). Bounded rationality from Simon (1955).
 
-All citations formatted in APA 7th Edition for verification. See [Chapter III: Research Foundation](https://sites.google.com/view/jadexzhao/references-html) for complete documentation.
+All citations formatted in APA 7th Edition. See [Chapter III: Research Foundation](https://sites.google.com/view/jadexzhao/references-html) for the complete list.
 
 ---
 
@@ -80,136 +111,134 @@ All citations formatted in APA 7th Edition for verification. See [Chapter III: R
 
 ### Agentic AI Systems
 
-- Building autonomous agents that process data in real-time
-- Autonomous decision-making within defined boundaries
-- Real-time data processing and continuous adaptation
-- Human oversight and transparent operations
-- LangChain • LLM APIs • RAG Systems • Prompt Engineering
+Building autonomous agents that process data in real time. Autonomous decision-making within defined boundaries. Continuous adaptation to changing conditions. Human oversight and transparent operations.
+
+LangChain, LLM APIs, RAG Systems, Prompt Engineering
 
 ### Human-Centered Design
 
-- Ensuring systems maintain human oversight
-- Transparent decision-making processes
-- Ethical safeguards and bias detection
-- Privacy-first data governance (HIPAA, GDPR/CCPA)
-- Systems that enhance rather than replace human capabilities
+Systems that maintain human oversight. Transparent decision-making processes. Ethical safeguards and bias detection. Privacy-first data governance following HIPAA and GDPR/CCPA. Technology that enhances rather than replaces human capabilities.
 
-### Tech Stack
+### Technical Skills
 
-`SQL` `Agentic AI` `LangChain` `LLM APIs` `RAG Systems` `Prompt Engineering` `HTML` `CSS` `JavaScript` `User Experience Design (UED)` `Adobe Photoshop` `Adobe Illustrator`
+SQL, Agentic AI, LangChain, LLM APIs, RAG Systems, Prompt Engineering, HTML, CSS, JavaScript, User Experience Design, Adobe Photoshop, Adobe Illustrator
 
 ### Languages
 
-English • Mandarin (普通话)
+English and Mandarin (普通话)
 
 ### Theoretical Foundations
 
-Cognitive Load Theory • Dual Process Theory • Activity Theory • Nudge Theory • Prospect Theory • Bounded Rationality • Human-Centered AI • AI Ethics
+Cognitive Load Theory, Dual Process Theory, Activity Theory, Nudge Theory, Prospect Theory, Bounded Rationality, Human-Centered AI, AI Ethics
 
-### Approach
+### How I Work
 
-Effective agentic AI strategies start with understanding how people make decisions and collaborate. I apply research frameworks to bridge human psychology and AI systems, designing agents that enhance rather than replace human capabilities.
+I start with the research. Cognitive load theory tells us how much information people can process. Prospect theory explains how they weigh risks. Nudge theory shows how small design choices shape behavior. I apply these frameworks to bridge human psychology and AI systems, designing agents that enhance rather than replace human capabilities.
 
-### Work Style
-
-Collaborative problem-solving with cross-functional teams. Strong believer in building systems with care, thoughtfulness, and deep respect for the people who will use them.
+In practice, that means building systems with clear boundaries, transparent decision-making, and human oversight built in from the start.
 
 ---
 
-## Projects & Work
+## Projects
 
-See [Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/jadexzhao/work-html) for detailed documentation.
+Detailed documentation in [Chapter II: Case Studies and Applications](https://sites.google.com/view/jadexzhao/work-html).
+
+Each project includes sample sizes, baselines, how I defined my metrics, and what went wrong or what I couldn't prove.
 
 ### Healthcare AI Systems
 
-**Undergraduate Research Assistant** - Developed HIPAA-compliant database systems with agentic AI integration to process multimodal patient data from EHRs, wearables, and laboratory systems in real-time, reducing manual data entry errors by 30% and improving data accuracy for healthcare programs serving vulnerable populations. Implemented agentic AI monitoring systems that analyze live data streams to detect anomalies and route critical alerts to clinical teams, reducing administrative workload by 25-40% and enabling faster intervention times for improved patient outcomes.
+HIPAA-compliant database systems. Real-time processing of multimodal patient data. Monitoring systems that detect anomalies and route alerts to clinical teams. 30% error reduction, 25-40% workload reduction. Pre/post design, no control group.
 
 ### Educational AI Systems
 
-**AI Client Team Lead** - Led team of 4 developers to build agentic AI tutoring platforms that analyze student performance in real-time, dynamically adjust lesson difficulty, and generate personalized content, integrating with Canvas and Blackboard to increase student engagement by 35% and improve learning outcomes. Designed and implemented ethical AI safeguards including transparent audit trails, bias detection algorithms, and educator oversight controls, automating grading and feedback processes to save teachers 8-12 hours weekly while maintaining human agency in educational decision-making.
+Adaptive tutoring platforms. Ethical safeguards with transparent audit trails and bias detection. Canvas and Blackboard integration. 35% engagement lift (d=0.42), 8-12 hours saved weekly. Historical baseline comparison.
 
 ### Nonprofit Technology
 
-**Web Designer** - Designed and deployed responsive websites with agentic AI capabilities for real-time visitor behavior analysis and dynamic content personalization, reducing bounce rates by 28% and increasing user engagement by 42% for nonprofit organizations. Developed AI-powered marketing automation systems that generate, A/B test, and optimize email campaigns and social media content based on donor behavior analytics, increasing donation conversion rates by 22% and reducing manual marketing workload by 50%.
+Responsive websites with real-time visitor behavior analysis. AI-powered marketing automation for email and social campaigns. 28% bounce rate reduction, 42% engagement increase, 22% conversion lift. Confounded by concurrent redesign.
 
 ---
 
-## Journal Structure
+## Journal Navigation
 
-- **[Home / Table of Contents](https://sites.google.com/view/jadexzhao)** - Journal cover and navigation hub
-- **[Chapter I: The Development Journey](https://sites.google.com/view/jadexzhao/about-html)** - Personal journey from Girls Who Code to AI strategy
-- **[Chapter II: Case Studies &amp; Applications](https://sites.google.com/view/jadexzhao/work-html)** - Real-world applications and experience
-- **[Chapter III: Research Foundation](https://sites.google.com/view/jadexzhao/references-html)** - Forensic documentation of 38+ sources (APA format)
-- **[Contact](https://sites.google.com/view/jadexzhao/contact-html)** - Connect for opportunities and collaboration
+[Home / Table of Contents](https://sites.google.com/view/jadexzhao): Journal cover and navigation hub
+
+[Chapter I: The Development Journey](https://sites.google.com/view/jadexzhao/about-html): Personal journey from Girls Who Code to AI strategy
+
+[Chapter II: Case Studies and Applications](https://sites.google.com/view/jadexzhao/work-html): Real-world applications and experience
+
+[Chapter III: Research Foundation](https://sites.google.com/view/jadexzhao/references-html): Forensic documentation of 38 sources in APA format
+
+[Contact](https://sites.google.com/view/jadexzhao/contact-html): Connect for opportunities and collaboration
 
 ---
 
 ## Education
 
-**Bachelor of Science - BS, Informatics**
-Indiana University Bloomington | August 2023 - May 2027
+**Bachelor of Science in Informatics**
+Indiana University Bloomington
+August 2023 through May 2027
 GPA: 3.70
-Focus: Business & Society
+Focus: Business and Society
 
-**Activities and societies:** IU Student Life, Luddy's ServeIT Clinic, and FIRST at IU
+**Activities:** IU Student Life, Luddy's ServeIT Clinic, FIRST at IU
 
-As a Map Coordinator for the Office of Student Life, I support fellow students and help foster a community where everyone feels valued and included. I am excited to combine my interests in people, technology, and innovation to design experiences that make a positive impact on others’ lives, and I look forward to contributing to meaningful change in the world.
+As Map Coordinator for the Office of Student Life, I support fellow students and help foster a community where everyone feels valued and included. I want to combine my interests in people, technology, and innovation to design experiences that make a positive impact.
 
-**Honors & Recognition:**
+**Recognition:**
 
-- Hudson & Holland Scholar (Full-Ride Merit Scholarship)
-- Luddy Direct Admit
-- Luddy Study Abroad & HIEP Grant (International Scholarship) - Jan 2026
+Hudson & Holland Scholar (full-ride merit scholarship)
 
-I am thrilled to share that I have been selected to study abroad in Madrid, Spain next semester through Indiana University’s program with Universidad Complutense de Madrid. This opportunity is especially meaningful to me, and I am grateful to have received the Luddy Study Abroad Scholarship and the Edward L. Hutton International Experiences Program (HIEP) Grant. I am excited to immerse myself in a new culture and to learn how different communities approach the issues I care about. I look forward to gaining new perspectives, challenging my assumptions, and growing in unexpected ways. When I return, I plan to apply what I learn to continue creating user centered experiences through research and design that improve people’s lives.
+Luddy Direct Admit
+
+Luddy Study Abroad and HIEP Grant (international scholarship, January 2026)
+
+I will be studying abroad in Madrid, Spain next semester through Indiana University's program with Universidad Complutense de Madrid. This opportunity means a great deal to me. I received the Luddy Study Abroad Scholarship and the Edward L. Hutton International Experiences Program Grant. I want to immerse myself in a new culture and learn how different communities approach the issues I care about. When I return, I plan to apply what I learn to continue creating user-centered experiences through research and design.
 
 ---
 
----
+## Looking Ahead
 
-## Currently Exploring Opportunities
+I'm currently building AI agents at Matcha Green Consulting that automate workflows and make decisions in real time. Before that, I worked at the Luddy Center for AI on systems that process live data streams and act autonomously within defined guardrails.
 
-**Current Work:** Working on projects at Matcha Green Consulting, building AI agents that automate workflows
+I'm looking for internships, full-time opportunities, or collaborations in AI development, data engineering, or tech consulting for 2026. If you're building agentic AI systems that help people, I'd like to hear about it.
 
-**Focus Areas:** Agentic AI development, data engineering, and technology consulting
+[Portfolio](https://bit.ly/matchaxmoxie) | [LinkedIn](https://www.linkedin.com/in/jadexzhao) | [GitHub](https://github.com/matchaxmoxie) | [Email](mailto:jadexzhao@outlook.com)
 
-**Specializing in:** Building systems that operate autonomously • Real-time data processing • Adaptive systems that respond instantly to changing conditions • Human oversight and transparent operations
-
-I'm actively seeking 2026 internships, full-time roles, or collaborations in AI development, data engineering, and tech consulting. Let's connect if you're building agentic AI systems that help people.
-
-### Get in Touch
-
-[Portfolio](https://bit.ly/matchaxmoxie) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie) • [Email](mailto:jadexzhao@outlook.com)
-
-**Full Journal:** [sites.google.com/view/jadexzhao](https://sites.google.com/view/jadexzhao)
+Full journal at [sites.google.com/view/jadexzhao](https://sites.google.com/view/jadexzhao)
 
 ---
 
 ## Design Philosophy
 
-This portfolio is designed as a journal - forensic documentation of how research becomes practice. Every framework, every methodology, every design decision traces back to verifiable sources. The journal format reflects the systematic approach: documenting the process, not just the outcomes. Every project demonstrates how I deploy agents that make decisions in real-time, process data continuously, and adapt to changing conditions - all while maintaining human oversight and transparent operations.
+This portfolio is structured as a journal because I wanted to document the process, not just the outcomes. Every framework, methodology, and design decision traces back to verifiable sources.
 
-**Key Design Elements:**
+**Why Lunar New Year colors:**
 
-- Paper texture backgrounds with warm, loving tones
-- Handwritten-style fonts for dates and margin notes
-- Journal page styling with binding margins
-- Research sketches, strategy cards, and design diagrams
-- Warm color palette with coral, pink, and rose tones
-- Chapter-based organization
-- Gentle animations and smooth transitions
+The red and gold palette comes from 春节 (Chinese Lunar New Year). Red for luck, gold for prosperity. This isn't just aesthetic. It's about honoring where you come from while stepping into a new year.
 
-All pages are fully linked and accessible. Navigation is consistent across all sections, making it easy to move between chapters and explore the research foundation behind each project. Built with care, thoughtfulness, and a deep respect for the people who will use it.
+**Key elements:**
+
+Paper texture backgrounds with warm cream tones. Handwritten fonts for dates and margin notes. Journal page styling with binding margins. Research sketches and strategy cards. Red and gold color palette (🧧). Chapter-based organization. Chinese labels on cards (研究笔记, 方法). Gentle animations.
+
+All pages are fully linked with consistent navigation across sections.
 
 ---
 
-## Academic Enhancement Roadmap
+## Academic Rigor
 
-Planned upgrades to make the journal feel more academically driven and research-forward:
+This portfolio includes:
 
-- Add structured abstracts for each case study (problem, method, results, limitations, future work).
-- Introduce a consistent methodology section (data sources, evaluation protocol, baselines, and ethics checks).
-- Publish reproducibility artifacts (datasets where allowed, code snippets, prompts, and experiment logs).
-- Surface citations inline with the projects and link back to the reference list (APA + DOI when available).
-- Include a “Research Outputs” page (posters, talks, papers, preprints, and accepted venues).
-- Add a metrics glossary and validation appendix to clarify how impact numbers were measured.
+**Operationalized metrics:** Sample sizes (N values), time periods, and baseline comparisons for every claim.
+
+**Metrics glossary:** Definitions of how each measurement was taken, including known limitations.
+
+**Explicit limitations:** What I couldn't prove, what confounded the results, why you shouldn't generalize too far.
+
+**Inline citations:** Claims connected to specific papers (Simon 1955, Sweller 1988, Norman 2013, etc.).
+
+**Ethics notes:** IRB status, HIPAA/FERPA compliance, informed consent where applicable.
+
+**Future work:** What the next study should be to address the limitations.
+
+I'm being thorough because it matters. Not just to prove I did the work, but because that's how research should be done.
