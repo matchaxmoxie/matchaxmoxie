@@ -4,8 +4,6 @@
 
 ---
 
-iu bloomington '27 👒✨
-
 just a girl building cool ai stuff
 
 ---
