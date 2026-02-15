@@ -7,9 +7,9 @@
 
 ---
 
-I build digital infrastructure for small teams—the kind that actually fits how people work. I put down roots in STEM and in what you can actually *grow* with tech, especially when it's built for real people and small businesses. Being the only girl on an all-boys robotics team didn't push me away; it taught me how to hold my ground and build things that matter.
+I build digital infrastructure for small teams .. the kind that actually fits how people work. I put down roots in STEM and in what you can actually *grow* with tech, especially when it's built for real people and small businesses. Being the only girl on an all-boys robotics team didn't push me away; it taught me how to hold my ground and build things that matter.
 
-During the pandemic, I worked with local businesses that had zero online presence, guiding owners through the whole transition: websites, marketing, and automated tools that fit how they already worked—no manual required.
+During the pandemic, I worked with local businesses that had zero online presence, guiding owners through the whole transition: websites, marketing, and automated tools that fit how they already worked .. no manual required.
 
 ---
 
