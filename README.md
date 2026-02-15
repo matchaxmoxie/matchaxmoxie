@@ -1,34 +1,34 @@
 # Jade Zhao 🪴
 
-**photographer · gardener · reader**
+**Photographer · Gardener · Reader**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
 
 ---
 
-I build digital infrastructure for small teams ... the kind that actually fits how people work. I put down roots in STEM and in what you can actually *grow* with tech, especially when it's built for real people and small businesses. Being the only girl on an all-boys robotics team didn't push me away; it taught me how to hold my ground and build things that matter.
+I build digital infrastructure for small teams ... the kind that fits how people actually work. I got my start in STEM and in what you can *grow* with technology, especially when it’s built for real people and small businesses. Being the only girl on an all-boys robotics team didn’t put me off; it strengthened my resolve to build things that matter.
 
-During the pandemic, I worked with local businesses that had zero online presence, guiding owners through the whole transition: websites, marketing, and automated tools that fit how they already worked—no manual required.
+During the pandemic, I worked with local businesses that had no online presence, guiding owners through the full transition: websites, marketing, and automated tools that matched how they already worked ... no manual required.
 
 ---
 
-### 🌱 what's growing here
+### Experience
 
 **Jade🪴 · Freelance**
 *May 2020 – Present*
-End-to-end digital infrastructure for small businesses: sites, marketing, automation. Lightweight, cost-conscious, built to keep the personal touch while scaling smart.
+End-to-end digital infrastructure for small businesses: sites, marketing, and automation. Lightweight, cost-conscious, and built to keep a personal touch while scaling sensibly.
 
 **Girls Who Code · Web Designer**
 *2018 – 2024 · Indianapolis*
-Adaptive sites, automated marketing tools, and contactless solutions (menus, QR, checkout) so businesses could stay open and customers could stay safe during the pandemic.
+Adaptive websites, automated marketing tools, and contactless solutions (menus, QR codes, checkout) so businesses could stay open and customers could stay safe during the pandemic.
 
 **Internships**
 UX Design (Middle Way House) · Digital Accessibility (City of Bloomington) · Data Science (Indiana Phenology) · Business Development (Greater Bloomington Chamber of Commerce). Proud to have contributed to community-focused work across sectors.
 
 ---
 
-### 🌿 currently tending to
+### Current focus
 
 - Building accessible, human-centered web experiences
 - Exploring automation that respects how people actually work
@@ -36,7 +36,7 @@ UX Design (Middle Way House) · Digital Accessibility (City of Bloomington) · D
 
 ---
 
-### 🛠️ tools in the shed
+### Technologies
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
@@ -48,4 +48,4 @@ UX Design (Middle Way House) · Digital Accessibility (City of Bloomington) · D
 
 ---
 
-*bloom where you're planted* 🌱
+*Bloom where you’re planted.* 🌱
