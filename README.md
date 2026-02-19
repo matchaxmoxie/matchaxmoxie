@@ -8,9 +8,9 @@
 
 ---
 
-I build digital infrastructure for small teams. Websites, marketing, automation ... things that fit how people already work instead of forcing them into a mold.
+I build digital infrastructure for small teams. Websites, marketing, automation: things that fit how people already work instead of forcing them into a mold.
 
-I was the only girl on an all-boys robotics team. I stayed, learned, and left more determined to build things that matter. When the pandemic hit, I turned toward local businesses with no online presence. I sat down with owners and walked them through the whole transition: sites, social and email marketing, scheduling, follow-up tools, simple automation. The goal was never "get online." It was to make the tech actually work for them ... no manuals, no one-size-fits-all playbook.
+I was the only girl on an all-boys robotics team. I stayed, learned, and left more determined to build things that matter. When the pandemic hit, I turned toward local businesses with no online presence. I sat down with owners and walked them through the whole transition: sites, social and email marketing, scheduling, follow-up tools, simple automation. The goal was never "get online." It was to make the tech actually work for them, without manuals or a one-size-fits-all playbook.
 
 ---
 
@@ -40,11 +40,11 @@ Middle Way House · City of Bloomington · Indiana Phenology · Greater Blooming
 
 ### Off the clock
 
-**Behind the lens**  ...  Documenting a semester abroad in Madrid.
+**Behind the lens:** Documenting a semester abroad in Madrid.
 
-**In the garden**  ...  Tending jade plants (yes, the name fits).
+**In the garden:** Tending jade plants (yes, the name fits).
 
-**On the nightstand**  ...  *Call It What You Want* by Alissa DeRogatis
+**On the nightstand:** *Call It What You Want* by Alissa DeRogatis
 
 ---
 
