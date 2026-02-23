@@ -64,7 +64,7 @@ That philosophy shapes everything I do: **start with the human, build from there
 
 **In the garden:** Tending jade plants (yes, the name fits). Also: propagation experiments and learning to keep ferns alive.
 
-**On the nightstand:** Currently reading *Call It What You Want* by Alissa DeRogatis; recently finished *The Design of Everyday Things*.
+**On the nightstand:** Currently reading *Call It What You Want* by Alissa DeRogatis; recently finished *Everything I Know About Love*.
 
 ---
 
