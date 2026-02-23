@@ -18,9 +18,9 @@
 
 ## About Me
 
-I build digital infrastructure that actually fits how people work—not the other way around.
+I build digital infrastructure that actually fits how people work...not the other way around.
 
-I was the only girl on an all-boys robotics team. I stayed, learned, and left more determined to build things that matter. When the pandemic hit, I pivoted toward local businesses with no online presence. I sat down with owners and walked them through the whole transition: sites, social and email marketing, scheduling, follow-up tools, simple automation. The goal was never "get online." It was to make the tech actually work for them—accessible, intuitive, without manuals or forced workflows.
+I was the only girl on an all-boys robotics team. I stayed, learned, and left more determined to build things that matter. When the pandemic hit, I pivoted toward local businesses with no online presence. I sat down with owners and walked them through the whole transition: sites, social and email marketing, scheduling, follow-up tools, simple automation. The goal was never "get online." It was to make the tech actually work for them...accessible, intuitive, without manuals or forced workflows.
 
 That philosophy shapes everything I do: **start with the human, build from there.**
 
