@@ -2,7 +2,9 @@
 
 **Photographer · Gardener · Reader**
 
-[LinkedIn](https://www.linkedin.com/in/jadexzhao) · [Instagram](https://www.instagram.com/matchaxmoxie/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
+[![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
+[![Resume](https://img.shields.io/badge/Resume-PDF-red?style=flat)](resume.pdf)
 
 ---
 
