@@ -28,10 +28,10 @@ Grew up between two cultures, which mostly means I overthink in two languages an
 
 ### Outside the IDE
 
-- 📷 Film photography — deliberate, slow, no undos
+- 📷 Film photography ... deliberate, slow, no undos
 - 🌿 Jade plants & whatever else I'm trying not to kill
 - 📚 Currently reading: *ask me*
-- ✈️ Madrid semester — soaking it in
+- ✈️ Madrid semester ... soaking it in
 
 ---
 
