@@ -1,42 +1,44 @@
-# 你好, I'm Jade 🪴
+<div align="center">
 
-> *Bloom where you're planted.* 🌱
+# Jade Zhao 🪴
 
-**Photographer · Gardener · Reader**
+**Software Developer · Photographer · 第二代**
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
+[![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
+[![Resume](https://img.shields.io/badge/Resume-PDF-4A4A4A?style=flat)](resume.pdf)
 
-### about me
-
-Developer by day, slow-living enthusiast always. I spend my off-hours chasing good light with a camera, overwatering jade plants, and working through whatever's sitting on the nightstand.
-
-Currently living my Madrid semester era 🌇🥐
-
-I believe in matcha over coffee, code that's actually readable, and the quiet satisfaction of watching something you planted finally grow.
+</div>
 
 ---
 
-### stack
+### 关于我 · About
+
+CS student currently studying abroad in Madrid. I write clean code, take film photos, and keep jade plants alive ... sometimes all before noon.
+
+Grew up between two cultures, which mostly means I overthink in two languages and have strong opinions about both dumplings and sourdough.
+
+---
+
+### Tech Stack
 
 `Python` · `Java` · `HTML` · `CSS` · `JavaScript` · `React` · `Node`
 
 ---
 
-### find me
+### Outside the IDE
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
-[![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
-[![Resume](https://img.shields.io/badge/Resume-PDF-B5451B?style=flat)](resume.pdf)
+- 📷 Film photography — deliberate, slow, no undos
+- 🌿 Jade plants & whatever else I'm trying not to kill
+- 📚 Currently reading: *ask me*
+- ✈️ Madrid semester — soaking it in
 
 ---
 
-<details>
-<summary>currently into ✨</summary>
-<br>
+<div align="center">
 
-📸 film photography  
-🌿 keeping things alive (plants and side projects both)  
-📖 whatever's on the nightstand  
-🥘 Madrid street food & weekend markets  
+[![Jade's GitHub Stats](https://github-readme-stats.vercel.app/api?username=matchaxmoxie&show_icons=true&hide_border=true&title_color=4A4A4A&icon_color=4A4A4A&text_color=4A4A4A&bg_color=ffffff&hide=stars)](https://github.com/matchaxmoxie)
 
-</details>
+*Bloom where you're planted.* 🌱
+
+</div>
