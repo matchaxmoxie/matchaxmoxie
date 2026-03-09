@@ -1,39 +1,42 @@
-# jade zhao 🪴
+# 你好, I'm Jade 🪴
 
-**photographer · gardener · reader**
+> *Bloom where you're planted.* 🌱
+
+**Photographer · Gardener · Reader**
+
+---
+
+### about me
+
+Developer by day, slow-living enthusiast always. I spend my off-hours chasing good light with a camera, overwatering jade plants, and working through whatever's sitting on the nightstand.
+
+Currently living my Madrid semester era 🌇🥐
+
+I believe in matcha over coffee, code that's actually readable, and the quiet satisfaction of watching something you planted finally grow.
+
+---
+
+### stack
+
+`Python` · `Java` · `HTML` · `CSS` · `JavaScript` · `React` · `Node`
+
+---
+
+### find me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
-[![Resume](https://img.shields.io/badge/Resume-PDF-red?style=flat)](resume.pdf)
+[![Resume](https://img.shields.io/badge/Resume-PDF-B5451B?style=flat)](resume.pdf)
 
 ---
 
-我爱你
+<details>
+<summary>currently into ✨</summary>
+<br>
 
----
+📸 film photography  
+🌿 keeping things alive (plants and side projects both)  
+📖 whatever's on the nightstand  
+🥘 Madrid street food & weekend markets  
 
-currently: somewhere between a good book, a jade cutting, and a madrid memory.
-
-cs student who codes by day and tends to too many plants by night. i believe in slow mornings, film photography, and the quiet that comes from watering something and watching it grow.
-
----
-
-**off the clock**
-
-```
-📷  chasing light with a film camera
-🌱  propagating jade cuttings (the collection is out of hand)
-📖  whatever's on the nightstand — open to recs
-☕  matcha, always
-✈️  still thinking about madrid
-```
-
-**stack**
-
-```
-Python · Java · HTML · CSS · JS · React · Node
-```
-
----
-
-*bloom where you're planted.* 🌱
+</details>
