@@ -14,7 +14,7 @@
 
 ### 关于我 · About
 
-CS student currently studying abroad in Madrid. I write clean code, take film photos, and keep jade plants alive — sometimes all before noon.
+CS student currently studying abroad in Madrid. I write clean code, take film photos, and keep jade plants alive ... sometimes all before noon.
 
 Grew up between two cultures, which mostly means I overthink in two languages and have strong opinions about both dumplings and sourdough.
 
@@ -28,10 +28,10 @@ Grew up between two cultures, which mostly means I overthink in two languages an
 
 ### Outside the IDE
 
-- 📷 Film photography — deliberate, slow, no undos
+- 📷 Film photography ... deliberate, slow, no undos
 - 🌿 Jade plants & whatever else I'm trying not to kill
 - 📚 Currently reading: *ask me*
-- ✈️ Madrid semester — soaking it in
+- ✈️ Madrid semester ... soaking it in
 
 ---
 
