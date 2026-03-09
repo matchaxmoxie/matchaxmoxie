@@ -1,64 +1,64 @@
+<div align="center">
+
 # Jade Zhao 🪴
 
-**Photographer · Gardener · Reader**
+**Software Engineer · Informatics @ IU Luddy · 第二代**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
-
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
-[![Resume](https://img.shields.io/badge/Resume-PDF-red?style=flat)](resume.pdf)
+[![Resume](https://img.shields.io/badge/Resume-PDF-4A4A4A?style=flat)](resume.pdf)
+
+</div>
 
 ---
 
-I build digital infrastructure for small teams. Websites, marketing, automation: things that fit how people already work instead of forcing them into a mold.
+### 关于我 · About
 
-I was the only girl on an all-boys robotics team. I stayed, learned, and left more determined to build things that matter. When the pandemic hit, I turned toward local businesses with no online presence. I sat down with owners and walked them through the whole transition: sites, social and email marketing, scheduling, follow-up tools, simple automation. The goal was never "get online." It was to make the tech actually work for them, without manuals or a one-size-fits-all playbook.
+I study Informatics at Indiana University with a focus on building technology that's actually useful for the people who need it most ... accessible websites, ethical AI, and digital tools for nonprofits and underserved communities.
 
----
+Currently studying abroad in Madrid (Spring 2026). Hudson & Holland Scholar. Dean's List. Open to relocation.
 
-### What I do
-
-**Jade🪴 · Freelance** *(May 2020 – Present)*
-
-End-to-end digital infrastructure for small businesses: strategy, design, build, and ongoing support. Lightweight, cost-conscious, with a real personal touch.
-
-**Girls Who Code · Web Designer** *(2018 – 2024 · Indianapolis)*
-
-Adaptive websites, automated marketing tools, contactless solutions. Put accessibility and equity at the center of everything we built.
-
-**Internships** *(UX · Accessibility · Data · Business)*
-
-Middle Way House · City of Bloomington · Indiana Phenology · Greater Bloomington Chamber of Commerce. Community-focused work across social services, government, science, and civic orgs.
+Grew up between two cultures, which mostly means I overthink in two languages and have strong opinions about both dumplings and sourdough. Future duck farmer. 🦆
 
 ---
 
-### Right now
+### Experience
 
-- Accessible, human-centered web experiences
-- Automation that respects how people actually work
-- Open to collaborations with mission-driven teams and small businesses
+**Software Engineer** · *Self-directed, Jan 2026 – Present*
+Building and maintaining full-stack applications with a focus on clean architecture and accessibility compliance.
 
----
+**Research Assistant** · *IU Luddy Proactive Health Informatics, May 2024 – Dec 2025*
+HIPAA-compliant data systems, real-time patient monitoring, ethical AI safeguards.
 
-### Off the clock
+**Machine Learning Researcher** · *Luddy ServeIT Clinic, Jan 2024 – Dec 2025*
+AI-powered solutions for nonprofit clients. Bias detection, transparent systems, community impact.
 
-**Behind the lens:** Documenting a semester abroad in Madrid.
-
-**In the garden:** Tending jade plants (yes, the name fits).
-
-**On the nightstand:** *Call It What You Want* by Alissa DeRogatis
+**Assistant Instructor** · *IU Office of Student Life, Aug 2023 – Dec 2025*
+Mentored first-generation and low-income students; automated resource-sharing workflows for advisors.
 
 ---
 
-### Stack
+### Tech Stack
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
+`Python` · `SQL` · `JavaScript` · `TypeScript` · `React` · `Node.js` · `HTML/CSS` · `D3.js` · `PostgreSQL` · `Git`
+
+**Design & Accessibility:** Figma · Adobe Creative Suite · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
+
+**Languages:** English (Native) · Mandarin Chinese (Professional) · Spanish (Elementary)
 
 ---
+
+### Outside the IDE
+
+- 📷 Film photography ... deliberate, slow, no undos
+- 🌿 Keeping jade plants (and side projects) alive
+- 📚 Currently reading: *ask me*
+- ✈️ Madrid semester ... soaking it in
+
+---
+
+<div align="center">
 
 *Bloom where you're planted.* 🌱
+
+</div>
