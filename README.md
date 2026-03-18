@@ -63,7 +63,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 ---
 
 ### **🎓 Education**
-**B.S. in Informatics** (Business & Society)
+**B.S. in Informatics** (Business & Society)  
 *Indiana University Luddy School of Informatics, Computing, and Engineering*
 - Hudson & Holland Scholar
 - Dean’s List
