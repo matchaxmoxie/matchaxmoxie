@@ -8,6 +8,16 @@
 [![Resume](https://img.shields.io/badge/Resume-PDF-4A4A4A?style=flat)](site/resume.pdf)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-e85a9e?style=flat&logo=github)](https://matchaxmoxie.github.io/matchaxmoxie/)
 
+<br/>
+
+<sub><b>LaTeX → PDF</b> (one-page placeholders in <code>site/</code>; replace after <code>pdflatex</code> in <code>latex/</code>)</sub><br/>
+[![Profile PDF](https://img.shields.io/badge/Profile-PDF-e85a9e?style=flat)](site/jade-zhao-profile-full.pdf)
+[![Quotes PDF](https://img.shields.io/badge/Quotes-PDF-e85a9e?style=flat)](site/jade-zhao-quotes-principles.pdf)
+[![Pillars PDF](https://img.shields.io/badge/Pillars-PDF-e85a9e?style=flat)](site/jade-zhao-three-pillars.pdf)
+[![Statement PDF](https://img.shields.io/badge/Statement-PDF-e85a9e?style=flat)](site/jade-zhao-inclusive-tech-statement.pdf)
+[![Philosophy PDF](https://img.shields.io/badge/Philosophy-PDF-e85a9e?style=flat)](site/jade-zhao-philosophy-mentorship.pdf)
+[![Résumé TeX PDF](https://img.shields.io/badge/Résumé%20%28TeX%29-PDF-4A4A4A?style=flat)](site/jade-zhao-resume.pdf)
+
 </div>
 
 **Layout:** Only this **`README.md`** lives at `matchaxmoxie/` root. Site assets, LaTeX, and deploy notes sit in subfolders below.
@@ -20,7 +30,7 @@
 
 | Folder | Contents |
 |--------|----------|
-| **`site/`** | GitHub Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css), [`j.adezhao.jpg`](site/j.adezhao.jpg), [`resume.pdf`](site/resume.pdf) |
+| **`site/`** | GitHub Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css), [`j.adezhao.jpg`](site/j.adezhao.jpg), [`resume.pdf`](site/resume.pdf), plus [`jade-zhao-*.pdf`](site/) placeholders (replace after compiling matching `.tex` in `latex/`) |
 | **`latex/`** | Original `jade-zhao-*.tex` portfolio sources (Jade-only voice; no third-party résumé scans) |
 | **`docs/`** | [`DEPLOY.md`](docs/DEPLOY.md) (Pages options), [`.markdownlint.yaml`](docs/.markdownlint.yaml) (README / profile Markdown style) |
 
@@ -35,8 +45,9 @@
 | [`jade-zhao-three-pillars.tex`](latex/jade-zhao-three-pillars.tex) | Numbered pillars (community / technical depth / first gen \& access) |
 | [`jade-zhao-inclusive-tech-statement.tex`](latex/jade-zhao-inclusive-tech-statement.tex) | Short statement on access and how you want to work |
 | [`jade-zhao-philosophy-mentorship.tex`](latex/jade-zhao-philosophy-mentorship.tex) | Mentorship, clients, and shipping usable systems |
+| [`regenerate-placeholder-pdfs.py`](latex/regenerate-placeholder-pdfs.py) | Optional: regenerate minimal `site/jade-zhao-*.pdf` stubs |
 
-**Build:** from `matchaxmoxie/latex/` run e.g. `pdflatex jade-zhao-resume.tex` (no images required).
+**Build:** from `matchaxmoxie/latex/` run e.g. `pdflatex jade-zhao-resume.tex` (no images required). Run twice if you need stable references. Copy or move the generated `.pdf` into **`site/`** with the same basename as the badges (e.g. `jade-zhao-profile-full.pdf`) so GitHub Pages and the README links serve your real output instead of the placeholder PDFs.
 
 ---
 
