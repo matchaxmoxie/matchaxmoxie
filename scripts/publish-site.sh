@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Push matchaxmoxie/site/ to the public repo (root = Pages site).
+# Push matchaxmoxie/ to the public repo (root = Pages site).
 # Prereqs: git remote "matchaxmoxie" → git@github.com:matchaxmoxie/matchaxmoxie.git
 #          SSH access as a user with push permission to that repo.
 set -euo pipefail
@@ -13,7 +13,7 @@ if ! git remote get-url matchaxmoxie &>/dev/null; then
 fi
 
 BRANCH="tmp-mxm-site-push-$(date +%s)"
-git subtree split --prefix=matchaxmoxie/site -b "$BRANCH"
+git subtree split --prefix=matchaxmoxie -b "$BRANCH"
 git push matchaxmoxie "$BRANCH:main"
 git branch -D "$BRANCH"
-echo "Done. Pushed matchaxmoxie/site/ to matchaxmoxie/matchaxmoxie main."
+echo "Done. Pushed matchaxmoxie/ to matchaxmoxie/matchaxmoxie main."
