@@ -101,10 +101,9 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ---
 
-## **🌐 GitHub Pages & local preview**
+## **🌐 GitHub Pages**
 
-- **Production:** [https://matchaxmoxie.github.io/matchaxmoxie/](https://matchaxmoxie.github.io/matchaxmoxie/)
+- **Live site:** [https://matchaxmoxie.github.io/matchaxmoxie/](https://matchaxmoxie.github.io/matchaxmoxie/)
 - **Deploy / custom domain / monorepo:** see [`DEPLOY.md`](DEPLOY.md) (includes the optional UCM workflow `.github/workflows/matchaxmoxie-pages.yml` when this folder lives inside the UCM repo).
-- **Local:** from this directory run `python3 -m http.server 8080` and open [http://localhost:8080](http://localhost:8080) so `resume.pdf` and images resolve like on Pages.
 
 If you change the repo name or site URL, update the absolute URLs in the `<head>` of [`index.html`](index.html) (`canonical`, `og:url`, `og:image`).
