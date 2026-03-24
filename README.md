@@ -21,25 +21,22 @@
 | Folder | Contents |
 |--------|----------|
 | **`site/`** | GitHub Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css), [`j.adezhao.jpg`](site/j.adezhao.jpg), [`resume.pdf`](site/resume.pdf) |
-| **`latex/`** | All `jade-zhao-*.tex` sources; compile from **`latex/`** (see below) |
-| **`latex/reference/`** | Third-party layout scans (`reference-*.png` / `.jpeg`) embedded by the `.tex` files |
+| **`latex/`** | Original `jade-zhao-*.tex` portfolio sources (Jade-only voice; no third-party résumé scans) |
 | **`docs/`** | [`DEPLOY.md`](docs/DEPLOY.md) (Pages options), [`.markdownlint.yaml`](docs/.markdownlint.yaml) (README / profile Markdown style) |
 
 ### **`latex/` sources**
 
 | File | Role |
 |------|------|
-| [`jade-zhao-header.tex`](latex/jade-zhao-header.tex) | Shared contact block; `\input{}` from other sources |
-| [`jade-zhao-ref-include.tex`](latex/jade-zhao-ref-include.tex) | `graphicx` + `\graphicspath{{reference/}}` + layout-scan figure macros |
-| [`jade-zhao-resume.tex`](latex/jade-zhao-resume.tex) | Compact résumé + two layout appendix pages |
-| [`jade-zhao-profile-full.tex`](latex/jade-zhao-profile-full.tex) | Full profile + appendix of all six reference scans |
-| [`jade-zhao-quotes-principles.tex`](latex/jade-zhao-quotes-principles.tex) | Boxed quotes + principles + scan |
-| [`jade-zhao-three-pillars.tex`](latex/jade-zhao-three-pillars.tex) | Three pillars + scan |
-| [`jade-zhao-inclusive-tech-statement.tex`](latex/jade-zhao-inclusive-tech-statement.tex) | Statement + scan |
-| [`jade-zhao-philosophy-mentorship.tex`](latex/jade-zhao-philosophy-mentorship.tex) | Philosophy letter + scan |
-| [`jade-zhao-layout-references.tex`](latex/jade-zhao-layout-references.tex) | PDF catalog of reference scans only |
+| [`jade-zhao-header.tex`](latex/jade-zhao-header.tex) | Shared contact block + @matchaxmoxie; `\input{}` from other sources |
+| [`jade-zhao-resume.tex`](latex/jade-zhao-resume.tex) | Compact résumé |
+| [`jade-zhao-profile-full.tex`](latex/jade-zhao-profile-full.tex) | Long-form profile: who I am, Matchaxmoxie, quotes, pillars, experience, projects |
+| [`jade-zhao-quotes-principles.tex`](latex/jade-zhao-quotes-principles.tex) | Boxed quotes + principles in first person |
+| [`jade-zhao-three-pillars.tex`](latex/jade-zhao-three-pillars.tex) | Numbered pillars (community / technical depth / first gen \& access) |
+| [`jade-zhao-inclusive-tech-statement.tex`](latex/jade-zhao-inclusive-tech-statement.tex) | Short statement on access and how you want to work |
+| [`jade-zhao-philosophy-mentorship.tex`](latex/jade-zhao-philosophy-mentorship.tex) | Mentorship, clients, and shipping usable systems |
 
-**Build:** from repo `matchaxmoxie/latex/` run e.g. `pdflatex jade-zhao-resume.tex` (paths assume `latex/reference/` for images).
+**Build:** from `matchaxmoxie/latex/` run e.g. `pdflatex jade-zhao-resume.tex` (no images required).
 
 ---
 
