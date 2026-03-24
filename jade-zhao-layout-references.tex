@@ -1,59 +1,28 @@
-% Optional: compiles a single PDF of layout reference scans (third-party sample resumes).
-% Rename the image files on disk to match \includegraphics paths below after mv.
+% Catalog PDF: all reference-* scans in one place. Content in images is third-party (not Jade Zhao).
+% Hero photo j.adezhao.jpg is intentionally not included here (web / print headshot only).
 
 \documentclass[11pt]{article}
 
 \usepackage[margin=0.75in]{geometry}
-\usepackage{graphicx}
-\usepackage{caption}
+\input{jade-zhao-ref-include}
 
 \pagestyle{empty}
-\captionsetup{font=small,labelfont=bf}
 
 \begin{document}
 
 \begin{center}
     {\Large \textbf{Layout reference scans}}\\
-    \vspace{0.25em}
-    {\small Personal LaTeX sources for Jade Zhao are \texttt{jade-zhao-*.tex}; these images are external samples kept for formatting ideas only.}
+    \vspace{0.35em}
+    {\small Third-party document samples for visual structure only. Not Jade Zhao's résumé or identity. Jade's typeset sources are \texttt{jade-zhao-*.tex}; portrait asset is \texttt{j.adezhao.jpg} (not embedded here).}
 \end{center}
 
-\vspace{1em}
+\vspace{0.75em}
 
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=\linewidth]{reference-resume-traditional-layout.jpeg}
-    \caption{Reference: traditional one-column resume layout.}
-\end{figure}
-
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=\linewidth]{reference-resume-detailed-layout.png}
-    \caption{Reference: resume with expanded experience section.}
-\end{figure}
-
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=0.95\linewidth]{reference-quotes-principles-layout.png}
-    \caption{Reference: quotes + principles document.}
-\end{figure}
-
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=\linewidth]{reference-three-pillars-programming-layout.jpeg}
-    \caption{Reference: dated letter with numbered pillars.}
-\end{figure}
-
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=\linewidth]{reference-dei-statement-layout.png}
-    \caption{Reference: statement letter with rule below header.}
-\end{figure}
-
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=\linewidth]{reference-philosophy-statement-layout.png}
-    \caption{Reference: long-form philosophy statement.}
-\end{figure}
+\JadeLayoutRefScanOnly{reference-resume-traditional-layout.jpeg}{Third-party sample: traditional one-column résumé layout.}
+\JadeLayoutRefScanOnly{reference-resume-detailed-layout.png}{Third-party sample: résumé with expanded experience section.}
+\JadeLayoutRefScanOnly{reference-quotes-principles-layout.png}{Third-party sample: quotes + principles document.}
+\JadeLayoutRefScanOnly{reference-three-pillars-programming-layout.jpeg}{Third-party sample: dated letter with numbered pillars.}
+\JadeLayoutRefScanOnly{reference-dei-statement-layout.png}{Third-party sample: statement letter with rule below header.}
+\JadeLayoutRefScanOnly{reference-philosophy-statement-layout.png}{Third-party sample: long-form philosophy statement.}
 
 \end{document}

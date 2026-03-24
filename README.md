@@ -23,14 +23,15 @@
 | [`j.adezhao.jpg`](j.adezhao.jpg) | Hero photo, favicon, Apple touch icon |
 | [`resume.pdf`](resume.pdf) | Resume download linked from the site and badges above |
 | [`jade-zhao-header.tex`](jade-zhao-header.tex) | Shared contact block; `\input{}` by the other `jade-zhao-*.tex` sources |
-| [`jade-zhao-resume.tex`](jade-zhao-resume.tex) | Compact résumé (section rules); `pdflatex jade-zhao-resume.tex` |
-| [`jade-zhao-profile-full.tex`](jade-zhao-profile-full.tex) | Full profile + quotes + pillars + experience (former monolithic `images.tex`) |
-| [`jade-zhao-quotes-principles.tex`](jade-zhao-quotes-principles.tex) | Boxed “How I Think” + Guiding Principles |
-| [`jade-zhao-three-pillars.tex`](jade-zhao-three-pillars.tex) | Dated letter-style “Three Pillars (Tech for Good)” |
-| [`jade-zhao-inclusive-tech-statement.tex`](jade-zhao-inclusive-tech-statement.tex) | Short inclusive-tech / accessibility statement |
-| [`jade-zhao-philosophy-mentorship.tex`](jade-zhao-philosophy-mentorship.tex) | Longer mentorship + systems philosophy letter |
-| [`jade-zhao-layout-references.tex`](jade-zhao-layout-references.tex) | PDF of `reference-*` scans (layout ideas only) |
-| [`reference-resume-traditional-layout.jpeg`](reference-resume-traditional-layout.jpeg) (etc.) | Renamed reference scans — not Jade’s content; pair with `jade-zhao-layout-references.tex` |
+| [`jade-zhao-ref-include.tex`](jade-zhao-ref-include.tex) | Shared `\input` for `graphicx` + captions + `\JadeLayoutRefFigure{file}{caption}` (embeds `reference-*` scans with a “third-party layout only” note; never `j.adezhao.jpg`) |
+| [`jade-zhao-resume.tex`](jade-zhao-resume.tex) | Compact résumé + appendix pages with two layout reference scans |
+| [`jade-zhao-profile-full.tex`](jade-zhao-profile-full.tex) | Full profile + appendix of all six `reference-*` scans |
+| [`jade-zhao-quotes-principles.tex`](jade-zhao-quotes-principles.tex) | Boxed “How I Think” + Guiding Principles + matching layout scan |
+| [`jade-zhao-three-pillars.tex`](jade-zhao-three-pillars.tex) | “Three Pillars (Tech for Good)” + pillars layout scan |
+| [`jade-zhao-inclusive-tech-statement.tex`](jade-zhao-inclusive-tech-statement.tex) | Inclusive-tech statement + statement layout scan |
+| [`jade-zhao-philosophy-mentorship.tex`](jade-zhao-philosophy-mentorship.tex) | Mentorship / systems philosophy + long-form layout scan |
+| [`jade-zhao-layout-references.tex`](jade-zhao-layout-references.tex) | Standalone PDF catalog of all `reference-*` scans only (no `j.adezhao.jpg`) |
+| [`reference-resume-traditional-layout.jpeg`](reference-resume-traditional-layout.jpeg) (etc.) | Third-party layout scans embedded by the `.tex` above; pixels are not Jade’s résumé text |
 | [`DEPLOY.md`](DEPLOY.md) | How the site is hosted (this repo vs UCM monorepo Actions) |
 
 ---
