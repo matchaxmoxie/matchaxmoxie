@@ -6,12 +6,28 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
 [![Resume](https://img.shields.io/badge/Resume-PDF-4A4A4A?style=flat)](resume.pdf)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-e85a9e?style=flat&logo=github)](https://matchaxmoxie.github.io/matchaxmoxie/)
 
 </div>
 
+**Live pink landing page:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — static HTML/CSS, no framework.
+
 ---
 
-### **🔧 Technical Stack**
+## **📁 What’s in this folder**
+
+| Item | What it is |
+|------|------------|
+| [`index.html`](index.html) | GitHub Pages site: hero, vibes, social + resume links; canonical + Open Graph URLs for the live domain |
+| [`styles.css`](styles.css) | Pink-first styles (Fraunces + Nunito) |
+| [`j.adezhao.jpg`](j.adezhao.jpg) | Hero photo, favicon, Apple touch icon |
+| [`resume.pdf`](resume.pdf) | Resume download linked from the site and badges above |
+| [`images.tex`](images.tex) | LaTeX resume source (`pdflatex images.tex` → PDF if you use that workflow) |
+| [`DEPLOY.md`](DEPLOY.md) | How the site is hosted (this repo vs UCM monorepo Actions) |
+
+---
+
+## **🔧 Technical Stack**
 **Languages & Frameworks:**
 `Python` · `TypeScript` · `React` · `Node.js` · `SQL` · `D3.js` · `PostgreSQL`
 
@@ -26,7 +42,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ---
 
-### **🌍 Research & Cross-Cultural Skills**
+## **🌍 Research & Cross-Cultural Skills**
 - **User-Centered Research**: Mixed-methods studies to inform inclusive tech design
 - **Cross-Cultural Analysis**: Tech adoption in Spain/US, fintech, and digital equity
 - **Field Research**: Madrid’s startup ecosystem and smart city initiatives
@@ -34,7 +50,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ---
 
-### **💡 Leadership & Collaboration**
+## **💡 Leadership & Collaboration**
 - **Mentorship**: Guiding first-gen students in tech literacy and career readiness
 - **Stakeholder Alignment**: Bridging technical solutions with organizational goals
 - **Advocacy**: Digital accessibility, ethical AI, and tech-for-good initiatives
@@ -42,7 +58,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ---
 
-### **🚀 Experience**
+## **🚀 Experience**
 
 **Software Engineer** · *Self-directed, Jan 2026 – Present*
 - Building full-stack applications with clean architecture and accessibility compliance
@@ -62,7 +78,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ---
 
-### **🎓 Education**
+## **🎓 Education**
 **B.S. in Informatics** (Business & Society)  
 *Indiana University Luddy School of Informatics, Computing, and Engineering*
 - Hudson & Holland Scholar
@@ -71,7 +87,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ---
 
-### **🌱 Beyond Code**
+## **🌱 Beyond Code**
 - **Film Photography**: Deliberate, slow, no undos
 - **Jade Plants & Side Projects**: Keeping both alive and thriving
 - **Current Read**: Ask me!
@@ -82,3 +98,12 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 <div align="center">
 <small><i>Building technology that works for everyone.</i> 🌍</small>
 </div>
+
+---
+
+## **🌐 GitHub Pages**
+
+- **Live site:** [https://matchaxmoxie.github.io/matchaxmoxie/](https://matchaxmoxie.github.io/matchaxmoxie/)
+- **Deploy / custom domain / monorepo:** see [`DEPLOY.md`](DEPLOY.md) (includes the optional UCM workflow `.github/workflows/matchaxmoxie-pages.yml` when this folder lives inside the UCM repo).
+
+If you change the repo name or site URL, update the absolute URLs in the `<head>` of [`index.html`](index.html) (`canonical`, `og:url`, `og:image`).
