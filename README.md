@@ -20,9 +20,9 @@
 
 </div>
 
-**Layout:** Only this **`README.md`** lives at `matchaxmoxie/` root. Site assets, LaTeX, and deploy notes sit in subfolders below.
+**Layout:** Only this **`README.md`** lives at `matchaxmoxie/` root. Site assets, LaTeX sources, and deploy scripts live in subfolders below.
 
-**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) soft, human copy on **`site/`** (lilies, golden-retriever work energy, no MBA deck); LaTeX mirrors in `latex/jade-zhao-profile-full.tex` when you want the longer version.
+**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) with soft, human copy on **`site/`**. Longer-form source content lives in `latex/jade-zhao-profile-full.tex`.
 
 ---
 
@@ -34,6 +34,15 @@
 | **`latex/`** | `jade-zhao-*.tex` sources; **[`BUILD.md`](latex/BUILD.md)** = `pdflatex` + copy paths into `site/` |
 | **`scripts/`** | [`publish-site.sh`](scripts/publish-site.sh) pushes **`site/`** to [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) via `git subtree split` (needs SSH + `matchaxmoxie` remote) |
 | **`docs/`** | [`.markdownlint.yaml`](docs/.markdownlint.yaml) (README / profile Markdown style). Deploy notes: this README (**GitHub Pages** below). |
+
+### **Quick start**
+
+```bash
+cd matchaxmoxie/site
+python3 -m http.server 8080
+```
+
+Open `http://127.0.0.1:8080`.
 
 ### **`latex/` sources**
 
