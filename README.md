@@ -39,7 +39,8 @@
 
 | File | Role |
 |------|------|
-| [`jade-zhao-header.tex`](latex/jade-zhao-header.tex) | Shared contact block + @matchaxmoxie; `\input{}` from other sources |
+| [`jade-zhao-header.tex`](latex/jade-zhao-header.tex) | Shared contact block + @matchaxmoxie; `\input{}` after `\begin{document}` |
+| [`jade-zhao-pink-highlight.tex`](latex/jade-zhao-pink-highlight.tex) | Pink `\hl{...}` / `\pinkhl{...}` (soul + `MatchaxMoxiePink`); `\input{}` in preamble before `hyperref` |
 | [`jade-zhao-resume.tex`](latex/jade-zhao-resume.tex) | Compact résumé |
 | [`jade-zhao-profile-full.tex`](latex/jade-zhao-profile-full.tex) | Long-form profile: who I am, Matchaxmoxie, quotes, pillars, experience, projects |
 | [`jade-zhao-quotes-principles.tex`](latex/jade-zhao-quotes-principles.tex) | Boxed quotes + principles in first person |
@@ -85,19 +86,19 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ## **🚀 Experience**
 
-**Software Engineer** · *Self-directed, Jan 2026 – Present*
+**Software Engineer** · *Self-directed, Jan 2026 to present*
 - Building full-stack applications with clean architecture and accessibility compliance
 - Open-sourcing reusable code for civic tech and nonprofit projects
 
-**AI Research Assistant** · *IU Luddy Proactive Health Informatics, May 2024 – Dec 2025*
+**AI Research Assistant** · *IU Luddy Proactive Health Informatics, May 2024 to Dec 2025*
 - Developed HIPAA-compliant data systems for real-time patient monitoring
 - Designed ethical AI safeguards for health informatics applications
 
-**Machine Learning Researcher** · *Luddy ServeIT Clinic, Jan 2024 – Dec 2025*
+**Machine Learning Researcher** · *Luddy ServeIT Clinic, Jan 2024 to Dec 2025*
 - Built AI solutions for nonprofits, focusing on bias detection and community impact
 - Collaborated with cross-functional teams to deliver transparent, user-centered tools
 
-**Assistant Instructor** · *IU Office of Student Life, Aug 2023 – Dec 2025*
+**Assistant Instructor** · *IU Office of Student Life, Aug 2023 to Dec 2025*
 - Mentored first-generation students in tech skills and academic success
 - Automated resource-sharing workflows for advisors, improving efficiency
 

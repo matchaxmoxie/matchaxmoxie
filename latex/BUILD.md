@@ -5,6 +5,14 @@ Sources are `jade-zhao-*.tex` in this **`latex/`** folder. Outputs for the live 
 ## Requirements
 
 - `pdflatex` (TeX Live, MacTeX, MiKTeX, etc.)
+- Pink marker highlights: sources `\input{jade-zhao-pink-highlight}` so you can write `\hl{like this}` or `\pinkhl{like this}` in the body (soft pink, matchaxmoxie site palette). Avoid `\hl` inside math or verbatim.
+
+## Shared style snippet
+
+| File | Role |
+|------|------|
+| [`jade-zhao-pink-highlight.tex`](jade-zhao-pink-highlight.tex) | `xcolor` + `soul`: `\sethlcolor{MatchaxMoxiePink}` (`#FFD6E8`). Loaded before `hyperref` in each `jade-zhao-*.tex`. |
+| [`jade-zhao-header.tex`](jade-zhao-header.tex) | Contact block; `\input{}` after `\begin{document}` |
 
 ## One file
 
@@ -36,7 +44,7 @@ Repeat `pdflatex` for each:
 | `jade-zhao-philosophy-mentorship.tex` | `jade-zhao-philosophy-mentorship.pdf` |
 | `jade-zhao-resume.tex` | `jade-zhao-resume.pdf` and `resume.pdf` |
 
-`jade-zhao-header.tex` is `\input{}` by other files; don’t compile it alone.
+`jade-zhao-header.tex` and `jade-zhao-pink-highlight.tex` are fragments; don’t compile them alone.
 
 ## Placeholders
 
