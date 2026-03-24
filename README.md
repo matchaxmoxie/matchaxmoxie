@@ -12,7 +12,7 @@
 
 **Layout:** Only this **`README.md`** lives at `matchaxmoxie/` root. Site assets, LaTeX, and deploy notes sit in subfolders below.
 
-**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — pink static HTML from **`site/`**; hero and **three-pillar strip** mirror `latex/jade-zhao-profile-full.tex` (community / technical depth / equity & access), with named IU + Madrid + project proof.
+**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — pink static HTML from **`site/`**; hero and **three-pillar strip** mirror `latex/jade-zhao-profile-full.tex` (community / technical depth / first gen & access), with named IU + Madrid + project proof.
 
 ---
 
@@ -60,7 +60,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ## **🌍 Research & Cross-Cultural Skills**
 - **User-Centered Research**: Mixed-methods studies to inform inclusive tech design
-- **Cross-Cultural Analysis**: Tech adoption in Spain/US, fintech, and digital equity
+- **Cross-Cultural Analysis**: Tech adoption in Spain/US, fintech, and access across student backgrounds
 - **Field Research**: Madrid’s startup ecosystem and smart city initiatives
 - **Bilingual Communication**: Native English, professional Mandarin, conversational Spanish
 
