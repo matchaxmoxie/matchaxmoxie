@@ -1,7 +1,7 @@
 <div align="center">
 
 # **Jade Zhao** 🪴
-**Software Engineer · Ethical AI · Accessibility — Luddy + Kelley, shipped work (health informatics, ServeIT, civic & nonprofit WCAG)**
+**Informatics + Kelley · Madrid semester · likes accessible tech, kind teams, and pink HTML (health informatics, ServeIT, civic stuff too)**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
@@ -10,7 +10,7 @@
 
 <br/>
 
-<sub><b>LaTeX → PDF</b> (one-page placeholders in <code>site/</code>; replace after <code>pdflatex</code> in <code>latex/</code>)</sub><br/>
+<sub><b>LaTeX → PDF</b> (tiny placeholder PDFs in <code>site/</code> until you compile &amp; swap)</sub><br/>
 [![Profile PDF](https://img.shields.io/badge/Profile-PDF-e85a9e?style=flat)](site/jade-zhao-profile-full.pdf)
 [![Quotes PDF](https://img.shields.io/badge/Quotes-PDF-e85a9e?style=flat)](site/jade-zhao-quotes-principles.pdf)
 [![Pillars PDF](https://img.shields.io/badge/Pillars-PDF-e85a9e?style=flat)](site/jade-zhao-three-pillars.pdf)
@@ -22,7 +22,7 @@
 
 **Layout:** Only this **`README.md`** lives at `matchaxmoxie/` root. Site assets, LaTeX, and deploy notes sit in subfolders below.
 
-**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — pink static HTML from **`site/`**; hero and **three-pillar strip** mirror `latex/jade-zhao-profile-full.tex` (community / technical depth / first gen & access), with named IU + Madrid + project proof.
+**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — soft, human copy on **`site/`** (lilies, golden-retriever work energy, no MBA deck); LaTeX mirrors in `latex/jade-zhao-profile-full.tex` when you want the longer version.
 
 ---
 
@@ -59,10 +59,10 @@
 Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 **Specializations:**
-- **Full-Stack Development**: Scalable, accessible web applications
-- **Ethical AI/ML**: Bias mitigation, transparent systems, community impact
-- **Data Visualization**: Interactive dashboards for civic and health data
-- **Civic Tech**: Digital tools for nonprofits and underserved communities
+- **Full-stack**: Accessible web things that real people click
+- **Ethical AI/ML**: Keeping humans in the loop, fewer creepy surprises
+- **Data viz**: Charts that tell the truth (civic + health-ish contexts)
+- **Civic tech**: Nonprofit and city stuff that should not suck to use
 
 ---
 
@@ -120,7 +120,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 ---
 
 <div align="center">
-<small><i>Inclusive tech as a strategy problem — shipped with heart.</i> 🌍</small>
+<small><i>Building things that feel kind in your hands.</i> 🌷</small>
 </div>
 
 ---

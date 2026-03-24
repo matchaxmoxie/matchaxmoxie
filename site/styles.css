@@ -222,12 +222,13 @@ a:hover {
 
 .exec-strip__label {
   display: block;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--champagne);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--pink-800);
   margin-bottom: 0.45rem;
+  font-family: var(--font-display);
 }
 
 .exec-strip__text {
