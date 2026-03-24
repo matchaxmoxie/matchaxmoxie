@@ -1,4 +1,8 @@
-/* Matchaxmoxie — pink brand, graduate / MBA-adjacent polish */
+/*
+ * Matchaxmoxie pink-first brand (lilies, soft gradients).
+ * Keep backgrounds, borders, links, and CTAs in the pink scale below;
+ * champagne + matcha stay tiny accents only (don’t drift the page neutral).
+ */
 
 :root {
   --pink-50: #fff9f8;
@@ -139,7 +143,7 @@ a:hover {
   background: linear-gradient(180deg, var(--white), var(--pink-100));
   border: 1px solid var(--pink-300);
   border-radius: 999px;
-  box-shadow: 0 1px 0 var(--champagne-soft);
+  box-shadow: 0 1px 0 rgba(244, 114, 182, 0.25);
 }
 
 .hero-title {
@@ -198,7 +202,7 @@ a:hover {
   filter: drop-shadow(0 2px 4px var(--shadow));
 }
 
-/* Executive strip — thesis / moat / proof */
+/* Executive strip thesis / moat / proof */
 .exec-strip {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
@@ -290,7 +294,7 @@ a:hover {
 .card {
   background: linear-gradient(145deg, var(--white), var(--pink-100));
   border: 2px solid var(--pink-200);
-  border-left: 4px solid var(--champagne);
+  border-left: 4px solid var(--pink-500);
   border-radius: var(--radius);
   padding: 1.15rem 1.25rem;
   box-shadow: 0 8px 24px var(--shadow);
@@ -347,8 +351,15 @@ a:hover {
   left: 2rem;
   right: 2rem;
   height: 3px;
-  background: linear-gradient(90deg, transparent, var(--champagne), transparent);
-  opacity: 0.9;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--pink-400),
+    var(--pink-600),
+    var(--pink-400),
+    transparent
+  );
+  opacity: 0.95;
   border-radius: 0 0 2px 2px;
 }
 
@@ -397,7 +408,7 @@ a:hover {
 }
 
 .btn:focus-visible {
-  outline: 3px solid var(--matcha-soft);
+  outline: 3px solid var(--pink-400);
   outline-offset: 3px;
 }
 

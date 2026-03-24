@@ -10,14 +10,14 @@ Published **site root** = contents of **`site/`** (`index.html`, `styles.css`, `
 
 ---
 
-## Option A — Dedicated `matchaxmoxie` repo (typical for matchaxmoxie.github.io)
+## Option A Dedicated `matchaxmoxie` repo (typical for matchaxmoxie.github.io)
 
 1. Keep this folder layout: **`site/`** holds all static assets.
 2. **Settings → Pages → Source**: branch **`main`**, folder **`/site`** (not repo root).
 
 ---
 
-## Option B — UCM monorepo (GitHub Actions)
+## Option B UCM monorepo (GitHub Actions)
 
 Workflow: [`../../.github/workflows/matchaxmoxie-pages.yml`](../../.github/workflows/matchaxmoxie-pages.yml). It uploads **`matchaxmoxie/site`** as the Pages artifact when `matchaxmoxie/**` or the workflow changes.
 

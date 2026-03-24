@@ -22,7 +22,7 @@
 
 **Layout:** Only this **`README.md`** lives at `matchaxmoxie/` root. Site assets, LaTeX, and deploy notes sit in subfolders below.
 
-**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — soft, human copy on **`site/`** (lilies, golden-retriever work energy, no MBA deck); LaTeX mirrors in `latex/jade-zhao-profile-full.tex` when you want the longer version.
+**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) soft, human copy on **`site/`** (lilies, golden-retriever work energy, no MBA deck); LaTeX mirrors in `latex/jade-zhao-profile-full.tex` when you want the longer version.
 
 ---
 
@@ -30,7 +30,7 @@
 
 | Folder | Contents |
 |--------|----------|
-| **`site/`** | GitHub Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css), [`j.adezhao.jpg`](site/j.adezhao.jpg), [`resume.pdf`](site/resume.pdf), plus [`jade-zhao-*.pdf`](site/) placeholders (replace after compiling matching `.tex` in `latex/`) |
+| **`site/`** | GitHub Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css) (pink-first palette), [`j.adezhao.jpg`](site/j.adezhao.jpg), [`resume.pdf`](site/resume.pdf), plus [`jade-zhao-*.pdf`](site/) placeholders (replace after compiling matching `.tex` in `latex/`) |
 | **`latex/`** | Original `jade-zhao-*.tex` portfolio sources (Jade-only voice; no third-party résumé scans) |
 | **`docs/`** | [`DEPLOY.md`](docs/DEPLOY.md) (Pages options), [`.markdownlint.yaml`](docs/.markdownlint.yaml) (README / profile Markdown style) |
 
