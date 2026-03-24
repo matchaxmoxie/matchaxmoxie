@@ -183,9 +183,20 @@ a:hover {
 
 .hero-lede {
   max-width: 36rem;
-  margin: 0 auto 1.75rem;
+  margin: 0 auto 0.65rem;
   color: var(--rose-deep);
   opacity: 0.95;
+}
+
+.hero-interests {
+  max-width: 34rem;
+  margin: 0 auto 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--rose-deep);
+  opacity: 0.88;
+  text-align: center;
 }
 
 .hero-zh {
@@ -375,6 +386,16 @@ a:hover {
 .links-panel__lede {
   margin: 0 0 1rem;
   opacity: 0.95;
+}
+
+.links-panel__mailto {
+  font-weight: 800;
+  text-decoration-thickness: 2px;
+  color: var(--pink-900);
+}
+
+.links-panel__mailto:hover {
+  color: var(--pink-800);
 }
 
 .btn-row {

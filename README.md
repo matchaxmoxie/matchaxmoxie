@@ -1,7 +1,7 @@
 <div align="center">
 
 # **Jade Zhao** 🪴
-**Informatics + Kelley · Madrid semester · likes accessible tech, kind teams, and pink HTML (health informatics, ServeIT, civic stuff too)**
+**Informatics + Kelley · Madrid · access-minded tech, pink static site. Health / ServeIT / civic on the side. @matchaxmoxie = food on IG.**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
@@ -30,9 +30,9 @@
 
 | Folder | Contents |
 |--------|----------|
-| **`site/`** | GitHub Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css) (pink-first palette), [`j.adezhao.jpg`](site/j.adezhao.jpg), [`resume.pdf`](site/resume.pdf), plus [`jade-zhao-*.pdf`](site/) placeholders (replace after compiling matching `.tex` in `latex/`) |
+| **`site/`** | GitHub Pages root: [`index.html`](site/index.html) (hero + **Say hi**: mailto `jlzhao@iu.edu`, socials), [`styles.css`](site/styles.css) (pink-first palette), [`j.adezhao.jpg`](site/j.adezhao.jpg), [`resume.pdf`](site/resume.pdf), plus [`jade-zhao-*.pdf`](site/) placeholders (replace after compiling matching `.tex` in `latex/`) |
 | **`latex/`** | Original `jade-zhao-*.tex` portfolio sources (Jade-only voice; no third-party résumé scans) |
-| **`docs/`** | [`DEPLOY.md`](docs/DEPLOY.md) (Pages options), [`.markdownlint.yaml`](docs/.markdownlint.yaml) (README / profile Markdown style) |
+| **`docs/`** | [`.markdownlint.yaml`](docs/.markdownlint.yaml) (README / profile Markdown style). GitHub Pages / deploy notes are in this README (**GitHub Pages** section below). |
 
 ### **`latex/` sources**
 
@@ -47,7 +47,7 @@
 | [`jade-zhao-philosophy-mentorship.tex`](latex/jade-zhao-philosophy-mentorship.tex) | Mentorship, clients, and shipping usable systems |
 | [`regenerate-placeholder-pdfs.py`](latex/regenerate-placeholder-pdfs.py) | Optional: regenerate minimal `site/jade-zhao-*.pdf` stubs |
 
-**Build:** from `matchaxmoxie/latex/` run e.g. `pdflatex jade-zhao-resume.tex` (no images required). Run twice if you need stable references. Copy or move the generated `.pdf` into **`site/`** with the same basename as the badges (e.g. `jade-zhao-profile-full.pdf`) so GitHub Pages and the README links serve your real output instead of the placeholder PDFs.
+**Build:** from `matchaxmoxie/latex/` run e.g. `pdflatex jade-zhao-resume.tex` (no images required). Run twice if you need stable references. Copy or move the generated `.pdf` into **`site/`** with the same basename as the badges (e.g. `jade-zhao-profile-full.pdf`) so GitHub Pages and the README links serve your real output instead of the placeholder PDFs. The homepage **Download resume (PDF)** button uses **`site/resume.pdf`**: after compiling `jade-zhao-resume.tex`, copy that output to **`site/resume.pdf`** (overwrite) so the download matches the TeX story.
 
 ---
 
@@ -127,7 +127,25 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ## **🌐 GitHub Pages**
 
+Published **site root** = everything inside **`site/`** (`index.html`, `styles.css`, `j.adezhao.jpg`, `resume.pdf`, etc.). **`latex/`** and **`docs/`** are not part of the live URL.
+
 - **Live site:** [https://matchaxmoxie.github.io/matchaxmoxie/](https://matchaxmoxie.github.io/matchaxmoxie/)
-- **Deploy:** [`docs/DEPLOY.md`](docs/DEPLOY.md) (UCM workflow [`.github/workflows/matchaxmoxie-pages.yml`](../.github/workflows/matchaxmoxie-pages.yml) publishes **`matchaxmoxie/site`**).
+
+[`site/index.html`](site/index.html) sets canonical URL and Open Graph / Twitter meta tags. If you rename the repo or add a custom domain, update those tags in `<head>`.
+
+### Dedicated `matchaxmoxie` repo (typical for matchaxmoxie.github.io)
+
+1. Keep this layout: **`site/`** holds all static assets.
+2. **Settings → Pages → Source:** branch **`main`**, folder **`/site`** (not repo root).
+
+### UCM monorepo (GitHub Actions)
+
+Workflow: [`.github/workflows/matchaxmoxie-pages.yml`](../.github/workflows/matchaxmoxie-pages.yml) uploads **`matchaxmoxie/site`** when `matchaxmoxie/**` or that workflow changes.
+
+1. **Settings → Pages → Source: GitHub Actions**
+2. Push and confirm **Actions** is green
+3. URL is usually `https://<owner>.github.io/<repo>/` (relative links inside `site/` stay the same)
+
+**Run manually:** **Actions → Deploy matchaxmoxie to Pages → Run workflow**.
 
 If you change the repo name or site URL, update the absolute URLs in the `<head>` of [`site/index.html`](site/index.html) (`canonical`, `og:url`, `og:image`).
