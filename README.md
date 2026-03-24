@@ -5,34 +5,41 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
-[![Resume](https://img.shields.io/badge/Resume-PDF-4A4A4A?style=flat)](resume.pdf)
+[![Resume](https://img.shields.io/badge/Resume-PDF-4A4A4A?style=flat)](site/resume.pdf)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-e85a9e?style=flat&logo=github)](https://matchaxmoxie.github.io/matchaxmoxie/)
 
 </div>
 
-**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — pink static HTML; hero and **three-pillar strip** mirror `jade-zhao-profile-full.tex` (community / technical depth / equity & access), with named IU + Madrid + project proof.
+**Layout:** Only this **`README.md`** lives at `matchaxmoxie/` root. Site assets, LaTeX, and deploy notes sit in subfolders below.
+
+**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — pink static HTML from **`site/`**; hero and **three-pillar strip** mirror `latex/jade-zhao-profile-full.tex` (community / technical depth / equity & access), with named IU + Madrid + project proof.
 
 ---
 
-## **📁 What’s in this folder**
+## **📁 Folders**
 
-| Item | What it is |
-|------|------------|
-| [`index.html`](index.html) | GitHub Pages: Jade-specific hero (Hutton, Luddy/Kelley), three-pillar strip, project-named cards, LinkedIn + **GitHub** + IG + résumé; canonical + Open Graph |
-| [`styles.css`](styles.css) | Pink + champagne accents; Fraunces + Plus Jakarta Sans |
-| [`j.adezhao.jpg`](j.adezhao.jpg) | Hero photo, favicon, Apple touch icon |
-| [`resume.pdf`](resume.pdf) | Resume download linked from the site and badges above |
-| [`jade-zhao-header.tex`](jade-zhao-header.tex) | Shared contact block; `\input{}` by the other `jade-zhao-*.tex` sources |
-| [`jade-zhao-ref-include.tex`](jade-zhao-ref-include.tex) | Shared `\input` for `graphicx` + captions + `\JadeLayoutRefFigure{file}{caption}` (embeds `reference-*` scans with a “third-party layout only” note; never `j.adezhao.jpg`) |
-| [`jade-zhao-resume.tex`](jade-zhao-resume.tex) | Compact résumé + appendix pages with two layout reference scans |
-| [`jade-zhao-profile-full.tex`](jade-zhao-profile-full.tex) | Full profile + appendix of all six `reference-*` scans |
-| [`jade-zhao-quotes-principles.tex`](jade-zhao-quotes-principles.tex) | Boxed “How I Think” + Guiding Principles + matching layout scan |
-| [`jade-zhao-three-pillars.tex`](jade-zhao-three-pillars.tex) | “Three Pillars (Tech for Good)” + pillars layout scan |
-| [`jade-zhao-inclusive-tech-statement.tex`](jade-zhao-inclusive-tech-statement.tex) | Inclusive-tech statement + statement layout scan |
-| [`jade-zhao-philosophy-mentorship.tex`](jade-zhao-philosophy-mentorship.tex) | Mentorship / systems philosophy + long-form layout scan |
-| [`jade-zhao-layout-references.tex`](jade-zhao-layout-references.tex) | Standalone PDF catalog of all `reference-*` scans only (no `j.adezhao.jpg`) |
-| [`reference-resume-traditional-layout.jpeg`](reference-resume-traditional-layout.jpeg) (etc.) | Third-party layout scans embedded by the `.tex` above; pixels are not Jade’s résumé text |
-| [`DEPLOY.md`](DEPLOY.md) | How the site is hosted (this repo vs UCM monorepo Actions) |
+| Folder | Contents |
+|--------|----------|
+| **`site/`** | GitHub Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css), [`j.adezhao.jpg`](site/j.adezhao.jpg), [`resume.pdf`](site/resume.pdf) |
+| **`latex/`** | All `jade-zhao-*.tex` sources; compile from **`latex/`** (see below) |
+| **`latex/reference/`** | Third-party layout scans (`reference-*.png` / `.jpeg`) embedded by the `.tex` files |
+| **`docs/`** | [`DEPLOY.md`](docs/DEPLOY.md) (Pages options), [`.markdownlint.yaml`](docs/.markdownlint.yaml) (README / profile Markdown style) |
+
+### **`latex/` sources**
+
+| File | Role |
+|------|------|
+| [`jade-zhao-header.tex`](latex/jade-zhao-header.tex) | Shared contact block; `\input{}` from other sources |
+| [`jade-zhao-ref-include.tex`](latex/jade-zhao-ref-include.tex) | `graphicx` + `\graphicspath{{reference/}}` + layout-scan figure macros |
+| [`jade-zhao-resume.tex`](latex/jade-zhao-resume.tex) | Compact résumé + two layout appendix pages |
+| [`jade-zhao-profile-full.tex`](latex/jade-zhao-profile-full.tex) | Full profile + appendix of all six reference scans |
+| [`jade-zhao-quotes-principles.tex`](latex/jade-zhao-quotes-principles.tex) | Boxed quotes + principles + scan |
+| [`jade-zhao-three-pillars.tex`](latex/jade-zhao-three-pillars.tex) | Three pillars + scan |
+| [`jade-zhao-inclusive-tech-statement.tex`](latex/jade-zhao-inclusive-tech-statement.tex) | Statement + scan |
+| [`jade-zhao-philosophy-mentorship.tex`](latex/jade-zhao-philosophy-mentorship.tex) | Philosophy letter + scan |
+| [`jade-zhao-layout-references.tex`](latex/jade-zhao-layout-references.tex) | PDF catalog of reference scans only |
+
+**Build:** from repo `matchaxmoxie/latex/` run e.g. `pdflatex jade-zhao-resume.tex` (paths assume `latex/reference/` for images).
 
 ---
 
@@ -113,6 +120,6 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 ## **🌐 GitHub Pages**
 
 - **Live site:** [https://matchaxmoxie.github.io/matchaxmoxie/](https://matchaxmoxie.github.io/matchaxmoxie/)
-- **Deploy / custom domain / monorepo:** see [`DEPLOY.md`](DEPLOY.md) (includes the optional UCM workflow `.github/workflows/matchaxmoxie-pages.yml` when this folder lives inside the UCM repo).
+- **Deploy:** [`docs/DEPLOY.md`](docs/DEPLOY.md) (UCM workflow [`.github/workflows/matchaxmoxie-pages.yml`](../.github/workflows/matchaxmoxie-pages.yml) publishes **`matchaxmoxie/site`**).
 
-If you change the repo name or site URL, update the absolute URLs in the `<head>` of [`index.html`](index.html) (`canonical`, `og:url`, `og:image`).
+If you change the repo name or site URL, update the absolute URLs in the `<head>` of [`site/index.html`](site/index.html) (`canonical`, `og:url`, `og:image`).
