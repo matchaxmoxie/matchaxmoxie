@@ -30,9 +30,10 @@
 
 | Folder | Contents |
 |--------|----------|
-| **`site/`** | GitHub Pages root: [`index.html`](site/index.html) (hero + **Say hi**: mailto `jlzhao@iu.edu`, socials), [`styles.css`](site/styles.css) (pink-first palette), [`j.adezhao.jpg`](site/j.adezhao.jpg), [`resume.pdf`](site/resume.pdf), plus [`jade-zhao-*.pdf`](site/) placeholders (replace after compiling matching `.tex` in `latex/`) |
-| **`latex/`** | Original `jade-zhao-*.tex` portfolio sources (Jade-only voice; no third-party résumé scans) |
-| **`docs/`** | [`.markdownlint.yaml`](docs/.markdownlint.yaml) (README / profile Markdown style). GitHub Pages / deploy notes are in this README (**GitHub Pages** section below). |
+| **`site/`** | GitHub Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css), assets, PDFs, **[`LICENSE`](site/LICENSE)** (MIT), **[`README.md`](site/README.md)** (local preview + links), **[`CONTRIBUTING.md`](site/CONTRIBUTING.md)** |
+| **`latex/`** | `jade-zhao-*.tex` sources; **[`BUILD.md`](latex/BUILD.md)** = `pdflatex` + copy paths into `site/` |
+| **`scripts/`** | [`publish-site.sh`](scripts/publish-site.sh) pushes **`site/`** to [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) via `git subtree split` (needs SSH + `matchaxmoxie` remote) |
+| **`docs/`** | [`.markdownlint.yaml`](docs/.markdownlint.yaml) (README / profile Markdown style). Deploy notes: this README (**GitHub Pages** below). |
 
 ### **`latex/` sources**
 
@@ -47,7 +48,7 @@
 | [`jade-zhao-philosophy-mentorship.tex`](latex/jade-zhao-philosophy-mentorship.tex) | Mentorship, clients, and shipping usable systems |
 | [`regenerate-placeholder-pdfs.py`](latex/regenerate-placeholder-pdfs.py) | Optional: regenerate minimal `site/jade-zhao-*.pdf` stubs |
 
-**Build:** from `matchaxmoxie/latex/` run e.g. `pdflatex jade-zhao-resume.tex` (no images required). Run twice if you need stable references. Copy or move the generated `.pdf` into **`site/`** with the same basename as the badges (e.g. `jade-zhao-profile-full.pdf`) so GitHub Pages and the README links serve your real output instead of the placeholder PDFs. The homepage **Download resume (PDF)** button uses **`site/resume.pdf`**: after compiling `jade-zhao-resume.tex`, copy that output to **`site/resume.pdf`** (overwrite) so the download matches the TeX story.
+**Build:** see **[`latex/BUILD.md`](latex/BUILD.md)** for `pdflatex` per file and which PDF names go in **`site/`**. Short version: from `matchaxmoxie/latex/` run `pdflatex jade-zhao-resume.tex` (no images); run twice if references need it; copy outputs into **`site/`** so badges and [`site/index.html`](site/index.html) links stay true. Homepage **Download resume** uses **`site/resume.pdf`** (sync from `jade-zhao-resume.pdf` as in BUILD).
 
 ---
 
@@ -127,16 +128,20 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ## **🌐 GitHub Pages**
 
-Published **site root** = everything inside **`site/`** (`index.html`, `styles.css`, `j.adezhao.jpg`, `resume.pdf`, etc.). **`latex/`** and **`docs/`** are not part of the live URL.
+Published **site root** = everything inside **`site/`** (`index.html`, `styles.css`, `LICENSE`, `README.md`, PDFs, images, etc.). **`latex/`**, **`scripts/`**, and **`docs/`** are not part of the live URL. The public repo [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) is a **subtree mirror** of **`site/`** at repo root (run **`scripts/publish-site.sh`** from the UCM repo after committing).
 
 - **Live site:** [https://matchaxmoxie.github.io/matchaxmoxie/](https://matchaxmoxie.github.io/matchaxmoxie/)
 
 [`site/index.html`](site/index.html) sets canonical URL and Open Graph / Twitter meta tags. If you rename the repo or add a custom domain, update those tags in `<head>`.
 
-### Dedicated `matchaxmoxie` repo (typical for matchaxmoxie.github.io)
+### Public repo [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) (subtree mirror)
 
-1. Keep this layout: **`site/`** holds all static assets.
-2. **Settings → Pages → Source:** branch **`main`**, folder **`/site`** (not repo root).
+1. Contents of **`matchaxmoxie/site/`** from the monorepo are pushed to the **root** of that repo (`index.html`, `styles.css`, `LICENSE`, …).
+2. **Settings → Pages → Source:** branch **`main`**, folder **`/` (root)**.
+
+### UCM monorepo only (this folder layout)
+
+If you pointed Pages at this repo instead of Actions: **Settings → Pages** would use folder **`/matchaxmoxie/site`**. The usual setup here is **GitHub Actions** (below), not that path.
 
 ### UCM monorepo (GitHub Actions)
 

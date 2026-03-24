@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Jade Zhao informatics student in Madrid, loves accessible tech and kind teams. IU Luddy + Kelley minor, health informatics & ServeIT. @matchaxmoxie on Instagram is mostly what I eat."
+      content="Jade Zhao: informatics + Kelley, Madrid, access-minded tech. Open-source personal site (fork welcome). @matchaxmoxie on Instagram is mostly what I eat."
     />
     <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Jade Zhao · matchaxmoxie" />
     <meta
       property="og:description"
-      content="Pink lilies, gentle code, big feelings about access. Madrid semester · @matchaxmoxie is food pics (what I eat), mostly."
+      content="Pink lilies, static HTML you can fork, big feelings about access. Madrid · @matchaxmoxie = food pics. PRs and questions welcome."
     />
     <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/" />
     <meta
@@ -30,6 +30,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="license" href="LICENSE" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -70,6 +71,9 @@
           />
         </figure>
         <h1 class="hero-title">Hi, I’m Jade <span class="hero-title__accent" aria-hidden="true">🌷</span></h1>
+        <p class="hero-why">
+          A public corner to be soft about hard things: access, school, code, and showing up for people.
+        </p>
         <p class="hero-sub">
           I like making things that don’t leave people behind. Informatics (Business &amp; Society) with a little
           Kelley on the side enough to talk budgets without forgetting the human on the other side of the screen.
@@ -89,6 +93,12 @@
         <p class="hero-interests">
           Off the clock I still reach for film photography, sustainable agriculture (earnest, not preachy), and
           open-source when I can patch something small.
+        </p>
+        <p class="hero-opensource">
+          This whole page is plain HTML and CSS on GitHub: no framework on purpose, so I own every line and you
+          can read all of it. Borrow a color, fork the layout, open an issue if something breaks on your
+          phone, send a tiny PR for a typo or a11y I missed. Helpfulness beats gatekeeping; we’re all learning
+          in public.
         </p>
         <div class="sparkle-row" aria-hidden="true">
           <span>🌷</span><span>🐕</span><span>☕</span><span>🍵</span><span>📖</span><span>💗</span>
@@ -137,8 +147,8 @@
             <div class="card-icon" aria-hidden="true">☕</div>
             <h3>Coffee &amp; listening</h3>
             <p>
-              Cortados, bakery crumbs, friends debriefing the week. I’m happier when people feel heard not when I
-              talk the most.
+              First cortado in a new barrio, bakery crumbs, friends debriefing the week. I’m happier when people
+              feel heard not when I talk the most.
             </p>
           </article>
           <article class="card">
@@ -165,20 +175,24 @@
             <p>
               Luddy research, ServeIT, Middle Way House, Bloomington accessibility nothing heroic, just real work.
               <a href="https://github.com/jadewowgreen" rel="noopener noreferrer" target="_blank">GitHub</a> if you’re
-              curious.
+              curious. If a snippet helps your project, take it and run.
             </p>
           </article>
         </div>
       </section>
 
       <section class="links-panel" aria-labelledby="connect-heading">
-        <p class="section-eyebrow section-eyebrow--on-dark">Say hi</p>
-        <h2 id="connect-heading">Links &amp; PDFs</h2>
+        <p class="section-eyebrow section-eyebrow--on-dark">Say hi · grab the code</p>
+        <h2 id="connect-heading">Links, PDFs &amp; source</h2>
         <p class="links-panel__lede">
-          LinkedIn if it’s job-shaped, GitHub for code, Instagram for what I eat,
-          <a class="links-panel__mailto" href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>
-          if email is easier. Résumé below. I’m friendly. I don’t bite. Send a normal message and we’ll go from
-          there.
+          LinkedIn if it’s job-shaped, my usual code on GitHub, Instagram for what I eat,
+          <a
+            class="links-panel__mailto"
+            href="mailto:jlzhao@iu.edu?subject=Hi%20from%20matchaxmoxie%20(site)"
+            >jlzhao@iu.edu</a
+          >
+          if email is easier (subject line prefilled you can change it). Résumé below. Questions about how
+          something here works? Ask. I answer when I can.
         </p>
         <div class="btn-row">
           <a
@@ -202,14 +216,26 @@
             target="_blank"
             >Instagram</a
           >
-          <a class="btn btn--ghost" href="mailto:jlzhao@iu.edu">Email</a>
+          <a
+            class="btn btn--ghost"
+            href="mailto:jlzhao@iu.edu?subject=Hi%20from%20matchaxmoxie%20(site)"
+            >Email</a
+          >
+          <a
+            class="btn btn--ghost"
+            href="https://github.com/matchaxmoxie/matchaxmoxie"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Site source (GitHub)</a
+          >
           <a class="btn btn--ghost" href="resume.pdf" download>Download resume (PDF)</a>
         </div>
         <div class="pdf-placeholders">
           <p class="pdf-placeholders__title">Extra PDFs from LaTeX</p>
           <p class="pdf-placeholders__hint">
-            Tiny placeholder files for now when you run <code>pdflatex</code> in <code>latex/</code>, drop the real
-            PDFs here with the same names and they’ll magically become the grown-up versions.
+            These are tiny placeholders so the links never 404. Swap in your own PDFs with the same filenames when
+            you compile from LaTeX (happy to point you at the <code>.tex</code> sources if you’re building a
+            portfolio too).
           </p>
           <ul class="pdf-placeholders__list">
             <li><a href="jade-zhao-profile-full.pdf" download>Profile (full)</a></li>
@@ -225,10 +251,23 @@
 
     <footer class="site-footer wrap">
       <p>
-        <strong>matchaxmoxie</strong> handmade pink HTML, zero frameworks, a lot of heart. If this site feels
-        human, that’s the point.
+        <strong>matchaxmoxie</strong> handmade pink HTML, zero frameworks, a lot of heart. Shared so you can reuse
+        it: fork, star, or just read the markup. If this site feels human, that’s the point.
       </p>
-      <p>GitHub Pages · tweak <code>index.html</code> &amp; <code>styles.css</code> whenever.</p>
+      <p class="site-footer__opensource">
+        Live on GitHub Pages ·
+        <a href="https://github.com/matchaxmoxie/matchaxmoxie" rel="noopener noreferrer" target="_blank"
+          >source repo</a
+        >
+        ·
+        <a href="LICENSE" rel="license">MIT License</a>
+        · issues and small PRs (typos, contrast, mobile quirks) genuinely welcome.
+      </p>
+      <p class="site-footer__a11y">
+        I try to keep contrast decent, keyboard paths sane, and motion optional. If something’s hard to use with
+        your setup, file an issue I want to know.
+      </p>
+      <p class="site-footer__meta">Page last nudged: March 2026 · tweak <code>index.html</code> &amp; <code>styles.css</code> whenever.</p>
     </footer>
   </body>
 </html>
