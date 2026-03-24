@@ -1,4 +1,4 @@
-/* Matchaxmoxie — pink-forward, soft “study abroad + hobbies” landing page */
+/* Matchaxmoxie pink-forward, soft “study abroad + hobbies” landing page */
 
 :root {
   --pink-50: #fff8fa;
@@ -93,7 +93,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* Profile photo — same asset as favicon (j.adezhao.jpg) */
+/* Profile photo same asset as favicon (j.adezhao.jpg) */
 .hero-photo {
   margin: 0 auto 1.25rem;
   padding: 0;
@@ -144,7 +144,17 @@ a:hover {
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--pink-800);
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.75rem;
+  line-height: 1.45;
+}
+
+.hero-note {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.55;
+  max-width: 34rem;
+  margin: 0 auto 1.25rem;
+  color: var(--rose-deep);
 }
 
 .hero-lede {

@@ -10,7 +10,7 @@
 
 </div>
 
-**Live pink landing page:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — static HTML/CSS, no framework.
+**Live pink landing page:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) static HTML/CSS, no framework.
 
 ---
 

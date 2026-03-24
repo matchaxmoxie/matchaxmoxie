@@ -10,13 +10,13 @@ Static assets: `index.html`, `styles.css`, `j.adezhao.jpg`, `resume.pdf` (and an
 
 ---
 
-## Option A — Dedicated `matchaxmoxie` repo (what powers the live URL above)
+## Option A Dedicated `matchaxmoxie` repo (what powers the live URL above)
 
 Typical setup: repo **`matchaxmoxie`** under user/org **`matchaxmoxie`**, **Settings → Pages → Source**: branch **`main`**, folder **`/ (root)`**, with these files at the repo root.
 
 ---
 
-## Option B — UCM monorepo (GitHub Actions)
+## Option B UCM monorepo (GitHub Actions)
 
 Workflow: [`.github/workflows/matchaxmoxie-pages.yml`](../.github/workflows/matchaxmoxie-pages.yml). It deploys **only** the `matchaxmoxie/` folder when you push to `main` and that folder (or the workflow) changes.
 
