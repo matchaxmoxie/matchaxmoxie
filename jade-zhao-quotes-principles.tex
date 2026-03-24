@@ -1,0 +1,51 @@
+% "How I Think" + "Guiding Principles" — boxed section style inspired by reference scan.
+% Quote list and principles from jade-zhao-profile-full.tex.
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+\setlist[itemize]{leftmargin=*}
+
+\newcommand{\sectionboxed}[1]{%
+  \vspace{0.75em}%
+  \begin{center}%
+  \fbox{\parbox{0.92\linewidth}{\centering\bfseries\large #1}}%
+  \end{center}%
+  \vspace{0.5em}%
+}
+
+\begin{document}
+
+\input{jade-zhao-header}
+
+\vspace{0.5em}
+\noindent\rule{\linewidth}{1pt}
+
+\sectionboxed{How I Think}
+
+\begin{itemize}
+    \item ``Never discourage anyone who continually makes progress, no matter how slow.'' Plato
+    \item ``We are what we repeatedly do. Excellence, then, is not an act but a habit.'' Aristotle
+    \item ``Don't ever think, no matter how old you are, that you don't need to be coached.'' Peyton Manning
+    \item ``Leadership isn't one person leading a team. It is a group of leaders working together, up and down the chain of command, to lead.'' Jocko Willink
+    \item ``A true leader stays exhausted, abhors arrogance, and never looks down on the weakest link.'' (adapted principle)
+    \item ``Wise are those who keep asking questions when everyone around them thinks they know the answers.'' J. Bartell
+\end{itemize}
+
+\sectionboxed{Guiding Principles}
+
+\subsection*{Lifelong Learning}
+I treat learning as an ongoing process that improves both my technical work and my mentoring. In practice, that means iterating based on feedback, documenting decisions clearly, and translating complex topics into actionable next steps for others. Whether I am implementing accessibility changes or designing analysis pipelines, I aim to close the gap between ``understood'' and ``usable.''
+
+\subsection*{Student-Centered Approach}
+I design and collaborate around the needs of the people who will actually use the tools. This mindset shows up in how I structure systems (clear flows, accessible interfaces, and reliable data handling) and in how I support teams (timely guidance, shared ownership, and practical training). I believe strong outcomes require an environment where users feel supported, respected, and capable of taking the next step.
+
+\vspace{1em}
+\noindent\textit{Best regards,}\\
+\textbf{Jade Zhao}
+
+\end{document}

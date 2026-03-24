@@ -1,7 +1,7 @@
 <div align="center">
 
 # **Jade Zhao** 🪴
-**Software Engineer | AI Researcher | Accessibility Specialist**
+**Software Engineer · Ethical AI · Accessibility — Luddy + Kelley, shipped work (health informatics, ServeIT, civic & nonprofit WCAG)**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
@@ -10,7 +10,7 @@
 
 </div>
 
-**Live pink landing page:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) static HTML/CSS, no framework.
+**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — pink static HTML; hero and **three-pillar strip** mirror `jade-zhao-profile-full.tex` (community / technical depth / equity & access), with named IU + Madrid + project proof.
 
 ---
 
@@ -18,11 +18,19 @@
 
 | Item | What it is |
 |------|------------|
-| [`index.html`](index.html) | GitHub Pages site: hero, vibes, social + resume links; canonical + Open Graph URLs for the live domain |
-| [`styles.css`](styles.css) | Pink-first styles (Fraunces + Nunito) |
+| [`index.html`](index.html) | GitHub Pages: Jade-specific hero (Hutton, Luddy/Kelley), three-pillar strip, project-named cards, LinkedIn + **GitHub** + IG + résumé; canonical + Open Graph |
+| [`styles.css`](styles.css) | Pink + champagne accents; Fraunces + Plus Jakarta Sans |
 | [`j.adezhao.jpg`](j.adezhao.jpg) | Hero photo, favicon, Apple touch icon |
 | [`resume.pdf`](resume.pdf) | Resume download linked from the site and badges above |
-| [`images.tex`](images.tex) | LaTeX resume source (`pdflatex images.tex` → PDF if you use that workflow) |
+| [`jade-zhao-header.tex`](jade-zhao-header.tex) | Shared contact block; `\input{}` by the other `jade-zhao-*.tex` sources |
+| [`jade-zhao-resume.tex`](jade-zhao-resume.tex) | Compact résumé (section rules); `pdflatex jade-zhao-resume.tex` |
+| [`jade-zhao-profile-full.tex`](jade-zhao-profile-full.tex) | Full profile + quotes + pillars + experience (former monolithic `images.tex`) |
+| [`jade-zhao-quotes-principles.tex`](jade-zhao-quotes-principles.tex) | Boxed “How I Think” + Guiding Principles |
+| [`jade-zhao-three-pillars.tex`](jade-zhao-three-pillars.tex) | Dated letter-style “Three Pillars (Tech for Good)” |
+| [`jade-zhao-inclusive-tech-statement.tex`](jade-zhao-inclusive-tech-statement.tex) | Short inclusive-tech / accessibility statement |
+| [`jade-zhao-philosophy-mentorship.tex`](jade-zhao-philosophy-mentorship.tex) | Longer mentorship + systems philosophy letter |
+| [`jade-zhao-layout-references.tex`](jade-zhao-layout-references.tex) | PDF of `reference-*` scans (layout ideas only) |
+| [`reference-resume-traditional-layout.jpeg`](reference-resume-traditional-layout.jpeg) (etc.) | Renamed reference scans — not Jade’s content; pair with `jade-zhao-layout-references.tex` |
 | [`DEPLOY.md`](DEPLOY.md) | How the site is hosted (this repo vs UCM monorepo Actions) |
 
 ---
@@ -96,7 +104,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 ---
 
 <div align="center">
-<small><i>Building technology that works for everyone.</i> 🌍</small>
+<small><i>Inclusive tech as a strategy problem — shipped with heart.</i> 🌍</small>
 </div>
 
 ---

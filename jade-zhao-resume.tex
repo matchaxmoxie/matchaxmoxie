@@ -1,0 +1,96 @@
+% One-page-style resume; layout inspired by reference scans (traditional section rules).
+% Content from jade-zhao-profile-full.tex / repo only.
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.85in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+\setlist[itemize]{nosep,leftmargin=*,topsep=0.25em}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
+\newcommand{\ressection}[1]{%
+  \vspace{0.55em}%
+  \noindent{\large\bfseries #1}\\[-0.15em]%
+  \noindent\rule{\linewidth}{0.4pt}%
+  \vspace{0.3em}%
+}
+
+\begin{document}
+
+\input{jade-zhao-header}
+
+\vspace{0.5em}
+
+\ressection{Professional profile}
+I build data-driven tools and systems that help people and communities succeed, with a focus on accessibility, ethical AI, and practical impact. Work spans HIPAA-aligned data systems, accessible web experiences, and user-centered learning tools.
+
+\noindent\textbf{Core strengths:}
+Accessibility (WCAG 2.1 AA/AAA) \textbullet{}
+Ethical AI \& human oversight \textbullet{}
+Full-stack development (Python, SQL, JS, React) \textbullet{}
+Mentorship \& resource design for students \textbullet{}
+Data visualization (D3.js) \textbullet{}
+Agile cross-functional delivery
+
+\ressection{Education}
+\noindent\textbf{Indiana University, Luddy School of Informatics, Computing, and Engineering} \hfill Bloomington, IN\\
+Bachelor of Science in Informatics, Concentration: Business and Society; Minor: Business (Kelley School of Business)\\
+GPA: 3.70 (Class of 2027)\\
+Hudson \& Holland Scholar (full-ride merit); Luddy Direct Admit; Study Abroad: Universidad Complutense de Madrid (Spring 2026) via Hutton program
+
+\ressection{Experience}
+\noindent\textbf{Undergraduate Research Assistant} --- Proactive Health Informatics Research Group, IU Luddy School \hfill Sep 2025 -- Dec 2025
+\begin{itemize}
+    \item Developed HIPAA-compliant database systems using Python and SQL; reduced data entry errors by 30\%.
+    \item Built real-time patient monitoring with analytics and anomaly detection; reduced workload by 25--40\%.
+    \item Researched ethical AI safeguards: audit trails, bias detection, human oversight.
+\end{itemize}
+
+\noindent\textbf{Undergraduate Teaching Assistant} --- IU Office of Student Life, Mentoring Services \& Leadership Development \hfill Aug 2023 -- Dec 2025
+\begin{itemize}
+    \item Consolidated fragmented campus resources into accessible digital tools for first-generation and low-income students.
+    \item Automated repetitive information-sharing workflows; freed advisors for high-impact guidance.
+    \item Supported students navigating study abroad and international program applications.
+\end{itemize}
+
+\noindent\textbf{AI Client Team Lead} --- Laurie Burns McRobbie ServeIT Clinic, Indiana University \hfill Jan 2024 -- May 2025
+\begin{itemize}
+    \item Led a cross-functional team of 5 using Agile on adaptive learning platforms; increased engagement by 45\%.
+    \item Designed accessible AI tutoring for English language learners and students with learning disabilities.
+    \item Implemented ethical AI safeguards: bias detection, transparent decision-making, educator oversight.
+\end{itemize}
+
+\ressection{Key projects}
+\noindent\textbf{Indiana Phenology Lab Research} \hfill Jan 2025 -- May 2025
+\begin{itemize}
+    \item Analyzed environmental data in Python; improved research efficiency by 40\%.
+    \item Accessible data presentations (D3.js, Figma); WCAG 2.1 AA.
+\end{itemize}
+
+\noindent\textbf{Middle Way House Website Redesign} \hfill Aug 2024 -- Dec 2024
+\begin{itemize}
+    \item Led nonprofit redesign; usability +65\%, conversions +28\%.
+    \item Accessibility audits on 200+ components (WAVE, Axe); WCAG 2.1 AA/AAA.
+\end{itemize}
+
+\noindent\textbf{City of Bloomington Digital Accessibility} \hfill Jan 2024 -- May 2024
+\begin{itemize}
+    \item Audited 10+ municipal sites; 150+ issues identified with remediation roadmaps; AA alignment.
+\end{itemize}
+
+\ressection{Skills}
+\begin{itemize}
+    \item \textbf{Development:} Python, SQL, HTML, CSS, JavaScript, React, Node.js, PostgreSQL, Git/GitHub, D3.js
+    \item \textbf{Data \& systems:} Real-time systems, HIPAA compliance, data governance, ETL, analytics, database design
+    \item \textbf{AI \& ethics:} Bias detection, ethical AI frameworks, human oversight, LLM orchestration
+    \item \textbf{Design \& accessibility:} WCAG 2.1 AA/AAA, Figma, Adobe Creative Suite, WAVE, Axe DevTools
+    \item \textbf{Languages:} English (Native), Mandarin Chinese (Professional), Spanish (Elementary)
+\end{itemize}
+
+\ressection{Interests}
+Film photography; sustainable agriculture; cross-cultural tech adoption; open-source contributions.
+
+\end{document}
