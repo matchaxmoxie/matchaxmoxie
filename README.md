@@ -1,3 +1,5 @@
+# Jade Zhao
+<!-- markdownlint-disable MD033 -->
 <div align="center">
 
 # **Jade Zhao** 🪴
@@ -114,7 +116,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 ---
 
 ## **🎓 Education**
-**B.S. in Informatics** (Business & Society)  
+**B.S. in Informatics** (Business & Society) <br/>
 *Indiana University Luddy School of Informatics, Computing, and Engineering*
 - Hudson & Holland Scholar
 - Dean’s List
