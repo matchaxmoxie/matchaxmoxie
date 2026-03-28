@@ -49,3 +49,7 @@ Repeat `pdflatex` for each:
 ## Placeholders
 
 The repo may ship minimal placeholder PDFs under **`site/`** so links never 404. Replace them with your real builds when ready.
+
+## Copy note (optional)
+
+If you add or edit body text in the `.tex` files, keeping **plain punctuation** (periods, commas, **and** instead of long dashes) matches the voice of [`../site/index.html`](../site/index.html). LaTeX `---` renders as an em dash; prefer rephrasing if you want the same feel as the static site.

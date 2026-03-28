@@ -2,7 +2,7 @@
 
 Static **HTML + CSS** only: no build step, no framework. Live at [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/).
 
-**Transparency block:** [`index.html`](index.html) includes an on-page section **“How I actually work”** (`#how-i-work`) about **Cursor**, **AI agents**, research context, learn-more links, and practical tips—no gatekeeping.
+**Transparency block:** [`index.html`](index.html) includes **“How I actually work”** (`#how-i-work`): agents in plain English, health informatics and ServeIT, honest failures (wrong outputs, bad prompts, reverting), golden-retriever energy, learn-more links, a long **tips** list (rules, `@file`, diffs, models, checklists, honor code, disclosure), **ideas I’m still sorting out**, and a colophon that points back here. No gatekeeping, no em-dash editorial style (periods and **and** read cleaner on the web).
 
 ## Run locally
 
@@ -18,7 +18,7 @@ Open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
 The portfolio `.tex` files live in the UCM monorepo under **`matchaxmoxie/latex/`**. See [`../latex/BUILD.md`](../latex/BUILD.md) for `pdflatex` and copying PDFs into **`/`** with the same basenames as the download links.
 
-## License & contributing
+## License and contributing
 
 - **License:** [MIT](LICENSE) (code + markup here; your own resume/portfolio content stays yours).
 - **Contributing:** see [CONTRIBUTING.md](CONTRIBUTING.md). Typos, contrast, keyboard/mobile quirks, and small a11y fixes are especially welcome.

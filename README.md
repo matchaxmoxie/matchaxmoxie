@@ -3,7 +3,7 @@
 <div align="center">
 
 # **Jade Zhao** 🪴
-**Informatics + Kelley · Madrid · access-minded tech, pink static site. Health / ServeIT / civic on the side. @matchaxmoxie = food on IG.**
+**Informatics and Kelley · Madrid · access-minded tech, pink static site. Health / ServeIT / civic on the side. @matchaxmoxie = food on IG.**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
@@ -12,7 +12,7 @@
 
 <br/>
 
-<sub><b>LaTeX → PDF</b> (tiny placeholder PDFs in <code>site/</code> until you compile &amp; swap)</sub><br/>
+<sub><b>LaTeX → PDF</b> (tiny placeholder PDFs in <code>site/</code> until you compile and swap)</sub><br/>
 [![Profile PDF](https://img.shields.io/badge/Profile-PDF-e85a9e?style=flat)](site/jade-zhao-profile-full.pdf)
 [![Quotes PDF](https://img.shields.io/badge/Quotes-PDF-e85a9e?style=flat)](site/jade-zhao-quotes-principles.pdf)
 [![Pillars PDF](https://img.shields.io/badge/Pillars-PDF-e85a9e?style=flat)](site/jade-zhao-three-pillars.pdf)
@@ -28,11 +28,11 @@
 
 ---
 
-## **Transparent stack (Cursor & agents)**
+## **Transparent stack (Cursor and agents)**
 
-**Yes, I use Cursor. Yes, I use AI agents.** The public site says it out loud: see the **“How I actually work”** section in [`site/index.html`](site/index.html) (`#how-i-work`) for plain-English definitions, how that connects to **health informatics / ServeIT** research, **golden-retriever** collaboration energy (honest & approachable), **learn-more links**, and **tips** (rules files, batching tasks, reading diffs, right-sized models, disclosure).
+**Yes, I use Cursor. Yes, I use AI agents.** The public site says it out loud: see **“How I actually work”** in [`site/index.html`](site/index.html) (`#how-i-work`) for agents in plain English, **health informatics and ServeIT** context, the messy part people gloss over (**hallucinations**, tired prompts, **reverting** when wrong), **golden-retriever** collaboration energy, learn-more links (Cursor, docs, **NIST AI RMF**, GitHub source), **tips** (repo rules, **`@file` / paths**, batching, **read the diff**, right-sized models, **high-stakes checklists**, **syllabus and honor code**, rubber-duck the task in two sentences, **disclosure**), and **ideas I’m still sorting out** (portfolio vs lab notebook, when not to automate, teaching without vendor voice).
 
-**Philosophy:** don’t be afraid of the tools—be **clear** about them. I own what ships; agents accelerate drafts, not accountability.
+**Philosophy:** don’t be afraid of the tools. Be **clear** about them. I own what ships; agents accelerate drafts, not accountability.
 
 ---
 
@@ -73,10 +73,10 @@ Open `http://127.0.0.1:8080`.
 ---
 
 ## **🔧 Technical Stack**
-**Languages & Frameworks:**
+**Languages and frameworks:**
 `Python` · `TypeScript` · `React` · `Node.js` · `SQL` · `D3.js` · `PostgreSQL`
 
-**Tools & Platforms:**
+**Tools and platforms:**
 Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 **Specializations:**
@@ -87,7 +87,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ---
 
-## **🌍 Research & Cross-Cultural Skills**
+## **🌍 Research and cross-cultural skills**
 - **User-Centered Research**: Mixed-methods studies to inform inclusive tech design
 - **Cross-Cultural Analysis**: Tech adoption in Spain/US, fintech, and access across student backgrounds
 - **Field Research**: Madrid’s startup ecosystem and smart city initiatives
@@ -95,7 +95,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ---
 
-## **💡 Leadership & Collaboration**
+## **💡 Leadership and collaboration**
 - **Mentorship**: Guiding first-gen students in tech literacy and career readiness
 - **Stakeholder Alignment**: Bridging technical solutions with organizational goals
 - **Advocacy**: Digital accessibility, ethical AI, and tech-for-good initiatives
@@ -124,9 +124,9 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 ---
 
 ## **🎓 Education**
-**B.S. in Informatics** (Business & Society) <br/>
+**B.S. in Informatics** (Business and Society) <br/>
 *Indiana University Luddy School of Informatics, Computing, and Engineering*
-- Hudson & Holland Scholar
+- Hudson and Holland Scholar
 - Dean’s List
 - Study Abroad: Madrid, Spain (Spring 2026)
 
@@ -134,7 +134,7 @@ Git · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
 
 ## **🌱 Beyond Code**
 - **Film Photography**: Deliberate, slow, no undos
-- **Jade Plants & Side Projects**: Keeping both alive and thriving
+- **Jade plants and side projects**: Keeping both alive and thriving
 - **Current Read**: Ask me!
 - **Madrid Semester**: Soaking in the culture, tech scene, and café con leche
 
