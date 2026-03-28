@@ -2,6 +2,8 @@
 
 Static **HTML + CSS** only: no build step, no framework. Live at [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/).
 
+**Transparency block:** [`index.html`](index.html) includes an on-page section **“How I actually work”** (`#how-i-work`) about **Cursor**, **AI agents**, research context, learn-more links, and practical tips—no gatekeeping.
+
 ## Run locally
 
 From this folder:

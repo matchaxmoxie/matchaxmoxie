@@ -28,6 +28,14 @@
 
 ---
 
+## **Transparent stack (Cursor & agents)**
+
+**Yes, I use Cursor. Yes, I use AI agents.** The public site says it out loud: see the **“How I actually work”** section in [`site/index.html`](site/index.html) (`#how-i-work`) for plain-English definitions, how that connects to **health informatics / ServeIT** research, **golden-retriever** collaboration energy (honest & approachable), **learn-more links**, and **tips** (rules files, batching tasks, reading diffs, right-sized models, disclosure).
+
+**Philosophy:** don’t be afraid of the tools—be **clear** about them. I own what ships; agents accelerate drafts, not accountability.
+
+---
+
 ## **📁 Folders**
 
 | Folder | Contents |

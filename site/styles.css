@@ -240,6 +240,92 @@ a:hover {
   filter: drop-shadow(0 2px 4px var(--shadow));
 }
 
+/* Transparency / agents panel */
+.truth-section {
+  margin-top: 2.25rem;
+}
+
+.truth-callout {
+  margin: 0 0 1.25rem;
+  padding: 1.1rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.62;
+  color: var(--rose-deep);
+  text-align: left;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.92), var(--pink-100));
+  border: 2px solid var(--pink-400);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px var(--shadow);
+}
+
+.truth-callout strong {
+  color: var(--pink-900);
+}
+
+.truth-subhead {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--pink-900);
+  margin: 1.35rem 0 0.5rem;
+}
+
+.truth-section p {
+  margin: 0 0 0.85rem;
+  font-size: 0.96rem;
+  font-weight: 500;
+  line-height: 1.62;
+  color: var(--rose-deep);
+}
+
+.truth-section p:last-child {
+  margin-bottom: 0;
+}
+
+.truth-list,
+.tips-list,
+.learn-more-list {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--rose-deep);
+}
+
+.truth-list li,
+.tips-list li,
+.learn-more-list li {
+  margin-bottom: 0.45rem;
+}
+
+.truth-section code,
+.tips-list code {
+  font-size: 0.88em;
+  padding: 0.1em 0.35em;
+  background: var(--pink-50);
+  border-radius: 0.25rem;
+  border: 1px solid var(--pink-200);
+  font-weight: 600;
+}
+
+.truth-cta {
+  margin-top: 1.25rem;
+  padding: 1rem 1.15rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.58;
+  color: var(--rose-deep);
+  background: var(--white);
+  border: 2px dashed var(--pink-300);
+  border-radius: var(--radius);
+}
+
+.truth-cta a {
+  font-weight: 800;
+}
+
 /* Executive strip thesis / moat / proof */
 .exec-strip {
   display: grid;

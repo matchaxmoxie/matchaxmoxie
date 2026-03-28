@@ -8,6 +8,7 @@ Thanks for helping keep this little site kind and usable.
 - **Accessibility:** contrast, focus order, labels, heading levels, reduced-motion behavior
 - **Mobile:** layout quirks, tap targets, overflow
 - Small CSS fixes that don’t redesign the whole personality
+- **“How I work” / agents section:** factual link fixes, typos, or a11y for the new `#how-i-work` block—keep the honest, first-person tone
 
 ## Please skip (unless we’ve talked)
 
