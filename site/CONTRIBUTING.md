@@ -8,7 +8,7 @@ Thanks for helping keep this little site kind and usable.
 - **Accessibility:** contrast, focus order, labels, heading levels, reduced-motion behavior
 - **Mobile:** layout quirks, tap targets, overflow
 - Small CSS fixes that don’t redesign the whole personality
-- **“How I work” / agents section:** factual link fixes, typos, or a11y for `#how-i-work`. Keep the honest, first-person tone.
+- **“How I work” (`#how-i-work`):** factual link fixes, typos, or a11y for the **product memo** block (brief, **`#cursor-and-agents`** two-card summary, SWOT grid, vendor map, runbook). Keep the **product and strategy** vocabulary and the honest, first-person tone. Do not sand down “golden dog” transparency.
 - **Voice and punctuation:** match the site habit of **periods and commas** instead of em dashes, and **and** instead of ampersands in sentences, unless a label is intentionally short (badges, legal names).
 
 ## Please skip (unless we’ve talked)

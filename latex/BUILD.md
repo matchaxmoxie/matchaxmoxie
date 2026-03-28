@@ -53,3 +53,5 @@ The repo may ship minimal placeholder PDFs under **`site/`** so links never 404.
 ## Copy note (optional)
 
 If you add or edit body text in the `.tex` files, keeping **plain punctuation** (periods, commas, **and** instead of long dashes) matches the voice of [`../site/index.html`](../site/index.html). LaTeX `---` renders as an em dash; prefer rephrasing if you want the same feel as the static site.
+
+The **canonical** long-form explanation of **Cursor**, **agents**, **business--technology--law** triangulation, **SWOT**, and IU or UCM-shaped habits lives on the **static site**: [`#cursor-and-agents`](../site/index.html) (tooling), [`#business-tech-law`](../site/index.html) (governance vocabulary), then [`#how-i-work`](../site/index.html) for the full memo. PDFs here stay short; point readers to the site for the full disclosure.

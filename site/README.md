@@ -2,7 +2,7 @@
 
 Static **HTML + CSS** only: no build step, no framework. Live at [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/).
 
-**Transparency block:** [`index.html`](index.html) includes **“How I actually work”** (`#how-i-work`): agents in plain English, health informatics and ServeIT, honest failures (wrong outputs, bad prompts, reverting), golden-retriever energy, learn-more links, a long **tips** list (rules, `@file`, diffs, models, checklists, honor code, disclosure), **ideas I’m still sorting out**, and a colophon that points back here. No gatekeeping, no em-dash editorial style (periods and **and** read cleaner on the web).
+**Product-style transparency:** [`index.html`](index.html) **`#how-i-work`** is a **living stack memo** with a loud **business–technology–law** frame: **Cursor vs. agents** at **`#cursor-and-agents`**, then **governance** (policy, vendor data handling, IP), **market context** (regulation catching up), **triangulation** at **`#business-tech-law`** (ToS/DPA, HIPAA/WCAG hooks, EU portals), **SWOT**, **vendor map** (Cursor, NIST AI RMF, EU AI + data protection overviews), **runbook**, **backlog**. First-person, same vocabulary as strategy and policy seminars—no lecture hall tone.
 
 ## Run locally
 

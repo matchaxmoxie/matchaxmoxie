@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Push matchaxmoxie/ to the public repo (root = Pages site).
+# Site copy includes public AI or agent disclosure (#how-i-work); keep in sync with UCM monorepo edits.
 # Prereqs: git remote "matchaxmoxie" → git@github.com:matchaxmoxie/matchaxmoxie.git
 #          SSH access as a user with push permission to that repo.
 set -euo pipefail

@@ -263,6 +263,98 @@ a:hover {
   color: var(--pink-900);
 }
 
+/* One-page “product brief” inside transparency section */
+.product-brief {
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.15rem 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.58;
+  color: var(--rose-deep);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--pink-200);
+  border-left: 4px solid var(--pink-600);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 18px var(--shadow);
+}
+
+.product-brief dt {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--pink-900);
+  margin-top: 0.65rem;
+}
+
+.product-brief dt:first-child {
+  margin-top: 0;
+}
+
+.product-brief dd {
+  margin: 0.25rem 0 0.55rem;
+  padding: 0;
+}
+
+.product-brief dd:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Cursor vs agents: two scannable cards under #how-i-work */
+.stack-cards {
+  display: grid;
+  gap: 1rem;
+  margin: 0 0 1.35rem;
+}
+
+@media (min-width: 36rem) {
+  .stack-cards {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+}
+
+.stack-card {
+  margin: 0;
+  padding: 1rem 1.1rem 0.85rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 2px solid var(--pink-300);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 22px var(--shadow);
+}
+
+.stack-card__title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--pink-900);
+  margin: 0 0 0.45rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--pink-200);
+}
+
+.stack-card p {
+  margin: 0 0 0.55rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--rose-deep);
+}
+
+.stack-card .stack-card__list {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.62;
+  color: var(--rose-deep);
+}
+
+.stack-card .stack-card__list li {
+  margin-bottom: 0.35rem;
+}
+
 .truth-subhead {
   font-family: var(--font-display);
   font-size: 1.05rem;
@@ -324,6 +416,74 @@ a:hover {
 
 .truth-cta a {
   font-weight: 800;
+}
+
+/* SWOT grid inside transparency section */
+.swot-intro {
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 1.62;
+  color: var(--rose-deep);
+  margin: 0 0 0.75rem;
+}
+
+.swot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+}
+
+.swot-cell {
+  padding: 0.85rem 1rem;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), var(--pink-50));
+  border: 2px solid var(--pink-200);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.swot-cell h4 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--pink-900);
+  margin: 0 0 0.45rem;
+  letter-spacing: 0.02em;
+}
+
+.swot-cell ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.58;
+  color: var(--rose-deep);
+}
+
+.swot-cell li {
+  margin-bottom: 0.35rem;
+}
+
+.swot-cell--s {
+  border-color: var(--matcha-muted);
+}
+
+.swot-cell--w {
+  border-color: var(--champagne);
+}
+
+.swot-cell--o {
+  border-color: var(--pink-400);
+}
+
+.swot-cell--t {
+  border-color: var(--pink-700);
+}
+
+@media (max-width: 36rem) {
+  .swot-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Executive strip thesis / moat / proof */
