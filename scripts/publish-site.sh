@@ -15,6 +15,7 @@ fi
 
 BRANCH="tmp-mxm-site-push-$(date +%s)"
 git subtree split --prefix=matchaxmoxie -b "$BRANCH"
-git push matchaxmoxie "$BRANCH:main"
+# Mirror main is subtree-only; history will not fast-forward. Force replaces remote main with this split.
+git push matchaxmoxie "$BRANCH:main" --force
 git branch -D "$BRANCH"
-echo "Done. Pushed matchaxmoxie/ to matchaxmoxie/matchaxmoxie main."
+echo "Done. Force-pushed matchaxmoxie/ subtree to matchaxmoxie/matchaxmoxie main."

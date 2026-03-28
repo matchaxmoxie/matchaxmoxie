@@ -72,7 +72,7 @@ Deep dive still lives in **`#how-i-work`**; tooling crib sheet **`#cursor-and-ag
 |--------|----------|
 | **`site/`** | Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css), assets, PDFs, [`LICENSE`](site/LICENSE) (MIT), [`README.md`](site/README.md), [`CONTRIBUTING.md`](site/CONTRIBUTING.md) |
 | **`latex/`** | `jade-zhao-*.tex`; [`BUILD.md`](latex/BUILD.md) for `pdflatex` and copying into `site/` |
-| **`scripts/`** | [`publish-site.sh`](scripts/publish-site.sh): subtree push of **`site/`** to [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) (needs `matchaxmoxie` remote and SSH) |
+| **`scripts/`** | [`publish-site.sh`](scripts/publish-site.sh): `git subtree split` of **`matchaxmoxie/`** then **`--force`** push to [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) `main` (needs `matchaxmoxie` remote and SSH) |
 | **`docs/`** | [`.markdownlint.yaml`](docs/.markdownlint.yaml) for Markdown style |
 
 ### Quick start (local preview)
@@ -190,7 +190,7 @@ Open `http://127.0.0.1:8080`.
 
 **What ships:** Only **`site/`** is the public site (`index.html`, `styles.css`, `LICENSE`, PDFs, images). **`latex/`**, **`scripts/`**, and **`docs/`** are not on the live URL.
 
-**Public mirror:** [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) holds a **subtree** of **`matchaxmoxie/site/`** at repo root. After commits in the UCM monorepo, run **`scripts/publish-site.sh`**. On GitHub: **Settings → Pages →** branch **`main`**, folder **`/` (root)**.
+**Public mirror:** [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) holds a **subtree** of the whole **`matchaxmoxie/`** folder at repo root (`site/`, `latex/`, etc.). After commits in the UCM monorepo, run **`scripts/publish-site.sh`** (force-updates `main`). GitHub **Pages:** point the published branch/folder at **`site/`** so `index.html` is the entry (or match whatever you already use in Settings).
 
 **UCM monorepo:** [`.github/workflows/matchaxmoxie-pages.yml`](../.github/workflows/matchaxmoxie-pages.yml) deploys **`matchaxmoxie/site`** when `matchaxmoxie/**` or that workflow changes. **Settings → Pages → Source: GitHub Actions**; confirm Actions is green. Manual run: **Actions → Deploy matchaxmoxie to Pages → Run workflow**.
 
