@@ -1,21 +1,21 @@
 /* ===== Color Palette ===== */
 :root {
-  --cream: #dfdeda;
-  --off-white: #f3efe9;
-  --dusty-rose: #d6ad96;
-  --blush: #d6c8b2;
-  --logic-blue: #9d8d71;
-  --terracotta: #926d5d;
-  --olive-ink: #525133;
-  --parchment: #ece4d8;
-  --bronze: #9d8d71;
+  --cream: #e6e2dd;
+  --off-white: #f5f2ed;
+  --dusty-rose: #d9b09b;
+  --blush: #eddfce;
+  --logic-blue: #aca59a;
+  --terracotta: #a17663;
+  --olive-ink: #5e6440;
+  --parchment: #eee7dc;
+  --bronze: #a48a6b;
   --marble-shadow: rgba(74, 57, 54, 0.12);
   --deep-charcoal: #181719;
-  --charcoal: #4a3936;
-  --warm-text: #67615c;
-  --subtle-green: #525133;
+  --charcoal: #4b3a37;
+  --warm-text: #6b635d;
+  --subtle-green: #5e6440;
   --pearl: #acaaa4;
-  --gold-accent: #d6c8b2;
+  --gold-accent: #d8cbb7;
   --soft-shadow: rgba(24, 23, 25, 0.08);
   --medium-shadow: rgba(24, 23, 25, 0.14);
 }
@@ -37,15 +37,15 @@ body {
   line-height: 1.7;
   color: var(--warm-text);
   background:
-    linear-gradient(135deg, var(--cream) 0%, var(--off-white) 52%, rgba(82, 81, 51, 0.05) 100%),
+    linear-gradient(135deg, var(--cream) 0%, var(--off-white) 52%, rgba(94, 100, 64, 0.04) 100%),
     repeating-linear-gradient(
       90deg,
       transparent 0,
       transparent 38px,
-      rgba(146, 109, 93, 0.05) 39px,
+      rgba(161, 118, 99, 0.05) 39px,
       transparent 40px
     ),
-    radial-gradient(circle at 12% 18%, rgba(157, 141, 113, 0.08), transparent 36%);
+    radial-gradient(circle at 12% 18%, rgba(217, 176, 155, 0.09), transparent 36%);
   background-attachment: fixed;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -59,8 +59,8 @@ body {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 80% 20%, rgba(214, 173, 150, 0.08) 0%, transparent 52%),
-    radial-gradient(circle at 10% 80%, rgba(82, 81, 51, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 80% 20%, rgba(217, 176, 155, 0.09) 0%, transparent 52%),
+    radial-gradient(circle at 10% 80%, rgba(94, 100, 64, 0.05) 0%, transparent 50%);
   pointer-events: none;
   z-index: 1;
 }
@@ -1012,22 +1012,22 @@ main {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --cream: #2b2725;
-    --off-white: #332f2d;
-    --dusty-rose: #b99582;
-    --blush: #8f7d69;
-    --logic-blue: #a29075;
-    --terracotta: #c6a28c;
-    --olive-ink: #a3a57b;
-    --parchment: #4a433d;
-    --bronze: #c8b08f;
+    --cream: #2b2826;
+    --off-white: #35312f;
+    --dusty-rose: #c09a87;
+    --blush: #9a866f;
+    --logic-blue: #b1a48f;
+    --terracotta: #d0ad98;
+    --olive-ink: #a7ad7e;
+    --parchment: #4d453f;
+    --bronze: #ceb392;
     --marble-shadow: rgba(0, 0, 0, 0.32);
-    --deep-charcoal: #efe6db;
-    --charcoal: #e2d7c9;
-    --warm-text: #c5b9aa;
-    --subtle-green: #a3a57b;
+    --deep-charcoal: #f0e8de;
+    --charcoal: #e4d8cb;
+    --warm-text: #cabcae;
+    --subtle-green: #a7ad7e;
     --pearl: #4d4640;
-    --gold-accent: #a89172;
+    --gold-accent: #b69b79;
     --soft-shadow: rgba(0, 0, 0, 0.28);
     --medium-shadow: rgba(0, 0, 0, 0.4);
   }
