@@ -246,8 +246,13 @@ main {
 }
 
 .tool-card::before {
-  content: "";
-  display: none;
+  content: '◇';
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  font-size: 0.95rem;
+  color: var(--bronze);
+  opacity: 0.8;
 }
 
 .tool-card:hover {
@@ -331,8 +336,13 @@ main {
 }
 
 .year-card::before {
-  content: "";
-  display: none;
+  content: '◇';
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  font-size: 1rem;
+  color: var(--bronze);
+  opacity: 0.8;
 }
 
 .year-card:hover {
@@ -977,11 +987,6 @@ main {
   .year-content > h2 {
     font-size: 1.3rem;
     line-height: 1.28;
-  }
-
-  .year-card::before,
-  .tool-card::before {
-    display: none;
   }
 
   .classes-grid {
