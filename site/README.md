@@ -22,6 +22,13 @@ This site uses a Greco-Latin plus English content system, explicit AI disclosure
 - Label style: Greco-Latin plus English, for example `Theoria (Learning)`.
 - Icon policy: no emoji icons, only geometric/classical symbols.
 
+## SEO and Alt Text Standard
+
+- Every HTML page includes canonical URL tags and robot indexing directives.
+- Every HTML page includes Open Graph and Twitter metadata for share consistency.
+- Social preview alt text is present through `og:image:alt` and `twitter:image:alt`.
+- Favicon is standardized across entry and site pages for visual identity continuity.
+
 ## Contact Links in Site
 
 - LinkedIn: `jadexzhao`

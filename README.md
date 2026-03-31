@@ -36,6 +36,13 @@ For site-only details, see [`site/README.md`](site/README.md).
 - Color palette tuned to the profile image so branding and favicon remain coherent.
 - Accessibility and responsive behavior preserved across desktop and mobile breakpoints.
 
+## SEO and Accessibility Baseline
+
+- All public HTML files include favicon links, canonical URLs, robots directives, and Open Graph plus Twitter metadata.
+- Social preview alt text is explicitly defined through `og:image:alt` and `twitter:image:alt`.
+- Navigation and key interactive links include clear accessibility labels where needed.
+- Pattern is maintained in Greco-Latin plus English voice across metadata and page copy.
+
 ## AI Transparency
 
 The site explicitly documents AI-assisted workflow boundaries and human accountability:
