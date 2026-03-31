@@ -146,9 +146,11 @@ main {
   font-size: 2rem;
   font-weight: 600;
   color: var(--terracotta);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.035em;
   font-variant-caps: small-caps;
   text-align: center;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .topic h2::after, .theory h2::after, .disclosure h2::after, .philosophy h2::after, .years-nav h2::after {
@@ -244,13 +246,8 @@ main {
 }
 
 .tool-card::before {
-  content: '◇';
-  position: absolute;
-  top: -12px;
-  left: 20px;
-  font-size: 0.95rem;
-  color: var(--bronze);
-  opacity: 0.8;
+  content: "";
+  display: none;
 }
 
 .tool-card:hover {
@@ -334,13 +331,8 @@ main {
 }
 
 .year-card::before {
-  content: '◇';
-  position: absolute;
-  top: -14px;
-  left: 24px;
-  font-size: 1rem;
-  color: var(--bronze);
-  opacity: 0.8;
+  content: "";
+  display: none;
 }
 
 .year-card:hover {
@@ -427,12 +419,14 @@ main {
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--terracotta);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   font-variant-caps: small-caps;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   border-top: 1px solid rgba(142, 106, 67, 0.25);
   padding-top: 0.7rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .year-content > h2::after {
@@ -810,7 +804,7 @@ main {
   font-size: 0.9rem;
   color: var(--bronze);
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -837,6 +831,14 @@ main {
 
   .topic h2, .theory h2, .disclosure h2, .philosophy h2 {
     font-size: 1.6rem;
+    letter-spacing: 0.02em;
+    font-variant-caps: normal;
+  }
+
+  .topic h2::after, .theory h2::after, .disclosure h2::after, .philosophy h2::after, .years-nav h2::after,
+  .year-content > h2::after {
+    content: "";
+    display: none;
   }
 
   .topic-content,
@@ -844,6 +846,17 @@ main {
   .theory-block,
   .disclosure-block {
     padding: 1.75rem;
+  }
+
+  .topic-content,
+  .year-card,
+  .class-card,
+  .activity-block,
+  .impact-block,
+  .philosophy-block {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: rgba(245, 242, 237, 0.95);
   }
 
   .tool-grid {
@@ -887,6 +900,8 @@ main {
 
   .year-content > h2 {
     font-size: 1.5rem;
+    letter-spacing: 0.02em;
+    font-variant-caps: normal;
   }
 
   .activities {
@@ -921,6 +936,7 @@ main {
 
   .topic h2, .theory h2, .disclosure h2, .philosophy h2 {
     font-size: 1.4rem;
+    line-height: 1.28;
   }
 
   .topic-content,
@@ -960,6 +976,12 @@ main {
 
   .year-content > h2 {
     font-size: 1.3rem;
+    line-height: 1.28;
+  }
+
+  .year-card::before,
+  .tool-card::before {
+    display: none;
   }
 
   .classes-grid {
@@ -999,6 +1021,12 @@ main {
   .nav-link {
     width: 100%;
     text-align: center;
+  }
+
+  .footer-note {
+    letter-spacing: 0.02em;
+    text-transform: none;
+    font-size: 0.82rem;
   }
 }
 
