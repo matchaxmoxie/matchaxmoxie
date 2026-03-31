@@ -86,7 +86,7 @@ The publish script uses `git subtree split` to push [`matchaxmoxie`](.) to `matc
 
 - Public Pages content is served from [`site`](site/).
 - Root [`index.html`](index.html) redirects into [`site`](site/).
-- Canonical and social metadata live in [`site/index.html`](site/index.html).
+- Canonical and social metadata are defined across root and site HTML pages.
 
 ## License
 

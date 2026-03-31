@@ -34,7 +34,7 @@ This site uses a Greco-Latin plus English content system, explicit AI disclosure
 - LinkedIn: `jadexzhao`
 - GitHub: `jazhao-ucm`
 - Instagram: `j.adezhao`
-- Goodreads: `jazhao-ucm`
+- Goodreads: `jadewowgreen`
 - Email: `jadexzhao@outlook.com`
 
 ## Run Locally
