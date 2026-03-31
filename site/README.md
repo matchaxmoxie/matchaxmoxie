@@ -1,8 +1,39 @@
-# matchaxmoxie site (GitHub Pages root)
+# Jade Zhao | Portfolio
 
-Static **HTML + CSS** only: no build step, no framework. Live at [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/).
+A year-by-year narrative of undergraduate experience at Indiana University.
+Live at [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/).
 
-**Product-style transparency:** [`index.html`](index.html) **`#how-i-work`** is a **living stack memo** with a loud **business–technology–law** frame: **Cursor vs. agents** at **`#cursor-and-agents`**, then **governance** (policy, vendor data handling, IP), **market context** (regulation catching up), **triangulation** at **`#business-tech-law`** (ToS/DPA, HIPAA/WCAG hooks, EU portals), **SWOT**, **vendor map** (Cursor, NIST AI RMF, EU AI + data protection overviews), **runbook**, **backlog**. First-person, same vocabulary as strategy and policy seminars—no lecture hall tone.
+## What's here
+
+This portfolio tells the story of **four years** through the lens of classes taken, activities pursued, and people helped along the way. Each year has its own POV — a quote that captures that moment.
+
+## Structure
+
+- **[index.html](index.html)** — Landing/home page with year card navigation
+- **[freshman.html](freshman.html)** — 2023–2024 — *"I showed up and I figured it out."*
+- **[sophomore.html](sophomore.html)** — 2024–2025 — *"I stopped just learning and started doing."*
+- **[junior.html](junior.html)** — 2025–2026 — *"I took everything I built and I took it global."*
+- **[senior.html](senior.html)** — 2026–2027 — *"This is what it was all building toward."*
+
+## Each year includes
+
+- **Classes** — What was learned that year
+- **Activities** — What was done (internships, mentoring, research, community)
+- **Impact** — Who was helped and how
+
+## Design
+
+- **Fonts**: Playfair Display (headings) + DM Sans (body)
+- **Colors**: Dusty rose, subtle green, cream palette
+- **Interactions**: Gentle hover effects, smooth scrolling, respect prefers-reduced-motion
+- **Responsive**: Mobile-first, optimized for 768px and 480px breakpoints
+
+## Files
+
+- [index.html](index.html) — Landing page
+- Year pages: freshman.html, sophomore.html, junior.html, senior.html
+- [styles.css](styles.css) — All styling (single stylesheet)
+- [README.md](README.md) — This file
 
 ## Run locally
 
@@ -14,15 +45,7 @@ python3 -m http.server 8080
 
 Open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-## LaTeX sources
-
-The portfolio `.tex` files live in the UCM monorepo under **`matchaxmoxie/latex/`**. See [`../latex/BUILD.md`](../latex/BUILD.md) for `pdflatex` and copying PDFs into **`/`** with the same basenames as the download links.
-
-## License and contributing
-
-- **License:** [MIT](LICENSE) (code + markup here; your own resume/portfolio content stays yours).
-- **Contributing:** see [CONTRIBUTING.md](CONTRIBUTING.md). Typos, contrast, keyboard/mobile quirks, and small a11y fixes are especially welcome.
-
 ## Public mirror repo
 
-The repo [github.com/matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) is usually updated from the monorepo with a subtree push of this **`/`** folder (see `../scripts/publish-site.sh`).
+This repo is mirrored at
+[github.com/matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie).

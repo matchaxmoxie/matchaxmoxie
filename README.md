@@ -1,81 +1,188 @@
 # Jade Zhao
-<!-- markdownlint-disable MD033 -->
-<div align="center">
 
-# **Jade Zhao** 🪴
-**Informatics and Kelley · Madrid · business–technology–law-minded builder: compliance-aware delivery, vendor &amp; data risk, EU study context. Pink static portfolio + living governance memo. Health / ServeIT / civic. @matchaxmoxie = food on IG.**
+### Inclusive Architect | Systems & Policy
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-@jadexzhao-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jadexzhao)
-[![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/matchaxmoxie/)
-[![Resume](https://img.shields.io/badge/Resume-PDF-4A4A4A?style=flat)](site/resume.pdf)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-e85a9e?style=flat&logo=github)](https://matchaxmoxie.github.io/matchaxmoxie/)
+### Madrid, ES • Bloomington, US • Fuzhou, CN
 
-<br/>
+![Location: Madrid](https://img.shields.io/badge/Location-Madrid-blue)
+![Language: Trilingual](https://img.shields.io/badge/Language-EN%20%7C%20ES%20%7C%20ZH-brightgreen)
+![Accessibility: WCAG 2.1 AA](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA-orange)
+![Governance: Red Marker v2.0](https://img.shields.io/badge/Governance-Red%20Marker%20v2.0-red)
 
-<sub><b>LaTeX to PDF</b> (placeholder PDFs in <code>site/</code> until you compile and swap)</sub><br/>
-[![Profile PDF](https://img.shields.io/badge/Profile-PDF-e85a9e?style=flat)](site/jade-zhao-profile-full.pdf)
-[![Quotes PDF](https://img.shields.io/badge/Quotes-PDF-e85a9e?style=flat)](site/jade-zhao-quotes-principles.pdf)
-[![Pillars PDF](https://img.shields.io/badge/Pillars-PDF-e85a9e?style=flat)](site/jade-zhao-three-pillars.pdf)
-[![Statement PDF](https://img.shields.io/badge/Statement-PDF-e85a9e?style=flat)](site/jade-zhao-inclusive-tech-statement.pdf)
-[![Philosophy PDF](https://img.shields.io/badge/Philosophy-PDF-e85a9e?style=flat)](site/jade-zhao-philosophy-mentorship.pdf)
-[![Résumé TeX PDF](https://img.shields.io/badge/Résumé%20%28TeX%29-PDF-4A4A4A?style=flat)](site/jade-zhao-resume.pdf)
+[Portfolio](https://matchaxmoxie.github.io/matchaxmoxie/) • [LinkedIn](https://www.linkedin.com/in/jadexzhao) • [GitHub](https://github.com/matchaxmoxie/matchaxmoxie)
 
-</div>
+> "I build software with a Red Pen and a Golden Retriever's heart. My workflow is AI-augmented, but my standards are human-led."
 
-**Layout:** This **`README.md`** is the only file at `matchaxmoxie/` root. Everything else lives in **`site/`**, **`latex/`**, **`scripts/`**, or **`docs/`**.
+### The Triple-Check
 
-**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) (hand-written **`site/index.html`**). The homepage reads like a **product and governance memo**: **business–technology–law** triangulation (ToS/DPA awareness, institutional policy, HIPAA- and WCAG-adjacent norms, EU digital rulemaking as scan input), problem framing, stakeholders, SWOT, vendor map—plus **Cursor vs. agents** at [`#cursor-and-agents`](https://matchaxmoxie.github.io/matchaxmoxie/#cursor-and-agents). Long-form narrative: [`latex/jade-zhao-profile-full.tex`](latex/jade-zhao-profile-full.tex).
+- [x] **Accessible:** Verified WCAG 2.1 AA.
+- [x] **Transparent:** Golden Dog audit trails included.
+- [x] **Global:** Bridging US speed with EU policy and CN stability.
 
 ---
 
-## Product lens (how I talk about the work)
+## My Process: The Red Marker
 
-- **Stakeholders first:** first-gen students, patients and clinics, nonprofits, hiring managers, and collaborators each need different evidence—and often different **policy or contractual** hooks.
-- **Requirements mindset:** accessibility and ethics show up as **non-functional requirements**, not a late QA panic; regulated-adjacent work gets **audit-style traceability**.
-- **Business–technology–law:** vendor terms, academic integrity, HIPAA-shaped lab norms, **GDPR/EU rulemaking** as environmental scan, **IP and attribution** for AI-assisted work—**risk-aware shipping** in plain language.
-- **Strategy tools:** SWOT, PEST (+ legal/regulatory), traceability (same discipline as `docs/INDEX.md` in the UCM repo).
-- **Delivery:** small shippable slices, documented assumptions, human sign-off when stakes are high.
+I use AI agents to move fast, but I never merge code without reading it line-by-line.
+I believe being radically honest about how code is built is the only way to create systems people can actually trust.
 
----
-
-## Transparent stack (Cursor, AI, agents)
-
-**Yes, I use Cursor. Yes, I use AI and agentic workflows.** Full write-up: **“How I build and ship”** in [`site/index.html`](site/index.html) (`#how-i-work`).
-
-**Cursor vs. agents (quick read):**
-
-- **Cursor** — AI-native editor (chat, completions, repo context, `.cursorrules`). I ground work in real files and read every diff before it counts as mine.
-- **Agents** — Supervised multi-step runs in that editor: plan → tool use → multi-file edits → **human review**. Not a substitute for honor code, HIPAA judgment, or accessibility sign-off.
-
-Deep dive still lives in **`#how-i-work`**; tooling crib sheet **`#cursor-and-agents`**; **business–technology–law** triangulation **`#business-tech-law`**.
-
-| Topic | What you will find there |
-|-------|---------------------------|
-| Business–technology–law | Triangulation: ToS/subprocessors, institutional “private law,” sector norms (HIPAA, WCAG/508), EU links, IP, provenance |
-| Cursor and agents | Two-card crib sheet: editor vs. agentic loop, red lines, optional MCP |
-| Product brief | Problem, users, in/out of scope, governance row, success metrics for this disclosure |
-| Market context | iPhone / Facebook / Amazon / Tesla style hype cycles vs generative AI today |
-| Vocabulary | AI vs copilot vs agentic (chained tools, human supervises) |
-| Practice | What an agent does in my editor; health informatics and ServeIT as **high-stakes products** |
-| Honesty | Hallucinations, bad prompts, reverting commits, golden-retriever transparency |
-| School habits | IU Luddy, Kelley exposure, UCM five-course monorepo discipline, PEST or SWOT-style thinking |
-| SWOT | Personal strengths / weaknesses / opportunities / threats (living **risk register** for agent use) |
-| More | Vendor map (Cursor, NIST AI RMF), **operating principles** runbook, **backlog** of open questions |
-
-**Philosophy:** Do not fear the tools. Be **clear** about them. I own what ships; agents speed up drafts, not accountability.
+- **Logic Verification:** 100% manual review of AI-assisted diffs to ensure architectural integrity.
+- **Regulatory Alignment:** Product decisions are made with an environmental scan of **GDPR** and **EU AI Act** frameworks.
+- **Inclusive Design:** Accessibility is a core non-functional requirement (**WCAG 2.1 AA/AAA**), not a late-stage addition.
 
 ---
 
-## Folders
+## Production Stack & Governance
 
-| Folder | Contents |
-|--------|----------|
-| **`site/`** | Pages root: [`index.html`](site/index.html), [`styles.css`](site/styles.css), assets, PDFs, [`LICENSE`](site/LICENSE) (MIT), [`README.md`](site/README.md), [`CONTRIBUTING.md`](site/CONTRIBUTING.md) |
-| **`latex/`** | `jade-zhao-*.tex`; [`BUILD.md`](latex/BUILD.md) for `pdflatex` and copying into `site/` |
-| **`scripts/`** | [`publish-site.sh`](scripts/publish-site.sh): `git subtree split` of **`matchaxmoxie/`** then **`--force`** push to [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) `main` (needs `matchaxmoxie` remote and SSH) |
-| **`docs/`** | [`.markdownlint.yaml`](docs/.markdownlint.yaml) for Markdown style |
+I treat generative AI as a supervised workbench. Tools draft; humans own outcomes.
 
-### Quick start (local preview)
+| Category | Technology | Governance Model |
+| :--- | :--- | :--- |
+| **Engineering** | **TypeScript, Python, React, SQL** | Clean-code, DRY, and maintainability checks before merge. |
+| **Intelligence** | **Cursor, GitHub Copilot, Supervised Agents** | Draft acceleration under mandatory human sign-off. |
+| **Standards** | **WCAG 2.1+, GDPR, EU AI Act, HIPAA-aware patterns** | Compliance and inclusion validation before release. |
+| **Infrastructure** | **GitHub Pages + scripts/workflows** | Automated publishing with human-verified checkpoints. |
+
+---
+
+<details>
+<summary><strong>Universal Engineering Standards</strong></summary>
+
+This repository follows globally recognized quality practices so any engineer can continue delivery without custom decoding.
+
+- **DRY:** Shared logic is centralized to reduce duplication risk.
+- **SOLID:** Design boundaries favor maintainability, extension, and reliable ownership.
+- **Clean Code:** Naming and function scope prioritize readability and intent.
+- **Version Control Discipline:** Production-safe workflows isolate change and preserve reviewability.
+- **Accessibility by Default:** WCAG 2.1+ is a release requirement, not a post-launch patch.
+
+</details>
+
+---
+
+## Madrid, Bloomington, and Fuzhou Context
+
+The project intentionally bridges three delivery cultures:
+
+- **Madrid and EU (Privacy-First):** GDPR and EU AI Act alignment, explainability expectations, and sustainable architecture.
+- **Bloomington and US (Impact-First):** MVP velocity, fast iteration cycles, and rapid feedback loops.
+- **Fuzhou and East China (Stability-First):** System reliability, execution density, and audit-ready operational control.
+
+This triad perspective supports collaboration across policy-heavy, growth-heavy, and scale-stability environments.
+
+---
+
+## Operational Transparency
+
+I maintain radical operational transparency for AI-assisted work.
+
+- Hallucinations and non-viable drafts are logged, not hidden.
+- Every accepted AI-assisted diff receives manual audit and rationale checks.
+- Governance receipts are tracked in documentation so architectural decisions remain explainable.
+- Current transparency memo: [docs/TRANSPARENCY.md](docs/TRANSPARENCY.md).
+
+---
+
+## Language System
+
+Language mapping is intentionally aligned with cultural context:
+
+- **Tulip:** English copy for global/default readability.
+- **Daisy (Sunflower slot):** Spanish localization optimized for **Castilian (ES)** professional register and EU-market clarity.
+- **Lotus:** Simplified Chinese copy shaped for execution clarity, stability, and systems reliability.
+
+Linguistic quality controls used in this repository:
+
+- Native-sounding phrasing over literal translation.
+- Register tuning by audience context (recruiter, engineer, and policy-facing reader).
+- Tone alignment per language mode (studio, policy, execution).
+- Human review for wording, cultural nuance, and clarity before merge.
+
+Human audit note:
+
+- Tested with polyglot friends to ensure the vibe is right.
+- I felt bad sharing my code if people could not read the intent behind it, so I wrote it in all three languages.
+
+---
+
+## How I Work
+
+### Agentic Workflow v2026
+
+1. **Plan:** AI proposes architectural shifts and implementation steps.
+2. **Audit:** Human review applies the Red Marker for policy, accessibility, and logic.
+3. **Verify:** Manual line-by-line sign-off before merge.
+4. **Log:** Transparency trail is documented for traceability.
+
+---
+
+## Red Marker Translation
+
+| Portfolio Language | Universal Engineering Language |
+| :--- | :--- |
+| **Red Marker** | **Human-in-the-Loop Governance** |
+| **Handmade Iteration** | **Agile Prototyping and Iteration** |
+| **Receipts** | **Audit Trails and Traceability** |
+| **Policy-Minded Delivery** | **Compliance-by-Design** |
+
+---
+
+<details>
+<summary><strong>Agentic Workflow Governance</strong></summary>
+
+Agentic tooling in this repository is treated as bounded autonomy under human authority. Agents can draft and propose across files, but they cannot bypass manual validation gates.
+
+### SDLC Control Model
+
+| Stage | Agent Role | Human Gate |
+| :--- | :--- | :--- |
+| **Discovery** | Research options, dependencies, and policy constraints. | Scope approval and go or no-go decision. |
+| **Drafting** | Generate boilerplate, components, and structured refactors. | Line-level diff review and architectural validation. |
+| **Refactoring** | Improve DRY, readability, and maintainability. | Traceability and behavior verification. |
+| **Audit** | Run accessibility and quality checks. | Final sign-off before merge to main. |
+
+### Audit Trail Practices
+
+- **Logic Memos:** Major agentic missions are documented under docs/logic-memos with proposal versus final human-approved outcome.
+- **Human Verification Stamp:** Agent-assisted changes are clearly labeled in commit metadata and review notes.
+- **Zero-Trust Merge Policy:** No auto-commit or blind merge paths are allowed for production changes.
+
+</details>
+
+---
+
+## Project Structure
+
+| Path | Purpose |
+| :--- | :--- |
+| [site](site/) | Production frontend: accessible HTML/CSS/JS, public assets, and downloadable PDFs. |
+| [latex](latex/) | Technical source: version-controlled TeX files for resumes and policy docs. |
+| [docs](docs/) | Governance: standards, linting configuration, and documentation support files. |
+| [scripts](scripts/) | Utilities: publishing and repository maintenance scripts. |
+
+---
+
+## Architectural Philosophy
+
+I bridge North American rapid delivery with European regulatory rigor. A zero-trust AI workflow ensures each increment is reviewed for privacy posture, explainability, accessibility, and production readiness.
+
+### GDPR and EU AI Act Alignment Snapshot
+
+- AI-assisted outputs are treated as draft artifacts until human validation is complete.
+- Data handling follows least-necessary scope with traceable ownership of decisions.
+- Releases require explicit human sign-off for compliance, fairness, or trust-sensitive changes.
+
+---
+
+## Technical Summary
+
+- **Languages:** Python, TypeScript, React, SQL, LaTeX.
+- **Specializations:** HIPAA-aware systems, ethical AI workflows (including bias-aware practice), and civic-tech delivery.
+- **Context:** IU Luddy Informatics and Kelley business exposure; currently based in Madrid, Spain.
+
+---
+
+## Run Locally
 
 ```bash
 cd matchaxmoxie/site
@@ -84,116 +191,22 @@ python3 -m http.server 8080
 
 Open `http://127.0.0.1:8080`.
 
-### LaTeX sources
-
-| File | Role |
-|------|------|
-| [`jade-zhao-header.tex`](latex/jade-zhao-header.tex) | Contact block; `\input{}` after `\begin{document}` |
-| [`jade-zhao-pink-highlight.tex`](latex/jade-zhao-pink-highlight.tex) | Pink highlights; `\input{}` in preamble before `hyperref` |
-| [`jade-zhao-resume.tex`](latex/jade-zhao-resume.tex) | Compact résumé |
-| [`jade-zhao-profile-full.tex`](latex/jade-zhao-profile-full.tex) | Long profile: who I am, Matchaxmoxie, quotes, pillars, experience, projects |
-| [`jade-zhao-quotes-principles.tex`](latex/jade-zhao-quotes-principles.tex) | Quotes and principles, first person |
-| [`jade-zhao-three-pillars.tex`](latex/jade-zhao-three-pillars.tex) | Numbered pillars (community, technical depth, first gen and access) |
-| [`jade-zhao-inclusive-tech-statement.tex`](latex/jade-zhao-inclusive-tech-statement.tex) | Short access and values statement |
-| [`jade-zhao-philosophy-mentorship.tex`](latex/jade-zhao-philosophy-mentorship.tex) | Mentorship, clients, shipping usable systems |
-| [`regenerate-placeholder-pdfs.py`](latex/regenerate-placeholder-pdfs.py) | Optional stub PDFs for `site/` |
-
-**Build:** See [`latex/BUILD.md`](latex/BUILD.md). Typical flow: from `matchaxmoxie/latex/` run `pdflatex jade-zhao-resume.tex` (no images); run twice if the log asks; copy outputs to **`site/`** so badges and [`site/index.html`](site/index.html) links stay valid. The homepage **Download resume** button uses **`site/resume.pdf`** (sync from `jade-zhao-resume.pdf` per BUILD).
-
 ---
 
-## Technical stack
+## Build Notes
 
-**Languages and frameworks:** `Python` · `TypeScript` · `React` · `Node.js` · `SQL` · `D3.js` · `PostgreSQL`
-
-**Tools and platforms:** Git · **Cursor** (editor + agent workflows; [disclosure](https://matchaxmoxie.github.io/matchaxmoxie/#how-i-work)) · Figma · WordPress · WCAG 2.1 AA/AAA · WAVE · Axe DevTools
-
-**Specializations:**
-
-- **Product and delivery:** Discovery notes, lightweight specs, stakeholder alignment, shippable increments
-- **Full-stack:** Accessible web products people actually use
-- **Ethical AI and ML:** Humans in the loop, **governance- and procurement-friendly** language, fewer creepy surprises
-- **Data viz:** Honest charts (civic and health-flavored contexts)
-- **Civic tech:** Nonprofit and city work that should not suck to use
-
----
-
-## Research and cross-cultural skills
-
-- **User-centered research:** Mixed methods for inclusive design
-- **Cross-cultural analysis:** Spain and US tech adoption, fintech, student access
-- **Field research:** Madrid startup and smart-city context
-- **Languages:** Native English, professional Mandarin, conversational Spanish
-
----
-
-## Leadership and collaboration
-
-- **Mentorship:** First-gen peers, tech literacy, career readiness
-- **Stakeholder alignment:** Technical work tied to org goals
-- **Advocacy:** Accessibility, ethical AI, tech for good
-- **Adaptability:** Interdisciplinary, fast-moving teams
-
----
-
-## Experience
-
-**Software Engineer** · *Self-directed, Jan 2026 to present*
-
-- Full-stack apps, clean architecture, accessibility
-- Open code for civic tech and nonprofits
-
-**AI Research Assistant** · *IU Luddy Proactive Health Informatics, May 2024 to Dec 2025*
-
-- HIPAA-aware data systems for patient monitoring
-- Ethical AI safeguards for health informatics
-
-**Machine Learning Researcher** · *Luddy ServeIT Clinic, Jan 2024 to Dec 2025*
-
-- Nonprofit-facing AI with bias detection and community impact
-- Cross-functional, transparent, user-centered delivery
-
-**Assistant Instructor** · *IU Office of Student Life, Aug 2023 to Dec 2025*
-
-- First-gen students: tech skills and academic success
-- Advisor workflows automated where it helped
-
----
-
-## Education
-
-**B.S. in Informatics** (Business and Society)  
-*Indiana University Luddy School of Informatics, Computing, and Engineering*
-
-- Hudson and Holland Scholar
-- Dean’s List
-- Study abroad: Madrid, Spain (Spring 2026)
-
----
-
-## Beyond code
-
-- **Film photography:** Slow, deliberate, no undo
-- **Jade plants and side projects:** Keeping both alive
-- **Current read:** Ask me
-- **Madrid semester:** Culture, tech scene, café con leche
+LaTeX sources are under [latex/docs](latex/docs/). Run `pdflatex` twice for stable references, then copy generated PDFs into [site](site/) when publishing updated collateral.
 
 ---
 
 <div align="center">
-<small><i>Building things that feel kind in your hands.</i> 🌷</small>
+<i>"Engineering digital systems with precision and care."</i>
 </div>
 
 ---
 
-## GitHub Pages and deploy
+## Deployment Notes
 
-**What ships:** Only **`site/`** is the public site (`index.html`, `styles.css`, `LICENSE`, PDFs, images). **`latex/`**, **`scripts/`**, and **`docs/`** are not on the live URL.
-
-**Public mirror:** [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) holds a **subtree** of the whole **`matchaxmoxie/`** folder at repo root (`site/`, `latex/`, etc.). After commits in the UCM monorepo, run **`scripts/publish-site.sh`** (force-updates `main`). GitHub **Pages:** point the published branch/folder at **`site/`** so `index.html` is the entry (or match whatever you already use in Settings).
-
-**UCM monorepo:** [`.github/workflows/matchaxmoxie-pages.yml`](../.github/workflows/matchaxmoxie-pages.yml) deploys **`matchaxmoxie/site`** when `matchaxmoxie/**` or that workflow changes. **Settings → Pages → Source: GitHub Actions**; confirm Actions is green. Manual run: **Actions → Deploy matchaxmoxie to Pages → Run workflow**.
-
-*(If you pointed Pages at this monorepo without Actions, you would use folder **`/matchaxmoxie/site`**; the usual setup here is Actions.)*
-
-**Meta tags:** [`site/index.html`](site/index.html) sets `canonical`, `og:url`, and `og:image`. Update those if the repo name or custom domain changes.
+- Public site serves from [site](site/).
+- Root [index.html](index.html) redirects to [site](site/).
+- Canonical and social metadata are maintained in [site/index.html](site/index.html).

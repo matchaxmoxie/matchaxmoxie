@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Pull matchaxmoxie/matchaxmoxie into monorepo folders.
-# This mirror repo has unrelated history with UCM, so use archive sync.
+# Mirror and UCM have unrelated subtree history, so use archive sync (not subtree pull).
 set -euo pipefail
 
 ROOT="$(git rev-parse --show-toplevel)"
@@ -21,19 +21,14 @@ trap 'rm -rf "$TMP"' EXIT
 git fetch "$REMOTE" "$BRANCH"
 git archive "$REMOTE/$BRANCH" | tar -x -C "$TMP"
 
+rsync -a --delete --exclude='.DS_Store' "$TMP/site/" "matchaxmoxie/site/"
 rsync -a --delete --exclude='.DS_Store' "$TMP/latex/" "matchaxmoxie/latex/"
 rsync -a --delete --exclude='.DS_Store' "$TMP/scripts/" "matchaxmoxie/scripts/"
-rsync -a \
-  "$TMP/index.html" \
-  "$TMP/styles.css" \
-  "$TMP/CONTRIBUTING.md" \
-  "$TMP/LICENSE" \
-  "$TMP/README.md" \
-  "$TMP/j.adezhao.jpg" \
-  "$TMP/resume.pdf" \
-  "$TMP"/jade-zhao-*.pdf \
-  "matchaxmoxie/site/"
+cp "$TMP/README.md" "matchaxmoxie/README.md"
+cp -R "$TMP/docs/." "matchaxmoxie/docs/"
+cp "$TMP/index.html" "matchaxmoxie/index.html"
+# Do not copy pull-mirror.sh from the mirror; monorepo keeps the archive-safe version (rsync site/ first).
 
-chmod +x "matchaxmoxie/scripts/publish-site.sh"
+chmod +x "matchaxmoxie/pull-mirror.sh" "matchaxmoxie/scripts/publish-site.sh"
 
-echo "Done. Synced $REMOTE/$BRANCH into matchaxmoxie/site, latex, and scripts."
+echo "Done. Synced $REMOTE/$BRANCH into matchaxmoxie/ (site, latex, scripts, docs, root README + redirect)."
