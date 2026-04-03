@@ -26,6 +26,9 @@ Main site files are under [`site`](site/):
 - [`site/ai-transparency.html`](site/ai-transparency.html): AI and agentic disclosure.
 - [`site/styles.css`](site/styles.css): single shared stylesheet.
 - [`site/j.adezhao.jpg`](site/j.adezhao.jpg): profile image used as favicon and visual anchor.
+- [`site/j.adezhao.webp`](site/j.adezhao.webp): optimized WebP hero image.
+- [`site/j.adezhao-600.webp`](site/j.adezhao-600.webp): mobile-sized WebP variant.
+- [`site/j.adezhao-1080.webp`](site/j.adezhao-1080.webp): desktop-sized WebP variant.
 
 For site-only details, see [`site/README.md`](site/README.md).
 
@@ -35,6 +38,15 @@ For site-only details, see [`site/README.md`](site/README.md).
 - Non-emoji symbolic motifs only.
 - Color palette tuned to the profile image so branding and favicon remain coherent.
 - Accessibility and responsive behavior preserved across desktop and mobile breakpoints.
+
+## Portfolio Method (Opus)
+
+- Portfolio evidence lives inside each year page, not in a separate gallery page.
+- Each year includes an `Opus (Work)` piece card with: problem, decision, result, and reflection.
+- The index includes `Opus Selectum (Selected Work)` links that point to anchored pieces in year pages.
+- Current anchor targets:
+  - `sophomore.html#piece-mentorship-template`
+  - `junior.html#piece-madrid-stress-test`
 
 ## SEO and Accessibility Baseline
 
