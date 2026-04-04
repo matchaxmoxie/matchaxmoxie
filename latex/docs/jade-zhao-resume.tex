@@ -1,101 +1,144 @@
-% Jade Zhao compact résumé. Facts and metrics from your IU / ServeIT / civic work only.
+% Site resume (informatics ATS layout). Build from this directory:
+%   pdflatex -interaction=nonstopmode jade-zhao-resume.tex
+% Copy outputs to ../../site/ per latex/BUILD.md (resume.pdf, jade-zhao-resume.pdf).
 
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 
-\usepackage[margin=0.85in]{geometry}
-\input{../shared/jade-zhao-pink-highlight}
-\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[letterpaper,noheadfoot,left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
 \usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+\hypersetup{pdftitle={Jade Zhao - Resume}, pdfauthor={Jade Zhao}}
 
 \pagestyle{empty}
-\setlist[itemize]{nosep,leftmargin=*,topsep=0.25em}
-\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\raggedright
+\frenchspacing
+
+\setlist[itemize]{
+  nosep,
+  leftmargin=1em,
+  labelsep=0.35em,
+  topsep=0.5pt,
+  itemsep=1.25pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+\renewcommand{\labelitemi}{\textbullet}
 
 \newcommand{\ressection}[1]{%
-  \vspace{0.55em}%
-  \noindent{\large\bfseries #1}\\[-0.15em]%
-  \noindent\rule{\linewidth}{0.4pt}%
-  \vspace{0.3em}%
+  \vspace{4pt plus 1pt minus 0pt}%
+  {\bfseries\fontsize{9.5}{11}\selectfont\MakeUppercase{#1}}\\[-1pt]%
+  \rule{\linewidth}{0.5pt}\\[2pt]%
 }
 
+\newcommand{\exphead}[3]{%
+  \noindent\textbf{#1}\hfill\textit{#3}\par
+  {\small #2}\par
+  \vspace{1.25pt}%
+}
+
+\newcommand{\expgap}{\vspace{3.75pt plus 0.5pt minus 0.5pt}}
+
+\newcommand{\skillline}[2]{\textbf{#1:} #2\par\vspace{1pt}}
+
 \begin{document}
+\linespread{0.97}\selectfont
+\fontsize{10}{11.35}\selectfont
 
-\input{../shared/jade-zhao-header}
-\vspace{0.35em}
-\noindent\textit{April 2026 update: concise profile, transparent AI workflow, and measurable impact highlights (Greco-Latin + English style).}
+\begin{center}
+  {\LARGE\bfseries Jade Zhao}\\[3pt]
+  {\small
+  Bloomington, IN \textbar\ Open to relocation
+  \textbar\
+  \href{mailto:jlzhao@iu.edu}{\underline{jlzhao@iu.edu}}
+  \textbar\
+  \href{mailto:jadexzhao@outlook.com}{\underline{jadexzhao@outlook.com}}
+  }\\[2pt]
+  {\small
+  \href{https://linkedin.com/in/jadexzhao}{\underline{linkedin.com/in/jadexzhao}}
+  \textbar\
+  \href{https://github.com/jazhao-ucm}{\underline{github.com/jazhao-ucm}}
+  \textbar\
+  \href{https://matchaxmoxie.github.io/matchaxmoxie}{\underline{matchaxmoxie.github.io/matchaxmoxie}}
+  }
+\end{center}
 
-\vspace{0.5em}
+\vspace{4.5pt}
 
-\ressection{Theoria (Professional profile)}
-I like building things that do not leave people behind: first-gen and low-income students wrestling portals, folks on civic and nonprofit sites, teams behind HIPAA data. Informatics (Business \& Society) + Kelley minor: enough business vocabulary to collaborate, enough stubbornness to keep asking ``who cannot use this yet?'' I frame messy work with product habits---stakeholders, scope, lightweight success checks, and SWOT-style risk thinking when the roadmap gets loud.
-
-\noindent\textit{Cursor and agents:} Primary editor is \textbf{Cursor}; \textbf{agent} runs are supervised (plan, tool use, multi-file edits, human reads the diff). Public memo: \href{https://matchaxmoxie.github.io/matchaxmoxie/\#cursor-and-agents}{crib sheet} and full \href{https://matchaxmoxie.github.io/matchaxmoxie/\#how-i-work}{\#how-i-work} (brief, SWOT, vendor map).
-
-\noindent\textbf{Core strengths:}
-Stakeholder alignment and incremental delivery \textbullet{}
-WCAG 2.1 AA/AAA practice \textbullet{}
-Ethical AI with human oversight \textbullet{}
-Python, SQL, full-stack (React, Node) \textbullet{}
-Mentorship and resource design \textbullet{}
-D3.js / data storytelling \textbullet{}
-Agile, cross-functional delivery
-
-\ressection{Academia (Education)}
-\noindent\textbf{Indiana University, Luddy School of Informatics, Computing, and Engineering} \hfill Bloomington, IN\\
-Bachelor of Science in Informatics, Concentration: Business and Society; Minor: Business (Kelley School of Business)\\
-GPA: 3.70 (Class of 2027)\\
-Hudson \& Holland Scholar (full-ride merit); Luddy Direct Admit; Study Abroad: Universidad Complutense de Madrid (Spring 2026) via Hutton program
-
-\ressection{Experientia (Experience)}
-\noindent\textbf{Undergraduate Research Assistant}, Proactive Health Informatics Research Group, IU Luddy School \hfill Sep 2025 to Dec 2025
+\ressection{Education}
+\noindent\textbf{Indiana University}, Luddy School of Informatics, Computing, and Engineering\hfill Bloomington, IN\par
+{\small\textit{B.S. Informatics} (Business \& Society), Minor: Business (Kelley) \textbar\ \textbf{GPA: 3.70} \textbar\ Aug 2023 -- May 2027}
 \begin{itemize}
-    \item Developed HIPAA-compliant database systems using Python and SQL; reduced data entry errors by 30\%.
-    \item Built real-time patient monitoring with analytics and anomaly detection; reduced workload by 25 to 40\%.
-    \item Researched ethical AI safeguards: audit trails, bias detection, human oversight.
+  \item Hudson \& Holland Scholar (competitive \textbf{full merit scholarship}, tuition and mandatory fees) \textbar\ Dean's List \textbar\ Luddy Direct Admit
+  \item Hutton Honors International Experiences Scholar \textbar\ Study abroad: Universidad Complutense de Madrid, Spring 2026
+  \item Concurrent research, machine learning, and mentoring roles alongside a full course load, 2024--2025
 \end{itemize}
 
-\noindent\textbf{Undergraduate Teaching Assistant}, IU Office of Student Life, Mentoring Services \& Leadership Development \hfill Aug 2023 to Dec 2025
+\ressection{Experience}
+
+\exphead{Software Engineer}{Matcha Green Consulting \hfill Remote}{Jan 2026 -- Present}
 \begin{itemize}
-    \item Consolidated fragmented campus resources into accessible digital tools for first-generation and low-income students.
-    \item Automated repetitive information-sharing workflows; freed advisors for high-impact guidance.
-    \item Supported students navigating study abroad and international program applications.
+  \item Built full-stack features in TypeScript, React, and Node.js with modular architecture for maintainability
+  \item Developed RESTful APIs with accessibility checks, validation, and secure data handling across the SDLC
+  \item AI-assisted development with human review on all deliverables; WCAG 2.1 AA and secure coding standards
 \end{itemize}
 
-\noindent\textbf{AI Client Team Lead}, Laurie Burns McRobbie ServeIT Clinic, Indiana University \hfill Jan 2024 to May 2025
+\expgap
+\exphead{Undergraduate Research Assistant}{Proactive Health Informatics Lab, IU Luddy \hfill Bloomington, IN}{May 2024 -- Dec 2025}
 \begin{itemize}
-    \item Led a cross-functional team of 5 using Agile on adaptive learning platforms; increased engagement by 45\%.
-    \item Designed accessible AI tutoring for English language learners and students with learning disabilities.
-    \item Implemented ethical AI safeguards: bias detection, transparent decision-making, educator oversight.
+  \item Built HIPAA-compliant Python/SQL pipelines for patient data; reduced data entry errors by 30\%
+  \item Shipped real-time monitoring with anomaly detection; cut clinical workload an estimated 25--40\%; ethical AI controls (audit trails, bias detection, oversight)
+  \item Translated mixed-methods findings into design specs for underserved patients; briefed clinical, research, and ops stakeholders to support evidence-based decision-making
 \end{itemize}
 
-\ressection{Projecta (Key projects)}
-\noindent\textbf{Indiana Phenology Lab Research} \hfill Jan 2025 to May 2025
+\expgap
+\exphead{Machine Learning Researcher}{ServeIT Clinic, IU Luddy \hfill Bloomington, IN}{Jan 2024 -- Dec 2025}
 \begin{itemize}
-    \item Analyzed environmental data in Python; improved research efficiency by 40\%.
-    \item Accessible data presentations (D3.js, Figma); WCAG 2.1 AA.
+  \item Led Agile team of five on an adaptive learning platform for ELL and students with learning disabilities; \textbf{deployed to live nonprofit clients}; +45\% user engagement
+  \item Shipped engagement features; +25\% participation; bias checks, transparent decisions, educator oversight at design time
+  \item AI literacy workshops for 200+ non-technical users; dashboards on engagement, retention, and program impact
 \end{itemize}
 
-\noindent\textbf{Middle Way House Website Redesign} \hfill Aug 2024 to Dec 2024
+\expgap
+\exphead{Peer Mentor \& Teaching Assistant}{IU Office of Student Life, Mentoring \& Leadership \hfill Bloomington, IN}{Aug 2023 -- Dec 2025}
 \begin{itemize}
-    \item Led nonprofit redesign; usability +65\%, conversions +28\%.
-    \item Accessibility audits on 200+ components (WAVE, Axe); WCAG 2.1 AA/AAA.
+  \item Mentored 15+ first-gen and low-income students; supported 20\% retention lift among underrepresented groups
+  \item Built tools that unified campus resources; automated advisor workflows to free time for high-impact student support
+  \item Guided students through study abroad and international program applications
 \end{itemize}
 
-\noindent\textbf{City of Bloomington Digital Accessibility} \hfill Jan 2024 to May 2024
+\expgap
+\exphead{Web Designer \& Instructor}{Girls Who Code \hfill Indianapolis, IN}{Jan 2018 -- Aug 2023 (pre-college)}
 \begin{itemize}
-    \item Audited 10+ municipal sites; 150+ issues identified with remediation roadmaps; AA alignment.
+  \item Taught coding and digital literacy to 50+ students through workshops and structured sessions
+  \item Facilitated twelve student-led technology projects with inclusive curricula across skill levels
+  \item Mentored 20+ students toward STEM paths through sustained one-on-one coaching
 \end{itemize}
 
-\ressection{Instrumenta (Skills)}
+\expgap
+\exphead{Shift Manager}{Potstickers Chinese Restaurant \hfill New Palestine, IN}{May 2020 -- Aug 2023 (pre-college)}
 \begin{itemize}
-    \item \textbf{Development:} Python, SQL, HTML, CSS, JavaScript, React, Node.js, PostgreSQL, Git/GitHub, D3.js
-    \item \textbf{Data \& systems:} Real-time systems, HIPAA compliance, data governance, ETL, analytics, database design
-    \item \textbf{AI \& ethics:} Bias detection, ethical AI frameworks, human oversight, LLM orchestration
-    \item \textbf{Design \& accessibility:} WCAG 2.1 AA/AAA, Figma, Adobe Creative Suite, WAVE, Axe DevTools
-    \item \textbf{Languages:} English (Native), Mandarin Chinese (Professional), Spanish (Elementary)
+  \item Managed front-of-house service, scheduling, and shift handoffs for a family-owned restaurant
+  \item Trained staff, managed guest relations, and upheld service standards during high-volume periods
+  \item Ran inventory checks, vendor handoffs, and closing routines with owners for daily operational continuity
 \end{itemize}
 
-\ressection{Studia (Interests)}
-Film photography; sustainable agriculture; cross-cultural tech adoption; open-source work; matcha; food on Instagram (\texttt{@j.adezhao}).
+\ressection{Technical Skills}
+{\small
+\skillline{Technical}{Python, TypeScript, JavaScript, SQL, HTML, CSS, React, Node.js, PostgreSQL, D3.js, Git, GitHub}
+\skillline{Data \& systems}{Real-time systems, HIPAA compliance, ETL, database design, data governance, statistical analysis}
+\skillline{AI \& ethics}{Ethical AI, bias detection, human oversight, LLM orchestration, prompt engineering, audit trails, responsible AI frameworks}
+\skillline{Design \& accessibility}{WCAG 2.1 AA/AAA, Figma, human-centred design, trauma-informed UX, user research}
+\skillline{Professional}{Agile/Scrum, cross-functional leadership, mixed-methods research, technical writing, code review}
+\skillline{Languages}{English (Native)\,\textperiodcentered\,Mandarin (Professional)\,\textperiodcentered\,Fuzhounese (Professional)\,\textperiodcentered\,Spanish (Elementary, improving)}
+\vspace{-4pt}
+}
 
 \end{document}

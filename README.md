@@ -1,106 +1,60 @@
-# Jade Zhao | Informatics Portfolio
+# matchaxmoxie (informatics portfolio)
 
-Portfolio repository for the public site at  
-[matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/).
+**UCM subtree:** this folder lives inside the **[UCM monorepo](../README.md)** at `matchaxmoxie/`. Content is mirrored to [matchaxmoxie/matchaxmoxie](https://github.com/matchaxmoxie/matchaxmoxie) for GitHub Pages.
 
-The current edition uses a Greco-Latin plus English design and language system, with explicit AI workflow disclosure and a year-by-year academic narrative.
+**Live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
 
-## Live Profiles
+## Profiles and contact
 
-- [Portfolio](https://matchaxmoxie.github.io/matchaxmoxie/)
-- [LinkedIn](https://www.linkedin.com/in/jadexzhao)
-- [GitHub](https://github.com/jazhao-ucm)
-- [Instagram](https://instagram.com/j.adezhao)
-- [Goodreads](https://www.goodreads.com/jadewowgreen)
-- [Email](mailto:jadexzhao@outlook.com)
+- [Portfolio](https://matchaxmoxie.github.io/matchaxmoxie/)  
+- [Résumé (PDF, IU Pages)](https://jlzhao.pages.iu.edu/resume.pdf)  
+- [LinkedIn](https://www.linkedin.com/in/jadexzhao)  
+- [GitHub](https://github.com/jazhao-ucm)  
+- [Instagram](https://instagram.com/j.adezhao)  
+- [Goodreads](https://www.goodreads.com/jadewowgreen)  
+- [Email](mailto:jadexzhao@outlook.com)  
 
-## Site Structure
-
-Main site files are under [`site`](site/):
-
-- [`site/index.html`](site/index.html): landing page and navigation hub.
-- [`site/freshman.html`](site/freshman.html): 2023 to 2024.
-- [`site/sophomore.html`](site/sophomore.html): 2024 to 2025.
-- [`site/junior.html`](site/junior.html): 2025 to 2026.
-- [`site/senior.html`](site/senior.html): 2026 to 2027 projection.
-- [`site/ai-transparency.html`](site/ai-transparency.html): AI and agentic disclosure.
-- [`site/styles.css`](site/styles.css): single shared stylesheet.
-- [`site/j.adezhao.jpg`](site/j.adezhao.jpg): profile image used as favicon and visual anchor.
-- [`site/j.adezhao.webp`](site/j.adezhao.webp): optimized WebP hero image.
-- [`site/j.adezhao-600.webp`](site/j.adezhao-600.webp): mobile-sized WebP variant.
-- [`site/j.adezhao-1080.webp`](site/j.adezhao-1080.webp): desktop-sized WebP variant.
-
-For site-only details, see [`site/README.md`](site/README.md).
-
-## Design System Notes
-
-- Greco-Latin plus English labeling pattern, for example `Theoria (Learning)`.
-- Non-emoji symbolic motifs only.
-- Color palette tuned to the profile image so branding and favicon remain coherent.
-- Accessibility and responsive behavior preserved across desktop and mobile breakpoints.
-
-## Portfolio Method (Opus)
-
-- Portfolio evidence lives inside each year page, not in a separate gallery page.
-- Each year includes an `Opus (Work)` piece card with: problem, decision, result, and reflection.
-- The index includes `Opus Selectum (Selected Work)` links that point to anchored pieces in year pages.
-- Current anchor targets:
-  - `sophomore.html#piece-mentorship-template`
-  - `junior.html#piece-madrid-stress-test`
-
-## SEO and Accessibility Baseline
-
-- All public HTML files include favicon links, canonical URLs, robots directives, and Open Graph plus Twitter metadata.
-- Social preview alt text is explicitly defined through `og:image:alt` and `twitter:image:alt`.
-- Navigation and key interactive links include clear accessibility labels where needed.
-- Pattern is maintained in Greco-Latin plus English voice across metadata and page copy.
-
-## AI Transparency
-
-The site explicitly documents AI-assisted workflow boundaries and human accountability:
-
-- AI can draft, suggest, and accelerate iteration.
-- Human review, policy alignment, and publication sign-off are mandatory.
-- Reference memo: [`docs/TRANSPARENCY.md`](docs/TRANSPARENCY.md).
-
-## Repository Layout
+## Repository layout
 
 | Path | Purpose |
-| :--- | :--- |
-| [`site`](site/) | Public Pages site (HTML/CSS/assets). |
-| [`latex`](latex/) | LaTeX source tree for resume and supporting documents. |
-| [`latex/docs`](latex/docs/) | Primary document `.tex` files. |
-| [`latex/shared`](latex/shared/) | Shared style/header partials. |
-| [`docs`](docs/) | Governance and transparency documentation. |
-| [`scripts`](scripts/) | Publishing and maintenance scripts. |
+|------|---------|
+| [`site/`](site/) | Public Pages site (HTML, CSS, images). Entry: [`site/index.html`](site/index.html). Details: [`site/README.md`](site/README.md). |
+| [`site/j-adezhao.jpg`](site/j-adezhao.jpg) (and `.webp` variants) | Favicon and hero image assets |
+| [`latex/`](latex/) | Résumé and PDFs; sources in [`latex/docs/`](latex/docs/), shared TeX in [`latex/shared/`](latex/shared/). Build: [`latex/BUILD.md`](latex/BUILD.md). |
+| [`docs/`](docs/) | Transparency and governance (e.g. [`docs/TRANSPARENCY.md`](docs/TRANSPARENCY.md)) |
+| [`scripts/`](scripts/) | Publish and maintenance (e.g. subtree push) |
+| [`index.html`](index.html) | Root redirect into `site/` |
 
-## Run Locally
+**Year pages (academic narrative):** `site/freshman.html` through `site/senior.html`. **AI disclosure:** `site/ai-transparency.html`. **Styles:** `site/styles.css`.
+
+## Design and content method
+
+- **Voice:** Greco-Latin plus English labels where it fits (e.g. *Theoria (Learning)*); no emoji motifs.  
+- **Opus:** Work evidence sits on year pages; each year includes an *Opus (Work)* card (problem, decision, result, reflection). Index links: *Opus Selectum* → anchors such as `sophomore.html#piece-mentorship-template`, `junior.html#piece-madrid-stress-test`.  
+- **Accessibility / SEO:** Canonical URLs, robots, Open Graph, Twitter cards, explicit `og:image:alt` / `twitter:image:alt`.  
+- **AI:** Drafting and speed are fine; human review and sign-off are required. See [`docs/TRANSPARENCY.md`](docs/TRANSPARENCY.md).
+
+## Run locally
 
 ```bash
 cd matchaxmoxie/site
 python3 -m http.server 8080
 ```
 
-Then open `http://127.0.0.1:8080`.
+Open `http://127.0.0.1:8080`.
 
-## Mirror Sync Workflow
+## Mirror sync (from monorepo root)
 
-From the monorepo root:
+- Pull mirror into this subtree: `./matchaxmoxie/pull-mirror.sh`  
+- Push subtree to `matchaxmoxie/matchaxmoxie` main: `./matchaxmoxie/scripts/publish-site.sh`  
 
-- Pull mirror into this subtree:  
-  `./matchaxmoxie/pull-mirror.sh`
-- Publish subtree back to mirror repo:  
-  `./matchaxmoxie/scripts/publish-site.sh`
+More detail: [`SYNC-FROM-MIRROR.md`](SYNC-FROM-MIRROR.md).
 
-The publish script uses `git subtree split` to push [`matchaxmoxie`](.) to `matchaxmoxie/matchaxmoxie` main.
+## Related in this monorepo
 
-## Deployment Notes
-
-- Public Pages content is served from [`site`](site/).
-- Root [`index.html`](index.html) redirects into [`site`](site/).
-- Canonical and social metadata are defined across root and site HTML pages.
+- Photo portfolio: [`../jadewowgreen/README.md`](../jadewowgreen/README.md)  
+- Private research: [`../j-adezhao/README.md`](../j-adezhao/README.md)  
 
 ## License
 
-Copyright © 2026 Jade Zhao.  
-All rights reserved unless stated otherwise.
+Copyright © 2026 Jade Zhao. All rights reserved unless stated otherwise.
