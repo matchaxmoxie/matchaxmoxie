@@ -1,12 +1,37 @@
-# Lunch & Learns
+# Lunch & Learns (Video?)
 
 **Canvas module:** (Jade) Day 3 - FASE Events & Attendance  
-**Status:** Coordinator draft placeholder  
-**Video:** optional (confirm with FASE leadership)
+**Status:** Draft text from Canvas (ready for review); optional video flagged in page title  
+**Coordinator draft:** internal reference for Jade's edits. Not for public GitHub Pages.
 
-## Production checklist
+## Related pages
 
-- [ ] Define what mentors need to know about proposing or supporting Lunch & Learns
-- [ ] Cross-link to [event idea video outline](event-idea.md) and [sample forms](sample-budget-event-forms.md)
-- [ ] Record embed if leadership wants a video walkthrough
-- [ ] Publish to Canvas after Jade review (no repo paste of handbook prose)
+- [FASE Office Hours](office-hours.md) (planning Lunch & Learns during office hours)
+- ["I have an idea for an event!"](event-idea.md) (Lunch & Learns are one event type mentors may propose)
+
+## Canvas paste (source)
+
+### What is a Lunch & Learn?
+
+Students come, eat food, and learn about a topic from you (the mentor) and a collaborating faculty/staff member.
+
+Sessions are engaging, should involve some sort of audience participation/activity, and be around 1 hour long.
+
+### What would make a good Lunch & Learn?
+
+- **Educational topics** (like Greek mythology, medical disparities in America)
+- **Service-related topics** (like how to engage in meaningful philanthropy through volunteering, the stigma around mental health, why voting matters)
+- **Career-related topics** (how to use Handshake, how to network effectively)
+
+Basically, if you can find a staff or faculty member on campus who teaches it, you can partner with them on it!
+
+### What would NOT make a good Lunch & Learn?
+
+- **Workshop-like topics** (like coding, arts-and-crafts): While the audience should be involved in the Lunch & Learn, we don't have the resources to facilitate co-learning like that. If you really want to host an event like this, propose it as an independent event!
+- **Topics that can be sensitive, divisive, or inspire heated debate:** Again, audience participation is encouraged, but we want all students to feel comfortable learning and discovering in our space. Lunch & Learns are meant to inform, not persuade or shame.
+
+## Production notes
+
+- Decide whether to record an optional mentor-facing video (title still shows **Video?** in Canvas)
+- Cross-link from ["I have an idea for an event!"](event-idea.md) after both pages are live
+- Publish static text first; add embed later if video is recorded
