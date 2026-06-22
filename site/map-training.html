@@ -11,256 +11,298 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="coord-page">
   <a href="#main-content" class="skip-link">skip to main content</a>
 
   <main id="main-content">
     <div class="container">
-      <nav class="year-nav">
-        <a href="fase-map.html" class="back-link">FASE MAP bio</a>
-        <a href="map-assignments.html" class="back-link">Assignments</a>
+      <nav class="coord-nav" aria-label="MAP coordinator pages">
+        <a href="fase-map.html">FASE bio</a>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <a href="map-training.html" aria-current="page">Modules</a>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <a href="map-assignments.html">Assignments</a>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <a href="jade-day3.html">Jade Day 3</a>
       </nav>
 
-      <section class="hero">
+      <header class="hero">
         <h1>Training modules</h1>
         <p class="tagline">26-27 Mentors · Modules tab</p>
-        <p class="subtitle">Publish checklist only. All items unpublished unless noted. <a href="map-assignments.html">Assignments tab</a> has quizzes grouped by assignment type and the session summary calendar.</p>
-      </section>
+        <p class="subtitle">Publish checklist only. Nothing goes live here unless noted. Quizzes and session summaries live on the <a href="map-assignments.html">Assignments tab</a>.</p>
+      </header>
 
-      <section class="topic" aria-labelledby="owners-heading">
+      <aside class="open-todos-panel" aria-labelledby="open-todos-heading">
+        <h2 id="open-todos-heading">Open todos</h2>
+        <ul class="open-todos-list">
+          <li><span class="todo-owner">Rafael / coordinators:</span> combine AdRx quizzes into one per Canvas assignment note (Modules still lists four extras).</li>
+          <li><span class="todo-owner">Jade:</span> confirm videos for SPC Meetings and Lunch &amp; Learns; ping Marisa on Fall 2026 calendar; update both Day 3 quizzes. <a href="jade-day3.html">Day 3 hub</a></li>
+        </ul>
+      </aside>
+
+      <dl class="board-legend" aria-label="Status key">
+        <dt>Status key</dt>
+        <dd>
+          <span class="status-badge status-unpublished">unpublished</span>
+          <span class="status-badge status-draft">draft ready</span>
+          <span class="status-badge status-video">video needed</span>
+          <span class="status-badge status-blocked">blocked</span>
+        </dd>
+      </dl>
+
+      <section class="topic module-board" aria-labelledby="owners-heading">
         <h2 id="owners-heading">Module owners</h2>
+        <p class="section-intro">Who owns each module in Canvas. Page counts are from the Modules tab, not a content audit.</p>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Module</th><th>Owner</th><th>Pages</th><th>Quizzes</th></tr></thead>
+            <caption>11 modules · all unpublished unless noted in a row below</caption>
+            <thead><tr><th scope="col">Module</th><th scope="col">Owner</th><th scope="col">Pages</th><th scope="col">Quizzes</th></tr></thead>
             <tbody>
-              <tr><td>Resources</td><td>FASE (shared)</td><td>11</td><td>—</td></tr>
-              <tr><td>Important Info</td><td>FASE (shared)</td><td>4</td><td>—</td></tr>
-              <tr><td>For Leadership</td><td>Leadership</td><td>1</td><td>—</td></tr>
-              <tr><td>(Divya) Day 1 - Overview</td><td>Divya</td><td>4</td><td>1</td></tr>
-              <tr><td>(Emma) Day 1 - Working with Protégés</td><td>Emma</td><td>4</td><td>1</td></tr>
-              <tr><td>(Princesse U) Day 2 - Communication</td><td>Princesse U</td><td>5</td><td>1</td></tr>
-              <tr><td>(Caroline) Day 2 - Hours/Scheduling</td><td>Caroline</td><td>4</td><td>1</td></tr>
-              <tr><td>(Rafael) Day 2 - AdRx &amp; SAS</td><td>Rafael</td><td>5</td><td>5</td></tr>
-              <tr><td><a href="#jade-day-3">(Jade) Day 3 - FASE Events &amp; Attendance</a></td><td class="owner-jade">Jade Zhao</td><td>10</td><td>2</td></tr>
-              <tr><td>(Teni) Day 3 - Additional</td><td>Teni</td><td>2</td><td>1</td></tr>
-              <tr><td>Cover During Fall Training</td><td>FASE (fall)</td><td>7</td><td>—</td></tr>
+              <tr><td>Resources</td><td><span class="owner-tag owner-shared">FASE shared</span></td><td>11</td><td>—</td></tr>
+              <tr><td>Important Info</td><td><span class="owner-tag owner-shared">FASE shared</span></td><td>4</td><td>—</td></tr>
+              <tr><td>For Leadership</td><td><span class="owner-tag">Leadership</span></td><td>1</td><td>—</td></tr>
+              <tr><td>(Divya) Day 1 - Overview</td><td><span class="owner-tag">Divya</span></td><td>4</td><td>1</td></tr>
+              <tr><td>(Emma) Day 1 - Working with Protégés</td><td><span class="owner-tag">Emma</span></td><td>4</td><td>1</td></tr>
+              <tr><td>(Princesse U) Day 2 - Communication</td><td><span class="owner-tag">Princesse U</span></td><td>5</td><td>1</td></tr>
+              <tr><td>(Caroline) Day 2 - Hours/Scheduling</td><td><span class="owner-tag">Caroline</span></td><td>4</td><td>1</td></tr>
+              <tr><td>(Rafael) Day 2 - AdRx &amp; SAS</td><td><span class="owner-tag">Rafael</span></td><td>5</td><td>5</td></tr>
+              <tr><td><a href="#jade-day-3">(Jade) Day 3 - FASE Events &amp; Attendance</a></td><td><span class="owner-tag owner-jade">Jade Zhao</span></td><td>10</td><td>2</td></tr>
+              <tr><td>(Teni) Day 3 - Additional</td><td><span class="owner-tag">Teni</span></td><td>2</td><td>1</td></tr>
+              <tr><td>Cover During Fall Training</td><td><span class="owner-tag owner-shared">FASE fall</span></td><td>7</td><td>—</td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>Resources</h2>
+      <section class="topic module-board" aria-labelledby="resources-heading">
+        <h2 id="resources-heading">Resources</h2>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Page</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Page</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>Master Resource Document</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>IUB School Descriptions</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Academic Resources</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Private Tutoring Resources</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Culture Centers</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Mental Health Resources</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Health &amp; Wellness</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Emergency Responses</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Transportation</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Career Services</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Resource Contact Book</td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>Master Resource Document</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>IUB School Descriptions</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Academic Resources</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Private Tutoring Resources</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Culture Centers</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Mental Health Resources</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Health &amp; Wellness</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Emergency Responses</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Transportation</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Career Services</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Resource Contact Book</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>Important Info</h2>
+      <section class="topic module-board" aria-labelledby="important-info-heading">
+        <h2 id="important-info-heading">Important Info</h2>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Page</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Page</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>Protégé Pairings</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Post Mentoring Surveys</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Fall Office Hour Schedules</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Spring Office Hour Schedules</td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>Protégé Pairings</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Post Mentoring Surveys</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Fall Office Hour Schedules</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Spring Office Hour Schedules</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>For Leadership</h2>
+      <section class="topic module-board" aria-labelledby="leadership-heading">
+        <h2 id="leadership-heading">For Leadership</h2>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Page</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Page</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>Recording a Training Video</td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>Recording a Training Video</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>(Divya) Day 1 - Overview</h2>
+      <section class="topic module-board" aria-labelledby="divya-day1-heading">
+        <div class="module-board-header">
+          <h2 id="divya-day1-heading">(Divya) Day 1 - Overview</h2>
+          <span class="owner-tag">Divya</span>
+        </div>
         <p class="section-intro">Complete all items.</p>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Item</th><th>Type</th><th>Notes</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Item</th><th scope="col">Type</th><th scope="col">Notes</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>Overview</td><td>page</td><td>must view</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Who are the people of FASE?</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>FASE Advisory Board</td><td>page</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>What is MAP?</td><td>page</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Overview Quiz **Update**</td><td>quiz</td><td>3 pts</td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>Overview</td><td><span class="type-badge">page</span></td><td class="notes-cell">must view</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Who are the people of FASE?</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>FASE Advisory Board</td><td><span class="type-badge">page</span></td><td class="notes-cell"></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>What is MAP?</td><td><span class="type-badge">page</span></td><td class="notes-cell"></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Overview Quiz **Update**</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">3 pts</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>(Emma) Day 1 - Working with Protégés</h2>
+      <section class="topic module-board" aria-labelledby="emma-day1-heading">
+        <div class="module-board-header">
+          <h2 id="emma-day1-heading">(Emma) Day 1 - Working with Protégés</h2>
+          <span class="owner-tag">Emma</span>
+        </div>
         <p class="section-intro">Prerequisite: (Divya) Day 1 - Overview. Complete all items.</p>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Item</th><th>Type</th><th>Notes</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Item</th><th scope="col">Type</th><th scope="col">Notes</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>Types of Proteges</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Protege Meeting Explanation</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>What to Do if a Protégé_____?</td><td>page</td><td>must view</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Virtual Mentoring Best Practices</td><td>page</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Working with Proteges Quiz **Update**</td><td>quiz</td><td>6 pts</td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>Types of Proteges</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Protege Meeting Explanation</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>What to Do if a Protégé_____?</td><td><span class="type-badge">page</span></td><td class="notes-cell">must view</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Virtual Mentoring Best Practices</td><td><span class="type-badge">page</span></td><td class="notes-cell"></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Working with Proteges Quiz **Update**</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">6 pts</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>(Princesse U) Day 2 - Communication</h2>
+      <section class="topic module-board" aria-labelledby="princesse-day2-heading">
+        <div class="module-board-header">
+          <h2 id="princesse-day2-heading">(Princesse U) Day 2 - Communication</h2>
+          <span class="owner-tag">Princesse U</span>
+        </div>
         <p class="section-intro">Prerequisites: Day 1 modules. Complete all items.</p>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Item</th><th>Type</th><th>Notes</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Item</th><th scope="col">Type</th><th scope="col">Notes</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>The Basics</td><td>page</td><td>must view</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Canvas</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>How to Send Protege Messages through Canvas</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Email</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>GroupMe</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Quiz - Communication **Update**</td><td>quiz</td><td>0 pts</td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>The Basics</td><td><span class="type-badge">page</span></td><td class="notes-cell">must view</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Canvas</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>How to Send Protege Messages through Canvas</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Email</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>GroupMe</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz - Communication **Update**</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">0 pts</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>(Caroline) Day 2 - Hours/Scheduling</h2>
+      <section class="topic module-board" aria-labelledby="caroline-day2-heading">
+        <div class="module-board-header">
+          <h2 id="caroline-day2-heading">(Caroline) Day 2 - Hours/Scheduling</h2>
+          <span class="owner-tag">Caroline</span>
+        </div>
         <p class="section-intro">Prerequisites: Day 1 modules, Communication. Complete all items.</p>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Item</th><th>Type</th><th>Notes</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Item</th><th scope="col">Type</th><th scope="col">Notes</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>"...But We Get Paid, Right?"</td><td>page</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Kauli Time</td><td>page</td><td>Video, must view</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Session Summaries</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Sample Session Summary Sheet</td><td>page</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Hours/Scheduling Quiz **Update**</td><td>quiz</td><td>5 pts</td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>"...But We Get Paid, Right?"</td><td><span class="type-badge">page</span></td><td class="notes-cell"></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Kauli Time</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span> · must view</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Session Summaries</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Sample Session Summary Sheet</td><td><span class="type-badge">page</span></td><td class="notes-cell"></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Hours/Scheduling Quiz **Update**</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">5 pts</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>(Rafael) Day 2 - AdRx &amp; SAS</h2>
+      <section class="topic module-board" aria-labelledby="rafael-day2-heading">
+        <div class="module-board-header">
+          <h2 id="rafael-day2-heading">(Rafael) Day 2 - AdRx &amp; SAS</h2>
+          <span class="owner-tag">Rafael</span>
+        </div>
         <p class="section-intro">Prerequisites: Day 1, Communication, Hours/Scheduling. Complete all items.</p>
-        <div class="open-task">
-          <p><strong>Open task:</strong> Combine quizzes into one per Canvas assignment note. Modules still lists four extra quizzes.</p>
-        </div>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Item</th><th>Type</th><th>Notes</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Item</th><th scope="col">Type</th><th scope="col">Notes</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>What are AdRx and SAS?</td><td>page</td><td>must view</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Setting Up Your AdRx Profile</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Creating Appointment Slots on AdRx</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>AdRx Notes</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Helping Proteges Use SAS</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Quiz - Setting Up Your AdRx Profile **COMBINE ALL QUIZZES INTO ONE**</td><td>quiz</td><td>4 pts</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Quiz - Creating Appointment Slots on AdRx</td><td>quiz</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Quiz - AdRx Notes - Update needed</td><td>quiz</td><td>0 pts</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Quiz- What are AdRx and SAS?</td><td>quiz</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Quiz- Helping Proteges Use SAS</td><td>quiz</td><td></td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>What are AdRx and SAS?</td><td><span class="type-badge">page</span></td><td class="notes-cell">must view</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Setting Up Your AdRx Profile</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Creating Appointment Slots on AdRx</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>AdRx Notes</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Helping Proteges Use SAS</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz - Setting Up Your AdRx Profile **COMBINE ALL QUIZZES INTO ONE**</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">4 pts</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz - Creating Appointment Slots on AdRx</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">combine</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz - AdRx Notes - Update needed</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">0 pts · combine</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz- What are AdRx and SAS?</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">combine</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz- Helping Proteges Use SAS</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">combine</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic" id="jade-day-3">
-        <h2 class="owner-jade">(Jade) Day 3 - FASE Events &amp; Attendance</h2>
-        <p class="section-intro">Owner: Jade Zhao. Prerequisites: all Day 1 and Day 2 modules.</p>
-        <div class="note-box owned">
-          <p><strong>Pages:</strong> 10/10 documented in repo. <strong>Quizzes:</strong> 2/2 documented (both unpublished; build in New Quizzes). <strong>Videos still needed:</strong> iPad check-in, SPC, Lunch &amp; Learns (optional?), event idea, Absence Protocol. <strong>Blocker:</strong> Fall 2026 calendar (Marisa). Detail: <a href="jade-day3.html">Jade Day 3 checklist</a>.</p>
+      <section class="topic module-board is-owned" id="jade-day-3" aria-labelledby="jade-day3-heading">
+        <div class="module-board-header">
+          <h2 id="jade-day3-heading">(Jade) Day 3 - FASE Events &amp; Attendance</h2>
+          <span class="owner-tag owner-jade">Jade Zhao</span>
         </div>
-        <div class="open-task">
-          <p><strong>Jade action items:</strong> confirm videos for SPC Meetings and Lunch &amp; Learns; ping Marisa on Fall 2026 FASE Calendar; update both quizzes.</p>
+        <p class="section-intro">Prerequisites: all Day 1 and Day 2 modules. Drafts live in repo; full checklist on <a href="jade-day3.html">Jade Day 3 hub</a>.</p>
+
+        <div class="status-summary" aria-label="Module progress">
+          <div class="status-stat"><span class="stat-num">10/10</span><span class="stat-label">pages documented</span></div>
+          <div class="status-stat"><span class="stat-num">2/2</span><span class="stat-label">quizzes outlined</span></div>
+          <div class="status-stat"><span class="stat-num">5</span><span class="stat-label">videos needed</span></div>
+          <div class="status-stat"><span class="stat-num">1</span><span class="stat-label">blocked item</span></div>
         </div>
+
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Item</th><th>Type</th><th>Notes</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Item</th><th scope="col">Type</th><th scope="col">Notes</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>FASE Office Hours</td><td>page</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>How to Check-in with the iPads</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>SPC Meetings</td><td>page</td><td>Update, video?</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>In-services &amp; SPH-L102</td><td>page</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>MSLD Programs</td><td>page</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Lunch &amp; Learns</td><td>page</td><td>Draft ready for review; video optional · <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/lunch-and-learns.md">lunch-and-learns.md</a></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>"I have an idea for an event!"</td><td>page</td><td>Video · <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/event-idea.md">event-idea.md</a></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Sample Budget &amp; Event Proposal Forms</td><td>page</td><td><strong>Draft ready</strong>; attach samples in Canvas · <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/sample-budget-event-forms.md">sample-budget-event-forms.md</a></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Quiz - Budget &amp; Event Proposal Forms **Update**</td><td>quiz</td><td>0 pts · questions TBD · <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/quiz-budget-event-forms.md">quiz-budget-event-forms.md</a></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Absence Protocol</td><td>page</td><td><strong>Draft ready</strong>; video needed · <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/absence-protocol.md">absence-protocol.md</a></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Fall 2026 FASE Calendar <strong>Will be uploaded by Marisa when it's finalized more</strong></td><td>page</td><td>Owner: Marisa · <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/fall-2026-calendar.md">fall-2026-calendar.md</a></td><td class="status-blocked">blocked</td></tr>
-              <tr><td>FASE Events &amp; Attendance Quiz **Update**</td><td>quiz</td><td>5 pts · questions TBD · <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/quiz-fase-events-attendance.md">quiz-fase-events-attendance.md</a></td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>FASE Office Hours</td><td><span class="type-badge">page</span></td><td class="notes-cell"></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>How to Check-in with the iPads</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>SPC Meetings</td><td><span class="type-badge">page</span></td><td class="notes-cell">update · video TBD</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>In-services &amp; SPH-L102</td><td><span class="type-badge">page</span></td><td class="notes-cell"></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>MSLD Programs</td><td><span class="type-badge">page</span></td><td class="notes-cell"></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Lunch &amp; Learns</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-draft">draft ready</span> · video optional · <a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/lunch-and-learns.md">draft</a></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>"I have an idea for an event!"</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span> · <a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/event-idea.md">draft</a></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Sample Budget &amp; Event Proposal Forms</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-draft">draft ready</span> · attach samples in Canvas · <a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/sample-budget-event-forms.md">draft</a></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz - Budget &amp; Event Proposal Forms **Update**</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">0 pts · questions TBD · <a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/quiz-budget-event-forms.md">draft</a></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Absence Protocol</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-draft">draft ready</span> · <span class="status-badge status-video">video</span> · <a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/absence-protocol.md">draft</a></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Fall 2026 FASE Calendar</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="owner-tag owner-external">Marisa</span> · upload when finalized · <a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/fall-2026-calendar.md">placeholder</a></td><td class="col-status"><span class="status-badge status-blocked">blocked</span></td></tr>
+              <tr><td>FASE Events &amp; Attendance Quiz **Update**</td><td><span class="type-badge">quiz</span></td><td class="notes-cell">5 pts · questions TBD · <a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/quiz-fase-events-attendance.md">draft</a></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
-        <div class="open-task">
-          <p><strong>Quiz - Budget &amp; Event Proposal Forms:</strong> build in New Quizzes (0 pts, no gradebook); link <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/sample-budget-event-forms.md">sample forms</a> and <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/event-idea.md">event-idea</a> pages before publish; due dates TBD. Full checklist in <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/quiz-budget-event-forms.md">quiz-budget-event-forms.md</a>.</p>
-        </div>
       </section>
 
-      <section class="topic">
-        <h2>(Teni) Day 3 - Additional Training Resources</h2>
+      <section class="topic module-board" aria-labelledby="teni-day3-heading">
+        <div class="module-board-header">
+          <h2 id="teni-day3-heading">(Teni) Day 3 - Additional Training Resources</h2>
+          <span class="owner-tag">Teni</span>
+        </div>
         <p class="section-intro">Prerequisites: Day 1, Day 2, (Jade) Day 3. Complete all items.</p>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Item</th><th>Type</th><th>Notes</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Item</th><th scope="col">Type</th><th scope="col">Notes</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>Mentoring Policies Handbook</td><td>page</td><td>must view</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Training Review</td><td>page</td><td>Video</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Training Review Quiz **Update**</td><td>quiz</td><td></td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>Mentoring Policies Handbook</td><td><span class="type-badge">page</span></td><td class="notes-cell">must view</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Training Review</td><td><span class="type-badge">page</span></td><td class="notes-cell"><span class="status-badge status-video">video</span></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Training Review Quiz **Update**</td><td><span class="type-badge">quiz</span></td><td class="notes-cell"></td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>Cover During Fall Training</h2>
+      <section class="topic module-board" aria-labelledby="fall-cover-heading">
+        <h2 id="fall-cover-heading">Cover During Fall Training</h2>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Page</th><th>Status</th></tr></thead>
+            <thead><tr><th scope="col">Page</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>Mentor Probation Copy</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Professionalism Standards</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Resources</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Why do we support first-year students?</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Teamwork/Collaboration Practice</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Write our first protege email</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>NACE Self-Assessment</td><td class="status-unpublished">unpublished</td></tr>
+              <tr><td>Mentor Probation Copy</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Professionalism Standards</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Resources</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Why do we support first-year students?</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Teamwork/Collaboration Practice</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Write our first protege email</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>NACE Self-Assessment</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic">
-        <h2>Prerequisite chain</h2>
-        <div class="topic-content">
+      <section class="topic" aria-labelledby="prereq-heading">
+        <h2 id="prereq-heading">Prerequisite chain</h2>
+        <div class="prereq-chain">
           <p>Resources, Important Info, For Leadership (no prereqs)</p>
           <p>→ (Divya) Day 1 Overview → (Emma) Day 1 Protégés → (Princesse U) Day 2 Communication → (Caroline) Day 2 Hours → (Rafael) Day 2 AdRx/SAS → <span class="owner-jade">(Jade) Day 3 Events</span> → (Teni) Day 3 Additional</p>
           <p>Cover During Fall Training: separate module.</p>
@@ -269,7 +311,7 @@
 
       <footer class="footer">
         <div class="links">
-          <a href="jade-day3.html">Jade Day 3 checklist</a>
+          <a href="jade-day3.html">Jade Day 3 hub</a>
           <a href="map-assignments.html">Assignments tab</a>
           <a href="fase-map.html">FASE MAP bio</a>
         </div>

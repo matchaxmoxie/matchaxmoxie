@@ -11,66 +11,192 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="coord-page">
   <a href="#main-content" class="skip-link">skip to main content</a>
 
   <main id="main-content">
     <div class="container">
-      <a href="index.html" class="back-link">Return to MAP Coordinator</a>
+      <nav class="coord-nav" aria-label="MAP coordinator pages">
+        <a href="fase-map.html">FASE bio</a>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <a href="map-training.html">Modules</a>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <a href="map-assignments.html">Assignments</a>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <a href="jade-day3.html" aria-current="page">Jade Day 3</a>
+      </nav>
 
-      <section class="hero">
+      <header class="hero">
         <h1>(Jade) Day 3</h1>
-        <p class="tagline">FASE Events &amp; Attendance · publish checklist</p>
-        <p class="subtitle">Coordinator drafts live in <code>content/jade-day3/</code>. Full course checklist: <a href="map-training.html#jade-day-3">MAP training modules</a>. Assignments: <a href="map-assignments.html">quizzes and session summaries</a>.</p>
-      </section>
+        <p class="tagline">FASE Events &amp; Attendance · my module</p>
+        <p class="subtitle">Coordinator drafts live in <code>content/jade-day3/</code> on GitHub. This page is the production board for my pages and quizzes. Full course view: <a href="map-training.html#jade-day-3">module checklist</a>. Assignments: <a href="map-assignments.html">quizzes and session summaries</a>.</p>
+      </header>
 
-      <section class="topic" id="jade-day3">
-        <h2 class="owner-jade">Module status</h2>
+      <aside class="open-todos-panel" aria-labelledby="jade-todos-heading">
+        <h2 id="jade-todos-heading">My open todos</h2>
+        <ul class="open-todos-list">
+          <li>Confirm whether SPC Meetings and Lunch &amp; Learns need new videos (optional for L&amp;L).</li>
+          <li>Record or assign videos: iPad check-in, event idea walkthrough, Absence Protocol.</li>
+          <li>Ping Marisa on Fall 2026 FASE Calendar upload (publish rest of module without waiting).</li>
+          <li>Build both quizzes in New Quizzes; link sample forms and event-idea pages before publish.</li>
+        </ul>
+      </aside>
+
+      <dl class="board-legend" aria-label="Status key">
+        <dt>Status key</dt>
+        <dd>
+          <span class="status-badge status-unpublished">unpublished</span>
+          <span class="status-badge status-draft">draft ready</span>
+          <span class="status-badge status-video">video needed</span>
+          <span class="status-badge status-blocked">blocked</span>
+        </dd>
+      </dl>
+
+      <section class="topic module-board is-owned" id="jade-day3" aria-labelledby="status-heading">
+        <h2 id="status-heading">Module status</h2>
+
+        <div class="status-summary" aria-label="Module progress">
+          <div class="status-stat"><span class="stat-num">10/10</span><span class="stat-label">pages documented</span></div>
+          <div class="status-stat"><span class="stat-num">2/2</span><span class="stat-label">quizzes outlined</span></div>
+          <div class="status-stat"><span class="stat-num">5</span><span class="stat-label">videos needed</span></div>
+          <div class="status-stat"><span class="stat-num">1</span><span class="stat-label">blocked item</span></div>
+        </div>
+
         <div class="note-box owned">
-          <p><strong>Pages:</strong> 10/10 documented in repo (drafts, outlines, or blocked placeholders).</p>
-          <p><strong>Quizzes:</strong> 2/2 documented (checklists in repo); both unpublished, build questions in New Quizzes.</p>
-          <p><strong>Videos still needed:</strong> iPad check-in, SPC Meetings (optional?), Lunch &amp; Learns (optional?), event idea, Absence Protocol.</p>
-          <p><strong>Publish blocker:</strong> Fall 2026 FASE Calendar (Marisa upload). Publish other module items without waiting; keep calendar unpublished until file is ready.</p>
+          <p>Publish everything else without waiting on the calendar. Keep Fall 2026 FASE Calendar unpublished until Marisa's file is ready.</p>
         </div>
-        <div class="open-task">
-          <p><strong>Jade action items:</strong> confirm videos (iPad check-in, SPC, Lunch &amp; Learns, event idea, Absence Protocol); ping Marisa on Fall 2026 calendar; update both quizzes.</p>
-        </div>
+
+        <h3>Canvas pages</h3>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Canvas page</th><th>Draft</th><th>Notes</th><th>Status</th></tr></thead>
+            <caption>10 pages · repo drafts linked where they exist</caption>
+            <thead><tr><th scope="col">Canvas page</th><th scope="col">Draft</th><th scope="col">Notes</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>FASE Office Hours</td><td>office-hours.md</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>How to Check-in with the iPads <strong>Video</strong></td><td>ipad-checkin.md</td><td>Video needed</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>SPC Meetings <strong>Update, video?</strong></td><td>spc-meetings.md</td><td>Blank outline</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>In-services &amp; SPH-L102</td><td>in-services-sph-l102.md</td><td></td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>MSLD Programs</td><td>msld-programs.md</td><td>Link calendar when live</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Lunch &amp; Learns <strong>Video?</strong></td><td>lunch-and-learns.md</td><td>Draft ready for review; video optional</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>"I have an idea for an event!" <strong>Video</strong></td><td>event-idea.md</td><td>Video needed</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Sample Budget &amp; Event Proposal Forms</td><td>sample-budget-event-forms.md</td><td>Draft ready; attach sample docs in Canvas</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Absence Protocol <strong>Video</strong></td><td>absence-protocol.md</td><td>Video needed · draft ready</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>Fall 2026 FASE Calendar <strong>Will be uploaded by Marisa when it's finalized more</strong></td><td>fall-2026-calendar.md</td><td>Owner: Marisa</td><td class="status-blocked">blocked</td></tr>
+              <tr>
+                <td>FASE Office Hours</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/office-hours.md">office-hours.md</a></td>
+                <td class="notes-cell"></td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>How to Check-in with the iPads</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/ipad-checkin.md">ipad-checkin.md</a></td>
+                <td class="notes-cell"><span class="status-badge status-video">video</span></td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>SPC Meetings</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/spc-meetings.md">spc-meetings.md</a></td>
+                <td class="notes-cell">blank outline · video TBD</td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>In-services &amp; SPH-L102</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/in-services-sph-l102.md">in-services-sph-l102.md</a></td>
+                <td class="notes-cell"></td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>MSLD Programs</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/msld-programs.md">msld-programs.md</a></td>
+                <td class="notes-cell">link calendar when live</td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>Lunch &amp; Learns</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/lunch-and-learns.md">lunch-and-learns.md</a></td>
+                <td class="notes-cell"><span class="status-badge status-draft">draft ready</span> · video optional</td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>"I have an idea for an event!"</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/event-idea.md">event-idea.md</a></td>
+                <td class="notes-cell"><span class="status-badge status-video">video</span></td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>Sample Budget &amp; Event Proposal Forms</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/sample-budget-event-forms.md">sample-budget-event-forms.md</a></td>
+                <td class="notes-cell"><span class="status-badge status-draft">draft ready</span> · attach samples in Canvas</td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>Absence Protocol</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/absence-protocol.md">absence-protocol.md</a></td>
+                <td class="notes-cell"><span class="status-badge status-draft">draft ready</span> · <span class="status-badge status-video">video</span></td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>Fall 2026 FASE Calendar</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/fall-2026-calendar.md">fall-2026-calendar.md</a></td>
+                <td class="notes-cell"><span class="owner-tag owner-external">Marisa</span></td>
+                <td class="col-status"><span class="status-badge status-blocked">blocked</span></td>
+              </tr>
             </tbody>
           </table>
         </div>
+
+        <h3>Quizzes</h3>
         <div class="table-scroll">
           <table class="checklist-table">
-            <thead><tr><th>Quiz</th><th>Pts</th><th>Draft</th><th>Status</th></tr></thead>
+            <caption>Build in New Quizzes · 0 pts = no gradebook entry</caption>
+            <thead><tr><th scope="col">Quiz</th><th scope="col">Pts</th><th scope="col">Draft</th><th scope="col">Status</th></tr></thead>
             <tbody>
-              <tr><td>Quiz - Budget &amp; Event Proposal Forms <strong>Update</strong></td><td>0</td><td>quiz-budget-event-forms.md</td><td class="status-unpublished">unpublished</td></tr>
-              <tr><td>FASE Events &amp; Attendance Quiz <strong>Update</strong></td><td>5</td><td>quiz-fase-events-attendance.md</td><td class="status-unpublished">unpublished</td></tr>
+              <tr>
+                <td>Quiz - Budget &amp; Event Proposal Forms **Update**</td>
+                <td>0</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/quiz-budget-event-forms.md">quiz-budget-event-forms.md</a></td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
+              <tr>
+                <td>FASE Events &amp; Attendance Quiz **Update**</td>
+                <td>5</td>
+                <td><a class="draft-link" href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/quiz-fase-events-attendance.md">quiz-fase-events-attendance.md</a></td>
+                <td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td>
+              </tr>
             </tbody>
           </table>
+        </div>
+
+        <div class="note-box">
+          <p><strong>Quiz - Budget &amp; Event Proposal Forms:</strong> link <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/sample-budget-event-forms.md">sample forms</a> and <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/jade-day3/event-idea.md">event-idea</a> pages before publish. Due dates TBD.</p>
         </div>
       </section>
 
       <footer class="footer">
         <div class="links">
-          <a href="map-training.html#jade-day3">Full module checklist</a>
+          <a href="map-training.html#jade-day-3">Full module checklist</a>
           <a href="map-assignments.html">Assignments tab</a>
-          <a href="index.html">MAP Coordinator home</a>
+          <a href="fase-map.html">FASE MAP bio</a>
         </div>
       </footer>
     </div>
   </main>
+  <script>
+    (function () {
+      var STORAGE = 'matchaxmoxie-jade-day3-v1';
+      var boxes = document.querySelectorAll('input[type="checkbox"][data-key]');
+      function load() {
+        try {
+          var saved = JSON.parse(localStorage.getItem(STORAGE) || '{}');
+          boxes.forEach(function (el) { if (saved[el.dataset.key]) el.checked = true; });
+        } catch (e) { /* ignore */ }
+      }
+      function save() {
+        var state = {};
+        boxes.forEach(function (el) { if (el.checked) state[el.dataset.key] = true; });
+        localStorage.setItem(STORAGE, JSON.stringify(state));
+      }
+      boxes.forEach(function (el) { el.addEventListener('change', save); });
+      var reset = document.getElementById('reset-checklist');
+      if (reset) {
+        reset.addEventListener('click', function () {
+          localStorage.removeItem(STORAGE);
+          boxes.forEach(function (el) { el.checked = false; });
+        });
+      }
+      load();
+    })();
+  </script>
 </body>
 </html>
