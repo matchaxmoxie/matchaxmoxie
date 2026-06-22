@@ -12,55 +12,75 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="coord-page">
   <a href="#main-content" class="skip-link">skip to main content</a>
 
   <main id="main-content">
     <div class="container">
-      <nav class="year-nav">
-        <a href="fase-map.html" class="back-link">FASE MAP bio</a>
-        <a href="map-training.html" class="back-link">Modules</a>
+      <nav class="coord-nav" aria-label="MAP coordinator pages">
+        <a href="fase-map.html">FASE bio</a>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <a href="map-training.html">Modules</a>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <a href="map-assignments.html" aria-current="page">Assignments</a>
+        <span class="nav-divider" aria-hidden="true">·</span>
+        <a href="jade-day3.html">Jade Day 3</a>
       </nav>
 
-      <header class="topic">
+      <header class="hero">
         <h1>26-27 Mentors · Assignments</h1>
         <p class="tagline">Checklist only · no quiz content</p>
-        <p class="table-note">Markdown mirror: <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/map-assignments.md">content/map-assignments.md</a></p>
+        <p class="subtitle">Quizzes, session summaries, and misc. ongoing items from the Assignments tab. Markdown mirror: <a href="https://github.com/jadexzhao/matchaxmoxie/blob/main/content/map-assignments.md">map-assignments.md</a></p>
       </header>
 
-      <section class="topic" aria-labelledby="quizzes-heading">
+      <aside class="open-todos-panel" aria-labelledby="assignments-todos-heading">
+        <h2 id="assignments-todos-heading">Open todo</h2>
+        <ul class="open-todos-list">
+          <li><span class="todo-owner">Rafael / coordinators:</span> Rafael module has extra unpublished quizzes in Modules view. Combine into one per Canvas assignment note. See <a href="map-training.html#rafael-day2-heading">AdRx module</a>.</li>
+        </ul>
+      </aside>
+
+      <dl class="board-legend" aria-label="Status key">
+        <dt>Status key</dt>
+        <dd>
+          <span class="status-badge status-unpublished">unpublished</span>
+          <span class="status-badge status-draft">draft ready</span>
+        </dd>
+      </dl>
+
+      <section class="topic module-board" aria-labelledby="quizzes-heading">
         <h2 id="quizzes-heading">Mentor Training - Online Portion</h2>
         <div class="table-wrap">
           <table class="coord-table">
+            <caption>Training quizzes grouped by module · all unpublished</caption>
             <thead>
               <tr>
                 <th scope="col">Quiz</th>
                 <th scope="col">Module</th>
                 <th scope="col">Pts</th>
+                <th scope="col">Status</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td>Overview Quiz **Update**</td><td>(Divya) Day 1 - Overview</td><td>3</td></tr>
-              <tr><td>Working with Proteges Quiz **Update**</td><td>(Emma) Day 1 - Protégés</td><td>6</td></tr>
-              <tr><td>Quiz - Communication **Update**</td><td>(Princesse U) Day 2 - Communication</td><td>0</td></tr>
-              <tr><td>Hours/Scheduling Quiz **Update**</td><td>(Caroline) Day 2 - Hours</td><td>5</td></tr>
-              <tr><td>Quiz - Setting Up Your AdRx Profile **COMBINE**</td><td>(Rafael) Day 2 - AdRx &amp; SAS</td><td>4</td></tr>
-              <tr><td>Quiz - AdRx Notes - Update needed</td><td>(Rafael) Day 2 - AdRx &amp; SAS</td><td>0</td></tr>
-              <tr><td>FASE Events &amp; Attendance Quiz **Update**</td><td class="owner-jade">(Jade) Day 3</td><td>5</td></tr>
-              <tr><td>Quiz - Budget &amp; Event Proposal Forms **Update**</td><td class="owner-jade">(Jade) Day 3</td><td>0</td></tr>
+              <tr><td>Overview Quiz **Update**</td><td>(Divya) Day 1 - Overview</td><td>3</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Working with Proteges Quiz **Update**</td><td>(Emma) Day 1 - Protégés</td><td>6</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz - Communication **Update**</td><td>(Princesse U) Day 2 - Communication</td><td>0</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Hours/Scheduling Quiz **Update**</td><td>(Caroline) Day 2 - Hours</td><td>5</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz - Setting Up Your AdRx Profile **COMBINE**</td><td>(Rafael) Day 2 - AdRx &amp; SAS</td><td>4</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz - AdRx Notes - Update needed</td><td>(Rafael) Day 2 - AdRx &amp; SAS</td><td>0</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>FASE Events &amp; Attendance Quiz **Update**</td><td><span class="owner-tag owner-jade">(Jade) Day 3</span></td><td>5</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>Quiz - Budget &amp; Event Proposal Forms **Update**</td><td><span class="owner-tag owner-jade">(Jade) Day 3</span></td><td>0</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
-        <div class="note-box">
-          <p><strong>Open task:</strong> Rafael module also has extra unpublished quizzes in Modules view (Creating Appointment Slots, What are AdRx, Helping Proteges SAS). Combine into one per Canvas note.</p>
-        </div>
       </section>
 
-      <section class="topic" aria-labelledby="summaries-heading">
+      <section class="topic module-board" aria-labelledby="summaries-heading">
         <h2 id="summaries-heading">Session Summaries</h2>
-        <p class="table-note">Biweekly. All unpublished, 0 points. Available at period start (12:00am); due last day of period (11:59pm).</p>
+        <p class="section-intro">Biweekly · 0 points · available at period start (12:00am) · due last day of period (11:59pm).</p>
         <div class="table-wrap">
           <table class="coord-table">
+            <caption>19 biweekly periods · all unpublished</caption>
             <thead>
               <tr>
                 <th scope="col">Period</th>
@@ -70,31 +90,31 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>8.2.26 to 8.15.26</td><td>Aug 2, 2026</td><td>Aug 15, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>8.16.26 to 8.29.26</td><td>Aug 16, 2026</td><td>Aug 29, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>8.30.26 to 9.12.26</td><td>Aug 30, 2026</td><td>Sep 12, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>9.13.26 to 9.26.26</td><td>Sep 13, 2026</td><td>Sep 26, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>9.27.26 to 10.10.26</td><td>Sep 27, 2026</td><td>Oct 10, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>10.11.26 to 10.24.26</td><td>Oct 11, 2026</td><td>Oct 24, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>10.25.26 to 11.7.26</td><td>Oct 25, 2026</td><td>Nov 7, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>11.8.26 to 11.21.26</td><td>Nov 8, 2026</td><td>Nov 21, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>11.22.26 to 12.5.26</td><td>Nov 22, 2026</td><td>Dec 5, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>12.6.26 to 12.19.26</td><td>Dec 6, 2026</td><td>Dec 19, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>1.3.27 to 1.16.27</td><td>Jan 3, 2027</td><td>Jan 16, 2027</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>1.17.27 to 1.30.27</td><td>Jan 17, 2027</td><td>Jan 30, 2027</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>1.31.27 to 2.13.27</td><td>Jan 31, 2027</td><td>Feb 13, 2027</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>2.14.27 to 2.27.27</td><td>Feb 14, 2027</td><td>Feb 27, 2027</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>2.28.27 to 3.13.27</td><td>Feb 28, 2027</td><td>Mar 13, 2027</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>3.14.27 to 3.27.27</td><td>Mar 14, 2027</td><td>Mar 27, 2027</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>3.28.27 to 4.10.27</td><td>Mar 28, 2027</td><td>Apr 10, 2027</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>4.11.27 to 4.24.27</td><td>Apr 11, 2027</td><td>Apr 24, 2027</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>4.25.27 to 5.8.27</td><td>Apr 25, 2027</td><td>May 8, 2027</td><td class="status-unpub">unpublished</td></tr>
+              <tr><td>8.2.26 to 8.15.26</td><td>Aug 2, 2026</td><td>Aug 15, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>8.16.26 to 8.29.26</td><td>Aug 16, 2026</td><td>Aug 29, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>8.30.26 to 9.12.26</td><td>Aug 30, 2026</td><td>Sep 12, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>9.13.26 to 9.26.26</td><td>Sep 13, 2026</td><td>Sep 26, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>9.27.26 to 10.10.26</td><td>Sep 27, 2026</td><td>Oct 10, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>10.11.26 to 10.24.26</td><td>Oct 11, 2026</td><td>Oct 24, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>10.25.26 to 11.7.26</td><td>Oct 25, 2026</td><td>Nov 7, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>11.8.26 to 11.21.26</td><td>Nov 8, 2026</td><td>Nov 21, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>11.22.26 to 12.5.26</td><td>Nov 22, 2026</td><td>Dec 5, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>12.6.26 to 12.19.26</td><td>Dec 6, 2026</td><td>Dec 19, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>1.3.27 to 1.16.27</td><td>Jan 3, 2027</td><td>Jan 16, 2027</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>1.17.27 to 1.30.27</td><td>Jan 17, 2027</td><td>Jan 30, 2027</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>1.31.27 to 2.13.27</td><td>Jan 31, 2027</td><td>Feb 13, 2027</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>2.14.27 to 2.27.27</td><td>Feb 14, 2027</td><td>Feb 27, 2027</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>2.28.27 to 3.13.27</td><td>Feb 28, 2027</td><td>Mar 13, 2027</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>3.14.27 to 3.27.27</td><td>Mar 14, 2027</td><td>Mar 27, 2027</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>3.28.27 to 4.10.27</td><td>Mar 28, 2027</td><td>Apr 10, 2027</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>4.11.27 to 4.24.27</td><td>Apr 11, 2027</td><td>Apr 24, 2027</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>4.25.27 to 5.8.27</td><td>Apr 25, 2027</td><td>May 8, 2027</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic" aria-labelledby="misc-heading">
+      <section class="topic module-board" aria-labelledby="misc-heading">
         <h2 id="misc-heading">Misc. Ongoing</h2>
         <div class="table-wrap">
           <table class="coord-table">
@@ -107,14 +127,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>Business Cards</td><td>Aug 3, 2026</td><td>Aug 31, 2026</td><td class="status-unpub">unpublished</td></tr>
-              <tr><td>SPC and MAP Application Submission</td><td>not set</td><td>not set</td><td class="status-unpub">unpublished</td></tr>
+              <tr><td>Business Cards</td><td>Aug 3, 2026</td><td>Aug 31, 2026</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
+              <tr><td>SPC and MAP Application Submission</td><td>not set</td><td>not set</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="topic" aria-labelledby="schedule-heading">
+      <section class="topic module-board" aria-labelledby="schedule-heading">
         <h2 id="schedule-heading">Schedule Submissions</h2>
         <div class="table-wrap">
           <table class="coord-table">
@@ -126,15 +146,19 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>Spring Schedule Submission</td><td>closed</td><td>Nov 21</td></tr>
-              <tr><td>Fall Schedule Submission</td><td class="status-unpub">unpublished</td><td>not set</td></tr>
+              <tr><td>Spring Schedule Submission</td><td class="col-status"><span class="status-badge status-draft">closed</span></td><td>Nov 21</td></tr>
+              <tr><td>Fall Schedule Submission</td><td class="col-status"><span class="status-badge status-unpublished">unpublished</span></td><td>not set</td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
       <footer class="footer">
-        <p class="footer-note"><a href="jade-day3.html">Jade Day 3</a> · <a href="map-training.html">Modules</a> · <a href="fase-map.html">FASE MAP bio</a></p>
+        <div class="links">
+          <a href="jade-day3.html">Jade Day 3 hub</a>
+          <a href="map-training.html">Modules</a>
+          <a href="fase-map.html">FASE MAP bio</a>
+        </div>
       </footer>
     </div>
   </main>
