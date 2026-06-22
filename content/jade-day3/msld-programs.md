@@ -23,6 +23,6 @@ The following are required events:
 
 ## Production notes
 
-- Cross-link [FASE Office Hours](office-hours.md) and [In-services & SPH-L102](in-services-sph-l102.md)
+- Cross-link [FASE Office Hours](office-hours.md), [In-services & SPH-L102](in-services-sph-l102.md), and [Absence Protocol](absence-protocol.md) (priority and approved absences)
 - [Fall 2026 FASE Calendar](fall-2026-calendar.md) (Marisa upload, **blocked**) should list dates for each required event; link when calendar page is live. Until then, note on publish that dates are coming.
 - Confirm Tuesday-evening scheduling note still accurate with SPCs each term

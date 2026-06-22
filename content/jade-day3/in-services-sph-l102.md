@@ -17,5 +17,5 @@ The "Personal Leadership Development" course, led by Professor Deb Getz, is requ
 ## Production notes
 
 - Cross-link to [MSLD Programs](msld-programs.md) (in-services listed as required event)
+- Cross-link to [Absence Protocol](absence-protocol.md) (approved absences and 24-hour notice)
 - SPH-L102 fall dates TBD: update page when registrar / Professor Getz confirms schedule
-- Keep absence language aligned with Absence Protocol page when drafted

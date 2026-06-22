@@ -29,5 +29,5 @@ Reach out in the FASE GroupMe to find another mentor who will cover your hours o
 ## Production notes
 
 - Cross-link to [How to Check-in with the iPads](ipad-checkin.md) (video page) after embed is ready
-- Absence protocol is covered on a separate Canvas page; keep wording consistent when that page is drafted
+- Cross-link to [Absence Protocol](absence-protocol.md) (approved absences and advance notice)
 - Typo in Canvas source: "offices hours" → "office hours" on publish
