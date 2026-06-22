@@ -133,8 +133,8 @@ Coordinator reference for **26-27 Mentors** (FASE). Structure and publish status
 | MSLD Programs | Page | | Unpublished | |
 | Lunch & Learns **Video?** | Page | | Unpublished | Video TBD |
 | "I have an idea for an event!" **Video** | Page | | Unpublished | Video needed · draft: [event-idea.md](jade-day3/event-idea.md) |
-| Sample Budget & Event Proposal Forms | Page | | Unpublished | |
-| Quiz - Budget & Event Proposal Forms **Update** | Quiz | 0 | Unpublished | Update quiz |
+| Sample Budget & Event Proposal Forms | Page | | Unpublished | Draft: [sample-budget-event-forms.md](jade-day3/sample-budget-event-forms.md) |
+| Quiz - Budget & Event Proposal Forms **Update** | Quiz | 0 | Unpublished | Questions TBD · checklist: [quiz-budget-event-forms.md](jade-day3/quiz-budget-event-forms.md) |
 | Absence Protocol **Video** | Page | | Unpublished | Video needed |
 | Fall 2026 FASE Calendar **Will be uploaded by Marisa when it's finalized more** | Page | | Unpublished | **Blocker:** Marisa |
 | FASE Events & Attendance Quiz **Update** | Quiz | 5 | Unpublished | Update quiz |
@@ -143,7 +143,7 @@ Coordinator reference for **26-27 Mentors** (FASE). Structure and publish status
 
 - [ ] Confirm video plan: iPad check-in, SPC (update + video?), Lunch & Learns, event idea, Absence Protocol
 - [ ] Update SPC Meetings page content
-- [ ] Update Quiz - Budget & Event Proposal Forms (0 pts)
+- [ ] Build Quiz - Budget & Event Proposal Forms in New Quizzes (0 pts) · [quiz-budget-event-forms.md](jade-day3/quiz-budget-event-forms.md)
 - [ ] Update FASE Events & Attendance Quiz (5 pts)
 - [ ] Follow up with Marisa on Fall 2026 FASE Calendar upload
 - [ ] Publish order: static pages first (Office Hours, In-services, MSLD, forms), then videos as ready, calendar last when Marisa delivers, quizzes after related pages

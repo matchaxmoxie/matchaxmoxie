@@ -7,7 +7,7 @@
 ## Related pages and assignments
 
 - [Sample Budget & Event Proposal Forms](sample-budget-event-forms.md) (forms reference and examples)
-- Quiz - Budget & Event Proposal Forms **Update** (0 pts, unpublished)
+- [Quiz - Budget & Event Proposal Forms **Update**](quiz-budget-event-forms.md) (0 pts, unpublished)
 - [Lunch & Learns](lunch-and-learns.md) (one event type mentors may propose)
 
 ## What kind of events can students propose?
@@ -34,6 +34,6 @@ Record a mentor-facing walkthrough. Do not host blank FASE forms on public Pages
 
 ## Production notes
 
-- Cross-link to Sample Budget & Event Proposal Forms page in Canvas after both pages are live
-- Quiz - Budget & Event Proposal Forms should reference the same submission workflow
+- Cross-link to [Sample Budget & Event Proposal Forms](sample-budget-event-forms.md) page in Canvas after both pages are live
+- [Quiz - Budget & Event Proposal Forms](quiz-budget-event-forms.md) should reference the same submission workflow
 - FAB events: remind mentors to secure FAB before approaching FASE Office Staff
