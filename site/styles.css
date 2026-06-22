@@ -986,6 +986,11 @@ body.coord-page {
   color: #2d4a32;
 }
 
+.status-badge.status-unpublished {
+  background: #f0ece8;
+  color: #6b5a4a;
+}
+
 .status-badge.status-blocked { background: #eee8f0; color: #5a4a6b; }
 
 .status-summary {
