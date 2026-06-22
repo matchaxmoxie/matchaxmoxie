@@ -19,6 +19,7 @@
 | Path | Purpose |
 |------|---------|
 | [`site/`](site/) | Public Pages site (HTML, CSS, images, metadata). Entry: [`site/index.html`](site/index.html). Details: [`site/README.md`](site/README.md). |
+| [`content/`](content/) | Coordinator references (not public training copy). MAP Canvas: [`content/map-training-modules.md`](content/map-training-modules.md). Jade Day 3 drafts: [`content/jade-day3/`](content/jade-day3/). |
 | [`site/images/j-adezhao.jpg`](site/images/j-adezhao.jpg) | Favicon and hero image assets |
 | [`latex/`](latex/) | Résumé and PDFs; sources in [`latex/docs/`](latex/docs/), shared TeX in [`latex/shared/`](latex/shared/). Build: [`latex/BUILD.md`](latex/BUILD.md). |
 | [`docs/`](docs/) | Transparency and governance (e.g. [`docs/TRANSPARENCY.md`](docs/TRANSPARENCY.md)) |
