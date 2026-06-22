@@ -6,7 +6,11 @@ Coordinator drafts for Jade Zhao (module owner). **Do not paste full policy pros
 
 ## Module summary
 
-**Pages:** 10/10 documented (drafts, outlines, or blocked placeholders). **Quizzes open:** FASE Events & Attendance Quiz (5 pts), Quiz - Budget & Event Proposal Forms (0 pts). **Blocker:** Fall 2026 FASE Calendar (Marisa); publish other module items without waiting.
+**Pages:** 10/10 documented (drafts, outlines, or blocked placeholders). **Quizzes:** 2/2 documented ([FASE Events & Attendance Quiz](quiz-fase-events-attendance.md) · 5 pts, [Quiz - Budget & Event Proposal Forms](quiz-budget-event-forms.md) · 0 pts); both unpublished, questions TBD in New Quizzes.
+
+**Videos still needed:** iPad check-in, SPC Meetings (optional?), Lunch & Learns (optional?), event idea, Absence Protocol.
+
+**Blocker:** [Fall 2026 FASE Calendar](fall-2026-calendar.md) (Marisa upload). Publish other module items without waiting.
 
 ## Pages with drafts
 
