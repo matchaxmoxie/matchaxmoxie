@@ -1,0 +1,13 @@
+/* TEAM */
+Jade Zhao
+Indiana University, Informatics
+Madrid (one Erasmus stay)
+
+/* THANKS */
+every professor who followed
+instructions literally and proved a point.
+
+/* SITE */
+last updated: 2027
+standards: HTML5, CSS custom properties
+language: English
