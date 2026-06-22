@@ -13,6 +13,8 @@ This site uses a Greco-Latin plus English content system, explicit AI disclosure
 - [`junior.html`](junior.html): 2025 to 2026.
 - [`senior.html`](senior.html): 2026 to 2027 projection.
 - [`ai-transparency.html`](ai-transparency.html): AI and agentic workflow disclosure.
+- [`map-training.html`](map-training.html): MAP Coordinator Canvas module inventory and publish checklist (26 to 27 Mentors). Markdown source: [`../content/map-training-modules.md`](../content/map-training-modules.md).
+- [`map-assignments.html`](map-assignments.html): Canvas assignments tab checklist (quizzes, session summaries). Markdown source: [`../content/map-assignments.md`](../content/map-assignments.md).
 - [`fase-map.html`](fase-map.html): FASE Mentoring Apprenticeship Program Coordinator bio for IU peer mentor and AdRx profiles.
 
 ## Design System

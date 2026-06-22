@@ -574,6 +574,234 @@ ol {
 
 ol li::marker { color: var(--tulip-deep); }
 
+/* MAP COORDINATOR CHECKLIST */
+.table-wrap {
+  overflow-x: auto;
+  margin: var(--space-md) 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.coord-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.coord-table th,
+.coord-table td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.coord-table th {
+  background: var(--tulip-blush);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.coord-table tbody tr:nth-child(even) {
+  background: rgba(250, 232, 236, 0.35);
+}
+
+.table-note {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.module-checklists {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.module-checklist-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-md);
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.coord-checklist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 var(--space-sm);
+}
+
+.coord-checklist li {
+  margin-bottom: 0.35rem;
+}
+
+.coord-checklist label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.coord-checklist input[type="checkbox"] {
+  margin-top: 0.2rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  accent-color: var(--tulip-deep);
+}
+
+.checklist-actions {
+  margin-bottom: var(--space-md);
+}
+
+.coord-btn {
+  font-family: inherit;
+  font-size: var(--text-sm);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--tulip-blush);
+  color: var(--text-primary);
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.coord-btn:hover,
+.coord-btn:focus-visible {
+  border-color: var(--tulip-deep);
+  background: var(--tulip-mist);
+}
+
+/* MAP COORDINATOR PAGES (map-training, map-assignments, fase-map nav) */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin: var(--space-md) 0 var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-links a {
+  font-size: var(--text-sm);
+  text-decoration: none;
+}
+
+.nav-links a[aria-current="page"] {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--tulip-deep);
+}
+
+main.container > h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-hero-mobile);
+  color: var(--text-primary);
+  margin: var(--space-lg) 0 var(--space-xs);
+}
+
+main.container > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-h2-mobile);
+  font-weight: 500;
+  margin: var(--space-lg) 0 var(--space-sm);
+  color: var(--text-primary);
+}
+
+main.container > h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-md);
+  font-weight: 500;
+  margin: var(--space-md) 0 var(--space-xs);
+}
+
+main.container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+main.container table th,
+main.container table td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+main.container table th {
+  background: var(--tulip-blush);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+main.container table tbody tr:nth-child(even) {
+  background: rgba(250, 232, 236, 0.35);
+}
+
+.status-unpub,
+.status-unpublished {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.status-blocked {
+  color: var(--tulip-deep);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.owner-jade {
+  font-weight: 600;
+  color: var(--tulip-deep);
+}
+
+.note-box {
+  background: var(--tulip-blush);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--tulip-mist);
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+  border-radius: 2px;
+}
+
+.note-box.owned {
+  border-left-color: var(--tulip-deep);
+}
+
+.note-box h3 {
+  margin-top: 0;
+}
+
+ul.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin: var(--space-sm) 0 0;
+}
+
+ul.checklist li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.35rem;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+ul.checklist li::before {
+  content: "□";
+  position: absolute;
+  left: 0;
+  color: var(--tulip-deep);
+}
+
 /* LINKS */
 a {
   color: #D4879C;
