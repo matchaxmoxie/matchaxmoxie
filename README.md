@@ -25,7 +25,7 @@
 | [`docs/`](docs/) | Transparency and governance (e.g. [`docs/TRANSPARENCY.md`](docs/TRANSPARENCY.md)) |
 | [`scripts/`](scripts/) | Publish and maintenance (e.g. subtree push) |
 
-**Year pages (academic narrative):** `site/freshman.html` through `site/senior.html`. **FASE MAP bio:** `site/fase-map.html` (peer mentor / AdRx profile link). **AI disclosure:** `site/ai-transparency.html`. **Styles:** `site/styles.css`.
+**Year pages (academic narrative):** `site/freshman.html` through `site/senior.html`. **MAP coordinator checklist:** `site/map-training.html` (source: `content/map-training-modules.md`). **FASE MAP bio:** `site/fase-map.html` (peer mentor / AdRx profile link). **Assignments checklist:** `site/map-assignments.html`. **AI disclosure:** `site/ai-transparency.html`. **Styles:** `site/styles.css`.
 
 ## Design and content method
 

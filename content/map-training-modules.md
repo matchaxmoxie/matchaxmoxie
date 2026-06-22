@@ -136,8 +136,10 @@ Coordinator reference for **26-27 Mentors** (FASE). Structure and publish status
 | Sample Budget & Event Proposal Forms | Page | | Unpublished | Draft: [sample-budget-event-forms.md](jade-day3/sample-budget-event-forms.md) |
 | Quiz - Budget & Event Proposal Forms **Update** | Quiz | 0 | Unpublished | Questions TBD · checklist: [quiz-budget-event-forms.md](jade-day3/quiz-budget-event-forms.md) |
 | Absence Protocol **Video** | Page | | Unpublished | Video needed |
-| Fall 2026 FASE Calendar **Will be uploaded by Marisa when it's finalized more** | Page | | Unpublished | **Blocker:** Marisa |
+| Fall 2026 FASE Calendar **Will be uploaded by Marisa when it's finalized more** | Page | | **Blocked** | Owner: Marisa · draft: [fall-2026-calendar.md](jade-day3/fall-2026-calendar.md) |
 | FASE Events & Attendance Quiz **Update** | Quiz | 5 | Unpublished | Update quiz |
+
+**Module documentation:** 10/10 Canvas pages tracked in [`content/jade-day3/`](jade-day3/README.md). Quizzes still open: Budget & Event Proposal Forms (0 pts), FASE Events & Attendance (5 pts). **Publish without calendar:** other pages and quizzes can go live; keep calendar unpublished until Marisa delivers file. Link from MSLD Programs when calendar is live.
 
 ### Jade action checklist
 
@@ -145,8 +147,8 @@ Coordinator reference for **26-27 Mentors** (FASE). Structure and publish status
 - [ ] Update SPC Meetings page content
 - [ ] Build Quiz - Budget & Event Proposal Forms in New Quizzes (0 pts) · [quiz-budget-event-forms.md](jade-day3/quiz-budget-event-forms.md)
 - [ ] Update FASE Events & Attendance Quiz (5 pts)
-- [ ] Follow up with Marisa on Fall 2026 FASE Calendar upload
-- [ ] Publish order: static pages first (Office Hours, In-services, MSLD, forms), then videos as ready, calendar last when Marisa delivers, quizzes after related pages
+- [ ] Ping Marisa on Fall 2026 FASE Calendar; embed or upload when file ready; link from MSLD Programs
+- [ ] Publish order: static pages first (Office Hours, In-services, MSLD, forms), then videos as ready, calendar when Marisa delivers (not a gate for rest of module), quizzes after related pages
 
 ## (Teni) Day 3 - Additional Training Resources
 
