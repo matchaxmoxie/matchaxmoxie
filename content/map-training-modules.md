@@ -139,7 +139,7 @@ Coordinator reference for **26-27 Mentors** (FASE). Structure and publish status
 | Fall 2026 FASE Calendar **Will be uploaded by Marisa when it's finalized more** | Page | | **Blocked** | Owner: Marisa · draft: [fall-2026-calendar.md](jade-day3/fall-2026-calendar.md) |
 | FASE Events & Attendance Quiz **Update** | Quiz | 5 | Unpublished | Questions TBD · checklist: [quiz-fase-events-attendance.md](jade-day3/quiz-fase-events-attendance.md) |
 
-**Module documentation:** 10/10 Canvas pages tracked in [`content/jade-day3/`](jade-day3/README.md). Production checklist: [`site/jade-day3.html`](../site/jade-day3.html). Quizzes still open: Budget & Event Proposal Forms (0 pts), FASE Events & Attendance (5 pts). **Publish without calendar:** other pages and quizzes can go live; keep calendar unpublished until Marisa delivers file. Link from MSLD Programs when calendar is live.
+**Module documentation:** 10/10 Canvas pages, 2/2 quizzes documented in [`content/jade-day3/`](jade-day3/README.md). Production checklist: [`site/jade-day3.html`](../site/jade-day3.html). **Videos still needed:** iPad check-in, SPC, Lunch & Learns (optional?), event idea, Absence Protocol. **Publish without calendar:** other pages and quizzes can go live; keep calendar unpublished until Marisa delivers file.
 
 ### Jade action checklist
 
