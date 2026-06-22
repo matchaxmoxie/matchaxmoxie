@@ -7,7 +7,23 @@ Coordinator reference for **26-27 Mentors** (FASE). Structure and publish status
 ## Quick links
 
 - [Jade's module (Day 3)](#jade-day-3-fase-events--attendance) · [Production hub](../site/jade-day3.html)
-- [Assignments](map-assignments.html) (quizzes, session summaries)
+- [Assignments](../site/map-assignments.html) (quizzes, session summaries)
+
+## Module owners
+
+| Module | Owner | Pages | Quizzes |
+|--------|-------|-------|---------|
+| Resources | FASE (shared) | 11 | — |
+| Important Info | FASE (shared) | 4 | — |
+| For Leadership | Leadership | 1 | — |
+| (Divya) Day 1 - Overview | Divya | 4 | 1 |
+| (Emma) Day 1 - Working with Protégés | Emma | 4 | 1 |
+| (Princesse U) Day 2 - Communication | Princesse U | 5 | 1 |
+| (Caroline) Day 2 - Hours/Scheduling | Caroline | 4 | 1 |
+| (Rafael) Day 2 - AdRx/SAS | Rafael | 5 | 5 |
+| **(Jade) Day 3 - FASE Events & Attendance** | **Jade Zhao** | 10 | 2 |
+| (Teni) Day 3 - Additional | Teni | 2 | 1 |
+| Cover During Fall Training | FASE (fall) | 7 | — |
 
 ---
 
