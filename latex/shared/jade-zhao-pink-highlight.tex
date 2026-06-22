@@ -1,0 +1,13 @@
+% Pink highlighter for matchaxmoxie April 2026 refresh.
+% Input this AFTER \usepackage{geometry} and BEFORE \usepackage{hyperref} (soul + hyperref order).
+%
+% In body: \hl{phrase you want highlighted}  (line-breaks OK for normal text)
+% Shorthand: \pinkhl{...} is the same as \hl{...}
+%
+% Avoid \hl inside verbatim, math, or complex \href; use \textcolor{MatchaxMoxiePink}{...} for edge cases.
+
+\usepackage{xcolor}
+\definecolor{MatchaxMoxiePink}{HTML}{FFC7DE}
+\usepackage{soul}
+\sethlcolor{MatchaxMoxiePink}
+\newcommand{\pinkhl}[1]{\hl{#1}}

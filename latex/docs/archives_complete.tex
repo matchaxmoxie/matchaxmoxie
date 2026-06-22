@@ -1,0 +1,642 @@
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{mdframed}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+% Colors
+\definecolor{matcha}{RGB}{120, 150, 100}
+\definecolor{moxie}{RGB}{200, 160, 170}
+\definecolor{soft}{RGB}{245, 240, 235}
+
+% Hyperlink styling
+\hypersetup{
+  colorlinks=true,
+  linkcolor=matcha,
+  urlcolor=matcha,
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\color{matcha}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{moxie}}{}{0em}{}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small\textcolor{matcha}{archives \textemdash{} matcha moxie}}
+\lhead{\small\textcolor{moxie}{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Quote box
+\newenvironment{jadequote}{%
+  \begin{mdframed}[backgroundcolor=soft, linecolor=moxie, linewidth=1pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    innertopmargin=8pt, innerbottommargin=8pt]
+  \itshape
+}{%
+  \end{mdframed}
+}
+
+% Soft section break
+\newcommand{\softbreak}{%
+  \begin{center}
+    \textcolor{moxie}{\small $\cdot$ \quad $\cdot$ \quad $\cdot$}
+  \end{center}
+}
+
+\begin{document}
+
+% ── Title Page ────────────────────────────────
+\begin{titlepage}
+  \centering
+  \vspace*{2.5cm}
+  {\Huge\bfseries\color{matcha} archives}\\[0.5em]
+  {\large\color{moxie} \textemdash{} matcha \& moxie \textemdash{}}\\[2em]
+  {\normalsize\color{gray} the complete edition}\\[1em]
+  {\small\color{gray}\itshape jaded and confused w matcha moxie :)}\\[0.5em]
+  {\small\color{gray}\itshape it's quieter than i expected}\\[3em]
+
+  \vspace{1em}
+  \begin{mdframed}[backgroundcolor=soft, linecolor=moxie, linewidth=0.5pt,
+    innerleftmargin=20pt, innerrightmargin=20pt,
+    innertopmargin=12pt, innerbottommargin=12pt]
+  \centering\itshape\small\color{gray}
+  ratio. logos. ordo. praxis.\\[0.3em]
+  the reasoning. the logic. the order. the practice.
+  \end{mdframed}
+
+  \vfill
+  {\small\color{gray} indiana university, luddy school of informatics}\\[0.3em]
+  {\small\color{gray} \texttt{matchaxmoxie.github.io/matchaxmoxie}}\\[0.5em]
+  {\small\color{moxie} xoxo matcha moxie}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% ══════════════════════════════════════════════
+%  PART ONE: WHO I AM
+% ══════════════════════════════════════════════
+\section*{\color{matcha} part one: who i am}
+\addcontentsline{toc}{section}{part one: who i am}
+\vspace{-0.5em}
+{\small\color{gray}\itshape the foundation}
+\vspace{1em}
+
+% ──────────────────────────────────────────────
+\section{what is informatics, anyway}
+
+\begin{jadequote}
+Informatics is the person at the meeting table who is the bridge between development and business. I can take business requirements and understand them, then translate them into technical acceptance criteria.
+\end{jadequote}
+
+The longer version: informatics is an interdisciplinary field combining computer science, information technology, mathematics, engineering, and social sciences. It covers the design and implementation of systems, the development of software and databases, the study of human-computer interaction, and the analysis and management of information.
+
+My specific focus is \textbf{HCI/D} \textemdash{} Human-Computer Interaction and Design \textemdash{} the study of how people interact with technology and how to design systems that are user-friendly, efficient, and genuinely useful. Not just building the thing. Understanding the person who uses it.
+
+\subsection{the pb sandwich philosophy}
+
+Computers execute literally. No assumed context. No reading between the lines. Every system, every design, every prompt has to be built with the assumption that nothing will be inferred \textemdash{} that clarity is the whole job.
+
+I apply this to everything: systems design, AI prompting, client work, mentorship. If something isn't working, the first question is always: \textit{did I communicate it clearly enough for a machine to execute it?} Usually that's where the answer lives.
+
+% ──────────────────────────────────────────────
+\section{the jade character sheet}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Name} & Jade Zhao \\
+\textbf{Nickname} & JZ \\
+\textbf{Home} & Indianapolis, IN \\
+\textbf{School} & Indiana University, Luddy School of Informatics \\
+\textbf{Secret ambition} & Wants to own a duck farm \\
+\textbf{Loves} & Books. A real intellectual, just like her brother Jeffrey. \\
+\textbf{Strengths} & Detail-oriented. Always open to new things. \\
+\textbf{Weaknesses} & Sensitive. Can't stand being teased. Grouchy without sleep. \\
+\textbf{Secret} & Unwinds with piano music and green tea. \\
+\textbf{Movie} & Ten Things I Hate About You \\
+\textbf{Show} & Gossip Girl \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{by time of day}
+
+\textbf{Morning:} always carries something for an impromptu break; dreams of a quieter life involving a duck farm; first to sleep, last to wake.
+
+\textbf{Afternoon:} walking encyclopedia; observes small details others miss; perfectionist (maybe too much); loves studying and reading too many books at once.
+
+\textbf{Evening:} plays piano when not coding; classical music enthusiast (but jazz is great too); skilled at chess and strategic thinking; has an uncanny ability to predict outcomes.
+
+\textbf{Night:} sleeping beauty; dreams sometimes lead to epiphanies; gets motion sick on bumpy roads; terrified of heights without railings.
+
+% ──────────────────────────────────────────────
+\section{self-development: the framework}
+
+\subsection{value execution}
+\begin{enumerate}[leftmargin=*, label=\arabic*.]
+  \item \textbf{Value Execution} \textemdash{} Goals and the five whys behind each one.
+  \item \textbf{Control Failure Exposure} \textemdash{} Separate identity from outcome. Learn to fail in low-stakes environments.
+  \item \textbf{Relationship Inventory} \textemdash{} Energy givers and energy takers. Gain clarity on which to deploy.
+  \item \textbf{Deep Work Capacity} \textemdash{} 30 minutes of undistracted work daily, gradually increased by 15\% until you can sustain 2--4 hours.
+  \item \textbf{Daily Discomfort} \textemdash{} Do one uncomfortable thing.
+  \item \textbf{Learning Agility} \textemdash{} Adapt to change and new conditions.
+  \item \textbf{Skill Sprint} \textemdash{} 30 days to one new skill: coding, public speaking, or financial modeling.
+\end{enumerate}
+
+\subsection{laws i live by}
+\begin{itemize}
+  \item \textbf{Law \#1:} Never outshine the master.
+  \item \textbf{Law \#4:} Always say less than necessary.
+  \item \textbf{Law \#5:} So much depends on your reputation. Guard it with your life.
+  \item \textbf{Law \#6:} Court attention at all costs.
+  \item \textbf{Law \#16:} Use absence to increase respect and honor.
+  \item \textbf{Law \#25:} Recreate yourself.
+  \item \textbf{Law \#28:} Enter action with boldness.
+\end{itemize}
+
+\subsection{budget framework: 50/30/20}
+\begin{itemize}
+  \item \textbf{50\% Needs:} Rent, bills, groceries
+  \item \textbf{30\% Wants:} Clothes, coffee, makeup, transport, joy fund
+  \item \textbf{20\% Savings:} Rainy day, security deposit, retirement, investments
+\end{itemize}
+
+% ══════════════════════════════════════════════
+%  PART TWO: WHAT I LEARNED
+% ══════════════════════════════════════════════
+\newpage
+\section*{\color{matcha} part two: what i learned}
+\addcontentsline{toc}{section}{part two: what i learned}
+\vspace{-0.5em}
+{\small\color{gray}\itshape the hard way, mostly}
+\vspace{1em}
+
+% ──────────────────────────────────────────────
+\section{things i wish i knew earlier}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*.]
+  \item That extra thing at the end of the night is not worth it.
+  \item You don't need to reach your goal right now. You have time.
+  \item You get to define who you are.
+  \item The people who want to be in your life will be. The ones who don't will weed themselves out.
+  \item Sometimes someone's purpose in your life is to teach you something.
+  \item You are not in total control of everything that happens. That's okay.
+  \item You now have what you once wished for.
+  \item You're probably never going to look better than you do right now. Just enjoy it.
+  \item Add 15 minutes to the amount of time you're giving yourself to get somewhere.
+  \item If you want to be treated as valuable, treat yourself as valuable \textemdash{} your time, your work, your energy.
+  \item Don't be afraid to try things that are new. The worst that happens is you don't like it.
+  \item It's okay to change your mind about what you want.
+  \item You're not required to want the same things forever.
+  \item Learn when to be gentle with yourself and when to be stern with yourself.
+  \item There's more value in walking in what you believe than just talking about it. Show them with your actions.
+  \item ``No'' is a complete sentence.
+  \item Every time you think of one of your friends, just text them.
+  \item You need to know what your boundaries are before the situation arises.
+  \item Beauty is in the eye of the beholder. What matters is your unique combination of what you bring to the table.
+  \item Your compassion and empathy are hot.
+  \item You're capable, and we love you.
+  \item Start the thing you've been thinking about forever.
+  \item Wear sunscreen.
+\end{enumerate}
+
+% ──────────────────────────────────────────────
+\section{on relationships \& growth}
+
+\textit{A note: this section speaks honestly about navigating relationships in your early twenties. It is kept here because the lessons are real, even when the situations were messy.}
+
+\softbreak
+
+\subsection{what i know now}
+
+\begin{jadequote}
+I used to think I was hard to love. It turns out I was just asking the wrong people to love me.
+\end{jadequote}
+
+\begin{jadequote}
+Men don't push away women they care about. They push away women they are using.
+\end{jadequote}
+
+\begin{jadequote}
+The person who truly likes you and loves you will never put you in the position to question your worth or hurt you.
+\end{jadequote}
+
+\begin{jadequote}
+Sex doesn't make him stay. A pretty face doesn't make him stay. Loving him harder isn't going to make him stay either. Do you know what makes him stay? Himself. He will stay loyal and faithful to you only if he wants to be. You can't force someone to communicate. You can't beg someone to see that you are worth fighting for. \textemdash{} Alissa DeRogatis
+\end{jadequote}
+
+\subsection{3 lessons from this chapter}
+\begin{enumerate}[leftmargin=*, label=\arabic*.]
+  \item Leave people where they are. Accept situations for what they are.
+  \item Not every action needs a reaction.
+  \item Don't ever let anyone make you second-guess your worth. Surround yourself with people who value your presence, your time, and your energy.
+\end{enumerate}
+
+\subsection{non-negotiables (in any relationship)}
+\begin{itemize}
+  \item Mutual respect. Always.
+  \item Someone who shows up, not just shows interest.
+  \item Someone who communicates instead of disappearing.
+  \item Someone who is proud of you, publicly and privately.
+\end{itemize}
+
+\subsection{the situationship era: what it taught me}
+
+\begin{jadequote}
+What's it like being the situationship before the long-term girlfriend? Constantly feeling like a foster mom. Not knowing what's wrong with you because you've never had a long-term serious relationship. Wondering what healthy even is.
+\end{jadequote}
+
+The answer, eventually: nothing was wrong with me. I was the beta test. The final version is going to be something.
+
+\begin{jadequote}
+Every guy I've been with has always gotten a long-term girlfriend after me. Blessing in disguise. One breakup closer to the right one.
+\end{jadequote}
+
+\begin{jadequote}
+There are all kinds of love in this world but never the same love twice. \textemdash{} F. Scott Fitzgerald
+\end{jadequote}
+
+\subsection{how to deal with being ghosted (a framework)}
+\begin{enumerate}[leftmargin=*, label=\arabic*.]
+  \item Remove from social media.
+  \item Block the number. Delete the contact.
+  \item Detach emotionally and physically.
+  \item Feel the emotions. Let it all out.
+  \item Accept that they lacked the bare minimum: credibility, accountability, communication.
+  \item Ask yourself: why would you fight for someone who doesn't want to be fought for?
+  \item Stand on business.
+  \item Grieve (without texting them).
+  \item Move on. They always come back. And when they do, you'll be ready.
+\end{enumerate}
+
+\begin{jadequote}
+Rejection is redirection. God will never give you peace in something He never meant for you to settle in.
+\end{jadequote}
+
+\subsection{rules i set for myself}
+\begin{itemize}
+  \item Forgive but don't forget.
+  \item Life is a book. Once a chapter closes, turn the page.
+  \item Moving forward doesn't mean you need closure.
+  \item Stop saying yes to everything.
+  \item Follow your gut.
+  \item Career always comes first.
+  \item Accept rejection. Don't beg. Never chase. Know your worth. Choose yourself. Learn. Grow.
+\end{itemize}
+
+% ──────────────────────────────────────────────
+\section{navigating mental health in college}
+
+\textit{Not ``coping'' or ``dealing'' \textemdash{} navigating. There's a difference.}
+
+\subsection{the dopamine menu}
+
+Think of self-care like food groups. You need variety, and you need to ask ``does this make me happy?'' not ``does this make everyone else happy?''
+
+\textbf{Movement:} gym, hot girl walks, 5K runs, workout with a friend.
+
+\textbf{Mind:} journal, podcasts, audiobooks, 15-minute self-reflection, box breathing (4$\times$4$\times$4$\times$4), affirmations.
+
+\textbf{Rest:} self-care Sundays, early bedtime, dryer-warm blanket and a good movie.
+
+\textbf{Connection:} call mom, reach out to a friend, online support groups, talk to an advisor or therapist.
+
+\textbf{Environment:} clean your room (5 minutes is enough to start), go to the grocery store, delete social media temporarily.
+
+\textbf{Joy:} 2000s music in your bedroom, 2000s rom-coms, hot chocolate, late night drive.
+
+\begin{jadequote}
+Don't believe everything you see online. Go to an advisor, a trusted adult, or a therapist \textemdash{} someone older with an outside perspective. You don't have to navigate it alone.
+\end{jadequote}
+
+% ══════════════════════════════════════════════
+%  PART THREE: WHAT I BUILT
+% ══════════════════════════════════════════════
+\newpage
+\section*{\color{matcha} part three: what i built}
+\addcontentsline{toc}{section}{part three: what i built}
+\vspace{-0.5em}
+{\small\color{gray}\itshape the work}
+\vspace{1em}
+
+% ──────────────────────────────────────────────
+\section{the portfolio era: matchaxmoxie}
+
+The PB sandwich philosophy was always there before it had a name \textemdash{} in the way I explained informatics to people who'd never heard of it, in the way I designed things with the assumption that the person on the other end needed clarity, not cleverness.
+
+I built a portfolio that looked like me: pink tulip palette, Playfair Display and DM Sans, lowercase Latin, a year-by-year structure that said \textit{I have been somewhere and I am going somewhere}. Not to impress people. To see myself clearly.
+
+\begin{jadequote}
+ratio. logos. ordo. praxis.\\[0.3em]
+The reasoning. The logic. The order. The practice.\\
+Not just a tagline. A way of moving through the world.
+\end{jadequote}
+
+\textbf{What building it taught me:}
+\begin{itemize}
+  \item I think in systems but feel in metaphors.
+  \item My best work happens at the intersection of ``this is beautiful'' and ``this is useful.''
+  \item I am not a supporting character in my own story. The work reflects that now.
+  \item The problem, the decision, the result: I've always known how to structure a narrative. I just needed to trust it.
+\end{itemize}
+
+% ──────────────────────────────────────────────
+\section{leadership \& campus involvement}
+
+\subsection{panhellenic executive application (excerpts)}
+
+\textbf{Why VP of Diversity \& Inclusion?}
+
+As a first-generation college student, Asian American, Chinese and Fuzhounese, and a woman in STEM, I bring a unique perspective shaped by experiences where diversity wasn't always prioritized. Growing up, I rarely saw leaders who looked like me. That experience fueled my passion to become the kind of leader who ensures everyone feels represented, empowered, and supported.
+
+\textbf{Values and skills:}
+\begin{itemize}
+  \item \textbf{Empathy:} Listening and understanding are key to building strong, supportive communities.
+  \item \textbf{Communication \& Collaboration:} Bringing people together toward shared goals.
+  \item \textbf{Adaptability:} Every experience is an opportunity for growth.
+  \item \textbf{Commitment to D\&I:} Mentored girls through Girls Who Code; deeply aware of the glass and bamboo ceilings in tech.
+\end{itemize}
+
+\textbf{Key leadership experiences:}
+\begin{itemize}
+  \item Serve IT: Led digital strategy and website development for nonprofits including Middle Way House, City of Bloomington, Indiana University, and Deloitte.
+  \item Middle Way House (Website Design Intern): Full redesign using Figma and WordPress, with accessibility as a core focus.
+  \item High school: Asian Student Union president, class officer, student council, Homecoming Week coordinator.
+  \item IU: Hudson \& Holland Scholar, ASA mental health ally, PR committee, IUDM member.
+\end{itemize}
+
+\subsection{leadership conference speech (key themes)}
+
+\begin{jadequote}
+``Leadership is not about being in charge. It's about taking care of those in your charge.''
+\end{jadequote}
+
+\begin{jadequote}
+``Excellence is never an accident. It is always the result of high intention, sincere effort, and intelligent execution.'' \textemdash{} Aristotle
+\end{jadequote}
+
+Three takeaways I always come back to:
+\begin{enumerate}[leftmargin=*, label=\arabic*.]
+  \item Leadership isn't linear. There is no one-size-fits-all path to success.
+  \item Your struggles have purpose. Every challenge is an opportunity for growth.
+  \item Community matters. Surround yourself with people who inspire and support you.
+\end{enumerate}
+
+On duck syndrome and imposter syndrome: the solution wasn't self-reliance. It was community. Finding people who saw something in me that I didn't yet see in myself. Confidence isn't innate \textemdash{} it's built through action, practice, and the people who believe in you while you're still figuring it out.
+
+\subsection{notes on being a young woman in business}
+
+\begin{jadequote}
+Something no one talks about in the young entrepreneur space as a female is how often you're hit on under the guise of mentorship. Guys will frame it as networking. As career advice. As ``just trying to help.'' And when they have leverage \textemdash{} age, connections, status \textemdash{} it's even harder to trust your gut.
+
+I'm 19. I turn 20 in a few days. And I've already had to navigate way too many of these moments. It's exhausting having to decode people's intentions every time I try to grow.
+
+Which is exactly why I've been so adamant about creating my own networking collective \textemdash{} one built on safety, clarity, and community. Spaces where people actually want to learn, not just leverage. Where support doesn't come with strings attached.
+\end{jadequote}
+
+% ──────────────────────────────────────────────
+\section{career \& professional development}
+
+\subsection{how i think about my path}
+
+I am the intersection of strategy and functional consulting. I think in frameworks and feel in narrative. I take business requirements and translate them into technical clarity. I build things that are beautiful and useful and mine.
+
+The path: informatics degree, straight into industry. No detour. The work was always the point.
+
+\textbf{Professional positioning:}
+\begin{itemize}
+  \item Informatics researcher with a focus in AI \& business
+  \item Web \& UX design intern for a nonprofit clinic (Serve IT)
+  \item Student volunteer \& speaker for OVPDEI
+  \item Sustainability consultant for local businesses (Matcha Green Consulting)
+  \item Digital transformation strategy \textemdash{} the bridge between human need and technical execution
+\end{itemize}
+
+\subsection{interview lessons (the hard way)}
+
+\begin{jadequote}
+If you rush into interviews, rejection is guaranteed. I had my first round on Monday and the second on Friday, which I gave with close to zero preparation. Mentally I felt under pressure. Or desperate. And they saw right through me.
+\end{jadequote}
+
+\begin{enumerate}[leftmargin=*, label=\arabic*.]
+  \item It's okay to reschedule interviews.
+  \item You are allowed to ask for more time.
+  \item Practice interviewing with other companies before targeting your dream company.
+\end{enumerate}
+
+\begin{jadequote}
+Rejection isn't the end of your story. It's just another chapter. Sometimes the universe has plans bigger than your current dream.
+\end{jadequote}
+
+\subsection{networking questions i keep}
+\begin{itemize}
+  \item How do you deal with imposter syndrome at work?
+  \item What clubs or experiences benefited you the most?
+  \item What does your day-to-day actually look like?
+  \item What's something you wish you'd known earlier in your career?
+  \item What questions should I be asking that I'm not?
+\end{itemize}
+
+\subsection{5k pr log}
+
+\textit{Because discipline shows up in small places too.}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Date} & \textbf{Notes} & \textbf{Time} \\
+\midrule
+Jan 1, 2025 & First attempt & 53:30 \\
+Jan 1, 2026 & PR & \textbf{49:20} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Getting faster.
+
+% ──────────────────────────────────────────────
+\section{a semester in madrid}
+
+\subsection{the vibe}
+
+\begin{jadequote}
+At 21, peace became my priority. Even if it meant losing people.
+\end{jadequote}
+
+\subsection{the quiet parts (what didn't make the caption)}
+
+Nobody tells you that study abroad starts with three days of not knowing where to buy groceries. Nobody tells you about the particular silence of a Sunday in a city that isn't yours yet \textemdash{} the way the streets empty out and you walk through them trying to look like you belong.
+
+The butterfly effect of almost not going. There were a hundred reasons not to \textemdash{} the cost, the timing, the familiar shape of the life already built at IU. And then you went anyway. And the person who came back is not exactly the person who left. She's steadier. Less afraid of being alone with herself.
+
+\textbf{What was actually hard:}
+\begin{itemize}
+  \item The first two weeks, before you had people
+  \item Navigating a language you were still learning in the moments that mattered
+  \item Missing home in a way you didn't expect, and feeling embarrassed about it
+  \item Coming back and re-learning how to be the version of yourself that exists in English
+\end{itemize}
+
+\textbf{What made it worth it:}
+\begin{itemize}
+  \item The moment a city that wasn't yours started to feel a little like yours anyway
+  \item Being unreachable in a good way
+  \item Learning that you can land somewhere alone and be completely okay
+  \item The person you became in the in-between hours \textemdash{} the ones that don't get documented
+\end{itemize}
+
+\subsection{grades}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Class} & \textbf{Score} & \textbf{Grade} \\
+\midrule
+Product & 8.6 / 10 & A- \\
+EU 101 & 8 + 5.6 / 10 & B+ \& C- \\
+French Business & 8/10 \& 9/10 & B+ \& A \\
+Spanish & 7.1 / 10 & B- \\
+Business & 5 / 10 & C- \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{european travel notes}
+
+\textit{Crowdsourced opinions. Saved for future reference.}
+
+Austria $>$ Germany. Belgium has the best beer and chocolate. Slovenia: surprisingly wonderful. Scandinavia: skippable. Turkey and Greece: worth it. Croatia: fun. The Balkans: mostly okay to skip except those two. Finland: liked the saunas. Andorra: worth a stop if you're going Spain $\to$ France.
+
+% ══════════════════════════════════════════════
+%  PART FOUR: WHERE I LANDED
+% ══════════════════════════════════════════════
+\newpage
+\section*{\color{matcha} part four: where i landed}
+\addcontentsline{toc}{section}{part four: where i landed}
+\vspace{-0.5em}
+{\small\color{gray}\itshape the best for last}
+\vspace{1em}
+
+% ──────────────────────────────────────────────
+\section{state of jade}
+
+\textit{A snapshot. Written for the version of me that filled these pages.}
+
+\medskip
+
+you made it.
+
+not in a loud way. not in the way you used to imagine it \textemdash{} some big arrival moment where everything clicked and you finally felt like the person you'd been performing. it wasn't like that.
+
+it was quieter.
+
+it was waking up in madrid and realizing you weren't waiting for something to happen anymore. it was finishing a semester you almost didn't go on. it was sitting with yourself in a country where no one knew you yet and finding out you didn't need them to. it was watching the two things you manifested fifty times not happen \textemdash{} and discovering that the year without them was better than the years spent chasing them.
+
+you still don't have all of it figured out. the right person hasn't shown up yet. there are still days when you feel too much and days when you feel like not enough. but you're not the jade who wrote those early pages in a panic. you're the one who kept the jade plant alive. you're the one who showed up anyway.
+
+that's the whole thing, actually. you just kept showing up.
+
+\softbreak
+
+\subsection{what you kept}
+\begin{itemize}
+  \item the matcha. always the matcha.
+  \item the belief that you are enough for the right person
+  \item your standards \textemdash{} even when they cost you something
+  \item the way you love people, all the way, even when they didn't earn it
+  \item the ambition. the ``jus u wait.''
+  \item gardening the jade plant
+\end{itemize}
+
+\subsection{what you left behind}
+\begin{itemize}
+  \item waiting for someone to confirm your worth before you claimed it
+  \item the version of yourself that broke her own rules for people who never noticed
+  \item the idea that being hard to keep means you're hard to love
+  \item apologizing for wanting more
+  \item the detour \textemdash{} straight into industry instead, and it turned out to be the faster road
+\end{itemize}
+
+% ──────────────────────────────────────────────
+\section{letters}
+
+\subsection{to the hard chapters}
+
+you were not a waste of time. i mean that differently than it sounds. you were data. you were the process of figuring out what i actually wanted by spending time with what i didn't. every person who didn't choose me in the way i deserved was pointing me toward the one who will. i understand that now without it hurting.
+
+thank you for the lessons. i'm not thanking you for the pain. but i'm keeping the lessons.
+
+\softbreak
+
+\subsection{to IU}
+
+i came to you a first-generation student with a full scholarship and a jade plant and no idea what informatics was. i'm leaving you with a degree, a semester abroad, a consulting clinic, a portfolio, and a very specific vision of what comes next.
+
+you gave me the Hudson \& Holland family when i doubted myself. you gave me Serve IT when i needed to learn what real work for real people felt like. you gave me a laptop and a terminal window and the slow, satisfying feeling of making something from nothing.
+
+i showed up for you too. i want the record to reflect that.
+
+\softbreak
+
+\subsection{to jade at 18}
+
+hi.
+
+i know you're scared. i know you're performing confidence right now because the alternative is letting people see that you don't know if you're enough yet. you are. you're going to spend the next few years trying to get people to confirm that, and they're going to keep not doing it in the way you need. and eventually you're going to realize that you were the only one who could give that to yourself all along.
+
+you're going to go to spain. i know that seems impossible right now. go.
+
+some of the things you manifest won't happen. it will be better than if they had.
+
+you're going to build things that are beautiful and useful and yours. you're going to find your people \textemdash{} the ones who stay, the ones who match your energy, the ones who don't make you feel like a lot. you're going to learn that the right love is quiet and steady and doesn't require you to shrink.
+
+the jade plant is going to survive.
+
+so are you.
+
+% ──────────────────────────────────────────────
+\section{the closing manifesto}
+
+\textit{Not a list this time. Just what's true.}
+
+\medskip
+
+i am a woman who builds things. i build websites and consulting decks and community spaces and portfolios and, apparently, complete personal archives. i build relationships carefully and love people loudly and hold my standards even when holding them is lonely. i am the bridge between the technical and the human, the person at the table who makes sure nothing gets lost in translation. i am a first-generation student and an Asian American woman and a scholar and a strategist and a girl who really, genuinely loves matcha.
+
+i have been the placeholder. i have been the one who showed unconditional love only for someone else to receive it. i am done performing smallness to make other people comfortable.
+
+i went to madrid. i came back different. i am still coming back.
+
+i don't have everything figured out. the right person is still ahead. there are still days when i feel like too much. but i kept showing up \textemdash{} for my goals, for my clients, for the jade plant, for myself. even when it was hard. especially when it was hard.
+
+the two things i wanted most didn't happen. the year without them was better than any year spent chasing them. that's not a consolation. that's the actual lesson.
+
+i'm not arriving. i'm already here.
+
+and i'm just getting started.
+
+jus u wait.
+
+\softbreak
+
+\vfill
+\begin{center}
+  {\color{moxie}\itshape a promise to yourself:}\\[1.2em]
+  {\color{matcha}\large you will not shrink to fit spaces}\\[0.3em]
+  {\color{matcha}\large that were never built for you.}\\[2.5em]
+  {\small\color{gray} xoxo matcha moxie}\\[0.5em]
+  {\small\color{gray} \textemdash{} end of archives \textemdash{}}
+\end{center}
+
+\end{document}
