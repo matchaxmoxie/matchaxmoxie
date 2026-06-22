@@ -675,6 +675,35 @@ ol li::marker { color: var(--tulip-deep); }
   background: var(--tulip-mist);
 }
 
+.owner-jade {
+  font-weight: 600;
+  color: var(--tulip-deep);
+}
+
+.status-badge {
+  display: inline-block;
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.status-draft { background: #e8f0e9; color: #3d5c42; }
+.status-video { background: #fce8ee; color: #8a3d52; }
+.status-blank { background: #f0ece8; color: #6b5a4a; }
+.status-pending { background: #f5f0e8; color: #7a6a4a; }
+.status-blocked { background: #eee8f0; color: #5a4a6b; }
+
+.open-todos li {
+  list-style: disc;
+  margin-left: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
 /* MAP COORDINATOR PAGES (map-training, map-assignments, fase-map nav) */
 .nav-links {
   display: flex;
@@ -800,6 +829,53 @@ ul.checklist li::before {
   position: absolute;
   left: 0;
   color: var(--tulip-deep);
+}
+
+.open-task {
+  margin: var(--space-sm) 0 var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  border-left: 3px solid var(--tulip-stem);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin: var(--space-sm) 0 var(--space-md);
+  -webkit-overflow-scrolling: touch;
+}
+
+.checklist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.checklist-table th,
+.checklist-table td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.checklist-table th {
+  background: var(--tulip-blush);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.status-unpublished {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.status-blocked {
+  color: var(--link-hover);
+  font-weight: 600;
 }
 
 /* LINKS */
