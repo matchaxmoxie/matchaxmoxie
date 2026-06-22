@@ -4,6 +4,11 @@
 **Status:** Draft text from Canvas (review before publish)  
 **Coordinator draft:** internal reference for Jade's edits. Not for public GitHub Pages.
 
+## Related pages
+
+- [MSLD Programs](msld-programs.md) (in-services are a required FASE event)
+- [Absence Protocol](absence-protocol.md) (approved absences and 24-hour notice for in-services)
+
 ## Canvas paste (source)
 
 In-services are a 90-minute meeting held roughly every other week each semester. During in-services, SPCs and MAP Coordinators will review important information for the peer mentors, like upcoming events, policy changes, peer mentor trainings. There are engagement and team-building activities that encourage growth and development as a mentor. You'll get to connect with your fellow mentors and continue building your mentor knowledge base.

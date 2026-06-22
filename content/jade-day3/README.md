@@ -24,7 +24,7 @@ Coordinator drafts for Jade Zhao (module owner). **Do not paste full policy pros
 | Lunch & Learns **Video?** | [lunch-and-learns.md](lunch-and-learns.md) | draft ready for review; video optional |
 | "I have an idea for an event!" **Video** | [event-idea.md](event-idea.md) | video needed |
 | Sample Budget & Event Proposal Forms | [sample-budget-event-forms.md](sample-budget-event-forms.md) | draft ready; attach samples in Canvas |
-| Absence Protocol **Video** | [absence-protocol.md](absence-protocol.md) | placeholder · video needed |
+| Absence Protocol **Video** | [absence-protocol.md](absence-protocol.md) | draft · video needed |
 | Fall 2026 FASE Calendar **Will be uploaded by Marisa when it's finalized more** | [fall-2026-calendar.md](fall-2026-calendar.md) | **blocked** (Marisa) |
 
 ## Module prerequisites (Canvas)

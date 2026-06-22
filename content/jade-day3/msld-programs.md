@@ -4,6 +4,12 @@
 **Status:** Draft text from Canvas (review before publish)  
 **Coordinator draft:** internal reference for Jade's edits. Not for public GitHub Pages.
 
+## Related pages
+
+- [FASE Office Hours](office-hours.md)
+- [In-services & SPH-L102](in-services-sph-l102.md)
+- [Absence Protocol](absence-protocol.md) (FASE events take priority; approved absences)
+
 ## Canvas paste (source)
 
 To ensure sufficient program representation and support, there are several FASE events throughout the year that are required for mentors to attend. These programs are paid events, like office hours, and are scheduled in advance to allow you and other mentors to make any necessary adjustments to your schedule. To be respectful of your and your fellow mentor's time, a majority of our programs happen on Tuesdays in the evening.
