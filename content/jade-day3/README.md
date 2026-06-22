@@ -21,9 +21,9 @@ Coordinator drafts for Jade Zhao (module owner). **Do not paste full policy pros
 | SPC Meetings **Update, video?** | [spc-meetings.md](spc-meetings.md) | blank |
 | In-services & SPH-L102 | [in-services-sph-l102.md](in-services-sph-l102.md) | draft |
 | MSLD Programs | [msld-programs.md](msld-programs.md) | draft |
-| Lunch & Learns **Video?** | [lunch-and-learns.md](lunch-and-learns.md) | placeholder |
+| Lunch & Learns **Video?** | [lunch-and-learns.md](lunch-and-learns.md) | draft ready for review; video optional |
 | "I have an idea for an event!" **Video** | [event-idea.md](event-idea.md) | video needed |
-| Sample Budget & Event Proposal Forms | [sample-budget-event-forms.md](sample-budget-event-forms.md) | draft |
+| Sample Budget & Event Proposal Forms | [sample-budget-event-forms.md](sample-budget-event-forms.md) | draft ready; attach samples in Canvas |
 | Absence Protocol **Video** | [absence-protocol.md](absence-protocol.md) | placeholder · video needed |
 | Fall 2026 FASE Calendar **Will be uploaded by Marisa when it's finalized more** | [fall-2026-calendar.md](fall-2026-calendar.md) | **blocked** (Marisa) |
 
