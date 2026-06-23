@@ -58,15 +58,15 @@ Reference examples currently used in mentor training (attach to this Canvas page
 
 | File | Use |
 |------|-----|
-| Count Von Count - Finite exam review Proposal.docx | Filled event proposal sample |
-| Count Von Count - Finite exam review Budget Proposal.docx | Filled budget proposal sample |
+| count-von-count-finite-exam-review-proposal.docx | Filled event proposal sample |
+| count-von-count-finite-exam-review-budget-proposal.docx | Filled budget proposal sample |
 
 Redact any real student or partner PII before publishing to a new cohort if reusing older samples.
 
 ## Production checklist
 
 - [ ] Copy blank templates from 25-26 Work into 26-27 Mentors Canvas Files
-- [ ] Attach Count Von Count sample pair (or updated redacted samples) to this page
+- [ ] Attach count-von-count sample pair (or updated redacted samples) to this page
 - [ ] Paste page body into Canvas; cross-link to [event-idea.md](event-idea.md) video page
 - [ ] Publish page before [Quiz - Budget & Event Proposal Forms](quiz-budget-event-forms.md)
 - [ ] Confirm quiz questions match the same submission workflow
