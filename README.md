@@ -12,8 +12,9 @@
 [![Consulting site](https://img.shields.io/badge/Site-matchaxmoxie-F2C4CE?style=for-the-badge&logo=html5&logoColor=3D2B2B)](https://matchaxmoxie.github.io/matchaxmoxie/)
 [![FASE MAP](https://img.shields.io/badge/FASE-MAP_Coordinator-990000?style=for-the-badge&logo=readthedocs&logoColor=white)](https://matchaxmoxie.github.io/matchaxmoxie/fase-map.html)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jadezhao-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jadezhao)
+[![GitHub persona](https://img.shields.io/badge/GitHub-matchaxmoxie-24292f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/matchaxmoxie)
 
-also: [operator portfolio](https://jadexzhao.github.io/jlzhao27/site/) · [the work (writing)](https://jadewowgreen.github.io/jadewowgreen/) · [code @ jadexzhao](https://github.com/jadexzhao)
+also: [operator portfolio](https://jadexzhao.github.io/jlzhao27/site/) · [the work (writing)](https://jadewowgreen.github.io/jadewowgreen/) · [code @ jadexzhao](https://github.com/jadexzhao) · [duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/)
 
 ---
 
@@ -64,7 +65,7 @@ accessibility, ethical AI, and HIPAA-aware data work are not side quests.
   / __   open to SWE · GTM · solutions · LLM-shaped roles
 ```
 
-*someday: a duck farm.*
+*someday: [a duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/).* 🦆
 
 ---
 
