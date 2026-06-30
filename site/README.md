@@ -39,7 +39,7 @@ This site uses a Greco-Latin plus English content system, explicit AI disclosure
 - GitHub: `jazhao-ucm`
 - Instagram: `@matchaxmoxie`, `@zhao.langxi` (web green `#00a86b`; both → code `@jadexzhao`)
 - Goodreads: `jadewowgreen`
-- Email: `jadexzhao@outlook.com`
+- Email: `jlzhao@iu.edu`
 
 ## Run Locally
 
