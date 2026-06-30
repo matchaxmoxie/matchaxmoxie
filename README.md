@@ -10,7 +10,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-@matchaxmoxie-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/matchaxmoxie)
 [![Portfolio](https://img.shields.io/badge/Portfolio-jadexzhao-24292f?style=for-the-badge&logo=github&logoColor=white)](https://jadexzhao.github.io/jadexzhao/)
 [![Consulting site](https://img.shields.io/badge/Site-matchaxmoxie-F2C4CE?style=for-the-badge&logo=html5&logoColor=3D2B2B)](https://matchaxmoxie.github.io/matchaxmoxie/)
-[![FASE MAP](https://img.shields.io/badge/FASE-MAP_Coordinator-990000?style=for-the-badge&logo=readthedocs&logoColor=white)](https://matchaxmoxie.github.io/matchaxmoxie/site/fase-map.html)
+[![FASE MAP](https://img.shields.io/badge/FASE-MAP_Coordinator-990000?style=for-the-badge&logo=readthedocs&logoColor=white)](https://matchaxmoxie.github.io/matchaxmoxie/fase-map.html)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jadezhao-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jadezhao)
 
 also: [operator portfolio](https://jadexzhao.github.io/jlzhao27/site/) · [the work (writing)](https://jadewowgreen.github.io/jadewowgreen/) · [code @ jadexzhao](https://github.com/jadexzhao)
@@ -37,7 +37,7 @@ accessibility, ethical AI, and HIPAA-aware data work are not side quests.
 
 ### currently working on
 
-- **FASE MAP coordinator ops** — mentor runbooks, Canvas checklists, and coordinator tooling on [GitHub Pages](https://matchaxmoxie.github.io/matchaxmoxie/site/fase-map.html)
+- **FASE MAP coordinator ops** — mentor runbooks, Canvas checklists, and coordinator tooling on [GitHub Pages](https://matchaxmoxie.github.io/matchaxmoxie/fase-map.html)
 - **ServeIT web team lead** — nonprofit sites, WCAG-first handoffs, production delivery
 - **Women's sports / health informatics research** — scoping review dashboard and cohort tooling (public code on [jadexzhao](https://github.com/jadexzhao))
 - **small-business web & branding** under the matchaxmoxie lane — static sites that staff can maintain
