@@ -1,13 +1,6 @@
-# Jade Zhao & Co.
+# Jade Zhao
 
-**jadexzhao × matchaxmoxie** · Informatics @ IU Luddy '27 · Bloomington, IN
-
-**Co-founded:** one (1) human, two (2) GitHub accounts. here r ur cofounders hahahaha
-
-| | **[@matchaxmoxie](https://github.com/matchaxmoxie)** · brand & ops | **[@jadexzhao](https://github.com/jadexzhao)** · ships |
-| --- | --- | --- |
-| **role** | CEO-ish — FASE MAP, consulting, duck energy, Instagram | CTO-ish — code, portfolio, research tools |
-| **intro** | meet my co-founder [@jadexzhao](https://github.com/jadexzhao) (he actually writes the code) | meet my co-founder [@matchaxmoxie](https://github.com/matchaxmoxie) (she handles brand, FASE, and emotional support ducks) |
+**Informatics @ IU Luddy '27** · Bloomington, IN
 
 I build human-sized tools — full-stack, data pipelines, and research interfaces people actually use.
 
