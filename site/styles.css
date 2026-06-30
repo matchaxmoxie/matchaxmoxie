@@ -93,6 +93,7 @@ html {
 
 body {
   margin: 0;
+  padding-top: 1.75rem;
   background-color: #FDF6F7;
   background-color: var(--tulip-light);
   color: #3D2B2B;
@@ -101,6 +102,28 @@ body {
   font-size: var(--text-base);
   line-height: var(--leading-loose);
   -webkit-font-smoothing: antialiased;
+}
+
+.twin-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: block;
+  text-align: center;
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  padding: 0.35rem 1rem;
+  background: var(--tulip-blush);
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.twin-banner:hover {
+  color: var(--tulip-soil);
+  background: var(--tulip-mist);
 }
 
 /* SKIP LINK */
