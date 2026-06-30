@@ -1319,6 +1319,31 @@ a:hover {
   margin-bottom: var(--space-lg);
 }
 
+.links a.link-instagram,
+.footer-ig-note a.link-instagram {
+  color: #00a86b;
+}
+
+.links a.link-instagram:hover,
+.links a.link-instagram:focus-visible,
+.footer-ig-note a.link-instagram:hover,
+.footer-ig-note a.link-instagram:focus-visible {
+  color: #008f5a;
+}
+
+.footer-ig-note {
+  font-size: var(--text-sm);
+  color: var(--text-ghost);
+  margin-bottom: var(--space-sm);
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-ig-note a:not(.link-instagram) {
+  color: var(--text-secondary);
+}
+
 .links a,
 .nav-link {
   min-height: 44px;
