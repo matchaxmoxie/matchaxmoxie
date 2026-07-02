@@ -1,6 +1,6 @@
 # Day 3 module videos (local source)
 
-Recorded Jun 26, 2026. Upload to Kaltura and embed on Canvas — do not host on public GitHub Pages.
+Recorded Jun 26, 2026. Upload to Kaltura and embed on Canvas; do not host on public GitHub Pages.
 
 | File | Canvas page | Duration |
 |------|-------------|----------|
