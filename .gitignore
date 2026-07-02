@@ -1,2 +1,5 @@
 .DS_Store
 *.docx
+site/content
+content/jade-day3/videos/*.mov
+content/jade-day3/videos/*.MOV

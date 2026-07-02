@@ -8,6 +8,8 @@
 
 During office hours, FASE Peer Mentors are expected to make best use of their time. Peer mentors are expected to be on time and check in with administrative coordinator using the iPads located in the lobby of 300 N. Eagleson. Unless otherwise agreed upon, office hours should be held in the assigned office location at 300 N. Eagleson.
 
+**Fall 2026 schedules:** see [Fall Office Hour Schedules](../../site/fall-office-hours.html) in Important Info for your assigned day and time (mentor grid and SPC/MAP grid).
+
 Examples of expected actions in offices hours include, but are not limited to:
 
 - Meeting with proteges/students
@@ -30,4 +32,5 @@ Reach out in the FASE GroupMe to find another mentor who will cover your hours o
 
 - Cross-link to [How to Check-in with the iPads](ipad-checkin.md) (video page) after embed is ready
 - Cross-link to [Absence Protocol](absence-protocol.md) (approved absences and advance notice)
+- Cross-link to [Fall 2026 office hour schedules](../../site/fall-office-hours.html) (Important Info module)
 - Typo in Canvas source: "offices hours" → "office hours" on publish

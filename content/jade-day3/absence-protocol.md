@@ -1,8 +1,8 @@
 # Absence Protocol (Video)
 
 **Canvas module:** (Jade) Day 3 - FASE Events & Attendance  
-**Status:** Needs **video** (draft text ready; film walkthrough)  
-**Coordinator draft:** paste into Canvas after video is recorded. Not for public GitHub Pages.
+**Status:** **Video recorded** (~1:39) · draft text ready · upload Kaltura before publish  
+**Source file:** [videos/2026-absence-protocol.mov](videos/2026-absence-protocol.mov)
 
 ## Related pages
 

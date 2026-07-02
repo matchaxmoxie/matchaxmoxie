@@ -1,8 +1,8 @@
 # How to Check-in with the iPads (Video)
 
 **Canvas module:** (Jade) Day 3 - FASE Events & Attendance  
-**Status:** **Video needed**  
-**Coordinator draft:** script notes from Canvas. Film before publish.
+**Status:** **Video recorded** (~1:32) · upload Kaltura before publish  
+**Source file:** [videos/2026-ipad-checkin.mov](videos/2026-ipad-checkin.mov)
 
 ## Canvas paste (source)
 

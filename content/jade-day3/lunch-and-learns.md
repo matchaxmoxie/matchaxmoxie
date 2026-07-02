@@ -1,8 +1,8 @@
 # Lunch & Learns (Video?)
 
 **Canvas module:** (Jade) Day 3 - FASE Events & Attendance  
-**Status:** Draft text from Canvas (ready for review); optional video flagged in page title  
-**Coordinator draft:** internal reference for Jade's edits. Not for public GitHub Pages.
+**Status:** Draft ready for review · **video recorded** (~1:28)  
+**Source file:** [videos/2026-lunch-and-learns.mov](videos/2026-lunch-and-learns.mov)
 
 ## Related pages
 

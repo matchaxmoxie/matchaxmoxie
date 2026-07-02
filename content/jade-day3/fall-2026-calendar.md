@@ -27,5 +27,5 @@
 
 ## Open items
 
-- Finalized Fall 2026 calendar asset from Marisa (not in repo)
-- Embed or attachment format TBD when file arrives
+- Draft coordinator calendar in repo: [`../schedules/fall-2026-calendar.ics`](../schedules/fall-2026-calendar.ics) · [`../schedules/fall-2026-calendar-ical.zip`](../schedules/fall-2026-calendar-ical.zip) (Jun 25, 2026 drop; not yet finalized for Canvas)
+- Embed or attachment format TBD when Marisa signs off

@@ -1,8 +1,8 @@
 # "I have an idea for an event!" (Video)
 
 **Canvas module:** (Jade) Day 3 - FASE Events & Attendance  
-**Status:** Needs **video** (page text is outline + script notes; film walkthrough)  
-**Coordinator draft:** paste into Canvas after video is recorded. Not for public GitHub Pages.
+**Status:** **Video recorded** (~1:42) · page outline ready · upload Kaltura before publish  
+**Source file:** [videos/2026-event-idea.mov](videos/2026-event-idea.mov)
 
 ## Related pages and assignments
 

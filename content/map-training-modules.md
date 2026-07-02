@@ -53,7 +53,7 @@ Coordinator reference for **26-27 Mentors** (FASE). Structure and publish status
 |------|-------|
 | Protégé Pairings | |
 | Post Mentoring Surveys | |
-| Fall Office Hour Schedules | |
+| Fall Office Hour Schedules | Draft: [fall-office-hours.html](../site/fall-office-hours.html) · PDFs in `site/assets/` |
 | Spring Office Hour Schedules | |
 
 ## For Leadership
@@ -143,23 +143,23 @@ Coordinator reference for **26-27 Mentors** (FASE). Structure and publish status
 | Item | Type | Pts | Status | Notes |
 |------|------|-----|--------|-------|
 | FASE Office Hours | Page | | Unpublished | Draft: [office-hours.md](jade-day3/office-hours.md) |
-| How to Check-in with the iPads **Video** | Page | | Unpublished | Video needed · [ipad-checkin.md](jade-day3/ipad-checkin.md) |
-| SPC Meetings **Update, video?** | Page | | Unpublished | Blank · [spc-meetings.md](jade-day3/spc-meetings.md) |
+| How to Check-in with the iPads **Video** | Page | | Unpublished | Video recorded · [2026-ipad-checkin.mov](jade-day3/videos/2026-ipad-checkin.mov) · [ipad-checkin.md](jade-day3/ipad-checkin.md) |
+| SPC Meetings **Update, video?** | Page | | Unpublished | Blank page · video recorded · [2026-spc-meetings.mov](jade-day3/videos/2026-spc-meetings.mov) · [spc-meetings.md](jade-day3/spc-meetings.md) |
 | In-services & SPH-L102 | Page | | Unpublished | Draft: [in-services-sph-l102.md](jade-day3/in-services-sph-l102.md) |
 | MSLD Programs | Page | | Unpublished | Draft: [msld-programs.md](jade-day3/msld-programs.md) |
-| Lunch & Learns **Video?** | Page | | Unpublished | Ready for review; video optional · [lunch-and-learns.md](jade-day3/lunch-and-learns.md) |
-| "I have an idea for an event!" **Video** | Page | | Unpublished | Video needed · draft: [event-idea.md](jade-day3/event-idea.md) |
+| Lunch & Learns **Video?** | Page | | Unpublished | Draft ready · video recorded · [2026-lunch-and-learns.mov](jade-day3/videos/2026-lunch-and-learns.mov) · [lunch-and-learns.md](jade-day3/lunch-and-learns.md) |
+| "I have an idea for an event!" **Video** | Page | | Unpublished | Video recorded · [2026-event-idea.mov](jade-day3/videos/2026-event-idea.mov) · [event-idea.md](jade-day3/event-idea.md) |
 | Sample Budget & Event Proposal Forms | Page | | Unpublished | Draft ready; attach samples in Canvas · [sample-budget-event-forms.md](jade-day3/sample-budget-event-forms.md) |
 | Quiz - Budget & Event Proposal Forms **Update** | Quiz | 0 | Unpublished | Questions TBD · checklist: [quiz-budget-event-forms.md](jade-day3/quiz-budget-event-forms.md) |
-| Absence Protocol **Video** | Page | | Unpublished | Video needed · draft: [absence-protocol.md](jade-day3/absence-protocol.md) |
+| Absence Protocol **Video** | Page | | Unpublished | Video recorded · [2026-absence-protocol.mov](jade-day3/videos/2026-absence-protocol.mov) · [absence-protocol.md](jade-day3/absence-protocol.md) |
 | Fall 2026 FASE Calendar **Will be uploaded by Marisa when it's finalized more** | Page | | **Blocked** | Owner: Marisa · draft: [fall-2026-calendar.md](jade-day3/fall-2026-calendar.md) |
 | FASE Events & Attendance Quiz **Update** | Quiz | 5 | Unpublished | Questions TBD · checklist: [quiz-fase-events-attendance.md](jade-day3/quiz-fase-events-attendance.md) |
 
-**Module documentation:** 10/10 Canvas pages, 2/2 quizzes documented in [`content/jade-day3/`](jade-day3/README.md). Production checklist: [`site/jade-day3.html`](../site/jade-day3.html). **Videos still needed:** iPad check-in, SPC, Lunch & Learns (optional?), event idea, Absence Protocol. **Publish without calendar:** other pages and quizzes can go live; keep calendar unpublished until Marisa delivers file.
+**Module documentation:** 10/10 Canvas pages, 2/2 quizzes documented in [`content/jade-day3/`](jade-day3/README.md). Production checklist: [`site/jade-day3.html`](../site/jade-day3.html). **Videos:** 5/5 recorded ([videos/](jade-day3/videos/README.md)); upload to Kaltura before publish. **Publish without calendar:** other pages and quizzes can go live; keep calendar unpublished until Marisa delivers file.
 
 ### Jade action checklist
 
-- [ ] Confirm video plan: iPad check-in, SPC (update + video?), Lunch & Learns, event idea, Absence Protocol
+- [ ] Upload Day 3 videos to Kaltura; embed on Canvas pages
 - [ ] Update SPC Meetings page content
 - [ ] Build Quiz - Budget & Event Proposal Forms in New Quizzes (0 pts) · [quiz-budget-event-forms.md](jade-day3/quiz-budget-event-forms.md)
 - [ ] Update FASE Events & Attendance Quiz (5 pts) · [quiz-fase-events-attendance.md](jade-day3/quiz-fase-events-attendance.md)
