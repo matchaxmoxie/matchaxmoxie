@@ -39,7 +39,7 @@ Same Jade · FASE MAP coordinator · portfolio @jadexzhao
 
 **Website (jadexzhao):** `https://jadexzhao.github.io/jadexzhao/`  
 **Website (matchaxmoxie):** `https://matchaxmoxie.github.io/matchaxmoxie/`  
-**Instagram:** `@matchaxmoxie`, `@zhao.langxi` (badge color `#00a86b`; both → `@jadexzhao`)
+**Instagram:** `@zhao.langxi` (badge color `#00a86b`; → `@jadexzhao`)
 
 ### 3. Deploy FASE / about site (fixes 404 badge links)
 

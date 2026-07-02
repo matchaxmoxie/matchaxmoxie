@@ -37,7 +37,7 @@ This site uses a Greco-Latin plus English content system, explicit AI disclosure
 - Résumé (canonical PDF): [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf) (IU Pages; also linked from the homepage footer)
 - LinkedIn: `jadexzhao`
 - GitHub: `jazhao-ucm`
-- Instagram: `@matchaxmoxie`, `@zhao.langxi` (web green `#00a86b`; both → code `@jadexzhao`)
+- Instagram: `@zhao.langxi` (web green `#00a86b`; → code `@jadexzhao`)
 - Goodreads: `jadewowgreen`
 - Email: `jlzhao@iu.edu`
 
