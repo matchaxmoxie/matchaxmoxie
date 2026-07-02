@@ -6,7 +6,7 @@
 
 | | **[@matchaxmoxie](https://github.com/matchaxmoxie)** · brand & ops | **[@jadexzhao](https://github.com/jadexzhao)** · ships |
 | --- | --- | --- |
-| **role** | fase map coordinator, uta, consulting, instagram | code, serveit web lead, portfolio |
+| **role** | fase map coordinator, uta, consulting | code, serveit web lead, portfolio |
 | **intro** | meet my co-founder [@jadexzhao](https://github.com/jadexzhao) (writes the code) | meet my co-founder [@matchaxmoxie](https://github.com/matchaxmoxie) (brand, fase, emotional support ducks) |
 
 informatics @ iu luddy, may 2027. serveit clinic is iu's nonprofit tech clinic; i lead the website team on wcag nonprofit builds. fase map coordinator and uta for 50+. first-gen, hudson & holland scholar. spring 2026 at complutense madrid. python, typescript, react, postgresql.
