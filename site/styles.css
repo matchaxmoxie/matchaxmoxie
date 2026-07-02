@@ -8,6 +8,15 @@
   --tulip-light: #FDF6F7;
   --tulip-mist: #EDD5DA;
 
+  /* chinese accent palette — jade, cinnabar, gold */
+  --jade: #3A6B5C;
+  --jade-soft: #6B9E8F;
+  --cinnabar: #B83232;
+  --cinnabar-soft: #D4564A;
+  --gold: #C4A035;
+  --gold-soft: #E8D5A3;
+  --matcha-wash: #E8F0E4;
+
   /* type */
   --text-primary: #3D2B2B;
   --text-secondary: #7A5560;
@@ -96,12 +105,20 @@ body {
   padding-top: 1.75rem;
   background-color: #FDF6F7;
   background-color: var(--tulip-light);
+  background-image:
+    radial-gradient(ellipse 70% 45% at 100% 0%, rgba(242, 196, 206, 0.35), transparent 55%),
+    radial-gradient(ellipse 55% 35% at 0% 100%, rgba(58, 107, 92, 0.06), transparent 50%);
   color: #3D2B2B;
   color: var(--text-primary);
   font-family: 'DM Sans', sans-serif;
   font-size: var(--text-base);
   line-height: var(--leading-loose);
   -webkit-font-smoothing: antialiased;
+}
+
+.sc {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 500;
 }
 
 .twin-banner {
@@ -505,6 +522,170 @@ body {
   font-size: var(--text-md);
   margin-bottom: var(--space-lg);
   max-width: 52ch;
+}
+
+/* CULTURAL ACCENTS — zhao.langxi / 鸭年 */
+.heritage-line {
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  color: var(--jade-soft);
+  margin: 0.75rem 0 0;
+}
+
+.heritage-line .sc {
+  color: var(--jade);
+  font-size: 0.95rem;
+}
+
+.duck-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.35rem 0.75rem;
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: linear-gradient(135deg, rgba(196, 160, 53, 0.1), rgba(58, 107, 92, 0.07));
+  border: 1px solid var(--gold-soft);
+  border-radius: 4px;
+}
+
+.duck-badge .sc {
+  text-transform: none;
+  letter-spacing: 0.04em;
+  color: var(--jade);
+}
+
+.section-label-bilingual {
+  display: block;
+  font-size: var(--text-accent);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-ghost);
+  margin-bottom: 0.35rem;
+}
+
+.section-label-bilingual .sc {
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--jade-soft);
+  margin-right: 0.35em;
+}
+
+.roots-block {
+  background: linear-gradient(180deg, var(--matcha-wash) 0%, transparent 100%);
+  border-left: 3px solid var(--jade-soft);
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.roots-block p {
+  font-size: var(--text-body-mobile);
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 0.85rem;
+  max-width: 62ch;
+}
+
+.roots-block p:last-child {
+  margin-bottom: 0;
+}
+
+.roots-block .sc-inline {
+  font-family: 'Noto Serif SC', serif;
+  color: var(--jade);
+  font-weight: 500;
+}
+
+.coming-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: var(--space-sm);
+}
+
+@media (min-width: 640px) {
+  .coming-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+.coming-card {
+  display: block;
+  padding: 1.15rem 1.25rem;
+  background: var(--tulip-blush);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.coming-card:hover,
+.coming-card:focus-visible {
+  border-color: var(--jade-soft);
+  box-shadow: 0 2px 12px var(--shadow);
+}
+
+.coming-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-h3-mobile);
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.coming-card .coming-tag {
+  display: inline-block;
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cinnabar-soft);
+  margin-bottom: 0.5rem;
+}
+
+.coming-card p {
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.coming-card .tags {
+  display: block;
+  margin-top: 0.65rem;
+  font-size: var(--text-xs);
+  color: var(--text-ghost);
+  letter-spacing: 0.02em;
+}
+
+.topic-cultural {
+  border-top: 1px solid var(--gold-soft);
+}
+
+.topic-cultural h2::after {
+  content: '';
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cinnabar-soft), var(--gold-soft));
+  margin-top: 0.5rem;
+}
+
+.footer-duck-note {
+  font-size: var(--text-xs);
+  color: var(--text-ghost);
+  margin-top: var(--space-sm);
+  letter-spacing: 0.04em;
+}
+
+.footer-duck-note .sc {
+  color: var(--jade);
+}
+
+.footer-duck-note a {
+  color: var(--jade-soft);
 }
 
 .work-previews {

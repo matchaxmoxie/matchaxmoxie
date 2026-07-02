@@ -49,6 +49,9 @@ informatics @ iu luddy, may 2027. serveit clinic is iu's nonprofit tech clinic; 
 - **serveit website team lead** (jan 2024): wcag 2.1 nonprofit builds, ml engagement (~+25%), python/postgresql etl on partner org data
 - **fase map coordinator & uta** (aug 2023): mentor apprenticeship program, canvas ops, 50+ students, study resources
 - **potstickers**: family restaurant site with clover online ordering; portfolio at jadexzhao.github.io
+- **coming soon (learning in public)**: wechat mini-program notes · china ai/cybersec watchlist · fujian ↔ midwest dev diary · [@zhao.langxi](https://instagram.com/zhao.langxi)
+
+**鸭年 2026** · invented year of the duck — [catch one](https://jadexzhao.github.io/jadexzhao/duck-farm/)
 
 ---
 
@@ -65,4 +68,4 @@ same co-founder, two github accounts: brand/ops here; [**@jadexzhao**](https://g
 
 ---
 
-*someday: [a duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/).* 🦆
+*someday: [a duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/).* 🦆 **鸭年 2026** · fujian roots · [@zhao.langxi](https://instagram.com/zhao.langxi)
