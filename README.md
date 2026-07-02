@@ -6,10 +6,10 @@
 
 | | **[@matchaxmoxie](https://github.com/matchaxmoxie)** · brand & ops | **[@jadexzhao](https://github.com/jadexzhao)** · ships |
 | --- | --- | --- |
-| **role** | CEO-ish — FASE MAP, consulting, duck energy, Instagram | CTO-ish — code, portfolio, research tools |
+| **role** | CEO-ish - FASE MAP, consulting, duck energy, Instagram | CTO-ish - code, portfolio, research tools |
 | **intro** | meet my co-founder [@jadexzhao](https://github.com/jadexzhao) (he actually writes the code) | meet my co-founder [@matchaxmoxie](https://github.com/matchaxmoxie) (she handles brand, FASE, and emotional support ducks) |
 
-I build human-sized tools — full-stack, data pipelines, and research interfaces people actually use.
+I build human-sized tools: full-stack, data pipelines, and research interfaces people actually use.
 
 ---
 
@@ -47,10 +47,10 @@ I build human-sized tools — full-stack, data pipelines, and research interface
 
 | Repo | Why |
 |------|-----|
-| [`jadexzhao/jadexzhao`](https://github.com/jadexzhao/jadexzhao) | Shipped portfolio — dashboard, pipelines, duck farm |
-| [`jadexzhao/pstickers24`](https://github.com/jadexzhao/pstickers24) | Family restaurant site — first production ship |
+| [`jadexzhao/jadexzhao`](https://github.com/jadexzhao/jadexzhao) | Shipped portfolio: dashboard, pipelines, duck farm |
+| [`jadexzhao/pstickers24`](https://github.com/jadexzhao/pstickers24) | Family restaurant site, first production ship |
 | [`matchaxmoxie/matchaxmoxie`](https://github.com/matchaxmoxie/matchaxmoxie) | Consulting site + FASE MAP coordinator tooling |
-| [`jadexzhao/matchaxmoxie`](https://github.com/jadexzhao/matchaxmoxie) | Coordinator checklists & site mirror (private — pin if visible) |
+| [`jadexzhao/matchaxmoxie`](https://github.com/jadexzhao/matchaxmoxie) | Coordinator checklists & site mirror (private; pin if visible) |
 
 ---
 
