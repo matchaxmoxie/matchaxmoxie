@@ -1,17 +1,21 @@
-# jade zhao & co.
+# jade zhao & co. · @matchaxmoxie
 
-**jadexzhao × matchaxmoxie** · informatics @ iu luddy · may 2027 · bloomington, in
+**brand & ops side** of the same human. my co-founder [@jadexzhao](https://github.com/jadexzhao) writes the code — i run fase, consulting, and the emotional support ducks.
+
+**actor & entrepreneur who ships** · informatics @ iu luddy · may 2027 · bloomington, in
 
 **Co-founded:** one human, two github accounts.
 
 | | **[@matchaxmoxie](https://github.com/matchaxmoxie)** · brand & ops | **[@jadexzhao](https://github.com/jadexzhao)** · ships |
 | --- | --- | --- |
-| **role** | fase map coordinator, uta, consulting | code, serveit web lead, portfolio |
-| **intro** | meet my co-founder [@jadexzhao](https://github.com/jadexzhao) (writes the code) | meet my co-founder [@matchaxmoxie](https://github.com/matchaxmoxie) (brand, fase, emotional support ducks) |
+| **role** | fase map coordinator, uta, consulting, campus creator lane | gtm eng, serveit web lead, code, portfolio |
+| **intro** | meet my co-founder [@jadexzhao](https://github.com/jadexzhao) (writes the code, ships the pilots) | meet my co-founder [@matchaxmoxie](https://github.com/matchaxmoxie) (brand, fase, ops, ducks) |
 
-informatics @ iu luddy, may 2027. serveit clinic is iu's nonprofit tech clinic; i lead the website team on wcag nonprofit builds. fase map coordinator and uta for 50+. first-gen, hudson & holland scholar. spring 2026 at complutense madrid. python, typescript, react, postgresql.
+grew up in a chinese restaurant in indiana — the only metric that mattered was whether the food hit the table hot. that wiring stuck. now i coordinate fase's mentor apprenticeship program, lead serveit's website team on wcag nonprofit builds, and keep canvas ops from eating everyone's week. first-gen, hudson & holland scholar. spring 2026 at complutense madrid. python, typescript, react, postgresql.
 
 **open to** software engineering · gtm engineering · solutions engineering · open to relocation
+
+**live site:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) · **the briefcase:** [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/)
 
 ---
 
@@ -44,14 +48,15 @@ informatics @ iu luddy, may 2027. serveit clinic is iu's nonprofit tech clinic; 
 
 ---
 
-### currently working on
+### currently running (ops side)
 
-- **serveit website team lead** (jan 2024): wcag 2.1 nonprofit builds, ml engagement (~+25%), python/postgresql etl on partner org data
-- **fase map coordinator & uta** (aug 2023): mentor apprenticeship program, canvas ops, 50+ students, study resources
-- **potstickers**: family restaurant site with clover online ordering; portfolio at jadexzhao.github.io
-- **coming soon (learning in public)**: wechat mini-program notes · china ai/cybersec watchlist · fujian ↔ midwest dev diary · [@zhao.langxi](https://instagram.com/zhao.langxi)
+- **fase map coordinator & uta** (aug 2023 → now): mentor apprenticeship program, canvas module publish checklists, 50+ students, study resources — clearing the path for whoever comes next
+- **serveit website team lead** (jan 2024): iu's nonprofit tech clinic. wcag 2.1 builds bloomington orgs actually maintain, ml engagement (~+25%), python/postgresql etl on partner org data. (spoiler: this eats.)
+- **campus creator lane:** school ig [@zhao.langxi](https://instagram.com/zhao.langxi) — plants, matcha, lowercase truth. loud on purpose, always anchored by the work.
+- **potstickers:** family restaurant site with clover online ordering — first production ship lives at [@jadexzhao/pstickers24](https://github.com/jadexzhao/pstickers24)
+- **coming soon (learning in public):** wechat mini-program notes · china ai/cybersec watchlist · fujian ↔ midwest dev diary
 
-**鸭年 2026** · invented year of the duck — [catch one](https://jadexzhao.github.io/jadexzhao/duck-farm/)
+**鸭年 2026** · the duck never got a seat at the zodiac table, so we made one — [catch one](https://jadexzhao.github.io/jadexzhao/duck-farm/)
 
 ---
 
@@ -59,13 +64,13 @@ informatics @ iu luddy, may 2027. serveit clinic is iu's nonprofit tech clinic; 
 
 | repo | why |
 |------|-----|
-| [`jadexzhao/jadexzhao`](https://github.com/jadexzhao/jadexzhao) | shipped portfolio: serveit builds, duck farm |
+| [`matchaxmoxie/matchaxmoxie`](https://github.com/matchaxmoxie/matchaxmoxie) | this repo — consulting site + fase map coordinator tooling |
+| [`jadexzhao/jadexzhao`](https://github.com/jadexzhao/jadexzhao) | shipped portfolio: serveit builds, duck farm, the briefcase |
 | [`jadexzhao/pstickers24`](https://github.com/jadexzhao/pstickers24) | family restaurant site, first production ship |
-| [`matchaxmoxie/matchaxmoxie`](https://github.com/matchaxmoxie/matchaxmoxie) | consulting site + fase map coordinator tooling |
 | [`jadexzhao/matchaxmoxie`](https://github.com/jadexzhao/matchaxmoxie) | coordinator checklists & site mirror (private; pin if visible) |
 
-same co-founder, two github accounts: brand/ops here; [**@jadexzhao**](https://github.com/jadexzhao) ships the code ([the briefcase](https://jadexzhao.github.io/jadexzhao/)).
+same co-founder, two github accounts: **@matchaxmoxie** runs brand & ops here; [**@jadexzhao**](https://github.com/jadexzhao) ships the code ([the briefcase](https://jadexzhao.github.io/jadexzhao/)).
 
 ---
 
-*someday: [a duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/).* 🦆 **鸭年 2026** · fujian roots · [@zhao.langxi](https://instagram.com/zhao.langxi)
+*福州 roots · fujian ↔ midwest wiring · someday [a duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/).* 🦆 **鸭年 2026** · [@zhao.langxi](https://instagram.com/zhao.langxi)

@@ -1,9 +1,8 @@
-# Site README
+# site README · @matchaxmoxie
 
-Public portfolio frontend for  
-[matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/).
+Public portfolio frontend for [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — the brand & ops side. code ships at [@jadexzhao](https://github.com/jadexzhao) / [the briefcase](https://jadexzhao.github.io/jadexzhao/).
 
-This site uses a Greco-Latin plus English content system, explicit AI disclosure, and a year-by-year structure.
+Greco-Latin plus English content system, explicit AI disclosure, year-by-year structure. restaurant kid wiring, fase map ops, 鸭年 lore.
 
 ## Pages
 
@@ -34,11 +33,11 @@ This site uses a Greco-Latin plus English content system, explicit AI disclosure
 
 ## Contact Links in Site
 
-- Résumé (canonical PDF): [jlzhao.pages.iu.edu/resume.pdf](https://jlzhao.pages.iu.edu/resume.pdf) (IU Pages; also linked from the homepage footer)
+- Experience & résumé: [linkedin.com/in/jadexzhao](https://www.linkedin.com/in/jadexzhao/)
 - LinkedIn: `jadexzhao`
-- GitHub: `jazhao-ucm`
+- GitHub (code): `@jadexzhao`
+- GitHub (brand/ops): `@matchaxmoxie`
 - Instagram: `@zhao.langxi` (web green `#00a86b`; → code `@jadexzhao`)
-- Goodreads: `jadewowgreen`
 - Email: `jlzhao@iu.edu`
 
 ## Run Locally
