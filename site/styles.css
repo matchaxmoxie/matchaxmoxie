@@ -1044,6 +1044,22 @@ body {
   letter-spacing: 0.02em;
 }
 
+.exec-meta.shipping-signal {
+  color: var(--editorial-dark);
+  font-weight: 500;
+  max-width: 52ch;
+}
+
+.exec-meta.shipping-signal a {
+  color: var(--tulip-deep);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(125, 58, 74, 0.35);
+}
+
+.exec-meta.shipping-signal a:hover {
+  border-bottom-color: var(--tulip-deep);
+}
+
 .exec-links {
   display: flex;
   flex-wrap: wrap;

@@ -6,7 +6,7 @@
 
 📧 [Email](mailto:jlzhao@iu.edu) · 🌐 [Live site](https://matchaxmoxie.github.io/matchaxmoxie/) · 💼 [The briefcase](https://jadexzhao.github.io/jadexzhao/) · 📸 [@zhao.langxi](https://instagram.com/zhao.langxi) · 🔗 [LinkedIn](https://www.linkedin.com/in/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie) · [@jadexzhao](https://github.com/jadexzhao)
 
-> **Restaurant kid turned brand & ops lead.** I grew up where the only metric that mattered was whether the food hit the table hot. That wiring stuck. I coordinate programs, clear paths for the next person, and keep creative + GTM lanes loud on purpose but anchored by the work.
+> **Restaurant kid turned brand & ops lead.** I grew up where the only metric that mattered was whether the food hit the table hot. That wiring stuck. I coordinate programs, clear paths for the next person, and keep creative + GTM lanes loud on purpose but anchored by the work. Code-side receipts live on [`@jadexzhao`](https://jadexzhao.github.io/jadexzhao/): ServeIT **~25% engagement lift**, pitch → live PoC sandboxes, [duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) as the public sandbox.
 
 ---
 
@@ -37,7 +37,7 @@ Stack talk, featured ships, and engineering detail live on [`@jadexzhao`](https:
   Mentor apprenticeship program, Canvas publish checklists, study resources, and handoffs for 50+ students. Clearing the path for whoever comes next.
 
 * **ServeIT Website Team** | *[IU ServeIT](https://serveit.luddy.indiana.edu/serve-ai/index.html) (nonprofit tech clinic)*  
-  Ops & handoff framing: scoped builds community orgs can maintain without a developer on call. Engineering lead and stack live on [`@jadexzhao`](https://github.com/jadexzhao) / [the briefcase](https://jadexzhao.github.io/jadexzhao/).
+  Ops & handoff framing: scoped builds community orgs can maintain without a developer on call. Engineering side on [`@jadexzhao`](https://github.com/jadexzhao) / [the briefcase](https://jadexzhao.github.io/jadexzhao/) shipped WCAG builds plus ETL with a **~25% engagement lift**.
 
 * **Campus Creator Lane** | *[@zhao.langxi](https://instagram.com/zhao.langxi)*  
   Plants, matcha, lowercase truth. Loud on purpose, always anchored by the work.
@@ -45,7 +45,15 @@ Stack talk, featured ships, and engineering detail live on [`@jadexzhao`](https:
 * **Potstickers Ops** | *[Ordering](https://potstickers24.cloveronline.com/) · [pstickers24](https://github.com/jadexzhao/pstickers24)*  
   Family restaurant site + Clover online ordering. First production ship, still the reason the dual-account setup exists. Site code on `@jadexzhao`; brand & seasonal ops pulse here.
 
-*Light GTM context:* also in the mix at a stealth YC startup (NYC). Demo/PoC engineering detail sits on the code account, not this one.
+*Light GTM context:* also in the mix at a stealth YC startup (NYC). Demo/PoC engineering detail sits on the code account; public taxonomy: [demo engineering](https://matchaxmoxie.github.io/matchaxmoxie/demo-engineering.html).
+
+---
+
+## Transfer tools (2026–27)
+
+* **[Handoff checklist template](https://matchaxmoxie.github.io/matchaxmoxie/handoff-checklist.html)** · [markdown](https://github.com/matchaxmoxie/matchaxmoxie/blob/main/docs/handoff-checklist-template.md) · status check, dependency graph, blast radius
+* **[Demo engineering taxonomy](https://matchaxmoxie.github.io/matchaxmoxie/demo-engineering.html)** · sales sandboxes with product rigor
+* **[Multilingual WCAG](https://matchaxmoxie.github.io/matchaxmoxie/i18n-wcag.html)** · ops pointer · [full note on the briefcase](https://jadexzhao.github.io/jadexzhao/i18n-wcag.html)
 
 ---
 
