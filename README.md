@@ -4,7 +4,7 @@
 
 📍 Bloomington, IN · May 2027 · open to relocation
 
-📧 [Email](mailto:jlzhao@iu.edu) · 🌐 [Live site](https://matchaxmoxie.github.io/matchaxmoxie/) · 💼 [The briefcase](https://jadexzhao.github.io/jadexzhao/) · 📸 [@zhao.langxi](https://instagram.com/zhao.langxi) · 🔗 [LinkedIn](https://www.linkedin.com/in/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie) · [@jadexzhao](https://github.com/jadexzhao)
+📧 [Email](mailto:jlzhao@iu.edu) · 🌐 [Live site](https://matchaxmoxie.github.io/matchaxmoxie/) · 💼 [The briefcase](https://jadexzhao.github.io/jadexzhao/) · 🧭 [How I work](https://jadexzhao.github.io/jadexzhao/how-i-work.html) · 🦆 [Duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) · 📸 [@zhao.langxi](https://instagram.com/zhao.langxi) · 🔗 [LinkedIn](https://www.linkedin.com/in/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie) · [@jadexzhao](https://github.com/jadexzhao)
 
 > **Restaurant kid turned brand & ops lead.** I grew up where the only metric that mattered was whether the food hit the table hot. That wiring stuck. I coordinate programs, clear paths for the next person, and keep creative + GTM lanes loud on purpose but anchored by the work. Code-side receipts live on [`@jadexzhao`](https://jadexzhao.github.io/jadexzhao/): ServeIT **~25% engagement lift**, pitch → live PoC sandboxes, [duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) as the public sandbox.
 
@@ -49,11 +49,14 @@ Stack talk, featured ships, and engineering detail live on [`@jadexzhao`](https:
 
 ---
 
-## Transfer tools (2026–27)
+## Transfer tools (2026-27)
 
+* **[FASE MAP ops](https://matchaxmoxie.github.io/matchaxmoxie/fase-map.html)** · coordinator dashboard and handoff manifesto
 * **[Handoff checklist template](https://matchaxmoxie.github.io/matchaxmoxie/handoff-checklist.html)** · [markdown](https://github.com/matchaxmoxie/matchaxmoxie/blob/main/docs/handoff-checklist-template.md) · status check, dependency graph, blast radius
-* **[Demo engineering taxonomy](https://matchaxmoxie.github.io/matchaxmoxie/demo-engineering.html)** · sales sandboxes with product rigor
+* **[Demo engineering taxonomy](https://matchaxmoxie.github.io/matchaxmoxie/demo-engineering.html)** · pitch → pilot sandboxes with product rigor
+* **[Duck farm showcase](https://matchaxmoxie.github.io/matchaxmoxie/duck-farm.html)** · ops pointer · [live React sandbox](https://jadexzhao.github.io/jadexzhao/duck-farm/)
 * **[Multilingual WCAG](https://matchaxmoxie.github.io/matchaxmoxie/i18n-wcag.html)** · ops pointer · [full note on the briefcase](https://jadexzhao.github.io/jadexzhao/i18n-wcag.html)
+* **[How I work](https://jadexzhao.github.io/jadexzhao/how-i-work.html)** · AI transparency on the code account
 
 ---
 
