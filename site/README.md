@@ -15,6 +15,10 @@ Greco-Latin plus English content system, explicit AI disclosure, year-by-year st
 - [`map-training.html`](map-training.html): MAP Coordinator Canvas module inventory and publish checklist (26 to 27 Mentors). Markdown source: [`../content/map-training-modules.md`](../content/map-training-modules.md).
 - [`map-assignments.html`](map-assignments.html): Canvas assignments tab checklist (quizzes, session summaries). Markdown source: [`../content/map-assignments.md`](../content/map-assignments.md).
 - [`fase-map.html`](fase-map.html): FASE Mentoring Apprenticeship Program Coordinator bio for IU peer mentor and AdRx profiles.
+- [`demo-engineering.html`](demo-engineering.html): demo engineering taxonomy (sales sandboxes with product rigor).
+- [`handoff-checklist.html`](handoff-checklist.html): open handoff checklist twin of [`../docs/handoff-checklist-template.md`](../docs/handoff-checklist-template.md).
+- [`i18n-wcag.html`](i18n-wcag.html): multilingual WCAG ops pointer (full note on the briefcase).
+- [`duck-farm.html`](duck-farm.html): ops showcase + deep link to the live React sandbox.
 
 ## Design System
 
