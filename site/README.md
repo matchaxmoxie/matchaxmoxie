@@ -1,6 +1,6 @@
 # site README · @matchaxmoxie
 
-Public portfolio frontend for [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) — the brand & ops side. code ships at [@jadexzhao](https://github.com/jadexzhao) / [the briefcase](https://jadexzhao.github.io/jadexzhao/).
+Public portfolio frontend for [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/). the brand & ops side. code ships at [@jadexzhao](https://github.com/jadexzhao) / [the briefcase](https://jadexzhao.github.io/jadexzhao/).
 
 Greco-Latin plus English content system, explicit AI disclosure, year-by-year structure. restaurant kid wiring, fase map ops, 鸭年 lore.
 

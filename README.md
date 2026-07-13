@@ -1,6 +1,6 @@
 # jade zhao & co. · @matchaxmoxie
 
-**brand & ops side** of the same human. my co-founder [@jadexzhao](https://github.com/jadexzhao) writes the code — i run fase, consulting, and the emotional support ducks.
+**brand & ops side** of the same human. my co-founder [@jadexzhao](https://github.com/jadexzhao) writes the code. i run fase, consulting, and the emotional support ducks.
 
 **actor & entrepreneur who ships** · informatics @ iu luddy · may 2027 · bloomington, in
 
@@ -11,7 +11,7 @@
 | **role** | fase map coordinator, uta, consulting, campus creator lane | gtm eng, serveit web lead, code, portfolio |
 | **intro** | meet my co-founder [@jadexzhao](https://github.com/jadexzhao) (writes the code, ships the pilots) | meet my co-founder [@matchaxmoxie](https://github.com/matchaxmoxie) (brand, fase, ops, ducks) |
 
-grew up in a chinese restaurant in indiana — the only metric that mattered was whether the food hit the table hot. that wiring stuck. now i coordinate fase's mentor apprenticeship program, lead serveit's website team on wcag nonprofit builds, and keep canvas ops from eating everyone's week. first-gen, hudson & holland scholar. spring 2026 at complutense madrid. python, typescript, react, postgresql.
+grew up in a chinese restaurant in indiana. the only metric that mattered was whether the food hit the table hot. that wiring stuck. now i coordinate fase's mentor apprenticeship program, lead serveit's website team on wcag nonprofit builds, and keep canvas ops from eating everyone's week. first-gen, hudson & holland scholar. spring 2026 at complutense madrid. python, typescript, react, postgresql.
 
 **open to** software engineering · gtm engineering · solutions engineering · open to relocation
 
@@ -50,13 +50,13 @@ grew up in a chinese restaurant in indiana — the only metric that mattered was
 
 ### currently running (ops side)
 
-- **fase map coordinator & uta** (aug 2023 → now): mentor apprenticeship program, canvas module publish checklists, 50+ students, study resources — clearing the path for whoever comes next
-- **serveit website team lead** (jan 2024): iu's nonprofit tech clinic. wcag 2.1 builds bloomington orgs actually maintain, ml engagement (~+25%), python/postgresql etl on partner org data. (spoiler: this eats.)
-- **campus creator lane:** school ig [@zhao.langxi](https://instagram.com/zhao.langxi) — plants, matcha, lowercase truth. loud on purpose, always anchored by the work.
-- **potstickers:** family restaurant site with clover online ordering — first production ship lives at [@jadexzhao/pstickers24](https://github.com/jadexzhao/pstickers24)
+- **fase map coordinator & uta** (aug 2023 → now): mentor apprenticeship program, canvas module publish checklists, 50+ students, study resources. clearing the path for whoever comes next
+- **serveit website team lead** (jan 2024): iu's nonprofit tech clinic. wcag 2.1 builds bloomington orgs actually maintain, ml engagement (~+25%), python/postgresql etl on partner org data. (spoiler: this eats.) clinic: [serveit.luddy.indiana.edu](https://serveit.luddy.indiana.edu/serve-ai/index.html)
+- **campus creator lane:** school ig [@zhao.langxi](https://instagram.com/zhao.langxi). plants, matcha, lowercase truth. loud on purpose, always anchored by the work.
+- **potstickers:** family restaurant site with [clover online ordering](https://potstickers24.cloveronline.com/). first production ship lives at [@jadexzhao/pstickers24](https://github.com/jadexzhao/pstickers24)
 - **coming soon (learning in public):** wechat mini-program notes · china ai/cybersec watchlist · fujian ↔ midwest dev diary
 
-**鸭年 2026** · the duck never got a seat at the zodiac table, so we made one — [catch one](https://jadexzhao.github.io/jadexzhao/duck-farm/)
+**鸭年 2026** · the duck never got a seat at the zodiac table, so we made one. [catch one](https://jadexzhao.github.io/jadexzhao/duck-farm/)
 
 ---
 
@@ -64,7 +64,7 @@ grew up in a chinese restaurant in indiana — the only metric that mattered was
 
 | repo | why |
 |------|-----|
-| [`matchaxmoxie/matchaxmoxie`](https://github.com/matchaxmoxie/matchaxmoxie) | this repo — consulting site + fase map coordinator tooling |
+| [`matchaxmoxie/matchaxmoxie`](https://github.com/matchaxmoxie/matchaxmoxie) | this repo. consulting site + fase map coordinator tooling |
 | [`jadexzhao/jadexzhao`](https://github.com/jadexzhao/jadexzhao) | shipped portfolio: serveit builds, duck farm, the briefcase |
 | [`jadexzhao/pstickers24`](https://github.com/jadexzhao/pstickers24) | family restaurant site, first production ship |
 | [`jadexzhao/matchaxmoxie`](https://github.com/jadexzhao/matchaxmoxie) | coordinator checklists & site mirror (private; pin if visible) |
