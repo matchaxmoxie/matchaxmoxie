@@ -8,7 +8,7 @@
   --tulip-light: #FDF6F7;
   --tulip-mist: #EDD5DA;
 
-  /* chinese accent palette — jade, cinnabar, gold */
+  /* chinese accent palette. jade, cinnabar, gold */
   --jade: #3A6B5C;
   --jade-soft: #6B9E8F;
   --cinnabar: #B83232;
@@ -524,7 +524,7 @@ body {
   max-width: 52ch;
 }
 
-/* CULTURAL ACCENTS — zhao.langxi / 鸭年 */
+/* CULTURAL ACCENTS. zhao.langxi / 鸭年 */
 .heritage-line {
   font-size: var(--text-xs);
   letter-spacing: 0.06em;
