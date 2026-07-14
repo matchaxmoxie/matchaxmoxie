@@ -3,3 +3,15 @@
 site/content
 content/jade-day3/videos/*.mov
 content/jade-day3/videos/*.MOV
+
+# FASE 26-27 internal extracts (agendas, photos) — local coordinator mirror only
+content/fase-26-27/
+
+# MAP Fall Training Day 3 deck rebuild — student bios + headshots; Canvas/Canva only
+content/jade-day3/MAP.pdf
+content/jade-day3/MAP-Fall-Training-Day3-Canva.md
+content/jade-day3/canva-photos/
+
+# Office-hour PDFs name student employees with times — publish in Canvas, not public git
+site/assets/fall-2026-mentor-office-hours.pdf
+site/assets/fall-2026-spc-map-office-hours.pdf

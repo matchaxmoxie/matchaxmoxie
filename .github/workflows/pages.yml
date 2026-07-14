@@ -1,8 +1,14 @@
+# Static site publish for @matchaxmoxie
+# Artifact path is site/ (HTML/CSS already in repo). Not a Vite/npm build.
+# Source in GitHub Settings: GitHub Actions.
 name: Deploy GitHub Pages
 
 on:
   push:
     branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -12,7 +18,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -22,9 +28,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: Ensure .nojekyll in publish tree
+        run: touch site/.nojekyll
+
       - uses: actions/configure-pages@v5
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
+
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

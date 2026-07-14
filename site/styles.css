@@ -164,6 +164,7 @@ body {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  overscroll-behavior: contain;
   background: rgba(253, 246, 247, 0.94);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -187,12 +188,43 @@ body {
   color: var(--text-secondary);
   border-bottom: 2px solid transparent;
   white-space: nowrap;
+  touch-action: manipulation;
 }
 
 .site-jump a:hover {
   color: var(--accent-crimson);
   border-bottom-color: var(--accent-crimson);
   background: var(--tulip-blush);
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-bottom: calc(3.25rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Thumb zone: cross-site jump rests in the bottom band */
+  .site-jump {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 95;
+    border-bottom: none;
+    border-top: 1px solid var(--border);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .site-jump a {
+    border-bottom: none;
+    border-top: 2px solid transparent;
+  }
+
+  .site-jump a:hover {
+    border-bottom-color: transparent;
+    border-top-color: var(--accent-crimson);
+  }
 }
 
 /* dual-account matrix + ops framework */
@@ -419,8 +451,8 @@ body {
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
   text-decoration: none;
-  min-height: 44px;
-  min-width: 44px;
+  min-height: 48px;
+  min-width: 48px;
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 0;
@@ -493,6 +525,7 @@ body {
   border: 1px solid transparent;
   text-align: center;
   box-sizing: border-box;
+  touch-action: manipulation;
   transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
 }
 
@@ -618,7 +651,7 @@ body {
 }
 
 .stack-links a {
-  min-height: 44px;
+  min-height: 48px;
   display: inline-flex;
   align-items: center;
 }
@@ -645,6 +678,7 @@ body {
   width: 140px;
   max-width: 140px;
   height: 140px;
+  aspect-ratio: 1 / 1;
   display: block;
   object-fit: cover;
   object-position: center top;
@@ -1752,7 +1786,7 @@ ol li::marker { color: var(--tulip-deep); }
   background: var(--tulip-blush);
   color: var(--text-primary);
   cursor: pointer;
-  min-height: 44px;
+  min-height: 48px;
 }
 
 .coord-btn:hover,
@@ -1886,7 +1920,7 @@ body.coord-page {
   text-decoration: none;
   padding: 0.35rem 0.6rem;
   border-radius: 2px;
-  min-height: 44px;
+  min-height: 48px;
   display: inline-flex;
   align-items: center;
 }
@@ -2363,8 +2397,8 @@ a:hover {
 
 .links a,
 .nav-link {
-  min-height: 44px;
-  min-width: 44px;
+  min-height: 48px;
+  min-width: 48px;
   display: inline-flex;
   align-items: center;
   font-size: var(--text-sm);
@@ -2438,7 +2472,7 @@ a:hover {
   .hero-actions .btn {
     width: auto;
     padding: 0.65rem 1.1rem;
-    min-height: 44px;
+    min-height: 48px;
   }
 
   .coming-grid {
