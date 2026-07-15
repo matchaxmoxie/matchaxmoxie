@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <!--
-  matchaxmoxie · pb&j ops · scratch-energy studio
-  spread slow · declare every layer · hand off clean
+  matchaxmoxie · miss sunny classroom archive
+  girls who code roots · kindergarten energy · winding down on purpose
 
-  hero: css sandwich illustration (no portrait on this account)
+  hero: css classroom illustration (chalkboard, sun, apple)
   code ships with @jadexzhao on the briefcase
 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="matchaxmoxie · pb&amp;j ops · brand &amp; coordination · @jadexzhao ships the code">
-<title>matchaxmoxie · pb&amp;j ops</title>
+<meta name="description" content="matchaxmoxie · Girls Who Code teaching roots · miss sunny classroom archive · @jadexzhao ships the code">
+<title>matchaxmoxie · miss sunny classroom</title>
 <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -19,423 +19,51 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#C4A574">
+<meta name="theme-color" content="#FFD93D">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="matchaxmoxie">
 <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/">
-<meta property="og:title" content="matchaxmoxie · pb&amp;j ops">
-<meta property="og:description" content="spread slow · hand off clean · @matchaxmoxie runs the loop · @jadexzhao ships the code">
+<meta property="og:title" content="matchaxmoxie · miss sunny classroom">
+<meta property="og:description" content="Girls Who Code roots · patient teacher energy · archival portfolio winding down · @jadexzhao ships the code">
 <meta property="og:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/og-hero.jpg">
-<meta property="og:image:alt" content="PB and J sandwich hero: bread cream, peanut butter tan, jelly purple on warm nostalgic background">
+<meta property="og:image:alt" content="Kindergarten classroom hero: sunshine yellow, chalkboard, construction paper colors">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="matchaxmoxie · pb&amp;j ops">
-<meta name="twitter:description" content="spread slow · hand off clean · @matchaxmoxie runs the loop">
+<meta name="twitter:title" content="matchaxmoxie · miss sunny classroom">
+<meta name="twitter:description" content="Girls Who Code roots · kindergarten classroom archive · winding down">
 <meta name="twitter:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/og-hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink:#3d2f24;
-    --ink-soft:#6b5a4a;
-    --bread:#F5E6C8;
-    --bread-deep:#E8D4A8;
-    --pb:#C4A574;
-    --pb-deep:#a8864e;
-    --jelly:#6B3FA0;
-    --jelly-soft:#8b5fc4;
-    --strawberry:#C41E3A;
-    --strawberry-soft:#e04a62;
-    --jade:#00a86b;
-    --jade-dark:#007a52;
-    --jade-deep:#005c3d;
-    --line:#e0d0b8;
-    --card-shadow:0 4px 20px rgba(61,47,36,.08);
-    --nav-h:52px;
-  }
-
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-  body{
-    background:var(--bread);
-    background-image:
-      radial-gradient(ellipse 70% 50% at 100% 0%, rgba(107,63,160,.12), transparent 55%),
-      radial-gradient(ellipse 60% 45% at 0% 100%, rgba(196,165,116,.18), transparent 50%);
-    color:var(--ink);
-    font-family:"IBM Plex Sans",system-ui,sans-serif;
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-    padding:
-      calc(var(--nav-h) + 24px + env(safe-area-inset-top,0px))
-      max(20px, env(safe-area-inset-right,0px))
-      max(48px, env(safe-area-inset-bottom,0px))
-      max(20px, env(safe-area-inset-left,0px));
-  }
-
-  a{color:var(--jelly);text-decoration:none;border-bottom:1px solid rgba(107,63,160,.25)}
-  a:hover{color:var(--jelly-soft);border-color:var(--jelly)}
-  a:focus-visible{outline:2px solid var(--jade);outline-offset:3px;border-radius:2px}
-
-  .mono{font-family:"IBM Plex Mono",monospace}
-  .sc{font-family:"Noto Serif SC",serif;font-weight:500}
-
-  .site-nav{
-    position:fixed;top:0;left:0;right:0;z-index:100;
-    display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap;
-    min-height:var(--nav-h);
-    background:rgba(245,230,200,.94);
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);
-    border-bottom:2px solid var(--line);
-    padding:0 max(12px, env(safe-area-inset-right,0px)) 0 max(12px, env(safe-area-inset-left,0px));
-    padding-top:env(safe-area-inset-top,0px);
-  }
-  .site-nav a{
-    display:inline-flex;align-items:center;
-    min-height:48px;padding:0 16px;
-    font-family:"IBM Plex Mono",monospace;
-    font-size:12px;letter-spacing:.03em;
-    color:var(--ink-soft);text-decoration:none;border:0;
-    border-bottom:3px solid transparent;
-    transition:color .15s,border-color .15s,background .15s;
-  }
-  .site-nav a:hover{color:var(--jelly);background:rgba(196,165,116,.2);border-bottom-color:var(--pb)}
-  .site-nav a.nav-home{font-weight:600;color:var(--pb-deep)}
-  .site-nav .nav-sep{width:1px;background:var(--line);margin:10px 4px;align-self:stretch}
-
-  .wrap{max-width:920px;margin:0 auto}
-
-  .hero{
-    display:grid;
-    grid-template-columns:minmax(200px,280px) 1fr;
-    gap:28px 36px;
-    align-items:center;
-    margin-bottom:36px;
-  }
-
-  .hero-visual{
-    position:relative;
-    aspect-ratio:1;
-    border-radius:16px;
-    overflow:hidden;
-    border:3px solid var(--bread-deep);
-    box-shadow:var(--card-shadow),0 0 0 1px rgba(196,165,116,.4);
-    background:linear-gradient(165deg,var(--bread-deep) 0%,var(--bread) 45%,rgba(107,63,160,.08) 100%);
-    transform:rotate(-1.5deg);
-    transition:transform .25s ease;
-    display:flex;align-items:center;justify-content:center;
-  }
-  .hero-visual:hover{transform:rotate(0deg) scale(1.01)}
-
-  .sandwich{
-    position:relative;
-    width:62%;height:52%;
-    display:flex;flex-direction:column;gap:0;
-  }
-  .bread-top,.bread-bottom{
-    height:18%;
-    background:var(--bread-deep);
-    border-radius:12px 12px 4px 4px;
-    border:2px solid var(--pb);
-    box-shadow:inset 0 2px 0 rgba(255,255,255,.35);
-  }
-  .bread-bottom{border-radius:4px 4px 12px 12px}
-  .layer-pb{
-    height:32%;
-    background:var(--pb);
-    margin:0 4%;
-    border-radius:4px;
-    box-shadow:inset 0 -3px 0 rgba(168,134,78,.35);
-  }
-  .layer-jelly{
-    height:24%;
-    background:var(--jelly);
-    margin:0 6%;
-    border-radius:4px;
-    position:relative;
-    overflow:hidden;
-  }
-  .layer-jelly::before,.layer-jelly::after{
-    content:"";position:absolute;border-radius:50%;
-    background:var(--strawberry);opacity:.45;
-  }
-  .layer-jelly::before{width:28%;height:70%;left:12%;top:15%}
-  .layer-jelly::after{width:22%;height:55%;right:18%;top:22%}
-
-  .crumb{
-    position:absolute;border-radius:50%;background:var(--pb);opacity:.5;pointer-events:none;
-  }
-  .crumb-1{top:12%;left:10%;width:6px;height:6px}
-  .crumb-2{top:18%;right:12%;width:5px;height:5px}
-  .crumb-3{bottom:14%;left:14%;width:7px;height:7px}
-  .crumb-4{bottom:22%;right:8%;width:4px;height:4px}
-
-  .hero-text h1{
-    font-family:"Fraunces",serif;
-    font-weight:700;
-    font-size:clamp(32px,6.5vw,48px);
-    line-height:1.05;
-    letter-spacing:-.02em;
-    color:var(--ink);
-    margin-bottom:10px;
-  }
-  .hero-text h1 .sc{color:var(--jelly);font-size:.82em;font-weight:500}
-  .hero-tag{
-    font-family:"Fraunces",serif;
-    font-style:italic;
-    font-size:clamp(17px,2.5vw,20px);
-    color:var(--ink-soft);
-    max-width:44ch;
-    margin-bottom:16px;
-  }
-  .hero-meta{
-    display:flex;flex-wrap:wrap;gap:6px 14px;
-    font-family:"IBM Plex Mono",monospace;
-    font-size:11.5px;color:var(--ink-soft);
-  }
-  .hero-meta a{border-bottom-color:var(--line)}
-  .hero-meta .ig{color:var(--jade)}
-  .hero-meta .ig:hover{color:var(--jade-dark)}
-
-  .twin-note{
-    text-align:center;
-    font-family:"IBM Plex Mono",monospace;
-    font-size:10.5px;color:var(--ink-soft);
-    margin-bottom:28px;padding:8px 12px;
-    background:var(--bread-deep);border-radius:6px;
-  }
-  .twin-note a{border-color:var(--line)}
-
-  .poem{
-    margin:32px 0 40px;
-    padding:24px 28px;
-    background:linear-gradient(135deg,rgba(196,165,116,.25) 0%,var(--bread-deep) 50%,rgba(107,63,160,.08) 100%);
-    border-radius:12px;
-    border-left:4px solid var(--pb);
-    position:relative;
-  }
-  .poem::before{
-    content:"🥪";
-    position:absolute;top:12px;right:18px;
-    font-size:22px;opacity:.7;
-  }
-  .poem p{
-    font-family:"Fraunces",serif;
-    font-style:italic;
-    font-size:clamp(16px,2.3vw,18px);
-    line-height:1.65;
-    color:var(--ink);
-    max-width:58ch;
-  }
-  .poem cite{
-    display:block;margin-top:14px;
-    font-family:"IBM Plex Mono",monospace;
-    font-size:11px;font-style:normal;
-    letter-spacing:.06em;
-    color:var(--pb-deep);
-  }
-
-  .section-head{
-    display:flex;align-items:baseline;gap:12px;
-    margin-bottom:20px;
-  }
-  .section-head h2{
-    font-family:"Fraunces",serif;
-    font-weight:600;
-    font-size:clamp(22px,4vw,28px);
-    color:var(--ink);
-  }
-  .section-head .sc-label{
-    font-family:"Noto Serif SC",serif;
-    font-size:14px;color:var(--jelly);
-  }
-  .section-lede{
-    font-size:14.5px;color:var(--ink-soft);
-    max-width:52ch;margin:-8px 0 20px;
-  }
-
-  .project-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-    gap:16px;
-    margin-bottom:44px;
-  }
-  .project-card{
-    display:flex;flex-direction:column;
-    min-height:180px;
-    padding:18px 18px 16px;
-    border-radius:12px;
-    border:2px solid var(--line);
-    text-decoration:none;color:inherit;
-    background:#fffaf2;
-    box-shadow:var(--card-shadow);
-    transition:transform .18s ease,box-shadow .18s ease,border-color .18s;
-    position:relative;overflow:hidden;
-  }
-  .project-card::before{
-    content:"";
-    position:absolute;top:0;left:0;right:0;height:5px;
-  }
-  .project-card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 28px rgba(61,47,36,.12);
-    border-color:var(--pb);
-  }
-  .project-card:focus-visible{outline:2px solid var(--jade);outline-offset:3px}
-  .project-card.pb::before{background:linear-gradient(90deg,var(--pb),var(--bread-deep))}
-  .project-card.jelly::before{background:linear-gradient(90deg,var(--jelly),var(--jelly-soft))}
-  .project-card.strawberry::before{background:linear-gradient(90deg,var(--strawberry),var(--strawberry-soft))}
-  .project-card.jade::before{background:linear-gradient(90deg,var(--jade),var(--jade-dark))}
-
-  .card-emoji{font-size:28px;line-height:1;margin-bottom:10px}
-  .card-title{
-    font-family:"Fraunces",serif;
-    font-weight:600;font-size:18px;
-    color:var(--ink);margin-bottom:6px;
-  }
-  .card-desc{
-    font-size:13.5px;line-height:1.5;
-    color:var(--ink-soft);flex:1;
-  }
-  .card-tags{
-    margin-top:12px;
-    font-family:"IBM Plex Mono",monospace;
-    font-size:10.5px;letter-spacing:.04em;
-    color:var(--pb-deep);
-  }
-  .card-arrow{
-    position:absolute;bottom:14px;right:16px;
-    font-family:"IBM Plex Mono",monospace;
-    font-size:11px;color:var(--jelly);
-    opacity:0;transform:translateX(-4px);
-    transition:opacity .15s,transform .15s;
-  }
-  .project-card:hover .card-arrow{opacity:1;transform:none}
-
-  .now-strip{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-    margin-bottom:40px;
-  }
-  .now-card{
-    padding:18px;
-    border-radius:10px;
-    background:#fffaf2;
-    border:1px solid var(--line);
-    border-top:3px solid var(--pb);
-  }
-  .now-card.jelly{border-top-color:var(--jelly)}
-  .now-k{
-    font-family:"IBM Plex Mono",monospace;
-    font-size:10px;letter-spacing:.1em;
-    text-transform:uppercase;color:var(--ink-soft);
-    margin-bottom:6px;
-  }
-  .now-card h3{
-    font-family:"Fraunces",serif;
-    font-size:17px;font-weight:600;
-    margin-bottom:8px;color:var(--ink);
-  }
-  .now-card h3 a{color:inherit;border:0}
-  .now-card h3 a:hover{color:var(--jelly)}
-  .now-card p{font-size:13px;line-height:1.55;color:var(--ink-soft)}
-
-  .about{
-    margin-bottom:40px;
-    padding:24px 0;
-    border-top:1px solid var(--line);
-  }
-  .about p{
-    font-size:15px;line-height:1.68;
-    color:var(--ink);max-width:62ch;
-    margin-bottom:14px;
-  }
-  .about p:last-child{margin-bottom:0}
-  .about .roots{
-    font-family:"IBM Plex Mono",monospace;
-    font-size:11.5px;color:var(--ink-soft);
-    margin-top:16px;
-  }
-  .about .roots .sc{color:var(--jelly)}
-
-  .footer{
-    padding-top:24px;
-    border-top:2px solid var(--pb);
-    display:flex;flex-wrap:wrap;
-    justify-content:space-between;gap:16px 28px;
-    font-size:12.5px;color:var(--ink-soft);
-  }
-  .footer .k{
-    font-family:"IBM Plex Mono",monospace;
-    font-size:10px;letter-spacing:.1em;
-    text-transform:uppercase;color:var(--pb-deep);
-    display:block;margin-bottom:4px;
-  }
-  .footer .human{
-    font-family:"Fraunces",serif;font-style:italic;
-    font-size:14px;color:var(--ink);max-width:40ch;
-  }
-
-  @media (prefers-reduced-motion:no-preference){
-    .reveal{opacity:0;transform:translateY(8px);animation:rise .5s ease forwards}
-    .reveal:nth-child(2){animation-delay:.05s}
-    .reveal:nth-child(3){animation-delay:.1s}
-    .reveal:nth-child(4){animation-delay:.15s}
-    @keyframes rise{to{opacity:1;transform:none}}
-  }
-
-  @media (max-width:680px){
-    .hero{grid-template-columns:1fr;text-align:center}
-    .hero-visual{max-width:240px;margin:0 auto;transform:none}
-    .hero-visual:hover{transform:none}
-    .hero-tag{margin-left:auto;margin-right:auto}
-    .hero-meta{justify-content:center}
-    .now-strip{grid-template-columns:1fr}
-    .project-grid{grid-template-columns:1fr}
-    .site-nav{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}
-    .site-nav .nav-sep{display:none}
-  }
-
-  @media print{
-    .site-nav{display:none}
-    body{padding:0}
-    .hero-visual{transform:none}
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="kindergarten-home">
 
 <nav class="site-nav" aria-label="site">
   <a class="nav-home" href="#">matchaxmoxie</a>
   <span class="nav-sep" aria-hidden="true"></span>
-  <a href="#the-loop">the loop</a>
+  <a href="#classroom">classroom</a>
   <a href="#about">about</a>
-  <a href="ops.html">ops</a>
+  <a href="archive.html">archive</a>
   <a href="https://jadexzhao.github.io/jadexzhao/">briefcase</a>
   <a href="https://github.com/matchaxmoxie">github</a>
 </nav>
 
 <main class="wrap">
 
-  <p class="twin-note reveal">pb&amp;j ops live here · code ships with co-founder twin <a href="https://jadexzhao.github.io/jadexzhao/">@jadexzhao</a>: two accounts on purpose</p>
+  <p class="twin-note reveal">teacher account lives here · code ships with co-founder twin <a href="https://jadexzhao.github.io/jadexzhao/">@jadexzhao</a>: two accounts on purpose</p>
 
   <header class="hero reveal">
-    <div class="hero-visual" role="img" aria-label="Stylized peanut butter and jelly sandwich on warm bread cream background">
-      <span class="crumb crumb-1" aria-hidden="true"></span>
-      <span class="crumb crumb-2" aria-hidden="true"></span>
-      <span class="crumb crumb-3" aria-hidden="true"></span>
-      <span class="crumb crumb-4" aria-hidden="true"></span>
-      <div class="sandwich" aria-hidden="true">
-        <div class="bread-top"></div>
-        <div class="layer-pb"></div>
-        <div class="layer-jelly"></div>
-        <div class="bread-bottom"></div>
-      </div>
+    <div class="hero-visual" role="img" aria-label="Kindergarten classroom: chalkboard, sunshine, apple, star stickers on construction paper">
+      <span class="name-tag" aria-hidden="true">miss sunny</span>
+      <span class="star-sticker star-1" aria-hidden="true"></span>
+      <span class="star-sticker star-2" aria-hidden="true"></span>
+      <span class="classroom-sun" aria-hidden="true"></span>
+      <span class="classroom-board" aria-hidden="true"></span>
+      <span class="classroom-apple" aria-hidden="true"></span>
     </div>
     <div class="hero-text">
-      <h1>matchaxmoxie <span class="sc">三明治</span></h1>
-      <p class="hero-tag">pb&amp;j ops for programs that need a human handoff. restaurant kid who learned that clearing the path is its own kind of ship.</p>
+      <h1>matchaxmoxie <span class="sc">阳光教室</span></h1>
+      <p class="hero-tag">my first real coding community was a classroom where asking "wait, can you explain that again?" felt normal. this account is that teacher energy, archived on purpose.</p>
       <div class="hero-meta">
         <a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>
         <span>·</span>
@@ -447,68 +75,69 @@
         <span>·</span>
         <a href="https://www.linkedin.com/in/jadexzhao/">linkedin</a>
       </div>
+      <span class="sunset-badge">sunset mode · good chapter, winding down</span>
     </div>
   </header>
 
   <blockquote class="poem reveal">
-    <p>spread slow. peanut butter to the edges before the jelly touches bread.<br>
-    surround yourself with people who want to see you grow, then write the checklist so the next person does not have to guess.<br>
-  ops is not a vibe. it is publish chains, office hours, and a handoff someone can run at 9pm without paging you.</p>
-    <cite>for whoever comes after</cite>
+    <p>read the room before you read the rubric.<br>
+    patience is not slow. it is making sure every kid sees the board.<br>
+    the best handoff is the one where the next teacher does not have to guess what you meant.</p>
+    <cite>for whoever comes after · miss sunny energy</cite>
   </blockquote>
 
-  <section id="the-loop" class="reveal" aria-labelledby="loop-heading">
+  <section id="classroom" class="reveal" aria-labelledby="classroom-heading">
     <div class="section-head">
-      <span class="sc-label">运营</span>
-      <h2 id="loop-heading">the loop</h2>
+      <span class="sc-label">教室</span>
+      <h2 id="classroom-heading">the classroom</h2>
     </div>
-    <p class="section-lede">coordinator tools, transfer protocols, and ops surfaces. click through. everything here is meant to be handed off.</p>
+    <p class="section-lede">Girls Who Code roots, teaching philosophy, and student-facing things i still point people to. click through. nothing here pretends to be an active ops hub anymore.</p>
 
     <div class="project-grid">
-      <a class="project-card pb" href="ops.html">
-        <span class="card-emoji" aria-hidden="true">🥪</span>
-        <h3 class="card-title">pb&amp;j ops</h3>
-        <p class="card-desc">the sandwich stack for program coordination. publish chains, mentor ops, and layers declared out loud.</p>
-        <span class="card-tags">ops · layers · publish</span>
-        <span class="card-arrow">spread →</span>
+      <a class="project-card sun" href="#about">
+        <span class="card-emoji" aria-hidden="true">☀️</span>
+        <h3 class="card-title">girls who code</h3>
+        <p class="card-desc">Web Designer &amp; Instructor, Indianapolis. Jan 2018 to Aug 2023. 50+ students, 12 student-led projects, 20+ mentored toward STEM.</p>
+        <span class="card-tags">gwc · workshops · mentoring</span>
+        <span class="card-arrow">roots →</span>
       </a>
 
-      <a class="project-card jelly" href="handoff-checklist.html">
-        <span class="card-emoji" aria-hidden="true">🤝</span>
+      <a class="project-card sky" href="handoff-checklist.html">
+        <span class="card-emoji" aria-hidden="true">📋</span>
         <h3 class="card-title">handoff checklist</h3>
-        <p class="card-desc">status check, dependency graph, blast radius. the template i wish every role transition came with.</p>
-        <span class="card-tags">transfer · ops · template</span>
-        <span class="card-arrow">hand off →</span>
+        <p class="card-desc">the template i wish every role transition came with. status check, dependency graph, blast radius. written for the kid who has to run it at 9pm.</p>
+        <span class="card-tags">transfer · classroom handoff</span>
+        <span class="card-arrow">checklist →</span>
       </a>
 
-      <a class="project-card strawberry" href="duck-farm.html">
+      <a class="project-card grass" href="duck-farm.html">
         <span class="card-emoji" aria-hidden="true">🦆</span>
         <h3 class="card-title">duck farm showcase</h3>
-        <p class="card-desc">ops pointer to the live react sandbox on @jadexzhao. 鸭年 2026: patient, loud when it matters.</p>
-        <span class="card-tags">showcase · 鸭年 · pointer</span>
+        <p class="card-desc">something i made for students to poke at. ops pointer to the live react sandbox on @jadexzhao. 鸭年 2026: patient, loud when it matters.</p>
+        <span class="card-tags">showcase · 鸭年 · student demo</span>
         <span class="card-arrow">pond →</span>
       </a>
 
-      <a class="project-card jade" href="i18n-wcag.html">
+      <a class="project-card apple" href="i18n-wcag.html">
         <span class="card-emoji" aria-hidden="true">🌐</span>
         <h3 class="card-title">multilingual wcag</h3>
-        <p class="card-desc">ops notes on who the web is for. fuzhou ↔ midwest thinking from nonprofit builds. full note on the briefcase.</p>
+        <p class="card-desc">who the web is for, said out loud before the first line of copy ships. fuzhou ↔ midwest thinking from nonprofit builds.</p>
         <span class="card-tags">accessibility · i18n · bridge</span>
         <span class="card-arrow">note →</span>
       </a>
     </div>
   </section>
 
-  <section class="now-strip reveal" aria-label="currently running">
+  <section class="now-strip reveal" aria-label="sunset note">
     <div class="now-card">
-      <span class="now-k">coordinating · iu luddy</span>
-      <h3><a href="ops.html">pb&amp;j ops</a></h3>
-      <p>mentor program loops, publish chains, study resources. clearing the path for whoever comes next.</p>
+      <span class="now-k">archived · this account</span>
+      <h3><a href="archive.html">winding down on purpose</a></h3>
+      <p>matchaxmoxie was good. it ran program ops and coordination loops. now it holds the teaching chapter: GWC roots, classroom philosophy, student-facing pointers.</p>
     </div>
-    <div class="now-card jelly">
-      <span class="now-k">ops framing · bloomington</span>
-      <h3><a href="https://serveit.luddy.indiana.edu/serve-ai/index.html">serveit clinic</a></h3>
-      <p>scoped builds community orgs can maintain. engineering ships on <a href="https://jadexzhao.github.io/jadexzhao/">@jadexzhao</a>. handoffs and wcag framing live here.</p>
+    <div class="now-card sky">
+      <span class="now-k">still shipping · other pond</span>
+      <h3><a href="https://jadexzhao.github.io/jadexzhao/">@jadexzhao briefcase</a></h3>
+      <p>engineering, portfolio ships, and active builds live on the co-founder account. same human. different desk. <a href="https://serveit.luddy.indiana.edu/serve-ai/index.html">serveit clinic</a> ships there too.</p>
     </div>
   </section>
 
@@ -517,26 +146,32 @@
       <span class="sc-label">关于</span>
       <h2 id="about-heading">about this account</h2>
     </div>
-    <p>i grew up in a family restaurant where the only metric was whether the food hit the table hot. that wiring became program ops: publish chains that go live clean, handoffs that do not need a phone call, and brand lanes that stay loud on purpose but anchored by the work.</p>
-    <p><a href="https://github.com/matchaxmoxie">@matchaxmoxie</a> runs brand, ops, and coordination. <a href="https://github.com/jadexzhao">@jadexzhao</a> writes the code. same human, two ponds. co-founder twins on purpose. informatics at iu luddy. campus creator at <a href="https://instagram.com/zhao.langxi">@zhao.langxi</a>. potstickers ops pulse here; the site code ships on the other account.</p>
-    <p>the pb&amp;j lesson still runs everything: systems do what you tell them, not what you meant. bread first, spread to the edges, jelly without crossing the seam. whether it is publish ops, mentor checklists, or a handoff template, i declare assumptions out loud so the next person does not have to decode my silence.</p>
-    <p class="roots"><span class="sc">福建</span> fujian · <span class="sc">福州</span> fuzhou · plants · pb&amp;j · lowercase truth · open to relocation · may 2027</p>
+    <p>Girls Who Code Indianapolis was my first real coding community. The place where asking "wait, can you explain that again?" felt normal and honest, not weak. I instructed 50+ students in front-end basics and digital literacy through hands-on workshops. I facilitated 12 student-led projects by designing inclusive, adaptable web curricula. I mentored 20+ young women toward STEM careers through sustained coaching.</p>
+    <div class="stat-row" aria-label="Girls Who Code highlights">
+      <span class="stat-chip">50+ students</span>
+      <span class="stat-chip">12 projects</span>
+      <span class="stat-chip">20+ mentored</span>
+      <span class="stat-chip">2018–2023</span>
+    </div>
+    <p><a href="https://github.com/matchaxmoxie">@matchaxmoxie</a> is the teacher account now: brand, coordination roots, classroom archives. <a href="https://github.com/jadexzhao">@jadexzhao</a> writes the code. same human, two ponds. co-founder twins on purpose. informatics at iu luddy. campus creator at <a href="https://instagram.com/zhao.langxi">@zhao.langxi</a>.</p>
+    <p>i still carry the restaurant-kid wiring (food hits the table hot or it does not count) and a quiet pb&amp;j nod from cs class: systems do what you tell them, not what you meant. but the dominant theme here is miss sunny energy. warm chalkboard patience. construction paper courage.</p>
+    <p class="roots"><span class="sc">福建</span> fujian · <span class="sc">福州</span> fuzhou · plants · lowercase truth · open to relocation · may 2027</p>
   </section>
 
   <footer class="footer reveal">
     <div>
-      <span class="k">ops stack</span>
-      publish chains · handoffs · wcag framing · coordinator tooling
+      <span class="k">classroom stack</span>
+      gwc roots · teaching philosophy · student demos · wcag framing
     </div>
     <div>
       <span class="k">elsewhere</span>
       <a href="https://github.com/matchaxmoxie">github</a> ·
       <a href="https://jadexzhao.github.io/jadexzhao/">briefcase</a> ·
-      <a href="ai-transparency.html">transparency</a> ·
+      <a href="archive.html">archive</a> ·
       <a href="https://potstickers24.cloveronline.com/">potstickers</a>
     </div>
     <div>
-      <span class="human">pb&amp;j &amp; moxie. 福州 roots. <span class="sc">鸭年快乐</span> 🦆</span>
+      <span class="human">miss sunny &amp; moxie. 福州 roots. <span class="sc">鸭年快乐</span> 🦆</span>
     </div>
   </footer>
 

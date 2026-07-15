@@ -1,19 +1,29 @@
 :root {
-  /* pb&j nostalgic palette */
-  --editorial-dark: #3d2f24;
-  --matcha-ops: #00a86b;
-  --text-muted: #6b5a4a;
-  --bg-soft-warm: #F5E6C8;
-  --accent-crimson: #C41E3A;
+  /* kindergarten classroom palette · miss sunny */
+  --sunshine: #FFD93D;
+  --sky-blue: #2E86DE;
+  --grass-green: #27AE60;
+  --apple-red: #E74C3C;
+  --chalkboard: #2C3E50;
+  --paper-cream: #FFF9E6;
+  --paper-shadow: #F0E4C8;
+  --crayon-ink: #1A1A2E;
+  --crayon-muted: #4A4A6A;
 
-  /* colors */
-  --tulip-petal: #C4A574;
-  --tulip-deep: #6B3FA0;
-  --tulip-blush: #F5E6C8;
-  --tulip-stem: #00a86b;
-  --tulip-soil: var(--editorial-dark);
-  --tulip-light: var(--bg-soft-warm);
-  --tulip-mist: #E8D4A8;
+  --editorial-dark: var(--crayon-ink);
+  --matcha-ops: var(--grass-green);
+  --text-muted: var(--crayon-muted);
+  --bg-soft-warm: var(--paper-cream);
+  --accent-crimson: var(--apple-red);
+
+  /* legacy aliases mapped to classroom */
+  --tulip-petal: var(--sunshine);
+  --tulip-deep: var(--sky-blue);
+  --tulip-blush: var(--paper-cream);
+  --tulip-stem: var(--grass-green);
+  --tulip-soil: var(--crayon-ink);
+  --tulip-light: var(--paper-cream);
+  --tulip-mist: var(--paper-shadow);
 
   /* chinese accent palette. jade, cinnabar, gold */
   --jade: #00a86b;
@@ -30,11 +40,16 @@
   --text-ghost: #8A6A6A;
 
   /* functional */
-  --link: #6B3FA0;
-  --link-hover: #8b5fc4;
-  --focus: #C4A574;
-  --border: #E8D4A8;
-  --shadow: rgba(180, 120, 130, 0.08);
+  --link: var(--sky-blue);
+  --link-hover: #1B6FC2;
+  --focus: var(--sunshine);
+  --border: var(--paper-shadow);
+  --shadow: rgba(26, 26, 46, 0.1);
+
+  /* kindergarten layout */
+  --nav-h: 52px;
+  --card-radius: 0;
+  --btn-radius: 0;
 
   /* type scale */
   --text-xs: 0.75rem;
@@ -110,14 +125,18 @@ html {
 body {
   margin: 0;
   padding-top: calc(3rem + env(safe-area-inset-top, 0px));
-  background-color: var(--bg-soft-warm);
-  background-color: var(--tulip-light);
+  background-color: var(--paper-cream);
   background-image:
-    radial-gradient(ellipse 70% 45% at 100% 0%, rgba(107, 63, 160, 0.12), transparent 55%),
-    radial-gradient(ellipse 55% 35% at 0% 100%, rgba(196, 165, 116, 0.15), transparent 50%);
-  color: var(--editorial-dark);
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 27px,
+      rgba(46, 134, 222, 0.07) 27px,
+      rgba(46, 134, 222, 0.07) 28px
+    );
+  color: var(--crayon-ink);
   color: var(--text-primary);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
   font-size: var(--text-base);
   line-height: var(--leading-loose);
   -webkit-font-smoothing: antialiased;
@@ -142,10 +161,10 @@ body {
   font-size: var(--text-xs);
   letter-spacing: 0.04em;
   padding: calc(0.35rem + env(safe-area-inset-top, 0px)) 1rem 0.35rem;
-  background: var(--tulip-blush);
-  color: var(--text-secondary);
+  background: var(--sunshine);
+  color: var(--crayon-ink);
   text-decoration: none;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 3px solid var(--sky-blue);
 }
 
 .twin-banner:hover {
@@ -165,10 +184,8 @@ body {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   overscroll-behavior: contain;
-  background: rgba(253, 246, 247, 0.94);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border);
+  background: var(--paper-cream);
+  border-bottom: 3px solid var(--sky-blue);
   margin: 0 calc(-1 * var(--padding-mobile)) var(--space-sm);
 }
 
@@ -519,10 +536,10 @@ body {
   padding: 14px 16px;
   min-height: 48px;
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
-  border-radius: 4px;
-  border: 1px solid transparent;
+  border-radius: 0;
+  border: 3px solid var(--crayon-ink);
   text-align: center;
   box-sizing: border-box;
   touch-action: manipulation;
@@ -2626,3 +2643,637 @@ a:hover {
     break-after: avoid;
   }
 }
+
+/* KINDERGARTEN HOME · matchaxmoxie index */
+body.kindergarten-home {
+  padding:
+    calc(var(--nav-h) + 24px + env(safe-area-inset-top, 0px))
+    max(20px, env(safe-area-inset-right, 0px))
+    max(48px, env(safe-area-inset-bottom, 0px))
+    max(20px, env(safe-area-inset-left, 0px));
+  padding-top: calc(var(--nav-h) + 24px + env(safe-area-inset-top, 0px));
+  line-height: 1.55;
+}
+
+.kindergarten-home a {
+  color: var(--sky-blue);
+  text-decoration: none;
+  border-bottom: 2px solid var(--sunshine);
+}
+
+.kindergarten-home a:hover {
+  color: var(--grass-green);
+  border-color: var(--grass-green);
+}
+
+.kindergarten-home a:focus-visible {
+  outline: 3px solid var(--sunshine);
+  outline-offset: 2px;
+}
+
+.kindergarten-home .mono {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+.kindergarten-home .sc {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 500;
+}
+
+.kindergarten-home .site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: var(--nav-h);
+  background: var(--sunshine);
+  border-bottom: 4px solid var(--crayon-ink);
+  padding: 0 max(12px, env(safe-area-inset-right, 0px)) 0 max(12px, env(safe-area-inset-left, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.kindergarten-home .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 16px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  color: var(--crayon-ink);
+  text-decoration: none;
+  border: 0;
+  border-bottom: 4px solid transparent;
+}
+
+.kindergarten-home .site-nav a:hover {
+  background: var(--paper-cream);
+  border-bottom-color: var(--sky-blue);
+}
+
+.kindergarten-home .site-nav a.nav-home {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.kindergarten-home .site-nav .nav-sep {
+  width: 3px;
+  background: var(--crayon-ink);
+  margin: 10px 4px;
+  align-self: stretch;
+}
+
+.kindergarten-home .wrap {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.kindergarten-home .twin-note {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--crayon-muted);
+  margin-bottom: 28px;
+  padding: 10px 14px;
+  background: var(--paper-cream);
+  border: 3px dashed var(--sky-blue);
+}
+
+.kindergarten-home .hero {
+  display: grid;
+  grid-template-columns: minmax(200px, 280px) 1fr;
+  gap: 28px 36px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.kindergarten-home .hero-visual {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 4px solid var(--crayon-ink);
+  background: var(--paper-cream);
+  box-shadow: 6px 6px 0 var(--sky-blue);
+  transform: rotate(-1deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kindergarten-home .classroom-board {
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 38%;
+  height: 32%;
+  background: var(--chalkboard);
+  border: 3px solid var(--crayon-ink);
+}
+
+.kindergarten-home .classroom-board::before,
+.kindergarten-home .classroom-board::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  height: 4px;
+  background: var(--paper-cream);
+}
+
+.kindergarten-home .classroom-board::before { top: 22%; }
+.kindergarten-home .classroom-board::after { top: 52%; width: 60%; }
+
+.kindergarten-home .classroom-sun {
+  position: absolute;
+  top: 10%;
+  right: 14%;
+  width: 28%;
+  height: 28%;
+}
+
+.kindergarten-home .classroom-sun::before {
+  content: "";
+  position: absolute;
+  left: 20%;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 32px solid var(--sunshine);
+}
+
+.kindergarten-home .classroom-sun::after {
+  content: "";
+  position: absolute;
+  left: 32%;
+  top: 32px;
+  width: 14px;
+  height: 10px;
+  background: var(--sunshine);
+}
+
+.kindergarten-home .classroom-apple {
+  position: absolute;
+  bottom: 12%;
+  left: 16%;
+  width: 18%;
+  height: 18%;
+  background: var(--apple-red);
+  border: 3px solid var(--crayon-ink);
+}
+
+.kindergarten-home .star-sticker {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid var(--sunshine);
+  transform: rotate(15deg);
+}
+
+.kindergarten-home .star-1 { top: 8%; left: 8%; }
+.kindergarten-home .star-2 { bottom: 10%; right: 10%; transform: rotate(-20deg); }
+
+.kindergarten-home .name-tag {
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  padding: 4px 8px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--paper-cream);
+  border: 2px dashed var(--grass-green);
+  color: var(--crayon-ink);
+}
+
+.kindergarten-home .hero-text h1 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(32px, 6.5vw, 48px);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  color: var(--crayon-ink);
+  margin-bottom: 10px;
+}
+
+.kindergarten-home .hero-text h1 .sc {
+  color: var(--sky-blue);
+  font-size: 0.82em;
+}
+
+.kindergarten-home .hero-tag {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: clamp(17px, 2.5vw, 20px);
+  color: var(--crayon-muted);
+  max-width: 44ch;
+  margin-bottom: 16px;
+}
+
+.kindergarten-home .hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--crayon-muted);
+}
+
+.kindergarten-home .hero-meta .ig {
+  color: var(--grass-green);
+}
+
+.kindergarten-home .sunset-badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--crayon-ink);
+  background: var(--sunshine);
+  border: 3px solid var(--crayon-ink);
+}
+
+.kindergarten-home .poem {
+  margin: 32px 0 40px;
+  padding: 24px 28px;
+  background: var(--paper-cream);
+  border: 4px solid var(--crayon-ink);
+  border-left: 8px solid var(--grass-green);
+  box-shadow: 5px 5px 0 var(--sky-blue);
+  position: relative;
+}
+
+.kindergarten-home .poem::before {
+  content: "★";
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 24px;
+  color: var(--sunshine);
+  text-shadow: 1px 1px 0 var(--crayon-ink);
+}
+
+.kindergarten-home .poem p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: clamp(16px, 2.3vw, 18px);
+  line-height: 1.65;
+  color: var(--crayon-ink);
+  max-width: 58ch;
+}
+
+.kindergarten-home .poem cite {
+  display: block;
+  margin-top: 14px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sky-blue);
+}
+
+.kindergarten-home .section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.kindergarten-home .section-head h2 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(22px, 4vw, 28px);
+  color: var(--crayon-ink);
+}
+
+.kindergarten-home .section-head .sc-label {
+  font-family: "Noto Serif SC", serif;
+  font-size: 14px;
+  color: var(--grass-green);
+}
+
+.kindergarten-home .section-lede {
+  font-size: 14.5px;
+  color: var(--crayon-muted);
+  max-width: 52ch;
+  margin: -8px 0 20px;
+}
+
+.kindergarten-home .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 44px;
+}
+
+.kindergarten-home .project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+  padding: 18px;
+  border: 4px solid var(--crayon-ink);
+  text-decoration: none;
+  color: inherit;
+  background: var(--paper-cream);
+  box-shadow: 5px 5px 0 var(--sky-blue);
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kindergarten-home .project-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--grass-green);
+}
+
+.kindergarten-home .project-card:focus-visible {
+  outline: 3px solid var(--sunshine);
+  outline-offset: 3px;
+}
+
+.kindergarten-home .project-card.sun::before,
+.kindergarten-home .project-card.sky::before,
+.kindergarten-home .project-card.grass::before,
+.kindergarten-home .project-card.apple::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+
+.kindergarten-home .project-card.sun::before { background: var(--sunshine); }
+.kindergarten-home .project-card.sky::before { background: var(--sky-blue); }
+.kindergarten-home .project-card.grass::before { background: var(--grass-green); }
+.kindergarten-home .project-card.apple::before { background: var(--apple-red); }
+
+.kindergarten-home .card-emoji {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.kindergarten-home .card-title {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 18px;
+  color: var(--crayon-ink);
+  margin-bottom: 6px;
+}
+
+.kindergarten-home .card-desc {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--crayon-muted);
+  flex: 1;
+}
+
+.kindergarten-home .card-tags {
+  margin-top: 12px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--sky-blue);
+}
+
+.kindergarten-home .card-arrow {
+  position: absolute;
+  bottom: 14px;
+  right: 16px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--grass-green);
+}
+
+.kindergarten-home .now-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.kindergarten-home .now-card {
+  padding: 18px;
+  background: var(--paper-cream);
+  border: 4px solid var(--crayon-ink);
+  border-top: 8px solid var(--sunshine);
+  box-shadow: 4px 4px 0 var(--sky-blue);
+}
+
+.kindergarten-home .now-card.sky {
+  border-top-color: var(--sky-blue);
+}
+
+.kindergarten-home .now-k {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--crayon-muted);
+  margin-bottom: 6px;
+}
+
+.kindergarten-home .now-card h3 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: var(--crayon-ink);
+}
+
+.kindergarten-home .now-card h3 a {
+  color: inherit;
+  border: 0;
+}
+
+.kindergarten-home .now-card p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--crayon-muted);
+}
+
+.kindergarten-home .about {
+  margin-bottom: 40px;
+  padding: 24px 0;
+  border-top: 4px dashed var(--sky-blue);
+}
+
+.kindergarten-home .about p {
+  font-size: 15px;
+  line-height: 1.68;
+  color: var(--crayon-ink);
+  max-width: 62ch;
+  margin-bottom: 14px;
+}
+
+.kindergarten-home .about .roots {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--crayon-muted);
+  margin-top: 16px;
+}
+
+.kindergarten-home .about .roots .sc {
+  color: var(--grass-green);
+}
+
+.kindergarten-home .stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 20px;
+}
+
+.kindergarten-home .stat-chip {
+  padding: 8px 12px;
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 14px;
+  color: var(--crayon-ink);
+  background: var(--sunshine);
+  border: 3px solid var(--crayon-ink);
+}
+
+.kindergarten-home .footer {
+  padding-top: 24px;
+  border-top: 4px solid var(--crayon-ink);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px 28px;
+  font-size: 12.5px;
+  color: var(--crayon-muted);
+}
+
+.kindergarten-home .footer .k {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sky-blue);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.kindergarten-home .footer .human {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 14px;
+  color: var(--crayon-ink);
+  max-width: 40ch;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .kindergarten-home .reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: kg-rise 0.5s ease forwards;
+  }
+
+  .kindergarten-home .reveal:nth-child(2) { animation-delay: 0.05s; }
+  .kindergarten-home .reveal:nth-child(3) { animation-delay: 0.1s; }
+  .kindergarten-home .reveal:nth-child(4) { animation-delay: 0.15s; }
+
+  @keyframes kg-rise {
+    to { opacity: 1; transform: none; }
+  }
+}
+
+@media (max-width: 680px) {
+  .kindergarten-home .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .kindergarten-home .hero-visual {
+    max-width: 240px;
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .kindergarten-home .hero-tag {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kindergarten-home .hero-meta {
+    justify-content: center;
+  }
+
+  .kindergarten-home .now-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .kindergarten-home .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kindergarten-home .site-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .kindergarten-home .site-nav .nav-sep {
+    display: none;
+  }
+}
+
+/* ARCHIVE NOTE PAGE */
+.archive-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.archive-page h1 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  margin-bottom: 1rem;
+  color: var(--crayon-ink);
+}
+
+.archive-page p {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--crayon-muted);
+  margin-bottom: 1rem;
+}
+
+.archive-page .archive-box {
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  background: var(--paper-cream);
+  border: 4px solid var(--crayon-ink);
+  border-left: 8px solid var(--sunshine);
+  box-shadow: 5px 5px 0 var(--sky-blue);
+}
+
+.archive-page .btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
