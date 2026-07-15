@@ -6,7 +6,7 @@ This folder is the open handoff layer for `@matchaxmoxie`: schemas you can copy 
 
 Senior year is transfer year. The metric is not how much I built. It is whether the next coordinator, AE, or partner staff can run the system cold.
 
-If someone has to guess, the handoff is not clean yet. Same rule as the peanut-butter sandwich and the [pb&j ops page](https://matchaxmoxie.github.io/matchaxmoxie/ops.html).
+If someone has to guess, the handoff is not clean yet. See the archived [program ops page](https://matchaxmoxie.github.io/matchaxmoxie/ops.html).
 
 ## Contents
 
@@ -17,7 +17,7 @@ If someone has to guess, the handoff is not clean yet. Same rule as the peanut-b
 
 ## Related surfaces
 
-- [pb&j ops](https://matchaxmoxie.github.io/matchaxmoxie/ops.html) · program coordination hub
+- [program ops](https://matchaxmoxie.github.io/matchaxmoxie/ops.html) · archived coordination hub
 - [How I work](https://jadexzhao.github.io/jadexzhao/how-i-work.html) · briefcase governance memo
 - [Duck farm sandbox](https://jadexzhao.github.io/jadexzhao/duck-farm/) · interactive proof on `@jadexzhao`
 

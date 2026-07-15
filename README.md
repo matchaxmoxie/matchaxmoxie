@@ -2,9 +2,9 @@
 
 [jadexzhao](https://jadexzhao.github.io/jadexzhao/) is sunrise. this is sunset.
 
-Miss Zhao's classroom chapter. Soft goodbye.
+Miss Zhao's Girls Who Code teaching archive. Classroom chapter winding down.
 
-📧 [email](mailto:jlzhao@iu.edu) · 🌐 [live site](https://matchaxmoxie.github.io/matchaxmoxie/) · 🌅 [sunrise twin](https://jadexzhao.github.io/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie)
+[email](mailto:jlzhao@iu.edu) · [live site](https://matchaxmoxie.github.io/matchaxmoxie/) · [sunrise twin](https://jadexzhao.github.io/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie)
 
 ## what this holds
 
@@ -18,6 +18,6 @@ Code ships on [@jadexzhao](https://github.com/jadexzhao).
 
 | [@matchaxmoxie](https://github.com/matchaxmoxie) sunset | [@jadexzhao](https://github.com/jadexzhao) sunrise |
 | --- | --- |
-| [classroom](https://matchaxmoxie.github.io/matchaxmoxie/) · Miss Zhao · GWC | [briefcase](https://jadexzhao.github.io/jadexzhao/) · ships |
+| [classroom](https://matchaxmoxie.github.io/matchaxmoxie/) · Miss Zhao · GWC | [briefcase](https://jadexzhao.github.io/jadexzhao/) · engineering portfolio |
 
-福州 roots · Miss Zhao · lights out soft
+福州 roots · Miss Zhao · educator archive
