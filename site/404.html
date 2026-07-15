@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#FFD93D">
+<meta name="theme-color" content="#F4A261">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="matchaxmoxie">
 <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/">
@@ -25,12 +25,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1A1A2E;
-    --ink-soft:#4A4A6A;
-    --cream:#FFF9E6;
-    --sun:#FFD93D;
-    --sky:#2E86DE;
-    --green:#27AE60;
+    --ink:#2A1F3D;
+    --ink-soft:#6B5A78;
+    --cream:#FFF0E0;
+    --sun:#F4A261;
+    --coral:#E76F51;
+    --dusk:#5C4B7A;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{
@@ -41,7 +41,9 @@
     justify-content:center;
     padding:max(24px, env(safe-area-inset-top)) 24px max(40px, env(safe-area-inset-bottom));
     background:var(--cream);
-    background-image:repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(46,134,222,.07) 27px,rgba(46,134,222,.07) 28px);
+    background-image:
+      linear-gradient(180deg,rgba(244,162,97,.2),rgba(155,142,196,.12),rgba(255,240,224,.95)),
+      repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(92,75,122,.08) 27px,rgba(92,75,122,.08) 28px);
     color:var(--ink);
     font-family:"Comic Neue","Comic Sans MS",cursive,sans-serif;
     line-height:1.5;
@@ -50,19 +52,19 @@
   h1{
     font-family:"Cooper Black",Georgia,serif;
     font-size:clamp(48px,12vw,80px);
-    color:var(--sky);
+    color:var(--dusk);
     margin-bottom:8px;
   }
   p{color:var(--ink-soft);max-width:36ch;margin-bottom:20px;font-size:15px}
-  a{color:var(--green);text-decoration:none;border-bottom:3px solid var(--sun);font-weight:700}
-  a:hover{color:var(--sky);border-color:var(--sky)}
+  a{color:var(--coral);text-decoration:none;border-bottom:3px solid var(--sun);font-weight:700}
+  a:hover{color:var(--dusk);border-color:var(--dusk)}
   .mono{font-family:"Courier New",Courier,monospace;font-size:12px;font-weight:700;letter-spacing:.04em;margin-top:24px;color:var(--ink-soft)}
 </style>
 </head>
 <body>
   <h1>404</h1>
-  <p>this page is not on the board. maybe it graduated. the classroom is still at <a href="index.html">home</a>.</p>
-  <p><a href="index.html">return home</a> · <a href="https://jadexzhao.github.io/jadexzhao/">the briefcase</a></p>
-  <p class="mono">matchaxmoxie · miss sunny classroom</p>
+  <p>this page is not on the board. maybe it graduated. the sunset classroom is still at <a href="index.html">home</a>.</p>
+  <p><a href="index.html">return home</a> · <a href="https://jadexzhao.github.io/jadexzhao/">sunrise</a></p>
+  <p class="mono">jadexzhao is sunrise. this is sunset.</p>
 </body>
 </html>

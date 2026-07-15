@@ -1,14 +1,20 @@
 :root {
-  /* kindergarten classroom palette · miss sunny */
-  --sunshine: #FFD93D;
-  --sky-blue: #2E86DE;
-  --grass-green: #27AE60;
-  --apple-red: #E74C3C;
-  --chalkboard: #2C3E50;
-  --paper-cream: #FFF9E6;
-  --paper-shadow: #F0E4C8;
-  --crayon-ink: #1A1A2E;
-  --crayon-muted: #4A4A6A;
+  /* sunset classroom palette · miss sunny · golden hour */
+  --sunshine: #F4A261;
+  --golden-hour: #F4A261;
+  --coral: #E76F51;
+  --peach: #FFB088;
+  --lavender: #9B8EC4;
+  --dusk: #5C4B7A;
+  --sky-blue: #9B8EC4;
+  --grass-green: #E76F51;
+  --apple-red: #C45C4A;
+  --chalkboard: #3A3350;
+  --chalk-dust: #F8EDE0;
+  --paper-cream: #FFF0E0;
+  --paper-shadow: #E8D4C4;
+  --crayon-ink: #2A1F3D;
+  --crayon-muted: #6B5A78;
 
   --editorial-dark: var(--crayon-ink);
   --matcha-ops: var(--grass-green);
@@ -40,11 +46,11 @@
   --text-ghost: #8A6A6A;
 
   /* functional */
-  --link: var(--sky-blue);
-  --link-hover: #1B6FC2;
-  --focus: var(--sunshine);
+  --link: var(--dusk);
+  --link-hover: var(--coral);
+  --focus: var(--golden-hour);
   --border: var(--paper-shadow);
-  --shadow: rgba(26, 26, 46, 0.1);
+  --shadow: rgba(42, 31, 61, 0.12);
 
   /* kindergarten layout */
   --nav-h: 52px;
@@ -127,12 +133,18 @@ body {
   padding-top: calc(3rem + env(safe-area-inset-top, 0px));
   background-color: var(--paper-cream);
   background-image:
+    linear-gradient(
+      180deg,
+      rgba(244, 162, 97, 0.18) 0%,
+      rgba(155, 142, 196, 0.12) 42%,
+      rgba(255, 240, 224, 0.9) 100%
+    ),
     repeating-linear-gradient(
       0deg,
       transparent,
       transparent 27px,
-      rgba(46, 134, 222, 0.07) 27px,
-      rgba(46, 134, 222, 0.07) 28px
+      rgba(92, 75, 122, 0.08) 27px,
+      rgba(92, 75, 122, 0.08) 28px
     );
   color: var(--crayon-ink);
   color: var(--text-primary);
@@ -161,15 +173,15 @@ body {
   font-size: var(--text-xs);
   letter-spacing: 0.04em;
   padding: calc(0.35rem + env(safe-area-inset-top, 0px)) 1rem 0.35rem;
-  background: var(--sunshine);
+  background: var(--golden-hour);
   color: var(--crayon-ink);
   text-decoration: none;
-  border-bottom: 3px solid var(--sky-blue);
+  border-bottom: 3px solid var(--dusk);
 }
 
 .twin-banner:hover {
-  color: var(--tulip-soil);
-  background: var(--tulip-mist);
+  color: var(--crayon-ink);
+  background: var(--peach);
 }
 
 .site-jump {
@@ -2656,18 +2668,18 @@ body.kindergarten-home {
 }
 
 .kindergarten-home a {
-  color: var(--sky-blue);
+  color: var(--dusk);
   text-decoration: none;
-  border-bottom: 2px solid var(--sunshine);
+  border-bottom: 2px solid var(--golden-hour);
 }
 
 .kindergarten-home a:hover {
-  color: var(--grass-green);
-  border-color: var(--grass-green);
+  color: var(--coral);
+  border-color: var(--coral);
 }
 
 .kindergarten-home a:focus-visible {
-  outline: 3px solid var(--sunshine);
+  outline: 3px solid var(--golden-hour);
   outline-offset: 2px;
 }
 
@@ -2692,7 +2704,7 @@ body.kindergarten-home {
   justify-content: center;
   flex-wrap: wrap;
   min-height: var(--nav-h);
-  background: var(--sunshine);
+  background: var(--golden-hour);
   border-bottom: 4px solid var(--crayon-ink);
   padding: 0 max(12px, env(safe-area-inset-right, 0px)) 0 max(12px, env(safe-area-inset-left, 0px));
   padding-top: env(safe-area-inset-top, 0px);
@@ -2715,8 +2727,8 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .site-nav a:hover {
-  background: var(--paper-cream);
-  border-bottom-color: var(--sky-blue);
+  background: var(--chalk-dust);
+  border-bottom-color: var(--dusk);
 }
 
 .kindergarten-home .site-nav a.nav-home {
@@ -2740,13 +2752,19 @@ body.kindergarten-home {
 .kindergarten-home .twin-note {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
-  color: var(--crayon-muted);
+  color: var(--crayon-ink);
   margin-bottom: 28px;
-  padding: 10px 14px;
-  background: var(--paper-cream);
-  border: 3px dashed var(--sky-blue);
+  padding: 12px 16px;
+  background: var(--chalk-dust);
+  border: 3px solid var(--crayon-ink);
+  box-shadow: 4px 4px 0 var(--lavender);
+}
+
+.kindergarten-home .twin-note a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
 }
 
 .kindergarten-home .hero {
@@ -2762,8 +2780,15 @@ body.kindergarten-home {
   aspect-ratio: 1;
   overflow: hidden;
   border: 4px solid var(--crayon-ink);
-  background: var(--paper-cream);
-  box-shadow: 6px 6px 0 var(--sky-blue);
+  background:
+    linear-gradient(
+      180deg,
+      var(--peach) 0%,
+      var(--golden-hour) 38%,
+      var(--lavender) 72%,
+      var(--dusk) 100%
+    );
+  box-shadow: 6px 6px 0 var(--coral);
   transform: rotate(-1deg);
   display: flex;
   align-items: center;
@@ -2774,10 +2799,11 @@ body.kindergarten-home {
   position: absolute;
   left: 12%;
   right: 12%;
-  top: 38%;
-  height: 32%;
+  top: 48%;
+  height: 34%;
   background: var(--chalkboard);
   border: 3px solid var(--crayon-ink);
+  z-index: 2;
 }
 
 .kindergarten-home .classroom-board::before,
@@ -2787,50 +2813,68 @@ body.kindergarten-home {
   left: 10%;
   right: 10%;
   height: 4px;
-  background: var(--paper-cream);
+  background: var(--chalk-dust);
 }
 
 .kindergarten-home .classroom-board::before { top: 22%; }
 .kindergarten-home .classroom-board::after { top: 52%; width: 60%; }
 
+/* paper-cut setting sun (no soft circle) */
 .kindergarten-home .classroom-sun {
   position: absolute;
-  top: 10%;
-  right: 14%;
-  width: 28%;
-  height: 28%;
+  top: 14%;
+  left: 50%;
+  width: 42%;
+  height: 36%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .kindergarten-home .classroom-sun::before {
   content: "";
   position: absolute;
-  left: 20%;
-  top: 0;
+  left: 50%;
+  bottom: 0;
   width: 0;
   height: 0;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-bottom: 32px solid var(--sunshine);
+  transform: translateX(-50%);
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  border-bottom: 56px solid var(--golden-hour);
 }
 
 .kindergarten-home .classroom-sun::after {
   content: "";
   position: absolute;
-  left: 32%;
-  top: 32px;
-  width: 14px;
-  height: 10px;
-  background: var(--sunshine);
+  left: 50%;
+  bottom: 0;
+  width: 72px;
+  height: 14px;
+  transform: translateX(-50%);
+  background: var(--coral);
+  border: 3px solid var(--crayon-ink);
+  border-bottom: 0;
+}
+
+.kindergarten-home .horizon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 48%;
+  height: 4px;
+  background: var(--crayon-ink);
+  z-index: 1;
 }
 
 .kindergarten-home .classroom-apple {
   position: absolute;
-  bottom: 12%;
-  left: 16%;
-  width: 18%;
-  height: 18%;
+  bottom: 8%;
+  left: 14%;
+  width: 16%;
+  height: 16%;
   background: var(--apple-red);
   border: 3px solid var(--crayon-ink);
+  z-index: 3;
 }
 
 .kindergarten-home .star-sticker {
@@ -2839,8 +2883,9 @@ body.kindergarten-home {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 12px solid var(--sunshine);
+  border-bottom: 12px solid var(--chalk-dust);
   transform: rotate(15deg);
+  z-index: 3;
 }
 
 .kindergarten-home .star-1 { top: 8%; left: 8%; }
@@ -2856,9 +2901,10 @@ body.kindergarten-home {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: var(--paper-cream);
-  border: 2px dashed var(--grass-green);
+  background: var(--chalk-dust);
+  border: 2px dashed var(--coral);
   color: var(--crayon-ink);
+  z-index: 4;
 }
 
 .kindergarten-home .hero-text h1 {
@@ -2872,7 +2918,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .hero-text h1 .sc {
-  color: var(--sky-blue);
+  color: var(--dusk);
   font-size: 0.82em;
 }
 
@@ -2895,7 +2941,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .hero-meta .ig {
-  color: var(--grass-green);
+  color: var(--coral);
 }
 
 .kindergarten-home .sunset-badge {
@@ -2908,17 +2954,17 @@ body.kindergarten-home {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--crayon-ink);
-  background: var(--sunshine);
+  background: var(--peach);
   border: 3px solid var(--crayon-ink);
 }
 
 .kindergarten-home .poem {
   margin: 32px 0 40px;
   padding: 24px 28px;
-  background: var(--paper-cream);
+  background: var(--chalk-dust);
   border: 4px solid var(--crayon-ink);
-  border-left: 8px solid var(--grass-green);
-  box-shadow: 5px 5px 0 var(--sky-blue);
+  border-left: 8px solid var(--coral);
+  box-shadow: 5px 5px 0 var(--lavender);
   position: relative;
 }
 
@@ -2928,7 +2974,7 @@ body.kindergarten-home {
   top: 10px;
   right: 16px;
   font-size: 24px;
-  color: var(--sunshine);
+  color: var(--golden-hour);
   text-shadow: 1px 1px 0 var(--crayon-ink);
 }
 
@@ -2949,7 +2995,7 @@ body.kindergarten-home {
   font-style: normal;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--sky-blue);
+  color: var(--dusk);
 }
 
 .kindergarten-home .section-head {
@@ -2969,7 +3015,7 @@ body.kindergarten-home {
 .kindergarten-home .section-head .sc-label {
   font-family: "Noto Serif SC", serif;
   font-size: 14px;
-  color: var(--grass-green);
+  color: var(--coral);
 }
 
 .kindergarten-home .section-lede {
@@ -2994,19 +3040,19 @@ body.kindergarten-home {
   border: 4px solid var(--crayon-ink);
   text-decoration: none;
   color: inherit;
-  background: var(--paper-cream);
-  box-shadow: 5px 5px 0 var(--sky-blue);
+  background: var(--chalk-dust);
+  box-shadow: 5px 5px 0 var(--lavender);
   position: relative;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .kindergarten-home .project-card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 7px 7px 0 var(--grass-green);
+  box-shadow: 7px 7px 0 var(--coral);
 }
 
 .kindergarten-home .project-card:focus-visible {
-  outline: 3px solid var(--sunshine);
+  outline: 3px solid var(--golden-hour);
   outline-offset: 3px;
 }
 
@@ -3022,9 +3068,9 @@ body.kindergarten-home {
   height: 6px;
 }
 
-.kindergarten-home .project-card.sun::before { background: var(--sunshine); }
-.kindergarten-home .project-card.sky::before { background: var(--sky-blue); }
-.kindergarten-home .project-card.grass::before { background: var(--grass-green); }
+.kindergarten-home .project-card.sun::before { background: var(--golden-hour); }
+.kindergarten-home .project-card.sky::before { background: var(--lavender); }
+.kindergarten-home .project-card.grass::before { background: var(--coral); }
 .kindergarten-home .project-card.apple::before { background: var(--apple-red); }
 
 .kindergarten-home .card-emoji {
@@ -3053,7 +3099,7 @@ body.kindergarten-home {
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: var(--sky-blue);
+  color: var(--dusk);
 }
 
 .kindergarten-home .card-arrow {
@@ -3063,7 +3109,7 @@ body.kindergarten-home {
   font-family: "Courier New", Courier, monospace;
   font-size: 11px;
   font-weight: 700;
-  color: var(--grass-green);
+  color: var(--coral);
 }
 
 .kindergarten-home .now-strip {
@@ -3075,14 +3121,14 @@ body.kindergarten-home {
 
 .kindergarten-home .now-card {
   padding: 18px;
-  background: var(--paper-cream);
+  background: var(--chalk-dust);
   border: 4px solid var(--crayon-ink);
-  border-top: 8px solid var(--sunshine);
-  box-shadow: 4px 4px 0 var(--sky-blue);
+  border-top: 8px solid var(--golden-hour);
+  box-shadow: 4px 4px 0 var(--lavender);
 }
 
 .kindergarten-home .now-card.sky {
-  border-top-color: var(--sky-blue);
+  border-top-color: var(--dusk);
 }
 
 .kindergarten-home .now-k {
@@ -3116,7 +3162,7 @@ body.kindergarten-home {
 .kindergarten-home .about {
   margin-bottom: 40px;
   padding: 24px 0;
-  border-top: 4px dashed var(--sky-blue);
+  border-top: 4px dashed var(--lavender);
 }
 
 .kindergarten-home .about p {
@@ -3136,7 +3182,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .about .roots .sc {
-  color: var(--grass-green);
+  color: var(--coral);
 }
 
 .kindergarten-home .stat-row {
@@ -3151,7 +3197,7 @@ body.kindergarten-home {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-size: 14px;
   color: var(--crayon-ink);
-  background: var(--sunshine);
+  background: var(--golden-hour);
   border: 3px solid var(--crayon-ink);
 }
 
@@ -3172,7 +3218,7 @@ body.kindergarten-home {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--sky-blue);
+  color: var(--dusk);
   display: block;
   margin-bottom: 4px;
 }
@@ -3264,10 +3310,10 @@ body.kindergarten-home {
 .archive-page .archive-box {
   padding: 1.25rem;
   margin: 1.5rem 0;
-  background: var(--paper-cream);
+  background: var(--chalk-dust);
   border: 4px solid var(--crayon-ink);
-  border-left: 8px solid var(--sunshine);
-  box-shadow: 5px 5px 0 var(--sky-blue);
+  border-left: 8px solid var(--coral);
+  box-shadow: 5px 5px 0 var(--lavender);
 }
 
 .archive-page .btn-row {
@@ -3277,3 +3323,89 @@ body.kindergarten-home {
   margin-top: 1.5rem;
 }
 
+
+/* KISS sunset home · fewer cards · quiet archive */
+body.kiss-home {
+  padding-top: max(28px, env(safe-area-inset-top, 0px));
+}
+
+.kiss-home .gwc-block {
+  margin: 28px 0 32px;
+  padding: 20px;
+  background: var(--chalk-dust);
+  border: 4px solid var(--crayon-ink);
+  box-shadow: 5px 5px 0 var(--coral);
+}
+
+.kiss-home .gwc-block h2 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.4rem, 4vw, 1.75rem);
+  color: var(--crayon-ink);
+  margin-bottom: 8px;
+}
+
+.kiss-home .gwc-block p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.05rem;
+  color: var(--crayon-ink);
+  margin-bottom: 8px;
+  max-width: 42ch;
+}
+
+.kiss-home .gwc-quiet {
+  font-size: 0.92rem !important;
+  color: var(--crayon-muted) !important;
+}
+
+.kiss-home .quiet-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.kiss-home .footer-kiss {
+  border-top: 4px solid var(--crayon-ink);
+  padding-top: 16px;
+  font-size: 13px;
+  color: var(--crayon-muted);
+}
+
+.kiss-home .footer-kiss p {
+  margin-bottom: 8px;
+  max-width: 48ch;
+}
+
+.kiss-home .footer-kiss .human {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 15px;
+  color: var(--crayon-ink);
+}
+
+.kiss-home .archive-kiss h1 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  margin-bottom: 12px;
+  color: var(--crayon-ink);
+}
+
+.kiss-home .archive-kiss p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--crayon-muted);
+  margin-bottom: 12px;
+  max-width: 48ch;
+}
+
+.kiss-home .sunset-badge,
+.kiss-home .poem,
+.kiss-home .project-grid,
+.kiss-home .now-strip,
+.kiss-home .about,
+.kiss-home .site-nav {
+  display: none;
+}

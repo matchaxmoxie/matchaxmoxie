@@ -1,17 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="matchaxmoxie miss sunny classroom archive">
-  <rect width="1200" height="630" fill="#FFF9E6"/>
-  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#2E86DE" stroke-width="6" stroke-dasharray="12 8"/>
-  <rect x="120" y="120" width="360" height="240" fill="#2C3E50"/>
-  <rect x="150" y="160" width="300" height="8" fill="#FFF9E6"/>
-  <rect x="150" y="200" width="220" height="8" fill="#FFF9E6"/>
-  <rect x="150" y="240" width="260" height="8" fill="#FFF9E6"/>
-  <polygon points="900,100 980,260 820,260" fill="#FFD93D"/>
-  <rect x="870" y="260" width="60" height="20" fill="#FFD93D"/>
-  <rect x="560" y="180" width="80" height="80" fill="#E74C3C"/>
-  <rect x="580" y="200" width="12" height="12" fill="#27AE60"/>
-  <rect x="610" y="210" width="10" height="10" fill="#27AE60"/>
-  <text x="600" y="440" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#1A1A2E">matchaxmoxie</text>
-  <text x="600" y="510" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#2E86DE">girls who code roots · miss sunny classroom · winding down</text>
-  <polygon points="100,500 110,530 90,530" fill="#FFD93D"/>
-  <polygon points="1080,480 1090,510 1070,510" fill="#FFD93D"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="matchaxmoxie sunset classroom archive">
+  <rect width="1200" height="630" fill="#FFF0E0"/>
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#5C4B7A" stroke-width="6"/>
+  <!-- chalkboard -->
+  <rect x="100" y="280" width="420" height="220" fill="#3A3350"/>
+  <rect x="130" y="320" width="360" height="10" fill="#F8EDE0"/>
+  <rect x="130" y="360" width="260" height="10" fill="#F8EDE0"/>
+  <rect x="130" y="400" width="300" height="10" fill="#F8EDE0"/>
+  <!-- setting sun paper-cut -->
+  <polygon points="860,140 980,300 740,300" fill="#F4A261"/>
+  <rect x="740" y="300" width="240" height="28" fill="#E76F51"/>
+  <rect x="850" y="80" width="20" height="50" fill="#F4A261"/>
+  <rect x="980" y="160" width="50" height="18" fill="#9B8EC4"/>
+  <rect x="690" y="160" width="50" height="18" fill="#9B8EC4"/>
+  <!-- name tag -->
+  <rect x="560" y="180" width="140" height="48" fill="#FFF0E0" stroke="#E76F51" stroke-width="4" stroke-dasharray="8 6"/>
+  <text x="630" y="212" text-anchor="middle" font-family="Courier New, monospace" font-size="18" font-weight="700" fill="#2A1F3D">MISS ZHAO</text>
+  <text x="600" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#2A1F3D">matchaxmoxie</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#5C4B7A">jadexzhao is sunrise. this is sunset.</text>
 </svg>
