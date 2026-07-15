@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="matchaxmoxie">
-  <rect width="32" height="32" rx="7" fill="#00a86b"/>
-  <ellipse cx="16" cy="18" rx="9" ry="5" fill="#fff8f3"/>
-  <ellipse cx="16" cy="16.5" rx="6.5" ry="3.2" fill="#6b9e78"/>
-  <circle cx="23" cy="9" r="3.2" fill="#e8b4c8"/>
-  <circle cx="26" cy="13" r="2" fill="#f0d4dc"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="matchaxmoxie pb and j">
+  <rect width="32" height="32" rx="7" fill="#F5E6C8"/>
+  <rect x="5" y="8" width="22" height="4" rx="1.5" fill="#E8D4A8"/>
+  <rect x="5" y="12" width="22" height="5" fill="#C4A574"/>
+  <rect x="5" y="17" width="22" height="4" fill="#6B3FA0"/>
+  <rect x="5" y="21" width="22" height="4" rx="1.5" fill="#E8D4A8"/>
+  <circle cx="25" cy="7" r="2.5" fill="#00a86b" opacity="0.85"/>
 </svg>

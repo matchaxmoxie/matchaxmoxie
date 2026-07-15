@@ -1,12 +1,17 @@
 {
-  "name": "matchaxmoxie · brand & ops",
+  "name": "matchaxmoxie · pb&j ops",
   "short_name": "matchaxmoxie",
-  "description": "fase map · mentorship ops · consulting · @matchaxmoxie runs the loop",
+  "description": "spread slow · hand off clean · @matchaxmoxie runs the loop · @jadexzhao ships the code",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#fff8f3",
-  "theme_color": "#00a86b",
+  "background_color": "#F5E6C8",
+  "theme_color": "#C4A574",
   "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
     {
       "src": "favicon-32x32.png",
       "sizes": "32x32",

@@ -1,19 +1,19 @@
 :root {
-  /* floral scratch palette (aligned with briefcase family) */
-  --editorial-dark: #2c2824;
+  /* pb&j nostalgic palette */
+  --editorial-dark: #3d2f24;
   --matcha-ops: #00a86b;
-  --text-muted: #5a524c;
-  --bg-soft-warm: #fff8f3;
-  --accent-crimson: #d4656a;
+  --text-muted: #6b5a4a;
+  --bg-soft-warm: #F5E6C8;
+  --accent-crimson: #C41E3A;
 
   /* colors */
-  --tulip-petal: #e8b4c8;
-  --tulip-deep: #d4879c;
-  --tulip-blush: #f0d4dc;
-  --tulip-stem: #6b9e78;
+  --tulip-petal: #C4A574;
+  --tulip-deep: #6B3FA0;
+  --tulip-blush: #F5E6C8;
+  --tulip-stem: #00a86b;
   --tulip-soil: var(--editorial-dark);
   --tulip-light: var(--bg-soft-warm);
-  --tulip-mist: #e8ddd6;
+  --tulip-mist: #E8D4A8;
 
   /* chinese accent palette. jade, cinnabar, gold */
   --jade: #00a86b;
@@ -30,10 +30,10 @@
   --text-ghost: #8A6A6A;
 
   /* functional */
-  --link: #D4879C;
-  --link-hover: #B5667A;
-  --focus: #F2C4CE;
-  --border: #EDD5DA;
+  --link: #6B3FA0;
+  --link-hover: #8b5fc4;
+  --focus: #C4A574;
+  --border: #E8D4A8;
   --shadow: rgba(180, 120, 130, 0.08);
 
   /* type scale */
@@ -113,8 +113,8 @@ body {
   background-color: var(--bg-soft-warm);
   background-color: var(--tulip-light);
   background-image:
-    radial-gradient(ellipse 70% 45% at 100% 0%, rgba(242, 196, 206, 0.35), transparent 55%),
-    radial-gradient(ellipse 55% 35% at 0% 100%, rgba(42, 82, 70, 0.07), transparent 50%);
+    radial-gradient(ellipse 70% 45% at 100% 0%, rgba(107, 63, 160, 0.12), transparent 55%),
+    radial-gradient(ellipse 55% 35% at 0% 100%, rgba(196, 165, 116, 0.15), transparent 50%);
   color: var(--editorial-dark);
   color: var(--text-primary);
   font-family: 'DM Sans', sans-serif;
