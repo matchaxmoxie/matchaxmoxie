@@ -1,23 +1,23 @@
 :root {
-  /* hardened editorial tokens (WCAG-ish contrast) */
-  --editorial-dark: #3D2B2B;
-  --matcha-ops: #2A5246;
-  --text-muted: #574646;
-  --bg-soft-warm: #FDF6F7;
-  --accent-crimson: #990000;
+  /* floral scratch palette (aligned with briefcase family) */
+  --editorial-dark: #2c2824;
+  --matcha-ops: #00a86b;
+  --text-muted: #5a524c;
+  --bg-soft-warm: #fff8f3;
+  --accent-crimson: #d4656a;
 
   /* colors */
-  --tulip-petal: #F2C4CE;
-  --tulip-deep: #D4879C;
-  --tulip-blush: #FAE8EC;
-  --tulip-stem: #7A9E7E;
+  --tulip-petal: #e8b4c8;
+  --tulip-deep: #d4879c;
+  --tulip-blush: #f0d4dc;
+  --tulip-stem: #6b9e78;
   --tulip-soil: var(--editorial-dark);
   --tulip-light: var(--bg-soft-warm);
-  --tulip-mist: #EDD5DA;
+  --tulip-mist: #e8ddd6;
 
   /* chinese accent palette. jade, cinnabar, gold */
-  --jade: var(--matcha-ops);
-  --jade-soft: #6B9E8F;
+  --jade: #00a86b;
+  --jade-soft: #6b9e78;
   --cinnabar: var(--accent-crimson);
   --cinnabar-soft: #D4564A;
   --gold: #C4A035;

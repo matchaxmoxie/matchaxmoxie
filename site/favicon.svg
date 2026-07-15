@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="matchaxmoxie">
+  <rect width="32" height="32" rx="7" fill="#00a86b"/>
+  <ellipse cx="16" cy="18" rx="9" ry="5" fill="#fff8f3"/>
+  <ellipse cx="16" cy="16.5" rx="6.5" ry="3.2" fill="#6b9e78"/>
+  <circle cx="23" cy="9" r="3.2" fill="#e8b4c8"/>
+  <circle cx="26" cy="13" r="2" fill="#f0d4dc"/>
+</svg>

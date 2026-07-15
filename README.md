@@ -1,12 +1,14 @@
-# Jade Zhao (Matcha & Moxie)
+# matchaxmoxie · 抹茶
 
-### Brand & Operations Lead · GTM Coordinator · Creative Entrepreneur
+### whisk slow. the foam rises when you stop rushing it.
+
+brand & ops for programs that need a human handoff. fase map coordinator. restaurant kid who learned that clearing the path is its own kind of ship.
 
 📍 Bloomington, IN · May 2027 · open to relocation
 
 📧 [Email](mailto:jlzhao@iu.edu) · 🌐 [Live site](https://matchaxmoxie.github.io/matchaxmoxie/) · 💼 [The briefcase](https://jadexzhao.github.io/jadexzhao/) · 🧭 [How I work](https://jadexzhao.github.io/jadexzhao/how-i-work.html) · 🦆 [Duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) · 📸 [@zhao.langxi](https://instagram.com/zhao.langxi) · 🔗 [LinkedIn](https://www.linkedin.com/in/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie) · [@jadexzhao](https://github.com/jadexzhao)
 
-> **Restaurant kid turned brand & ops lead.** I grew up where the only metric that mattered was whether the food hit the table hot. That wiring stuck. I coordinate programs, clear paths for the next person, and keep creative + GTM lanes loud on purpose but anchored by the work. Code-side receipts live on [`@jadexzhao`](https://jadexzhao.github.io/jadexzhao/): ServeIT **~25% engagement lift**, pitch → live PoC sandboxes, [duck farm](https://jadexzhao.github.io/jadexzhao/duck-farm/) as the public sandbox.
+> **Surround yourself with people who want to see you grow**, then build the checklist so the next coordinator doesn't have to guess. Mentorship isn't a vibe. It's canvas modules, office hours, and a handoff someone can run at 9pm without paging you. Code-side receipts live on [`@jadexzhao`](https://jadexzhao.github.io/jadexzhao/).
 
 ---
 
