@@ -24,7 +24,7 @@ fi
 URL="http://127.0.0.1:${PORT}/"
 echo "Serving ${ROOT}/site at ${URL}"
 echo "  fase-map:  ${URL}fase-map.html"
-echo "  jade-day3: ${URL}jade-day3.html"
+echo "  handoff:   ${URL}handoff-checklist.html"
 
 if [[ "$OPEN" -eq 1 ]]; then
   open "${URL}fase-map.html"

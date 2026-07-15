@@ -1825,7 +1825,7 @@ ol li::marker { color: var(--tulip-deep); }
   color: var(--text-secondary);
 }
 
-/* MAP COORDINATOR PAGES (map-training, map-assignments, fase-map nav) */
+/* MAP COORDINATOR PAGES (fall-office-hours, fase-map nav) */
 .nav-links {
   display: flex;
   flex-wrap: wrap;

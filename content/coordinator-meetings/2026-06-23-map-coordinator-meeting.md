@@ -1,6 +1,6 @@
 # MAP Coordinator meeting · Mon Jun 23, 2026
 
-Related: [`../map-training-modules.md`](../map-training-modules.md) · [`../jade-day3/README.md`](../jade-day3/README.md)
+Related: [`../site/fase-map.html`](../site/fase-map.html) · [`../docs/handoff-checklist-template.md`](../docs/handoff-checklist-template.md)
 
 ## Check-in
 
