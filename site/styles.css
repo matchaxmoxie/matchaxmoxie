@@ -4653,6 +4653,98 @@ body.campus-survival-page {
   text-transform: uppercase;
 }
 
+
+/* HS 建议漏斗 · 有序步骤 · 孩子可读 */
+.advice-funnel-lede {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--crayon-muted);
+  max-width: 54ch;
+  margin: 0 0 14px;
+}
+
+.kiss-home .gwc-block h3#advice-funnel-heading,
+.guide-page .gwc-block h2#advice-funnel-heading {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.2rem, 3.5vw, 1.45rem);
+  line-height: 1.25;
+  color: var(--ink);
+  margin: 22px 0 10px;
+}
+
+.advice-funnel {
+  list-style: decimal;
+  list-style-position: outside;
+  margin: 0 0 28px;
+  padding: 0 0 0 1.6rem;
+  max-width: 58ch;
+}
+
+.advice-funnel li,
+.kiss-home .gwc-block .advice-funnel li,
+.guide-page .gwc-block .advice-funnel li {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0 0 14px;
+  padding-left: 0.35rem;
+}
+
+.advice-funnel li::marker {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-weight: 700;
+  color: var(--coral-ink);
+}
+
+.advice-funnel strong {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--coral-ink);
+  margin-bottom: 4px;
+}
+
+.advice-funnel a {
+  color: var(--dusk);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.advice-funnel a:hover {
+  color: var(--coral-ink);
+}
+
+.advice-funnel a:focus-visible {
+  outline: 3px solid var(--golden-hour);
+  outline-offset: 2px;
+}
+
+.advice-funnel .year23-tag {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--coral-ink);
+  background: var(--gold-soft);
+  border: 2px solid var(--crayon-ink);
+  padding: 2px 8px;
+  margin: 0 0 6px;
+}
+
+.advice-funnel abbr {
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
 .journey-year-nav a {
   display: inline-flex;
   align-items: center;
