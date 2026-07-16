@@ -4,7 +4,7 @@
 
 **Jade Zhao** at **Indiana University Luddy** (Informatics, Class of 2027). Miss Zhao is on hiatus for senior year. The Girls Who Code Indianapolis teaching archive stays.
 
-matchaxmoxie was the brand / ops / classroom twin handle. people may not know it because school IG moved to [@zhao.langxi](https://instagram.com/zhao.langxi) (real name · no more secret account). not mysterious. just renamed into the open as Jade Zhao / 赵朗曦. this repo stays the sunset archive.
+School Instagram is always [@zhao.langxi](https://instagram.com/zhao.langxi) (never @jadexzhao for IG). This repo is the sunset classroom archive on GitHub Pages — same person, different surface from the sunrise portfolio.
 
 [email](mailto:jlzhao@iu.edu) · [live site](https://matchaxmoxie.github.io/matchaxmoxie/) · [sunrise twin](https://jadexzhao.github.io/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie) · school IG [@zhao.langxi](https://instagram.com/zhao.langxi)
 
