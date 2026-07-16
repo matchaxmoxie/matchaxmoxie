@@ -28,11 +28,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#2A1F3D;
-    --ink-soft:#6B5A78;
+    --ink:#1F1630;
+    --ink-soft:#4A3D55;
     --cream:#FFF0E0;
     --sun:#F4A261;
-    --coral:#E76F51;
+    --coral:#B8452F;
     --dusk:#5C4B7A;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -49,8 +49,18 @@
       repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(92,75,122,.08) 27px,rgba(92,75,122,.08) 28px);
     color:var(--ink);
     font-family:"Comic Neue","Comic Sans MS",cursive,sans-serif;
+    font-size:17px;
     line-height:1.5;
     text-align:center;
+  }
+  .skip-link{
+    position:absolute;left:1rem;top:-100%;
+    background:var(--ink);color:var(--cream);
+    padding:.6rem 1rem;z-index:200;font-weight:700;
+    text-decoration:underline;
+  }
+  .skip-link:focus,.skip-link:focus-visible{
+    top:0;outline:3px solid var(--dusk);outline-offset:2px;
   }
   h1{
     font-family:"Cooper Black",Georgia,serif;
@@ -58,16 +68,20 @@
     color:var(--dusk);
     margin-bottom:8px;
   }
-  p{color:var(--ink-soft);max-width:36ch;margin-bottom:20px;font-size:15px}
-  a{color:var(--coral);text-decoration:none;border-bottom:3px solid var(--sun);font-weight:700}
-  a:hover{color:var(--dusk);border-color:var(--dusk)}
-  .mono{font-family:"Courier New",Courier,monospace;font-size:12px;font-weight:700;letter-spacing:.04em;margin-top:24px;color:var(--ink-soft)}
+  p{color:var(--ink-soft);max-width:36ch;margin-bottom:20px;font-size:16px}
+  a{color:var(--coral);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;font-weight:700}
+  a:hover{color:var(--dusk)}
+  a:focus-visible{outline:3px solid var(--dusk);outline-offset:3px}
+  .mono{font-family:"Courier New",Courier,monospace;font-size:13px;font-weight:700;letter-spacing:.04em;margin-top:24px;color:var(--ink-soft)}
 </style>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">skip to main content</a>
+  <main id="main-content">
   <h1>404</h1>
   <p>this page is not on the board. maybe it graduated. the sunset classroom is still at <a href="index.html">home</a>.</p>
   <p><a href="index.html">return home</a> · <a href="https://jadexzhao.github.io/jadexzhao/">sunrise</a></p>
   <p class="mono">jadexzhao is sunrise. this is sunset.</p>
+  </main>
 </body>
 </html>
