@@ -2788,6 +2788,66 @@ body.kindergarten-home {
   max-width: 58ch;
 }
 
+/* 受众两扇门 · 学生 / 招聘入口 */
+.kiss-home .start-here {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--coral-ink);
+  margin: 0 0 10px;
+}
+
+.kiss-home .doors {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 28px;
+  max-width: 54ch;
+}
+
+.kiss-home .door {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 44px;
+  padding: 16px 18px;
+  background: #fff;
+  border: 4px solid var(--crayon-ink);
+  box-shadow: 4px 4px 0 var(--golden-hour);
+  color: var(--ink);
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.kiss-home .door:hover {
+  box-shadow: 4px 4px 0 var(--coral);
+  color: var(--ink);
+}
+
+.kiss-home .door:focus-visible {
+  outline: 3px solid var(--golden-hour);
+  outline-offset: 3px;
+}
+
+.kiss-home .door--primary {
+  box-shadow: 4px 4px 0 var(--coral);
+}
+
+.kiss-home .door-who {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.15rem, 3.5vw, 1.35rem);
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.kiss-home .door-what {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--crayon-muted);
+}
+
 .kindergarten-home .twin-note a {
   color: var(--crayon-ink);
   text-decoration: underline;
