@@ -11,4 +11,4 @@ IG: [@zhao.langxi](https://instagram.com/zhao.langxi) · live: [matchaxmoxie.git
 - [campus survival](https://matchaxmoxie.github.io/matchaxmoxie/campus-survival.html)
 - four-year path: [1](https://matchaxmoxie.github.io/matchaxmoxie/freshman.html) · [2](https://matchaxmoxie.github.io/matchaxmoxie/sophomore.html) · [3 · Madrid](https://matchaxmoxie.github.io/matchaxmoxie/junior.html) · [4](https://matchaxmoxie.github.io/matchaxmoxie/senior.html)
 
-Code ships on [@jadexzhao](https://github.com/jadexzhao). Instagram is always [@zhao.langxi](https://instagram.com/zhao.langxi).
+Code ships on [@jadexzhao](https://github.com/jadexzhao). Instagram is always [@zhao.langxi](https://instagram.com/zhao.langxi) (Zhao / 赵朗曦 · open daytime face, not a secret brand account).
