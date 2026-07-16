@@ -3305,7 +3305,7 @@ body.kindergarten-home {
     grid-template-columns: 1fr;
   }
 
-  /* wrap cleanly · no sideways scroll TOC */
+  /* 导航换行 · 目录不横向滚 */
   .kindergarten-home .site-nav {
     justify-content: center;
     overflow-x: visible;
@@ -3357,7 +3357,7 @@ body.kindergarten-home {
 
 
 
-/* cream ink lock · never chalk-on-cream for kid-facing pages */
+/* 奶油底强制深墨 · 禁止粉笔浅字落在奶油上（孩子页可读） */
 body.kindergarten-home,
 body.kiss-home,
 body.guide-page,
@@ -3444,7 +3444,7 @@ body.campus-survival-page {
   background: var(--chalk-dust);
   border: 4px solid var(--crayon-ink);
   box-shadow: 5px 5px 0 var(--coral);
-  /* cream cards: force dark ink so course lists never go chalk-on-cream */
+  /* 奶油卡片强制深墨 · 课程列表绝不用粉笔浅字 */
   color: var(--ink);
 }
 
@@ -3835,7 +3835,7 @@ body.campus-survival-page {
   text-decoration: none;
 }
 
-/* Starter .sb3 download + load help */
+/* 入门 .sb3 下载按钮与加载说明 */
 .scratch-studio-page .scratch-load-help {
   margin: 0 0 22px;
   padding: 1rem 1.1rem;
@@ -4641,7 +4641,7 @@ body.campus-survival-page {
   margin-bottom: 28px;
 }
 
-/* Miss Zhao tip · kid-friendly encouragement (practical + you got this) */
+/* Miss Zhao 小贴士 · 实用鼓励 + you got this */
 .miss-zhao-tip {
   margin: 20px 0 28px;
   padding: 16px 18px;
@@ -4706,7 +4706,7 @@ body.campus-survival-page {
 }
 
 /* ------------------------------------------------------------------
-   Responsive pass · phone (~320–480) / tablet (~768) / desktop / wide (1200+)
+   响应式：手机（~320–480）/ 平板（~768）/ 桌面 / 宽屏（1200+）
    ------------------------------------------------------------------ */
 
 body {
@@ -4725,7 +4725,7 @@ body {
   touch-action: manipulation;
 }
 
-/* Phone · stack crowded TOCs, tighten padding, one column cards */
+/* 手机 · 目录竖排、收紧内边距、卡片单列 */
 @media (max-width: 480px) {
   html {
     font-size: 17px;
@@ -4797,7 +4797,7 @@ body {
   }
 }
 
-/* Small tablet · wrap nav, keep readable cards */
+/* 小平板 · 导航换行，卡片仍可读 */
 @media (min-width: 481px) and (max-width: 767px) {
   .guide-page .guide-toc,
   .scratch-studio-page .studio-toc,
@@ -4810,7 +4810,7 @@ body {
   }
 }
 
-/* Tablet+ · two-column course / year grids where useful */
+/* 平板及以上 · 课程 / 年级网格可两列 */
 @media (min-width: 768px) {
   .guide-page .guide-toc {
     gap: 10px 18px;
@@ -4826,7 +4826,7 @@ body {
   }
 }
 
-/* Desktop */
+/* 桌面 */
 @media (min-width: 1024px) {
   .kindergarten-home .wrap {
     max-width: 920px;
@@ -4837,7 +4837,7 @@ body {
   }
 }
 
-/* Wide / custom install · breathe without stretching lines forever */
+/* 宽屏 · 留白，但行长不过度拉长 */
 @media (min-width: 1200px) {
   html {
     font-size: 19px;
