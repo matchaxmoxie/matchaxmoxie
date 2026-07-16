@@ -145,6 +145,7 @@ svg {
 body {
   margin: 0;
   padding-top: calc(3rem + env(safe-area-inset-top, 0px));
+  overflow-x: clip;
   background-color: var(--paper-cream);
   background-image:
     linear-gradient(
@@ -160,8 +161,8 @@ body {
       rgba(42, 31, 61, 0.045) 28px,
       rgba(42, 31, 61, 0.045) 29px
     );
-  color: var(--crayon-ink);
-  color: var(--text-primary);
+  /* 奶油底永远近黑墨；禁止依赖会被深色模式改写的 --text-primary */
+  color: #1F1630;
   font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
   font-size: var(--text-base);
   line-height: var(--leading-loose);
@@ -3387,11 +3388,41 @@ body.guide-page,
 body.journey-page,
 body.scratch-studio-page,
 body.campus-survival-page {
-  color-scheme: light;
-  color: var(--ink);
-  --text-primary: var(--ink);
-  --text-secondary: var(--crayon-muted);
+  color-scheme: light only;
+  color: #1F1630 !important;
+  --ink: #1F1630;
+  --crayon-ink: #1a1a1a;
+  --text-primary: #1F1630;
+  --text-secondary: #2F2438;
   --text-ghost: #3D3232;
+  --text-muted: #2F2438;
+}
+
+/* 英雄区 / 课程表：硬墨，防缓存旧 CSS 继承粉笔粉 */
+.guide-page .guide-hero .studio-kicker,
+.guide-page .guide-hero .studio-lede,
+.guide-page .guide-hero h1,
+.guide-page .guide-hero .studio-note,
+.journey-courses,
+.journey-courses li,
+.journey-courses code,
+.kiss-home .gwc-block,
+.kiss-home .gwc-block p,
+.kiss-home .gwc-block li,
+.kiss-home .gwc-block h2,
+.campus-survival-page .coord-checklist label,
+.campus-survival-page .campus-subh,
+.campus-survival-page .year23-banner p,
+.scratch-studio-page .howto-body,
+.scratch-studio-page .howto-body p,
+.scratch-studio-page .howto-body li {
+  color: #1F1630 !important;
+}
+
+.kiss-home .gwc-quiet,
+.guide-page .guide-hero .studio-note,
+.journey-note {
+  color: #2F2438 !important;
 }
 
 .kiss-home .gwc-block {
@@ -4572,4 +4603,158 @@ body.campus-survival-page {
 .miss-zhao-tip a:focus-visible {
   outline: 3px solid var(--golden-hour);
   outline-offset: 3px;
+}
+
+/* ------------------------------------------------------------------
+   Responsive pass · phone (~320–480) / tablet (~768) / desktop / wide (1200+)
+   ------------------------------------------------------------------ */
+
+body {
+  overflow-x: clip;
+}
+
+.guide-page .guide-pack label {
+  min-height: 44px;
+  padding: 6px 0;
+  touch-action: manipulation;
+}
+
+.guide-page .guide-section a,
+.kiss-home .quiet-links a,
+.kindergarten-home .twin-note a {
+  touch-action: manipulation;
+}
+
+/* Phone · stack crowded TOCs, tighten padding, one column cards */
+@media (max-width: 480px) {
+  html {
+    font-size: 17px;
+  }
+
+  body.kindergarten-home,
+  body.kiss-home,
+  body.guide-page,
+  body.journey-page,
+  body.scratch-studio-page,
+  body.campus-survival-page {
+    padding-left: max(14px, env(safe-area-inset-left, 0px));
+    padding-right: max(14px, env(safe-area-inset-right, 0px));
+  }
+
+  .kindergarten-home .wrap,
+  .guide-page .guide-wrap {
+    max-width: 100%;
+  }
+
+  .guide-page .guide-toc,
+  .scratch-studio-page .studio-toc,
+  .journey-year-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+  }
+
+  .guide-page .guide-toc a,
+  .scratch-studio-page .studio-toc a,
+  .journey-year-nav a {
+    display: flex;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 4px;
+  }
+
+  .guide-page .guide-toc {
+    padding: 10px 12px;
+  }
+
+  .campus-survival-page .year23-banner,
+  .miss-zhao-tip,
+  .kiss-home .gwc-block,
+  .journey-callout {
+    padding: 14px 14px;
+    box-shadow: 3px 3px 0 var(--lavender);
+  }
+
+  .campus-survival-page .guide-photo--hero img {
+    max-height: min(36vh, 260px);
+  }
+
+  .classes-grid,
+  .years-grid,
+  .hub-cards,
+  .status-summary {
+    grid-template-columns: 1fr !important;
+  }
+
+  .class-card,
+  .piece-card {
+    padding-left: 0.75rem;
+  }
+
+  .journey-courses li {
+    font-size: 1.02rem;
+    line-height: 1.5;
+  }
+}
+
+/* Small tablet · wrap nav, keep readable cards */
+@media (min-width: 481px) and (max-width: 767px) {
+  .guide-page .guide-toc,
+  .scratch-studio-page .studio-toc,
+  .journey-year-nav {
+    gap: 6px 12px;
+  }
+
+  .kindergarten-home .wrap {
+    max-width: 720px;
+  }
+}
+
+/* Tablet+ · two-column course / year grids where useful */
+@media (min-width: 768px) {
+  .guide-page .guide-toc {
+    gap: 10px 18px;
+    padding: 16px 18px;
+  }
+
+  .kindergarten-home .wrap {
+    max-width: 860px;
+  }
+
+  .campus-survival-page .guide-photo--hero img {
+    max-height: min(44vh, 360px);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .kindergarten-home .wrap {
+    max-width: 920px;
+  }
+
+  .guide-page .guide-wrap {
+    max-width: 760px;
+  }
+}
+
+/* Wide / custom install · breathe without stretching lines forever */
+@media (min-width: 1200px) {
+  html {
+    font-size: 19px;
+  }
+
+  .kindergarten-home .wrap {
+    max-width: 980px;
+  }
+
+  .guide-page .guide-wrap,
+  .archive-page {
+    max-width: 800px;
+  }
+
+  .guide-page .guide-section p,
+  .journey-courses,
+  .miss-zhao-tip {
+    max-width: 58ch;
+  }
 }
