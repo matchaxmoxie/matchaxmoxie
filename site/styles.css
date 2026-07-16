@@ -4,19 +4,21 @@
   --golden-hour: #F4A261;
   --coral: #E76F51;
   /* 正文用珊瑚（奶油底 ≥4.5:1）；装饰仍用 --coral */
-  --coral-ink: #B8452F;
+  --coral-ink: #9A3D32;
   --peach: #FFB088;
-  --lavender: #9B8EC4;
-  --dusk: #5C4B7A;
-  --sky-blue: #9B8EC4;
+  --lavender: #7A6BA8;
+  /* 链接/导航墨色：深紫，奶油/peach 底上硬可读 */
+  --dusk: #2A1F3D;
+  --sky-blue: #7A6BA8;
   --grass-green: #E76F51;
   --apple-red: #C45C4A;
   --chalkboard: #2F2942;
-  --chalk-dust: #FFF8F0;
-  --paper-cream: #FFF0E0;
-  --paper-shadow: #E8D4C4;
-  --crayon-ink: #1F1630;
-  --crayon-muted: #4A3D55;
+  --chalk-dust: #FFFAF4;
+  --paper-cream: #FFF4E8;
+  --paper-shadow: #D9C4B0;
+  /* 正文近黑 · 用户可读性硬需求 */
+  --crayon-ink: #1a1a1a;
+  --crayon-muted: #2F2438;
 
   --editorial-dark: var(--crayon-ink);
   --matcha-ops: var(--coral-ink);
@@ -45,30 +47,30 @@
   /* 文字颜色 */
   --text-primary: var(--editorial-dark);
   --text-secondary: var(--text-muted);
-  --text-ghost: #5C4A4A;
+  --text-ghost: #3D3232;
 
   /* 功能色 */
   --link: var(--dusk);
   --link-hover: var(--coral-ink);
   --focus: var(--dusk);
   --border: var(--paper-shadow);
-  --shadow: rgba(42, 31, 61, 0.12);
+  --shadow: rgba(26, 26, 26, 0.14);
 
   /* 幼儿园式布局参数 */
   --nav-h: 52px;
   --card-radius: 0;
   --btn-radius: 0;
 
-  /* 字号阶梯（略抬正文与说明，避免奶油底上难读） */
-  --text-xs: 0.8125rem;
-  --text-sm: 0.9375rem;
-  --text-base: 1.0625rem;
-  --text-md: 1.1875rem;
+  /* 字号阶梯（正文/导航抬高，peach 底可读） */
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.125rem;
+  --text-md: 1.25rem;
   --text-lg: 1.5rem;
   --text-xl: 2rem;
   --text-2xl: 2.75rem;
   --text-3xl: 3.5rem;
-  --text-accent: 0.8125rem;
+  --text-accent: 0.875rem;
 
   /* 移动端字号 */
   --text-hero-mobile: clamp(2rem, 8vw, 3rem);
@@ -119,7 +121,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -137,16 +139,16 @@ body {
   background-image:
     linear-gradient(
       180deg,
-      rgba(244, 162, 97, 0.18) 0%,
-      rgba(155, 142, 196, 0.12) 42%,
-      rgba(255, 240, 224, 0.9) 100%
+      rgba(244, 162, 97, 0.1) 0%,
+      rgba(122, 107, 168, 0.06) 42%,
+      rgba(255, 250, 244, 0.94) 100%
     ),
     repeating-linear-gradient(
       0deg,
       transparent,
-      transparent 27px,
-      rgba(92, 75, 122, 0.08) 27px,
-      rgba(92, 75, 122, 0.08) 28px
+      transparent 28px,
+      rgba(42, 31, 61, 0.045) 28px,
+      rgba(42, 31, 61, 0.045) 29px
     );
   color: var(--crayon-ink);
   color: var(--text-primary);
@@ -432,9 +434,9 @@ body {
   outline-offset: 2px;
 }
 
-/* 焦点环（dusk 在奶油底上 ≥3:1） */
+/* 焦点环（深 dusk 在奶油底上硬可见） */
 :focus-visible {
-  outline: 3px solid var(--focus);
+  outline: 4px solid var(--focus);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -2682,8 +2684,8 @@ body.kindergarten-home {
 .kindergarten-home a {
   color: var(--dusk);
   text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2.5px;
   border-bottom: 0;
 }
 
@@ -2693,8 +2695,8 @@ body.kindergarten-home {
 }
 
 .kindergarten-home a:focus-visible {
-  outline: 3px solid var(--dusk);
-  outline-offset: 2px;
+  outline: 4px solid var(--dusk);
+  outline-offset: 3px;
 }
 
 .kindergarten-home .mono {
