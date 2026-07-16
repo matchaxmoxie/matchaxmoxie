@@ -4,8 +4,8 @@
   "description": "Miss Zhao classroom archive (sunset). Builder portfolio is jadexzhao (sunrise). Same person. IG @zhao.langxi.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#FFF0E0",
-  "theme_color": "#F4A261",
+  "background_color": "#FFF4E8",
+  "theme_color": "#E0763A",
   "icons": [
     {
       "src": "favicon.svg",
