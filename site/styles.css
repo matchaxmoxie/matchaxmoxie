@@ -4830,9 +4830,14 @@ body {
   .campus-survival-page .year23-banner,
   .miss-zhao-tip,
   .kiss-home .gwc-block,
+  .kiss-home .door,
   .journey-callout {
     padding: 14px 14px;
     box-shadow: 3px 3px 0 var(--lavender);
+  }
+
+  .kiss-home .doors {
+    max-width: none;
   }
 
   .campus-survival-page .guide-photo--hero img {
