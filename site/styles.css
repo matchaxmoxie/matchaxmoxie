@@ -4472,14 +4472,11 @@ body.campus-survival-page {
   filter: saturate(0.9) sepia(0.08) contrast(1.03);
 }
 
-.photo-frame figcaption {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
+.photo-frame figcaption a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
   font-weight: 700;
-  color: var(--crayon-muted);
-  padding: 10px 12px 12px;
-  border-top: 3px solid var(--crayon-ink);
-  background: var(--paper-cream);
 }
 
 .photo-frame--home {
@@ -4487,6 +4484,24 @@ body.campus-survival-page {
   margin-left: auto;
   margin-right: auto;
   transform: rotate(0.6deg);
+}
+
+/* 首页欢迎图：压高度 + 裁掉红幕帘，露出投影片主体 */
+.photo-frame--home img {
+  width: 100%;
+  max-height: min(42vh, 280px);
+  height: auto;
+  object-fit: cover;
+  object-position: center 72%;
+}
+
+/* 指南页同款欢迎图裁切 */
+.guide-photo--welcome img {
+  width: 100%;
+  max-height: min(42vh, 320px);
+  height: auto;
+  object-fit: cover;
+  object-position: center 72%;
 }
 
 .photo-frame--wide {
@@ -4505,13 +4520,18 @@ body.campus-survival-page {
   margin-bottom: 0;
 }
 
-@media (max-width: 560px) {
+  @media (max-width: 560px) {
   .photo-pair {
     grid-template-columns: 1fr;
   }
 
   .photo-frame--home {
     max-width: 100%;
+  }
+
+  .photo-frame--home img,
+  .guide-photo--welcome img {
+    max-height: min(36vh, 240px);
   }
 }
 
