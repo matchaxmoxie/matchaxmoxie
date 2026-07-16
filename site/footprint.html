@@ -32,8 +32,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260716a">
-<link rel="stylesheet" href="styles.css?v=20260716a">
+<link rel="stylesheet" href="a11y.css?v=20260716b">
+<link rel="stylesheet" href="styles.css?v=20260716b">
 </head>
 <body class="kindergarten-home sunset-home kiss-home guide-page footprint-page">
 
@@ -108,7 +108,18 @@
     </ul>
   </section>
 
+  <aside class="trail-legend" role="note" aria-label="What the print lines mean">
+    <p>
+      Under each stop is a <strong>my print so far</strong> line: a small, honest note of what
+      is real today. Three tags keep it clear:
+      <span class="print-status print-status--done">done</span> already happened,
+      <span class="print-status print-status--wip">in progress</span> is underway,
+      <span class="print-status print-status--soon">still on the list</span> is a someday I mean it.
+    </p>
+  </aside>
+
   <!-- 视觉脚印轨与上方 checklist 内容对应；脚印装饰 aria-hidden，步骤标题保留给读屏 -->
+  <!-- 每站下方加“my print so far”一行：仅公开可核实事实；隐私边界已核对 -->
   <ol class="foot-trail" aria-label="Leave a footprint steps as footprints">
 
     <li class="foot-stop">
@@ -125,6 +136,12 @@
         <p class="foot-num">1</p>
         <h2>Travel</h2>
         <p>Go somewhere that stretches your map.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--done">done</span>
+          <span class="print-label">my print so far:</span>
+          a whole semester at Complutense in Madrid, Spring 2026 (IU Overseas Study).
+          Path notes on <a href="junior.html">junior · Madrid</a>.
+        </p>
       </div>
     </li>
 
@@ -142,6 +159,12 @@
         <p class="foot-num">2</p>
         <h2>Pick up other skills</h2>
         <p>Learn something outside your major comfort zone.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--done">done</span>
+          <span class="print-label">my print so far:</span>
+          picked up accessible web building (WCAG), TypeScript, React, Python, and
+          PostgreSQL, plus how to teach all of it kindly.
+        </p>
       </div>
     </li>
 
@@ -159,6 +182,13 @@
         <p class="foot-num">3</p>
         <h2>Build a brand</h2>
         <p>Make a clear public signal of who you are and what you ship.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--done">done</span>
+          <span class="print-label">my print so far:</span>
+          two public sites, same me:
+          <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a> (sunrise, builder)
+          and <a href="index.html">matchaxmoxie</a> (sunset, Miss Zhao classroom).
+        </p>
       </div>
     </li>
 
@@ -176,6 +206,13 @@
         <p class="foot-num">4</p>
         <h2>Journal</h2>
         <p>Write it down so the path is visible later.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--wip">in progress</span>
+          <span class="print-label">my print so far:</span>
+          a public path record instead of a private diary:
+          <a href="freshman.html">freshman</a> through
+          <a href="senior.html">senior</a> notes and this footprint trail.
+        </p>
       </div>
     </li>
 
@@ -193,6 +230,11 @@
         <p class="foot-num">5</p>
         <h2>Rescue dogs</h2>
         <p>Care for something that needs you back.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--soon">still on the list</span>
+          <span class="print-label">my print so far:</span>
+          not yet, and I will not pretend otherwise. A someday I mean it.
+        </p>
       </div>
     </li>
 
@@ -210,6 +252,12 @@
         <p class="foot-num">6</p>
         <h2>Find someone who doesn&rsquo;t look like you....</h2>
         <p>Widen the circle. Learn from a different story.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--wip">in progress</span>
+          <span class="print-label">my print so far:</span>
+          a semester living in Madrid and a mixed IU community keep the circle wider than
+          the one I grew up in. Still listening.
+        </p>
       </div>
     </li>
 
@@ -227,6 +275,14 @@
         <p class="foot-num">7</p>
         <h2>Create a website, your own QR code, domain.</h2>
         <p>Own a corner of the web you can point people to.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--done">done</span>
+          <span class="print-label">my print so far:</span>
+          two live sites shipped,
+          <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a> and
+          <a href="index.html">matchaxmoxie</a>, plus an online-ordering page for the
+          family restaurant. Corners of the web I can point people to.
+        </p>
       </div>
     </li>
 
@@ -244,6 +300,15 @@
         <p class="foot-num">8</p>
         <h2>Write an article</h2>
         <p>Put an idea in public words.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--wip">in progress</span>
+          <span class="print-label">my print so far:</span>
+          public write-ups on
+          <a href="https://jadexzhao.github.io/jadexzhao/briefcase/how-i-work.html">how I work</a>
+          and
+          <a href="https://jadexzhao.github.io/jadexzhao/briefcase/i18n-wcag.html">web accessibility</a>.
+          A longer, proper article is still cooking.
+        </p>
       </div>
     </li>
 
@@ -261,6 +326,14 @@
         <p class="foot-num">9</p>
         <h2>Start a business or non-profit</h2>
         <p>Build something that helps people beyond your homework.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--wip">in progress</span>
+          <span class="print-label">my print so far:</span>
+          shipped an online-ordering page for the family restaurant, and I build accessible
+          sites for
+          <a href="https://serveit.luddy.indiana.edu/serve-ai/" rel="noopener noreferrer" target="_blank">ServeIT</a>,
+          IU&rsquo;s nonprofit tech clinic. Helping, not just homework.
+        </p>
       </div>
     </li>
 
@@ -278,6 +351,14 @@
         <p class="foot-num">10</p>
         <h2>Give a speech, sing a song, write a poem, play an instrument somewhere other than your apartment.</h2>
         <p>Share art or voice in a room that is not only yours.</p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--done">done</span>
+          <span class="print-label">my print so far:</span>
+          taught
+          <a href="scratch-studio.html">Scratch and web workshops</a>
+          with Girls Who Code Indianapolis (2018 to 2023): standing up and speaking in
+          rooms that were not my apartment.
+        </p>
       </div>
     </li>
 
@@ -300,6 +381,12 @@
           <a href="index.html">matchaxmoxie</a>
           and
           <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>.
+        </p>
+        <p class="foot-print-so-far">
+          <span class="print-status print-status--done">done</span>
+          <span class="print-label">my print so far:</span>
+          the marks I am proud of are the ServeIT builds, the Girls Who Code teaching, and
+          this Scratch classroom archive left open for the next student.
         </p>
       </div>
     </li>

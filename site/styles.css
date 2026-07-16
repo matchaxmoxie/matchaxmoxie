@@ -5123,6 +5123,93 @@ body {
   margin: 0.5rem 0 0;
 }
 
+/* leave-a-footprint · “my print so far” 事实行 + 图例 · 仅公开可核实事实 */
+.trail-legend {
+  max-width: 42rem;
+  margin: 1rem 0 1.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--paper-cream);
+  border: 2px dashed var(--paper-shadow);
+  border-radius: 14px;
+}
+
+.trail-legend p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0;
+  max-width: 56ch;
+}
+
+.trail-legend strong {
+  color: var(--coral-ink);
+}
+
+.foot-print-so-far {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--paper-cream);
+  border-left: 4px solid var(--sunshine);
+  border-radius: 0 10px 10px 0;
+  padding: 0.55rem 0.8rem;
+  margin: 0 0 0.85rem;
+  max-width: 54ch;
+}
+
+.foot-print-so-far .print-label {
+  font-weight: 700;
+  color: var(--coral-ink);
+}
+
+.foot-print-so-far a {
+  color: var(--dusk);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.foot-print-so-far a:hover {
+  color: var(--coral-ink);
+}
+
+.foot-print-so-far a:focus-visible {
+  outline: 3px solid var(--focus-ring, var(--dusk));
+  outline-offset: 2px;
+}
+
+.print-status {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  margin-right: 0.35rem;
+  border: 2px solid currentColor;
+  white-space: nowrap;
+}
+
+.print-status--done {
+  color: #1f5c3d;
+  background: #dcefe3;
+}
+
+.print-status--wip {
+  color: #7a4e00;
+  background: #fbe8c6;
+}
+
+.print-status--soon {
+  color: var(--dusk);
+  background: #e8e2f2;
+}
+
 .footprint-page .journey-year-nav {
   margin-top: 0.5rem;
 }
