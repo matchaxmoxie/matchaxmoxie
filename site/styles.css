@@ -4115,12 +4115,14 @@ body.campus-survival-page {
   filter: saturate(0.92) contrast(1.02);
 }
 
-.guide-photo figcaption {
+.guide-photo figcaption,
+.photo-frame figcaption {
   font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.4;
   font-weight: 700;
-  color: var(--crayon-muted);
-  padding: 10px 12px 12px;
+  color: var(--crayon-ink);
+  padding: 12px 14px 14px;
   border-top: 3px solid var(--crayon-ink);
   background: var(--paper-cream);
 }
@@ -4163,7 +4165,10 @@ body.campus-survival-page {
 }
 
 .guide-photo--thumb figcaption {
-  display: none;
+  display: block;
+  font-size: 13px;
+  line-height: 1.35;
+  padding: 10px 12px 12px;
 }
 
 @media (max-width: 520px) {
