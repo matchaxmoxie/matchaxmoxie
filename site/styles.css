@@ -4189,6 +4189,24 @@ body.kiss-home {
   }
 }
 
+/* 学术外链档案注脚 · Informatics 指南 */
+.guide-archive-note {
+  margin-top: 14px !important;
+  max-width: 58ch !important;
+  line-height: 1.55 !important;
+}
+
+.guide-archive-note a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.guide-archive-note a:hover {
+  color: var(--coral);
+}
+
 /* Year '23 档案条 · 校园 tip sheets 日期防火 */
 .year23-banner {
   margin: 0 0 22px;
