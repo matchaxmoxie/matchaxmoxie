@@ -4063,11 +4063,11 @@ body.kiss-home {
 
 .campus-survival-page .year23-tag {
   font-family: "Courier New", Courier, monospace;
-  font-size: 11px;
+  font-size: 0.8125rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--dusk);
+  color: var(--crayon-ink);
   margin: 0 0 10px;
 }
 
