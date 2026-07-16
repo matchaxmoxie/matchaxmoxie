@@ -4,7 +4,7 @@
 
 Miss Zhao is on hiatus for senior year at Indiana University. The Girls Who Code teaching archive stays.
 
-[email](mailto:jlzhao@iu.edu) · [live site](https://matchaxmoxie.github.io/matchaxmoxie/) · [sunrise twin](https://jadexzhao.github.io/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie)
+[email](mailto:jlzhao@iu.edu) · [live site](https://matchaxmoxie.github.io/matchaxmoxie/) · [sunrise twin](https://jadexzhao.github.io/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie) · school IG [@zhao.langxi](https://instagram.com/zhao.langxi)
 
 ## what this holds
 
