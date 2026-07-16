@@ -10,11 +10,11 @@ matchaxmoxie was the brand / ops / classroom twin handle. People may not know it
 
 ## what this holds
 
-**Girls Who Code** · Web Designer & Instructor · Indianapolis · Jan 2018 to Aug 2023. Instructed 50+ students. Facilitated 12 student-led projects. Mentored 20+ young women toward STEM.
+**Girls Who Code** · Web Designer & Instructor · Indianapolis · Jan 2018 to Aug 2023. 50+ students. 12 student-led projects. mentored 20+ young women into STEM.
 
 **Scratch studio** · [how-to archive](https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html) (Miss Zhao craft, paused not erased).
 
-**Four-year IU journey** · [freshman](https://matchaxmoxie.github.io/matchaxmoxie/freshman.html) · [sophomore](https://matchaxmoxie.github.io/matchaxmoxie/sophomore.html) · [junior · Madrid](https://matchaxmoxie.github.io/matchaxmoxie/junior.html) · [senior · planned](https://matchaxmoxie.github.io/matchaxmoxie/senior.html). Course titles and terms only (no letter grades). Spring 2026 study abroad: Universidad Complutense de Madrid.
+**Four-year IU path** · [freshman](https://matchaxmoxie.github.io/matchaxmoxie/freshman.html) · [sophomore](https://matchaxmoxie.github.io/matchaxmoxie/sophomore.html) · [junior · Madrid](https://matchaxmoxie.github.io/matchaxmoxie/junior.html) · [senior · planned](https://matchaxmoxie.github.io/matchaxmoxie/senior.html). Course titles and terms only (no letter grades). Spring 2026: real semester at Universidad Complutense de Madrid.
 
 **Informatics Class of 2027** · [guide for HS seniors and early starters](https://matchaxmoxie.github.io/matchaxmoxie/informatics-class-of-2027.html). Inspired by / with thanks to [u/JohnCusackBlankStare on r/IndianaUniversity: Let's break down the classes in Informatics](https://www.reddit.com/r/IndianaUniversity/comments/77lx5w/lets_break_down_the_classes_in_informatics/). Community knowledge Jade is building on, not a reprint.
 
