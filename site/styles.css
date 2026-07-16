@@ -139,7 +139,7 @@ svg {
 
 body {
   margin: 0;
-  padding-top: calc(3rem + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
   overflow-x: clip;
   background-color: var(--paper-cream);
   background-image:
@@ -196,7 +196,7 @@ body {
 
 .site-jump {
   position: sticky;
-  top: 48px;
+  top: 0;
   z-index: 90;
   display: flex;
   flex-wrap: nowrap;
@@ -208,7 +208,7 @@ body {
   overscroll-behavior: contain;
   background: var(--paper-cream);
   border-bottom: 3px solid var(--sky-blue);
-  margin: 0 calc(-1 * var(--padding-mobile)) var(--space-sm);
+  margin: 0 0 var(--space-sm);
 }
 
 .site-jump::-webkit-scrollbar { display: none; }
@@ -234,6 +234,13 @@ body {
   color: var(--accent-crimson);
   border-bottom-color: var(--accent-crimson);
   background: var(--tulip-blush);
+}
+
+.site-jump a[aria-current="page"] {
+  color: var(--crayon-ink);
+  border-bottom-color: var(--accent-crimson);
+  background: #fff4df;
+  font-weight: 700;
 }
 
 @media (max-width: 640px) {
