@@ -19,7 +19,7 @@
   /* 正文近黑 · 用户可读性硬需求 */
   --crayon-ink: #1a1a1a;
   --ink: #1F1630; /* 奶油卡片强制墨色 · a11y */
-  --crayon-muted: #2F2438;
+  --crayon-muted: #2A1F30;
 
   --editorial-dark: var(--crayon-ink);
   --matcha-ops: var(--coral-ink);
@@ -3344,7 +3344,27 @@ body.kindergarten-home {
 }
 
 
-/* KISS 日落主页 · 少卡片 · 安静归档 */
+
+/* cream ink lock · never chalk-on-cream for kid-facing pages */
+body.kindergarten-home .gwc-block,
+body.kiss-home .gwc-block,
+body.guide-page .guide-section,
+body.guide-page .guide-attr,
+body.scratch-studio-page .howto-body,
+body.scratch-studio-page .howto-meta {
+  color: var(--ink);
+}
+
+body.kindergarten-home .gwc-block li,
+body.kiss-home .gwc-block li,
+body.guide-page .guide-section li,
+body.scratch-studio-page .howto-body li,
+body.scratch-studio-page .howto-body p,
+body.scratch-studio-page .howto-meta p {
+  color: var(--ink);
+}
+
+/* keep-it-simple 日落主页 · 少卡片 · 安静归档 */
 body.kiss-home {
   padding-top: max(28px, env(safe-area-inset-top, 0px));
 }
@@ -3997,9 +4017,9 @@ body.campus-survival-page {
 
 .guide-page .guide-section p {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: 1.08rem;
-  color: var(--crayon-ink);
-  line-height: 1.6;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.55;
   margin-bottom: 10px;
   max-width: 54ch;
 }
@@ -4465,17 +4485,18 @@ body.campus-survival-page {
   margin-bottom: 28px;
 }
 
-/* Miss Zhao tip boxes · kid-friendly · dark ink on cream */
+/* Miss Zhao tip · kid-friendly encouragement (practical + you got this) */
 .miss-zhao-tip {
-  margin: 0 0 28px;
+  margin: 20px 0 28px;
   padding: 16px 18px;
-  max-width: 54ch;
   background: #fff;
   border: 4px solid var(--crayon-ink);
-  box-shadow: 5px 5px 0 var(--golden-hour);
+  box-shadow: 5px 5px 0 var(--coral);
   color: var(--ink);
+  max-width: 54ch;
 }
 
+.miss-zhao-tip-label,
 .miss-zhao-tip .miss-zhao-tip-label {
   display: block;
   font-family: "Courier New", Courier, monospace;
@@ -4492,10 +4513,38 @@ body.campus-survival-page {
   font-size: 1.05rem;
   color: var(--ink);
   line-height: 1.55;
-  margin: 0;
+  margin: 0 0 8px;
+  max-width: none;
+}
+
+.miss-zhao-tip p:last-child {
+  margin-bottom: 0;
+}
+
+.miss-zhao-tip .you-got-this {
+  font-weight: 700;
+  color: var(--coral-ink);
 }
 
 .miss-zhao-tip strong {
   color: var(--crayon-ink);
   font-weight: 700;
+}
+
+.miss-zhao-tip a {
+  color: var(--ink);
+  border-bottom: 3px solid var(--golden-hour);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  font-weight: 700;
+}
+
+.miss-zhao-tip a:hover {
+  color: var(--coral-ink);
+}
+
+.miss-zhao-tip a:focus-visible {
+  outline: 3px solid var(--golden-hour);
+  outline-offset: 3px;
 }
