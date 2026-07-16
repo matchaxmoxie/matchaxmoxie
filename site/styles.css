@@ -5040,3 +5040,157 @@ body {
     max-width: 58ch;
   }
 }
+
+/* ------------------------------------------------------------------
+   FOOTPRINT TRAIL · kindergarten footsteps · cream + dark ink
+   ------------------------------------------------------------------ */
+
+.footprint-page .guide-hero {
+  margin-bottom: 0.5rem;
+}
+
+.foot-trail {
+  list-style: none;
+  margin: 1.5rem 0 2rem;
+  padding: 0;
+  max-width: 42rem;
+  position: relative;
+}
+
+.foot-trail::before {
+  content: "";
+  position: absolute;
+  left: 1.15rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 3px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--crayon-ink) 0 10px,
+    transparent 10px 18px
+  );
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.foot-stop {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 0.85rem 1rem;
+  align-items: start;
+  margin: 0 0 1.75rem;
+  position: relative;
+}
+
+.foot-print {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--crayon-ink);
+  padding-top: 0.15rem;
+  z-index: 1;
+}
+
+.foot-print svg {
+  display: block;
+  width: 2.35rem;
+  height: auto;
+}
+
+.foot-print--alt {
+  transform: scaleX(-1) rotate(-8deg);
+  color: var(--coral-ink);
+}
+
+.foot-print:not(.foot-print--alt) {
+  transform: rotate(8deg);
+}
+
+.foot-num {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--coral-ink);
+  margin: 0 0 0.25rem;
+}
+
+.foot-copy h2 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.15rem, 3.2vw, 1.4rem);
+  line-height: 1.25;
+  color: var(--ink);
+  margin: 0 0 0.45rem;
+}
+
+.foot-copy p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 0.75rem;
+  max-width: 54ch;
+}
+
+.foot-copy a {
+  color: var(--dusk);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.foot-copy a:hover {
+  color: var(--coral-ink);
+}
+
+.foot-copy a:focus-visible {
+  outline: 3px solid var(--golden-hour);
+  outline-offset: 2px;
+}
+
+.foot-photo {
+  margin: 0.5rem 0 0;
+}
+
+.footprint-page .journey-year-nav {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .foot-trail::before {
+    left: 0.95rem;
+  }
+
+  .foot-stop {
+    grid-template-columns: 2.5rem 1fr;
+    gap: 0.65rem 0.75rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .foot-print svg {
+    width: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .foot-stop {
+    animation: foot-fade 0.55s ease both;
+  }
+
+  .foot-stop:nth-child(1) { animation-delay: 0.02s; }
+  .foot-stop:nth-child(2) { animation-delay: 0.06s; }
+  .foot-stop:nth-child(3) { animation-delay: 0.10s; }
+  .foot-stop:nth-child(4) { animation-delay: 0.14s; }
+  .foot-stop:nth-child(5) { animation-delay: 0.18s; }
+  .foot-stop:nth-child(6) { animation-delay: 0.22s; }
+  .foot-stop:nth-child(7) { animation-delay: 0.26s; }
+  .foot-stop:nth-child(8) { animation-delay: 0.30s; }
+  .foot-stop:nth-child(9) { animation-delay: 0.34s; }
+}
+
+@keyframes foot-fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
