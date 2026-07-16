@@ -1368,7 +1368,7 @@ body {
 }
 
 .roadmap-details[open] summary::before {
-  content: "–";
+  content: " to ";
 }
 
 .roadmap-details .roadmap-grid {
@@ -2605,8 +2605,8 @@ a.link-instagram:focus-visible {
     --tulip-light: #1E1518;
     --tulip-blush: #251A1D;
     --text-primary: #F2E0E3;
-    --text-secondary: #C4A0A8;
-    --text-ghost: #8C6B6B;
+    --text-secondary: #D4B0B6;
+    --text-ghost: #C9A8A8;
     --border: #3D2B2E;
     --shadow: rgba(0, 0, 0, 0.3);
   }
@@ -3005,7 +3005,7 @@ body.kindergarten-home {
   display: block;
   margin-top: 14px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.06em;
@@ -3034,7 +3034,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .section-lede {
-  font-size: 14.5px;
+  font-size: 16px;
   color: var(--crayon-muted);
   max-width: 52ch;
   margin: -8px 0 20px;
@@ -3102,7 +3102,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .card-desc {
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.5;
   color: var(--crayon-muted);
   flex: 1;
@@ -3111,7 +3111,7 @@ body.kindergarten-home {
 .kindergarten-home .card-tags {
   margin-top: 12px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--dusk);
@@ -3122,7 +3122,7 @@ body.kindergarten-home {
   bottom: 14px;
   right: 16px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--coral-ink);
 }
@@ -3148,7 +3148,7 @@ body.kindergarten-home {
 
 .kindergarten-home .now-k {
   font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -3169,7 +3169,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .now-card p {
-  font-size: 13px;
+  font-size: 14.5px;
   line-height: 1.55;
   color: var(--crayon-muted);
 }
@@ -3509,7 +3509,7 @@ body.kiss-home {
   font-weight: 700;
   font-size: 0.82rem;
   letter-spacing: 0.02em;
-  background: #7eb8e0;
+  background: #2F5F7A;
   color: #fff;
   text-align: center;
   position: relative;
@@ -3517,7 +3517,7 @@ body.kiss-home {
 }
 
 .scratch-studio-page .howto-bar-bot {
-  background: #6aa9d4;
+  background: #27526A;
   font-size: 0.78rem;
 }
 
@@ -3676,7 +3676,7 @@ body.kiss-home {
 }
 
 .scratch-studio-page .howto-lesson[open] summary::before {
-  content: "–";
+  content: " to ";
 }
 
 .scratch-studio-page .howto-lesson:focus-within {
