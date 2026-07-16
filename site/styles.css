@@ -3,52 +3,54 @@
   --sunshine: #F4A261;
   --golden-hour: #F4A261;
   --coral: #E76F51;
+  /* 正文用珊瑚（奶油底 ≥4.5:1）；装饰仍用 --coral */
+  --coral-ink: #B8452F;
   --peach: #FFB088;
   --lavender: #9B8EC4;
   --dusk: #5C4B7A;
   --sky-blue: #9B8EC4;
   --grass-green: #E76F51;
   --apple-red: #C45C4A;
-  --chalkboard: #3A3350;
-  --chalk-dust: #F8EDE0;
+  --chalkboard: #2F2942;
+  --chalk-dust: #FFF8F0;
   --paper-cream: #FFF0E0;
   --paper-shadow: #E8D4C4;
-  --crayon-ink: #2A1F3D;
-  --crayon-muted: #6B5A78;
+  --crayon-ink: #1F1630;
+  --crayon-muted: #4A3D55;
 
   --editorial-dark: var(--crayon-ink);
-  --matcha-ops: var(--grass-green);
+  --matcha-ops: var(--coral-ink);
   --text-muted: var(--crayon-muted);
   --bg-soft-warm: var(--paper-cream);
-  --accent-crimson: var(--apple-red);
+  --accent-crimson: #9A3D32;
 
   /* 旧变量别名，映射到教室主题 */
   --tulip-petal: var(--sunshine);
-  --tulip-deep: var(--sky-blue);
+  --tulip-deep: var(--dusk);
   --tulip-blush: var(--paper-cream);
-  --tulip-stem: var(--grass-green);
+  --tulip-stem: var(--coral-ink);
   --tulip-soil: var(--crayon-ink);
   --tulip-light: var(--paper-cream);
   --tulip-mist: var(--paper-shadow);
 
-  /* 中文点缀色：翡翠、朱砂、金 */
-  --jade: #00a86b;
-  --jade-soft: #6b9e78;
+  /* 中文点缀色：翡翠、朱砂、金（文字达标；浅色仅作洗底） */
+  --jade: #006B45;
+  --jade-soft: #3D6B4A;
   --cinnabar: var(--accent-crimson);
-  --cinnabar-soft: #D4564A;
-  --gold: #C4A035;
+  --cinnabar-soft: #B8452F;
+  --gold: #7A5F14;
   --gold-soft: #E8D5A3;
   --matcha-wash: #E8F0E4;
 
   /* 文字颜色 */
   --text-primary: var(--editorial-dark);
   --text-secondary: var(--text-muted);
-  --text-ghost: #8A6A6A;
+  --text-ghost: #5C4A4A;
 
   /* 功能色 */
   --link: var(--dusk);
-  --link-hover: var(--coral);
-  --focus: var(--golden-hour);
+  --link-hover: var(--coral-ink);
+  --focus: var(--dusk);
   --border: var(--paper-shadow);
   --shadow: rgba(42, 31, 61, 0.12);
 
@@ -57,24 +59,24 @@
   --card-radius: 0;
   --btn-radius: 0;
 
-  /* 字号阶梯 */
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-md: 1.125rem;
+  /* 字号阶梯（略抬正文与说明，避免奶油底上难读） */
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-md: 1.1875rem;
   --text-lg: 1.5rem;
   --text-xl: 2rem;
   --text-2xl: 2.75rem;
   --text-3xl: 3.5rem;
-  --text-accent: 0.7rem;
+  --text-accent: 0.8125rem;
 
   /* 移动端字号 */
   --text-hero-mobile: clamp(2rem, 8vw, 3rem);
   --text-h1-mobile: clamp(1.75rem, 6vw, 2.5rem);
   --text-h2-mobile: clamp(1.25rem, 4vw, 1.75rem);
   --text-h3-mobile: clamp(1rem, 3vw, 1.25rem);
-  --text-body-mobile: clamp(1rem, 2.5vw, 1.125rem);
-  --text-caption-mobile: 0.75rem;
+  --text-body-mobile: clamp(1.0625rem, 2.5vw, 1.1875rem);
+  --text-caption-mobile: 0.8125rem;
 
   /* 行高 */
   --leading-tight: 1.2;
@@ -117,7 +119,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -411,21 +413,28 @@ body {
   position: absolute;
   top: -100%;
   left: 1rem;
-  background: var(--tulip-petal);
-  color: var(--tulip-soil);
-  padding: 0.5rem 1rem;
+  background: var(--crayon-ink);
+  color: var(--chalk-dust);
+  padding: 0.65rem 1.1rem;
   border-radius: 0 0 4px 4px;
   font-size: var(--text-sm);
-  z-index: 100;
+  font-weight: 700;
+  z-index: 200;
   transition: top var(--transition-base);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.skip-link:focus { top: 0; }
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 0;
+  outline: 3px solid var(--golden-hour);
+  outline-offset: 2px;
+}
 
-/* 焦点环 */
+/* 焦点环（dusk 在奶油底上 ≥3:1） */
 :focus-visible {
-  outline: 2px solid var(--focus);
+  outline: 3px solid var(--focus);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -2356,11 +2365,11 @@ ul.checklist li::before {
 
 /* 链接 */
 a {
-  color: #D4879C;
   color: var(--link);
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: var(--tulip-mist);
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--dusk);
   transition: color var(--transition-base), text-decoration-color var(--transition-base);
 }
 
@@ -2400,15 +2409,18 @@ a:hover {
 }
 
 .links a.link-instagram,
-.footer-ig-note a.link-instagram {
-  color: #00a86b;
+.footer-ig-note a.link-instagram,
+a.link-instagram {
+  color: var(--jade);
 }
 
 .links a.link-instagram:hover,
 .links a.link-instagram:focus-visible,
 .footer-ig-note a.link-instagram:hover,
-.footer-ig-note a.link-instagram:focus-visible {
-  color: #008f5a;
+.footer-ig-note a.link-instagram:focus-visible,
+a.link-instagram:hover,
+a.link-instagram:focus-visible {
+  color: #005C3D;
 }
 
 .footer-ig-note {
@@ -2674,8 +2686,8 @@ body.kindergarten-home {
 }
 
 .kindergarten-home a:hover {
-  color: var(--coral);
-  border-color: var(--coral);
+  color: var(--coral-ink);
+  border-color: var(--coral-ink);
 }
 
 .kindergarten-home a:focus-visible {
@@ -2716,7 +2728,7 @@ body.kindergarten-home {
   min-height: 48px;
   padding: 0 16px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: lowercase;
@@ -2752,7 +2764,7 @@ body.kindergarten-home {
 .kindergarten-home .twin-note {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--crayon-ink);
   margin-bottom: 28px;
@@ -2764,7 +2776,9 @@ body.kindergarten-home {
 
 .kindergarten-home .twin-note a {
   color: var(--dusk);
-  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  border-bottom: 0;
 }
 
 .kindergarten-home .hero {
@@ -2813,7 +2827,8 @@ body.kindergarten-home {
   left: 10%;
   right: 10%;
   height: 4px;
-  background: var(--chalk-dust);
+  background: #FFF8F0;
+  box-shadow: 0 0 0 1px rgba(255, 248, 240, 0.35);
 }
 
 .kindergarten-home .classroom-board::before { top: 22%; }
@@ -2941,7 +2956,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .hero-meta .ig {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .kindergarten-home .sunset-badge {
@@ -3015,7 +3030,7 @@ body.kindergarten-home {
 .kindergarten-home .section-head .sc-label {
   font-family: "Noto Serif SC", serif;
   font-size: 14px;
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .kindergarten-home .section-lede {
@@ -3109,7 +3124,7 @@ body.kindergarten-home {
   font-family: "Courier New", Courier, monospace;
   font-size: 11px;
   font-weight: 700;
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .kindergarten-home .now-strip {
@@ -3182,7 +3197,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .about .roots .sc {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .kindergarten-home .stat-row {
@@ -3600,7 +3615,7 @@ body.kiss-home {
 }
 
 .scratch-studio-page .howto-card--intro .howto-status {
-  color: var(--coral) !important;
+  color: var(--coral-ink) !important;
 }
 
 /* 页内目录：跳转到各 how-to 卡片 */
@@ -3656,7 +3671,7 @@ body.kiss-home {
   display: inline-block;
   width: 1.1rem;
   margin-right: 0.4rem;
-  color: var(--coral);
+  color: var(--coral-ink);
   font-weight: 700;
 }
 
@@ -3720,7 +3735,7 @@ body.kiss-home {
 /* 锚点定位时高亮当前教程面板 */
 .scratch-studio-page .howto-card:target .howto-lesson,
 .scratch-studio-page .howto-lesson:target {
-  border-color: var(--coral);
+  border-color: var(--coral-ink);
 }
 
 @media (max-width: 520px) {
@@ -3777,7 +3792,7 @@ body.kiss-home {
 }
 
 .guide-attr a:hover {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .guide-attr-note {
@@ -3852,7 +3867,7 @@ body.kiss-home {
 }
 
 .guide-list--links a:hover {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .guide-photo-strip {
@@ -3903,7 +3918,7 @@ body.kiss-home {
 }
 
 .guide-page .guide-toc a:hover {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .guide-page .guide-section {
@@ -3935,7 +3950,7 @@ body.kiss-home {
 }
 
 .guide-page .guide-section a:hover {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .guide-page .guide-callout {
@@ -4112,7 +4127,7 @@ body.kiss-home {
 }
 
 .guide-page .guide-pack-btn:hover {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 @media print {
@@ -4204,7 +4219,7 @@ body.kiss-home {
 }
 
 .guide-archive-note a:hover {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 /* Year '23 档案条 · 校园 tip sheets 日期防火 */
@@ -4247,7 +4262,7 @@ body.kiss-home {
 }
 
 .year23-banner a:hover {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .year23-tag {
@@ -4308,7 +4323,7 @@ body.kiss-home {
 
 .journey-year-nav a:hover,
 .journey-year-nav a[aria-current="page"] {
-  color: var(--coral);
+  color: var(--coral-ink);
 }
 
 .journey-courses {
