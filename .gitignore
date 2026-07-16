@@ -2,5 +2,9 @@
 *.docx
 site/content
 
-# 本地内部材料，不进公开仓库（含 FASE MAP 协调员运营 + 办公室时段 PDF）
+# 本地内部材料，不进公开仓库（含 FASE MAP 协调员运营）
 content/fase-26-27/
+
+# 含学生员工姓名与时段的办公室时间 PDF · 只在 Canvas，不进公开 git
+site/assets/fall-2026-mentor-office-hours.pdf
+site/assets/fall-2026-spc-map-office-hours.pdf
