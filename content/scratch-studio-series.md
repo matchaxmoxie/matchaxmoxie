@@ -6,22 +6,32 @@ This series stays as teaching-craft archive from Girls Who Code Indianapolis roo
 Public page: https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html
 
 Original teaching content. Format inspired by popular Scratch how-to videos.
-Not affiliated with Scratch Team. How-tos are complete step-by-step rebuilds
-(no remixed Scratch project required). Optional live project URLs can be added later.
+Not affiliated with Scratch Team. How-tos include step-by-step rebuilds plus
+downloadable starter `.sb3` files under `site/scratch-projects/`.
+Optional live Scratch share URLs can be added after uploading those files.
 
 School IG: [@zhao.langxi](https://instagram.com/zhao.langxi)
 
-| # | Project | Status | Notes |
-|---|---------|--------|-------|
-| 1 | Jumping Game | How-to ready | Expandable lesson on studio page |
-| 2 | Catch Game | How-to ready | Expandable lesson on studio page |
-| 3 | Pong Game | How-to ready | Expandable lesson on studio page |
-| 4 | Clicker Game | How-to ready | Expandable lesson on studio page |
-| 5 | Miss Zhao Studio intro | How-to ready | Hiatus + Scratch orientation |
-| 6 | Scrolling Background | How-to ready | Expandable lesson on studio page |
-| 7 | Virtual Pet | How-to ready | Expandable lesson on studio page |
-| 8 | Story | How-to ready | Expandable lesson on studio page |
-| 9 | Character Designer | How-to ready | Expandable lesson on studio page |
+| # | Project | Status | Starter |
+|---|---------|--------|---------|
+| 1 | Jumping Game | How-to ready | `jumping-game.sb3` |
+| 2 | Catch Game | How-to ready | `catch-game.sb3` |
+| 3 | Pong Game | How-to ready | `pong-game.sb3` |
+| 4 | Clicker Game | How-to ready | `clicker-game.sb3` |
+| 5 | Miss Zhao Studio intro | How-to ready | text only |
+| 6 | Scrolling Background | How-to ready | `scrolling-background.sb3` |
+| 7 | Virtual Pet | How-to ready | `virtual-pet.sb3` |
+| 8 | Story | How-to ready | `story.sb3` |
+| 9 | Character Designer | How-to ready | `character-designer.sb3` |
+
+## Open a starter
+
+1. Download the `.sb3` from the studio page.
+2. [scratch.mit.edu](https://scratch.mit.edu/) → Create → **File → Load from your computer**.
+3. Green flag, then follow the how-to.
+
+Regenerate: `python3 scripts/generate-scratch-starters.py`  
+Upload notes: `site/scratch-projects/README.md`
 
 ## Teaching beat (KISS)
 

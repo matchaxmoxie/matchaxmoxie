@@ -6,7 +6,7 @@ IG: [@zhao.langxi](https://instagram.com/zhao.langxi) · live: [matchaxmoxie.git
 
 ## live
 
-- [Scratch studio](https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html)
+- [Scratch studio](https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html) · how-tos + downloadable starter `.sb3` files
 - [IU Informatics guide](https://matchaxmoxie.github.io/matchaxmoxie/informatics-class-of-2027.html)
 - [campus survival](https://matchaxmoxie.github.io/matchaxmoxie/campus-survival.html)
 - four-year path: [1](https://matchaxmoxie.github.io/matchaxmoxie/freshman.html) · [2](https://matchaxmoxie.github.io/matchaxmoxie/sophomore.html) · [3 · Madrid](https://matchaxmoxie.github.io/matchaxmoxie/junior.html) · [4](https://matchaxmoxie.github.io/matchaxmoxie/senior.html)

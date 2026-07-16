@@ -3835,6 +3835,93 @@ body.campus-survival-page {
   text-decoration: none;
 }
 
+/* Starter .sb3 download + load help */
+.scratch-studio-page .scratch-load-help {
+  margin: 0 0 22px;
+  padding: 1rem 1.1rem;
+  border: 3px solid var(--crayon-ink);
+  background: rgba(255, 248, 240, 0.95);
+  box-shadow: 3px 3px 0 var(--golden-hour);
+  color: var(--crayon-ink);
+}
+
+.scratch-studio-page .scratch-load-help h2 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1.15rem;
+  margin: 0 0 0.55rem;
+  color: var(--crayon-ink);
+}
+
+.scratch-studio-page .scratch-load-help ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--crayon-ink);
+}
+
+.scratch-studio-page .scratch-load-help li {
+  margin-bottom: 0.35rem;
+}
+
+.scratch-studio-page .scratch-load-help a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+}
+
+.scratch-studio-page .howto-actions {
+  margin: 0.45rem 0 0;
+}
+
+.scratch-studio-page .howto-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.45rem 0.85rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff8f0;
+  background: var(--dusk);
+  border: 3px solid var(--crayon-ink);
+  box-shadow: 2px 2px 0 var(--coral-ink);
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.scratch-studio-page .howto-download:hover,
+.scratch-studio-page .howto-download:focus-visible {
+  background: var(--coral-ink);
+  color: #fff8f0;
+  outline: 3px solid var(--golden-hour);
+  outline-offset: 2px;
+}
+
+.scratch-studio-page .howto-download-hint {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.82rem;
+  color: var(--crayon-ink);
+}
+
+.scratch-studio-page .howto-starter-note {
+  margin: 0 0 0.75rem;
+  padding: 0.55rem 0.65rem;
+  border-left: 4px solid var(--golden-hour);
+  background: rgba(242, 201, 107, 0.22);
+  color: var(--crayon-ink);
+}
+
+.scratch-studio-page .howto-starter-note a {
+  color: var(--crayon-ink);
+  font-weight: 700;
+  border-bottom-color: var(--dusk);
+}
+
 /* 锚点定位时高亮当前教程面板 */
 .scratch-studio-page .howto-card:target .howto-lesson,
 .scratch-studio-page .howto-lesson:target {
