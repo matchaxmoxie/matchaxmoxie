@@ -33,7 +33,7 @@ School IG: [@zhao.langxi](https://instagram.com/zhao.langxi)
 Regenerate: `python3 scripts/generate-scratch-starters.py`  
 Upload notes: `site/scratch-projects/README.md`
 
-## Teaching beat · KISS (keep it simple, stupid · we just mean keep it simple)
+## Teaching beat · KISS (keep it simple)
 
 1. Show the finished vibe (30 seconds).
 2. Build one mechanic.
