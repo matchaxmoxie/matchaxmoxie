@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
-  matchaxmoxie · Scratch studio
-  Miss Zhao · Girls Who Code teaching archive
-  Original how-to series inspired by Scratch tutorial FORMAT only.
-  Not affiliated with Scratch Team. Scratch is a trademark of its owners.
+  matchaxmoxie · Scratch 工作室
+  Miss Zhao · Girls Who Code 教学归档
+  原创教程；仅借鉴常见 Scratch how-to 视频的版式，不照搬官方内容。
+  与 Scratch Team 无隶属关系。Scratch 为其权利人商标。
 -->
 <html lang="en">
 <head>
@@ -38,6 +38,7 @@
   <p class="twin-note">
     <a href="index.html">classroom home</a>
     · <a href="https://jadexzhao.github.io/jadexzhao/">sunrise twin</a>
+    · <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
   </p>
 
   <header class="studio-hero">
@@ -511,6 +512,7 @@
 
 </main>
 <script>
+  // 点击缩略图锚点时，自动展开对应的 details 教程面板
   document.querySelectorAll('a[href^="#lesson-"]').forEach(function (link) {
     link.addEventListener("click", function () {
       var id = link.getAttribute("href").slice(1);

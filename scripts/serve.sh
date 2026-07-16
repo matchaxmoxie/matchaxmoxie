@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Serve site/ locally (same root as GitHub Pages).
-# Usage: ./scripts/serve.sh [port] [--open]
+# 本地预览 site/（与 GitHub Pages 根目录一致）
+# 用法: ./scripts/serve.sh [端口] [--open]
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -14,8 +14,8 @@ for arg in "$@"; do
   esac
 done
 
-# Local preview only: symlink content/ into site/ so ../content links resolve.
-# Gitignored so coordinator drafts are not deployed to GitHub Pages.
+# 仅本地预览：把 content/ 链到 site/，方便解析相对路径
+# 已在 .gitignore，不会部署到 GitHub Pages
 CONTENT_LINK="${ROOT}/site/content"
 if [[ ! -e "$CONTENT_LINK" ]]; then
   ln -s ../content "$CONTENT_LINK"
@@ -23,11 +23,12 @@ fi
 
 URL="http://127.0.0.1:${PORT}/"
 echo "Serving ${ROOT}/site at ${URL}"
-echo "  fase-map:  ${URL}fase-map.html"
-echo "  handoff:   ${URL}handoff-checklist.html"
+echo "  home:      ${URL}"
+echo "  guide:     ${URL}informatics-class-of-2027.html"
+echo "  scratch:   ${URL}scratch-studio.html"
 
 if [[ "$OPEN" -eq 1 ]]; then
-  open "${URL}fase-map.html"
+  open "${URL}"
 fi
 
 cd "${ROOT}/site"

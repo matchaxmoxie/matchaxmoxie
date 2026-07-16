@@ -25,7 +25,7 @@ Profile → **Customize your pins** → up to six public repos:
 
 | Priority | Repo | Why |
 | --- | --- | --- |
-| 1 | `matchaxmoxie/matchaxmoxie` | Profile + FASE MAP / brand Pages |
+| 1 | `matchaxmoxie/matchaxmoxie` | Profile + Miss Zhao / GWC classroom Pages |
 | 2 | `jadexzhao/jadexzhao` | Shipped portfolio (cross-account pin if you have access) |
 | 3 | `jadexzhao/pstickers24` | First production ship |
 
@@ -38,7 +38,7 @@ Informatics @ IU · I build tools people actually use · open to SWE/GTM roles
 **matchaxmoxie bio:**
 
 ```
-Same Jade · FASE MAP coordinator · portfolio @jadexzhao
+Same Jade · Miss Zhao · GWC archive · portfolio @jadexzhao
 ```
 
 **Website (jadexzhao):** `https://jadexzhao.github.io/jadexzhao/`  

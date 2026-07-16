@@ -1,32 +1,15 @@
-# Handoff playbook · transfer quality (2026–27)
+# docs · matchaxmoxie
 
-This folder is the open handoff layer for `@matchaxmoxie`: schemas you can copy into Canvas publish packs, ServeIT-style partner docs, and GTM demo packets.
+Site notes and publish helpers for the sunset classroom archive.
 
-## Why it exists
+Live story: [Miss Zhao · Girls Who Code](https://matchaxmoxie.github.io/matchaxmoxie/) · [Informatics Class of 2027 guide](https://matchaxmoxie.github.io/matchaxmoxie/informatics-class-of-2027.html) · [Scratch studio](https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html).
 
-Senior year is transfer year. The metric is not how much I built. It is whether the next coordinator, AE, or partner staff can run the system cold.
-
-If someone has to guess, the handoff is not clean yet. See the archived [program ops page](https://matchaxmoxie.github.io/matchaxmoxie/ops.html).
-
-## Contents
+## Related
 
 | File | Use |
 | --- | --- |
-| [`handoff-checklist-template.md`](handoff-checklist-template.md) | Fillable schema: automated status check, dependency graph, blast radius |
-| Live HTML twin | [`../site/handoff-checklist.html`](https://matchaxmoxie.github.io/matchaxmoxie/handoff-checklist.html) |
+| [`TRANSPARENCY.md`](TRANSPARENCY.md) | AI-assisted editing disclosure (accountability is human) |
+| [`SYNC-FROM-MIRROR.md`](SYNC-FROM-MIRROR.md) | Local mirror sync notes |
+| Publish path | [`../PUBLISH.md`](../PUBLISH.md) · GitHub Pages via `site/` |
 
-## Related surfaces
-
-- [program ops](https://matchaxmoxie.github.io/matchaxmoxie/ops.html) · archived coordination hub
-- [How I work](https://jadexzhao.github.io/jadexzhao/how-i-work.html) · briefcase governance memo
-- [Duck farm sandbox](https://jadexzhao.github.io/jadexzhao/duck-farm/) · interactive proof on `@jadexzhao`
-
-## Transfer-quality bar (2026–27)
-
-1. Name an owner.
-2. State the prerequisite chain.
-3. Define "done" before you mark live.
-4. Leave a path that does not require you on call.
-5. State blast radius in one sentence.
-
-Copy the template. Fill it. Ship only when all three sections are honest.
+Older program-ops checklists are retired. Engineering depth lives on the sunrise twin: [how I work](https://jadexzhao.github.io/jadexzhao/how-i-work.html).
