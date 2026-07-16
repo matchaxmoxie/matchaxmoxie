@@ -3409,3 +3409,202 @@ body.kiss-home {
 .kiss-home .site-nav {
   display: none;
 }
+
+/* Scratch studio · Miss Zhao how-to grid */
+.scratch-studio-page .studio-hero {
+  margin: 8px 0 28px;
+}
+
+.scratch-studio-page .studio-kicker {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dusk);
+  margin-bottom: 8px;
+}
+
+.scratch-studio-page .studio-hero h1 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.85rem, 5vw, 2.5rem);
+  color: var(--crayon-ink);
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+.scratch-studio-page .studio-lede {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.08rem;
+  color: var(--crayon-ink);
+  max-width: 44ch;
+  margin-bottom: 12px;
+  line-height: 1.55;
+}
+
+.scratch-studio-page .studio-note {
+  font-size: 0.85rem;
+  color: var(--crayon-muted);
+  max-width: 52ch;
+  line-height: 1.5;
+}
+
+.scratch-studio-page .studio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+  margin: 0 0 36px;
+}
+
+.scratch-studio-page .howto-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scratch-studio-page .howto-thumb {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 168px;
+  text-decoration: none;
+  color: var(--crayon-ink);
+  border: 4px solid var(--crayon-ink);
+  box-shadow: 4px 4px 0 var(--coral);
+  overflow: hidden;
+  position: relative;
+  background:
+    linear-gradient(180deg, #c8e4f8 0%, #eef6fc 38%, #fff8f0 100%);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.scratch-studio-page .howto-thumb:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--coral);
+}
+
+.scratch-studio-page .howto-thumb:focus-visible {
+  outline: 3px solid var(--golden-hour);
+  outline-offset: 3px;
+}
+
+.scratch-studio-page .howto-bar {
+  display: block;
+  padding: 7px 10px;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  background: #7eb8e0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.scratch-studio-page .howto-bar-bot {
+  background: #6aa9d4;
+  font-size: 0.78rem;
+}
+
+.scratch-studio-page .howto-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px 14px 4px;
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.15rem, 3.2vw, 1.45rem);
+  line-height: 1.15;
+  color: #1a1a1a;
+  position: relative;
+  z-index: 1;
+}
+
+.scratch-studio-page .howto-illus {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 2.4rem;
+  padding-bottom: 6px;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.scratch-studio-page .howto-thumb--jump {
+  background: linear-gradient(180deg, #b8dff5 0%, #d4f0c8 55%, #fff3c4 100%);
+}
+
+.scratch-studio-page .howto-thumb--catch {
+  background: linear-gradient(180deg, #c8e4f8 0%, #ffe8d6 55%, #ffd4c4 100%);
+}
+
+.scratch-studio-page .howto-thumb--pong {
+  background: linear-gradient(180deg, #c8e4f8 0%, #e8f5d4 55%, #d4f0c8 100%);
+}
+
+.scratch-studio-page .howto-thumb--click {
+  background: linear-gradient(180deg, #c8e4f8 0%, #ffe4ec 55%, #ffd4e0 100%);
+}
+
+.scratch-studio-page .howto-thumb--intro {
+  background: linear-gradient(180deg, #f4a261 0%, #e76f51 42%, #5c4b7a 100%);
+}
+
+.scratch-studio-page .howto-thumb--intro .howto-bar {
+  background: #3a3350;
+}
+
+.scratch-studio-page .howto-thumb--intro .howto-title {
+  color: #fff8f0;
+  text-shadow: 1px 1px 0 rgba(42, 31, 61, 0.35);
+}
+
+.scratch-studio-page .howto-thumb--scroll {
+  background: linear-gradient(180deg, #9ec9ef 0%, #c8e4f8 45%, #fff0e0 100%);
+}
+
+.scratch-studio-page .howto-thumb--pet {
+  background: linear-gradient(180deg, #c8e4f8 0%, #f5e6d3 55%, #e8d4b8 100%);
+}
+
+.scratch-studio-page .howto-thumb--story {
+  background: linear-gradient(180deg, #c8e4f8 0%, #e8dff5 55%, #f8e8f0 100%);
+}
+
+.scratch-studio-page .howto-thumb--char {
+  background: linear-gradient(180deg, #c8e4f8 0%, #fff0c8 55%, #ffd4a8 100%);
+}
+
+.scratch-studio-page .howto-meta h2 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--crayon-ink);
+  margin-bottom: 4px;
+}
+
+.scratch-studio-page .howto-meta p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.92rem;
+  color: var(--crayon-muted);
+  line-height: 1.45;
+  margin-bottom: 4px;
+}
+
+.scratch-studio-page .howto-status {
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 0.72rem !important;
+  font-weight: 700;
+  color: var(--dusk) !important;
+  letter-spacing: 0.02em;
+}
+
+.scratch-studio-page .howto-card--intro .howto-status {
+  color: var(--coral) !important;
+}
+
+@media (max-width: 520px) {
+  .scratch-studio-page .studio-grid {
+    grid-template-columns: 1fr;
+  }
+}
