@@ -6,7 +6,7 @@
 
 Local working copy: this folder (`Projects/matchaxmoxie/`).
 
-## Pages architecture (do not Gemini-paste)
+## Pages architecture (do not invent a Vite base)
 
 | Item | Reality |
 | --- | --- |

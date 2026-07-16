@@ -9,7 +9,6 @@ Live story: [Miss Zhao · Girls Who Code](https://matchaxmoxie.github.io/matchax
 | File | Use |
 | --- | --- |
 | [`TRANSPARENCY.md`](TRANSPARENCY.md) | AI-assisted editing disclosure (accountability is human) |
-| [`SYNC-FROM-MIRROR.md`](SYNC-FROM-MIRROR.md) | Local mirror sync notes |
 | Publish path | [`../PUBLISH.md`](../PUBLISH.md) · GitHub Pages via `site/` |
 
 Older program-ops checklists are retired. Engineering depth lives on jadexzhao (builder / sunrise): [how I work](https://jadexzhao.github.io/jadexzhao/how-i-work.html).
