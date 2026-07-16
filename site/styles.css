@@ -3947,6 +3947,189 @@ body.kiss-home {
   margin-top: 14px !important;
 }
 
+/* 校园生存 · Year '23 档案条幅 */
+.campus-survival-page .year23-banner {
+  margin: 0 0 22px;
+  padding: 14px 16px;
+  background: var(--chalk-dust);
+  border: 4px solid var(--crayon-ink);
+  box-shadow: 5px 5px 0 var(--golden-hour);
+}
+
+.campus-survival-page .year23-banner-kicker {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dusk);
+  margin-bottom: 8px;
+}
+
+.campus-survival-page .year23-banner p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.95rem;
+  color: var(--crayon-ink);
+  line-height: 1.5;
+  margin-bottom: 8px;
+  max-width: 54ch;
+}
+
+.campus-survival-page .year23-banner a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.campus-survival-page .year23-tag {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dusk);
+  margin: 0 0 10px;
+}
+
+.campus-survival-page .campus-subh {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--crayon-ink);
+  margin: 16px 0 8px;
+  line-height: 1.25;
+}
+
+.campus-survival-page .coord-checklist {
+  max-width: 54ch;
+  margin-bottom: 14px;
+}
+
+.campus-survival-page .coord-checklist label {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.98rem;
+  color: var(--crayon-ink);
+  line-height: 1.45;
+}
+
+.campus-survival-page .coord-checklist input[type="checkbox"] {
+  accent-color: var(--coral);
+}
+
+@media print {
+  .campus-survival-page .year23-banner,
+  .campus-survival-page .guide-toc,
+  .campus-survival-page .twin-note,
+  .campus-survival-page .quiet-links,
+  .campus-survival-page .footer-kiss {
+    display: none !important;
+  }
+}
+
+/* 校园生存页 · 小节标题 / Q&A / 打包勾选 */
+.guide-page .guide-subhead {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--crayon-ink);
+  margin: 18px 0 8px;
+  line-height: 1.25;
+}
+
+.guide-page .guide-print-hint {
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 0.85rem !important;
+  font-weight: 700;
+  color: var(--dusk) !important;
+}
+
+.guide-page .guide-qna {
+  margin: 12px 0 4px;
+  max-width: 54ch;
+}
+
+.guide-page .guide-qna dt {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1rem;
+  color: var(--crayon-ink);
+  margin: 14px 0 6px;
+}
+
+.guide-page .guide-qna dd {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.98rem;
+  color: var(--crayon-ink);
+  line-height: 1.5;
+  margin: 0 0 4px;
+}
+
+.guide-page .guide-qna a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.guide-page .guide-pack {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 16px;
+  max-width: 54ch;
+}
+
+.guide-page .guide-pack li {
+  margin-bottom: 6px;
+}
+
+.guide-page .guide-pack label {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.98rem;
+  color: var(--crayon-ink);
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.guide-page .guide-pack input[type="checkbox"] {
+  margin-top: 0.25rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  accent-color: var(--coral);
+}
+
+.guide-page .guide-pack-btn {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.45rem 0.9rem;
+  border: 3px solid var(--crayon-ink);
+  background: var(--chalk-dust);
+  color: var(--crayon-ink);
+  box-shadow: 3px 3px 0 var(--lavender);
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.guide-page .guide-pack-btn:hover {
+  color: var(--coral);
+}
+
+@media print {
+  .guide-page .guide-toc,
+  .guide-page .twin-note,
+  .guide-page .quiet-links,
+  .guide-page .footer-kiss,
+  .guide-page .guide-pack-btn,
+  .guide-page .guide-photo-strip {
+    display: none !important;
+  }
+
+  .guide-page .guide-pack label {
+    break-inside: avoid;
+  }
+}
+
 .photo-frame {
   margin: 0 0 28px;
   border: 4px solid var(--crayon-ink);
@@ -4004,4 +4187,84 @@ body.kiss-home {
   .photo-frame--home {
     max-width: 100%;
   }
+}
+
+/* Year '23 档案条 · 校园 tip sheets 日期防火 */
+.year23-banner {
+  margin: 0 0 22px;
+  padding: 16px 18px;
+  background: var(--chalk-dust);
+  border: 4px solid var(--crayon-ink);
+  box-shadow: 5px 5px 0 var(--golden-hour);
+}
+
+.year23-banner-kicker {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dusk);
+  margin-bottom: 8px;
+}
+
+.year23-banner p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.95rem;
+  color: var(--crayon-ink);
+  line-height: 1.5;
+  margin-bottom: 8px;
+  max-width: 58ch;
+}
+
+.year23-banner p:last-child {
+  margin-bottom: 0;
+}
+
+.year23-banner a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.year23-banner a:hover {
+  color: var(--coral);
+}
+
+.year23-tag {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dusk);
+  background: rgba(244, 162, 97, 0.28);
+  border: 2px solid var(--crayon-ink);
+  padding: 4px 8px;
+  margin: 0 0 12px;
+}
+
+.campus-survival-page .campus-subh {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--crayon-ink);
+  margin: 18px 0 8px;
+}
+
+.campus-survival-page .coord-checklist {
+  margin: 0 0 14px;
+  max-width: 56ch;
+}
+
+.campus-survival-page .coord-checklist label {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  color: var(--crayon-ink);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.guide-page .year23-tag {
+  margin-top: 0;
 }

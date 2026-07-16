@@ -4,6 +4,8 @@
 
 **Jade Zhao** at **Indiana University Luddy** (Informatics, Class of 2027). Miss Zhao is on hiatus for senior year. The Girls Who Code Indianapolis teaching archive stays.
 
+matchaxmoxie was the brand / ops / classroom twin handle. people may not know it because school IG moved to [@zhao.langxi](https://instagram.com/zhao.langxi) (real name · no more secret account). not mysterious. just renamed into the open as Jade Zhao / 赵朗曦. this repo stays the sunset archive.
+
 [email](mailto:jlzhao@iu.edu) · [live site](https://matchaxmoxie.github.io/matchaxmoxie/) · [sunrise twin](https://jadexzhao.github.io/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie) · school IG [@zhao.langxi](https://instagram.com/zhao.langxi)
 
 ## what this holds
@@ -12,7 +14,9 @@
 
 **Scratch studio** · [how-to archive](https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html) (Miss Zhao craft, paused not erased).
 
-**Informatics Class of 2027** · [guide for HS seniors and early starters](https://matchaxmoxie.github.io/matchaxmoxie/informatics-class-of-2027.html). Inspired by / with thanks to [u/JohnCusackBlankStare on r/IndianaUniversity: Let's break down the classes in Informatics](https://www.reddit.com/r/IndianaUniversity/comments/77lx5w/lets_break_down_the_classes_in_informatics/). Community knowledge Jade is building on, not a reprint. Campus survival notes include FA26–FA27 official calendar pointers.
+**Informatics Class of 2027** · [guide for HS seniors and early starters](https://matchaxmoxie.github.io/matchaxmoxie/informatics-class-of-2027.html). Inspired by / with thanks to [u/JohnCusackBlankStare on r/IndianaUniversity: Let's break down the classes in Informatics](https://www.reddit.com/r/IndianaUniversity/comments/77lx5w/lets_break_down_the_classes_in_informatics/). Community knowledge Jade is building on, not a reprint.
+
+**Campus survival** · [first-party Bloomington notes](https://matchaxmoxie.github.io/matchaxmoxie/campus-survival.html) (Year '23 tip archive: visitors, dorms, packing checklist, welcome week, coffee, Q&A). Current FA26 to FA27 dates via official Registrar. No Google Docs / Issuu.
 
 **Archive** · [archive note](https://matchaxmoxie.github.io/matchaxmoxie/archive.html). Year redirects stay as quiet pointers. Older ops pages are closed.
 
