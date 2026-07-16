@@ -54,6 +54,7 @@
   --link: var(--dusk);
   --link-hover: var(--coral-ink);
   --focus: var(--dusk);
+  --focus-ring: var(--dusk); /* 奶油底焦点环 · 见 a11y.css */
   --border: var(--paper-shadow);
   --shadow: rgba(26, 26, 26, 0.14);
 
@@ -134,13 +135,7 @@ svg {
   height: auto;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
+/* prefers-reduced-motion · 权威规则在 a11y.css */
 
 body {
   margin: 0;
@@ -421,36 +416,7 @@ body {
   margin: var(--space-sm) 0 var(--space-md);
 }
 
-/* 跳过链接 */
-.skip-link {
-  position: absolute;
-  top: -100%;
-  left: 1rem;
-  background: var(--crayon-ink);
-  color: var(--chalk-dust);
-  padding: 0.65rem 1.1rem;
-  border-radius: 0 0 4px 4px;
-  font-size: var(--text-sm);
-  font-weight: 700;
-  z-index: 200;
-  transition: top var(--transition-base);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.skip-link:focus,
-.skip-link:focus-visible {
-  top: 0;
-  outline: 3px solid var(--golden-hour);
-  outline-offset: 2px;
-}
-
-/* 焦点环（深 dusk 在奶油底上硬可见） */
-:focus-visible {
-  outline: 4px solid var(--focus);
-  outline-offset: 3px;
-  border-radius: 2px;
-}
+/* skip-link / :focus-visible · 权威规则在 a11y.css（WCAG 2.2 AA） */
 
 /* 布局 */
 .container {
@@ -1456,17 +1422,7 @@ body {
   width: 36%;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
+/* .visually-hidden · 见 a11y.css */
 
 .handoff-pillars {
   list-style: none;
@@ -2826,7 +2782,7 @@ body.kindergarten-home {
 }
 
 .kiss-home .door:focus-visible {
-  outline: 3px solid var(--golden-hour);
+  outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 3px;
 }
 
@@ -3142,7 +3098,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .project-card:focus-visible {
-  outline: 3px solid var(--golden-hour);
+  outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 3px;
 }
 
@@ -3654,7 +3610,7 @@ body.campus-survival-page {
 }
 
 .scratch-studio-page .howto-thumb:focus-visible {
-  outline: 3px solid var(--golden-hour);
+  outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 3px;
 }
 
@@ -3843,7 +3799,7 @@ body.campus-survival-page {
 }
 
 .scratch-studio-page .howto-lesson:focus-within {
-  outline: 3px solid var(--golden-hour);
+  outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 2px;
 }
 
@@ -3956,7 +3912,7 @@ body.campus-survival-page {
 .scratch-studio-page .howto-download:focus-visible {
   background: var(--coral-ink);
   color: #fff8f0;
-  outline: 3px solid var(--golden-hour);
+  outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 2px;
 }
 
@@ -4344,7 +4300,7 @@ body.campus-survival-page {
 }
 
 .campus-survival-page .coord-checklist input[type="checkbox"] {
-  accent-color: var(--coral);
+  accent-color: var(--coral-ink);
 }
 
 @media print {
@@ -4721,7 +4677,7 @@ body.campus-survival-page {
 }
 
 .advice-funnel a:focus-visible {
-  outline: 3px solid var(--golden-hour);
+  outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 2px;
 }
 
@@ -4751,7 +4707,7 @@ body.campus-survival-page {
   min-height: 44px;
   padding: 6px 2px;
   color: var(--crayon-ink);
-  border-bottom: 3px solid var(--golden-hour);
+  border-bottom: 3px solid var(--dusk);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
@@ -4761,6 +4717,12 @@ body.campus-survival-page {
 .journey-year-nav a:hover,
 .journey-year-nav a[aria-current="page"] {
   color: var(--coral-ink);
+  border-bottom-color: var(--coral-ink);
+}
+
+.journey-year-nav a:focus-visible {
+  outline: 3px solid var(--focus-ring, var(--dusk));
+  outline-offset: 3px;
 }
 
 .journey-courses {
@@ -4878,7 +4840,7 @@ body.campus-survival-page {
 }
 
 .miss-zhao-tip a:focus-visible {
-  outline: 3px solid var(--golden-hour);
+  outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 3px;
 }
 
@@ -5146,7 +5108,7 @@ body {
 }
 
 .foot-copy a:focus-visible {
-  outline: 3px solid var(--golden-hour);
+  outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 2px;
 }
 
