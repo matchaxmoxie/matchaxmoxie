@@ -32,4 +32,4 @@ School IG: [@zhao.langxi](https://instagram.com/zhao.langxi)
 
 ## Brand
 
-Miss Zhao · on hiatus · Girls Who Code roots · sunset classroom archive · work/school/job appropriate.
+Jade Zhao · Miss Zhao on hiatus · IU Luddy Class of 2027 · Girls Who Code Indianapolis · sunset classroom · work/school/job appropriate.
