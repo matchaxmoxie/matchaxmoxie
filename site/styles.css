@@ -5188,6 +5188,8 @@ body {
   .foot-stop:nth-child(7) { animation-delay: 0.26s; }
   .foot-stop:nth-child(8) { animation-delay: 0.30s; }
   .foot-stop:nth-child(9) { animation-delay: 0.34s; }
+  .foot-stop:nth-child(10) { animation-delay: 0.38s; }
+  .foot-stop:nth-child(11) { animation-delay: 0.42s; }
 }
 
 @keyframes foot-fade {
