@@ -3608,3 +3608,151 @@ body.kiss-home {
     grid-template-columns: 1fr;
   }
 }
+
+/* Informatics Class of 2027 guide */
+.guide-page .guide-hero {
+  margin: 8px 0 22px;
+}
+
+.guide-page .guide-hero h1 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.45rem, 4.2vw, 2.05rem);
+  color: var(--crayon-ink);
+  line-height: 1.2;
+  margin-bottom: 12px;
+  max-width: 28ch;
+}
+
+.guide-attr {
+  margin: 0 0 28px;
+  padding: 16px 18px;
+  background: var(--chalk-dust);
+  border: 4px solid var(--crayon-ink);
+  box-shadow: 5px 5px 0 var(--lavender);
+}
+
+.guide-attr-label {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dusk);
+  margin-bottom: 8px;
+}
+
+.guide-attr p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.98rem;
+  color: var(--crayon-ink);
+  line-height: 1.55;
+  margin-bottom: 8px;
+  max-width: 54ch;
+}
+
+.guide-attr a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+}
+
+.guide-attr a:hover {
+  color: var(--coral);
+}
+
+.guide-attr-note {
+  font-size: 0.88rem !important;
+  color: var(--crayon-muted) !important;
+}
+
+.guide-list {
+  margin: 10px 0 4px;
+  padding-left: 1.2rem;
+  max-width: 52ch;
+}
+
+.guide-list li {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.98rem;
+  color: var(--crayon-ink);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.guide-list code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.88em;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 0.05em 0.3em;
+  border: 1px solid var(--paper-shadow);
+}
+
+.guide-photo {
+  margin: 0 0 28px;
+  border: 4px solid var(--crayon-ink);
+  box-shadow: 5px 5px 0 var(--coral);
+  background: var(--chalk-dust);
+  overflow: hidden;
+}
+
+.guide-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: saturate(0.92) contrast(1.02);
+}
+
+.guide-photo figcaption {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--crayon-muted);
+  padding: 10px 12px 12px;
+  border-top: 3px solid var(--crayon-ink);
+  background: var(--paper-cream);
+}
+
+.guide-photo--home {
+  margin-top: 8px;
+}
+
+.kiss-home .gwc-block .guide-list {
+  margin-top: 12px;
+}
+
+.guide-list--links {
+  max-width: 58ch;
+}
+
+.guide-list--links a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.guide-list--links a:hover {
+  color: var(--coral);
+}
+
+.guide-photo-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 28px;
+}
+
+.guide-photo--thumb {
+  margin: 0;
+  box-shadow: 4px 4px 0 var(--lavender);
+}
+
+.guide-photo--thumb figcaption {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .guide-photo-strip {
+    grid-template-columns: 1fr;
+  }
+}

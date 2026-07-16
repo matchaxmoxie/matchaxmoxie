@@ -1,5 +1,7 @@
 # Scratch studio series · Miss Zhao
 
+Miss Zhao is on hiatus for senior year at IU. This series stays as teaching-craft archive.
+
 Public-safe curriculum map for https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html
 
 Original teaching content. Format inspired by popular Scratch how-to videos.
@@ -26,4 +28,4 @@ Not affiliated with Scratch Team. Replace draft URLs when projects go live on sc
 
 ## Brand
 
-Miss Zhao · Girls Who Code roots · sunset classroom archive · work/school/job appropriate.
+Miss Zhao · on hiatus · Girls Who Code roots · sunset classroom archive · work/school/job appropriate.
