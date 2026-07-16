@@ -2,22 +2,25 @@
 
 Miss Zhao is on hiatus for senior year at IU. This series stays as teaching-craft archive.
 
-Public-safe curriculum map for https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html
+Public page: https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html
 
 Original teaching content. Format inspired by popular Scratch how-to videos.
-Not affiliated with Scratch Team. Replace draft URLs when projects go live on scratch.mit.edu.
+Not affiliated with Scratch Team. How-tos are complete step-by-step rebuilds
+(no remixed Scratch project required). Optional live project URLs can be added later.
 
-| # | Project | Status | Scratch URL |
-|---|---------|--------|-------------|
-| 1 | Jumping Game | Draft | TBD |
-| 2 | Catch Game | Draft | TBD |
-| 3 | Pong Game | Draft | TBD |
-| 4 | Clicker Game | Draft | TBD |
-| 5 | Miss Zhao Studio intro | Live on classroom home | `index.html` |
-| 6 | Scrolling Background | Draft | TBD |
-| 7 | Virtual Pet | Draft | TBD |
-| 8 | Story | Draft | TBD |
-| 9 | Character Designer | Draft | TBD |
+School IG: [@zhao.langxi](https://instagram.com/zhao.langxi)
+
+| # | Project | Status | Notes |
+|---|---------|--------|-------|
+| 1 | Jumping Game | How-to ready | Expandable lesson on studio page |
+| 2 | Catch Game | How-to ready | Expandable lesson on studio page |
+| 3 | Pong Game | How-to ready | Expandable lesson on studio page |
+| 4 | Clicker Game | How-to ready | Expandable lesson on studio page |
+| 5 | Miss Zhao Studio intro | How-to ready | Hiatus + Scratch orientation |
+| 6 | Scrolling Background | How-to ready | Expandable lesson on studio page |
+| 7 | Virtual Pet | How-to ready | Expandable lesson on studio page |
+| 8 | Story | How-to ready | Expandable lesson on studio page |
+| 9 | Character Designer | How-to ready | Expandable lesson on studio page |
 
 ## Teaching beat (KISS)
 

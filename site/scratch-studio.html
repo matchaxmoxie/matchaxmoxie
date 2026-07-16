@@ -9,7 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Miss Zhao Scratch studio · on hiatus archive · how-to project series for beginners · Girls Who Code · matchaxmoxie">
+<meta name="description" content="Miss Zhao Scratch studio · on hiatus archive · beginner how-to guides you can rebuild · Girls Who Code · matchaxmoxie">
 <title>Scratch studio · Miss Zhao · matchaxmoxie</title>
 <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html">
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="matchaxmoxie">
 <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html">
 <meta property="og:title" content="Scratch studio · Miss Zhao · matchaxmoxie">
-<meta property="og:description" content="Miss Zhao on hiatus. Scratch how-tos stay as GWC-rooted teaching craft.">
+<meta property="og:description" content="Miss Zhao on hiatus. Scratch how-tos stay as GWC-rooted teaching craft you can rebuild from steps.">
 <meta property="og:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/og-hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,14 +50,27 @@
     <p class="studio-note">
       Original Miss Zhao teaching content. Format inspired by popular Scratch how-to
       videos. Not affiliated with Scratch Team. Platform name used as the tool we teach in.
-      Project links below are drafts until live Scratch projects are published.
+      No remixed starter project required: open each how-to and rebuild from the steps.
+      School IG: <a href="https://instagram.com/zhao.langxi">@zhao.langxi</a>.
     </p>
   </header>
 
+  <nav class="studio-toc" aria-label="how-to projects">
+    <a href="#jumping">Jumping</a>
+    <a href="#catch">Catch</a>
+    <a href="#pong">Pong</a>
+    <a href="#clicker">Clicker</a>
+    <a href="#intro">Studio intro</a>
+    <a href="#scroll">Scrolling</a>
+    <a href="#pet">Virtual Pet</a>
+    <a href="#story">Story</a>
+    <a href="#character">Character</a>
+  </nav>
+
   <section class="studio-grid" aria-label="Scratch how-to projects">
 
-    <article class="howto-card" data-project="jumping">
-      <a class="howto-thumb howto-thumb--jump" href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">
+    <article class="howto-card" id="jumping" data-project="jumping">
+      <a class="howto-thumb howto-thumb--jump" href="#lesson-jumping">
         <span class="howto-bar howto-bar-top">How to make a</span>
         <span class="howto-title">Jumping Game</span>
         <span class="howto-illus" aria-hidden="true">🐤</span>
@@ -66,12 +79,43 @@
       <div class="howto-meta">
         <h2>Jumping Game</h2>
         <p>Space to jump. Land on platforms. Learn motion, gravity, and when to listen for a key.</p>
-        <p class="howto-status">Draft · Scratch project URL TBD</p>
+        <p class="howto-status">How-to ready · rebuild from steps</p>
       </div>
+      <details class="howto-lesson" id="lesson-jumping">
+        <summary>Open the how-to</summary>
+        <div class="howto-body">
+          <p class="howto-you-make"><strong>You will make:</strong> a character that jumps with the space bar, falls with gravity, and lands on a platform.</p>
+          <h3>Set the stage</h3>
+          <ol>
+            <li>Open a new Scratch project. Delete the default cat if you want a fresh start.</li>
+            <li>Paint or pick one player sprite (a duck, a kid, a blob: anything with feet).</li>
+            <li>Paint a simple platform costume on a second sprite, or draw a ground strip on the backdrop.</li>
+          </ol>
+          <h3>Blocks Miss Zhao cares about</h3>
+          <ul>
+            <li><strong>when green flag clicked</strong> · start clean every play</li>
+            <li><strong>forever</strong> · keep checking keys and gravity</li>
+            <li><strong>if key space pressed?</strong> · jump once, not forever fly</li>
+            <li><strong>change y by</strong> · up for jump, down for fall</li>
+            <li><strong>if touching platform / color</strong> · stop falling when you land</li>
+          </ul>
+          <h3>Build it (KISS)</h3>
+          <ol>
+            <li>On the player: green flag → go to a start x/y near the left → set a variable <code>y speed</code> to 0.</li>
+            <li>Forever: if space pressed and you are on the ground, set <code>y speed</code> to a positive number (try 12).</li>
+            <li>Still in forever: change y by <code>y speed</code>, then change <code>y speed</code> by a small negative number (try −1) so gravity pulls down.</li>
+            <li>If touching the platform (or ground color), set y to sit on top and set <code>y speed</code> to 0.</li>
+            <li>Optional: left/right with arrow keys using <strong>change x by</strong>.</li>
+          </ol>
+          <h3>Classroom check</h3>
+          <p>Can you jump, land, and not sink through the floor? Good. Now remix costumes or add a second platform.</p>
+          <p class="howto-next"><strong>What would you add next?</strong> A score for landing, a moving platform, or a soft “oops” sound when you miss.</p>
+        </div>
+      </details>
     </article>
 
-    <article class="howto-card" data-project="catch">
-      <a class="howto-thumb howto-thumb--catch" href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">
+    <article class="howto-card" id="catch" data-project="catch">
+      <a class="howto-thumb howto-thumb--catch" href="#lesson-catch">
         <span class="howto-bar howto-bar-top">How to make a</span>
         <span class="howto-title">Catch Game</span>
         <span class="howto-illus" aria-hidden="true">🍎</span>
@@ -79,13 +123,44 @@
       </a>
       <div class="howto-meta">
         <h2>Catch Game</h2>
-        <p>Things fall. You move. Score goes up. Practice forever loops and touching color.</p>
-        <p class="howto-status">Draft · Scratch project URL TBD</p>
+        <p>Things fall. You move. Score goes up. Practice forever loops and touching.</p>
+        <p class="howto-status">How-to ready · rebuild from steps</p>
       </div>
+      <details class="howto-lesson" id="lesson-catch">
+        <summary>Open the how-to</summary>
+        <div class="howto-body">
+          <p class="howto-you-make"><strong>You will make:</strong> a basket (or hand) that slides left and right while fruit falls. Catch = points.</p>
+          <h3>Set the stage</h3>
+          <ol>
+            <li>One catcher sprite at the bottom.</li>
+            <li>One falling item sprite (apple, star, duck snack).</li>
+            <li>Create a variable: <code>score</code>.</li>
+          </ol>
+          <h3>Blocks Miss Zhao cares about</h3>
+          <ul>
+            <li><strong>when green flag clicked</strong></li>
+            <li><strong>forever</strong> + <strong>point towards mouse</strong> or arrow keys for the catcher</li>
+            <li><strong>go to random position</strong> then set y high for the falling item</li>
+            <li><strong>change y by −…</strong> inside forever to fall</li>
+            <li><strong>if touching catcher</strong> → change score by 1, then reset the item above the stage</li>
+          </ul>
+          <h3>Build it (KISS)</h3>
+          <ol>
+            <li>Catcher: green flag → forever → move with left/right keys (change x by 8 / −8).</li>
+            <li>Item: green flag → set score to 0 → go to a random x at the top.</li>
+            <li>Item forever: change y by −6. If y is too low (missed), reset to top with a new random x.</li>
+            <li>If touching catcher: change score by 1, play a short sound, reset to top.</li>
+            <li>Show score with <strong>say</strong> or a variable monitor on the stage.</li>
+          </ol>
+          <h3>Classroom check</h3>
+          <p>Does the score only go up when you actually touch? Misses should reset without points.</p>
+          <p class="howto-next"><strong>What would you add next?</strong> A “bad” item that subtracts points, or speed that rises every 10 catches.</p>
+        </div>
+      </details>
     </article>
 
-    <article class="howto-card" data-project="pong">
-      <a class="howto-thumb howto-thumb--pong" href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">
+    <article class="howto-card" id="pong" data-project="pong">
+      <a class="howto-thumb howto-thumb--pong" href="#lesson-pong">
         <span class="howto-bar howto-bar-top">How to make a</span>
         <span class="howto-title">Pong Game</span>
         <span class="howto-illus" aria-hidden="true">🏓</span>
@@ -93,13 +168,44 @@
       </a>
       <div class="howto-meta">
         <h2>Pong Game</h2>
-        <p>Paddle, ball, bounce. Classic two-player energy with variables and bounce if on edge.</p>
-        <p class="howto-status">Draft · Scratch project URL TBD</p>
+        <p>Paddle, ball, bounce. Classic energy with variables and bounce if on edge.</p>
+        <p class="howto-status">How-to ready · rebuild from steps</p>
       </div>
+      <details class="howto-lesson" id="lesson-pong">
+        <summary>Open the how-to</summary>
+        <div class="howto-body">
+          <p class="howto-you-make"><strong>You will make:</strong> a paddle you control and a ball that bounces until it slips past you.</p>
+          <h3>Set the stage</h3>
+          <ol>
+            <li>Paddle sprite: a wide flat costume near the bottom.</li>
+            <li>Ball sprite: a small circle.</li>
+            <li>Optional: variable <code>lives</code> starting at 3.</li>
+          </ol>
+          <h3>Blocks Miss Zhao cares about</h3>
+          <ul>
+            <li><strong>go to x: … y: …</strong> to set start positions</li>
+            <li><strong>point in direction</strong> (try 45) then <strong>move … steps</strong> forever</li>
+            <li><strong>if on edge, bounce</strong></li>
+            <li><strong>if touching paddle</strong> → turn a little or bounce upward</li>
+            <li>Paddle: follow mouse x, or arrow keys, keep y fixed</li>
+          </ul>
+          <h3>Build it (KISS)</h3>
+          <ol>
+            <li>Paddle: green flag → forever → set x to mouse x (or keys). Keep y at the bottom.</li>
+            <li>Ball: green flag → go to center → point in direction 45.</li>
+            <li>Ball forever: move 8 steps → if on edge, bounce.</li>
+            <li>If touching paddle: point in a new upward-ish direction (or turn 180 with a small random twist).</li>
+            <li>If the ball’s y goes below the paddle: change lives by −1, reset ball to center. At 0, stop and say “nice try.”</li>
+          </ol>
+          <h3>Classroom check</h3>
+          <p>Ball should leave the paddle and keep moving. Edges bounce. Floor miss costs a life.</p>
+          <p class="howto-next"><strong>What would you add next?</strong> A second paddle for a friend, or bricks above that disappear when hit.</p>
+        </div>
+      </details>
     </article>
 
-    <article class="howto-card" data-project="clicker">
-      <a class="howto-thumb howto-thumb--click" href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">
+    <article class="howto-card" id="clicker" data-project="clicker">
+      <a class="howto-thumb howto-thumb--click" href="#lesson-clicker">
         <span class="howto-bar howto-bar-top">How to make a</span>
         <span class="howto-title">Clicker Game</span>
         <span class="howto-illus" aria-hidden="true">👆</span>
@@ -107,13 +213,42 @@
       </a>
       <div class="howto-meta">
         <h2>Clicker Game</h2>
-        <p>Click for points. Buy upgrades. Show how variables and costumes sell a tiny game loop.</p>
-        <p class="howto-status">Draft · Scratch project URL TBD</p>
+        <p>Click for points. Buy upgrades. Variables and costumes sell a tiny game loop.</p>
+        <p class="howto-status">How-to ready · rebuild from steps</p>
       </div>
+      <details class="howto-lesson" id="lesson-clicker">
+        <summary>Open the how-to</summary>
+        <div class="howto-body">
+          <p class="howto-you-make"><strong>You will make:</strong> a sprite you click for points, plus one upgrade button that makes each click worth more.</p>
+          <h3>Set the stage</h3>
+          <ol>
+            <li>Main clickable sprite (cookie, duck, star: your call).</li>
+            <li>Upgrade button sprite with a clear label costume.</li>
+            <li>Variables: <code>points</code>, <code>click power</code> (start at 1), <code>upgrade cost</code> (start at 10).</li>
+          </ol>
+          <h3>Blocks Miss Zhao cares about</h3>
+          <ul>
+            <li><strong>when this sprite clicked</strong></li>
+            <li><strong>change points by click power</strong></li>
+            <li><strong>next costume</strong> or a quick size pulse for feedback</li>
+            <li>Upgrade: if points ≥ cost → subtract cost → change click power by 1 → raise the cost</li>
+          </ul>
+          <h3>Build it (KISS)</h3>
+          <ol>
+            <li>Green flag on stage or any sprite: set points to 0, click power to 1, upgrade cost to 10.</li>
+            <li>Main sprite: when clicked → change points by click power → play a pop → briefly change size by 10 then back.</li>
+            <li>Upgrade sprite: when clicked → if points ≥ upgrade cost → change points by (0 − cost) → change click power by 1 → change upgrade cost by 10.</li>
+            <li>Optional: forever on the upgrade sprite → say join of “Upgrade: ” and upgrade cost.</li>
+          </ol>
+          <h3>Classroom check</h3>
+          <p>First clicks should feel juicy. Buying an upgrade should make the next clicks grow faster.</p>
+          <p class="howto-next"><strong>What would you add next?</strong> Auto-click every second, or a second upgrade that changes costume “tiers.”</p>
+        </div>
+      </details>
     </article>
 
-    <article class="howto-card howto-card--intro" data-project="intro">
-      <a class="howto-thumb howto-thumb--intro" href="index.html">
+    <article class="howto-card howto-card--intro" id="intro" data-project="intro">
+      <a class="howto-thumb howto-thumb--intro" href="#lesson-intro">
         <span class="howto-bar howto-bar-top">Welcome to</span>
         <span class="howto-title">Miss Zhao Studio</span>
         <span class="howto-illus" aria-hidden="true">🌅</span>
@@ -121,13 +256,49 @@
       </a>
       <div class="howto-meta">
         <h2>Studio intro</h2>
-        <p>Start here. Who Miss Zhao is, how this classroom archive works, and how to open Scratch without fear.</p>
-        <p class="howto-status">Live on classroom home · replaces promo slot</p>
+        <p>Start here. Who Miss Zhao is, how this archive works, and how to open Scratch without fear.</p>
+        <p class="howto-status">Archive intro · open the how-to</p>
       </div>
+      <details class="howto-lesson" id="lesson-intro">
+        <summary>Open the how-to</summary>
+        <div class="howto-body">
+          <p class="howto-you-make"><strong>You will learn:</strong> the classroom vibe, where to click in Scratch, and how Miss Zhao runs a lesson.</p>
+          <h3>Who is Miss Zhao?</h3>
+          <p>
+            Miss Zhao is the teaching name from Girls Who Code roots: Web Designer &amp; Instructor in Indianapolis,
+            Jan 2018 to Aug 2023. Engineering is for everyone. That line still holds.
+          </p>
+          <p>
+            Right now Miss Zhao is on hiatus for senior year at IU (Informatics, Class of 2027).
+            The name stays. These how-tos stay as archive teaching craft. A pause, not a goodbye.
+          </p>
+          <h3>Open Scratch without fear</h3>
+          <ol>
+            <li>Go to <a href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">scratch.mit.edu</a> → Create.</li>
+            <li>Left: stage and sprites. Middle: scripts. Right: blocks by color family.</li>
+            <li>Drag blocks. Snap them. Green flag runs. Red stop ends.</li>
+            <li>You cannot break the computer. Worst case: duplicate the sprite and try again.</li>
+          </ol>
+          <h3>How Miss Zhao teaches (every project)</h3>
+          <ol>
+            <li>Show the finished vibe for about 30 seconds.</li>
+            <li>Build one mechanic together.</li>
+            <li>Let learners remix costumes or scores.</li>
+            <li>End with “what would you add next?”</li>
+          </ol>
+          <h3>Where else to go</h3>
+          <ul>
+            <li><a href="index.html">Classroom home</a> · hiatus note and GWC chapter</li>
+            <li><a href="informatics-class-of-2027.html">IU Class of 2027 guide</a> · for early starters</li>
+            <li>School Instagram: <a href="https://instagram.com/zhao.langxi">@zhao.langxi</a> (not a GitHub handle)</li>
+          </ul>
+          <p class="howto-next"><strong>Next:</strong> pick Jumping or Catch. Ship something that moves before you decorate forever.</p>
+        </div>
+      </details>
     </article>
 
-    <article class="howto-card" data-project="scroll">
-      <a class="howto-thumb howto-thumb--scroll" href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">
+    <article class="howto-card" id="scroll" data-project="scroll">
+      <a class="howto-thumb howto-thumb--scroll" href="#lesson-scroll">
         <span class="howto-bar howto-bar-top">How to make a</span>
         <span class="howto-title">Scrolling Background</span>
         <span class="howto-illus" aria-hidden="true">🌄</span>
@@ -135,13 +306,43 @@
       </a>
       <div class="howto-meta">
         <h2>Scrolling Background</h2>
-        <p>Make the world move under your sprite. Clone backdrops and keep the camera feeling alive.</p>
-        <p class="howto-status">Draft · Scratch project URL TBD</p>
+        <p>Make the world move under your sprite. Keep the camera feeling alive.</p>
+        <p class="howto-status">How-to ready · rebuild from steps</p>
       </div>
+      <details class="howto-lesson" id="lesson-scroll">
+        <summary>Open the how-to</summary>
+        <div class="howto-body">
+          <p class="howto-you-make"><strong>You will make:</strong> a runner-style scene where the ground (or sky strip) slides forever while your hero stays center-ish.</p>
+          <h3>Set the stage</h3>
+          <ol>
+            <li>Hero sprite near the middle.</li>
+            <li>Ground sprite: a wide costume. Duplicate it so you have two ground pieces side by side.</li>
+            <li>Optional: a second layer (clouds) that moves slower for depth.</li>
+          </ol>
+          <h3>Blocks Miss Zhao cares about</h3>
+          <ul>
+            <li><strong>forever</strong> → <strong>change x by −…</strong> on ground pieces</li>
+            <li>When a ground piece’s x is too far left, jump it to the right of its partner</li>
+            <li>Hero: costumes for a simple run cycle with <strong>next costume</strong> every few beats</li>
+            <li>Optional: scroll only while right arrow is pressed</li>
+          </ul>
+          <h3>Build it (KISS)</h3>
+          <ol>
+            <li>Place ground A at x = 0, ground B at x = width of costume (often around 480).</li>
+            <li>Both grounds: forever → change x by −4.</li>
+            <li>If a ground’s x &lt; −480 (or past the left edge), set x to the other ground’s x + 480.</li>
+            <li>Hero: forever → next costume → wait 0.1 seconds (run animation).</li>
+            <li>Optional jump: reuse the Jumping Game gravity idea on the hero only.</li>
+          </ol>
+          <h3>Classroom check</h3>
+          <p>No gaps between ground pieces. The seam should feel invisible when they loop.</p>
+          <p class="howto-next"><strong>What would you add next?</strong> Obstacles that also scroll, or a finish line after 30 seconds.</p>
+        </div>
+      </details>
     </article>
 
-    <article class="howto-card" data-project="pet">
-      <a class="howto-thumb howto-thumb--pet" href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">
+    <article class="howto-card" id="pet" data-project="pet">
+      <a class="howto-thumb howto-thumb--pet" href="#lesson-pet">
         <span class="howto-bar howto-bar-top">How to make a</span>
         <span class="howto-title">Virtual Pet</span>
         <span class="howto-illus" aria-hidden="true">🐶</span>
@@ -149,13 +350,45 @@
       </a>
       <div class="howto-meta">
         <h2>Virtual Pet</h2>
-        <p>Feed, play, rest. State machines for kids: hunger, mood, and a sprite that reacts.</p>
-        <p class="howto-status">Draft · Scratch project URL TBD</p>
+        <p>Feed, play, rest. Hunger and mood as kid-friendly state.</p>
+        <p class="howto-status">How-to ready · rebuild from steps</p>
       </div>
+      <details class="howto-lesson" id="lesson-pet">
+        <summary>Open the how-to</summary>
+        <div class="howto-body">
+          <p class="howto-you-make"><strong>You will make:</strong> a pet that gets hungry over time, plus buttons to feed, play, and rest.</p>
+          <h3>Set the stage</h3>
+          <ol>
+            <li>Pet sprite with at least two costumes: happy and sleepy (or hungry).</li>
+            <li>Three button sprites: Feed, Play, Rest.</li>
+            <li>Variables: <code>hunger</code> (0 to 10), <code>mood</code> (0 to 10). Start both at 7.</li>
+          </ol>
+          <h3>Blocks Miss Zhao cares about</h3>
+          <ul>
+            <li>Green flag → set hunger and mood</li>
+            <li>Forever + <strong>wait 3 seconds</strong> → change hunger by −1 (time passes)</li>
+            <li>When Feed clicked → change hunger by 2 (cap at 10)</li>
+            <li>When Play clicked → change mood by 2, maybe change hunger by −1</li>
+            <li>If hunger &lt; 3 → switch costume to hungry look; else happy</li>
+          </ul>
+          <h3>Build it (KISS)</h3>
+          <ol>
+            <li>Pet: green flag → set hunger 7, mood 7 → show happy costume.</li>
+            <li>Pet forever: wait 3 seconds → change hunger by −1 → if hunger &lt; 0, set to 0.</li>
+            <li>Still forever: if hunger &lt; 3 or mood &lt; 3, switch to sleepy/hungry costume; else happy.</li>
+            <li>Feed button: when clicked → change hunger by 2 → say “nom” for 1 second.</li>
+            <li>Play button: when clicked → change mood by 2 → change hunger by −1 → brief dance (turn 15, turn −15).</li>
+            <li>Rest button: when clicked → change mood by 1 → wait 1 second with eyes-closed costume.</li>
+          </ol>
+          <h3>Classroom check</h3>
+          <p>Ignoring the pet should visibly change the costume. Care should bring it back.</p>
+          <p class="howto-next"><strong>What would you add next?</strong> A simple day/night backdrop, or a diary variable that counts days alive.</p>
+        </div>
+      </details>
     </article>
 
-    <article class="howto-card" data-project="story">
-      <a class="howto-thumb howto-thumb--story" href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">
+    <article class="howto-card" id="story" data-project="story">
+      <a class="howto-thumb howto-thumb--story" href="#lesson-story">
         <span class="howto-bar howto-bar-top">How to make a</span>
         <span class="howto-title">Story</span>
         <span class="howto-illus" aria-hidden="true">📖</span>
@@ -163,13 +396,44 @@
       </a>
       <div class="howto-meta">
         <h2>Story</h2>
-        <p>Scenes, say blocks, and wait. Narrative structure as code. Soft skills meet sprites.</p>
-        <p class="howto-status">Draft · Scratch project URL TBD</p>
+        <p>Scenes, say blocks, and wait. Narrative structure as code.</p>
+        <p class="howto-status">How-to ready · rebuild from steps</p>
       </div>
+      <details class="howto-lesson" id="lesson-story">
+        <summary>Open the how-to</summary>
+        <div class="howto-body">
+          <p class="howto-you-make"><strong>You will make:</strong> a three-scene mini story with dialogue and one choice that branches the ending.</p>
+          <h3>Set the stage</h3>
+          <ol>
+            <li>Two character sprites (you + a friend, animal, or mentor figure).</li>
+            <li>Three backdrops: Place A, Place B, Ending.</li>
+            <li>Optional: a “Next” button sprite for click-to-advance.</li>
+          </ol>
+          <h3>Blocks Miss Zhao cares about</h3>
+          <ul>
+            <li><strong>switch backdrop to</strong></li>
+            <li><strong>say … for … seconds</strong> and <strong>wait</strong></li>
+            <li><strong>broadcast</strong> message / <strong>when I receive</strong> to start the next scene</li>
+            <li><strong>ask … and wait</strong> + <strong>answer</strong> for a simple choice</li>
+            <li>Hide/show sprites per scene so the stage stays calm</li>
+          </ul>
+          <h3>Build it (KISS)</h3>
+          <ol>
+            <li>Write a tiny script on paper first: beginning → problem → choice → two endings.</li>
+            <li>Green flag → backdrop Place A → show both characters → say the opening lines with waits.</li>
+            <li>Broadcast “scene2” → when received: switch backdrop Place B → new dialogue.</li>
+            <li>Ask a yes/no question. If answer contains “yes,” broadcast “ending-bright.” Else broadcast “ending-quiet.”</li>
+            <li>Each ending: switch backdrop Ending → one last say → stop all or loop a soft thank-you.</li>
+          </ol>
+          <h3>Classroom check</h3>
+          <p>Can a classmate play without you talking over it? Timing and clear choices matter more than fancy art.</p>
+          <p class="howto-next"><strong>What would you add next?</strong> Sound per scene, or a title screen with your name as director.</p>
+        </div>
+      </details>
     </article>
 
-    <article class="howto-card" data-project="character">
-      <a class="howto-thumb howto-thumb--char" href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">
+    <article class="howto-card" id="character" data-project="character">
+      <a class="howto-thumb howto-thumb--char" href="#lesson-character">
         <span class="howto-bar howto-bar-top">How to make a</span>
         <span class="howto-title">Character Designer</span>
         <span class="howto-illus" aria-hidden="true">🎨</span>
@@ -177,9 +441,41 @@
       </a>
       <div class="howto-meta">
         <h2>Character Designer</h2>
-        <p>Mix costumes, hats, and colors. Teach layering and identity without a blank-page panic.</p>
-        <p class="howto-status">Draft · Scratch project URL TBD</p>
+        <p>Mix costumes, hats, and colors. Layering without blank-page panic.</p>
+        <p class="howto-status">How-to ready · rebuild from steps</p>
       </div>
+      <details class="howto-lesson" id="lesson-character">
+        <summary>Open the how-to</summary>
+        <div class="howto-body">
+          <p class="howto-you-make"><strong>You will make:</strong> a dress-up station: base body plus hat and shirt layers you cycle with buttons.</p>
+          <h3>Set the stage</h3>
+          <ol>
+            <li>Base body sprite with 2 to 3 skin or body costumes.</li>
+            <li>Hat sprite with several hat costumes, centered on the head.</li>
+            <li>Shirt / accessory sprite with a few options.</li>
+            <li>Arrow button sprites: “body next,” “hat next,” “shirt next.”</li>
+          </ol>
+          <h3>Blocks Miss Zhao cares about</h3>
+          <ul>
+            <li><strong>next costume</strong> on each layer when its button is clicked</li>
+            <li><strong>go to</strong> / layer order: body back, shirt middle, hat front</li>
+            <li>Optional: <strong>set color effect</strong> for a soft recolor without new art</li>
+            <li>Green flag → reset each sprite to costume 1</li>
+          </ul>
+          <h3>Build it (KISS)</h3>
+          <ol>
+            <li>Align hat and shirt so they sit on the body. Duplicate costumes instead of redrawing from scratch each time.</li>
+            <li>Body button: when clicked → next costume on the body sprite.</li>
+            <li>Hat button: when clicked → next costume on the hat sprite.</li>
+            <li>Shirt button: when clicked → next costume on the shirt sprite.</li>
+            <li>Optional “surprise me”: when clicked → pick random costume numbers for all three.</li>
+            <li>Optional “save look”: say “screenshot with the camera tool” for 2 seconds (teach the Scratch paint/camera habit).</li>
+          </ol>
+          <h3>Classroom check</h3>
+          <p>Every button should change only its layer. No blank costumes in the cycle if you can help it.</p>
+          <p class="howto-next"><strong>What would you add next?</strong> A name label with ask/answer, or export the look into your Jumping Game hero.</p>
+        </div>
+      </details>
     </article>
 
   </section>
@@ -190,6 +486,7 @@
     <p class="gwc-quiet">
       Built for workshops and peer mentoring. Work-school-job appropriate.
       Hiatus means fewer new lessons for now. The how-tos already here stay open.
+      Live Scratch project links can land later; until then, rebuild from the steps above.
     </p>
   </section>
 
@@ -202,14 +499,27 @@
     <span aria-hidden="true">·</span>
     <a href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">scratch.mit.edu</a>
     <span aria-hidden="true">·</span>
+    <a href="https://instagram.com/zhao.langxi">@zhao.langxi</a>
+    <span aria-hidden="true">·</span>
     <a href="https://jadexzhao.github.io/jadexzhao/">sunrise twin</a>
   </section>
 
   <footer class="footer-kiss">
-    <p>Draft studio · Miss Zhao on hiatus · live Scratch project IDs land here when published.</p>
-    <p class="human">Miss Zhao · on hiatus · <span class="sc">福州</span> roots · educator archive</p>
+    <p>Archive studio · Miss Zhao on hiatus · rebuild from steps · Scratch project IDs optional later.</p>
+    <p class="human">Miss Zhao · on hiatus · <span class="sc">福州</span> roots · educator archive · <a href="https://instagram.com/zhao.langxi">@zhao.langxi</a></p>
   </footer>
 
 </main>
+<script>
+  document.querySelectorAll('a[href^="#lesson-"]').forEach(function (link) {
+    link.addEventListener("click", function () {
+      var id = link.getAttribute("href").slice(1);
+      var panel = document.getElementById(id);
+      if (panel && panel.tagName === "DETAILS") {
+        panel.open = true;
+      }
+    });
+  });
+</script>
 </body>
 </html>

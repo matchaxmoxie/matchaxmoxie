@@ -3603,6 +3603,123 @@ body.kiss-home {
   color: var(--coral) !important;
 }
 
+.scratch-studio-page .studio-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 0 0 22px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.scratch-studio-page .studio-toc a {
+  color: var(--dusk);
+  text-decoration: none;
+  border-bottom: 2px solid var(--golden-hour);
+}
+
+.scratch-studio-page .studio-toc a:hover,
+.scratch-studio-page .studio-toc a:focus-visible {
+  color: var(--crayon-ink);
+}
+
+.scratch-studio-page .howto-lesson {
+  margin-top: 4px;
+  border: 3px solid var(--crayon-ink);
+  background: rgba(255, 248, 240, 0.92);
+  box-shadow: 3px 3px 0 var(--lavender);
+}
+
+.scratch-studio-page .howto-lesson summary {
+  cursor: pointer;
+  list-style: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0.65rem 0.9rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--crayon-ink);
+}
+
+.scratch-studio-page .howto-lesson summary::-webkit-details-marker {
+  display: none;
+}
+
+.scratch-studio-page .howto-lesson summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.1rem;
+  margin-right: 0.4rem;
+  color: var(--coral);
+  font-weight: 700;
+}
+
+.scratch-studio-page .howto-lesson[open] summary::before {
+  content: "–";
+}
+
+.scratch-studio-page .howto-lesson:focus-within {
+  outline: 3px solid var(--golden-hour);
+  outline-offset: 2px;
+}
+
+.scratch-studio-page .howto-body {
+  padding: 0 0.9rem 1rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.95rem;
+  color: var(--crayon-ink);
+  line-height: 1.5;
+}
+
+.scratch-studio-page .howto-body h3 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1rem;
+  margin: 0.85rem 0 0.4rem;
+  color: var(--dusk);
+}
+
+.scratch-studio-page .howto-body ol,
+.scratch-studio-page .howto-body ul {
+  margin: 0.35rem 0 0.6rem 1.15rem;
+  padding: 0;
+}
+
+.scratch-studio-page .howto-body li {
+  margin-bottom: 0.35rem;
+}
+
+.scratch-studio-page .howto-body code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.88em;
+  background: rgba(126, 184, 224, 0.25);
+  padding: 0.05em 0.28em;
+}
+
+.scratch-studio-page .howto-you-make {
+  margin-bottom: 0.5rem;
+}
+
+.scratch-studio-page .howto-next {
+  margin-top: 0.75rem;
+  padding-top: 0.55rem;
+  border-top: 2px dashed rgba(92, 75, 122, 0.35);
+}
+
+.scratch-studio-page .howto-body a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+}
+
+.scratch-studio-page .howto-card:target .howto-lesson,
+.scratch-studio-page .howto-lesson:target {
+  border-color: var(--coral);
+}
+
 @media (max-width: 520px) {
   .scratch-studio-page .studio-grid {
     grid-template-columns: 1fr;
