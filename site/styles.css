@@ -100,12 +100,12 @@
   --space-2xl: 12rem;
   --padding-mobile: 1.25rem;
 
-  /* 断点 */
+  /* 断点 · phone / tablet / desktop / wide-custom */
   --bp-xs: 320px;
   --bp-sm: 480px;
   --bp-md: 768px;
   --bp-lg: 1024px;
-  --bp-xl: 1280px;
+  --bp-xl: 1200px;
 
   /* 动效时长 */
   --transition-fast: 150ms ease;
@@ -123,6 +123,15 @@
 html {
   scroll-behavior: smooth;
   font-size: 18px;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3295,10 +3304,12 @@ body.kindergarten-home {
     grid-template-columns: 1fr;
   }
 
+  /* wrap cleanly · no sideways scroll TOC */
   .kindergarten-home .site-nav {
-    justify-content: flex-start;
-    overflow-x: auto;
-    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: visible;
+    flex-wrap: wrap;
+    row-gap: 0;
   }
 
   .kindergarten-home .site-nav .nav-sep {
@@ -3672,11 +3683,16 @@ body.campus-survival-page {
 }
 
 .scratch-studio-page .studio-toc a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 4px;
   color: var(--dusk);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
   border-bottom: 0;
+  touch-action: manipulation;
 }
 
 .scratch-studio-page .studio-toc a:hover,
@@ -3973,9 +3989,9 @@ body.campus-survival-page {
 .guide-page .guide-toc {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 18px;
+  gap: 8px 14px;
   margin: 0 0 28px;
-  padding: 16px 18px;
+  padding: 14px 16px;
   background: #fff;
   border: 3px solid var(--crayon-ink);
   box-shadow: 4px 4px 0 var(--lavender);
@@ -3986,12 +4002,16 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-toc a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 2px;
   color: var(--crayon-ink);
   border-bottom: 3px solid var(--golden-hour);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-  padding: 2px 0;
+  touch-action: manipulation;
 }
 
 .guide-page .guide-toc a:hover {
@@ -4408,7 +4428,7 @@ body.campus-survival-page {
 .journey-year-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 16px;
+  gap: 8px 14px;
   margin: 0 0 28px;
   font-family: "Courier New", Courier, monospace;
   font-size: 0.9rem;
@@ -4418,11 +4438,16 @@ body.campus-survival-page {
 }
 
 .journey-year-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 2px;
   color: var(--crayon-ink);
   border-bottom: 3px solid var(--golden-hour);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
+  touch-action: manipulation;
 }
 
 .journey-year-nav a:hover,
