@@ -1,16 +1,16 @@
 # matchaxmoxie · sunset · Jade Zhao
 
-[jadexzhao](https://jadexzhao.github.io/jadexzhao/) is sunrise. this is sunset.
+**TLDR:** two sites, same person. [jadexzhao](https://jadexzhao.github.io/jadexzhao/) = sunrise (morning · I build and ship code). this repo = sunset (evening · Miss Zhao classroom archive).
 
-**Jade Zhao** at **Indiana University Luddy** (Informatics, Class of 2027). Miss Zhao is on hiatus for senior year. The Girls Who Code Indianapolis teaching archive stays.
+**ELI5:** not mystical. morning vs evening jobs.
+- **jadexzhao = sunrise** = builder portfolio / career / shipping code
+- **matchaxmoxie = sunset** = teaching archive winding down (Girls Who Code, Scratch, IU guides for younger students). Miss Zhao on hiatus for senior year.
 
-matchaxmoxie was the brand / ops / classroom twin handle. People may not know it because school IG moved to [@zhao.langxi](https://instagram.com/zhao.langxi) (real name · no more secret account). Not mysterious : just renamed into the open as Jade Zhao / 赵朗曦. This repo stays the sunset archive.
+matchaxmoxie was the old classroom handle. School IG is now [@zhao.langxi](https://instagram.com/zhao.langxi) under my real name (Jade Zhao / 赵朗曦). no more secret account. this repo stays the sunset archive.
 
-[email](mailto:jlzhao@iu.edu) · [live site](https://matchaxmoxie.github.io/matchaxmoxie/) · [sunrise twin](https://jadexzhao.github.io/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie) · school IG [@zhao.langxi](https://instagram.com/zhao.langxi)
+[email](mailto:jlzhao@iu.edu) · [live site](https://matchaxmoxie.github.io/matchaxmoxie/) · [builder / sunrise](https://jadexzhao.github.io/jadexzhao/) · [@matchaxmoxie](https://github.com/matchaxmoxie) · school IG [@zhao.langxi](https://instagram.com/zhao.langxi)
 
-## what this holds
-
-**Girls Who Code** · Web Designer & Instructor · Indianapolis · Jan 2018 to Aug 2023. 50+ students. 12 student-led projects. mentored 20+ young women into STEM.
+## live
 
 **Scratch studio** · [how-to archive](https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html) (Miss Zhao craft, paused not erased).
 
@@ -24,10 +24,8 @@ matchaxmoxie was the brand / ops / classroom twin handle. People may not know it
 
 Code ships on [@jadexzhao](https://github.com/jadexzhao). Instagram is always [@zhao.langxi](https://instagram.com/zhao.langxi).
 
-## twins
+## two sites
 
 | [@matchaxmoxie](https://github.com/matchaxmoxie) sunset | [@jadexzhao](https://github.com/jadexzhao) sunrise |
-| --- | --- |
-| [classroom](https://matchaxmoxie.github.io/matchaxmoxie/) · Miss Zhao · GWC · IU path | [briefcase](https://jadexzhao.github.io/jadexzhao/) · engineering portfolio |
-
-福州 roots · Jade Zhao · Miss Zhao on hiatus · IU Luddy · educator archive
+|---|---|
+| [classroom archive](https://matchaxmoxie.github.io/matchaxmoxie/) · Miss Zhao · GWC · IU path | [briefcase](https://jadexzhao.github.io/jadexzhao/) · engineering portfolio |

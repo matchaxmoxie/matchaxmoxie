@@ -12,4 +12,4 @@ Live story: [Miss Zhao · Girls Who Code](https://matchaxmoxie.github.io/matchax
 | [`SYNC-FROM-MIRROR.md`](SYNC-FROM-MIRROR.md) | Local mirror sync notes |
 | Publish path | [`../PUBLISH.md`](../PUBLISH.md) · GitHub Pages via `site/` |
 
-Older program-ops checklists are retired. Engineering depth lives on the sunrise twin: [how I work](https://jadexzhao.github.io/jadexzhao/how-i-work.html).
+Older program-ops checklists are retired. Engineering depth lives on jadexzhao (builder / sunrise): [how I work](https://jadexzhao.github.io/jadexzhao/how-i-work.html).
