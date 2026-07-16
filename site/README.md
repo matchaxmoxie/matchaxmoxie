@@ -1,6 +1,6 @@
 # matchaxmoxie site
 
-**Sunset classroom.** Girls Who Code · Miss Zhao (on hiatus).
+**Sunset classroom.** Jade Zhao · Miss Zhao (on hiatus) · IU Luddy Informatics Class of 2027.
 
 Twin: `jadexzhao is sunrise. this is sunset.`  
-School IG: [@zhao.langxi](https://instagram.com/zhao.langxi)
+School IG: [@zhao.langxi](https://instagram.com/zhao.langxi) (never @jadexzhao for Instagram)

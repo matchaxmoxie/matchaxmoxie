@@ -1,6 +1,7 @@
-# Scratch studio series · Miss Zhao
+# Scratch studio series · Jade Zhao / Miss Zhao
 
-Miss Zhao is on hiatus for senior year at IU. This series stays as teaching-craft archive.
+Jade Zhao (Miss Zhao) is on hiatus for senior year at Indiana University Luddy.
+This series stays as teaching-craft archive from Girls Who Code Indianapolis roots.
 
 Public page: https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html
 
