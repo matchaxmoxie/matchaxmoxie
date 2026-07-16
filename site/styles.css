@@ -3358,13 +3358,26 @@ body.kindergarten-home {
 
 
 /* cream ink lock · never chalk-on-cream for kid-facing pages */
+body.kindergarten-home,
+body.kiss-home,
+body.guide-page,
+body.journey-page,
+body.scratch-studio-page,
+body.campus-survival-page,
 body.kindergarten-home .gwc-block,
 body.kiss-home .gwc-block,
 body.guide-page .guide-section,
 body.guide-page .guide-attr,
 body.scratch-studio-page .howto-body,
-body.scratch-studio-page .howto-meta {
-  color: var(--ink);
+body.scratch-studio-page .howto-meta,
+body.kiss-home .twin-note,
+body.kiss-home .hero-tag,
+body.kiss-home .hero-meta,
+body.kiss-home .quiet-links,
+body.kiss-home .footer-kiss,
+body.kiss-home .footer-kiss .human,
+body.kiss-home figcaption {
+  color: #1F1630 !important;
 }
 
 body.kindergarten-home .gwc-block li,
@@ -3373,7 +3386,7 @@ body.guide-page .guide-section li,
 body.scratch-studio-page .howto-body li,
 body.scratch-studio-page .howto-body p,
 body.scratch-studio-page .howto-meta p {
-  color: var(--ink);
+  color: #1F1630 !important;
 }
 
 /* keep-it-simple 日落主页 · 少卡片 · 安静归档 */
