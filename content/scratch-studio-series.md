@@ -33,12 +33,14 @@ School IG: [@zhao.langxi](https://instagram.com/zhao.langxi)
 Regenerate: `python3 scripts/generate-scratch-starters.py`  
 Upload notes: `site/scratch-projects/README.md`
 
-## Teaching beat (KISS)
+## Teaching beat · KISS (keep it simple, stupid · we just mean keep it simple)
 
 1. Show the finished vibe (30 seconds).
 2. Build one mechanic.
 3. Let learners remix costumes / scores.
 4. End with "what would you add next?"
+
+Same classroom phrase on the live studio page: **KISS** (keep it simple).
 
 ## Brand
 
