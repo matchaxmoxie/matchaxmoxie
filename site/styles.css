@@ -4464,3 +4464,38 @@ body.campus-survival-page {
   background: var(--chalk-dust);
   margin-bottom: 28px;
 }
+
+/* Miss Zhao tip boxes · kid-friendly · dark ink on cream */
+.miss-zhao-tip {
+  margin: 0 0 28px;
+  padding: 16px 18px;
+  max-width: 54ch;
+  background: #fff;
+  border: 4px solid var(--crayon-ink);
+  box-shadow: 5px 5px 0 var(--golden-hour);
+  color: var(--ink);
+}
+
+.miss-zhao-tip .miss-zhao-tip-label {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--coral-ink);
+  margin-bottom: 8px;
+}
+
+.miss-zhao-tip p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.miss-zhao-tip strong {
+  color: var(--crayon-ink);
+  font-weight: 700;
+}
