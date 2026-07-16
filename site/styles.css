@@ -3634,8 +3634,10 @@ body.kiss-home {
 
 .scratch-studio-page .studio-toc a {
   color: var(--dusk);
-  text-decoration: none;
-  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  border-bottom: 0;
 }
 
 .scratch-studio-page .studio-toc a:hover,
