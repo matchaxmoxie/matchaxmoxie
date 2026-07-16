@@ -4286,3 +4286,75 @@ body.kiss-home {
 .guide-page .year23-tag {
   margin-top: 0;
 }
+
+/* 四年 IU 路径页 · 课程名+学期，无成绩 */
+.journey-year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin: 0 0 28px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.journey-year-nav a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+}
+
+.journey-year-nav a:hover,
+.journey-year-nav a[aria-current="page"] {
+  color: var(--coral);
+}
+
+.journey-courses {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  max-width: 54ch;
+}
+
+.journey-courses li {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1rem;
+  color: var(--crayon-ink);
+  line-height: 1.45;
+  margin: 0 0 8px;
+  padding-left: 0;
+}
+
+.journey-courses code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.88em;
+  font-weight: 700;
+  color: var(--dusk);
+  margin-right: 0.35em;
+}
+
+.journey-note {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.95rem;
+  color: var(--crayon-muted);
+  line-height: 1.5;
+  max-width: 54ch;
+  margin: 0 0 28px;
+}
+
+.journey-note a {
+  color: var(--dusk);
+  border-bottom: 2px solid var(--golden-hour);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.journey-callout {
+  border: 4px solid var(--crayon-ink);
+  box-shadow: 5px 5px 0 var(--golden-hour);
+  padding: 18px 18px 8px;
+  background: var(--chalk-dust);
+  margin-bottom: 28px;
+}
