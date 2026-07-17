@@ -109,12 +109,15 @@
     var planTitle = document.getElementById("situation-plan-title");
     var planList = document.getElementById("situation-plan-steps");
     var saved = loadJson("situation", null);
+    var restoringSaved = false;
 
     function renderPlan(key) {
       var data = SITUATIONS[key];
       if (!data || !planEl || !planList || !planTitle) return;
 
-      planTitle.textContent = "Your 3-step plan · " + data.label;
+      planTitle.textContent = restoringSaved
+        ? "Welcome back · your saved plan · " + data.label
+        : "Your 3-step plan · " + data.label;
       planList.innerHTML = "";
       data.steps.forEach(function (step, i) {
         var li = document.createElement("li");
@@ -137,17 +140,22 @@
         btn.setAttribute("aria-pressed", active ? "true" : "false");
       });
       saveJson("situation", key);
-      scrollToEl(planEl);
+      if (!restoringSaved) {
+        scrollToEl(planEl);
+      }
     }
 
     root.querySelectorAll(".situation-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
+        restoringSaved = false;
         renderPlan(btn.getAttribute("data-situation"));
       });
     });
 
     if (saved && SITUATIONS[saved]) {
+      restoringSaved = true;
       renderPlan(saved);
+      restoringSaved = false;
     }
   }
 
