@@ -55,18 +55,18 @@
       label: "AP CSP or curious about code",
       steps: [
         {
-          title: "Start with AP notes",
-          body: "See how AP Computer Science Principles maps to IU.",
+          title: "AP notes that map to IU",
+          body: "See how CSP credit lands before you stress the syllabus.",
           href: "informatics-class-of-2027.html#early-heading",
         },
         {
           title: "Ship a tiny Scratch game",
-          body: "Play a starter on this site. Green flag, then the controls above the stage.",
+          body: "Green flag on this site. Two minutes and something moves.",
           href: "scratch-play.html?project=jumping",
         },
         {
           title: "Peek freshman year",
-          body: "Course names from my first year at Luddy.",
+          body: "Real Luddy course names from my first year.",
           href: "freshman.html",
         },
       ],
@@ -75,18 +75,18 @@
       label: "Undecided major · eyeing Informatics",
       steps: [
         {
-          title: "Read official IU links first",
-          body: "Bulletin, AP credit, registrar calendar. Live pages win.",
+          title: "Official IU links first",
+          body: "Bulletin, AP credit, registrar. Live pages beat rumors.",
           href: "informatics-class-of-2027.html#official-links",
         },
         {
-          title: "Explore career slides",
-          body: "Learn about yourself before you pick a track.",
+          title: "Career slides, not vibes only",
+          body: "Learn about yourself before you lock a track.",
           href: "informatics-class-of-2027.html#career-slides",
         },
         {
-          title: "Check the footprint list",
-          body: "Five big life moves to try before you graduate.",
+          title: "Claim a footprint",
+          body: "A dare list for college life outside the GPA grind.",
           href: "footprint.html#bucket",
         },
       ],
@@ -95,18 +95,18 @@
       label: "Visiting IU or already admitted",
       steps: [
         {
-          title: "Campus survival vibes",
-          body: "Archival Year '23 packing and welcome week notes.",
+          title: "Campus survival notes",
+          body: "Year '23 packing and welcome week, honest and short.",
           href: "campus-survival.html",
         },
         {
-          title: "FA26 to FA27 calendar",
-          body: "Verify dates on the live registrar page.",
+          title: "Check the live calendar",
+          body: "FA26 to FA27 dates on the registrar page, not hearsay.",
           href: "informatics-class-of-2027.html#official-links",
         },
         {
           title: "Four-year path peek",
-          body: "Freshman through senior, including Madrid.",
+          body: "Freshman through senior, including Madrid spring.",
           href: "junior.html",
         },
       ],
@@ -134,10 +134,10 @@
       var first = data.steps[0];
       planTitle.textContent = restoringSaved
         ? "Welcome back · " + data.label
-        : "Got it · " + data.label;
+        : "Nice pick · " + data.label;
       if (planProgress) {
         planProgress.textContent =
-          "3 steps for your spot · start with step 1";
+          "Three steps for your seat · start with step 1";
       }
       planList.innerHTML = "";
       data.steps.forEach(function (step, i) {
@@ -145,23 +145,23 @@
         var strong = document.createElement("strong");
         strong.textContent = "Step " + (i + 1) + " · " + step.title;
         li.appendChild(strong);
-        li.appendChild(document.createTextNode(step.body));
+        li.appendChild(document.createTextNode(" " + step.body));
         planList.appendChild(li);
       });
 
       planEl.hidden = false;
       if (startLink && first) {
         startLink.href = first.href;
-        startLink.textContent = "Start step 1 · " + first.title + " →";
+        startLink.textContent = "Go · step 1 · " + first.title + " →";
       }
       if (pathLink) {
         pathLink.href = "student-path.html#advice-funnel";
-        pathLink.textContent = "Full student path (optional)";
+        pathLink.textContent = "Full student path if you want the long tour";
       }
       if (pickStatus) {
         pickStatus.textContent = restoringSaved
-          ? "Saved pick restored · " + data.label
-          : "Selected · " + data.label;
+          ? "Your seat is still saved · " + data.label
+          : "Seat taken · " + data.label;
       }
       root.querySelectorAll(".situation-btn").forEach(function (btn) {
         var active = btn.getAttribute("data-situation") === key;
@@ -346,8 +346,13 @@
         if (msg) {
           msg.textContent =
             claimed === boxes.length
-              ? "All " + boxes.length + " prints claimed. You left a footprint."
-              : claimed + " print" + (claimed === 1 ? "" : "s") + " claimed of " + boxes.length + ".";
+              ? "All " + boxes.length + " claimed. You left a footprint."
+              : claimed +
+                " print" +
+                (claimed === 1 ? "" : "s") +
+                " claimed · " +
+                (boxes.length - claimed) +
+                " still calling.";
         }
       }
     }
@@ -370,8 +375,8 @@
   var SCRATCH_PROJECTS = {
     jumping: {
       title: "Jumping Game",
-      get: "A character that jumps with the space bar and lands on platforms.",
-      why: "Best first game if you want something that moves right away.",
+      get: "A jumper, a space bar, platforms. Something moves in two minutes.",
+      why: "Best first win if you want motion right away.",
       href: "scratch-studio.html#jumping",
       file: "scratch-projects/jumping-game.sb3",
       pathHref: "informatics-class-of-2027.html#early-heading",
@@ -379,8 +384,8 @@
     },
     catch: {
       title: "Catch Game",
-      get: "A catcher that scoops falling items before they hit the ground.",
-      why: "Great practice for forever loops and touching.",
+      get: "Scoop falling items before they hit the ground.",
+      why: "Forever loops and touching, without a wall of sprites.",
       href: "scratch-studio.html#catch",
       file: "scratch-projects/catch-game.sb3",
       pathHref: "freshman.html",
@@ -388,35 +393,35 @@
     },
     pong: {
       title: "Pong",
-      get: "A paddle and a bouncing ball you can play right away.",
-      why: "Classic bounce logic without a huge sprite list.",
+      get: "Paddle, ball, bounce. Classic and quick.",
+      why: "Bounce logic without a huge sprite list.",
       href: "scratch-studio.html#pong",
       file: "scratch-projects/pong-game.sb3",
     },
     clicker: {
       title: "Clicker",
-      get: "A score that goes up when you click, plus one upgrade.",
-      why: "Variables click faster here than in a long story project.",
+      get: "Tap for score, then buy one upgrade.",
+      why: "Variables click faster here than in a long story.",
       href: "scratch-studio.html#clicker",
       file: "scratch-projects/clicker-game.sb3",
     },
     scroll: {
       title: "Scrolling Background",
       get: "Ground that loops so your hero feels like it is running.",
-      why: "Nice when you already like motion and want a world that moves.",
+      why: "When you already like motion and want a world that moves.",
       href: "scratch-studio.html#scroll",
       file: "scratch-projects/scrolling-background.sb3",
     },
     pet: {
       title: "Virtual Pet",
-      get: "A pet that gets hungry over time, plus feed, play, and rest.",
+      get: "A pet that gets hungry. Feed, play, rest.",
       why: "State and buttons without needing perfect art.",
       href: "scratch-studio.html#pet",
       file: "scratch-projects/virtual-pet.sb3",
     },
     story: {
       title: "Story",
-      get: "A three-scene mini story with one choice that branches.",
+      get: "Three scenes, one choice that forks the path.",
       why: "If you like writing more than platformers, start here.",
       href: "scratch-studio.html#story",
       file: "scratch-projects/story.sb3",
@@ -425,8 +430,8 @@
     },
     character: {
       title: "Character Designer",
-      get: "A dress-up station: body, hat, and shirt layers you cycle.",
-      why: "Low pressure art practice before you build a game.",
+      get: "Dress-up station: body, hat, shirt. Cycle the looks.",
+      why: "Low-pressure art practice before you build a game.",
       href: "scratch-studio.html#character",
       file: "scratch-projects/character-designer.sb3",
     },
@@ -485,17 +490,17 @@
         playLink.href = "scratch-play.html?project=" + encodeURIComponent(key);
         playLink.removeAttribute("target");
         playLink.removeAttribute("rel");
-        playLink.textContent = "Play on this site";
+        playLink.textContent = "Play here · green flag";
       }
       if (downloadLink) {
         downloadLink.href = proj.file;
         downloadLink.setAttribute("download", "");
         downloadLink.textContent =
-          "Download " + proj.title + " (.sb3) to remix offline";
+          "Download " + proj.title + " (.sb3) for offline remix";
       }
       if (goLink) {
         goLink.href = "#" + key;
-        goLink.textContent = "Open the " + proj.title + " how-to →";
+        goLink.textContent = "Rebuild steps for " + proj.title + " →";
       }
 
       saveJson("scratch-pick", key);
@@ -529,9 +534,9 @@
       if (welcomeBack) {
         welcomeBack.hidden = false;
         welcomeBack.textContent =
-          "Welcome back · your last starter was " +
+          "Welcome back · " +
           SCRATCH_PROJECTS[saved].title +
-          ".";
+          " is still waiting. Green flag when you are ready.";
       }
       selectProject(saved, { skipScroll: true });
       restoring = false;

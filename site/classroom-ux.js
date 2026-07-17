@@ -1,6 +1,6 @@
 /**
  * matchaxmoxie · classroom UX shell
- * Cookie / save consent + Miss Zhao status chip.
+ * Cookie / save consent + Miss Zhao status presence.
  * No tracking. No third-party cookies.
  *
  * Consent: localStorage matchax-consent = "accepted" | "declined"
@@ -16,6 +16,7 @@
   var CONSENT_KEY = "matchax-consent";
   var COOKIE_NAME = "matchax_consent";
   var STATUS_OVERRIDE_KEY = "matchax-status-override";
+  var BANNER_MS = 380;
   var UX_KEYS = [
     "matchax-situation",
     "matchax-scratch-pick",
@@ -27,22 +28,33 @@
   var STATUS_DEFAULT = {
     mode: "hiatus",
     label: "On hiatus",
-    detail: "Senior year · archive still open",
+    detail: "Senior year · classroom still open for you",
   };
 
   var STATUS_MODES = {
-    working: { label: "Working", detail: "Building on the classroom side" },
+    working: { label: "Working", detail: "Building something for this classroom" },
     "office-hours": {
       label: "Office hours",
-      detail: "Drop questions when the door is open",
+      detail: "Door open · bring a real question",
     },
-    teaching: { label: "Teaching", detail: "Live classroom energy" },
-    hiatus: { label: "On hiatus", detail: "Senior year · archive still open" },
-    offline: { label: "Offline", detail: "Quiet for now · archive still open" },
+    teaching: { label: "Teaching", detail: "Live classroom energy right now" },
+    hiatus: {
+      label: "On hiatus",
+      detail: "Senior year · classroom still open for you",
+    },
+    offline: { label: "Offline", detail: "Quiet hour · archive still open" },
   };
 
   var pendingSaves = {};
   var listeners = [];
+
+  function prefersReducedMotion() {
+    try {
+      return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    } catch (_e) {
+      return false;
+    }
+  }
 
   function readConsent() {
     try {
@@ -192,6 +204,10 @@
       "Miss Zhao status: " + status.label + ". " + status.detail
     );
 
+    var dot = document.createElement("span");
+    dot.className = "classroom-status-dot";
+    dot.setAttribute("aria-hidden", "true");
+
     var kicker = document.createElement("span");
     kicker.className = "classroom-status-kicker";
     kicker.textContent = "Miss Zhao";
@@ -204,6 +220,7 @@
     detail.className = "classroom-status-detail";
     detail.textContent = status.detail;
 
+    el.appendChild(dot);
     el.appendChild(kicker);
     el.appendChild(document.createTextNode(" · "));
     el.appendChild(mode);
@@ -215,18 +232,6 @@
     } else {
       document.body.insertBefore(el, document.body.firstChild);
     }
-  }
-
-  function hideBanner(banner) {
-    if (!banner) return;
-    banner.hidden = true;
-    banner.setAttribute("aria-hidden", "true");
-  }
-
-  function showBanner(banner) {
-    if (!banner) return;
-    banner.hidden = false;
-    banner.removeAttribute("aria-hidden");
   }
 
   function buildBanner() {
@@ -243,14 +248,15 @@
 
     banner.innerHTML =
       '<div class="cookie-consent-inner">' +
-      '<p id="cookie-consent-title" class="cookie-consent-title">Save your classroom picks?</p>' +
+      '<p id="cookie-consent-title" class="cookie-consent-title">Want me to remember your picks?</p>' +
       '<p id="cookie-consent-desc" class="cookie-consent-desc">' +
-      "Accept to keep situation, Scratch starter, and footprint checks on this device. " +
-      "We set one tiny first-party cookie for that yes. No tracking pixels. Decline still lets you browse; picks stay for this visit only." +
+      "Accept and this device keeps your situation, Scratch starter, and footprint checks. " +
+      "One tiny first-party cookie marks that yes. No tracking pixels. " +
+      "No thanks still lets you browse; picks last for this visit only." +
       "</p>" +
       '<div class="cookie-consent-actions">' +
-      '<button type="button" class="cookie-consent-accept" id="cookie-consent-accept">Accept cookies</button>' +
-      '<button type="button" class="cookie-consent-decline" id="cookie-consent-decline">No thanks</button>' +
+      '<button type="button" class="cookie-consent-accept" id="cookie-consent-accept">Yes, remember me</button>' +
+      '<button type="button" class="cookie-consent-decline" id="cookie-consent-decline">Just browsing</button>' +
       "</div>" +
       "</div>";
 
@@ -275,6 +281,86 @@
     return tab;
   }
 
+  function showTab(tab) {
+    if (!tab) return;
+    tab.hidden = false;
+    tab.setAttribute("aria-expanded", "false");
+    if (prefersReducedMotion()) {
+      tab.classList.add("is-visible");
+      return;
+    }
+    window.requestAnimationFrame(function () {
+      tab.classList.add("is-visible");
+    });
+  }
+
+  function hideTab(tab) {
+    if (!tab) return;
+    tab.classList.remove("is-visible");
+    tab.hidden = true;
+    tab.setAttribute("aria-expanded", "true");
+  }
+
+  function openBanner(banner, tab, focusAccept) {
+    if (!banner) return;
+    hideTab(tab);
+    banner.hidden = false;
+    banner.removeAttribute("aria-hidden");
+    banner.classList.remove("is-leaving");
+
+    function afterOpen() {
+      if (focusAccept) {
+        var acceptBtn = document.getElementById("cookie-consent-accept");
+        if (acceptBtn) {
+          try {
+            acceptBtn.focus({ preventScroll: true });
+          } catch (_e) {
+            acceptBtn.focus();
+          }
+        }
+      }
+    }
+
+    if (prefersReducedMotion()) {
+      banner.classList.add("is-open");
+      afterOpen();
+      return;
+    }
+
+    window.requestAnimationFrame(function () {
+      banner.classList.add("is-open");
+      window.setTimeout(afterOpen, BANNER_MS);
+    });
+  }
+
+  function closeBanner(banner, tab, focusTab) {
+    if (!banner) return;
+
+    function finish() {
+      banner.classList.remove("is-open", "is-leaving");
+      banner.hidden = true;
+      banner.setAttribute("aria-hidden", "true");
+      showTab(tab);
+      if (focusTab && tab) {
+        try {
+          tab.focus({ preventScroll: true });
+        } catch (_e) {
+          tab.focus();
+        }
+      }
+    }
+
+    if (banner.hidden || prefersReducedMotion()) {
+      banner.classList.remove("is-open", "is-leaving");
+      finish();
+      return;
+    }
+
+    banner.classList.remove("is-open");
+    banner.classList.add("is-leaving");
+    window.setTimeout(finish, BANNER_MS);
+  }
+
   function initConsentUi() {
     var banner = buildBanner();
     var tab = buildCookieTab();
@@ -282,50 +368,21 @@
     var declineBtn = document.getElementById("cookie-consent-decline");
     var consent = readConsent();
 
-    function openPanel(fromTab) {
-      showBanner(banner);
-      tab.hidden = true;
-      tab.setAttribute("aria-expanded", "true");
-      if (fromTab && acceptBtn) {
-        try {
-          acceptBtn.focus({ preventScroll: true });
-        } catch (_e) {
-          acceptBtn.focus();
-        }
-      }
-    }
-
-    function closePanel() {
-      hideBanner(banner);
-      tab.hidden = false;
-      tab.setAttribute("aria-expanded", "false");
-    }
-
     if (acceptBtn) {
       acceptBtn.addEventListener("click", function () {
         writeConsent("accepted");
-        closePanel();
-        try {
-          tab.focus({ preventScroll: true });
-        } catch (_e) {
-          tab.focus();
-        }
+        closeBanner(banner, tab, true);
       });
     }
     if (declineBtn) {
       declineBtn.addEventListener("click", function () {
         writeConsent("declined");
-        closePanel();
-        try {
-          tab.focus({ preventScroll: true });
-        } catch (_e) {
-          tab.focus();
-        }
+        closeBanner(banner, tab, true);
       });
     }
 
     tab.addEventListener("click", function () {
-      openPanel(true);
+      openBanner(banner, tab, true);
     });
 
     banner.addEventListener("keydown", function (e) {
@@ -334,19 +391,17 @@
         if (readConsent() === null) {
           writeConsent("declined");
         }
-        closePanel();
-        try {
-          tab.focus({ preventScroll: true });
-        } catch (_e2) {
-          tab.focus();
-        }
+        closeBanner(banner, tab, true);
       }
     });
 
     if (consent === null) {
-      openPanel(false);
+      openBanner(banner, tab, false);
     } else {
-      closePanel();
+      banner.hidden = true;
+      banner.setAttribute("aria-hidden", "true");
+      banner.classList.remove("is-open", "is-leaving");
+      showTab(tab);
     }
   }
 
