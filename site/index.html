@@ -35,8 +35,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260717a">
-<link rel="stylesheet" href="styles.css?v=20260717a">
+<link rel="stylesheet" href="a11y.css?v=20260717c">
+<link rel="stylesheet" href="styles.css?v=20260717c">
 </head>
 <body class="kindergarten-home sunset-home kiss-home choice-home">
 
@@ -67,51 +67,51 @@
       <p class="hero-brand-line">Miss Zhao · <span class="sc" lang="zh-Hans">凤凰</span></p>
       <h1>Picking IU or Informatics?</h1>
       <p class="hero-hook">
-        Pick the door that sounds like you. You get a 3-step plan next.
+        Pick the line that sounds like you. You get a 3-step plan next.
       </p>
     </div>
   </header>
 
-  <section id="situation-picker" class="invest-block invest-block--hero invest-block--choice" aria-labelledby="situation-heading">
+  <section id="situation-picker" class="open-invest open-invest--hero" aria-labelledby="situation-heading">
     <h2 id="situation-heading">Choose one</h2>
     <p class="invest-lede">
       One tap. Three pages out, in order, for your spot.
     </p>
-    <div class="situation-choices" role="group" aria-label="Your situation">
-      <button type="button" class="situation-btn situation-btn--visual" data-situation="ap-csp" aria-pressed="false">
-        <span class="situation-btn-media" aria-hidden="true">
-          <img src="assets/iu-luddy-ap-scores.jpg" alt="" width="320" height="200" loading="eager" />
-        </span>
-        <span class="situation-btn-copy">
-          <span class="situation-btn-label">AP CSP or curious about code</span>
-          <span class="situation-btn-hint">Start coding before college</span>
-        </span>
-      </button>
-      <button type="button" class="situation-btn situation-btn--visual" data-situation="undecided" aria-pressed="false">
-        <span class="situation-btn-media" aria-hidden="true">
-          <img src="assets/iu-career-explore.jpg" alt="" width="320" height="200" loading="eager" />
-        </span>
-        <span class="situation-btn-copy">
-          <span class="situation-btn-label">Undecided major · eyeing Informatics</span>
-          <span class="situation-btn-hint">Figure out if IU Luddy fits</span>
-        </span>
-      </button>
-      <button type="button" class="situation-btn situation-btn--visual" data-situation="visiting" aria-pressed="false">
-        <span class="situation-btn-media" aria-hidden="true">
-          <img src="assets/iu-orientation-welcome.jpg" alt="" width="320" height="200" loading="eager" />
-        </span>
-        <span class="situation-btn-copy">
-          <span class="situation-btn-label">Visiting IU or already admitted</span>
-          <span class="situation-btn-hint">Campus prep and calendar</span>
-        </span>
-      </button>
-    </div>
+    <ul class="situation-choices open-pick-list" role="list">
+      <li>
+        <button type="button" class="situation-btn open-pick-btn" data-situation="ap-csp" aria-pressed="false">
+          <img class="open-pick-thumb" src="assets/iu-luddy-ap-scores.jpg" alt="" width="120" height="72" loading="eager" />
+          <span class="open-pick-copy">
+            <span class="situation-btn-label open-pick-label">AP CSP or curious about code</span>
+            <span class="situation-btn-hint open-pick-hint">Start coding before college</span>
+          </span>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="situation-btn open-pick-btn" data-situation="undecided" aria-pressed="false">
+          <img class="open-pick-thumb" src="assets/iu-career-explore.jpg" alt="" width="120" height="72" loading="eager" />
+          <span class="open-pick-copy">
+            <span class="situation-btn-label open-pick-label">Undecided major · eyeing Informatics</span>
+            <span class="situation-btn-hint open-pick-hint">Figure out if IU Luddy fits</span>
+          </span>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="situation-btn open-pick-btn" data-situation="visiting" aria-pressed="false">
+          <img class="open-pick-thumb" src="assets/iu-orientation-welcome.jpg" alt="" width="120" height="72" loading="eager" />
+          <span class="open-pick-copy">
+            <span class="situation-btn-label open-pick-label">Visiting IU or already admitted</span>
+            <span class="situation-btn-hint open-pick-hint">Campus prep and calendar</span>
+          </span>
+        </button>
+      </li>
+    </ul>
     <div id="situation-plan" class="situation-plan" hidden>
       <p id="situation-plan-title" class="situation-plan-title"></p>
       <ol id="situation-plan-steps" class="situation-plan-steps"></ol>
       <p class="situation-plan-note">Your pick saves on this device. Change anytime.</p>
       <p class="situation-plan-next">
-        <a id="situation-path-link" class="invest-btn invest-btn--link" href="student-path.html">
+        <a id="situation-path-link" class="open-link-cta" href="student-path.html">
           Open the full student path →
         </a>
       </p>
@@ -150,6 +150,6 @@
   </footer>
 
 </main>
-<script src="invest-return.js?v=20260717a" defer></script>
+<script src="invest-return.js?v=20260717c" defer></script>
 </body>
 </html>

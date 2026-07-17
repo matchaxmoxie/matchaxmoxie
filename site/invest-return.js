@@ -334,29 +334,73 @@
     updateCount();
   }
 
-  /* ── 4. Scratch studio · pick a project + what you get ── */
+  /* ── 4. Scratch studio · pick starter + load checklist ── */
   var SCRATCH_PROJECTS = {
     jumping: {
       title: "Jumping Game",
-      get: "A character that jumps with space bar and lands on platforms.",
+      get: "A character that jumps with the space bar and lands on platforms.",
+      why: "Best first game if you want something that moves right away.",
       href: "#jumping",
+      file: "scratch-projects/jumping-game.sb3",
+      pathHref: "informatics-class-of-2027.html#early-heading",
+      pathLabel: "Pair with AP notes on the IU guide →",
     },
     catch: {
       title: "Catch Game",
-      get: "A catcher sprite that scoops falling items before they hit the ground.",
+      get: "A catcher that scoops falling items before they hit the ground.",
+      why: "Great practice for forever loops and touching.",
       href: "#catch",
+      file: "scratch-projects/catch-game.sb3",
+      pathHref: "freshman.html",
+      pathLabel: "See how early Luddy courses feel →",
     },
     pong: {
       title: "Pong",
-      get: "Two paddles and a bouncing ball you can play with a friend.",
+      get: "A paddle and a bouncing ball you can play right away.",
+      why: "Classic bounce logic without a huge sprite list.",
       href: "#pong",
+      file: "scratch-projects/pong-game.sb3",
     },
     clicker: {
       title: "Clicker",
-      get: "A score that goes up when you click. Simple variables practice.",
+      get: "A score that goes up when you click, plus one upgrade.",
+      why: "Variables click faster here than in a long story project.",
       href: "#clicker",
+      file: "scratch-projects/clicker-game.sb3",
+    },
+    scroll: {
+      title: "Scrolling Background",
+      get: "Ground that loops so your hero feels like it is running.",
+      why: "Nice when you already like motion and want a world that moves.",
+      href: "#scroll",
+      file: "scratch-projects/scrolling-background.sb3",
+    },
+    pet: {
+      title: "Virtual Pet",
+      get: "A pet that gets hungry over time, plus feed, play, and rest.",
+      why: "State and buttons without needing perfect art.",
+      href: "#pet",
+      file: "scratch-projects/virtual-pet.sb3",
+    },
+    story: {
+      title: "Story",
+      get: "A three-scene mini story with one choice that branches.",
+      why: "If you like writing more than platformers, start here.",
+      href: "#story",
+      file: "scratch-projects/story.sb3",
+      pathHref: "footprint.html#bucket",
+      pathLabel: "Ideas for what to try before you graduate →",
+    },
+    character: {
+      title: "Character Designer",
+      get: "A dress-up station: body, hat, and shirt layers you cycle.",
+      why: "Low pressure art practice before you build a game.",
+      href: "#character",
+      file: "scratch-projects/character-designer.sb3",
     },
   };
+
+  var SCRATCH_STEPS = ["downloaded", "opened", "loaded"];
 
   function initScratchPicker() {
     var root = document.getElementById("scratch-project-picker");
@@ -364,12 +408,69 @@
 
     var reveal = document.getElementById("scratch-pick-reveal");
     var getLine = document.getElementById("scratch-pick-get");
+    var whyLine = document.getElementById("scratch-pick-why");
+    var pathLine = document.getElementById("scratch-pick-path");
     var goLink = document.getElementById("scratch-pick-go");
+    var downloadLink = document.getElementById("scratch-pick-download");
+    var progressBar = document.getElementById("scratch-load-progress");
+    var progressText = document.getElementById("scratch-progress-text");
+    var reward = document.getElementById("scratch-progress-reward");
+    var welcomeBack = document.getElementById("scratch-welcome-back");
     var saved = loadJson("scratch-pick", null);
+    var progressMap = loadJson("scratch-load-steps", {});
+    var currentKey = null;
+    var restoring = false;
 
-    function selectProject(key) {
+    if (!progressMap || typeof progressMap !== "object") {
+      progressMap = {};
+    }
+
+    function stepStateFor(key) {
+      var state = progressMap[key];
+      if (!state || typeof state !== "object") {
+        return { downloaded: false, opened: false, loaded: false };
+      }
+      return {
+        downloaded: !!state.downloaded,
+        opened: !!state.opened,
+        loaded: !!state.loaded,
+      };
+    }
+
+    function updateProgressUI(key) {
+      var state = stepStateFor(key);
+      var count = 0;
+      SCRATCH_STEPS.forEach(function (step) {
+        var box = document.getElementById("scratch-step-" + step);
+        if (box) box.checked = !!state[step];
+        if (state[step]) count += 1;
+      });
+
+      if (progressBar) {
+        progressBar.value = count;
+        progressBar.max = 3;
+        progressBar.setAttribute("aria-valuenow", String(count));
+        progressBar.setAttribute("aria-valuemax", "3");
+      }
+      if (progressText) {
+        if (count === 0) {
+          progressText.textContent = "You are on step 0 of 3. Check each box as you go.";
+        } else if (count >= 3) {
+          progressText.textContent = "You finished all 3 load steps. Green flag time.";
+        } else {
+          progressText.textContent = "You are on step " + count + " of 3.";
+        }
+      }
+      if (reward) {
+        reward.hidden = count < 3;
+      }
+    }
+
+    function selectProject(key, opts) {
       var proj = SCRATCH_PROJECTS[key];
       if (!proj) return;
+      opts = opts || {};
+      currentKey = key;
 
       root.querySelectorAll(".scratch-pick-btn").forEach(function (btn) {
         var active = btn.getAttribute("data-project") === key;
@@ -380,12 +481,31 @@
       if (getLine) {
         getLine.textContent = "What you get: " + proj.get;
       }
+      if (whyLine) {
+        whyLine.textContent = "Why this one: " + proj.why;
+      }
+      if (pathLine) {
+        if (proj.pathHref && proj.pathLabel) {
+          pathLine.hidden = false;
+          pathLine.innerHTML =
+            '<a href="' + proj.pathHref + '">' + proj.pathLabel + "</a>";
+        } else {
+          pathLine.hidden = true;
+          pathLine.textContent = "";
+        }
+      }
+      if (downloadLink) {
+        downloadLink.href = proj.file;
+        downloadLink.setAttribute("download", "");
+        downloadLink.textContent = "Download " + proj.title + " (.sb3)";
+      }
       if (goLink) {
         goLink.href = proj.href;
-        goLink.textContent = "Load " + proj.title + " starter →";
+        goLink.textContent = "Open the " + proj.title + " how-to →";
       }
 
       saveJson("scratch-pick", key);
+      updateProgressUI(key);
 
       document.querySelectorAll(".howto-card--picked").forEach(function (card) {
         card.classList.remove("howto-card--picked");
@@ -395,18 +515,55 @@
       );
       if (card) {
         card.classList.add("howto-card--picked");
-        scrollToEl(card);
+        if (!opts.skipScroll && !restoring) {
+          scrollToEl(reveal || card);
+        }
       }
     }
 
     root.querySelectorAll(".scratch-pick-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
+        restoring = false;
+        if (welcomeBack) welcomeBack.hidden = true;
         selectProject(btn.getAttribute("data-project"));
       });
     });
 
+    SCRATCH_STEPS.forEach(function (step) {
+      var box = document.getElementById("scratch-step-" + step);
+      if (!box) return;
+      box.addEventListener("change", function () {
+        if (!currentKey) return;
+        var state = stepStateFor(currentKey);
+        state[step] = box.checked;
+        progressMap[currentKey] = state;
+        saveJson("scratch-load-steps", progressMap);
+        updateProgressUI(currentKey);
+      });
+    });
+
+    if (downloadLink) {
+      downloadLink.addEventListener("click", function () {
+        if (!currentKey) return;
+        var state = stepStateFor(currentKey);
+        state.downloaded = true;
+        progressMap[currentKey] = state;
+        saveJson("scratch-load-steps", progressMap);
+        updateProgressUI(currentKey);
+      });
+    }
+
     if (saved && SCRATCH_PROJECTS[saved]) {
-      selectProject(saved);
+      restoring = true;
+      if (welcomeBack) {
+        welcomeBack.hidden = false;
+        welcomeBack.textContent =
+          "Welcome back · your last starter was " +
+          SCRATCH_PROJECTS[saved].title +
+          ".";
+      }
+      selectProject(saved, { skipScroll: true });
+      restoring = false;
     }
   }
 
