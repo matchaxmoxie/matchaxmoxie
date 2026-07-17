@@ -1,6 +1,6 @@
-# matchaxmoxie · sunset · Jade Zhao
+# matchaxmoxie · 凤凰 · phoenix · Jade Zhao
 
-**TLDR:** two sites, same me. [jadexzhao](https://jadexzhao.github.io/jadexzhao/) = sunrise (builder). this repo = sunset (Miss Zhao classroom archive).
+**TLDR:** two sites, same me. [jadexzhao](https://jadexzhao.github.io/jadexzhao/) = **龙 · dragon** (builder / work). this repo = **凤凰 · phoenix** (Miss Zhao classroom archive).
 
 IG: [@zhao.langxi](https://instagram.com/zhao.langxi) · live: [matchaxmoxie.github.io](https://matchaxmoxie.github.io/matchaxmoxie/) · email: [jlzhao@iu.edu](mailto:jlzhao@iu.edu)
 

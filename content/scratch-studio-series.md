@@ -44,4 +44,4 @@ Same classroom phrase on the live studio page: **KISS** (keep it simple).
 
 ## Brand
 
-Jade Zhao · Miss Zhao on hiatus · IU Luddy Class of 2027 · Girls Who Code Indianapolis · sunset classroom · work/school/job appropriate.
+Jade Zhao · Miss Zhao on hiatus · IU Luddy Class of 2027 · Girls Who Code Indianapolis · 凤凰 · phoenix classroom · work/school/job appropriate.
