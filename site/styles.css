@@ -5816,7 +5816,26 @@ body {
 }
 
 .scratch-primary-cta {
-  margin: 16px 0 20px;
+  margin: 16px 0 12px;
+}
+
+.scratch-secondary-ctas {
+  margin: 0 0 18px;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: clamp(1.05rem, 2.3vw, 1.15rem);
+  line-height: 1.6;
+}
+
+.scratch-cta-sep {
+  color: var(--crayon-muted);
+}
+
+.scratch-play-page .scratch-play-hero {
+  margin-bottom: 8px;
+}
+
+.scratch-play-page .scratch-pick-block {
+  margin-top: 8px;
 }
 
 .scratch-steps-heading {

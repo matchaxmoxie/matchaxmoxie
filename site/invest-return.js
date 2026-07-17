@@ -334,13 +334,14 @@
     updateCount();
   }
 
-  /* ── 4. Scratch studio · pick starter + load checklist ── */
+  /* ── 4. Scratch studio + playground window ── */
+  var SCRATCH_EDITOR_URL = "https://scratch.mit.edu/projects/editor/";
   var SCRATCH_PROJECTS = {
     jumping: {
       title: "Jumping Game",
       get: "A character that jumps with the space bar and lands on platforms.",
       why: "Best first game if you want something that moves right away.",
-      href: "#jumping",
+      href: "scratch-studio.html#jumping",
       file: "scratch-projects/jumping-game.sb3",
       pathHref: "informatics-class-of-2027.html#early-heading",
       pathLabel: "Pair with AP notes on the IU guide →",
@@ -349,7 +350,7 @@
       title: "Catch Game",
       get: "A catcher that scoops falling items before they hit the ground.",
       why: "Great practice for forever loops and touching.",
-      href: "#catch",
+      href: "scratch-studio.html#catch",
       file: "scratch-projects/catch-game.sb3",
       pathHref: "freshman.html",
       pathLabel: "See how early Luddy courses feel →",
@@ -358,35 +359,35 @@
       title: "Pong",
       get: "A paddle and a bouncing ball you can play right away.",
       why: "Classic bounce logic without a huge sprite list.",
-      href: "#pong",
+      href: "scratch-studio.html#pong",
       file: "scratch-projects/pong-game.sb3",
     },
     clicker: {
       title: "Clicker",
       get: "A score that goes up when you click, plus one upgrade.",
       why: "Variables click faster here than in a long story project.",
-      href: "#clicker",
+      href: "scratch-studio.html#clicker",
       file: "scratch-projects/clicker-game.sb3",
     },
     scroll: {
       title: "Scrolling Background",
       get: "Ground that loops so your hero feels like it is running.",
       why: "Nice when you already like motion and want a world that moves.",
-      href: "#scroll",
+      href: "scratch-studio.html#scroll",
       file: "scratch-projects/scrolling-background.sb3",
     },
     pet: {
       title: "Virtual Pet",
       get: "A pet that gets hungry over time, plus feed, play, and rest.",
       why: "State and buttons without needing perfect art.",
-      href: "#pet",
+      href: "scratch-studio.html#pet",
       file: "scratch-projects/virtual-pet.sb3",
     },
     story: {
       title: "Story",
       get: "A three-scene mini story with one choice that branches.",
       why: "If you like writing more than platformers, start here.",
-      href: "#story",
+      href: "scratch-studio.html#story",
       file: "scratch-projects/story.sb3",
       pathHref: "footprint.html#bucket",
       pathLabel: "Ideas for what to try before you graduate →",
@@ -395,31 +396,52 @@
       title: "Character Designer",
       get: "A dress-up station: body, hat, and shirt layers you cycle.",
       why: "Low pressure art practice before you build a game.",
-      href: "#character",
+      href: "scratch-studio.html#character",
       file: "scratch-projects/character-designer.sb3",
     },
   };
 
   var SCRATCH_STEPS = ["downloaded", "opened", "loaded"];
 
+  function scratchQueryProject() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var key = params.get("project");
+      if (key && SCRATCH_PROJECTS[key]) return key;
+    } catch (_e) {
+      /* ignore */
+    }
+    return null;
+  }
+
   function initScratchPicker() {
-    var root = document.getElementById("scratch-project-picker");
+    var root =
+      document.getElementById("scratch-project-picker") ||
+      document.getElementById("scratch-play-stage");
     if (!root) return;
 
+    var isPlayPage = !!document.getElementById("scratch-play-stage");
     var reveal = document.getElementById("scratch-pick-reveal");
-    var getLine = document.getElementById("scratch-pick-get");
-    var whyLine = document.getElementById("scratch-pick-why");
+    var getLine = document.getElementById("scratch-pick-get") ||
+      document.getElementById("scratch-play-get");
+    var whyLine = document.getElementById("scratch-pick-why") ||
+      document.getElementById("scratch-play-why");
     var pathLine = document.getElementById("scratch-pick-path");
     var goLink = document.getElementById("scratch-pick-go");
+    var openLink = document.getElementById("scratch-pick-open");
+    var playLink = document.getElementById("scratch-pick-play");
     var downloadLink = document.getElementById("scratch-pick-download");
     var progressBar = document.getElementById("scratch-load-progress");
     var progressText = document.getElementById("scratch-progress-text");
     var reward = document.getElementById("scratch-progress-reward");
     var welcomeBack = document.getElementById("scratch-welcome-back");
+    var playTitle = document.getElementById("scratch-play-title");
+    var playLede = document.getElementById("scratch-play-lede");
     var saved = loadJson("scratch-pick", null);
     var progressMap = loadJson("scratch-load-steps", {});
     var currentKey = null;
     var restoring = false;
+    var fromQuery = scratchQueryProject();
 
     if (!progressMap || typeof progressMap !== "object") {
       progressMap = {};
@@ -437,7 +459,17 @@
       };
     }
 
+    function markStep(step) {
+      if (!currentKey) return;
+      var state = stepStateFor(currentKey);
+      state[step] = true;
+      progressMap[currentKey] = state;
+      saveJson("scratch-load-steps", progressMap);
+      updateProgressUI(currentKey);
+    }
+
     function updateProgressUI(key) {
+      if (!progressBar && !progressText && !reward) return;
       var state = stepStateFor(key);
       var count = 0;
       SCRATCH_STEPS.forEach(function (step) {
@@ -454,9 +486,11 @@
       }
       if (progressText) {
         if (count === 0) {
-          progressText.textContent = "You are on step 0 of 3. Check each box as you go.";
+          progressText.textContent =
+            "You are on step 0 of 3. Check each box as you go.";
         } else if (count >= 3) {
-          progressText.textContent = "You finished all 3 load steps. Green flag time.";
+          progressText.textContent =
+            "You finished all 3 load steps. Green flag time.";
         } else {
           progressText.textContent = "You are on step " + count + " of 3.";
         }
@@ -480,9 +514,11 @@
       if (reveal) reveal.hidden = false;
       if (getLine) {
         getLine.textContent = "What you get: " + proj.get;
+        getLine.hidden = false;
       }
       if (whyLine) {
         whyLine.textContent = "Why this one: " + proj.why;
+        whyLine.hidden = false;
       }
       if (pathLine) {
         if (proj.pathHref && proj.pathLabel) {
@@ -494,30 +530,71 @@
           pathLine.textContent = "";
         }
       }
+      if (openLink) {
+        openLink.href = SCRATCH_EDITOR_URL;
+        openLink.setAttribute("target", "_blank");
+        openLink.setAttribute("rel", "noopener noreferrer");
+        openLink.textContent = "Open Scratch editor";
+      }
       if (downloadLink) {
         downloadLink.href = proj.file;
         downloadLink.setAttribute("download", "");
         downloadLink.textContent = "Download " + proj.title + " (.sb3)";
       }
+      if (playLink) {
+        playLink.href = "scratch-play.html?project=" + encodeURIComponent(key);
+        playLink.setAttribute("target", "_blank");
+        playLink.setAttribute("rel", "noopener noreferrer");
+        playLink.textContent = "Open playground window";
+      }
       if (goLink) {
-        goLink.href = proj.href;
-        goLink.textContent = "Open the " + proj.title + " how-to →";
+        if (isPlayPage) {
+          goLink.href = proj.href;
+          goLink.textContent =
+            "Open the " + proj.title + " how-to on the studio page →";
+        } else {
+          goLink.href = "#" + key;
+          goLink.textContent = "Open the " + proj.title + " how-to →";
+        }
+      }
+      if (playTitle) {
+        playTitle.textContent = proj.title + " playground";
+      }
+      if (playLede) {
+        playLede.textContent =
+          "Download the starter, open Scratch in a new tab, then File → Load from your computer. Green flag when it is in.";
       }
 
       saveJson("scratch-pick", key);
       updateProgressUI(key);
 
-      document.querySelectorAll(".howto-card--picked").forEach(function (card) {
-        card.classList.remove("howto-card--picked");
-      });
-      var card = document.querySelector(
-        '.howto-card[data-project="' + key + '"]'
-      );
-      if (card) {
-        card.classList.add("howto-card--picked");
-        if (!opts.skipScroll && !restoring) {
-          scrollToEl(reveal || card);
+      if (!isPlayPage) {
+        document.querySelectorAll(".howto-card--picked").forEach(function (card) {
+          card.classList.remove("howto-card--picked");
+        });
+        var card = document.querySelector(
+          '.howto-card[data-project="' + key + '"]'
+        );
+        if (card) {
+          card.classList.add("howto-card--picked");
+          if (!opts.skipScroll && !restoring) {
+            scrollToEl(reveal || card);
+          }
+        } else if (!opts.skipScroll && !restoring) {
+          scrollToEl(reveal);
         }
+      } else if (!opts.skipScroll && !restoring) {
+        scrollToEl(reveal);
+      }
+
+      try {
+        if (isPlayPage && window.history && window.history.replaceState) {
+          var url = new URL(window.location.href);
+          url.searchParams.set("project", key);
+          window.history.replaceState({}, "", url.toString());
+        }
+      } catch (_e) {
+        /* ignore */
       }
     }
 
@@ -544,16 +621,21 @@
 
     if (downloadLink) {
       downloadLink.addEventListener("click", function () {
-        if (!currentKey) return;
-        var state = stepStateFor(currentKey);
-        state.downloaded = true;
-        progressMap[currentKey] = state;
-        saveJson("scratch-load-steps", progressMap);
-        updateProgressUI(currentKey);
+        markStep("downloaded");
       });
     }
 
-    if (saved && SCRATCH_PROJECTS[saved]) {
+    if (openLink) {
+      openLink.addEventListener("click", function () {
+        markStep("opened");
+      });
+    }
+
+    if (fromQuery) {
+      restoring = true;
+      selectProject(fromQuery, { skipScroll: true });
+      restoring = false;
+    } else if (saved && SCRATCH_PROJECTS[saved]) {
       restoring = true;
       if (welcomeBack) {
         welcomeBack.hidden = false;

@@ -34,8 +34,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260717c">
-<link rel="stylesheet" href="styles.css?v=20260717c">
+<link rel="stylesheet" href="a11y.css?v=20260717d">
+<link rel="stylesheet" href="styles.css?v=20260717d">
 </head>
 <body class="kindergarten-home sunset-home kiss-home scratch-studio-page">
 
@@ -61,20 +61,21 @@
     <p class="studio-kicker">Jade Zhao · Miss Zhao · Girls Who Code Indianapolis</p>
     <h1>Scratch studio</h1>
     <p class="studio-lede">
-      Pick one starter. Download it. Load it in Scratch. Play and remix.
-      That is the whole loop.
+      Pick one starter. Open Scratch in a new tab. Download the .sb3 and load it.
+      How-tos stay below if you want the rebuild steps.
     </p>
     <p class="studio-note">
       Archive teaching craft from Miss Zhao (on hiatus for IU Luddy senior year).
       Not affiliated with Scratch Team. Starters are <code>.sb3</code> files you load with
-      File → Load from your computer.
+      File → Load from your computer. Scratch cannot be embedded here, so we open their editor.
     </p>
   </header>
 
   <section id="scratch-project-picker" class="open-invest scratch-pick-block" aria-labelledby="scratch-pick-heading">
     <h2 id="scratch-pick-heading">Pick a starter</h2>
     <p class="invest-lede">
-      One tap. You get a download, plain steps, and a checklist that remembers on this device.
+      One tap. Primary move: open Scratch. Keep the download for Load from your computer.
+      Want a quieter stage? Use the playground window.
     </p>
     <p id="scratch-welcome-back" class="scratch-welcome-back" hidden></p>
     <ul class="scratch-pick-choices open-pick-list" role="list">
@@ -134,47 +135,32 @@
       <p id="scratch-pick-path" class="scratch-pick-path" hidden></p>
 
       <p class="scratch-primary-cta">
-        <a id="scratch-pick-download" class="open-cta" href="scratch-projects/jumping-game.sb3" download>
+        <a
+          id="scratch-pick-open"
+          class="open-cta"
+          href="https://scratch.mit.edu/projects/editor/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Scratch editor
+        </a>
+      </p>
+      <p class="scratch-secondary-ctas">
+        <a id="scratch-pick-download" class="open-link-cta" href="scratch-projects/jumping-game.sb3" download>
           Download starter (.sb3)
+        </a>
+        <span class="scratch-cta-sep" aria-hidden="true"> · </span>
+        <a
+          id="scratch-pick-play"
+          class="open-link-cta"
+          href="scratch-play.html?project=jumping"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open playground window
         </a>
       </p>
 
-      <h3 id="scratch-steps-heading" class="scratch-steps-heading">Do this next</h3>
-      <ol class="scratch-load-steps" aria-labelledby="scratch-steps-heading">
-        <li>Download the starter file above.</li>
-        <li>Open <a href="https://scratch.mit.edu/projects/editor/" target="_blank" rel="noopener noreferrer">scratch.mit.edu Create</a>.</li>
-        <li>Choose <strong>File → Load from your computer</strong> and pick the file.</li>
-        <li>Press the green flag. Remix with the how-to below.</li>
-      </ol>
-
-      <div class="scratch-progress-wrap" aria-live="polite">
-        <label class="visually-hidden" for="scratch-load-progress">Starter load progress</label>
-        <progress id="scratch-load-progress" class="scratch-load-progress" value="0" max="3">0 of 3</progress>
-        <p id="scratch-progress-text" class="scratch-progress-text">You are on step 0 of 3.</p>
-      </div>
-      <ul class="scratch-check-list open-check-list" id="scratch-check-list">
-        <li>
-          <label class="open-check">
-            <input type="checkbox" id="scratch-step-downloaded" data-step="downloaded" />
-            <span>I downloaded the .sb3</span>
-          </label>
-        </li>
-        <li>
-          <label class="open-check">
-            <input type="checkbox" id="scratch-step-opened" data-step="opened" />
-            <span>I opened Scratch Create</span>
-          </label>
-        </li>
-        <li>
-          <label class="open-check">
-            <input type="checkbox" id="scratch-step-loaded" data-step="loaded" />
-            <span>I loaded the file (File → Load from your computer)</span>
-          </label>
-        </li>
-      </ul>
-      <p id="scratch-progress-reward" class="scratch-progress-reward" hidden>
-        Nice. Green flag, then open the how-to and remix one thing.
-      </p>
       <p class="scratch-howto-link-wrap">
         <a id="scratch-pick-go" class="open-link-cta" href="#jumping">Open the Jumping Game how-to →</a>
       </p>
@@ -649,12 +635,12 @@
   </section>
 
   <footer class="footer-kiss">
-    <p>Archive studio · Miss Zhao on hiatus · download starters · rebuild from steps · live Scratch URLs optional later.</p>
+    <p>Archive studio · Miss Zhao on hiatus · open Scratch · download starters · rebuild from steps below.</p>
     <p class="human">Jade Zhao · Miss Zhao on hiatus · IU Luddy · <span class="sc">福州</span> roots · <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a></p>
   </footer>
 
 </main>
-<script src="invest-return.js?v=20260717c" defer></script>
+<script src="invest-return.js?v=20260717d" defer></script>
 <script>
   // 点击缩略图锚点时，自动展开对应的 details 教程面板
   document.querySelectorAll('a[href^="#lesson-"]').forEach(function (link) {
