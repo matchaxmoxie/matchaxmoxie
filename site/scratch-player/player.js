@@ -81,6 +81,18 @@
     if (stop) stop.disabled = !ready;
   }
 
+  /**
+   * TurboWarp Scaffolding only posts keyboard IO when focus is on
+   * document/body. After Green flag / Stop, blur the button so Space
+   * and arrows reach the VM (needed for Jumping Game, etc.).
+   */
+  function releaseKeyboardFocus() {
+    var active = document.activeElement;
+    if (active && active !== document.body && typeof active.blur === "function") {
+      active.blur();
+    }
+  }
+
   function syncChrome(key) {
     var proj = PROJECTS[key];
     if (!proj) return;
@@ -196,7 +208,8 @@
       flag.addEventListener("click", function () {
         if (!scaffolding) return;
         scaffolding.greenFlag();
-        setStatus("Running. Red stop pauses all scripts.", false);
+        setStatus("Running. Space / arrows play the game. Red stop pauses.", false);
+        releaseKeyboardFocus();
       });
     }
     if (stop) {
@@ -204,6 +217,7 @@
         if (!scaffolding) return;
         scaffolding.stopAll();
         setStatus("Stopped. Green flag to run again.", false);
+        releaseKeyboardFocus();
       });
     }
 
