@@ -2824,7 +2824,7 @@ body.kindergarten-home {
   grid-template-columns: minmax(200px, 280px) 1fr;
   gap: 28px 36px;
   align-items: center;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 
 .kindergarten-home .hero-visual {
@@ -2981,6 +2981,44 @@ body.kindergarten-home {
   color: var(--crayon-muted);
   max-width: 44ch;
   margin-bottom: 16px;
+}
+
+/* 首屏钩子 · HS senior reason-to-care（先于龙凤双站） */
+.kindergarten-home .hero-hook {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 3.2vw, 1.55rem);
+  line-height: 1.25;
+  color: var(--coral-ink);
+  max-width: 28ch;
+  margin: 0 0 10px;
+}
+
+.kindergarten-home .hero-why {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: clamp(1rem, 2.2vw, 1.1rem);
+  line-height: 1.45;
+  color: var(--crayon-muted);
+  max-width: 40ch;
+  margin: 0 0 14px;
+}
+
+.invest-block--hero {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.invest-block--hero h2 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  line-height: 1.2;
+  color: var(--crayon-ink);
+  margin: 0 0 8px;
+}
+
+.twin-note--after-invest {
+  margin-top: 8px;
 }
 
 .kindergarten-home .hero-meta {

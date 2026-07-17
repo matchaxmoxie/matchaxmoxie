@@ -34,8 +34,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260716d">
-<link rel="stylesheet" href="styles.css?v=20260716d">
+<link rel="stylesheet" href="a11y.css?v=20260716e">
+<link rel="stylesheet" href="styles.css?v=20260716e">
 </head>
 <body class="kindergarten-home sunset-home kiss-home">
 
@@ -50,19 +50,7 @@
 </nav>
 <main id="main-content" class="wrap">
 
-  <!-- 双站白话 · IG 真名日间脸（不是 GitHub 句柄） -->
-  <p class="twin-note">
-    Two sites, same me:
-    <span class="sc" lang="zh-Hans">凤凰</span> · phoenix (this teaching site) and
-    <span class="sc" lang="zh-Hans">龙</span> · dragon
-    (<a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>, my work side).
-    Here I go by Miss Zhao and share school and coding tips for students.
-    On Instagram I&rsquo;m
-    <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
-    (Zhao / <span class="sc">赵朗曦</span>).
-    <strong>jadexzhao</strong> is just my code username, never an Instagram handle.
-  </p>
-
+  <!-- 首屏：高中生 reason-to-care → 立刻 invest；龙凤双站与招聘门放折页下 -->
   <header class="hero">
     <div class="hero-visual" role="img" aria-label="End-of-day classroom: chalkboard, setting sun, Miss Zhao name tag">
       <span class="name-tag" aria-hidden="true">Miss Zhao</span>
@@ -75,10 +63,11 @@
     </div>
     <div class="hero-text">
       <h1>Jade Zhao <span class="sc">赵</span></h1>
-      <p class="hero-tag">
-        Miss Zhao · on hiatus for senior year.
-        Informatics @ IU Luddy · Class of 2027.
-        Teaching archive stays open.
+      <p class="hero-hook">
+        Picking IU or Informatics as a senior? Start here.
+      </p>
+      <p class="hero-why">
+        Miss Zhao keeps one clear next step for you on this page — not a tour of both my sites.
       </p>
       <p class="hero-meta">
         <a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>
@@ -88,16 +77,52 @@
     </div>
   </header>
 
-  <!-- 受众两扇门 · 学生优先留本页；招聘软交接去日出公文包 -->
-  <p class="start-here">Start here · pick whichever sounds like you.</p>
+  <section id="situation-picker" class="invest-block invest-block--hero" aria-labelledby="situation-heading">
+    <h2 id="situation-heading">Pick your situation · get a 3-step plan</h2>
+    <p class="invest-lede">
+      Tap what sounds like you. One click in. Three pages out, in order, for your spot.
+    </p>
+    <div class="situation-choices" role="group" aria-label="Your situation">
+      <button type="button" class="situation-btn" data-situation="ap-csp" aria-pressed="false">
+        <span class="situation-btn-label">AP CSP or curious about code</span>
+        <span class="situation-btn-hint">Start coding before college</span>
+      </button>
+      <button type="button" class="situation-btn" data-situation="undecided" aria-pressed="false">
+        <span class="situation-btn-label">Undecided major · eyeing Informatics</span>
+        <span class="situation-btn-hint">Figure out if IU Luddy fits</span>
+      </button>
+      <button type="button" class="situation-btn" data-situation="visiting" aria-pressed="false">
+        <span class="situation-btn-label">Visiting IU or already admitted</span>
+        <span class="situation-btn-hint">Campus prep and calendar</span>
+      </button>
+    </div>
+    <div id="situation-plan" class="situation-plan" hidden>
+      <p id="situation-plan-title" class="situation-plan-title"></p>
+      <ol id="situation-plan-steps" class="situation-plan-steps"></ol>
+      <p class="situation-plan-note">Your pick saves on this device. Change anytime.</p>
+    </div>
+  </section>
+
+  <!-- 折页下 · 双站与招聘软交接（CEO：每站一次只记一个钩子） -->
+  <p class="twin-note twin-note--after-invest">
+    Two sites, same me — after you pick a path above:
+    <span class="sc" lang="zh-Hans">凤凰</span> · phoenix (this teaching site) and
+    <span class="sc" lang="zh-Hans">龙</span> · dragon
+    (<a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>, my work side).
+    On Instagram I&rsquo;m
+    <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
+    (Zhao / <span class="sc">赵朗曦</span>).
+    <strong>jadexzhao</strong> is just my code username, never an Instagram handle.
+  </p>
+  <p class="start-here">Still browsing · or here to hire?</p>
   <nav class="doors" aria-label="Audience">
     <a class="door door--primary" href="#advice-funnel">
-      <span class="door-who">A student or high schooler</span>
-      <span class="door-what">Step-by-step advice, a fun bucket list, my college guide, and beginner coding projects → stay here</span>
+      <span class="door-who">Student path · keep going</span>
+      <span class="door-what">Step-by-step advice, bucket list, IU guide, Scratch → stay here</span>
     </a>
     <a class="door door--secondary" href="https://jadexzhao.github.io/jadexzhao/">
       <span class="door-who">Here to hire or work with me</span>
-      <span class="door-what">My projects, jobs, and career story live on my work site → jadexzhao</span>
+      <span class="door-what">Projects, jobs, and career story → jadexzhao (龙 · dragon)</span>
     </a>
   </nav>
 
@@ -105,13 +130,11 @@
   <section id="student-path" class="gwc-block" aria-labelledby="kids-heading">
     <h2 id="kids-heading">A student or high schooler</h2>
     <p>
-      You&rsquo;re in the right place. Work through the
+      You already have a plan if you tapped above. Next: work the
       <a href="#advice-funnel">step-by-step advice list</a>
       in order, or check off the
-      <a href="footprint.html">bucket list</a>
-      (five things to try: travel, pick up skills, build a name for yourself, keep a journal, and leave a footprint).
-      You&rsquo;ll also find beginner coding projects (using a free tool called Scratch), a year-by-year look at my
-      college classes, tips for surviving campus, and a friendly guide to studying Informatics at IU.
+      <a href="footprint.html">bucket list</a>.
+      Scratch how-tos, year-by-year classes, campus tips, and the IU Informatics guide live below.
       Tech is for everyone, no experience needed.
     </p>
     <aside class="miss-zhao-tip" role="note" aria-label="Miss Zhao tip">
@@ -125,32 +148,6 @@
       </p>
       <p class="you-got-this">You got this · curious beats perfect.</p>
     </aside>
-
-    <section id="situation-picker" class="invest-block" aria-labelledby="situation-heading">
-      <h3 id="situation-heading">Pick your situation · get a 3-step plan</h3>
-      <p class="invest-lede">
-        Tap what sounds like you. Put in one click. Get three pages in order, picked for your spot.
-      </p>
-      <div class="situation-choices" role="group" aria-label="Your situation">
-        <button type="button" class="situation-btn" data-situation="ap-csp" aria-pressed="false">
-          <span class="situation-btn-label">AP CSP or curious about code</span>
-          <span class="situation-btn-hint">Start coding before college</span>
-        </button>
-        <button type="button" class="situation-btn" data-situation="undecided" aria-pressed="false">
-          <span class="situation-btn-label">Undecided major · eyeing Informatics</span>
-          <span class="situation-btn-hint">Figure out if IU Luddy fits</span>
-        </button>
-        <button type="button" class="situation-btn" data-situation="visiting" aria-pressed="false">
-          <span class="situation-btn-label">Visiting IU or already admitted</span>
-          <span class="situation-btn-hint">Campus prep and calendar</span>
-        </button>
-      </div>
-      <div id="situation-plan" class="situation-plan" hidden>
-        <p id="situation-plan-title" class="situation-plan-title"></p>
-        <ol id="situation-plan-steps" class="situation-plan-steps"></ol>
-        <p class="situation-plan-note">Your pick saves on this device. Change anytime.</p>
-      </div>
-    </section>
 
     <h3 id="advice-funnel-heading">Step-by-step advice · do these in order</h3>
     <p class="advice-funnel-lede">
@@ -303,6 +300,6 @@
   </footer>
 
 </main>
-<script src="invest-return.js?v=20260716d" defer></script>
+<script src="invest-return.js?v=20260716e" defer></script>
 </body>
 </html>
