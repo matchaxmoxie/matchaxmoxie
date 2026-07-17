@@ -1,7 +1,8 @@
 /**
  * matchaxmoxie · invest → return interactions
  * High school seniors: put attention in, get a clear payoff out.
- * localStorage only · no tracking · respects prefers-reduced-motion via CSS.
+ * Persists via MatchaxConsent (localStorage after Accept) · no tracking.
+ * Respects prefers-reduced-motion via CSS.
  */
 (function () {
   "use strict";
@@ -20,9 +21,16 @@
     });
   }
 
+  function storageKey(key) {
+    return STORAGE_PREFIX + key;
+  }
+
   function loadJson(key, fallback) {
+    if (window.MatchaxConsent && typeof window.MatchaxConsent.load === "function") {
+      return window.MatchaxConsent.load(storageKey(key), fallback);
+    }
     try {
-      var raw = localStorage.getItem(STORAGE_PREFIX + key);
+      var raw = localStorage.getItem(storageKey(key));
       return raw ? JSON.parse(raw) : fallback;
     } catch (_e) {
       return fallback;
@@ -30,8 +38,12 @@
   }
 
   function saveJson(key, value) {
+    if (window.MatchaxConsent && typeof window.MatchaxConsent.save === "function") {
+      window.MatchaxConsent.save(storageKey(key), value);
+      return;
+    }
     try {
-      localStorage.setItem(STORAGE_PREFIX + key, JSON.stringify(value));
+      localStorage.setItem(storageKey(key), JSON.stringify(value));
     } catch (_e) {
       /* quota or private mode */
     }

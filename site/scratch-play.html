@@ -22,8 +22,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260717g">
-<link rel="stylesheet" href="styles.css?v=20260717g">
+<link rel="stylesheet" href="a11y.css?v=20260717h">
+<link rel="stylesheet" href="classroom-ux.css?v=20260717h">
+<link rel="stylesheet" href="styles.css?v=20260717h">
 </head>
 <body class="kindergarten-home sunset-home kiss-home scratch-studio-page scratch-play-page">
 
@@ -63,10 +64,10 @@
 
     <div class="scratch-player-shell">
       <div class="scratch-player-toolbar" role="group" aria-label="Play controls">
-        <button type="button" id="scratch-green-flag" class="scratch-control-btn scratch-control-btn--flag" disabled>
+        <button type="button" id="scratch-green-flag" class="scratch-control-btn scratch-control-btn--flag" aria-label="Green flag: start project" disabled>
           Green flag
         </button>
-        <button type="button" id="scratch-stop-all" class="scratch-control-btn scratch-control-btn--stop" disabled>
+        <button type="button" id="scratch-stop-all" class="scratch-control-btn scratch-control-btn--stop" aria-label="Stop all scripts" disabled>
           Stop
         </button>
       </div>
@@ -172,7 +173,8 @@
   更新：npm pack @turbowarp/scaffolding@0.4.0 → 复制 dist/scaffolding-min.js 到本目录上级 scratch-player/。
   详见 scratch-player/README.md。
 -->
+<script src="classroom-ux.js?v=20260717h" defer></script>
 <script src="scratch-player/scaffolding-min.js?v=0.4.0" defer></script>
-<script src="scratch-player/player.js?v=20260717g" defer></script>
+<script src="scratch-player/player.js?v=20260717h" defer></script>
 </body>
 </html>

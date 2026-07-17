@@ -1,0 +1,363 @@
+/**
+ * matchaxmoxie · classroom UX shell
+ * Cookie / save consent + Miss Zhao status chip.
+ * No tracking. No third-party cookies.
+ *
+ * Consent: localStorage matchax-consent = "accepted" | "declined"
+ * When accepted, also sets first-party cookie matchax_consent=accepted.
+ * App picks (situation, Scratch, footprint) stay in localStorage only after accept.
+ *
+ * Status: edit STATUS_DEFAULT below and commit, or demo-override with
+ * localStorage matchax-status-override = {"mode":"teaching","label":"Teaching","detail":"..."}.
+ */
+(function () {
+  "use strict";
+
+  var CONSENT_KEY = "matchax-consent";
+  var COOKIE_NAME = "matchax_consent";
+  var STATUS_OVERRIDE_KEY = "matchax-status-override";
+  var UX_KEYS = [
+    "matchax-situation",
+    "matchax-scratch-pick",
+    "matchax-footprint",
+    "matchax-advice-funnel",
+  ];
+
+  /* ── Jade edits this and commits ── */
+  var STATUS_DEFAULT = {
+    mode: "hiatus",
+    label: "On hiatus",
+    detail: "Senior year · archive still open",
+  };
+
+  var STATUS_MODES = {
+    working: { label: "Working", detail: "Building on the classroom side" },
+    "office-hours": {
+      label: "Office hours",
+      detail: "Drop questions when the door is open",
+    },
+    teaching: { label: "Teaching", detail: "Live classroom energy" },
+    hiatus: { label: "On hiatus", detail: "Senior year · archive still open" },
+    offline: { label: "Offline", detail: "Quiet for now · archive still open" },
+  };
+
+  var pendingSaves = {};
+  var listeners = [];
+
+  function readConsent() {
+    try {
+      var v = localStorage.getItem(CONSENT_KEY);
+      if (v === "accepted" || v === "declined") return v;
+    } catch (_e) {
+      /* private mode */
+    }
+    return null;
+  }
+
+  function setConsentCookie(accepted) {
+    if (accepted) {
+      document.cookie =
+        COOKIE_NAME +
+        "=accepted; Path=/; Max-Age=31536000; SameSite=Lax";
+    } else {
+      document.cookie =
+        COOKIE_NAME + "=; Path=/; Max-Age=0; SameSite=Lax";
+    }
+  }
+
+  function clearUxStorage() {
+    try {
+      UX_KEYS.forEach(function (k) {
+        localStorage.removeItem(k);
+      });
+    } catch (_e) {
+      /* ignore */
+    }
+    pendingSaves = {};
+  }
+
+  function flushPending() {
+    Object.keys(pendingSaves).forEach(function (key) {
+      try {
+        localStorage.setItem(key, JSON.stringify(pendingSaves[key]));
+      } catch (_e) {
+        /* quota */
+      }
+    });
+    pendingSaves = {};
+  }
+
+  function writeConsent(value) {
+    try {
+      localStorage.setItem(CONSENT_KEY, value);
+    } catch (_e) {
+      /* ignore */
+    }
+    if (value === "accepted") {
+      setConsentCookie(true);
+      flushPending();
+    } else {
+      setConsentCookie(false);
+      clearUxStorage();
+    }
+    listeners.forEach(function (fn) {
+      try {
+        fn(value);
+      } catch (_e) {
+        /* ignore */
+      }
+    });
+    document.dispatchEvent(
+      new CustomEvent("matchax-consent-change", { detail: { value: value } })
+    );
+  }
+
+  function allowsSave() {
+    return readConsent() === "accepted";
+  }
+
+  function loadStored(key, fallback) {
+    if (!allowsSave()) return fallback;
+    try {
+      var raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : fallback;
+    } catch (_e) {
+      return fallback;
+    }
+  }
+
+  function saveStored(key, value) {
+    var c = readConsent();
+    if (c === "accepted") {
+      try {
+        localStorage.setItem(key, JSON.stringify(value));
+      } catch (_e) {
+        /* quota */
+      }
+      return;
+    }
+    /* undecided: queue until Accept. declined: this visit only */
+    if (c === null) {
+      pendingSaves[key] = value;
+    }
+  }
+
+  window.MatchaxConsent = {
+    get: readConsent,
+    allowsSave: allowsSave,
+    load: loadStored,
+    save: saveStored,
+    onChange: function (fn) {
+      if (typeof fn === "function") listeners.push(fn);
+    },
+  };
+
+  function resolveStatus() {
+    var status = {
+      mode: STATUS_DEFAULT.mode,
+      label: STATUS_DEFAULT.label,
+      detail: STATUS_DEFAULT.detail,
+    };
+    try {
+      var raw = localStorage.getItem(STATUS_OVERRIDE_KEY);
+      if (raw) {
+        var o = JSON.parse(raw);
+        if (o && typeof o === "object") {
+          if (o.mode && STATUS_MODES[o.mode]) status.mode = o.mode;
+          if (typeof o.label === "string" && o.label) status.label = o.label;
+          if (typeof o.detail === "string" && o.detail) status.detail = o.detail;
+        }
+      }
+    } catch (_e) {
+      /* ignore bad override */
+    }
+    var preset = STATUS_MODES[status.mode];
+    if (preset) {
+      if (!status.label) status.label = preset.label;
+      if (!status.detail) status.detail = preset.detail;
+    }
+    return status;
+  }
+
+  function initStatusChip() {
+    if (document.getElementById("classroom-status")) return;
+    var nav = document.querySelector(".site-jump");
+    var status = resolveStatus();
+    var el = document.createElement("p");
+    el.id = "classroom-status";
+    el.className = "classroom-status classroom-status--" + status.mode;
+    el.setAttribute("role", "status");
+    el.setAttribute(
+      "aria-label",
+      "Miss Zhao status: " + status.label + ". " + status.detail
+    );
+
+    var kicker = document.createElement("span");
+    kicker.className = "classroom-status-kicker";
+    kicker.textContent = "Miss Zhao";
+
+    var mode = document.createElement("span");
+    mode.className = "classroom-status-mode";
+    mode.textContent = status.label;
+
+    var detail = document.createElement("span");
+    detail.className = "classroom-status-detail";
+    detail.textContent = status.detail;
+
+    el.appendChild(kicker);
+    el.appendChild(document.createTextNode(" · "));
+    el.appendChild(mode);
+    el.appendChild(document.createTextNode(" · "));
+    el.appendChild(detail);
+
+    if (nav && nav.parentNode) {
+      nav.insertAdjacentElement("afterend", el);
+    } else {
+      document.body.insertBefore(el, document.body.firstChild);
+    }
+  }
+
+  function hideBanner(banner) {
+    if (!banner) return;
+    banner.hidden = true;
+    banner.setAttribute("aria-hidden", "true");
+  }
+
+  function showBanner(banner) {
+    if (!banner) return;
+    banner.hidden = false;
+    banner.removeAttribute("aria-hidden");
+  }
+
+  function buildBanner() {
+    var existing = document.getElementById("cookie-consent");
+    if (existing) return existing;
+
+    var banner = document.createElement("div");
+    banner.id = "cookie-consent";
+    banner.className = "cookie-consent";
+    banner.setAttribute("role", "region");
+    banner.setAttribute("aria-labelledby", "cookie-consent-title");
+    banner.setAttribute("aria-describedby", "cookie-consent-desc");
+    banner.hidden = true;
+
+    banner.innerHTML =
+      '<div class="cookie-consent-inner">' +
+      '<p id="cookie-consent-title" class="cookie-consent-title">Save your classroom picks?</p>' +
+      '<p id="cookie-consent-desc" class="cookie-consent-desc">' +
+      "Accept to keep situation, Scratch starter, and footprint checks on this device. " +
+      "We set one tiny first-party cookie for that yes. No tracking pixels. Decline still lets you browse; picks stay for this visit only." +
+      "</p>" +
+      '<div class="cookie-consent-actions">' +
+      '<button type="button" class="cookie-consent-accept" id="cookie-consent-accept">Accept cookies</button>' +
+      '<button type="button" class="cookie-consent-decline" id="cookie-consent-decline">No thanks</button>' +
+      "</div>" +
+      "</div>";
+
+    document.body.appendChild(banner);
+    return banner;
+  }
+
+  function buildCookieTab() {
+    var existing = document.getElementById("cookie-consent-tab");
+    if (existing) return existing;
+
+    var tab = document.createElement("button");
+    tab.type = "button";
+    tab.id = "cookie-consent-tab";
+    tab.className = "cookie-consent-tab";
+    tab.textContent = "Cookies";
+    tab.setAttribute("aria-label", "Cookie and save settings");
+    tab.setAttribute("aria-controls", "cookie-consent");
+    tab.setAttribute("aria-expanded", "false");
+    tab.hidden = true;
+    document.body.appendChild(tab);
+    return tab;
+  }
+
+  function initConsentUi() {
+    var banner = buildBanner();
+    var tab = buildCookieTab();
+    var acceptBtn = document.getElementById("cookie-consent-accept");
+    var declineBtn = document.getElementById("cookie-consent-decline");
+    var consent = readConsent();
+
+    function openPanel(fromTab) {
+      showBanner(banner);
+      tab.hidden = true;
+      tab.setAttribute("aria-expanded", "true");
+      if (fromTab && acceptBtn) {
+        try {
+          acceptBtn.focus({ preventScroll: true });
+        } catch (_e) {
+          acceptBtn.focus();
+        }
+      }
+    }
+
+    function closePanel() {
+      hideBanner(banner);
+      tab.hidden = false;
+      tab.setAttribute("aria-expanded", "false");
+    }
+
+    if (acceptBtn) {
+      acceptBtn.addEventListener("click", function () {
+        writeConsent("accepted");
+        closePanel();
+        try {
+          tab.focus({ preventScroll: true });
+        } catch (_e) {
+          tab.focus();
+        }
+      });
+    }
+    if (declineBtn) {
+      declineBtn.addEventListener("click", function () {
+        writeConsent("declined");
+        closePanel();
+        try {
+          tab.focus({ preventScroll: true });
+        } catch (_e) {
+          tab.focus();
+        }
+      });
+    }
+
+    tab.addEventListener("click", function () {
+      openPanel(true);
+    });
+
+    banner.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !banner.hidden) {
+        e.preventDefault();
+        if (readConsent() === null) {
+          writeConsent("declined");
+        }
+        closePanel();
+        try {
+          tab.focus({ preventScroll: true });
+        } catch (_e2) {
+          tab.focus();
+        }
+      }
+    });
+
+    if (consent === null) {
+      openPanel(false);
+    } else {
+      closePanel();
+    }
+  }
+
+  function init() {
+    initStatusChip();
+    initConsentUi();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
