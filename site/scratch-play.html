@@ -22,8 +22,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260717e">
-<link rel="stylesheet" href="styles.css?v=20260717e">
+<link rel="stylesheet" href="a11y.css?v=20260717g">
+<link rel="stylesheet" href="styles.css?v=20260717g">
 </head>
 <body class="kindergarten-home sunset-home kiss-home scratch-studio-page scratch-play-page">
 
@@ -50,11 +50,11 @@
     <p class="studio-kicker">Jade Zhao · Miss Zhao · Girls Who Code Indianapolis</p>
     <h1 id="scratch-play-title">Scratch playground</h1>
     <p id="scratch-play-lede" class="studio-lede">
-      Plays on this site. Green flag to start, red stop to pause. Download if you want to remix offline.
+      Wait for ready. Green flag starts. Controls change with each starter.
     </p>
     <p class="studio-note">
       Starters load from this classroom (same site). Not affiliated with Scratch Team.
-      Want the rebuild steps? Open the how-to on the studio page.
+      Rebuild steps live on the studio page.
     </p>
   </header>
 
@@ -73,6 +73,19 @@
       <p id="scratch-player-status" class="scratch-player-status" aria-live="polite">
         Loading player…
       </p>
+
+      <aside class="scratch-howto-play" aria-labelledby="scratch-howto-heading">
+        <h2 id="scratch-howto-heading" class="scratch-howto-heading">How to play</h2>
+        <ol class="scratch-howto-steps">
+          <li><strong>Green flag</strong> when status says ready.</li>
+          <li id="scratch-howto-controls"><strong>This starter:</strong> Space to jump · arrows to move.</li>
+          <li><strong>Stop</strong> pauses. Flag again to restart.</li>
+        </ol>
+        <p id="scratch-howto-tip" class="scratch-howto-tip">
+          After green flag, click the stage (or empty page) so Space and arrows reach the game, not the buttons.
+        </p>
+      </aside>
+
       <div
         id="scratch-stage"
         class="scratch-stage"
@@ -82,73 +95,74 @@
     </div>
 
     <h2 class="scratch-pick-switch-heading">Switch starter</h2>
+    <p class="scratch-pick-switch-lede">Tap one. How to play updates above the stage.</p>
     <ul class="scratch-pick-choices open-pick-list" role="list" id="scratch-play-pick-list">
       <li>
         <button type="button" class="scratch-pick-btn open-pick-btn" data-project="jumping" aria-pressed="false">
           <span class="open-pick-label">Jumping Game</span>
-          <span class="open-pick-hint">Space bar · gravity · platforms</span>
+          <span class="open-pick-hint">Space · ← → · green flag first</span>
         </button>
       </li>
       <li>
         <button type="button" class="scratch-pick-btn open-pick-btn" data-project="catch" aria-pressed="false">
           <span class="open-pick-label">Catch Game</span>
-          <span class="open-pick-hint">Falling items · score</span>
+          <span class="open-pick-hint">← → arrows · catch falling items</span>
         </button>
       </li>
       <li>
         <button type="button" class="scratch-pick-btn open-pick-btn" data-project="pong" aria-pressed="false">
           <span class="open-pick-label">Pong</span>
-          <span class="open-pick-hint">Paddle · bounce · classic</span>
+          <span class="open-pick-hint">Mouse or ← → · keep the ball up</span>
         </button>
       </li>
       <li>
         <button type="button" class="scratch-pick-btn open-pick-btn" data-project="clicker" aria-pressed="false">
           <span class="open-pick-label">Clicker</span>
-          <span class="open-pick-hint">Points · upgrades · variables</span>
+          <span class="open-pick-hint">Click the sprite · buy upgrade</span>
         </button>
       </li>
       <li>
         <button type="button" class="scratch-pick-btn open-pick-btn" data-project="scroll" aria-pressed="false">
           <span class="open-pick-label">Scrolling Background</span>
-          <span class="open-pick-hint">Runner vibe · looping ground</span>
+          <span class="open-pick-hint">Green flag · watch the loop</span>
         </button>
       </li>
       <li>
         <button type="button" class="scratch-pick-btn open-pick-btn" data-project="pet" aria-pressed="false">
           <span class="open-pick-label">Virtual Pet</span>
-          <span class="open-pick-hint">Feed · play · rest</span>
+          <span class="open-pick-hint">Click Feed · Play · Rest</span>
         </button>
       </li>
       <li>
         <button type="button" class="scratch-pick-btn open-pick-btn" data-project="story" aria-pressed="false">
           <span class="open-pick-label">Story</span>
-          <span class="open-pick-hint">Scenes · choices · dialogue</span>
+          <span class="open-pick-hint">Green flag · watch · click choices</span>
         </button>
       </li>
       <li>
         <button type="button" class="scratch-pick-btn open-pick-btn" data-project="character" aria-pressed="false">
           <span class="open-pick-label">Character Designer</span>
-          <span class="open-pick-hint">Costumes · hats · layers</span>
+          <span class="open-pick-hint">Click buttons to cycle looks</span>
         </button>
       </li>
     </ul>
 
     <div class="scratch-pick-reveal scratch-play-secondary">
       <p class="scratch-secondary-ctas">
-        <a id="scratch-pick-download" class="open-link-cta" href="scratch-projects/jumping-game.sb3" download>
+        <a id="scratch-pick-download" class="open-link-soft" href="scratch-projects/jumping-game.sb3" download>
           Download starter (.sb3) to remix offline
         </a>
       </p>
       <p class="scratch-howto-link-wrap">
-        <a id="scratch-pick-go" class="open-link-cta" href="scratch-studio.html#jumping">
-          Open the how-to on the studio page →
+        <a id="scratch-pick-go" class="open-link-soft" href="scratch-studio.html#jumping">
+          Rebuild steps on the studio page →
         </a>
       </p>
     </div>
   </section>
 
   <footer class="footer-kiss">
-    <p>Playground · play on this site · green flag · stop. How-tos live on the studio page.</p>
+    <p>Playground · green flag · stop · controls above the stage. Rebuild how-tos on the studio page.</p>
     <p class="human">Jade Zhao · Miss Zhao on hiatus · IU Luddy · <span class="sc">福州</span> roots · <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a></p>
   </footer>
 
@@ -159,6 +173,6 @@
   详见 scratch-player/README.md。
 -->
 <script src="scratch-player/scaffolding-min.js?v=0.4.0" defer></script>
-<script src="scratch-player/player.js?v=20260717f" defer></script>
+<script src="scratch-player/player.js?v=20260717g" defer></script>
 </body>
 </html>

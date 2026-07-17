@@ -3065,7 +3065,19 @@ body.kindergarten-home {
 }
 
 .situation-plan-next {
-  margin: 16px 0 0;
+  margin: 16px 0 8px;
+}
+
+.situation-plan-secondary {
+  margin: 0 0 10px;
+}
+
+.situation-pick-status:empty {
+  display: none;
+}
+
+.situation-pick-status:not(:empty) {
+  margin: 0 0 12px;
 }
 
 .choice-home-visual {
@@ -5596,6 +5608,24 @@ body {
   outline-offset: 3px;
 }
 
+.situation-pick-status {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--coral-ink);
+}
+
+.open-pick-selected {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--coral-ink);
+}
+
 .situation-plan {
   margin-top: 18px;
   padding-top: 16px;
@@ -5606,11 +5636,21 @@ body {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-size: 1.1rem;
   color: var(--coral-ink);
-  margin: 0 0 10px;
+  margin: 0 0 6px;
+}
+
+.situation-plan-progress {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dusk);
+  margin: 0 0 12px;
 }
 
 .situation-plan-steps {
-  margin: 0 0 10px;
+  margin: 0 0 14px;
   padding-left: 1.4rem;
 }
 
@@ -5632,15 +5672,38 @@ body {
   margin-bottom: 2px;
 }
 
-.situation-plan-steps a {
-  font-weight: 700;
-  color: var(--dusk);
-}
-
 .situation-plan-note {
   font-size: 0.9rem;
   color: var(--crayon-muted);
   margin: 0;
+}
+
+.open-link-soft {
+  display: inline;
+  min-height: 44px;
+  padding: 0;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: clamp(1.02rem, 2.4vw, 1.12rem);
+  font-weight: 700;
+  color: var(--dusk);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgba(42, 31, 61, 0.35);
+  border-radius: 0;
+  box-shadow: none;
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.open-link-soft:hover {
+  color: var(--coral-ink);
+  border-bottom-color: var(--coral-ink);
+}
+
+.open-link-soft:focus-visible {
+  outline: 3px solid var(--focus-ring, var(--dusk));
+  outline-offset: 3px;
 }
 
 .advice-funnel-progress-wrap {
@@ -5859,6 +5922,52 @@ body {
   margin: 0 0 0.65rem;
 }
 
+.scratch-howto-play {
+  margin: 0 0 0.9rem;
+  padding: 0 0 0.75rem;
+  max-width: 40ch;
+  border-bottom: 2px solid rgba(31, 22, 48, 0.12);
+}
+
+.scratch-howto-heading {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.15rem, 2.6vw, 1.3rem);
+  color: var(--crayon-ink);
+  margin: 0 0 8px;
+}
+
+.scratch-howto-steps {
+  margin: 0 0 8px;
+  padding-left: 1.25rem;
+}
+
+.scratch-howto-steps li {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: clamp(1.02rem, 2.3vw, 1.12rem);
+  line-height: 1.45;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.scratch-howto-steps strong {
+  color: var(--coral-ink);
+}
+
+.scratch-howto-tip {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: clamp(0.98rem, 2.2vw, 1.05rem);
+  line-height: 1.4;
+  color: var(--crayon-muted);
+  margin: 0;
+}
+
+.scratch-pick-switch-lede {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: clamp(1.02rem, 2.3vw, 1.12rem);
+  color: var(--crayon-muted);
+  margin: 0 0 10px;
+}
+
 .scratch-control-btn {
   min-height: 44px;
   min-width: 44px;
@@ -6067,12 +6176,24 @@ body {
   .open-pick-btn,
   .situation-btn {
     align-items: flex-start;
+    min-height: 48px;
+    padding: 14px 0;
   }
 
   .open-pick-thumb {
     width: 72px;
     height: 48px;
     margin-top: 4px;
+  }
+
+  .situation-plan-next .open-link-cta,
+  .scratch-howto-play {
+    max-width: none;
+  }
+
+  .situation-plan-next .open-link-cta {
+    display: inline-block;
+    line-height: 1.35;
   }
 }
 

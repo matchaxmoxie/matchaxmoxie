@@ -35,8 +35,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260717c">
-<link rel="stylesheet" href="styles.css?v=20260717c">
+<link rel="stylesheet" href="a11y.css?v=20260717g">
+<link rel="stylesheet" href="styles.css?v=20260717g">
 </head>
 <body class="kindergarten-home sunset-home kiss-home choice-home">
 
@@ -75,8 +75,9 @@
   <section id="situation-picker" class="open-invest open-invest--hero" aria-labelledby="situation-heading">
     <h2 id="situation-heading">Choose one</h2>
     <p class="invest-lede">
-      One tap. Three pages out, in order, for your spot.
+      One tap. You get a short plan and one clear next step.
     </p>
+    <p id="situation-pick-status" class="situation-pick-status" aria-live="polite"></p>
     <ul class="situation-choices open-pick-list" role="list">
       <li>
         <button type="button" class="situation-btn open-pick-btn" data-situation="ap-csp" aria-pressed="false">
@@ -84,6 +85,7 @@
           <span class="open-pick-copy">
             <span class="situation-btn-label open-pick-label">AP CSP or curious about code</span>
             <span class="situation-btn-hint open-pick-hint">Start coding before college</span>
+            <span class="open-pick-selected" hidden>Selected</span>
           </span>
         </button>
       </li>
@@ -93,6 +95,7 @@
           <span class="open-pick-copy">
             <span class="situation-btn-label open-pick-label">Undecided major · eyeing Informatics</span>
             <span class="situation-btn-hint open-pick-hint">Figure out if IU Luddy fits</span>
+            <span class="open-pick-selected" hidden>Selected</span>
           </span>
         </button>
       </li>
@@ -102,19 +105,26 @@
           <span class="open-pick-copy">
             <span class="situation-btn-label open-pick-label">Visiting IU or already admitted</span>
             <span class="situation-btn-hint open-pick-hint">Campus prep and calendar</span>
+            <span class="open-pick-selected" hidden>Selected</span>
           </span>
         </button>
       </li>
     </ul>
     <div id="situation-plan" class="situation-plan" hidden>
       <p id="situation-plan-title" class="situation-plan-title"></p>
+      <p id="situation-plan-progress" class="situation-plan-progress"></p>
       <ol id="situation-plan-steps" class="situation-plan-steps"></ol>
-      <p class="situation-plan-note">Your pick saves on this device. Change anytime.</p>
       <p class="situation-plan-next">
-        <a id="situation-path-link" class="open-link-cta" href="student-path.html">
-          Open the full student path →
+        <a id="situation-start-link" class="open-link-cta" href="student-path.html">
+          Start step 1 →
         </a>
       </p>
+      <p class="situation-plan-secondary">
+        <a id="situation-path-link" class="open-link-soft" href="student-path.html">
+          Full student path (optional)
+        </a>
+      </p>
+      <p class="situation-plan-note">Saved on this device. Tap another line to switch.</p>
     </div>
   </section>
 
@@ -127,10 +137,9 @@
       loading="lazy"
     />
     <figcaption>
-      After you pick a plan, leave a print on the
+      After step 1, you can wander the
       <a href="footprint.html">bucket list</a>
-      or open
-      <a href="scratch-studio.html">Scratch studio</a>.
+      when you are ready.
     </figcaption>
   </figure>
 
@@ -150,6 +159,6 @@
   </footer>
 
 </main>
-<script src="invest-return.js?v=20260717c" defer></script>
+<script src="invest-return.js?v=20260717g" defer></script>
 </body>
 </html>

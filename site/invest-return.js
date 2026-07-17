@@ -49,8 +49,8 @@
         },
         {
           title: "Ship a tiny Scratch game",
-          body: "Download a starter, load it, press green flag.",
-          href: "scratch-studio.html#jumping",
+          body: "Play a starter on this site. Green flag, then the controls above the stage.",
+          href: "scratch-play.html?project=jumping",
         },
         {
           title: "Peek freshman year",
@@ -107,8 +107,11 @@
 
     var planEl = document.getElementById("situation-plan");
     var planTitle = document.getElementById("situation-plan-title");
+    var planProgress = document.getElementById("situation-plan-progress");
     var planList = document.getElementById("situation-plan-steps");
+    var startLink = document.getElementById("situation-start-link");
     var pathLink = document.getElementById("situation-path-link");
+    var pickStatus = document.getElementById("situation-pick-status");
     var saved = loadJson("situation", null);
     var restoringSaved = false;
 
@@ -116,37 +119,54 @@
       var data = SITUATIONS[key];
       if (!data || !planEl || !planList || !planTitle) return;
 
+      var first = data.steps[0];
       planTitle.textContent = restoringSaved
-        ? "Welcome back · your saved plan · " + data.label
-        : "Your 3-step plan · " + data.label;
+        ? "Welcome back · " + data.label
+        : "Got it · " + data.label;
+      if (planProgress) {
+        planProgress.textContent =
+          "3 steps for your spot · start with step 1";
+      }
       planList.innerHTML = "";
       data.steps.forEach(function (step, i) {
         var li = document.createElement("li");
-        li.innerHTML =
-          '<strong>Step ' +
-          (i + 1) +
-          " · " +
-          step.title +
-          "</strong>" +
-          step.body +
-          ' <a href="' +
-          step.href +
-          '">Go →</a>';
+        var strong = document.createElement("strong");
+        strong.textContent = "Step " + (i + 1) + " · " + step.title;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(step.body));
         planList.appendChild(li);
       });
 
       planEl.hidden = false;
+      if (startLink && first) {
+        startLink.href = first.href;
+        startLink.textContent = "Start step 1 · " + first.title + " →";
+      }
       if (pathLink) {
         pathLink.href = "student-path.html#advice-funnel";
-        pathLink.textContent = "Open the full student path →";
+        pathLink.textContent = "Full student path (optional)";
+      }
+      if (pickStatus) {
+        pickStatus.textContent = restoringSaved
+          ? "Saved pick restored · " + data.label
+          : "Selected · " + data.label;
       }
       root.querySelectorAll(".situation-btn").forEach(function (btn) {
         var active = btn.getAttribute("data-situation") === key;
         btn.setAttribute("aria-pressed", active ? "true" : "false");
+        var mark = btn.querySelector(".open-pick-selected");
+        if (mark) mark.hidden = !active;
       });
       saveJson("situation", key);
       if (!restoringSaved) {
         scrollToEl(planEl);
+        if (startLink && typeof startLink.focus === "function") {
+          try {
+            startLink.focus({ preventScroll: true });
+          } catch (_e) {
+            startLink.focus();
+          }
+        }
       }
     }
 
