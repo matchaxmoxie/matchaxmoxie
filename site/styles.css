@@ -4076,6 +4076,7 @@ body.campus-survival-page {
   margin: 0.45rem 0 0;
 }
 
+.scratch-studio-page .howto-play,
 .scratch-studio-page .howto-download {
   display: inline-flex;
   align-items: center;
@@ -4093,6 +4094,14 @@ body.campus-survival-page {
   touch-action: manipulation;
 }
 
+.scratch-studio-page .howto-download {
+  background: transparent;
+  color: var(--dusk);
+  box-shadow: none;
+}
+
+.scratch-studio-page .howto-play:hover,
+.scratch-studio-page .howto-play:focus-visible,
 .scratch-studio-page .howto-download:hover,
 .scratch-studio-page .howto-download:focus-visible {
   background: var(--coral-ink);
@@ -5836,6 +5845,104 @@ body {
 
 .scratch-play-page .scratch-pick-block {
   margin-top: 8px;
+  max-width: 40rem;
+}
+
+.scratch-player-shell {
+  margin: 0 0 1.5rem;
+}
+
+.scratch-player-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0 0 0.65rem;
+}
+
+.scratch-control-btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.55rem 1rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: 3px solid var(--crayon-ink);
+  cursor: pointer;
+  touch-action: manipulation;
+  color: var(--crayon-ink);
+  background: #fff8f0;
+}
+
+.scratch-control-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.scratch-control-btn--flag {
+  background: #3d9a4a;
+  color: #fff8f0;
+  border-color: var(--crayon-ink);
+}
+
+.scratch-control-btn--stop {
+  background: #c23b3b;
+  color: #fff8f0;
+  border-color: var(--crayon-ink);
+}
+
+.scratch-control-btn:not(:disabled):hover,
+.scratch-control-btn:not(:disabled):focus-visible {
+  outline: 3px solid var(--focus-ring, var(--dusk));
+  outline-offset: 2px;
+}
+
+.scratch-player-status {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--coral-ink);
+  margin: 0 0 0.75rem;
+}
+
+.scratch-player-status--error {
+  color: #8a1f1f;
+}
+
+.scratch-stage {
+  width: min(100%, 480px);
+  aspect-ratio: 4 / 3;
+  max-width: 480px;
+  background:
+    linear-gradient(160deg, rgba(255, 248, 240, 0.9), rgba(244, 162, 97, 0.18)),
+    repeating-linear-gradient(
+      -12deg,
+      transparent,
+      transparent 10px,
+      rgba(31, 22, 48, 0.03) 10px,
+      rgba(31, 22, 48, 0.03) 11px
+    );
+  border: 3px solid var(--crayon-ink);
+  overflow: hidden;
+}
+
+.scratch-stage canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.scratch-pick-switch-heading {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.2rem, 2.8vw, 1.4rem);
+  color: var(--crayon-ink);
+  margin: 0 0 10px;
+}
+
+.scratch-play-secondary {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid rgba(31, 22, 48, 0.14);
 }
 
 .scratch-steps-heading {

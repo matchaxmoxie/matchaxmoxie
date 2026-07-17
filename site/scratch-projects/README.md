@@ -18,14 +18,14 @@ Not affiliated with Scratch Team. No Scratch Team library art.
 
 Studio intro stays text-only (no starter file).
 
-## Open a starter (learners)
+## Play on this site (learners)
 
-1. Download the `.sb3` from the studio page.
-2. Go to [scratch.mit.edu](https://scratch.mit.edu/) → **Create**.
-3. **File → Load from your computer** → pick the `.sb3`.
-4. Green flag. Then open the matching how-to and rebuild or remix.
+1. Open [Scratch studio](../scratch-studio.html) or go straight to
+   [playground](../scratch-play.html?project=jumping).
+2. Tap **Play on this site**. Green flag runs on matchaxmoxie (same origin).
+3. Optional: download the `.sb3` to remix offline in Scratch later.
 
-You can also drag the `.sb3` onto the Scratch editor tab in many browsers.
+站内播放器用 `../scratch-player/`（TurboWarp Scaffolding）。重建说明见该目录 README。
 
 ## Optional: publish share URLs (Jade)
 

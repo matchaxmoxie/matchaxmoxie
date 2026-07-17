@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <!--
-  matchaxmoxie · Miss Zhao Scratch playground window
-  Lightweight launch stage: download .sb3 + open Scratch editor.
-  How-tos stay on scratch-studio.html. Not affiliated with Scratch Team.
+  matchaxmoxie · Miss Zhao Scratch playground（站内播放）
+  同域加载 scratch-projects/*.sb3 + TurboWarp Scaffolding。
+  主路径不跳转 scratch.mit.edu / turbowarp.org。与 Scratch Team 无隶属关系。
 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Miss Zhao Scratch playground window. Download a starter .sb3 and open the Scratch editor in a new tab. Jade Zhao · Girls Who Code Indianapolis archive.">
+<meta name="description" content="Miss Zhao Scratch playground on matchaxmoxie. Play starter .sb3 files on this site with green flag and stop. Jade Zhao · Girls Who Code Indianapolis archive.">
 <title>Jade Zhao · Scratch playground · Miss Zhao</title>
 <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/scratch-play.html">
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -22,8 +22,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260717d">
-<link rel="stylesheet" href="styles.css?v=20260717d">
+<link rel="stylesheet" href="a11y.css?v=20260717e">
+<link rel="stylesheet" href="styles.css?v=20260717e">
 </head>
 <body class="kindergarten-home sunset-home kiss-home scratch-studio-page scratch-play-page">
 
@@ -32,7 +32,7 @@
   <a href="index.html">home</a>
   <a href="student-path.html">your path</a>
   <a href="footprint.html">footprint</a>
-  <a href="scratch-studio.html">Scratch</a>
+  <a href="scratch-studio.html" aria-current="page">Scratch</a>
   <a href="informatics-class-of-2027.html">IU guide</a>
   <a href="archive.html">archive</a>
   <a href="https://jadexzhao.github.io/jadexzhao/">龙 · dragon</a>
@@ -43,26 +43,45 @@
   <p class="twin-note">
     Miss Zhao · <span class="sc" lang="zh-Hans">凤凰</span>
     · <a href="scratch-studio.html">Scratch studio</a>
-    · playground window
+    · play on this site
   </p>
 
   <header class="studio-hero scratch-play-hero">
     <p class="studio-kicker">Jade Zhao · Miss Zhao · Girls Who Code Indianapolis</p>
     <h1 id="scratch-play-title">Scratch playground</h1>
     <p id="scratch-play-lede" class="studio-lede">
-      Pick a starter below, or open one from the studio. Download the file, open Scratch, load it, green flag.
+      Plays on this site. Green flag to start, red stop to pause. Download if you want to remix offline.
     </p>
     <p class="studio-note">
-      Scratch lives on scratch.mit.edu (new tab). We cannot embed their editor here.
-      Starters are <code>.sb3</code> files: File → Load from your computer.
+      Starters load from this classroom (same site). Not affiliated with Scratch Team.
+      Want the rebuild steps? Open the how-to on the studio page.
     </p>
   </header>
 
   <section id="scratch-play-stage" class="open-invest scratch-pick-block" aria-labelledby="scratch-play-heading">
-    <h2 id="scratch-play-heading">Your starter</h2>
-    <p id="scratch-play-get" class="scratch-pick-get">Choose a project, then launch Scratch.</p>
-    <p id="scratch-play-why" class="scratch-pick-why" hidden></p>
+    <h2 id="scratch-play-heading" class="visually-hidden">Play stage</h2>
 
+    <div class="scratch-player-shell">
+      <div class="scratch-player-toolbar" role="group" aria-label="Play controls">
+        <button type="button" id="scratch-green-flag" class="scratch-control-btn scratch-control-btn--flag" disabled>
+          Green flag
+        </button>
+        <button type="button" id="scratch-stop-all" class="scratch-control-btn scratch-control-btn--stop" disabled>
+          Stop
+        </button>
+      </div>
+      <p id="scratch-player-status" class="scratch-player-status" aria-live="polite">
+        Loading player…
+      </p>
+      <div
+        id="scratch-stage"
+        class="scratch-stage"
+        role="img"
+        aria-label="Scratch stage"
+      ></div>
+    </div>
+
+    <h2 class="scratch-pick-switch-heading">Switch starter</h2>
     <ul class="scratch-pick-choices open-pick-list" role="list" id="scratch-play-pick-list">
       <li>
         <button type="button" class="scratch-pick-btn open-pick-btn" data-project="jumping" aria-pressed="false">
@@ -114,52 +133,11 @@
       </li>
     </ul>
 
-    <div id="scratch-pick-reveal" class="scratch-pick-reveal" hidden>
-      <p class="scratch-primary-cta">
-        <a
-          id="scratch-pick-open"
-          class="open-cta"
-          href="https://scratch.mit.edu/projects/editor/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Open Scratch editor
-        </a>
-      </p>
+    <div class="scratch-pick-reveal scratch-play-secondary">
       <p class="scratch-secondary-ctas">
         <a id="scratch-pick-download" class="open-link-cta" href="scratch-projects/jumping-game.sb3" download>
-          Download starter (.sb3)
+          Download starter (.sb3) to remix offline
         </a>
-      </p>
-
-      <h3 id="scratch-steps-heading" class="scratch-steps-heading">Load checklist</h3>
-      <div class="scratch-progress-wrap" aria-live="polite">
-        <label class="visually-hidden" for="scratch-load-progress">Starter load progress</label>
-        <progress id="scratch-load-progress" class="scratch-load-progress" value="0" max="3">0 of 3</progress>
-        <p id="scratch-progress-text" class="scratch-progress-text">You are on step 0 of 3.</p>
-      </div>
-      <ul class="scratch-check-list open-check-list" id="scratch-check-list">
-        <li>
-          <label class="open-check">
-            <input type="checkbox" id="scratch-step-downloaded" data-step="downloaded" />
-            <span>I downloaded the .sb3</span>
-          </label>
-        </li>
-        <li>
-          <label class="open-check">
-            <input type="checkbox" id="scratch-step-opened" data-step="opened" />
-            <span>I opened Scratch Create</span>
-          </label>
-        </li>
-        <li>
-          <label class="open-check">
-            <input type="checkbox" id="scratch-step-loaded" data-step="loaded" />
-            <span>I loaded the file (File → Load from your computer)</span>
-          </label>
-        </li>
-      </ul>
-      <p id="scratch-progress-reward" class="scratch-progress-reward" hidden>
-        Nice. Green flag, then remix one thing.
       </p>
       <p class="scratch-howto-link-wrap">
         <a id="scratch-pick-go" class="open-link-cta" href="scratch-studio.html#jumping">
@@ -170,11 +148,17 @@
   </section>
 
   <footer class="footer-kiss">
-    <p>Playground window · download · open Scratch · load · green flag. How-tos live on the studio page.</p>
+    <p>Playground · play on this site · green flag · stop. How-tos live on the studio page.</p>
     <p class="human">Jade Zhao · Miss Zhao on hiatus · IU Luddy · <span class="sc">福州</span> roots · <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a></p>
   </footer>
 
 </main>
-<script src="invest-return.js?v=20260717d" defer></script>
+<!--
+  站内播放器：vendored @turbowarp/scaffolding@0.4.0 scaffolding-min.js（约 1.8MB）。
+  更新：npm pack @turbowarp/scaffolding@0.4.0 → 复制 dist/scaffolding-min.js 到本目录上级 scratch-player/。
+  详见 scratch-player/README.md。
+-->
+<script src="scratch-player/scaffolding-min.js?v=0.4.0" defer></script>
+<script src="scratch-player/player.js?v=20260717e" defer></script>
 </body>
 </html>

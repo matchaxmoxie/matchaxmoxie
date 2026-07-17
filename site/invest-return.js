@@ -334,8 +334,7 @@
     updateCount();
   }
 
-  /* ── 4. Scratch studio + playground window ── */
-  var SCRATCH_EDITOR_URL = "https://scratch.mit.edu/projects/editor/";
+  /* ── 4. Scratch studio picker（站内 play 为主；playground 由 player.js 负责）── */
   var SCRATCH_PROJECTS = {
     jumping: {
       title: "Jumping Game",
@@ -401,104 +400,24 @@
     },
   };
 
-  var SCRATCH_STEPS = ["downloaded", "opened", "loaded"];
-
-  function scratchQueryProject() {
-    try {
-      var params = new URLSearchParams(window.location.search);
-      var key = params.get("project");
-      if (key && SCRATCH_PROJECTS[key]) return key;
-    } catch (_e) {
-      /* ignore */
-    }
-    return null;
-  }
-
   function initScratchPicker() {
-    var root =
-      document.getElementById("scratch-project-picker") ||
-      document.getElementById("scratch-play-stage");
+    /* playground 页由 scratch-player/player.js 接管，避免双绑 */
+    if (document.getElementById("scratch-stage")) return;
+
+    var root = document.getElementById("scratch-project-picker");
     if (!root) return;
 
-    var isPlayPage = !!document.getElementById("scratch-play-stage");
     var reveal = document.getElementById("scratch-pick-reveal");
-    var getLine = document.getElementById("scratch-pick-get") ||
-      document.getElementById("scratch-play-get");
-    var whyLine = document.getElementById("scratch-pick-why") ||
-      document.getElementById("scratch-play-why");
+    var getLine = document.getElementById("scratch-pick-get");
+    var whyLine = document.getElementById("scratch-pick-why");
     var pathLine = document.getElementById("scratch-pick-path");
     var goLink = document.getElementById("scratch-pick-go");
-    var openLink = document.getElementById("scratch-pick-open");
     var playLink = document.getElementById("scratch-pick-play");
     var downloadLink = document.getElementById("scratch-pick-download");
-    var progressBar = document.getElementById("scratch-load-progress");
-    var progressText = document.getElementById("scratch-progress-text");
-    var reward = document.getElementById("scratch-progress-reward");
     var welcomeBack = document.getElementById("scratch-welcome-back");
-    var playTitle = document.getElementById("scratch-play-title");
-    var playLede = document.getElementById("scratch-play-lede");
     var saved = loadJson("scratch-pick", null);
-    var progressMap = loadJson("scratch-load-steps", {});
     var currentKey = null;
     var restoring = false;
-    var fromQuery = scratchQueryProject();
-
-    if (!progressMap || typeof progressMap !== "object") {
-      progressMap = {};
-    }
-
-    function stepStateFor(key) {
-      var state = progressMap[key];
-      if (!state || typeof state !== "object") {
-        return { downloaded: false, opened: false, loaded: false };
-      }
-      return {
-        downloaded: !!state.downloaded,
-        opened: !!state.opened,
-        loaded: !!state.loaded,
-      };
-    }
-
-    function markStep(step) {
-      if (!currentKey) return;
-      var state = stepStateFor(currentKey);
-      state[step] = true;
-      progressMap[currentKey] = state;
-      saveJson("scratch-load-steps", progressMap);
-      updateProgressUI(currentKey);
-    }
-
-    function updateProgressUI(key) {
-      if (!progressBar && !progressText && !reward) return;
-      var state = stepStateFor(key);
-      var count = 0;
-      SCRATCH_STEPS.forEach(function (step) {
-        var box = document.getElementById("scratch-step-" + step);
-        if (box) box.checked = !!state[step];
-        if (state[step]) count += 1;
-      });
-
-      if (progressBar) {
-        progressBar.value = count;
-        progressBar.max = 3;
-        progressBar.setAttribute("aria-valuenow", String(count));
-        progressBar.setAttribute("aria-valuemax", "3");
-      }
-      if (progressText) {
-        if (count === 0) {
-          progressText.textContent =
-            "You are on step 0 of 3. Check each box as you go.";
-        } else if (count >= 3) {
-          progressText.textContent =
-            "You finished all 3 load steps. Green flag time.";
-        } else {
-          progressText.textContent = "You are on step " + count + " of 3.";
-        }
-      }
-      if (reward) {
-        reward.hidden = count < 3;
-      }
-    }
 
     function selectProject(key, opts) {
       var proj = SCRATCH_PROJECTS[key];
@@ -530,71 +449,38 @@
           pathLine.textContent = "";
         }
       }
-      if (openLink) {
-        openLink.href = SCRATCH_EDITOR_URL;
-        openLink.setAttribute("target", "_blank");
-        openLink.setAttribute("rel", "noopener noreferrer");
-        openLink.textContent = "Open Scratch editor";
+      if (playLink) {
+        playLink.href = "scratch-play.html?project=" + encodeURIComponent(key);
+        playLink.removeAttribute("target");
+        playLink.removeAttribute("rel");
+        playLink.textContent = "Play on this site";
       }
       if (downloadLink) {
         downloadLink.href = proj.file;
         downloadLink.setAttribute("download", "");
-        downloadLink.textContent = "Download " + proj.title + " (.sb3)";
-      }
-      if (playLink) {
-        playLink.href = "scratch-play.html?project=" + encodeURIComponent(key);
-        playLink.setAttribute("target", "_blank");
-        playLink.setAttribute("rel", "noopener noreferrer");
-        playLink.textContent = "Open playground window";
+        downloadLink.textContent =
+          "Download " + proj.title + " (.sb3) to remix offline";
       }
       if (goLink) {
-        if (isPlayPage) {
-          goLink.href = proj.href;
-          goLink.textContent =
-            "Open the " + proj.title + " how-to on the studio page →";
-        } else {
-          goLink.href = "#" + key;
-          goLink.textContent = "Open the " + proj.title + " how-to →";
-        }
-      }
-      if (playTitle) {
-        playTitle.textContent = proj.title + " playground";
-      }
-      if (playLede) {
-        playLede.textContent =
-          "Download the starter, open Scratch in a new tab, then File → Load from your computer. Green flag when it is in.";
+        goLink.href = "#" + key;
+        goLink.textContent = "Open the " + proj.title + " how-to →";
       }
 
       saveJson("scratch-pick", key);
-      updateProgressUI(key);
 
-      if (!isPlayPage) {
-        document.querySelectorAll(".howto-card--picked").forEach(function (card) {
-          card.classList.remove("howto-card--picked");
-        });
-        var card = document.querySelector(
-          '.howto-card[data-project="' + key + '"]'
-        );
-        if (card) {
-          card.classList.add("howto-card--picked");
-          if (!opts.skipScroll && !restoring) {
-            scrollToEl(reveal || card);
-          }
-        } else if (!opts.skipScroll && !restoring) {
-          scrollToEl(reveal);
+      document.querySelectorAll(".howto-card--picked").forEach(function (card) {
+        card.classList.remove("howto-card--picked");
+      });
+      var card = document.querySelector(
+        '.howto-card[data-project="' + key + '"]'
+      );
+      if (card) {
+        card.classList.add("howto-card--picked");
+        if (!opts.skipScroll && !restoring) {
+          scrollToEl(reveal || card);
         }
       } else if (!opts.skipScroll && !restoring) {
         scrollToEl(reveal);
-      }
-
-      try {
-        if (isPlayPage && window.history && window.history.replaceState) {
-          var url = new URL(window.location.href);
-          url.searchParams.set("project", key);
-          window.history.replaceState({}, "", url.toString());
-        }
-      } catch (_e) {
-        /* ignore */
       }
     }
 
@@ -606,36 +492,7 @@
       });
     });
 
-    SCRATCH_STEPS.forEach(function (step) {
-      var box = document.getElementById("scratch-step-" + step);
-      if (!box) return;
-      box.addEventListener("change", function () {
-        if (!currentKey) return;
-        var state = stepStateFor(currentKey);
-        state[step] = box.checked;
-        progressMap[currentKey] = state;
-        saveJson("scratch-load-steps", progressMap);
-        updateProgressUI(currentKey);
-      });
-    });
-
-    if (downloadLink) {
-      downloadLink.addEventListener("click", function () {
-        markStep("downloaded");
-      });
-    }
-
-    if (openLink) {
-      openLink.addEventListener("click", function () {
-        markStep("opened");
-      });
-    }
-
-    if (fromQuery) {
-      restoring = true;
-      selectProject(fromQuery, { skipScroll: true });
-      restoring = false;
-    } else if (saved && SCRATCH_PROJECTS[saved]) {
+    if (saved && SCRATCH_PROJECTS[saved]) {
       restoring = true;
       if (welcomeBack) {
         welcomeBack.hidden = false;
