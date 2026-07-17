@@ -5,13 +5,14 @@
   双站：jadexzhao = 龙（工作）；本站 = 凤凰（课堂）
   Instagram 永远是 @zhao.langxi（不是 GitHub 句柄）
   公开边界：课程名+学期；不写字母成绩 / W/F；不写 FASE 协调员运营
+  首屏：一个 reason-to-care + 一个 situation 选择（信息页在选后 / student-path）
 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Picking IU or Informatics as a high school senior? Tap your situation, get a 3-step plan. Miss Zhao (Jade Zhao, IU Luddy Class of 2027) classroom archive: Scratch how-tos, four-year path, campus tips.">
-<title>Pick your situation, get your IU plan · Miss Zhao · matchaxmoxie</title>
+<meta name="description" content="Picking IU or Informatics as a high school senior? Pick your situation, get a 3-step plan. Miss Zhao (Jade Zhao, IU Luddy Class of 2027) classroom archive.">
+<title>Pick your situation · Miss Zhao · matchaxmoxie</title>
 <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -23,25 +24,26 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="matchaxmoxie · Jade Zhao">
 <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/">
-<meta property="og:title" content="Pick your situation, get your IU plan · Miss Zhao">
-<meta property="og:description" content="Picking IU or Informatics? One tap gives you a 3-step plan for your exact spot. Scratch how-tos, four-year path, campus tips. Jade Zhao · IU Luddy Class of 2027.">
+<meta property="og:title" content="Pick your situation · Miss Zhao">
+<meta property="og:description" content="Picking IU or Informatics? One tap gives you a 3-step plan for your exact spot. Jade Zhao · IU Luddy Class of 2027.">
 <meta property="og:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/og-hero.jpg">
 <meta property="og:image:alt" content="Sunset classroom: chalkboard, setting sun, Miss Zhao name tag">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pick your situation, get your IU plan · Miss Zhao">
+<meta name="twitter:title" content="Pick your situation · Miss Zhao">
 <meta name="twitter:description" content="Picking IU or Informatics? One tap gives you a 3-step plan for your exact spot. Jade Zhao · IU Luddy Class of 2027.">
 <meta name="twitter:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/og-hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260716e">
-<link rel="stylesheet" href="styles.css?v=20260716e">
+<link rel="stylesheet" href="a11y.css?v=20260717a">
+<link rel="stylesheet" href="styles.css?v=20260717a">
 </head>
-<body class="kindergarten-home sunset-home kiss-home">
+<body class="kindergarten-home sunset-home kiss-home choice-home">
 
 <a href="#main-content" class="skip-link">skip to main content</a>
 <nav class="site-jump" aria-label="Classroom">
   <a href="index.html" aria-current="page">home</a>
+  <a href="student-path.html">your path</a>
   <a href="footprint.html">footprint</a>
   <a href="scratch-studio.html">Scratch</a>
   <a href="informatics-class-of-2027.html">IU guide</a>
@@ -50,8 +52,8 @@
 </nav>
 <main id="main-content" class="wrap">
 
-  <!-- 首屏：高中生 reason-to-care → 立刻 invest；龙凤双站与招聘门放折页下 -->
-  <header class="hero">
+  <!-- 首屏：一个钩子 + 一个选择。双站门与漏斗移到选后 / student-path -->
+  <header class="hero hero--choice">
     <div class="hero-visual" role="img" aria-label="End-of-day classroom: chalkboard, setting sun, Miss Zhao name tag">
       <span class="name-tag" aria-hidden="true">Miss Zhao</span>
       <span class="star-sticker star-1" aria-hidden="true"></span>
@@ -62,244 +64,92 @@
       <span class="classroom-apple" aria-hidden="true"></span>
     </div>
     <div class="hero-text">
-      <h1>Jade Zhao <span class="sc">赵</span></h1>
+      <p class="hero-brand-line">Miss Zhao · <span class="sc" lang="zh-Hans">凤凰</span></p>
+      <h1>Picking IU or Informatics?</h1>
       <p class="hero-hook">
-        Picking IU or Informatics as a senior? Start here.
-      </p>
-      <p class="hero-why">
-        Miss Zhao keeps one clear next step for you on this page, not a tour of both my sites.
-      </p>
-      <p class="hero-meta">
-        <a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a>
-        · <a href="https://github.com/matchaxmoxie">@matchaxmoxie</a>
-        · <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
+        Pick the door that sounds like you. You get a 3-step plan next.
       </p>
     </div>
   </header>
 
-  <section id="situation-picker" class="invest-block invest-block--hero" aria-labelledby="situation-heading">
-    <h2 id="situation-heading">Pick your situation · get a 3-step plan</h2>
+  <section id="situation-picker" class="invest-block invest-block--hero invest-block--choice" aria-labelledby="situation-heading">
+    <h2 id="situation-heading">Choose one</h2>
     <p class="invest-lede">
-      Tap what sounds like you. One click in. Three pages out, in order, for your spot.
+      One tap. Three pages out, in order, for your spot.
     </p>
     <div class="situation-choices" role="group" aria-label="Your situation">
-      <button type="button" class="situation-btn" data-situation="ap-csp" aria-pressed="false">
-        <span class="situation-btn-label">AP CSP or curious about code</span>
-        <span class="situation-btn-hint">Start coding before college</span>
+      <button type="button" class="situation-btn situation-btn--visual" data-situation="ap-csp" aria-pressed="false">
+        <span class="situation-btn-media" aria-hidden="true">
+          <img src="assets/iu-luddy-ap-scores.jpg" alt="" width="320" height="200" loading="eager" />
+        </span>
+        <span class="situation-btn-copy">
+          <span class="situation-btn-label">AP CSP or curious about code</span>
+          <span class="situation-btn-hint">Start coding before college</span>
+        </span>
       </button>
-      <button type="button" class="situation-btn" data-situation="undecided" aria-pressed="false">
-        <span class="situation-btn-label">Undecided major · eyeing Informatics</span>
-        <span class="situation-btn-hint">Figure out if IU Luddy fits</span>
+      <button type="button" class="situation-btn situation-btn--visual" data-situation="undecided" aria-pressed="false">
+        <span class="situation-btn-media" aria-hidden="true">
+          <img src="assets/iu-career-explore.jpg" alt="" width="320" height="200" loading="eager" />
+        </span>
+        <span class="situation-btn-copy">
+          <span class="situation-btn-label">Undecided major · eyeing Informatics</span>
+          <span class="situation-btn-hint">Figure out if IU Luddy fits</span>
+        </span>
       </button>
-      <button type="button" class="situation-btn" data-situation="visiting" aria-pressed="false">
-        <span class="situation-btn-label">Visiting IU or already admitted</span>
-        <span class="situation-btn-hint">Campus prep and calendar</span>
+      <button type="button" class="situation-btn situation-btn--visual" data-situation="visiting" aria-pressed="false">
+        <span class="situation-btn-media" aria-hidden="true">
+          <img src="assets/iu-orientation-welcome.jpg" alt="" width="320" height="200" loading="eager" />
+        </span>
+        <span class="situation-btn-copy">
+          <span class="situation-btn-label">Visiting IU or already admitted</span>
+          <span class="situation-btn-hint">Campus prep and calendar</span>
+        </span>
       </button>
     </div>
     <div id="situation-plan" class="situation-plan" hidden>
       <p id="situation-plan-title" class="situation-plan-title"></p>
       <ol id="situation-plan-steps" class="situation-plan-steps"></ol>
       <p class="situation-plan-note">Your pick saves on this device. Change anytime.</p>
+      <p class="situation-plan-next">
+        <a id="situation-path-link" class="invest-btn invest-btn--link" href="student-path.html">
+          Open the full student path →
+        </a>
+      </p>
     </div>
   </section>
 
-  <!-- 折页下 · 双站与招聘软交接（CEO：每站一次只记一个钩子） -->
-  <p class="twin-note twin-note--after-invest">
-    Two sites, same me (after you pick a path above):
-    <span class="sc" lang="zh-Hans">凤凰</span> · phoenix (this teaching site) and
-    <span class="sc" lang="zh-Hans">龙</span> · dragon
-    (<a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>, my work side).
-    On Instagram I&rsquo;m
-    <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
-    (Zhao / <span class="sc">赵朗曦</span>).
-    <strong>jadexzhao</strong> is just my code username, never an Instagram handle.
-  </p>
-  <p class="start-here">Still browsing · or here to hire?</p>
-  <nav class="doors" aria-label="Audience">
-    <a class="door door--primary" href="#advice-funnel">
-      <span class="door-who">Student path · keep going</span>
-      <span class="door-what">Step-by-step advice, bucket list, IU guide, Scratch → stay here</span>
-    </a>
-    <a class="door door--secondary" href="https://jadexzhao.github.io/jadexzhao/">
-      <span class="door-who">Here to hire or work with me</span>
-      <span class="door-what">Projects, jobs, and career story → jadexzhao (龙 · dragon)</span>
-    </a>
-  </nav>
-
-  <!-- 面向学生的入口 · KISS (keep it simple) · 有序建议漏斗 -->
-  <section id="student-path" class="gwc-block" aria-labelledby="kids-heading">
-    <h2 id="kids-heading">A student or high schooler</h2>
-    <p>
-      You already have a plan if you tapped above. Next: work the
-      <a href="#advice-funnel">step-by-step advice list</a>
-      in order, or check off the
-      <a href="footprint.html">bucket list</a>.
-      Scratch how-tos, year-by-year classes, campus tips, and the IU Informatics guide live below.
-      Tech is for everyone, no experience needed.
-    </p>
-    <aside class="miss-zhao-tip" role="note" aria-label="Miss Zhao tip">
-      <span class="miss-zhao-tip-label">Miss Zhao tip</span>
-      <p>
-        Classroom rule of thumb:
-        <strong>KISS</strong> (keep it simple).
-        One how-to. One question. One next step.
-        Year &rsquo;23 tips are archival. Verify FA26 to FA27
-        (Fall 2026 to Fall 2027) on live IU pages before you plan.
-      </p>
-      <p class="you-got-this">You got this · curious beats perfect.</p>
-    </aside>
-
-    <h3 id="advice-funnel-heading">Step-by-step advice · do these in order</h3>
-    <p class="advice-funnel-lede">
-      Check off each step as you go. You will see your progress and earn a named path at the end.
-      Any tricky word gets explained once, then a link to learn more.
-    </p>
-    <div class="advice-funnel-progress-wrap" aria-live="polite">
-      <label class="visually-hidden" for="advice-funnel-progress">Advice funnel progress</label>
-      <progress id="advice-funnel-progress" class="advice-funnel-progress" value="0" max="6">0 of 6</progress>
-      <p id="advice-funnel-progress-text" class="advice-funnel-progress-text">You completed step 0 of 6.</p>
-    </div>
-    <ol class="advice-funnel" id="advice-funnel" aria-labelledby="advice-funnel-heading">
-      <li>
-        <strong>Start here · AP &amp; never too early</strong>
-        Curious about code now? Try
-        <abbr title="Advanced Placement Computer Science Principles">AP CSP</abbr>
-        (Advanced Placement Computer Science Principles) if your school offers it.
-        I took it as a high school freshman. Never too early.
-        <a href="informatics-class-of-2027.html#early-heading">AP notes on the IU guide</a>.
-      </li>
-      <li>
-        <strong>Official IU links · live pages win</strong>
-        Prefer university pages over any tip sheet (including mine):
-        Luddy bulletin (degree rules), AP credit table, Registrar calendar for
-        FA26 to FA27, First Year Experience
-        (<abbr title="First Year Experience">FYE</abbr> = first-year orientation and support hub),
-        and student mental health (link-out only · not counseling from me).
-        <a href="informatics-class-of-2027.html#official-links">Official links list</a>.
-      </li>
-      <li>
-        <strong>Campus survival · Year &rsquo;23</strong>
-        <span class="year23-tag">Archival · Year &rsquo;23 (2023)</span>
-        Packing, dorms, Welcome Week vibes. Not current calendar advice.
-        Verify hall rules and dates on live IU pages.
-        <a href="campus-survival.html">Campus survival archive</a>.
-      </li>
-      <li>
-        <strong>Four-year path peek</strong>
-        Course names + terms from freshman through senior
-        (junior year includes Madrid study abroad).
-        <a href="freshman.html">freshman</a>
-        · <a href="sophomore.html">sophomore</a>
-        · <a href="junior.html">junior · Madrid</a>
-        · <a href="senior.html">senior</a>.
-      </li>
-      <li>
-        <strong>Scratch studio · Miss Zhao (optional craft)</strong>
-        Like making tiny projects? How-tos live in the classroom archive.
-        <a href="scratch-studio.html">Scratch studio</a>.
-        School Instagram:
-        <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>.
-      </li>
-      <li>
-        <strong>Career progress slides</strong>
-        Already on this site: learn about yourself, explore options, Luddy career offices.
-        Peek the slides on the
-        <a href="informatics-class-of-2027.html#career-slides">IU guide · career strip</a>
-        and
-        <a href="freshman.html">freshman · INFO-Y 395</a>.
-      </li>
-    </ol>
-
-    <aside id="advice-funnel-reward" class="advice-funnel-reward" hidden aria-labelledby="advice-reward-heading">
-      <h4 id="advice-reward-heading">You earned your path</h4>
-      <p id="advice-funnel-path-name" class="advice-funnel-path-name"></p>
-      <p class="advice-funnel-reward-note">
-        Download a plain-text checklist you can keep. Verify FA26 to FA27 on live IU pages before you plan.
-      </p>
-      <button type="button" id="advice-funnel-download" class="invest-btn">Download my path (.txt)</button>
-    </aside>
-
-    <nav class="journey-year-nav" aria-label="Student paths">
-      <a href="footprint.html">leave a footprint</a>
-      <a href="scratch-studio.html">Scratch studio</a>
-      <a href="informatics-class-of-2027.html">IU Informatics guide</a>
-      <a href="campus-survival.html">campus survival</a>
-      <a href="freshman.html">freshman</a>
-      <a href="sophomore.html">sophomore</a>
-      <a href="junior.html">junior · Madrid</a>
-      <a href="senior.html">senior</a>
-    </nav>
-    <!-- 学生路径旁：职业发展投影片 · 与 year 页呼应 -->
-    <figure class="photo-frame photo-frame--home">
-      <img
-        src="assets/iu-orientation-career.jpg"
-        alt="IU Career Development Process Step 1 Learn About Yourself slide with values interests personality and skills"
-        width="980"
-        height="393"
-        loading="lazy"
-      />
-      <figcaption>
-        Career development starts early · see
-        <a href="freshman.html">freshman · INFO-Y 395</a>
-        and the
-        <a href="informatics-class-of-2027.html#career-slides">IU guide · career slides</a>.
-      </figcaption>
-    </figure>
-  </section>
-
-  <!-- 招聘方软交接 · 别让人在教室站里挖船运 -->
-  <section class="gwc-block" aria-labelledby="recruiters-heading">
-    <h2 id="recruiters-heading">Here to hire or work with me?</h2>
-    <p>
-      This site is my teaching side. My projects, jobs, and career story live on my work site,
-      including the free websites I build for nonprofits with ServeIT and my work helping companies
-      choose and set up software.
-      <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao.github.io/jadexzhao</a>
-      ·
-      <a href="https://jadexzhao.github.io/jadexzhao/#recruiter-path">start here</a>.
-    </p>
-  </section>
-
-  <figure class="photo-frame photo-frame--home">
+  <figure class="photo-frame photo-frame--home choice-home-visual">
     <img
-      src="assets/iu-orientation-welcome.jpg"
-      alt="IU New Student Orientation slide Schedule Updates over a Sample Gates campus photo"
-      width="961"
-      height="511"
+      src="assets/gelarden-leave-a-footprint.jpg"
+      alt="Gelarden Leave a Footprint slide with prompts to try new things at IU"
+      width="980"
+      height="551"
       loading="lazy"
     />
     <figcaption>
-      IU orientation · Year &rsquo;23 archive.
-      For FA26 to FA27 dates, use the
-      <a href="https://calendars.registrar.indiana.edu/official-calendar/index.shtml" rel="noopener noreferrer" target="_blank">Registrar calendar</a>.
+      After you pick a plan, leave a print on the
+      <a href="footprint.html">bucket list</a>
+      or open
+      <a href="scratch-studio.html">Scratch studio</a>.
     </figcaption>
   </figure>
 
-  <figure class="photo-frame photo-frame--wide">
-    <img
-      src="assets/iu-study-abroad.jpg"
-      alt="IU Study Abroad at IU orientation slide with program counts and national rankings for students sent abroad"
-      width="1200"
-      height="759"
-      loading="lazy"
-    />
-    <figcaption>
-      Study abroad is part of the IU path too ·
-      <a href="junior.html">junior · Madrid Spring 2026</a>
-      · more slides on the
-      <a href="informatics-class-of-2027.html">Class of 2027 guide</a>.
-    </figcaption>
-  </figure>
-
-  <footer class="footer-kiss">
+  <footer class="footer-kiss footer-kiss--choice">
     <p class="human">
       Jade Zhao · Miss Zhao on hiatus · IU Luddy ·
       <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
       · <span class="sc">福州</span> roots
     </p>
+    <p class="footer-soft">
+      <span class="sc" lang="zh-Hans">凤凰</span> · phoenix (this teaching site) ·
+      <span class="sc" lang="zh-Hans">龙</span> · dragon
+      (<a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>, work side).
+      Hiring? Use the dragon door after you know your student plan, or go straight to
+      <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>.
+    </p>
   </footer>
 
 </main>
-<script src="invest-return.js?v=20260716e" defer></script>
+<script src="invest-return.js?v=20260717a" defer></script>
 </body>
 </html>

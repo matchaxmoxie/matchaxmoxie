@@ -108,6 +108,7 @@
     var planEl = document.getElementById("situation-plan");
     var planTitle = document.getElementById("situation-plan-title");
     var planList = document.getElementById("situation-plan-steps");
+    var pathLink = document.getElementById("situation-path-link");
     var saved = loadJson("situation", null);
     var restoringSaved = false;
 
@@ -135,6 +136,10 @@
       });
 
       planEl.hidden = false;
+      if (pathLink) {
+        pathLink.href = "student-path.html#advice-funnel";
+        pathLink.textContent = "Open the full student path →";
+      }
       root.querySelectorAll(".situation-btn").forEach(function (btn) {
         var active = btn.getAttribute("data-situation") === key;
         btn.setAttribute("aria-pressed", active ? "true" : "false");
