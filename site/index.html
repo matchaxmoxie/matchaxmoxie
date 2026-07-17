@@ -34,8 +34,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260716a">
-<link rel="stylesheet" href="styles.css?v=20260716a">
+<link rel="stylesheet" href="a11y.css?v=20260716d">
+<link rel="stylesheet" href="styles.css?v=20260716d">
 </head>
 <body class="kindergarten-home sunset-home kiss-home">
 
@@ -126,11 +126,42 @@
       <p class="you-got-this">You got this · curious beats perfect.</p>
     </aside>
 
+    <section id="situation-picker" class="invest-block" aria-labelledby="situation-heading">
+      <h3 id="situation-heading">Pick your situation · get a 3-step plan</h3>
+      <p class="invest-lede">
+        Tap what sounds like you. Put in one click. Get three pages in order, picked for your spot.
+      </p>
+      <div class="situation-choices" role="group" aria-label="Your situation">
+        <button type="button" class="situation-btn" data-situation="ap-csp" aria-pressed="false">
+          <span class="situation-btn-label">AP CSP or curious about code</span>
+          <span class="situation-btn-hint">Start coding before college</span>
+        </button>
+        <button type="button" class="situation-btn" data-situation="undecided" aria-pressed="false">
+          <span class="situation-btn-label">Undecided major · eyeing Informatics</span>
+          <span class="situation-btn-hint">Figure out if IU Luddy fits</span>
+        </button>
+        <button type="button" class="situation-btn" data-situation="visiting" aria-pressed="false">
+          <span class="situation-btn-label">Visiting IU or already admitted</span>
+          <span class="situation-btn-hint">Campus prep and calendar</span>
+        </button>
+      </div>
+      <div id="situation-plan" class="situation-plan" hidden>
+        <p id="situation-plan-title" class="situation-plan-title"></p>
+        <ol id="situation-plan-steps" class="situation-plan-steps"></ol>
+        <p class="situation-plan-note">Your pick saves on this device. Change anytime.</p>
+      </div>
+    </section>
+
     <h3 id="advice-funnel-heading">Step-by-step advice · do these in order</h3>
     <p class="advice-funnel-lede">
-      This is just a short path: start at the top and take one step at a time.
+      Check off each step as you go. You will see your progress and earn a named path at the end.
       Any tricky word gets explained once, then a link to learn more.
     </p>
+    <div class="advice-funnel-progress-wrap" aria-live="polite">
+      <label class="visually-hidden" for="advice-funnel-progress">Advice funnel progress</label>
+      <progress id="advice-funnel-progress" class="advice-funnel-progress" value="0" max="6">0 of 6</progress>
+      <p id="advice-funnel-progress-text" class="advice-funnel-progress-text">You completed step 0 of 6.</p>
+    </div>
     <ol class="advice-funnel" id="advice-funnel" aria-labelledby="advice-funnel-heading">
       <li>
         <strong>Start here · AP &amp; never too early</strong>
@@ -181,6 +212,15 @@
         <a href="freshman.html">freshman · INFO-Y 395</a>.
       </li>
     </ol>
+
+    <aside id="advice-funnel-reward" class="advice-funnel-reward" hidden aria-labelledby="advice-reward-heading">
+      <h4 id="advice-reward-heading">You earned your path</h4>
+      <p id="advice-funnel-path-name" class="advice-funnel-path-name"></p>
+      <p class="advice-funnel-reward-note">
+        Download a plain-text checklist you can keep. Verify FA26 to FA27 on live IU pages before you plan.
+      </p>
+      <button type="button" id="advice-funnel-download" class="invest-btn">Download my path (.txt)</button>
+    </aside>
 
     <nav class="journey-year-nav" aria-label="Student paths">
       <a href="footprint.html">leave a footprint</a>
@@ -263,5 +303,6 @@
   </footer>
 
 </main>
+<script src="invest-return.js?v=20260716d" defer></script>
 </body>
 </html>

@@ -34,8 +34,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260716a">
-<link rel="stylesheet" href="styles.css?v=20260716a">
+<link rel="stylesheet" href="a11y.css?v=20260716d">
+<link rel="stylesheet" href="styles.css?v=20260716d">
 </head>
 <body class="kindergarten-home sunset-home kiss-home scratch-studio-page">
 
@@ -84,6 +84,23 @@
     </p>
     <p class="you-got-this">You got this · green flag, then one block at a time.</p>
   </aside>
+
+  <section id="scratch-project-picker" class="invest-block scratch-pick-block" aria-labelledby="scratch-pick-heading">
+    <h2 id="scratch-pick-heading">Pick a project you will finish</h2>
+    <p class="invest-lede">
+      Choose one starter. You invest a click. You get a clear finish line and a downloadable file.
+    </p>
+    <div class="scratch-pick-choices" role="group" aria-label="Scratch projects">
+      <button type="button" class="scratch-pick-btn" data-project="jumping" aria-pressed="false">Jumping Game</button>
+      <button type="button" class="scratch-pick-btn" data-project="catch" aria-pressed="false">Catch Game</button>
+      <button type="button" class="scratch-pick-btn" data-project="pong" aria-pressed="false">Pong</button>
+      <button type="button" class="scratch-pick-btn" data-project="clicker" aria-pressed="false">Clicker</button>
+    </div>
+    <div id="scratch-pick-reveal" class="scratch-pick-reveal" hidden>
+      <p id="scratch-pick-get" class="scratch-pick-get"></p>
+      <a id="scratch-pick-go" class="invest-btn invest-btn--link" href="#jumping">Load starter →</a>
+    </div>
+  </section>
 
   <aside class="scratch-load-help" aria-labelledby="load-help-heading">
     <h2 id="load-help-heading">How to open a starter</h2>
@@ -568,6 +585,7 @@
   </footer>
 
 </main>
+<script src="invest-return.js?v=20260716d" defer></script>
 <script>
   // 点击缩略图锚点时，自动展开对应的 details 教程面板
   document.querySelectorAll('a[href^="#lesson-"]').forEach(function (link) {

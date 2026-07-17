@@ -32,8 +32,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260716c">
-<link rel="stylesheet" href="styles.css?v=20260716c">
+<link rel="stylesheet" href="a11y.css?v=20260716d">
+<link rel="stylesheet" href="styles.css?v=20260716d">
 </head>
 <body class="kindergarten-home sunset-home kiss-home guide-page footprint-page">
 
@@ -92,6 +92,12 @@
     <h2 id="bucket-h">Bucket list · check them off</h2>
     <p>
       Exact wording from the slide. Ellipsis and punctuation kept as shown.
+      Check a box and it saves on this device.
+    </p>
+    <p id="footprint-progress" class="footprint-progress" hidden>
+      <span class="footprint-progress-label">Your return:</span>
+      <strong><span id="footprint-claimed-count">0</span></strong>
+      <span data-footprint-msg>prints claimed.</span>
     </p>
     <ul class="coord-checklist" aria-label="Leave a footprint bucket list">
       <li><label for="fp-0"><input type="checkbox" id="fp-0"> Travel</label></li>
@@ -418,5 +424,6 @@
   </footer>
 
 </main>
+<script src="invest-return.js?v=20260716d" defer></script>
 </body>
 </html>
