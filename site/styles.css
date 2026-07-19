@@ -1,13 +1,13 @@
 :root {
-  /* 日落教室配色 · Miss Zhao · 金色黄昏 */
+  /* ri luo jiao shi pei se · Miss Zhao · jin se huang hun */
   --sunshine: #F4A261;
   --golden-hour: #F4A261;
   --coral: #E76F51;
-  /* 正文用珊瑚（奶油底 ≥4.5:1）；装饰仍用 --coral */
+  /* zheng wen yong shan hu（nai you di ≥4.5:1）；zhuang shi reng yong --coral */
   --coral-ink: #9A3D32;
   --peach: #FFB088;
   --lavender: #7A6BA8;
-  /* 链接/导航墨色：深紫，奶油/peach 底上硬可读 */
+  /* lian jie/dao hang mo se：shen zi，nai you/peach di shang ying ke du */
   --dusk: #2A1F3D;
   --sky-blue: #7A6BA8;
   --grass-green: #E76F51;
@@ -16,9 +16,9 @@
   --chalk-dust: #FFFAF4;
   --paper-cream: #FFF4E8;
   --paper-shadow: #D9C4B0;
-  /* 正文近黑 · 用户可读性硬需求 */
+  /* zheng wen jin hei · yong hu ke du xing ying xu qiu */
   --crayon-ink: #1a1a1a;
-  --ink: #1F1630; /* 奶油卡片强制墨色 · a11y */
+  --ink: #1F1630; /* nai you ka pian qiang zhi mo se · a11y */
   --crayon-muted: #2A1F30;
 
   --editorial-dark: var(--crayon-ink);
@@ -27,7 +27,7 @@
   --bg-soft-warm: var(--paper-cream);
   --accent-crimson: #9A3D32;
 
-  /* 旧变量别名，映射到教室主题 */
+  /* jiu bian liang bie ming，ying she dao jiao shi zhu ti */
   --tulip-petal: var(--sunshine);
   --tulip-deep: var(--dusk);
   --tulip-blush: var(--paper-cream);
@@ -36,7 +36,7 @@
   --tulip-light: var(--paper-cream);
   --tulip-mist: var(--paper-shadow);
 
-  /* 中文点缀色：翡翠、朱砂、金（文字达标；浅色仅作洗底） */
+  /* zhong wen dian zhui se：fei cui、zhu sha、jin（wen zi da biao；qian se jin zuo xi di） */
   --jade: #006B45;
   --jade-soft: #3D6B4A;
   --cinnabar: var(--accent-crimson);
@@ -45,25 +45,25 @@
   --gold-soft: #E8D5A3;
   --matcha-wash: #E8F0E4;
 
-  /* 文字颜色 */
+  /* wen zi yan se */
   --text-primary: var(--editorial-dark);
   --text-secondary: var(--text-muted);
   --text-ghost: #3D3232;
 
-  /* 功能色 */
+  /* gong neng se */
   --link: var(--dusk);
   --link-hover: var(--coral-ink);
   --focus: var(--dusk);
-  --focus-ring: var(--dusk); /* 奶油底焦点环 · 见 a11y.css */
+  --focus-ring: var(--dusk); /* nai you di jiao dian huan · jian a11y.css */
   --border: var(--paper-shadow);
   --shadow: rgba(26, 26, 26, 0.14);
 
-  /* 幼儿园式布局参数 */
+  /* you er yuan shi bu ju can shu */
   --nav-h: 52px;
   --card-radius: 0;
   --btn-radius: 0;
 
-  /* 字号阶梯（正文/导航抬高，peach 底可读） */
+  /* zi hao jie ti（zheng wen/dao hang tai gao，peach di ke du） */
   --text-xs: 0.875rem;
   --text-sm: 1rem;
   --text-base: 1.125rem;
@@ -74,7 +74,7 @@
   --text-3xl: 3.5rem;
   --text-accent: 0.875rem;
 
-  /* 移动端字号 */
+  /* yi dong duan zi hao */
   --text-hero-mobile: clamp(2rem, 8vw, 3rem);
   --text-h1-mobile: clamp(1.75rem, 6vw, 2.5rem);
   --text-h2-mobile: clamp(1.25rem, 4vw, 1.75rem);
@@ -82,17 +82,17 @@
   --text-body-mobile: clamp(1.0625rem, 2.5vw, 1.1875rem);
   --text-caption-mobile: 0.8125rem;
 
-  /* 行高 */
+  /* xing gao */
   --leading-tight: 1.2;
   --leading-normal: 1.6;
   --leading-loose: 1.9;
 
-  /* 字距 */
+  /* zi ju */
   --tracking-tight: -0.02em;
   --tracking-normal: 0;
   --tracking-wide: 0.08em;
 
-  /* 间距 */
+  /* jian ju */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
@@ -101,20 +101,20 @@
   --space-2xl: 12rem;
   --padding-mobile: 1.25rem;
 
-  /* 断点 · phone / tablet / desktop / wide-custom */
+  /* duan dian · phone / tablet / desktop / wide-custom */
   --bp-xs: 320px;
   --bp-sm: 480px;
   --bp-md: 768px;
   --bp-lg: 1024px;
   --bp-xl: 1200px;
 
-  /* 动效时长 */
+  /* dong xiao shi chang */
   --transition-fast: 150ms ease;
   --transition-base: 200ms ease;
   --transition-slow: 400ms ease;
 }
 
-/* 基础重置 */
+/* ji chu zhong zhi */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -135,7 +135,7 @@ svg {
   height: auto;
 }
 
-/* prefers-reduced-motion · 权威规则在 a11y.css */
+/* prefers-reduced-motion · quan wei gui ze zai a11y.css */
 
 body {
   margin: 0;
@@ -156,7 +156,7 @@ body {
       rgba(42, 31, 61, 0.045) 28px,
       rgba(42, 31, 61, 0.045) 29px
     );
-  /* 奶油底永远近黑墨；禁止依赖会被深色模式改写的 --text-primary */
+  /* nai you di yong yuan jin hei mo；jin zhi yi lai hui bei shen se mo shi gai xie de --text-primary */
   color: #1F1630;
   font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
   font-size: var(--text-base);
@@ -248,7 +248,7 @@ body {
     padding-bottom: calc(3.25rem + env(safe-area-inset-bottom, 0px));
   }
 
-  /* 拇指区：跨站跳转放在底部带 */
+  /* mu zhi qu：kua zhan tiao zhuan fang zai di bu dai */
   .site-jump {
     position: fixed;
     top: auto;
@@ -273,7 +273,7 @@ body {
   }
 }
 
-/* 双账号矩阵与旧运营框架样式（遗留） */
+/* shuang zhang hao ju zhen yu jiu yun ying kuang jia yang shi（yi liu） */
 .stack-matrix {
   display: grid;
   grid-template-columns: 1fr;
@@ -423,9 +423,9 @@ body {
   margin: var(--space-sm) 0 var(--space-md);
 }
 
-/* skip-link / :focus-visible · 权威规则在 a11y.css（WCAG 2.2 AA） */
+/* skip-link / :focus-visible · quan wei gui ze zai a11y.css（WCAG 2.2 AA） */
 
-/* 布局 */
+/* bu ju */
 .container {
   max-width: 720px;
   margin: 0 auto;
@@ -460,7 +460,7 @@ body {
   }
 }
 
-/* 导航 */
+/* dao hang */
 .year-nav {
   position: static;
   padding: 1rem var(--padding-mobile);
@@ -485,7 +485,7 @@ body {
 
 .back-link:hover { color: var(--text-primary); }
 
-/* 主视觉 */
+/* zhu shi jue */
 .hero {
   display: flex;
   flex-direction: column;
@@ -583,7 +583,7 @@ body {
   background-color: var(--tulip-blush);
 }
 
-/* 双栈矩阵 */
+/* shuang zhan ju zhen */
 .stack-section {
   margin-top: 0;
 }
@@ -711,7 +711,7 @@ body {
   border: 2px solid var(--tulip-mist);
 }
 
-/* 章节 */
+/* zhang jie */
 .topic,
 .year-content,
 .years-nav {
@@ -743,7 +743,7 @@ body {
   margin-bottom: var(--space-md);
 }
 
-/* 年级网格（遗留） */
+/* nian ji wang ge（yi liu） */
 .years-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -926,7 +926,7 @@ body {
   max-width: 52ch;
 }
 
-/* 文化点缀 · @zhao.langxi / 鸭年 */
+/* wen hua dian zhui · @zhao.langxi / ya nian */
 .heritage-line {
   font-size: var(--text-xs);
   letter-spacing: 0.06em;
@@ -1094,7 +1094,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* 执行手册与旧运营页样式（遗留，页面已归档） */
+/* zhi xing shou ce yu jiu yun ying ye yang shi（yi liu，ye mian yi gui dang） */
 .exec-meta {
   font-size: var(--text-sm);
   color: var(--text-muted);
@@ -1429,7 +1429,7 @@ body {
   width: 36%;
 }
 
-/* .visually-hidden · 见 a11y.css */
+/* .visually-hidden · jian a11y.css */
 
 .handoff-pillars {
   list-style: none;
@@ -1614,7 +1614,7 @@ body {
   margin: 0;
 }
 
-/* 简介元信息样式（遗留） */
+/* jian jie yuan xin xi yang shi（yi liu） */
 .profile-meta {
   display: flex;
   flex-direction: column;
@@ -1667,7 +1667,7 @@ body {
   background: var(--tulip-blush);
 }
 
-/* 三明治规则相关样式 */
+/* san ming zhi gui ze xiang guan yang shi */
 .sandwich-section {
   background: var(--tulip-blush);
 }
@@ -1701,7 +1701,7 @@ ol {
 
 ol li::marker { color: var(--tulip-deep); }
 
-/* 旧清单页样式（遗留，页面已归档） */
+/* jiu qing dan ye yang shi（yi liu，ye mian yi gui dang） */
 .table-wrap {
   overflow-x: auto;
   margin: var(--space-md) 0;
@@ -1839,7 +1839,7 @@ ol li::marker { color: var(--tulip-deep); }
   color: var(--text-secondary);
 }
 
-/* 旧看板页导航样式（遗留，页面已归档） */
+/* jiu kan ban ye dao hang yang shi（yi liu，ye mian yi gui dang） */
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -1911,7 +1911,7 @@ main.container table tbody tr:nth-child(even) {
   background: rgba(250, 232, 236, 0.35);
 }
 
-/* 旧看板样式（遗留） */
+/* jiu kan ban yang shi（yi liu） */
 body.coord-page {
   background-color: var(--tulip-light);
   background-image:
@@ -2250,7 +2250,7 @@ body.coord-page {
 
 .status-unpub,
 .status-unpublished {
-  /* 遗留：标记优先用 .status-badge */
+  /* yi liu：biao ji you xian yong .status-badge */
   color: var(--text-secondary);
   font-style: italic;
 }
@@ -2339,7 +2339,7 @@ ul.checklist li::before {
 }
 
 
-/* 链接 */
+/* lian jie */
 a {
   color: var(--link);
   text-decoration: underline;
@@ -2354,7 +2354,7 @@ a:hover {
   text-decoration-color: var(--link-hover);
 }
 
-/* 页脚 */
+/* ye jiao */
 .footer {
   padding: 3rem var(--padding-mobile);
   border-top: 1px solid var(--border);
@@ -2456,7 +2456,7 @@ a.link-instagram:focus-visible {
   letter-spacing: var(--tracking-normal);
 }
 
-/* 平板及以上 */
+/* ping ban ji yi shang */
 @media (min-width: 768px) {
   .hero {
     display: grid;
@@ -2568,14 +2568,14 @@ a.link-instagram:focus-visible {
   }
 }
 
-/* 桌面（保留两列年级布局） */
+/* zhuo mian（bao liu liang lie nian ji bu ju） */
 @media (min-width: 1024px) {
   .years-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* 深色模式 · 仅真正深色底的协调页换粉笔字；奶油教室页禁止浅字 */
+/* shen se mo shi · jin zhen zheng shen se di de xie tiao ye huan fen bi zi；nai you jiao shi ye jin zhi qian zi */
 @media (prefers-color-scheme: dark) {
   body.coord-page {
     --tulip-light: #1E1518;
@@ -2607,7 +2607,7 @@ a.link-instagram:focus-visible {
   }
 }
 
-/* 打印 */
+/* da yin */
 @media print {
   .year-nav,
   .background-watermark,
@@ -2641,7 +2641,7 @@ a.link-instagram:focus-visible {
   }
 }
 
-/* 幼儿园风主页 · matchaxmoxie index */
+/* you er yuan feng zhu ye · matchaxmoxie index */
 body.kindergarten-home {
   padding:
     calc(var(--nav-h) + 24px + env(safe-area-inset-top, 0px))
@@ -2751,7 +2751,7 @@ body.kindergarten-home {
   max-width: 58ch;
 }
 
-/* 受众两扇门 · 学生 / 招聘入口 */
+/* shou zhong liang shan men · xue sheng / zhao pin ru kou */
 .kiss-home .start-here {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.85rem;
@@ -2872,7 +2872,7 @@ body.kindergarten-home {
 .kindergarten-home .classroom-board::before { top: 22%; }
 .kindergarten-home .classroom-board::after { top: 52%; width: 60%; }
 
-/* 剪纸落日（不用软圆） */
+/* jian zhi luo ri（bu yong ruan yuan） */
 .kindergarten-home .classroom-sun {
   position: absolute;
   top: 14%;
@@ -2983,7 +2983,7 @@ body.kindergarten-home {
   margin-bottom: 16px;
 }
 
-/* 首屏钩子 · HS senior reason-to-care（先于龙凤双站） */
+/* shou ping gou zi · HS senior reason-to-care（xian yu long feng shuang zhan） */
 .kindergarten-home .hero-hook {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-weight: 400;
@@ -3515,7 +3515,7 @@ body.kindergarten-home {
     grid-template-columns: 1fr;
   }
 
-  /* 导航换行 · 目录不横向滚 */
+  /* dao hang huan hang · mu lu bu heng xiang gun */
   .kindergarten-home .site-nav {
     justify-content: center;
     overflow-x: visible;
@@ -3528,7 +3528,7 @@ body.kindergarten-home {
   }
 }
 
-/* 归档说明页 */
+/* gui dang shuo ming ye */
 .archive-page {
   max-width: 640px;
   margin: 0 auto;
@@ -3567,7 +3567,7 @@ body.kindergarten-home {
 
 
 
-/* 奶油底强制深墨 · 禁止粉笔浅字落在奶油上（孩子页可读） */
+/* nai you di qiang zhi shen mo · jin zhi fen bi qian zi luo zai nai you shang（hai zi ye ke du） */
 body.kindergarten-home,
 body.kiss-home,
 body.guide-page,
@@ -3599,12 +3599,12 @@ body.scratch-studio-page .howto-meta p {
   color: #1F1630 !important;
 }
 
-/* keep-it-simple 日落主页 · 少卡片 · 安静归档 */
+/* keep-it-simple ri luo zhu ye · shao ka pian · an jing gui dang */
 body.kiss-home {
   padding-top: max(28px, env(safe-area-inset-top, 0px));
 }
 
-/* 奶油教室页：锁定深墨，系统深色模式不得继承粉笔粉字 */
+/* nai you jiao shi ye：suo ding shen mo，xi tong shen se mo shi bu de ji cheng fen bi fen zi */
 body.kindergarten-home,
 body.kiss-home,
 body.guide-page,
@@ -3621,7 +3621,7 @@ body.campus-survival-page {
   --text-muted: #2F2438;
 }
 
-/* 英雄区 / 课程表：硬墨，防缓存旧 CSS 继承粉笔粉 */
+/* ying xiong qu / ke cheng biao：ying mo，fang huan cun jiu CSS ji cheng fen bi fen */
 .guide-page .guide-hero .studio-kicker,
 .guide-page .guide-hero .studio-lede,
 .guide-page .guide-hero h1,
@@ -3654,7 +3654,7 @@ body.campus-survival-page {
   background: var(--chalk-dust);
   border: 4px solid var(--crayon-ink);
   box-shadow: 5px 5px 0 var(--coral);
-  /* 奶油卡片强制深墨 · 课程列表绝不用粉笔浅字 */
+  /* nai you ka pian qiang zhi shen mo · ke cheng lie biao jue bu yong fen bi qian zi */
   color: var(--ink);
 }
 
@@ -3731,7 +3731,7 @@ body.campus-survival-page {
   display: none;
 }
 
-/* Scratch 工作室 · Miss Zhao 教程网格与可展开指引 */
+/* Scratch gong zuo shi · Miss Zhao jiao cheng wang ge yu ke zhan kai zhi yin */
 .scratch-studio-page .studio-hero {
   margin: 8px 0 28px;
 }
@@ -3927,7 +3927,7 @@ body.campus-survival-page {
   color: var(--coral-ink) !important;
 }
 
-/* 页内目录：跳转到各 how-to 卡片 */
+/* ye nei mu lu：tiao zhuan dao ge how-to ka pian */
 .scratch-studio-page .studio-toc {
   display: flex;
   flex-wrap: wrap;
@@ -3957,7 +3957,7 @@ body.campus-survival-page {
   color: var(--crayon-ink);
 }
 
-/* 可折叠教程正文（details/summary） */
+/* ke zhe die jiao cheng zheng wen（details/summary） */
 .scratch-studio-page .howto-lesson {
   margin-top: 4px;
   border: 3px solid var(--crayon-ink);
@@ -4048,7 +4048,7 @@ body.campus-survival-page {
   text-decoration: none;
 }
 
-/* 入门 .sb3 下载按钮与加载说明 */
+/* ru men .sb3 xia zai an niu yu jia zai shuo ming */
 .scratch-studio-page .scratch-load-help {
   margin: 0 0 22px;
   padding: 1rem 1.1rem;
@@ -4144,7 +4144,7 @@ body.campus-survival-page {
   border-bottom-color: var(--dusk);
 }
 
-/* 锚点定位时高亮当前教程面板 */
+/* mao dian ding wei shi gao liang dang qian jiao cheng mian ban */
 .scratch-studio-page .howto-card:target .howto-lesson,
 .scratch-studio-page .howto-lesson:target {
   border-color: var(--coral-ink);
@@ -4156,7 +4156,7 @@ body.campus-survival-page {
   }
 }
 
-/* Informatics 2027 级指南 */
+/* Informatics 2027 ji zhi nan */
 .guide-page .guide-hero {
   margin: 8px 0 22px;
 }
@@ -4339,7 +4339,7 @@ body.campus-survival-page {
   }
 }
 
-/* 指南页 · Informatics 2027 级（相框布局） */
+/* zhi nan ye · Informatics 2027 ji（xiang kuang bu ju） */
 .guide-page .guide-wrap {
   max-width: 720px;
 }
@@ -4424,7 +4424,7 @@ body.campus-survival-page {
   margin-top: 14px !important;
 }
 
-/* 校园生存 · Year '23 档案条幅 */
+/* xiao yuan sheng cun · Year '23 dang an tiao fu */
 .campus-survival-page .year23-banner {
   margin: 0 0 22px;
   padding: 16px 18px;
@@ -4461,7 +4461,7 @@ body.campus-survival-page {
   font-weight: 700;
 }
 
-/* 红幕英雄图：压高度 + 裁掉幕帘，避免吃掉首屏 */
+/* hong mu ying xiong tu：ya gao du + cai diao mu lian，bi mian chi diao shou ping */
 .campus-survival-page .guide-photo--hero {
   max-width: 100%;
   margin: 8px 0 28px;
@@ -4519,7 +4519,7 @@ body.campus-survival-page {
   }
 }
 
-/* 校园生存页 · 小节标题 / Q&A / 打包勾选 */
+/* xiao yuan sheng cun ye · xiao jie biao ti / Q&A / da bao gou xuan */
 .guide-page .guide-subhead {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-size: 1.05rem;
@@ -4653,7 +4653,7 @@ body.campus-survival-page {
   transform: rotate(0.6deg);
 }
 
-/* 首页欢迎图：压高度 + 裁掉红幕帘，露出投影片主体 */
+/* shou ye huan ying tu：ya gao du + cai diao hong mu lian，lu chu tou ying pian zhu ti */
 .photo-frame--home img {
   width: 100%;
   max-height: min(42vh, 280px);
@@ -4662,7 +4662,7 @@ body.campus-survival-page {
   object-position: center 72%;
 }
 
-/* 指南页同款欢迎图裁切 */
+/* zhi nan ye tong kuan huan ying tu cai qie */
 .guide-photo--welcome img {
   width: 100%;
   max-height: min(42vh, 320px);
@@ -4702,7 +4702,7 @@ body.campus-survival-page {
   }
 }
 
-/* 学术外链档案注脚 · Informatics 指南 */
+/* xue shu wai lian dang an zhu jiao · Informatics zhi nan */
 .guide-archive-note {
   margin-top: 14px !important;
   max-width: 58ch !important;
@@ -4720,7 +4720,7 @@ body.campus-survival-page {
   color: var(--coral-ink);
 }
 
-/* Year '23 档案条 · 校园 tip sheets 日期防火 */
+/* Year '23 dang an tiao · xiao yuan tip sheets ri qi fang huo */
 .year23-banner {
   margin: 0 0 22px;
   padding: 16px 18px;
@@ -4802,7 +4802,7 @@ body.campus-survival-page {
   margin-top: 0;
 }
 
-/* 四年 IU 路径页 · 课程名+学期，无成绩 */
+/* si nian IU lu jing ye · ke cheng ming+xue qi，wu cheng ji */
 .journey-year-nav {
   display: flex;
   flex-wrap: wrap;
@@ -4816,7 +4816,7 @@ body.campus-survival-page {
 }
 
 
-/* HS 建议漏斗 · 有序步骤 · 孩子可读 */
+/* HS jian yi lou dou · you xu bu zhou · hai zi ke du */
 .advice-funnel-lede {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-size: 1.05rem;
@@ -4986,7 +4986,7 @@ body.campus-survival-page {
   margin-bottom: 28px;
 }
 
-/* Miss Zhao 小贴士 · 实用鼓励 + you got this */
+/* Miss Zhao xiao tie shi · shi yong gu li + you got this */
 .miss-zhao-tip {
   margin: 20px 0 28px;
   padding: 16px 18px;
@@ -5051,7 +5051,7 @@ body.campus-survival-page {
 }
 
 /* ------------------------------------------------------------------
-   响应式：手机（~320–480）/ 平板（~768）/ 桌面 / 宽屏（1200+）
+   xiang ying shi：shou ji（~320–480）/ ping ban（~768）/ zhuo mian / kuan ping（1200+）
    ------------------------------------------------------------------ */
 
 body {
@@ -5070,7 +5070,7 @@ body {
   touch-action: manipulation;
 }
 
-/* 手机 · 目录竖排、收紧内边距、卡片单列 */
+/* shou ji · mu lu shu pai、shou jin nei bian ju、ka pian dan lie */
 @media (max-width: 480px) {
   html {
     font-size: 17px;
@@ -5147,7 +5147,7 @@ body {
   }
 }
 
-/* 小平板 · 导航换行，卡片仍可读 */
+/* xiao ping ban · dao hang huan hang，ka pian reng ke du */
 @media (min-width: 481px) and (max-width: 767px) {
   .guide-page .guide-toc,
   .scratch-studio-page .studio-toc,
@@ -5160,7 +5160,7 @@ body {
   }
 }
 
-/* 平板及以上 · 课程 / 年级网格可两列 */
+/* ping ban ji yi shang · ke cheng / nian ji wang ge ke liang lie */
 @media (min-width: 768px) {
   .guide-page .guide-toc {
     gap: 10px 18px;
@@ -5176,7 +5176,7 @@ body {
   }
 }
 
-/* 桌面 */
+/* zhuo mian */
 @media (min-width: 1024px) {
   .kindergarten-home .wrap {
     max-width: 920px;
@@ -5187,7 +5187,7 @@ body {
   }
 }
 
-/* 宽屏 · 留白，但行长不过度拉长 */
+/* kuan ping · liu bai，dan hang zhang bu guo du la chang */
 @media (min-width: 1200px) {
   html {
     font-size: 19px;
@@ -5322,7 +5322,7 @@ body {
   margin: 0.5rem 0 0;
 }
 
-/* leave-a-footprint · “my print so far” 事实行 + 图例 · 仅公开可核实事实 */
+/* leave-a-footprint · “my print so far” shi shi xing + tu li · jin gong kai ke he shi shi shi */
 .trail-legend {
   max-width: 42rem;
   margin: 1rem 0 1.5rem;

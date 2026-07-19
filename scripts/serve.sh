@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# 本地预览 site/（与 GitHub Pages 根目录一致）
-# 用法: ./scripts/serve.sh [端口] [--open]
+# ben di yu lan site/（yu GitHub Pages gen mu lu yi zhi）
+# yong fa: ./scripts/serve.sh [duan kou] [--open]
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -14,8 +14,8 @@ for arg in "$@"; do
   esac
 done
 
-# 仅本地预览：把 content/ 链到 site/，方便解析相对路径
-# 已在 .gitignore，不会部署到 GitHub Pages
+# jin ben di yu lan：ba content/ lian dao site/，fang bian jie xi xiang dui lu jing
+# yi zai .gitignore，bu hui bu shu dao GitHub Pages
 CONTENT_LINK="${ROOT}/site/content"
 if [[ ! -e "$CONTENT_LINK" ]]; then
   ln -s ../content "$CONTENT_LINK"

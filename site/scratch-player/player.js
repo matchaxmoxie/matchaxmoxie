@@ -1,7 +1,7 @@
 /**
- * matchaxmoxie · 站内 Scratch 播放器
- * 用 TurboWarp Scaffolding（scaffolding-min.js）同域 fetch .sb3。
- * 重建说明见同目录 README.md（简体中文）。
+ * matchaxmoxie · zhan nei Scratch bo fang qi
+ * yong TurboWarp Scaffolding（scaffolding-min.js）tong yu fetch .sb3。
+ * chong jian shuo ming jian tong mu lu README.md（jian ti zhong wen）。
  */
 (function () {
   "use strict";

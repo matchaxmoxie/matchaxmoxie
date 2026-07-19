@@ -2,6 +2,6 @@
 *.docx
 site/content
 
-# 本地内部材料，不进公开仓库（含 FASE MAP 协调员运营 + 办公室时段 PDF）
-# PDF 已迁出 site/assets → content/fase-26-27/office-hours/
+# ben di nei bu cai liao，bu jin gong kai cang ku（han FASE MAP xie tiao yuan yun ying + ban gong shi shi duan PDF）
+# PDF yi qian chu site/assets → content/fase-26-27/office-hours/
 content/fase-26-27/

@@ -371,7 +371,7 @@
     updateCount();
   }
 
-  /* ── 4. Scratch studio picker（站内 play 为主；playground 由 player.js 负责）── */
+  /* ── 4. Scratch studio picker（zhan nei play wei zhu；playground you player.js fu ze）── */
   var SCRATCH_PROJECTS = {
     jumping: {
       title: "Jumping Game",
@@ -438,7 +438,7 @@
   };
 
   function initScratchPicker() {
-    /* playground 页由 scratch-player/player.js 接管，避免双绑 */
+    /* playground ye you scratch-player/player.js jie guan，bi mian shuang bang */
     if (document.getElementById("scratch-stage")) return;
 
     var root = document.getElementById("scratch-project-picker");

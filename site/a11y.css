@@ -1,20 +1,20 @@
 /**
- * matchaxmoxie · 共享无障碍基线
+ * matchaxmoxie · gong xiang wu zhang ai ji xian
  *
- * 达标：W3C WCAG 2.2 AA（对比度、焦点可见、跳过链接、减动效、目标尺寸）。
- * 轻量参考 IU Rivet：清晰下划线链接、厚焦点环、触控间距 · 不是 Rivet 紫主题克隆。
- * 视觉仍保持奶油底 + 深墨 #1F1630 幼儿园教室声线。
+ * da biao：W3C WCAG 2.2 AA（dui bi du、jiao dian ke jian、tiao guo lian jie、jian dong xiao、mu biao chi cun）。
+ * qing liang can kao IU Rivet：qing xi xia hua xian lian jie、hou jiao dian huan、chu kong jian ju · bu shi Rivet zi zhu ti ke long。
+ * shi jue reng bao chi nai you di + shen mo #1F1630 you er yuan jiao shi sheng xian。
  */
 
 :root {
-  /* 奶油底上的焦点环必须 ≥3:1（非文本）；用 dusk，不用 golden-hour */
+  /* nai you di shang de jiao dian huan bi xu ≥3:1（fei wen ben）；yong dusk，bu yong golden-hour */
   --focus-ring: #2A1F3D;
   --focus-ring-width: 3px;
   --focus-ring-offset: 3px;
   --a11y-ink: #1F1630;
 }
 
-/* 跳过链接 · 键盘优先 */
+/* tiao guo lian jie · jian pan you xian */
 .skip-link {
   position: absolute;
   top: -100%;
@@ -34,12 +34,12 @@
 .skip-link:focus,
 .skip-link:focus-visible {
   top: 0;
-  /* 深色条上的金色描边对比足够；页面其余焦点用 --focus-ring */
+  /* shen se tiao shang de jin se miao bian dui bi zu gou；ye mian qi yu jiao dian yong --focus-ring */
   outline: var(--focus-ring-width) solid #F4A261;
   outline-offset: 2px;
 }
 
-/* 全局焦点环 · WCAG 2.4.7 / 2.4.13 */
+/* quan ju jiao dian huan · WCAG 2.4.7 / 2.4.13 */
 :focus-visible {
   outline: var(--focus-ring-width) solid var(--focus-ring);
   outline-offset: var(--focus-ring-offset);
@@ -50,7 +50,7 @@
   outline: none;
 }
 
-/* 屏幕阅读器专用文案 */
+/* ping mu yue du qi zhuan yong wen an */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -63,7 +63,7 @@
   border: 0;
 }
 
-/* 减动效 · WCAG 2.3.3 */
+/* jian dong xiao · WCAG 2.3.3 */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -78,7 +78,7 @@
   }
 }
 
-/* 清单复选框 · 目标尺寸约 24×24+（WCAG 2.5.8）；Rivet 式触控间距 */
+/* qing dan fu xuan kuang · mu biao chi cun yue 24×24+（WCAG 2.5.8）；Rivet shi chu kong jian ju */
 .coord-checklist label {
   display: flex;
   align-items: flex-start;
@@ -99,7 +99,7 @@
   accent-color: #9A3D32;
 }
 
-/* 脚印装饰不抢指针/焦点；列表语义仍靠 ol */
+/* jiao yin zhuang shi bu qiang zhi zhen/jiao dian；lie biao yu yi reng kao ol */
 .foot-print[aria-hidden="true"],
 .foot-print[aria-hidden="true"] svg {
   pointer-events: none;
