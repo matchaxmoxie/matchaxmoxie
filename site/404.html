@@ -15,7 +15,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#F4A261">
+<meta name="theme-color" content="#E0763A">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="matchaxmoxie">
 <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/">
@@ -25,61 +25,12 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260717i">
-<link rel="stylesheet" href="classroom-ux.css?v=20260717i">
-<style>
-  /* 404 du li bo yang shi · jiao dian/tiao guo/jian dong xiao jian a11y.css · nai you+shen mo dui qi zhu zhan */
-  :root{
-    --ink:#1F1630;
-    --ink-soft:#2F2438;
-    --cream:#FFF4E8;
-    --sun:#F4A261;
-    --coral:#9A3D32;
-    --dusk:#2A1F3D;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    padding:max(24px, env(safe-area-inset-top)) 24px max(40px, env(safe-area-inset-bottom));
-    background:var(--cream);
-    background-image:
-      linear-gradient(180deg,rgba(244,162,97,.2),rgba(155,142,196,.12),rgba(255,244,232,.95)),
-      repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(42,31,61,.045) 27px,rgba(42,31,61,.045) 28px);
-    color:var(--ink);
-    font-family:"Comic Neue","Comic Sans MS",cursive,sans-serif;
-    font-size:17px;
-    line-height:1.5;
-    text-align:center;
-    color-scheme:light only;
-  }
-  h1{
-    font-family:"Cooper Black",Georgia,serif;
-    font-size:clamp(48px,12vw,80px);
-    color:var(--dusk);
-    margin-bottom:8px;
-  }
-  p{color:var(--ink-soft);max-width:36ch;margin-bottom:20px;font-size:16px}
-  a{color:var(--coral);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;font-weight:700}
-  a:hover{color:var(--dusk)}
-  .mono{font-family:"Courier New",Courier,monospace;font-size:13px;font-weight:700;letter-spacing:.04em;margin-top:24px;color:var(--ink-soft)}
-  footer{
-    margin-top:28px;
-    padding-top:16px;
-    border-top:3px solid var(--dusk);
-    max-width:40ch;
-    font-size:15px;
-    color:var(--ink);
-  }
-  footer p{margin:0;max-width:none;color:var(--ink)}
-  footer .sc{font-family:"Noto Serif SC",Georgia,serif}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="a11y.css?v=20260723b">
+<link rel="stylesheet" href="classroom-ux.css?v=20260723b">
+<link rel="stylesheet" href="styles.css?v=20260723b">
 </head>
-<body>
+<body class="kindergarten-home kiss-home page-404">
   <a href="#main-content" class="skip-link">skip to main content</a>
   <nav class="site-jump" aria-label="Classroom">
   <a href="index.html">home</a>
@@ -92,17 +43,26 @@
 </nav>
   <main id="main-content">
   <h1>404</h1>
-  <p>this page is not on the board. maybe it graduated. the 凤凰 · phoenix classroom is still at <a href="index.html">home</a>.</p>
-  <p><a href="index.html">return home</a> · <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao · 龙 · dragon</a></p>
+  <p class="lede">this page is not on the board. maybe it graduated. the <span class="sc" lang="zh-Hans">凤凰</span> · phoenix classroom is still at home.</p>
+  <nav class="page-404-actions" aria-label="where to go">
+    <a href="index.html">return home</a>
+    <a href="student-path.html">your path</a>
+    <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao · 龙 · dragon</a>
+  </nav>
   <p class="mono">jadexzhao = 龙 · dragon (builder). this site = 凤凰 · phoenix (classroom archive).</p>
   </main>
-  <footer>
-    <p>
+  <footer class="footer-kiss">
+    <p class="human">
       Jade Zhao · Miss Zhao on hiatus · IU Luddy ·
       <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
       · <span class="sc" lang="zh-Hans">福州</span> roots
     </p>
-  </footer>
-<script src="classroom-ux.js?v=20260717i" defer></script>
+      <p class="footer-soft">
+      <span class="sc" lang="zh-Hans">凤凰</span> · phoenix (this teaching site) ·
+      <span class="sc" lang="zh-Hans">龙</span> · dragon
+      (<a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>, work side).
+    </p>
+</footer>
+<script src="classroom-ux.js?v=20260723b" defer></script>
 </body>
 </html>
