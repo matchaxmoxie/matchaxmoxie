@@ -4,7 +4,7 @@
 **Live Pages:** https://matchaxmoxie.github.io/matchaxmoxie/  
 **Artifact:** `site/` via `.github/workflows/pages.yml` (GitHub Actions). Static HTML/CSS. Not a Vite build.
 
-Local working copy: this folder (`Projects/matchaxmoxie/`).
+Local working copy: this folder (`Documents/matchaxmoxie/`).
 
 ## Pages architecture (do not invent a Vite base)
 
@@ -48,7 +48,7 @@ Same Jade · Miss Zhao · GWC archive · portfolio @jadexzhao
 ## Push Pages content
 
 ```bash
-cd /Users/jadexzhao/Documents/jadexzhao/Projects/matchaxmoxie
+cd /Users/jadexzhao/Documents/matchaxmoxie
 # edit site/* as needed, then:
 git add site .github/workflows/pages.yml
 git commit -m "文档：同步 matchax Pages 与静态 site 发布说明"
