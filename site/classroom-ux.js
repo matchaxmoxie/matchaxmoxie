@@ -416,3 +416,63 @@
     init();
   }
 })();
+
+/**
+ * Scroll reveals · showcase layer 2026-07-23.
+ * Below-the-fold classroom cards ride in as you scroll.
+ * On-screen elements are never hidden (no flash); respects
+ * prefers-reduced-motion and degrades to fully visible without JS.
+ */
+(function () {
+  "use strict";
+
+  if (!("IntersectionObserver" in window)) return;
+  try {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  } catch (_e) {
+    return;
+  }
+
+  var SELECTOR = [
+    ".gwc-block",
+    ".photo-frame",
+    ".kiss-home .quiet-links",
+    ".footer-kiss",
+    ".journey-year-nav",
+    ".journey-note",
+    ".choice-home-visual",
+  ].join(", ");
+
+  function setUp() {
+    var els = document.querySelectorAll(SELECTOR);
+    if (!els.length) return;
+
+    document.documentElement.classList.add("js-reveal");
+
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.06 }
+    );
+
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    els.forEach(function (el) {
+      /* skip anything already on screen · zero flash on load */
+      if (el.getBoundingClientRect().top < vh * 0.92) return;
+      el.classList.add("rv");
+      io.observe(el);
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setUp);
+  } else {
+    setUp();
+  }
+})();

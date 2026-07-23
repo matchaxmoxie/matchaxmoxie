@@ -6660,3 +6660,202 @@ body.page-404 {
   }
 }
 
+/* ════════════════════════════════════════════════════════
+   showcase layer · 2026-07-23 · 凤凰 polish
+   selection · scrollbar · hero lockup · sunset accents ·
+   card depth · press states · scroll reveals
+   ════════════════════════════════════════════════════════ */
+
+/* —— selection · dusk chalk moment —— */
+::selection {
+  background: var(--dusk);
+  color: var(--chalk-dust);
+}
+
+/* —— scrollbar · quiet sunset, non-breaking —— */
+html {
+  scrollbar-color: rgba(224, 118, 58, 0.55) transparent;
+  scrollbar-width: thin;
+}
+
+/* —— home page · warm mesh over the ruled paper —— */
+body.choice-home {
+  background-image:
+    radial-gradient(90% 26% at 50% 0%, rgba(244, 162, 97, 0.2), transparent 72%),
+    linear-gradient(
+      180deg,
+      rgba(244, 162, 97, 0.1) 0%,
+      rgba(122, 107, 168, 0.06) 42%,
+      rgba(255, 250, 244, 0.94) 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 28px,
+      rgba(42, 31, 61, 0.045) 28px,
+      rgba(42, 31, 61, 0.045) 29px
+    );
+}
+
+/* —— hero visual · glow behind the paper sun + 凤 in the sky —— */
+.kindergarten-home .hero-visual {
+  background:
+    radial-gradient(58% 42% at 50% 32%, rgba(255, 216, 156, 0.6), transparent 74%),
+    linear-gradient(
+      180deg,
+      var(--peach) 0%,
+      var(--golden-hour) 38%,
+      var(--lavender) 72%,
+      var(--dusk) 100%
+    );
+}
+
+.kindergarten-home .hero-visual::after {
+  content: "凤";
+  content: "凤" / "";
+  position: absolute;
+  left: 50%;
+  top: 1%;
+  transform: translateX(-50%) rotate(-3deg);
+  z-index: 0;
+  font-family: "Noto Serif SC", serif;
+  font-weight: 500;
+  font-size: clamp(84px, 20vw, 148px);
+  line-height: 1.1;
+  color: rgba(255, 250, 244, 0.34);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* —— hero lockup · bigger type, sunset-to-dusk underline —— */
+.choice-home .hero-brand-line {
+  color: var(--coral-ink);
+}
+
+.choice-home .hero-text h1 {
+  font-size: clamp(2.2rem, 7vw, 3.4rem);
+  letter-spacing: 0;
+}
+
+.choice-home .hero-text h1::after {
+  width: 4.5rem;
+  height: 5px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--sunset-warm) 0%, var(--lavender) 100%);
+}
+
+/* —— section headings · chalk accent bar —— */
+.kiss-home .gwc-block h2::after,
+.guide-page .guide-hero h1::after,
+.footprint-page .guide-hero h1::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 4px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--sunset-warm) 0%, var(--lavender) 100%);
+}
+
+/* —— photo frames · chunky shadow deepens on hover —— */
+.photo-frame {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.photo-frame:hover {
+  transform: rotate(-0.4deg) translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--coral);
+}
+
+.photo-frame--home:hover {
+  transform: rotate(0.6deg) translate(-2px, -2px);
+}
+
+.photo-frame--wide:hover {
+  transform: rotate(0.3deg) translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--lavender);
+}
+
+/* —— gwc cards · sunset top edge —— */
+.kiss-home .gwc-block {
+  border-top-color: var(--sunset-warm);
+}
+
+/* —— footer · sunset-to-dusk rule —— */
+.kiss-home .footer-kiss,
+.page-404 .footer-kiss {
+  border-top: 4px solid var(--sunset-warm);
+  border-image: linear-gradient(90deg, var(--sunset-warm) 0%, var(--lavender) 100%) 1;
+}
+
+/* —— press states · everything settles under the thumb —— */
+.btn:active,
+.situation-btn:active,
+.open-pick-btn:active,
+.scratch-pick-btn:active,
+.open-link-cta:active,
+.journey-year-nav a:active,
+.site-jump a:active,
+.page-404 .page-404-actions a:active {
+  transform: translateY(1px);
+  transition-duration: 60ms;
+}
+
+/* —— scroll reveals · classroom-ux.js adds .rv below the fold only —— */
+@media (prefers-reduced-motion: no-preference) {
+  html.js-reveal .rv {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  html.js-reveal .rv.in-view {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* keep the crayon rotation while riding in */
+  html.js-reveal .photo-frame.rv {
+    transform: rotate(-0.4deg) translateY(16px);
+  }
+
+  html.js-reveal .photo-frame--home.rv {
+    transform: rotate(0.6deg) translateY(16px);
+  }
+
+  html.js-reveal .photo-frame--wide.rv {
+    transform: rotate(0.3deg) translateY(16px);
+  }
+
+  html.js-reveal .photo-frame.rv.in-view {
+    transform: rotate(-0.4deg);
+  }
+
+  html.js-reveal .photo-frame--home.rv.in-view {
+    transform: rotate(0.6deg);
+  }
+
+  html.js-reveal .photo-frame--wide.rv.in-view {
+    transform: rotate(0.3deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-frame:hover,
+  .photo-frame--home:hover,
+  .photo-frame--wide:hover {
+    transform: rotate(-0.4deg);
+    box-shadow: 5px 5px 0 var(--coral);
+  }
+
+  .photo-frame--home:hover {
+    transform: rotate(0.6deg);
+  }
+
+  .photo-frame--wide:hover {
+    transform: rotate(0.3deg);
+    box-shadow: 5px 5px 0 var(--lavender);
+  }
+}
