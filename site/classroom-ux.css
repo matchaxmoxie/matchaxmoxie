@@ -272,13 +272,13 @@
 .open-pick-btn:hover,
 .situation-btn:hover,
 .scratch-pick-btn:hover {
-  transform: translateX(3px);
+  transform: translateY(-2px);
 }
 
 .open-pick-btn:focus-visible,
 .situation-btn:focus-visible,
 .scratch-pick-btn:focus-visible {
-  transform: translateX(3px);
+  transform: translateY(-2px);
 }
 
 .open-pick-thumb {

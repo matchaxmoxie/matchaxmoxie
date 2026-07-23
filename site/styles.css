@@ -2,6 +2,8 @@
   /* ri luo jiao shi pei se · Miss Zhao · jin se huang hun */
   --sunshine: #F4A261;
   --golden-hour: #F4A261;
+  --sunset-warm: #E0763A;
+  --sunset-glow: rgba(224, 118, 58, 0.14);
   --coral: #E76F51;
   /* zheng wen yong shan hu（nai you di ≥4.5:1）；zhuang shi reng yong --coral */
   --coral-ink: #9A3D32;
@@ -3006,6 +3008,12 @@ body.kindergarten-home {
 .open-invest--hero {
   margin-top: 0;
   margin-bottom: 32px;
+  padding: 24px 22px 22px;
+  max-width: none;
+  background: linear-gradient(165deg, #fffaf4 0%, #fff0dc 55%, #ffe8cc 100%);
+  border: 3px solid var(--crayon-ink);
+  border-radius: 0;
+  box-shadow: 6px 6px 0 rgba(31, 22, 48, 0.12);
 }
 
 .open-invest--hero h2,
@@ -3024,44 +3032,49 @@ body.kindergarten-home {
 
 /* ── choice-first home · one pick per viewport ── */
 .choice-home .hero--choice {
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 .choice-home .hero-brand-line {
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--dusk);
-  margin: 0 0 8px;
+  color: var(--sunset-warm);
+  margin: 0 0 10px;
 }
 
 .choice-home .hero-text h1 {
-  font-size: clamp(1.85rem, 5.5vw, 2.6rem);
-  max-width: 16ch;
-  margin-bottom: 12px;
+  font-size: clamp(2rem, 6vw, 2.85rem);
+  max-width: 14ch;
+  margin-bottom: 14px;
+  line-height: 1.08;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.choice-home .hero-text h1::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 4px;
+  margin-top: 12px;
+  background: var(--sunset-warm);
 }
 
 .choice-home .hero-hook {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: clamp(1.15rem, 2.8vw, 1.35rem);
+  font-size: clamp(1.2rem, 2.8vw, 1.4rem);
   color: var(--crayon-ink);
-  max-width: 32ch;
+  max-width: 34ch;
   margin: 0;
+  line-height: 1.45;
 }
 
 .open-invest--hero .invest-lede {
   font-size: clamp(1.15rem, 2.6vw, 1.3rem);
   margin-bottom: 18px;
-}
-
-.situation-plan-title {
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
-}
-
-.situation-plan-steps li {
-  font-size: clamp(1.1rem, 2.5vw, 1.22rem);
 }
 
 .situation-plan-next {
@@ -5475,11 +5488,17 @@ body {
 .situation-choices,
 .scratch-pick-choices {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin: 0 0 18px;
+  display: grid;
+  gap: 14px;
+  margin: 0 0 20px;
   padding: 0;
+}
+
+@media (min-width: 720px) {
+  .situation-choices {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 
 .open-pick-list > li {
@@ -5493,29 +5512,48 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   width: 100%;
-  min-height: 52px;
-  padding: 12px 0;
+  min-height: 88px;
+  padding: 16px 18px;
   font-family: inherit;
   font-size: 1rem;
   text-align: left;
   color: var(--crayon-ink);
-  background: transparent;
-  border: 0;
-  border-bottom: 2px solid rgba(31, 22, 48, 0.14);
+  background: #fffaf4;
+  border: 2px solid rgba(31, 22, 48, 0.14);
+  border-left-width: 5px;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow: 3px 3px 0 rgba(31, 22, 48, 0.08);
   cursor: pointer;
   touch-action: manipulation;
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-base),
+    background-color var(--transition-base);
+}
+
+.situation-btn[data-situation="ap-csp"] {
+  border-left-color: var(--jade);
+}
+
+.situation-btn[data-situation="undecided"] {
+  border-left-color: var(--lavender);
+}
+
+.situation-btn[data-situation="visiting"] {
+  border-left-color: var(--sunset-warm);
 }
 
 .open-pick-btn:hover,
 .situation-btn:hover,
 .scratch-pick-btn:hover {
-  background: transparent;
+  background: #fff4df;
   color: var(--coral-ink);
-  border-bottom-color: var(--coral-ink);
+  border-color: rgba(31, 22, 48, 0.22);
+  box-shadow: 5px 5px 0 rgba(31, 22, 48, 0.12);
+  transform: translateY(-2px);
 }
 
 .open-pick-btn:focus-visible,
@@ -5528,29 +5566,29 @@ body {
 .open-pick-btn[aria-pressed="true"],
 .situation-btn[aria-pressed="true"],
 .scratch-pick-btn[aria-pressed="true"] {
-  background: transparent;
-  border-bottom-color: var(--crayon-ink);
-  box-shadow: none;
+  background: #fff0dc;
+  border-color: var(--crayon-ink);
+  border-left-width: 6px;
+  box-shadow: 4px 4px 0 rgba(31, 22, 48, 0.14);
   color: var(--crayon-ink);
 }
 
 .open-pick-btn[aria-pressed="true"] .open-pick-label,
 .situation-btn[aria-pressed="true"] .open-pick-label,
 .situation-btn[aria-pressed="true"] .situation-btn-label {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 5px;
+  text-decoration: none;
   color: var(--coral-ink);
 }
 
 .open-pick-thumb {
   display: block;
-  width: 88px;
-  height: 56px;
+  width: 96px;
+  height: 64px;
   flex: 0 0 auto;
   object-fit: cover;
   object-position: center 40%;
-  filter: saturate(0.92) sepia(0.06) contrast(1.02);
+  border: 2px solid rgba(31, 22, 48, 0.1);
+  filter: saturate(0.95) sepia(0.04) contrast(1.02);
 }
 
 .open-pick-copy {
@@ -5577,29 +5615,36 @@ body {
 
 .open-link-cta,
 .open-cta {
-  display: inline;
-  min-height: 44px;
-  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 10px 20px;
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-size: clamp(1.15rem, 2.8vw, 1.35rem);
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
-  color: var(--coral-ink);
-  background: transparent;
-  border: 0;
-  border-bottom: 3px solid var(--coral-ink);
+  color: #fffaf4;
+  background: var(--sunset-warm);
+  border: 2px solid var(--crayon-ink);
   border-radius: 0;
-  box-shadow: none;
+  box-shadow: 3px 3px 0 var(--crayon-ink);
   text-decoration: none;
   cursor: pointer;
   touch-action: manipulation;
+  transition:
+    background-color var(--transition-base),
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .open-link-cta:hover,
 .open-cta:hover {
-  color: var(--crayon-ink);
+  color: #fffaf4;
+  background: var(--coral-ink);
   border-bottom-color: var(--crayon-ink);
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 0 var(--crayon-ink);
 }
 
 .open-link-cta:focus-visible,
@@ -5627,14 +5672,16 @@ body {
 }
 
 .situation-plan {
-  margin-top: 18px;
-  padding-top: 16px;
-  border-top: 2px solid rgba(31, 22, 48, 0.14);
+  margin-top: 22px;
+  padding: 20px 18px 18px;
+  background: linear-gradient(180deg, rgba(255, 250, 244, 0.95) 0%, rgba(255, 232, 204, 0.5) 100%);
+  border: 2px solid rgba(31, 22, 48, 0.14);
+  box-shadow: 4px 4px 0 rgba(31, 22, 48, 0.08);
 }
 
 .situation-plan-title {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
-  font-size: 1.1rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
   color: var(--coral-ink);
   margin: 0 0 6px;
 }
@@ -5650,16 +5697,39 @@ body {
 }
 
 .situation-plan-steps {
+  counter-reset: plan-step;
   margin: 0 0 14px;
-  padding-left: 1.4rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 .situation-plan-steps li {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: 1.02rem;
+  font-size: clamp(1.02rem, 2.4vw, 1.12rem);
   line-height: 1.5;
   color: var(--ink);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  padding: 14px 16px 14px 14px;
+  background: #fffaf4;
+  border: 2px solid rgba(31, 22, 48, 0.12);
+  border-left: 5px solid var(--sunset-warm);
+  counter-increment: plan-step;
+}
+
+.situation-plan-steps li::before {
+  content: counter(plan-step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  margin-right: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #fffaf4;
+  background: var(--sunset-warm);
+  vertical-align: middle;
 }
 
 .situation-plan-steps strong {
@@ -6176,14 +6246,18 @@ body {
   .open-pick-btn,
   .situation-btn {
     align-items: flex-start;
-    min-height: 48px;
-    padding: 14px 0;
+    min-height: 80px;
+    padding: 14px 16px;
   }
 
   .open-pick-thumb {
-    width: 72px;
-    height: 48px;
-    margin-top: 4px;
+    width: 80px;
+    height: 54px;
+    margin-top: 2px;
+  }
+
+  .open-invest--hero {
+    padding: 18px 16px 16px;
   }
 
   .situation-plan-next .open-link-cta,
@@ -6192,7 +6266,9 @@ body {
   }
 
   .situation-plan-next .open-link-cta {
-    display: inline-block;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
     line-height: 1.35;
   }
 }
