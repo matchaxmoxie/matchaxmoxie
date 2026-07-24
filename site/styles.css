@@ -3047,7 +3047,7 @@ body.kindergarten-home {
 
 .choice-home .hero-text h1 {
   font-size: clamp(2rem, 6vw, 2.85rem);
-  max-width: 14ch;
+  max-width: 18ch;
   margin-bottom: 14px;
   line-height: 1.08;
   position: relative;
@@ -5061,6 +5061,33 @@ body.campus-survival-page {
 .miss-zhao-tip a:focus-visible {
   outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 3px;
+}
+
+.classroom-credo {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.classroom-credo li {
+  margin-bottom: 0.45rem;
+}
+
+.classroom-credo li:last-child {
+  margin-bottom: 0;
+}
+
+.classroom-credo strong {
+  color: var(--crayon-ink);
+  font-weight: 700;
+}
+
+.choice-home .credo-tip {
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 /* ------------------------------------------------------------------

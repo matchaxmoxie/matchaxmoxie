@@ -1,5 +1,11 @@
 # matchaxmoxie · 凤凰 · phoenix · Jade Zhao
 
+**Classroom rules I actually teach:**
+
+1. **If you can’t ELI5 it, you’re not done yet.** Explain the how-to so a freshman (or your past self) gets it.
+2. **If you don’t understand it, learn it.** Curiosity beats pretending. Official IU pages win over vibes.
+3. **Slow progress is the best progress.** One step today. KISS guides, not hustle checklists.
+
 **TLDR:** two sites, same me. [jadexzhao](https://jadexzhao.github.io/jadexzhao/) = **龙 · dragon** (builder / work). this repo = **凤凰 · phoenix** (Miss Zhao classroom archive).
 
 IG: [@zhao.langxi](https://instagram.com/zhao.langxi) · live: [matchaxmoxie.github.io](https://matchaxmoxie.github.io/matchaxmoxie/) · builder: [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/) · [resume (PDF)](https://jlzhao.pages.iu.edu/resume.pdf) · email: [jlzhao@iu.edu](mailto:jlzhao@iu.edu)
