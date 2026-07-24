@@ -34,7 +34,7 @@ So the studio can link “See live on Scratch” later:
 1. Sign in as the Scratch account you want to own the projects.
 2. **File → Load from your computer** → open each `.sb3`.
 3. **File → Save now**, then **Share**.
-4. Copy each project URL (`https://scratch.mit.edu/projects/…`).
+4. Copy each project URL (`https://scratch.mit.edu/projects/...`).
 5. Paste into `scratch-studio.html` next to the matching download button (optional second link).
 
 Regenerate files after costume/script edits:

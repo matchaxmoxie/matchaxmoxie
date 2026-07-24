@@ -225,7 +225,10 @@ body {
   font-size: var(--text-xs);
   letter-spacing: 0.06em;
   text-transform: lowercase;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.35em;
+  text-decoration-thickness: 2px;
   color: var(--text-secondary);
   border-bottom: 2px solid transparent;
   white-space: nowrap;
@@ -235,7 +238,12 @@ body {
 .site-jump a:hover {
   color: var(--accent-crimson);
   border-bottom-color: var(--accent-crimson);
+  text-decoration-color: var(--accent-crimson);
   background: var(--tulip-blush);
+}
+
+.site-jump a:focus-visible {
+  text-decoration-color: var(--dusk);
 }
 
 .site-jump a[aria-current="page"] {
@@ -5091,7 +5099,7 @@ body.campus-survival-page {
 }
 
 /* ------------------------------------------------------------------
-   xiang ying shi：shou ji（~320–480）/ ping ban（~768）/ zhuo mian / kuan ping（1200+）
+   xiang ying shi：shou ji（~320-480）/ ping ban（~768）/ zhuo mian / kuan ping（1200+）
    ------------------------------------------------------------------ */
 
 body {
@@ -5197,6 +5205,37 @@ body {
 
   .kindergarten-home .wrap {
     max-width: 720px;
+  }
+
+  /* tablet: sticky top nav that can wrap instead of cramped scroll */
+  .site-jump {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    row-gap: 0;
+  }
+
+  .site-jump a {
+    min-height: 48px;
+    padding: 0 12px;
+  }
+
+  .choice-home .hero {
+    gap: 1.25rem;
+  }
+
+  .choice-home .hero-visual {
+    max-width: 260px;
+  }
+
+  .open-invest--hero {
+    padding: 22px 20px 18px;
+  }
+
+  .situation-btn,
+  .open-pick-btn {
+    min-height: 96px;
+    padding: 18px 20px;
   }
 }
 
@@ -6272,15 +6311,17 @@ body {
 @media (max-width: 520px) {
   .open-pick-btn,
   .situation-btn {
-    align-items: flex-start;
-    min-height: 80px;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 88px;
     padding: 14px 16px;
+    gap: 12px;
   }
 
   .open-pick-thumb {
-    width: 80px;
-    height: 54px;
-    margin-top: 2px;
+    width: 100%;
+    height: 120px;
+    margin-top: 0;
   }
 
   .open-invest--hero {
@@ -6300,7 +6341,7 @@ body {
   }
 }
 
-/* —— site-wide interior · panels, step cards, grids (20260723b) —— */
+/* ... site-wide interior · panels, step cards, grids (20260723b) ... */
 
 .interior-panel {
   margin: 0 0 28px;
@@ -6583,7 +6624,7 @@ body {
   margin: 10px 0 0;
 }
 
-/* —— 404 · phoenix classroom —— */
+/* ... 404 · phoenix classroom ... */
 body.page-404 {
   min-height: 100vh;
   display: flex;
@@ -6693,19 +6734,19 @@ body.page-404 {
    card depth · press states · scroll reveals
    ════════════════════════════════════════════════════════ */
 
-/* —— selection · dusk chalk moment —— */
+/* ... selection · dusk chalk moment ... */
 ::selection {
   background: var(--dusk);
   color: var(--chalk-dust);
 }
 
-/* —— scrollbar · quiet sunset, non-breaking —— */
+/* ... scrollbar · quiet sunset, non-breaking ... */
 html {
   scrollbar-color: rgba(224, 118, 58, 0.55) transparent;
   scrollbar-width: thin;
 }
 
-/* —— home page · warm mesh over the ruled paper —— */
+/* ... home page · warm mesh over the ruled paper ... */
 body.choice-home {
   background-image:
     radial-gradient(90% 26% at 50% 0%, rgba(244, 162, 97, 0.2), transparent 72%),
@@ -6724,7 +6765,7 @@ body.choice-home {
     );
 }
 
-/* —— hero visual · glow behind the paper sun + 凤 in the sky —— */
+/* ... hero visual · glow behind the paper sun + 凤 in the sky ... */
 .kindergarten-home .hero-visual {
   background:
     radial-gradient(58% 42% at 50% 32%, rgba(255, 216, 156, 0.6), transparent 74%),
@@ -6754,7 +6795,7 @@ body.choice-home {
   user-select: none;
 }
 
-/* —— hero lockup · bigger type, sunset-to-dusk underline —— */
+/* ... hero lockup · bigger type, sunset-to-dusk underline ... */
 .choice-home .hero-brand-line {
   color: var(--coral-ink);
 }
@@ -6771,7 +6812,7 @@ body.choice-home {
   background: linear-gradient(90deg, var(--sunset-warm) 0%, var(--lavender) 100%);
 }
 
-/* —— section headings · chalk accent bar —— */
+/* ... section headings · chalk accent bar ... */
 .kiss-home .gwc-block h2::after,
 .guide-page .guide-hero h1::after,
 .footprint-page .guide-hero h1::after {
@@ -6784,7 +6825,7 @@ body.choice-home {
   background: linear-gradient(90deg, var(--sunset-warm) 0%, var(--lavender) 100%);
 }
 
-/* —— photo frames · chunky shadow deepens on hover —— */
+/* ... photo frames · chunky shadow deepens on hover ... */
 .photo-frame {
   transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
@@ -6803,19 +6844,19 @@ body.choice-home {
   box-shadow: 8px 8px 0 var(--lavender);
 }
 
-/* —— gwc cards · sunset top edge —— */
+/* ... gwc cards · sunset top edge ... */
 .kiss-home .gwc-block {
   border-top-color: var(--sunset-warm);
 }
 
-/* —— footer · sunset-to-dusk rule —— */
+/* ... footer · sunset-to-dusk rule ... */
 .kiss-home .footer-kiss,
 .page-404 .footer-kiss {
   border-top: 4px solid var(--sunset-warm);
   border-image: linear-gradient(90deg, var(--sunset-warm) 0%, var(--lavender) 100%) 1;
 }
 
-/* —— press states · everything settles under the thumb —— */
+/* ... press states · everything settles under the thumb ... */
 .btn:active,
 .situation-btn:active,
 .open-pick-btn:active,
@@ -6828,7 +6869,7 @@ body.choice-home {
   transition-duration: 60ms;
 }
 
-/* —— scroll reveals · classroom-ux.js adds .rv below the fold only —— */
+/* ... scroll reveals · classroom-ux.js adds .rv below the fold only ... */
 @media (prefers-reduced-motion: no-preference) {
   html.js-reveal .rv {
     opacity: 0;

@@ -208,7 +208,7 @@
     currentKey = key;
     syncChrome(key);
     setControlsEnabled(false);
-    setStatus("Loading " + proj.title + "…", false);
+    setStatus("Loading " + proj.title + "...", false);
 
     var token = ++loadToken;
     var sc;

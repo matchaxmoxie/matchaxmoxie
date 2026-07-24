@@ -20,6 +20,9 @@
   top: -100%;
   left: 1rem;
   z-index: 200;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   padding: 0.65rem 1.1rem;
   background: #1a1a1a;
   color: #FFFAF4;
