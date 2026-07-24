@@ -56,17 +56,17 @@
       steps: [
         {
           title: "AP notes that map to IU",
-          body: "See how CSP credit lands before you stress the syllabus.",
+          body: "See how CSP credit lands before you stress the syllabus. Learn the live table.",
           href: "informatics-class-of-2027.html#early-heading",
         },
         {
           title: "Ship a tiny Scratch game",
-          body: "Green flag on this site. Two minutes and something moves.",
+          body: "Green flag on this site. Two minutes and something moves. Slow is fine.",
           href: "scratch-play.html?project=jumping",
         },
         {
           title: "Peek freshman year",
-          body: "Real Luddy course names from my first year.",
+          body: "Real Luddy course names from my first year. ELI5 the codes as you go.",
           href: "freshman.html",
         },
       ],
@@ -76,17 +76,17 @@
       steps: [
         {
           title: "Official IU links first",
-          body: "Bulletin, AP credit, registrar. Live pages beat rumors.",
+          body: "Bulletin, AP credit, registrar. Live pages beat rumors. Learn it there.",
           href: "informatics-class-of-2027.html#official-links",
         },
         {
           title: "Career slides, not vibes only",
-          body: "Learn about yourself before you lock a track.",
+          body: "Learn about yourself before you lock a track. One step, not twenty tabs.",
           href: "informatics-class-of-2027.html#career-slides",
         },
         {
           title: "Claim a footprint",
-          body: "A dare list for college life outside the GPA grind.",
+          body: "A dare list for college life outside the GPA grind. One box today.",
           href: "footprint.html#bucket",
         },
       ],
@@ -96,17 +96,17 @@
       steps: [
         {
           title: "Campus survival notes",
-          body: "Year '23 packing and welcome week, honest and short.",
+          body: "Year '23 packing and welcome week, honest and short. Verify live dates.",
           href: "campus-survival.html",
         },
         {
           title: "Check the live calendar",
-          body: "FA26 to FA27 dates on the registrar page, not hearsay.",
+          body: "FA26 to FA27 dates on the registrar page, not hearsay. Learn the map.",
           href: "informatics-class-of-2027.html#official-links",
         },
         {
           title: "Four-year path peek",
-          body: "Freshman through senior, including Madrid spring.",
+          body: "Freshman through senior, including Madrid spring. Slow progress still counts.",
           href: "junior.html",
         },
       ],

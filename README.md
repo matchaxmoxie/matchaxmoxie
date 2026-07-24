@@ -10,6 +10,8 @@
 
 IG: [@zhao.langxi](https://instagram.com/zhao.langxi) · live: [matchaxmoxie.github.io](https://matchaxmoxie.github.io/matchaxmoxie/) · builder: [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/) · [resume (PDF)](https://jlzhao.pages.iu.edu/resume.pdf) · email: [jlzhao@iu.edu](mailto:jlzhao@iu.edu)
 
+ELI5 it. Learn it. One slow step.
+
 ## live
 
 - [Scratch studio](https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html) · how-tos + downloadable starter `.sb3` files
