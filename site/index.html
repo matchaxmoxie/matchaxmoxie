@@ -35,9 +35,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260724b">
-<link rel="stylesheet" href="classroom-ux.css?v=20260724b">
-<link rel="stylesheet" href="styles.css?v=20260724b">
+<link rel="stylesheet" href="a11y.css?v=20260803a">
+<link rel="stylesheet" href="classroom-ux.css?v=20260803a">
+<link rel="stylesheet" href="styles.css?v=20260803a">
 </head>
 <body class="kindergarten-home sunset-home kiss-home choice-home">
 
@@ -53,7 +53,7 @@
 </nav>
 <main id="main-content" class="wrap">
 
-  <!-- shou ping：yi ge gou zi + yi ge xuan ze。shuang zhan men yu lou dou yi dao xuan hou / student-path -->
+  <!-- shou ping：hiatus zai qian · zi zhu archive · bu cheng nuo ben xue qi zai xian dai ling -->
   <header class="hero hero--choice">
     <div class="hero-visual" role="img" aria-label="End-of-day classroom: chalkboard, setting sun, Miss Zhao name tag">
       <span class="name-tag" aria-hidden="true">Miss Zhao</span>
@@ -68,16 +68,25 @@
       <p class="hero-brand-line">Miss Zhao · <span class="sc" lang="zh-Hans">凤凰</span></p>
       <h1>ELI5 it. Learn it. One step.</h1>
       <p class="hero-hook">
-        Picking IU or Informatics? Tap the line that sounds like you.
-        Three steps show up. Stay for step 1 ... slow is fine.
+        Picking IU or Informatics? Browse the seat that sounds like you.
+        A short plan opens from the archive. Stay for step 1 ... slow is fine.
       </p>
     </div>
   </header>
 
+  <aside class="year23-banner hiatus-banner" role="status" aria-label="Miss Zhao hiatus notice">
+    <p class="year23-banner-kicker">Archive · Miss Zhao on hiatus</p>
+    <p>
+      Miss Zhao is on hiatus for senior year at IU Luddy.
+      This classroom stays open as a self-serve archive: here&rsquo;s what I built, browse it yourself.
+      Not a promise that I&rsquo;m actively guiding students this semester.
+    </p>
+  </aside>
+
   <section id="situation-picker" class="open-invest open-invest--hero" aria-labelledby="situation-heading">
-    <h2 id="situation-heading">Pick your seat</h2>
+    <h2 id="situation-heading">Pick your seat · archive</h2>
     <p class="invest-lede">
-      One tap. I hand you a tiny plan. Then you take the first step.
+      One tap. A tiny plan from pages I already shipped. Then you take the first step.
       ELI5 = explain like I&rsquo;m five: plain language, like explaining to a friend who&rsquo;s new.
       Slow progress is the best progress.
     </p>
@@ -85,30 +94,30 @@
     <ul class="situation-choices open-pick-list" role="list">
       <li>
         <button type="button" class="situation-btn open-pick-btn" data-situation="ap-csp" aria-pressed="false">
-          <img class="open-pick-thumb" src="assets/iu-luddy-ap-scores.jpg" alt="" width="120" height="72" loading="eager" aria-hidden="true" />
+          <img class="open-pick-thumb" src="assets/iu-luddy-ap-scores.jpg" alt="Photo of an IU Luddy slide titled Relevant AP Scores, with a table mapping AP Calculus, Computer Science, and English scores to IU course credit" width="120" height="72" loading="eager" />
           <span class="open-pick-copy">
             <span class="situation-btn-label open-pick-label">AP CSP or curious about code</span>
-            <span class="situation-btn-hint open-pick-hint">Ship a tiny game before college</span>
+            <span class="situation-btn-hint open-pick-hint">Archive path · tiny Scratch game first</span>
             <span class="open-pick-selected" hidden>Selected</span>
           </span>
         </button>
       </li>
       <li>
         <button type="button" class="situation-btn open-pick-btn" data-situation="undecided" aria-pressed="false">
-          <img class="open-pick-thumb" src="assets/iu-career-explore.jpg" alt="" width="120" height="72" loading="eager" aria-hidden="true" />
+          <img class="open-pick-thumb" src="assets/iu-career-explore.jpg" alt="Photo of an IU New Student Orientation slide, Career Development Process Step 2 Explore Your Options, with a Tolkien quote Not all who wander are lost" width="120" height="72" loading="eager" />
           <span class="open-pick-copy">
             <span class="situation-btn-label open-pick-label">Undecided major · eyeing Informatics</span>
-            <span class="situation-btn-hint open-pick-hint">Try Luddy on for size</span>
+            <span class="situation-btn-hint open-pick-hint">Archive path · try Luddy notes on for size</span>
             <span class="open-pick-selected" hidden>Selected</span>
           </span>
         </button>
       </li>
       <li>
         <button type="button" class="situation-btn open-pick-btn" data-situation="visiting" aria-pressed="false">
-          <img class="open-pick-thumb" src="assets/iu-orientation-welcome.jpg" alt="" width="120" height="72" loading="eager" aria-hidden="true" />
+          <img class="open-pick-thumb" src="assets/iu-orientation-welcome.jpg" alt="Photo of an IU orientation Schedule Updates slide over Sample Gates, listing housing consultations and an athletics family meeting" width="120" height="72" loading="eager" />
           <span class="open-pick-copy">
             <span class="situation-btn-label open-pick-label">Visiting IU or already admitted</span>
-            <span class="situation-btn-hint open-pick-hint">Campus prep without the panic</span>
+            <span class="situation-btn-hint open-pick-hint">Archive path · campus prep without the panic</span>
             <span class="open-pick-selected" hidden>Selected</span>
           </span>
         </button>
@@ -120,15 +129,15 @@
       <ol id="situation-plan-steps" class="situation-plan-steps"></ol>
       <p class="situation-plan-next">
         <a id="situation-start-link" class="open-link-cta" href="student-path.html">
-          Go · step 1 →
+          Open · step 1 →
         </a>
       </p>
       <p class="situation-plan-secondary">
         <a id="situation-path-link" class="open-link-soft" href="student-path.html">
-          Full student path if you want the long tour
+          Full student path if you want the longer archive tour
         </a>
       </p>
-      <p class="situation-plan-note">I can remember this pick after you say yes to cookies. Tap another line anytime.</p>
+      <p class="situation-plan-note">This site can remember this pick after you say yes to cookies. Tap another line anytime.</p>
     </div>
   </section>
 
@@ -173,7 +182,7 @@
   </footer>
 
 </main>
-<script src="classroom-ux.js?v=20260724b" defer></script>
-<script src="invest-return.js?v=20260724c" defer></script>
+<script src="classroom-ux.js?v=20260803a" defer></script>
+<script src="invest-return.js?v=20260803a" defer></script>
 </body>
 </html>

@@ -3040,7 +3040,12 @@ body.kindergarten-home {
 
 /* ── choice-first home · one pick per viewport ── */
 .choice-home .hero--choice {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
+}
+
+.choice-home .hiatus-banner {
+  margin: 0 0 22px;
+  max-width: none;
 }
 
 .choice-home .hero-brand-line {
@@ -5580,8 +5585,10 @@ body {
   align-items: center;
   gap: 16px;
   width: 100%;
-  min-height: 88px;
+  min-width: 44px;
+  min-height: 88px; /* ≥44×44 touch target; taller for thumb + label */
   padding: 16px 18px;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 1rem;
   text-align: left;
@@ -5593,6 +5600,7 @@ body {
   box-shadow: 3px 3px 0 rgba(31, 22, 48, 0.08);
   cursor: pointer;
   touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   transition:
     border-color var(--transition-base),
     box-shadow var(--transition-base),

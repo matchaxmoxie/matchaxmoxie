@@ -134,10 +134,10 @@
       var first = data.steps[0];
       planTitle.textContent = restoringSaved
         ? "Welcome back · " + data.label
-        : "Nice pick · " + data.label;
+        : "Archive seat · " + data.label;
       if (planProgress) {
         planProgress.textContent =
-          "Three steps for your seat · start with step 1";
+          "Three archive steps · start with step 1";
       }
       planList.innerHTML = "";
       data.steps.forEach(function (step, i) {
@@ -152,16 +152,16 @@
       planEl.hidden = false;
       if (startLink && first) {
         startLink.href = first.href;
-        startLink.textContent = "Go · step 1 · " + first.title + " →";
+        startLink.textContent = "Open · step 1 · " + first.title + " →";
       }
       if (pathLink) {
         pathLink.href = "student-path.html#advice-funnel";
-        pathLink.textContent = "Full student path if you want the long tour";
+        pathLink.textContent = "Full student path if you want the longer archive tour";
       }
       if (pickStatus) {
         pickStatus.textContent = restoringSaved
           ? "Your seat is still saved · " + data.label
-          : "Seat taken · " + data.label;
+          : "Browsing · " + data.label;
       }
       root.querySelectorAll(".situation-btn").forEach(function (btn) {
         var active = btn.getAttribute("data-situation") === key;
