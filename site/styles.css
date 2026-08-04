@@ -5741,8 +5741,14 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   color: #fffaf4;
   background: var(--coral-ink);
   border-bottom-color: var(--crayon-ink);
-  transform: translateY(-2px);
   box-shadow: 5px 5px 0 var(--crayon-ink);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .open-link-cta:hover,
+  .open-cta:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .open-link-cta:focus-visible,
