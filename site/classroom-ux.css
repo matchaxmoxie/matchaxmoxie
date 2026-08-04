@@ -265,32 +265,43 @@
   transition:
     color 0.2s ease,
     border-bottom-color 0.2s ease,
-    transform 0.2s ease,
     background-color 0.2s ease;
 }
 
-.open-pick-btn:hover,
-.situation-btn:hover,
-.scratch-pick-btn:hover {
-  transform: translateY(-2px);
-}
+@media (prefers-reduced-motion: no-preference) {
+  .open-pick-btn,
+  .situation-btn,
+  .scratch-pick-btn {
+    transition:
+      color 0.2s ease,
+      border-bottom-color 0.2s ease,
+      transform 0.2s ease,
+      background-color 0.2s ease;
+  }
 
-.open-pick-btn:focus-visible,
-.situation-btn:focus-visible,
-.scratch-pick-btn:focus-visible {
-  transform: translateY(-2px);
-}
+  .open-pick-btn:hover,
+  .situation-btn:hover,
+  .scratch-pick-btn:hover {
+    transform: translateY(-2px);
+  }
 
-.open-pick-thumb {
-  transition: transform 0.25s ease, filter 0.25s ease;
-}
+  .open-pick-btn:focus-visible,
+  .situation-btn:focus-visible,
+  .scratch-pick-btn:focus-visible {
+    transform: translateY(-2px);
+  }
 
-.open-pick-btn:hover .open-pick-thumb,
-.situation-btn:hover .open-pick-thumb,
-.open-pick-btn:focus-visible .open-pick-thumb,
-.situation-btn:focus-visible .open-pick-thumb {
-  transform: scale(1.03);
-  filter: saturate(1) sepia(0.02) contrast(1.02);
+  .open-pick-thumb {
+    transition: transform 0.25s ease, filter 0.25s ease;
+  }
+
+  .open-pick-btn:hover .open-pick-thumb,
+  .situation-btn:hover .open-pick-thumb,
+  .open-pick-btn:focus-visible .open-pick-thumb,
+  .situation-btn:focus-visible .open-pick-thumb {
+    transform: scale(1.03);
+    filter: saturate(1) sepia(0.02) contrast(1.02);
+  }
 }
 
 @media (max-width: 640px) {

@@ -2,7 +2,10 @@
   /* ri luo jiao shi pei se · Miss Zhao · jin se huang hun */
   --sunshine: #F4A261;
   --golden-hour: #F4A261;
+  /* zhuang shi ju se（bian kuang / xi di）；bu yong zuo zheng wen / qian se di shang de lian jie */
   --sunset-warm: #E0763A;
+  /* wen zi + CTA di se：nai you / bai di ≥4.5:1（#E0763A jin ~3:1） */
+  --sunset-ink: #B8511A;
   --sunset-glow: rgba(224, 118, 58, 0.14);
   --coral: #E76F51;
   /* zheng wen yong shan hu（nai you di ≥4.5:1）；zhuang shi reng yong --coral */
@@ -3054,7 +3057,7 @@ body.kindergarten-home {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--sunset-warm);
+  color: var(--sunset-ink);
   margin: 0 0 10px;
 }
 
@@ -5579,7 +5582,9 @@ body {
 
 .open-pick-btn,
 .situation-btn,
-.scratch-pick-btn {
+.scratch-pick-btn,
+a.open-pick-btn,
+a.situation-btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -5598,6 +5603,7 @@ body {
   border-left-width: 5px;
   border-radius: 0;
   box-shadow: 3px 3px 0 rgba(31, 22, 48, 0.08);
+  text-decoration: none;
   cursor: pointer;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
@@ -5622,24 +5628,40 @@ body {
 
 .open-pick-btn:hover,
 .situation-btn:hover,
-.scratch-pick-btn:hover {
+.scratch-pick-btn:hover,
+a.open-pick-btn:hover,
+a.situation-btn:hover {
   background: #fff4df;
   color: var(--coral-ink);
   border-color: rgba(31, 22, 48, 0.22);
   box-shadow: 5px 5px 0 rgba(31, 22, 48, 0.12);
-  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .open-pick-btn:hover,
+  .situation-btn:hover,
+  .scratch-pick-btn:hover,
+  a.open-pick-btn:hover,
+  a.situation-btn:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .open-pick-btn:focus-visible,
 .situation-btn:focus-visible,
-.scratch-pick-btn:focus-visible {
+.scratch-pick-btn:focus-visible,
+a.open-pick-btn:focus-visible,
+a.situation-btn:focus-visible {
   outline: 3px solid var(--focus-ring, var(--dusk));
   outline-offset: 3px;
 }
 
 .open-pick-btn[aria-pressed="true"],
 .situation-btn[aria-pressed="true"],
-.scratch-pick-btn[aria-pressed="true"] {
+.scratch-pick-btn[aria-pressed="true"],
+a.situation-btn[aria-current="true"],
+a.open-pick-btn[aria-current="true"] {
   background: #fff0dc;
   border-color: var(--crayon-ink);
   border-left-width: 6px;
@@ -5649,7 +5671,9 @@ body {
 
 .open-pick-btn[aria-pressed="true"] .open-pick-label,
 .situation-btn[aria-pressed="true"] .open-pick-label,
-.situation-btn[aria-pressed="true"] .situation-btn-label {
+.situation-btn[aria-pressed="true"] .situation-btn-label,
+a.situation-btn[aria-current="true"] .open-pick-label,
+a.situation-btn[aria-current="true"] .situation-btn-label {
   text-decoration: none;
   color: var(--coral-ink);
 }
@@ -5699,7 +5723,7 @@ body {
   letter-spacing: 0;
   text-transform: none;
   color: #fffaf4;
-  background: var(--sunset-warm);
+  background: var(--sunset-ink);
   border: 2px solid var(--crayon-ink);
   border-radius: 0;
   box-shadow: 3px 3px 0 var(--crayon-ink);
@@ -5802,7 +5826,7 @@ body {
   font-size: 0.82rem;
   font-weight: 700;
   color: #fffaf4;
-  background: var(--sunset-warm);
+  background: var(--sunset-ink);
   vertical-align: middle;
 }
 
@@ -6500,7 +6524,7 @@ body {
   font-size: 0.95rem;
   font-weight: 700;
   color: #fffaf4;
-  background: var(--sunset-warm);
+  background: var(--sunset-ink);
   border: 2px solid var(--crayon-ink);
 }
 
@@ -6548,7 +6572,7 @@ body {
 .journey-year-nav a:hover,
 .journey-year-nav a[aria-current="page"] {
   color: #fffaf4;
-  background: var(--sunset-warm);
+  background: var(--sunset-ink);
   border-color: var(--crayon-ink);
 }
 
@@ -6699,7 +6723,7 @@ body.page-404 {
   font-weight: 700;
   text-decoration: none;
   color: #fffaf4;
-  background: var(--sunset-warm);
+  background: var(--sunset-ink);
   border: 2px solid var(--crayon-ink);
   box-shadow: 3px 3px 0 rgba(31, 22, 48, 0.15);
   touch-action: manipulation;
@@ -6805,7 +6829,7 @@ body.choice-home {
 
 /* ... hero lockup · bigger type, sunset-to-dusk underline ... */
 .choice-home .hero-brand-line {
-  color: var(--coral-ink);
+  color: var(--sunset-ink);
 }
 
 .choice-home .hero-text h1 {

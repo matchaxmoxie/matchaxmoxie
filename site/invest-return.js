@@ -165,7 +165,14 @@
       }
       root.querySelectorAll(".situation-btn").forEach(function (btn) {
         var active = btn.getAttribute("data-situation") === key;
-        btn.setAttribute("aria-pressed", active ? "true" : "false");
+        if (active) {
+          btn.setAttribute("aria-current", "true");
+        } else {
+          btn.removeAttribute("aria-current");
+        }
+        if (btn.hasAttribute("aria-pressed")) {
+          btn.setAttribute("aria-pressed", active ? "true" : "false");
+        }
         var mark = btn.querySelector(".open-pick-selected");
         if (mark) mark.hidden = !active;
       });
@@ -183,7 +190,11 @@
     }
 
     root.querySelectorAll(".situation-btn").forEach(function (btn) {
-      btn.addEventListener("click", function () {
+      btn.addEventListener("click", function (event) {
+        /* Keep in-page plan when JS runs; href still works without JS */
+        if (event && typeof event.preventDefault === "function") {
+          event.preventDefault();
+        }
         restoringSaved = false;
         renderPlan(btn.getAttribute("data-situation"));
       });
