@@ -388,15 +388,13 @@
     banner.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && !banner.hidden) {
         e.preventDefault();
-        if (readConsent() === null) {
-          writeConsent("declined");
-        }
+        // Close only; do not silently write declined when still undecided
         closeBanner(banner, tab, true);
       }
     });
 
     if (consent === null) {
-      openBanner(banner, tab, false);
+      openBanner(banner, tab, true);
     } else {
       banner.hidden = true;
       banner.setAttribute("aria-hidden", "true");

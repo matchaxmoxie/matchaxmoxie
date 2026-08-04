@@ -3943,7 +3943,7 @@ body.campus-survival-page {
 
 .scratch-studio-page .howto-status {
   font-family: "Courier New", Courier, monospace !important;
-  font-size: 0.72rem !important;
+  font-size: 0.875rem !important;
   font-weight: 700;
   color: var(--dusk) !important;
   letter-spacing: 0.02em;
@@ -4234,7 +4234,7 @@ body.campus-survival-page {
 
 .guide-attr-label {
   font-family: "Courier New", Courier, monospace;
-  font-size: 11px;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -5467,7 +5467,7 @@ body {
 .print-status {
   display: inline-block;
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.72rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;

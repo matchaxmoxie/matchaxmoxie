@@ -307,7 +307,7 @@
         });
         lines.push("");
         lines.push("Next: verify FA26 to FA27 on live IU pages.");
-        lines.push("IG @zhao.langxi · builder site jadexzhao (龙 · dragon)");
+        lines.push("IG @zhao.langxi · builder site jadexzhao (<span lang="zh-Hans">龙</span> · dragon)");
 
         var blob = new Blob([lines.join("\n")], { type: "text/plain" });
         var url = URL.createObjectURL(blob);

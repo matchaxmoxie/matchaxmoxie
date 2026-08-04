@@ -115,10 +115,19 @@
 
   /**
    * TurboWarp Scaffolding only posts keyboard IO when focus is on
-   * document/body. After Green flag / Stop, blur the button so Space
-   * and arrows reach the VM (needed for Jumping Game, etc.).
+   * document/body or the stage. After Green flag / Stop, move focus to
+   * the stage so Space and arrows reach the VM (Jumping Game, etc.).
    */
   function releaseKeyboardFocus() {
+    var stage = qs("scratch-stage");
+    if (stage && typeof stage.focus === "function") {
+      try {
+        stage.focus({ preventScroll: true });
+      } catch (err) {
+        stage.focus();
+      }
+      return;
+    }
     var active = document.activeElement;
     if (active && active !== document.body && typeof active.blur === "function") {
       active.blur();
