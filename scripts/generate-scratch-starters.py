@@ -805,7 +805,7 @@ def project_catch() -> None:
     forever = ab.forever()
     ab.chain(flag, set_score, reset, forever)
 
-    # At start also randomize x — insert after reset using set_x with random
+    # At start also randomize x ... insert after reset using set_x with random
     # Rebuild start: flag -> set score -> set y 160 -> set x random -> forever
     ab2 = BlockBuilder()
     flag = ab2.when_flag()
@@ -989,7 +989,7 @@ def project_clicker() -> None:
     ub.attach_input(iff, "CONDITION", ub.op_gt([12, "points", points], [12, "upgrade cost", cost]))
     # Actually need >= ; use not lt: points < cost is false. Simpler: use gt with cost-1 via equals or gt.
     # Scratch kids use >= ; operator_gt with equal edge misses. Use: not (points < cost)
-    # Rebuild condition as operator_lt inverted — Scratch has no not easily without operator_not
+    # Rebuild condition as operator_lt inverted ... Scratch has no not easily without operator_not
     ub2 = BlockBuilder()
     click = ub2.when_clicked()
     iff = ub2.if_()
@@ -1085,7 +1085,7 @@ def project_scroll() -> None:
         wrap = gb.if_()
         xpos = gb.x_position()
         gb.attach_input(wrap, "CONDITION", gb.op_lt(xpos, -480))
-        # set x to partner x + 480 — use sensing of other sprite via... Scratch needs "x position of Sprite".
+        # set x to partner x + 480 ... use sensing of other sprite via... Scratch needs "x position of Sprite".
         # Simpler: set x to 480 when past -480 (works for equal-width strips).
         reset = gb.set_x(480)
         gb.attach_substack(wrap, "SUBSTACK", reset)
@@ -1137,7 +1137,7 @@ def project_pet() -> None:
     look = pb.if_else()
     low_h = pb.op_lt([12, "hunger", hunger], 3)
     low_m = pb.op_lt([12, "mood", mood], 3)
-    # or: if hunger < 3 OR mood < 3 — use operator_or
+    # or: if hunger < 3 OR mood < 3 ... use operator_or
     or_ = pb.add("operator_or")
     pb.attach_input(or_, "OPERAND1", low_h)
     pb.attach_input(or_, "OPERAND2", low_m)
@@ -1247,7 +1247,7 @@ def project_story() -> None:
     s3 = hb.say_for("The sun feels warm here.", 2)
     ask = hb.ask("Type yes for a bright ending, or no for a quiet one.")
     ie = hb.if_else()
-    ans = [12, "answer", "answer"]  # wrong — answer is sensing_answer not variable
+    ans = [12, "answer", "answer"]  # wrong ... answer is sensing_answer not variable
     # sensing_answer reporter
     answer = hb.add("sensing_answer")
     contains = hb.op_contains(answer, "yes")
@@ -1322,7 +1322,7 @@ def project_character() -> None:
     recv = bb.when_broadcast("body next", body_next)
     bb.chain(recv, bb.next_costume())
     recv_s = bb.when_broadcast("surprise me", surprise)
-    # pick random: next costume twice randomly — use switch with random hard; just next costume
+    # pick random: next costume twice randomly ... use switch with random hard; just next costume
     n1 = bb.next_costume()
     bb.chain(recv_s, n1)
     body, body_a = make_sprite(
@@ -1396,7 +1396,7 @@ def project_character() -> None:
         rotation_style="don't rotate",
     )
 
-    # Labels via say on green flag for buttons — optional small notes as comments in README
+    # Labels via say on green flag for buttons ... optional small notes as comments in README
     write_sb3(
         OUT_DIR / "character-designer.sb3",
         [stage, body, shirt, hat, b1, b2, b3, surprise_btn],

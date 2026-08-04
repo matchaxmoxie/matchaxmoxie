@@ -32,7 +32,7 @@ Profile → **Customize your pins** → up to six public repos:
 **jadexzhao bio:**
 
 ```
-Informatics @ IU · I build tools people actually use · open to SWE/GTM roles
+Informatics @ IU Luddy · ServeIT · Looking for SWE roles · May 2027
 ```
 
 **matchaxmoxie bio:**

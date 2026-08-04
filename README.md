@@ -2,7 +2,7 @@
 
 **Classroom rules I actually teach:**
 
-1. **If you can’t ELI5 it, you’re not done yet.** (ELI5 = *explain like I’m five* — plain language, like explaining to a friend who’s new.) Explain the how-to so a freshman (or your past self) gets it.
+1. **If you can’t ELI5 it, you’re not done yet.** (ELI5 = *explain like I’m five* ... plain language, like explaining to a friend who’s new.) Explain the how-to so a freshman (or your past self) gets it.
 2. **If you don’t understand it, learn it.** Curiosity beats pretending. Official IU pages win over vibes.
 3. **Slow progress is the best progress.** One step today. KISS guides, not hustle checklists.
 
