@@ -7074,7 +7074,7 @@ body.choice-home {
 .desk-photos {
   margin: 28px 0 12px;
   padding: 20px 18px 18px;
-  max-width: 520px;
+  max-width: 560px;
   background: linear-gradient(160deg, var(--chalk-dust) 0%, var(--sage-wash) 100%);
   border: 3px solid var(--crayon-ink);
   box-shadow: 5px 5px 0 var(--dusty-pink);
@@ -7097,7 +7097,7 @@ body.choice-home {
 
 .desk-photos-row {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   align-items: end;
 }
@@ -7141,9 +7141,17 @@ body.choice-home {
   }
 
   .desk-photos-row > .desk-photo-link:nth-child(2):hover .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(2):focus-visible .photo-frame--desk {
+  .desk-photos-row > .desk-photo-link:nth-child(2):focus-visible .photo-frame--desk,
+  .desk-photos-row > .desk-photo-link:nth-child(4):hover .photo-frame--desk,
+  .desk-photos-row > .desk-photo-link:nth-child(4):focus-visible .photo-frame--desk {
     transform: rotate(1deg) translateY(-2px);
     box-shadow: 5px 6px 0 var(--sunflower);
+  }
+
+  .desk-photos-row > .desk-photo-link:nth-child(3):hover .photo-frame--desk,
+  .desk-photos-row > .desk-photo-link:nth-child(3):focus-visible .photo-frame--desk {
+    transform: rotate(-1.2deg) translateY(-2px);
+    box-shadow: 5px 6px 0 var(--dusty-pink);
   }
 }
 
@@ -7159,10 +7167,20 @@ body.choice-home {
   box-shadow: 4px 4px 0 var(--sunflower);
 }
 
+.desk-photos-row > .desk-photo-link:nth-child(3) .photo-frame--desk {
+  transform: rotate(-1.1deg);
+  box-shadow: 4px 4px 0 var(--dusty-pink);
+}
+
+.desk-photos-row > .desk-photo-link:nth-child(4) .photo-frame--desk {
+  transform: rotate(0.9deg);
+  box-shadow: 4px 4px 0 var(--sunflower);
+}
+
 .photo-frame--desk img {
   width: 100%;
   height: auto;
-  max-height: 220px;
+  max-height: 200px;
   object-fit: cover;
   object-position: center 30%;
   filter: saturate(0.92) sepia(0.06) contrast(1.02);
@@ -7170,7 +7188,15 @@ body.choice-home {
 
 .photo-frame--desk-tall img {
   object-position: center 20%;
-  max-height: 260px;
+  max-height: 220px;
+}
+
+.desk-photos-row > .desk-photo-link:nth-child(3) .photo-frame--desk img {
+  object-position: center 18%;
+}
+
+.desk-photos-row > .desk-photo-link:nth-child(4) .photo-frame--desk img {
+  object-position: center 22%;
 }
 
 .photo-frame--desk figcaption {
@@ -7197,7 +7223,7 @@ body.choice-home {
 
   .photo-frame--desk img,
   .photo-frame--desk-tall img {
-    max-height: 180px;
+    max-height: 160px;
   }
 }
 
