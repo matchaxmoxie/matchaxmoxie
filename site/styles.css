@@ -7102,12 +7102,58 @@ body.choice-home {
   align-items: end;
 }
 
+/* zheng zhang polaroid ke dian · bu yong kindergarten a xia hua xian */
+.kindergarten-home a.desk-photo-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 2px;
+  outline: none;
+}
+
+.kindergarten-home a.desk-photo-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.kindergarten-home a.desk-photo-link:focus-visible {
+  outline: 4px solid var(--dusk);
+  outline-offset: 4px;
+}
+
+.desk-photo-link .photo-frame--desk {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.desk-photo-link:hover .photo-frame--desk figcaption,
+.desk-photo-link:focus-visible .photo-frame--desk figcaption {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--dusk);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .desk-photo-link:hover .photo-frame--desk,
+  .desk-photo-link:focus-visible .photo-frame--desk {
+    transform: rotate(-0.8deg) translateY(-2px);
+    box-shadow: 5px 6px 0 var(--sage);
+  }
+
+  .desk-photos-row > .desk-photo-link:nth-child(2):hover .photo-frame--desk,
+  .desk-photos-row > .desk-photo-link:nth-child(2):focus-visible .photo-frame--desk {
+    transform: rotate(1deg) translateY(-2px);
+    box-shadow: 5px 6px 0 var(--sunflower);
+  }
+}
+
 .photo-frame--desk {
   margin: 0;
   box-shadow: 4px 4px 0 var(--sage);
   transform: rotate(-0.8deg);
 }
 
+.desk-photos-row > .desk-photo-link:nth-child(2) .photo-frame--desk,
 .photo-frame--desk:nth-child(2) {
   transform: rotate(1deg);
   box-shadow: 4px 4px 0 var(--sunflower);

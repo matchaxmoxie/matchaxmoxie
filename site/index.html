@@ -37,7 +37,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="a11y.css?v=20260805b">
 <link rel="stylesheet" href="classroom-ux.css?v=20260805-consent">
-<link rel="stylesheet" href="styles.css?v=20260805-sun">
+<link rel="stylesheet" href="styles.css?v=20260805-desk">
 </head>
 <body class="kindergarten-home sunset-home kiss-home choice-home">
 
@@ -160,34 +160,52 @@
     <h2 id="desk-photos-heading" class="desk-photos-heading">On the desk</h2>
     <p class="desk-photos-lede">Quiet extras. Not homework.</p>
     <div class="desk-photos-row">
-      <figure class="photo-frame photo-frame--desk photo-frame--desk-tall">
-        <picture>
-          <source srcset="assets/miss-zhao-garden.webp?v=20260805-sun" type="image/webp">
-          <img
-            src="assets/miss-zhao-garden.jpg?v=20260805-sun"
-            alt="Miss Zhao outdoors in a garden courtyard, smiling with sunglasses on her head"
-            width="506"
-            height="900"
-            loading="lazy"
-            decoding="async"
-          >
-        </picture>
-        <figcaption>Garden day · soft light</figcaption>
-      </figure>
-      <figure class="photo-frame photo-frame--desk">
-        <picture>
-          <source srcset="assets/miss-zhao-lilies.webp?v=20260805-sun" type="image/webp">
-          <img
-            src="assets/miss-zhao-lilies.jpg?v=20260805-sun"
-            alt="Miss Zhao smiling while holding a bouquet of pink and white lilies"
-            width="900"
-            height="900"
-            loading="lazy"
-            decoding="async"
-          >
-        </picture>
-        <figcaption>Lilies · after class energy</figcaption>
-      </figure>
+      <a
+        class="desk-photo-link"
+        href="campus-survival.html"
+        aria-labelledby="desk-garden-cap"
+      >
+        <figure class="photo-frame photo-frame--desk photo-frame--desk-tall">
+          <picture>
+            <source srcset="assets/miss-zhao-garden.webp?v=20260805-sun" type="image/webp">
+            <img
+              src="assets/miss-zhao-garden.jpg?v=20260805-sun"
+              alt="Miss Zhao outdoors in a garden courtyard, smiling with sunglasses on her head"
+              width="506"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+          <figcaption id="desk-garden-cap">
+            Garden day · soft light
+            <span class="visually-hidden"> — Campus survival notes, Year ’23</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a
+        class="desk-photo-link"
+        href="archive.html"
+        aria-labelledby="desk-lilies-cap"
+      >
+        <figure class="photo-frame photo-frame--desk">
+          <picture>
+            <source srcset="assets/miss-zhao-lilies.webp?v=20260805-sun" type="image/webp">
+            <img
+              src="assets/miss-zhao-lilies.jpg?v=20260805-sun"
+              alt="Miss Zhao smiling while holding a bouquet of pink and white lilies"
+              width="900"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+          <figcaption id="desk-lilies-cap">
+            Lilies · after class energy
+            <span class="visually-hidden"> — Archive note</span>
+          </figcaption>
+        </figure>
+      </a>
     </div>
   </section>
 
