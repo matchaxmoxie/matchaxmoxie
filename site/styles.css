@@ -291,8 +291,21 @@ body {
 }
 
 @media (max-width: 640px) {
+  /* Clear fixed dock (~3.25rem) + Cookie tab sitting above it (~3.5rem) */
   body {
-    padding-bottom: calc(3.25rem + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* kindergarten-home/kiss-home set a padding shorthand that would win on specificity */
+  body.kindergarten-home,
+  body.kiss-home,
+  body.choice-home,
+  body.guide-page,
+  body.journey-page,
+  body.scratch-studio-page,
+  body.campus-survival-page,
+  body.footprint-page {
+    padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px));
   }
 
   /* mu zhi qu：kua zhan tiao zhuan fang zai di bu dai */
@@ -312,6 +325,8 @@ body {
   .site-jump a {
     border-bottom: none;
     border-top: 2px solid transparent;
+    min-height: 48px;
+    padding: 0 12px;
   }
 
   .site-jump a:hover {
@@ -2709,6 +2724,20 @@ body.kindergarten-home {
   line-height: 1.55;
 }
 
+/* Mobile dock + Cookie tab · must follow kindergarten-home padding shorthand */
+@media (max-width: 640px) {
+  body.kindergarten-home,
+  body.kiss-home,
+  body.choice-home,
+  body.guide-page,
+  body.journey-page,
+  body.scratch-studio-page,
+  body.campus-survival-page,
+  body.footprint-page {
+    padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
 .kindergarten-home a {
   color: var(--dusk);
   text-decoration: underline;
@@ -3157,6 +3186,14 @@ body.kindergarten-home {
   margin-top: 8px;
 }
 
+.choice-home .twin a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 2px;
+  touch-action: manipulation;
+}
+
 .footer-kiss--choice .footer-soft {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-size: 1.05rem;
@@ -3233,13 +3270,54 @@ body.kindergarten-home {
 }
 
 @media (max-width: 560px) {
-  .choice-home .hero {
-    grid-template-columns: 1fr;
+  /* Side-by-side hero · photo no longer eats the whole first viewport */
+  .choice-home .hero,
+  .kindergarten-home.choice-home .hero {
+    grid-template-columns: minmax(96px, 132px) minmax(0, 1fr);
+    gap: 12px 14px;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 14px;
   }
 
-  .choice-home .hero-visual {
-    max-width: 220px;
-    margin: 0 auto;
+  .choice-home .hero-visual,
+  .kindergarten-home.choice-home .hero-visual,
+  .kindergarten-home.choice-home .hero-visual--photo {
+    max-width: 132px;
+    margin: 0;
+    transform: rotate(-1deg);
+  }
+
+  .choice-home .hero-brand-line {
+    font-size: 0.78rem;
+    margin-bottom: 4px;
+  }
+
+  .choice-home .hero-text h1 {
+    font-size: clamp(1.65rem, 7vw, 2.1rem);
+    margin-bottom: 6px;
+    max-width: none;
+    padding-bottom: 6px;
+  }
+
+  .choice-home .hero-text h1::after {
+    margin-top: 8px;
+    width: 2.75rem;
+  }
+
+  .choice-home .hero-hook {
+    font-size: 1.05rem;
+    max-width: none;
+  }
+
+  .choice-home .hiatus-banner {
+    margin-bottom: 14px;
+    padding: 12px 14px;
+  }
+
+  .kindergarten-home .hero-bagel {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -3560,18 +3638,19 @@ body.kindergarten-home {
 }
 
 @media (max-width: 680px) {
-  .kindergarten-home .hero {
+  /* choice-home keeps a compact side-by-side sunflower hero (see ≤560 rule) */
+  .kindergarten-home:not(.choice-home) .hero {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .kindergarten-home .hero-visual {
+  .kindergarten-home:not(.choice-home) .hero-visual {
     max-width: 240px;
     margin: 0 auto;
     transform: none;
   }
 
-  .kindergarten-home .hero-tag {
+  .kindergarten-home:not(.choice-home) .hero-tag {
     margin-left: auto;
     margin-right: auto;
   }
@@ -4670,9 +4749,12 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-pack input[type="checkbox"] {
-  margin-top: 0.25rem;
-  min-width: 1rem;
-  min-height: 1rem;
+  margin-top: 0.2rem;
+  min-width: 1.35rem;
+  min-height: 1.35rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
   accent-color: var(--coral);
 }
 
@@ -5975,11 +6057,11 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .advice-funnel-check input[type="checkbox"] {
-  width: 1.25rem;
-  height: 1.25rem;
-  min-width: 1.25rem;
-  min-height: 1.25rem;
-  margin: 0.2rem 0 0;
+  width: 1.35rem;
+  height: 1.35rem;
+  min-width: 1.35rem;
+  min-height: 1.35rem;
+  margin: 0.15rem 0 0;
   flex-shrink: 0;
   accent-color: var(--coral-ink);
 }
@@ -6410,23 +6492,34 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 @media (max-width: 520px) {
+  /* Keep row layout · stacked 120px thumbs blew each seat past ~280px tall */
   .open-pick-btn,
   .situation-btn {
-    flex-direction: column;
-    align-items: stretch;
-    min-height: 88px;
-    padding: 14px 16px;
-    gap: 12px;
+    flex-direction: row;
+    align-items: center;
+    min-height: 72px;
+    padding: 12px 12px;
+    gap: 10px;
   }
 
   .open-pick-thumb {
-    width: 100%;
-    height: 120px;
+    width: 72px;
+    height: 56px;
     margin-top: 0;
   }
 
+  .open-pick-label,
+  .situation-btn-label {
+    font-size: clamp(1.05rem, 4.2vw, 1.25rem);
+  }
+
+  .open-pick-hint,
+  .situation-btn-hint {
+    font-size: 0.98rem;
+  }
+
   .open-invest--hero {
-    padding: 18px 16px 16px;
+    padding: 16px 14px 14px;
   }
 
   .situation-plan-next .open-link-cta,
@@ -6692,12 +6785,13 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .footprint-page .coord-checklist input[type="checkbox"] {
-  width: 1.25rem;
-  height: 1.25rem;
-  min-width: 1.25rem;
-  min-height: 1.25rem;
-  margin-top: 0.15rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  min-width: 1.35rem;
+  min-height: 1.35rem;
+  margin-top: 0.1rem;
   accent-color: var(--sunset-warm);
+  flex-shrink: 0;
 }
 
 .path-visual-grid {
@@ -7232,17 +7326,62 @@ body.choice-home {
 
 @media (max-width: 560px) {
   .kindergarten-home .hero-visual--photo {
-    max-width: 220px;
-    margin: 0 auto;
+    max-width: 132px;
+    margin: 0;
+  }
+
+  .desk-photos {
+    padding: 16px 12px 14px;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
   }
 
   .desk-photos-row {
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   .photo-frame--desk img,
   .photo-frame--desk-tall img {
-    max-height: 160px;
+    max-height: 148px;
+  }
+
+  .photo-frame--desk figcaption {
+    font-size: 0.68rem;
+    padding: 6px 7px 8px;
+    letter-spacing: 0.02em;
+  }
+
+  .desk-photo-link {
+    min-height: 44px;
+  }
+}
+
+/* Very narrow · stack polaroids so captions stay readable */
+@media (max-width: 360px) {
+  .choice-home .hero,
+  .kindergarten-home.choice-home .hero {
+    grid-template-columns: minmax(88px, 108px) minmax(0, 1fr);
+    gap: 10px 12px;
+  }
+
+  .kindergarten-home .hero-visual--photo {
+    max-width: 108px;
+  }
+
+  .desk-photos-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .photo-frame--desk img,
+  .photo-frame--desk-tall img {
+    max-height: 200px;
+  }
+
+  .photo-frame--desk figcaption {
+    font-size: 0.75rem;
   }
 }
 

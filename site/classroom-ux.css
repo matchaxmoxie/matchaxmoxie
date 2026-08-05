@@ -373,26 +373,56 @@
 
 @media (max-width: 640px) {
   .cookie-consent-inner {
+    /* Clear fixed bottom classroom dock (~3.25rem) */
     margin: 0 0.5rem calc(4.25rem + env(safe-area-inset-bottom, 0px));
+    padding: 0.85rem 1rem 0.85rem;
     border-radius: 12px;
   }
 
-  /* Thumb-side corner · clearer after banner closes */
+  /*
+   * Cookie tab must sit ABOVE the fixed .site-jump dock.
+   * Dock is ~48px + safe-area; old bottom:0.75rem hid the tab under nav.
+   */
   .cookie-consent-tab {
     left: auto;
-    right: 0.75rem;
-    bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    right: max(0.65rem, env(safe-area-inset-right, 0px));
+    bottom: calc(3.75rem + env(safe-area-inset-bottom, 0px));
     font-size: 0.95rem;
     min-height: 48px;
     padding: 0.6rem 1.15rem;
   }
 
   .cookie-save-toast {
-    bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+    bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
   }
 
+  /* Dock + Cookie tab stacked · styles.css may override; keep in sync */
   body {
-    padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* Short phones · compact banner so hero "Pick a seat" stays readable */
+@media (max-width: 640px) and (max-height: 740px) {
+  .cookie-consent-inner {
+    padding: 0.65rem 0.85rem 0.7rem;
+  }
+
+  .cookie-consent-title {
+    font-size: 0.98rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .cookie-consent-desc {
+    font-size: 0.86rem;
+    line-height: 1.35;
+    margin-bottom: 0.55rem;
+  }
+
+  .cookie-consent-accept,
+  .cookie-consent-decline {
+    min-height: 44px;
+    padding: 0.45rem 0.95rem;
   }
 }
 
