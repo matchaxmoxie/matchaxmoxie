@@ -3124,14 +3124,57 @@ body.kindergarten-home {
   max-width: none;
 }
 
-.choice-home .hero-brand-line {
+.choice-home .hero-brand-line,
+.choice-home .hero-iu {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--sunset-ink);
+  margin: 0 0 6px;
+}
+
+.choice-home .hero-cookie-line {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1.35rem, 3.8vw, 1.85rem);
+  line-height: 1.2;
+  color: var(--coral-ink);
   margin: 0 0 10px;
+  max-width: 22ch;
+}
+
+.choice-home .hero-bagel-quote {
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+  max-width: 34ch;
+}
+
+.choice-home .hero-bagel-quote p {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--crayon-ink);
+  margin: 0 0 4px;
+}
+
+.choice-home .hero-bagel-quote cite {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--crayon-muted);
+}
+
+.choice-home .hero-bagel-quote cite a {
+  color: var(--dusk);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 .choice-home .hero-text h1 {
@@ -3288,9 +3331,23 @@ body.kindergarten-home {
     transform: rotate(-1deg);
   }
 
-  .choice-home .hero-brand-line {
+  .choice-home .hero-brand-line,
+  .choice-home .hero-iu {
     font-size: 0.78rem;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+  }
+
+  .choice-home .hero-cookie-line {
+    font-size: clamp(1.15rem, 5.2vw, 1.4rem);
+    margin-bottom: 6px;
+  }
+
+  .choice-home .hero-bagel-quote {
+    margin-bottom: 8px;
+  }
+
+  .choice-home .hero-bagel-quote p {
+    font-size: 0.98rem;
   }
 
   .choice-home .hero-text h1 {
@@ -6991,8 +7048,13 @@ body.choice-home {
 }
 
 /* ... hero lockup · bigger type, sunset-to-dusk underline ... */
-.choice-home .hero-brand-line {
+.choice-home .hero-brand-line,
+.choice-home .hero-iu {
   color: var(--sunset-ink);
+}
+
+.choice-home .hero-cookie-line {
+  color: var(--coral-ink);
 }
 
 .choice-home .hero-text h1 {
@@ -7406,4 +7468,9 @@ body.choice-home {
   .kindergarten-home .hero-visual--photo {
     animation: none;
   }
+}
+
+/* ── cookie + bagel personality · frames Pick a seat, does not replace it ── */
+.choice-home .hero-text h1 {
+  margin-top: 2px;
 }
