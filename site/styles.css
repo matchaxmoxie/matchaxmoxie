@@ -3237,13 +3237,57 @@ body.kindergarten-home {
   touch-action: manipulation;
 }
 
-.footer-kiss--choice .footer-soft {
+/* footer · centered human / quote / soft (shared chrome) */
+.footer-kiss {
+  text-align: center;
+  margin: 2rem auto 0;
+  padding:
+    1.25rem
+    max(16px, env(safe-area-inset-right, 0px))
+    1.5rem
+    max(16px, env(safe-area-inset-left, 0px));
+  width: 100%;
+  max-width: 36rem;
+  box-sizing: border-box;
+}
+
+.footer-kiss > p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 36rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.footer-kiss .human {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--crayon-ink);
+  margin: 0 0 0.5rem;
+}
+
+.footer-kiss .footer-quote {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.98rem;
+  font-style: italic;
   color: var(--crayon-muted);
-  max-width: 52ch;
-  margin: 10px 0 0;
+  margin: 0 0 0.5rem;
+}
+
+.footer-kiss .footer-soft {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--crayon-muted);
+  margin: 0;
+  max-width: 36rem;
+}
+
+.footer-kiss > p:not(.human):not(.footer-quote):not(.footer-soft) {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.92rem;
+  color: var(--crayon-muted);
+  margin: 0 0 0.65rem;
 }
 
 .path-page-header {
@@ -3900,19 +3944,13 @@ body.campus-survival-page {
 
 .kiss-home .footer-kiss {
   border-top: 4px solid var(--crayon-ink);
-  padding-top: 16px;
   font-size: 13px;
   color: var(--crayon-muted);
 }
 
-.kiss-home .footer-kiss p {
-  margin-bottom: 8px;
-  max-width: 48ch;
-}
-
 .kiss-home .footer-kiss .human {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--crayon-ink);
 }
 
@@ -6867,14 +6905,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   }
 }
 
-.footer-soft {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.5;
-  color: var(--crayon-muted);
-  max-width: 52ch;
-  margin: 10px 0 0;
-}
+/* .footer-soft base lives under .footer-kiss shared chrome above */
 
 /* ... 404 · phoenix classroom ... */
 body.page-404 {
@@ -6967,7 +6998,7 @@ body.page-404 {
   margin-top: 28px;
   padding-top: 16px;
   border-top: 4px solid var(--crayon-ink);
-  max-width: 40ch;
+  max-width: 36rem;
   text-align: center;
 }
 
@@ -7267,7 +7298,16 @@ body.choice-home {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-size: 1.05rem;
   color: var(--crayon-muted);
+  margin: 0 0 10px;
+}
+
+.desk-listening {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--crayon-muted);
   margin: 0 0 14px;
+  max-width: 40ch;
 }
 
 .desk-photos-row {
