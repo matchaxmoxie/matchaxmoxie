@@ -209,7 +209,7 @@
         /* quota */
       }
       if (!quiet && REMEMBERED_TOAST_KEYS[key]) {
-        showSaveToast("Saved on this device");
+        showSaveToast("Cookie saved. Your seat is remembered.");
       }
       return "saved";
     }
@@ -310,22 +310,19 @@
     banner.className = "cookie-consent";
     banner.setAttribute("role", "region");
     banner.setAttribute("aria-labelledby", "cookie-consent-title");
-    banner.setAttribute("aria-describedby", "cookie-consent-keys cookie-consent-desc");
+    banner.setAttribute("aria-describedby", "cookie-consent-desc");
     banner.hidden = true;
 
     banner.innerHTML =
       '<div class="cookie-consent-inner">' +
-      '<p id="cookie-consent-title" class="cookie-consent-title">Want me to remember your picks?</p>' +
-      '<p id="cookie-consent-keys" class="cookie-consent-keys">' +
-      "Remembers: situation · Scratch starter · footprint checks" +
-      "</p>" +
+      '<p id="cookie-consent-title" class="cookie-consent-title">Want a cookie?</p>' +
       '<p id="cookie-consent-desc" class="cookie-consent-desc">' +
-      "One tiny first-party cookie marks that yes. No tracking pixels. " +
-      "No thanks still lets you browse; picks last for this visit only." +
+      "Say yes and this device remembers your seat, Scratch starter, and footprint checks. " +
+      "One tiny first-party cookie. No tracking." +
       "</p>" +
       '<div class="cookie-consent-actions">' +
-      '<button type="button" class="cookie-consent-accept" id="cookie-consent-accept">Yes, remember me</button>' +
-      '<button type="button" class="cookie-consent-decline" id="cookie-consent-decline">Just browsing</button>' +
+      '<button type="button" class="cookie-consent-accept" id="cookie-consent-accept">Yes, please</button>' +
+      '<button type="button" class="cookie-consent-decline" id="cookie-consent-decline">Just looking</button>' +
       "</div>" +
       "</div>";
 
@@ -340,7 +337,15 @@
     if (consent === "declined") {
       return "Cookie settings · this visit only, not remembering";
     }
-    return "Cookie and save settings";
+    return "Cookie settings";
+  }
+
+  function setTabVisual(tab, suffix) {
+    var label = suffix ? "Cookie · " + suffix : "Cookie";
+    tab.innerHTML =
+      '<span aria-hidden="true">🍪</span> <span class="cookie-consent-tab-label">' +
+      label +
+      "</span>";
   }
 
   function syncTabState(tab) {
@@ -353,13 +358,13 @@
     );
     if (consent === "accepted") {
       tab.classList.add("cookie-consent-tab--accepted");
-      tab.textContent = "Cookies · on";
+      setTabVisual(tab, "on");
     } else if (consent === "declined") {
       tab.classList.add("cookie-consent-tab--declined");
-      tab.textContent = "Cookies · off";
+      setTabVisual(tab, "off");
     } else {
       tab.classList.add("cookie-consent-tab--undecided");
-      tab.textContent = "Cookies";
+      setTabVisual(tab, "");
     }
     tab.setAttribute("aria-label", tabAriaLabel(consent));
   }
@@ -372,7 +377,6 @@
     tab.type = "button";
     tab.id = "cookie-consent-tab";
     tab.className = "cookie-consent-tab";
-    tab.textContent = "Cookies";
     tab.setAttribute("aria-controls", "cookie-consent");
     tab.setAttribute("aria-expanded", "false");
     tab.hidden = true;
@@ -479,6 +483,7 @@
         writeConsent("accepted");
         syncTabState(tab);
         closeBanner(banner, tab, true);
+        showSaveToast("Cookie saved. Your seat is remembered.");
       });
     }
     if (declineBtn) {

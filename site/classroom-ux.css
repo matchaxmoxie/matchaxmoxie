@@ -232,6 +232,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.35rem;
   min-height: 48px;
   min-width: 48px;
   padding: 0.55rem 1.05rem;

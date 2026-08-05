@@ -5890,10 +5890,17 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   margin-bottom: 2px;
 }
 
-.situation-plan-note {
+.situation-plan-note,
+.situation-cookie-note {
   font-size: 0.9rem;
   color: var(--crayon-muted);
   margin: 0;
+}
+
+.situation-cookie-note {
+  margin: 0.65rem 0 0;
+  max-width: 42ch;
+  line-height: 1.45;
 }
 
 .open-link-soft {

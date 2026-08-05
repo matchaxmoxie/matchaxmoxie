@@ -59,10 +59,10 @@
 
   function pickRememberLabel(restoring, label) {
     if (restoring && consentAllowsSave()) {
-      return "Still saved on this device · " + label;
+      return "Cookie still remembers · " + label;
     }
     if (consentAllowsSave()) {
-      return "Saved on this device · " + label;
+      return "Cookie saved · " + label;
     }
     return "This visit only · " + label;
   }
@@ -565,7 +565,7 @@
         welcomeBack.textContent =
           "Welcome back · " +
           SCRATCH_PROJECTS[saved].title +
-          " is still saved on this device.";
+          " is still remembered with the cookie.";
       }
       selectProject(saved, { skipScroll: true });
       restoring = false;
