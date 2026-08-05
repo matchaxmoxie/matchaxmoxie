@@ -6,7 +6,7 @@
 2. **If you don’t understand it, learn it.** Curiosity beats pretending. Official IU pages win over vibes.
 3. **Slow progress is the best progress.** One step today. KISS guides, not hustle checklists.
 
-**TLDR:** two sites, same me. [jadexzhao](https://jadexzhao.github.io/jadexzhao/) = **龙 · dragon** (builder / work). this repo = **凤凰 · phoenix** (Miss Zhao classroom archive).
+**TLDR:** two sites, same me. [jadexzhao](https://jadexzhao.github.io/jadexzhao/) = **龙 · dragon** (builder / work / hiring). this repo = **凤凰 · phoenix** (Miss Zhao classroom + FASE MAP archive).
 
 IG: [@zhao.langxi](https://instagram.com/zhao.langxi) · live: [matchaxmoxie.github.io](https://matchaxmoxie.github.io/matchaxmoxie/) · builder: [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/) · [resume (PDF)](https://jlzhao.pages.iu.edu/resume.pdf) · email: [jlzhao@iu.edu](mailto:jlzhao@iu.edu)
 
@@ -14,9 +14,12 @@ ELI5 it. Learn it. One slow step.
 
 ## live
 
+- [home · pick a seat](https://matchaxmoxie.github.io/matchaxmoxie/) · tiny IU / Informatics plan
+- [B-town bars](https://matchaxmoxie.github.io/matchaxmoxie/b-town-bars.html) · Kirkwood crawl cheat sheet · 21+
 - [Scratch studio](https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html) · how-tos + downloadable starter `.sb3` files
 - [IU Informatics guide](https://matchaxmoxie.github.io/matchaxmoxie/informatics-class-of-2027.html)
 - [campus survival](https://matchaxmoxie.github.io/matchaxmoxie/campus-survival.html)
+- [footprint](https://matchaxmoxie.github.io/matchaxmoxie/footprint.html)
 - four-year path: [1](https://matchaxmoxie.github.io/matchaxmoxie/freshman.html) · [2](https://matchaxmoxie.github.io/matchaxmoxie/sophomore.html) · [3 · Madrid](https://matchaxmoxie.github.io/matchaxmoxie/junior.html) · [4](https://matchaxmoxie.github.io/matchaxmoxie/senior.html)
 
-Code ships on [@jadexzhao](https://github.com/jadexzhao). Instagram is always [@zhao.langxi](https://instagram.com/zhao.langxi) (Zhao / 赵朗曦 · open daytime face, not a secret brand account).
+Code ships on [@jadexzhao](https://github.com/jadexzhao). Instagram is always [@zhao.langxi](https://instagram.com/zhao.langxi) (Zhao / 赵郎溪 · open daytime face, not a secret brand account).

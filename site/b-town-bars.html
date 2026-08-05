@@ -26,11 +26,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260805a">
-<link rel="stylesheet" href="classroom-ux.css?v=20260805a">
-<link rel="stylesheet" href="styles.css?v=20260805a">
+<link rel="stylesheet" href="a11y.css?v=20260805b">
+<link rel="stylesheet" href="classroom-ux.css?v=20260805b">
+<link rel="stylesheet" href="styles.css?v=20260805b">
 <style>
   .bars-page .path-lede { max-width: 36ch; }
+  .bars-persona {
+    margin: 8px 0 0;
+    font-size: 0.9rem;
+    color: var(--crayon-muted);
+    max-width: 44ch;
+    line-height: 1.4;
+  }
   .bars-flexes {
     display: flex;
     flex-wrap: wrap;
@@ -149,6 +156,40 @@
     max-width: 40ch;
     margin: 8px 0 0;
   }
+  .bars-next {
+    margin: 8px 0 32px;
+    padding: 18px 16px;
+    background: #fffaf4;
+    border: 2px solid rgba(31, 22, 48, 0.14);
+    border-left: 5px solid var(--sunset-warm);
+    max-width: 36rem;
+  }
+  .bars-next h2 {
+    font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+    font-size: 1.25rem;
+    color: var(--crayon-ink);
+    margin: 0 0 10px;
+  }
+  .bars-next-primary {
+    margin: 0;
+  }
+  .bars-next-primary .open-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 18px;
+  }
+  .bars-next-secondary {
+    margin: 12px 0 0;
+    font-size: 0.9rem;
+    color: var(--crayon-muted);
+    line-height: 1.45;
+  }
+  .bars-next-secondary a {
+    color: var(--sunset-ink);
+    font-weight: 700;
+  }
   @media (prefers-reduced-motion: reduce) {
     .bar-grid article { transition: none; }
   }
@@ -161,10 +202,11 @@
   <a href="student-path.html">your path</a>
   <a href="footprint.html">footprint</a>
   <a href="b-town-bars.html" aria-current="page">b-town bars</a>
-  <a href="scratch-studio.html">Scratch</a>
-  <a href="informatics-class-of-2027.html">IU guide</a>
-  <a href="archive.html">archive</a>
-  <a href="https://jadexzhao.github.io/jadexzhao/"><span lang="zh-Hans">龙</span> · dragon</a>
+  <span class="site-jump-sep" aria-hidden="true"></span>
+  <a class="site-jump-soft" href="scratch-studio.html">Scratch</a>
+  <a class="site-jump-soft" href="informatics-class-of-2027.html">IU guide</a>
+  <a class="site-jump-soft" href="archive.html">archive</a>
+  <a class="site-jump-soft" href="https://jadexzhao.github.io/jadexzhao/"><span lang="zh-Hans">龙</span> · dragon</a>
 </nav>
 
 <main id="main-content" class="wrap" tabindex="-1">
@@ -173,6 +215,10 @@
     <h1>b-town bars</h1>
     <p class="path-lede">
       Kirkwood crawl · six blocks · say Kok, not the full name.
+    </p>
+    <p class="bars-persona">
+      <span class="sc" lang="zh-Hans">凤凰</span> / phoenix = this FASE MAP classroom site.
+      <span class="sc" lang="zh-Hans">龙</span> / dragon = my portfolio on jadexzhao (hiring lives there).
     </p>
   </header>
 
@@ -332,6 +378,18 @@
     </ol>
     <p class="bars-note">Sports for moods / events, not every night.</p>
   </section>
+
+  <section class="bars-next" aria-labelledby="bars-next-h">
+    <h2 id="bars-next-h">keep this handy</h2>
+    <p class="bars-next-primary">
+      <a class="open-cta" href="https://instagram.com/zhao.langxi" rel="noopener noreferrer" target="_blank">follow @zhao.langxi</a>
+    </p>
+    <p class="bars-next-secondary">
+      or bookmark this page ·
+      <a href="informatics-class-of-2027.html">IU Informatics guide</a>
+      if you&rsquo;re still figuring Luddy.
+    </p>
+  </section>
 </main>
 
 <footer class="footer-kiss">
@@ -346,6 +404,6 @@
     (<span class="sc" lang="zh-Hans">龙</span>).
   </p>
 </footer>
-<script src="classroom-ux.js?v=20260805a" defer></script>
+<script src="classroom-ux.js?v=20260805b" defer></script>
 </body>
 </html>

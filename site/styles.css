@@ -254,6 +254,34 @@ body {
   border-bottom-color: var(--accent-crimson);
   background: #fff4df;
   font-weight: 700;
+  text-decoration-color: var(--accent-crimson);
+}
+
+/* soft group: guides + twin site · keep links, lower visual weight */
+.site-jump a.site-jump-soft {
+  color: var(--text-ghost);
+  letter-spacing: 0.04em;
+  font-size: calc(var(--text-xs) * 0.96);
+  opacity: 0.88;
+}
+.site-jump a.site-jump-soft:hover,
+.site-jump a.site-jump-soft:focus-visible {
+  opacity: 1;
+  color: var(--accent-crimson);
+}
+.site-jump a.site-jump-soft[aria-current="page"] {
+  opacity: 1;
+  color: var(--crayon-ink);
+  font-weight: 700;
+}
+.site-jump .site-jump-sep {
+  flex: 0 0 auto;
+  align-self: center;
+  width: 1px;
+  height: 1.1rem;
+  margin: 0 4px;
+  background: rgba(31, 22, 48, 0.18);
+  pointer-events: none;
 }
 
 @media (max-width: 640px) {
@@ -283,6 +311,16 @@ body {
   .site-jump a:hover {
     border-bottom-color: transparent;
     border-top-color: var(--accent-crimson);
+  }
+
+  .site-jump a[aria-current="page"] {
+    border-top-color: var(--accent-crimson);
+    border-bottom-color: transparent;
+  }
+
+  .site-jump .site-jump-sep {
+    height: 0.9rem;
+    margin: 0 2px;
   }
 }
 
