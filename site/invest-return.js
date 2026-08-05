@@ -355,32 +355,41 @@
     if (!list) return;
 
     var countEl = document.getElementById("footprint-claimed-count");
+    var countWrap = countEl ? countEl.parentElement : null;
     var banner = document.getElementById("footprint-progress");
     var boxes = list.querySelectorAll('input[type="checkbox"]');
     var saved = loadJson("footprint", {});
 
     function updateCount() {
       var claimed = 0;
+      var total = boxes.length;
+      var cookieOn = consentAllowsSave();
       boxes.forEach(function (cb) {
         if (cb.checked) claimed += 1;
       });
+      if (banner) {
+        banner.hidden = claimed === 0;
+      }
+      var msg = banner ? banner.querySelector("[data-footprint-msg]") : null;
+      if (claimed === total && claimed > 0) {
+        if (countWrap) countWrap.hidden = true;
+        if (msg) {
+          msg.textContent = cookieOn
+            ? "All " +
+              total +
+              " claimed. You left a footprint. Cookie kept it for next time."
+            : "All " + total + " claimed. You left a footprint.";
+        }
+        return;
+      }
+      if (countWrap) countWrap.hidden = false;
       if (countEl) {
         countEl.textContent = String(claimed);
       }
-      if (banner) {
-        banner.hidden = claimed === 0;
-        var msg = banner.querySelector("[data-footprint-msg]");
-        if (msg) {
-          msg.textContent =
-            claimed === boxes.length
-              ? "All " + boxes.length + " claimed. You left a footprint."
-              : claimed +
-                " print" +
-                (claimed === 1 ? "" : "s") +
-                " claimed · " +
-                (boxes.length - claimed) +
-                " still calling.";
-        }
+      if (msg) {
+        msg.textContent = cookieOn
+          ? "prints claimed · cookie remembered"
+          : "prints claimed · this visit only";
       }
     }
 
@@ -394,6 +403,13 @@
         updateCount();
       });
     });
+
+    if (
+      window.MatchaxConsent &&
+      typeof window.MatchaxConsent.onChange === "function"
+    ) {
+      window.MatchaxConsent.onChange(updateCount);
+    }
 
     updateCount();
   }
