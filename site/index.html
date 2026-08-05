@@ -20,24 +20,24 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260805-flowers">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260805-flowers">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#E0763A">
+<meta name="theme-color" content="#E8D5A3">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="matchaxmoxie · Jade Zhao">
 <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/">
 <meta property="og:title" content="Pick your situation · Miss Zhao">
 <meta property="og:description" content="ELI5 it. Learn it. One slow step. Tap your seat for a 3-step IU / Informatics plan. Jade Zhao · IU Luddy Class of 2027.">
-<meta property="og:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/og-hero.jpg">
-<meta property="og:image:alt" content="Sunset classroom: chalkboard, setting sun, Miss Zhao name tag">
+<meta property="og:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/miss-zhao-sunflower.jpg?v=20260805-sun">
+<meta property="og:image:alt" content="Miss Zhao in a yellow sunflower top and cream cardigan, warm mirror selfie">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pick your situation · Miss Zhao">
 <meta name="twitter:description" content="ELI5 it. Learn it. One slow step. Tap your seat for a 3-step plan.">
-<meta name="twitter:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/og-hero.jpg">
+<meta name="twitter:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/miss-zhao-sunflower.jpg?v=20260805-sun">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="a11y.css?v=20260805b">
 <link rel="stylesheet" href="classroom-ux.css?v=20260805-consent">
-<link rel="stylesheet" href="styles.css?v=20260805b">
+<link rel="stylesheet" href="styles.css?v=20260805-sun">
 </head>
 <body class="kindergarten-home sunset-home kiss-home choice-home">
 
@@ -57,14 +57,20 @@
 
   <!-- shou ping：hiatus zai qian · zi zhu archive · bu cheng nuo ben xue qi zai xian dai ling -->
   <header class="hero hero--choice">
-    <div class="hero-visual" role="img" aria-label="End-of-day classroom: chalkboard, setting sun, Miss Zhao name tag">
+    <div class="hero-visual hero-visual--photo">
+      <picture>
+        <source srcset="assets/miss-zhao-sunflower.webp?v=20260805-sun" type="image/webp">
+        <img
+          src="assets/miss-zhao-sunflower.jpg?v=20260805-sun"
+          alt="Miss Zhao in a yellow sunflower top and cream cardigan, mirror selfie"
+          width="1400"
+          height="1050"
+          decoding="async"
+          fetchpriority="high"
+        >
+      </picture>
       <span class="name-tag" aria-hidden="true">Miss Zhao</span>
-      <span class="star-sticker star-1" aria-hidden="true"></span>
-      <span class="star-sticker star-2" aria-hidden="true"></span>
-      <span class="classroom-sun" aria-hidden="true"></span>
-      <span class="horizon" aria-hidden="true"></span>
-      <span class="classroom-board" aria-hidden="true"></span>
-      <span class="classroom-apple" aria-hidden="true"></span>
+      <span class="hero-bagel" aria-hidden="true"></span>
     </div>
     <div class="hero-text">
       <p class="hero-brand-line">Miss Zhao · <span class="sc" lang="zh-Hans">凤凰</span> · archive</p>
@@ -150,6 +156,41 @@
     · <a href="footprint.html">footprint</a>
   </p>
 
+  <section class="desk-photos" aria-labelledby="desk-photos-heading">
+    <h2 id="desk-photos-heading" class="desk-photos-heading">On the desk</h2>
+    <p class="desk-photos-lede">Quiet extras. Not homework.</p>
+    <div class="desk-photos-row">
+      <figure class="photo-frame photo-frame--desk photo-frame--desk-tall">
+        <picture>
+          <source srcset="assets/miss-zhao-garden.webp?v=20260805-sun" type="image/webp">
+          <img
+            src="assets/miss-zhao-garden.jpg?v=20260805-sun"
+            alt="Miss Zhao outdoors in a garden courtyard, smiling with sunglasses on her head"
+            width="506"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <figcaption>Garden day · soft light</figcaption>
+      </figure>
+      <figure class="photo-frame photo-frame--desk">
+        <picture>
+          <source srcset="assets/miss-zhao-lilies.webp?v=20260805-sun" type="image/webp">
+          <img
+            src="assets/miss-zhao-lilies.jpg?v=20260805-sun"
+            alt="Miss Zhao smiling while holding a bouquet of pink and white lilies"
+            width="900"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <figcaption>Lilies · after class energy</figcaption>
+      </figure>
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer-kiss footer-kiss--choice">
@@ -163,7 +204,7 @@
       · <span class="sc" lang="zh-Hans">龙</span>
     </p>
   </footer>
-<script src="classroom-ux.js?v=20260805-consent" defer></script>
+<script src="classroom-ux.js?v=20260805-sun" defer></script>
 <script src="invest-return.js?v=20260805-consent" defer></script>
 </body>
 </html>
