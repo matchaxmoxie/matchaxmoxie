@@ -4115,6 +4115,18 @@ body.campus-survival-page {
   border-top: 2px dashed rgba(92, 75, 122, 0.35);
 }
 
+.scratch-studio-page .howto-cookie-nudge {
+  margin: 0.55rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--crayon-muted);
+  max-width: 42ch;
+}
+
+.scratch-pick-reveal .situation-pick-status {
+  margin: 0 0 10px;
+}
+
 .scratch-studio-page .howto-body a {
   color: var(--dusk);
   border-bottom: 2px solid var(--golden-hour);

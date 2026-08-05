@@ -91,14 +91,19 @@
   </aside>
 
   <!-- HS jian yi lou dou · yu shou ye student path dui qi -->
-  <section class="gwc-block" aria-labelledby="advice-funnel-heading" id="advice-funnel">
+  <section class="gwc-block" aria-labelledby="advice-funnel-heading">
     <h2 id="advice-funnel-heading">Advice funnel · do these in order</h2>
     <p>
       A funnel is just a short path: start at the top, take one step at a time.
       Same map as the
       <a href="student-path.html#advice-funnel">classroom home · student door</a>.
     </p>
-    <ol class="advice-funnel">
+    <div class="advice-funnel-progress-wrap" aria-live="polite">
+      <label class="visually-hidden" for="advice-funnel-progress">Advice funnel progress</label>
+      <progress id="advice-funnel-progress" class="advice-funnel-progress" value="0" max="6">0 of 6</progress>
+      <p id="advice-funnel-progress-text" class="advice-funnel-progress-text">You completed step 0 of 6.</p>
+    </div>
+    <ol class="advice-funnel" id="advice-funnel" aria-labelledby="advice-funnel-heading">
       <li>
         <strong>Start here · AP &amp; never too early</strong>
         Try
@@ -144,6 +149,10 @@
         <a href="#career-slides">career &amp; FYE slide strip</a>.
       </li>
     </ol>
+    <p class="situation-cookie-note">
+      Your checked steps stay on this device if you said yes to the cookie.
+      Decline and they last for this visit only.
+    </p>
   </section>
 
   <aside class="guide-attr" aria-label="Source attribution">
@@ -562,6 +571,7 @@
       · <span class="sc" lang="zh-Hans">龙</span>
     </p>
 </footer>
-<script src="classroom-ux.js?v=20260805-cookie" defer></script>
+<script src="classroom-ux.js?v=20260805-inf-cookie" defer></script>
+<script src="invest-return.js?v=20260805-inf-cookie" defer></script>
 </body>
 </html>

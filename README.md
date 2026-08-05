@@ -6,7 +6,7 @@
 2. **If you don’t understand it, learn it.** Curiosity beats pretending. Official IU pages win over vibes.
 3. **Slow progress is the best progress.** One step today. KISS guides, not hustle checklists.
 
-**TLDR:** two sites, same me. [jadexzhao](https://jadexzhao.github.io/jadexzhao/) = **龙 · dragon** (builder / work / hiring). this repo = **凤凰 · phoenix** (Miss Zhao classroom + FASE MAP archive).
+**TLDR:** two sites, same me. [jadexzhao](https://jadexzhao.github.io/jadexzhao/) = **龙 · dragon** (builder · work site). this repo = **凤凰 · phoenix** (Miss Zhao classroom + FASE MAP archive).
 
 IG: [@zhao.langxi](https://instagram.com/zhao.langxi) · live: [matchaxmoxie.github.io](https://matchaxmoxie.github.io/matchaxmoxie/) · builder: [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/) · [resume (PDF)](https://jlzhao.pages.iu.edu/resume.pdf) · email: [jlzhao@iu.edu](mailto:jlzhao@iu.edu)
 

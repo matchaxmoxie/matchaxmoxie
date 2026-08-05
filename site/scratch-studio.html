@@ -36,7 +36,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="a11y.css?v=20260805b">
 <link rel="stylesheet" href="classroom-ux.css?v=20260805-cookie">
-<link rel="stylesheet" href="styles.css?v=20260805b">
+<link rel="stylesheet" href="styles.css?v=20260805-scratch-cookie">
 </head>
 <body class="kindergarten-home sunset-home kiss-home scratch-studio-page">
 
@@ -129,8 +129,13 @@
         </button>
       </li>
     </ul>
+    <p class="situation-cookie-note">
+      Your last starter stays on this device if you said yes to the cookie.
+      Decline and it lasts for this visit only.
+    </p>
 
     <div id="scratch-pick-reveal" class="scratch-pick-reveal" hidden>
+      <p id="scratch-pick-status" class="situation-pick-status" aria-live="polite"></p>
       <p id="scratch-pick-get" class="scratch-pick-get"></p>
       <p id="scratch-pick-why" class="scratch-pick-why"></p>
       <p id="scratch-pick-path" class="scratch-pick-path" hidden></p>
@@ -213,6 +218,7 @@
           <h3>Classroom check</h3>
           <p>Can you jump, land, and not sink through the floor? Good. Now remix costumes or add a second platform.</p>
           <p class="howto-next"><strong>What would you add next?</strong> A score for landing, a moving platform, or a soft “oops” sound when you miss.</p>
+          <p class="howto-cookie-nudge" hidden>Slow is fine. Cookie will still remember this starter next time.</p>
         </div>
       </details>
     </article>
@@ -260,6 +266,7 @@
           <h3>Classroom check</h3>
           <p>Does the score only go up when you actually touch? Misses should reset without points.</p>
           <p class="howto-next"><strong>What would you add next?</strong> A “bad” item that subtracts points, or speed that rises every 10 catches.</p>
+          <p class="howto-cookie-nudge" hidden>Slow is fine. Cookie will still remember this starter next time.</p>
         </div>
       </details>
     </article>
@@ -307,6 +314,7 @@
           <h3>Classroom check</h3>
           <p>Ball should leave the paddle and keep moving. Edges bounce. Floor miss costs a life.</p>
           <p class="howto-next"><strong>What would you add next?</strong> A second paddle for a friend, or bricks above that disappear when hit.</p>
+          <p class="howto-cookie-nudge" hidden>Slow is fine. Cookie will still remember this starter next time.</p>
         </div>
       </details>
     </article>
@@ -352,6 +360,7 @@
           <h3>Classroom check</h3>
           <p>First clicks should feel juicy. Buying an upgrade should make the next clicks grow faster.</p>
           <p class="howto-next"><strong>What would you add next?</strong> Auto-click every second, or a second upgrade that changes costume “tiers.”</p>
+          <p class="howto-cookie-nudge" hidden>Slow is fine. Cookie will still remember this starter next time.</p>
         </div>
       </details>
     </article>
@@ -449,6 +458,7 @@
           <h3>Classroom check</h3>
           <p>No gaps between ground pieces. The seam should feel invisible when they loop.</p>
           <p class="howto-next"><strong>What would you add next?</strong> Obstacles that also scroll, or a finish line after 30 seconds.</p>
+          <p class="howto-cookie-nudge" hidden>Slow is fine. Cookie will still remember this starter next time.</p>
         </div>
       </details>
     </article>
@@ -497,6 +507,7 @@
           <h3>Classroom check</h3>
           <p>Ignoring the pet should visibly change the costume. Care should bring it back.</p>
           <p class="howto-next"><strong>What would you add next?</strong> A simple day/night backdrop, or a diary variable that counts days alive.</p>
+          <p class="howto-cookie-nudge" hidden>Slow is fine. Cookie will still remember this starter next time.</p>
         </div>
       </details>
     </article>
@@ -544,6 +555,7 @@
           <h3>Classroom check</h3>
           <p>Can a classmate play without you talking over it? Timing and clear choices matter more than fancy art.</p>
           <p class="howto-next"><strong>What would you add next?</strong> Sound per scene, or a title screen with your name as director.</p>
+          <p class="howto-cookie-nudge" hidden>Slow is fine. Cookie will still remember this starter next time.</p>
         </div>
       </details>
     </article>
@@ -592,6 +604,7 @@
           <h3>Classroom check</h3>
           <p>Every button should change only its layer. No blank costumes in the cycle if you can help it.</p>
           <p class="howto-next"><strong>What would you add next?</strong> A name label with ask/answer, or export the look into your Jumping Game hero.</p>
+          <p class="howto-cookie-nudge" hidden>Slow is fine. Cookie will still remember this starter next time.</p>
         </div>
       </details>
     </article>
@@ -638,7 +651,7 @@
     </p>
 </footer>
 <script src="classroom-ux.js?v=20260805-cookie" defer></script>
-<script src="invest-return.js?v=20260805-cookie" defer></script>
+<script src="invest-return.js?v=20260805-scratch-cookie" defer></script>
 <script>
   // dian ji suo lue tu mao dian shi，zi dong zhan kai dui ying de details jiao cheng mian ban
   document.querySelectorAll('a[href^="#lesson-"]').forEach(function (link) {

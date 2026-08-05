@@ -250,7 +250,7 @@
 
     function updateProgress() {
       var count = done.length;
-      var pct = total ? Math.round((count / total) * 100) : 0;
+      var cookieOn = consentAllowsSave();
 
       if (progressBar) {
         progressBar.value = count;
@@ -259,10 +259,22 @@
         progressBar.setAttribute("aria-valuemax", String(total));
       }
       if (progressText) {
-        progressText.textContent =
-          count === total
-            ? "You finished all " + total + " steps. Claim your plan below."
-            : "You completed step " + count + " of " + total + ".";
+        if (count === total && total > 0) {
+          progressText.textContent = cookieOn
+            ? "All " +
+              total +
+              " steps done. Cookie kept your path on this device."
+            : "All " +
+              total +
+              " steps done. This visit only.";
+        } else {
+          progressText.textContent =
+            "You completed step " +
+            count +
+            " of " +
+            total +
+            (cookieOn ? " · cookie remembered" : ".");
+        }
       }
 
       items.forEach(function (li, i) {
@@ -491,6 +503,7 @@
     var getLine = document.getElementById("scratch-pick-get");
     var whyLine = document.getElementById("scratch-pick-why");
     var pathLine = document.getElementById("scratch-pick-path");
+    var pickStatus = document.getElementById("scratch-pick-status");
     var goLink = document.getElementById("scratch-pick-go");
     var playLink = document.getElementById("scratch-pick-play");
     var downloadLink = document.getElementById("scratch-pick-download");
@@ -498,6 +511,13 @@
     var saved = loadJson("scratch-pick", null);
     var currentKey = null;
     var restoring = false;
+
+    function syncHowtoCookieNudges() {
+      var show = consentAllowsSave();
+      document.querySelectorAll(".howto-cookie-nudge").forEach(function (el) {
+        el.hidden = !show;
+      });
+    }
 
     function selectProject(key, opts) {
       var proj = SCRATCH_PROJECTS[key];
@@ -528,6 +548,9 @@
           pathLine.hidden = true;
           pathLine.textContent = "";
         }
+      }
+      if (pickStatus) {
+        pickStatus.textContent = pickRememberLabel(restoring, proj.title);
       }
       if (playLink) {
         playLink.href = "scratch-play.html?project=" + encodeURIComponent(key);
@@ -564,6 +587,8 @@
       } else if (!opts.skipScroll && !restoring) {
         scrollToEl(reveal);
       }
+
+      syncHowtoCookieNudges();
     }
 
     root.querySelectorAll(".scratch-pick-btn").forEach(function (btn) {
@@ -574,6 +599,23 @@
       });
     });
 
+    if (
+      window.MatchaxConsent &&
+      typeof window.MatchaxConsent.onChange === "function"
+    ) {
+      window.MatchaxConsent.onChange(function () {
+        syncHowtoCookieNudges();
+        if (currentKey && SCRATCH_PROJECTS[currentKey] && pickStatus) {
+          pickStatus.textContent = pickRememberLabel(
+            false,
+            SCRATCH_PROJECTS[currentKey].title
+          );
+        }
+      });
+    }
+
+    syncHowtoCookieNudges();
+
     if (saved && SCRATCH_PROJECTS[saved]) {
       restoring = true;
       if (welcomeBack) {
@@ -581,7 +623,7 @@
         welcomeBack.textContent =
           "Welcome back · " +
           SCRATCH_PROJECTS[saved].title +
-          " is still remembered with the cookie.";
+          " is still waiting (cookie remembered). Green flag when you're ready.";
       }
       selectProject(saved, { skipScroll: true });
       restoring = false;
