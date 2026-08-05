@@ -3,12 +3,32 @@
  * Cookie / save consent + Miss Zhao status presence.
  * No tracking. No third-party cookies.
  *
- * Consent: localStorage matchax-consent = "accepted" | "declined"
+ * ── Consent ──
+ * localStorage matchax-consent = "accepted" | "declined"
  * When accepted, also sets first-party cookie matchax_consent=accepted.
- * App picks (situation, Scratch, footprint) stay in localStorage only after accept.
+ * Remembered picks (localStorage only after Accept):
+ *   matchax-situation · matchax-scratch-pick · matchax-footprint
+ * (matchax-advice-funnel is cleared with those on Decline; do not advertise
+ *  or expand beyond the three named above.)
  *
- * Status: edit STATUS_DEFAULT below and commit, or demo-override with
- * localStorage matchax-status-override = {"mode":"teaching","label":"Teaching","detail":"..."}.
+ * ── Status chip (Jade) ──
+ * Modes: hiatus | teaching | office-hours | working | offline
+ *
+ * Ship a mode for everyone:
+ *   1. Edit STATUS_DEFAULT.mode (and label/detail if you want custom copy)
+ *   2. Commit + push site/classroom-ux.js
+ *
+ * Local demo only (your browser; visitors never see this):
+ *   localStorage.setItem(
+ *     "matchax-status-override",
+ *     JSON.stringify({ mode: "teaching" })
+ *   );
+ *   // optional: "label" and/or "detail" strings override the preset copy
+ *   location.reload();
+ *
+ * Clear demo override:
+ *   localStorage.removeItem("matchax-status-override");
+ *   location.reload();
  */
 (function () {
   "use strict";
@@ -17,12 +37,19 @@
   var COOKIE_NAME = "matchax_consent";
   var STATUS_OVERRIDE_KEY = "matchax-status-override";
   var BANNER_MS = 380;
+  var TOAST_MS = 2200;
   var UX_KEYS = [
     "matchax-situation",
     "matchax-scratch-pick",
     "matchax-footprint",
     "matchax-advice-funnel",
   ];
+  /* Banner names these three only; toast only for them */
+  var REMEMBERED_TOAST_KEYS = {
+    "matchax-situation": true,
+    "matchax-scratch-pick": true,
+    "matchax-footprint": true,
+  };
 
   /* ── Jade edits this and commits ── */
   var STATUS_DEFAULT = {
@@ -32,21 +59,22 @@
   };
 
   var STATUS_MODES = {
-    working: { label: "Working", detail: "Building something for this classroom" },
-    "office-hours": {
-      label: "Office hours",
-      detail: "Door open · bring a real question",
-    },
-    teaching: { label: "Teaching", detail: "Live classroom energy right now" },
     hiatus: {
       label: "On hiatus",
       detail: "Senior year · classroom still open for you",
     },
+    teaching: { label: "Teaching", detail: "Live classroom energy right now" },
+    "office-hours": {
+      label: "Office hours",
+      detail: "Door open · bring a real question",
+    },
+    working: { label: "Working", detail: "Building something for this classroom" },
     offline: { label: "Offline", detail: "Quiet hour · archive still open" },
   };
 
   var pendingSaves = {};
   var listeners = [];
+  var toastTimer = null;
 
   function prefersReducedMotion() {
     try {
@@ -138,7 +166,41 @@
     }
   }
 
-  function saveStored(key, value) {
+  function ensureToast() {
+    var el = document.getElementById("cookie-save-toast");
+    if (el) return el;
+    el = document.createElement("p");
+    el.id = "cookie-save-toast";
+    el.className = "cookie-save-toast";
+    el.setAttribute("role", "status");
+    el.setAttribute("aria-live", "polite");
+    el.hidden = true;
+    document.body.appendChild(el);
+    return el;
+  }
+
+  function showSaveToast(message) {
+    var el = ensureToast();
+    el.textContent = message;
+    el.hidden = false;
+    el.classList.add("is-visible");
+    if (toastTimer) window.clearTimeout(toastTimer);
+    toastTimer = window.setTimeout(function () {
+      el.classList.remove("is-visible");
+      toastTimer = window.setTimeout(function () {
+        el.hidden = true;
+        toastTimer = null;
+      }, prefersReducedMotion() ? 0 : 280);
+    }, TOAST_MS);
+  }
+
+  /**
+   * @param {string} key
+   * @param {*} value
+   * @param {{ quiet?: boolean }} [options] quiet: skip toast (e.g. restore)
+   */
+  function saveStored(key, value, options) {
+    var quiet = options && options.quiet;
     var c = readConsent();
     if (c === "accepted") {
       try {
@@ -146,12 +208,17 @@
       } catch (_e) {
         /* quota */
       }
-      return;
+      if (!quiet && REMEMBERED_TOAST_KEYS[key]) {
+        showSaveToast("Saved on this device");
+      }
+      return "saved";
     }
-    /* undecided: queue until Accept. declined: this visit only */
+    /* undecided: queue until Accept. declined: this visit only · never pretend */
     if (c === null) {
       pendingSaves[key] = value;
+      return "queued";
     }
+    return "session";
   }
 
   window.MatchaxConsent = {
@@ -243,14 +310,16 @@
     banner.className = "cookie-consent";
     banner.setAttribute("role", "region");
     banner.setAttribute("aria-labelledby", "cookie-consent-title");
-    banner.setAttribute("aria-describedby", "cookie-consent-desc");
+    banner.setAttribute("aria-describedby", "cookie-consent-keys cookie-consent-desc");
     banner.hidden = true;
 
     banner.innerHTML =
       '<div class="cookie-consent-inner">' +
       '<p id="cookie-consent-title" class="cookie-consent-title">Want me to remember your picks?</p>' +
+      '<p id="cookie-consent-keys" class="cookie-consent-keys">' +
+      "Remembers: situation · Scratch starter · footprint checks" +
+      "</p>" +
       '<p id="cookie-consent-desc" class="cookie-consent-desc">' +
-      "Accept and this device keeps your situation, Scratch starter, and footprint checks. " +
       "One tiny first-party cookie marks that yes. No tracking pixels. " +
       "No thanks still lets you browse; picks last for this visit only." +
       "</p>" +
@@ -264,6 +333,37 @@
     return banner;
   }
 
+  function tabAriaLabel(consent) {
+    if (consent === "accepted") {
+      return "Cookie settings · remembering picks on this device";
+    }
+    if (consent === "declined") {
+      return "Cookie settings · this visit only, not remembering";
+    }
+    return "Cookie and save settings";
+  }
+
+  function syncTabState(tab) {
+    if (!tab) return;
+    var consent = readConsent();
+    tab.classList.remove(
+      "cookie-consent-tab--accepted",
+      "cookie-consent-tab--declined",
+      "cookie-consent-tab--undecided"
+    );
+    if (consent === "accepted") {
+      tab.classList.add("cookie-consent-tab--accepted");
+      tab.textContent = "Cookies · on";
+    } else if (consent === "declined") {
+      tab.classList.add("cookie-consent-tab--declined");
+      tab.textContent = "Cookies · off";
+    } else {
+      tab.classList.add("cookie-consent-tab--undecided");
+      tab.textContent = "Cookies";
+    }
+    tab.setAttribute("aria-label", tabAriaLabel(consent));
+  }
+
   function buildCookieTab() {
     var existing = document.getElementById("cookie-consent-tab");
     if (existing) return existing;
@@ -273,30 +373,36 @@
     tab.id = "cookie-consent-tab";
     tab.className = "cookie-consent-tab";
     tab.textContent = "Cookies";
-    tab.setAttribute("aria-label", "Cookie and save settings");
     tab.setAttribute("aria-controls", "cookie-consent");
     tab.setAttribute("aria-expanded", "false");
     tab.hidden = true;
+    syncTabState(tab);
     document.body.appendChild(tab);
     return tab;
   }
 
   function showTab(tab) {
     if (!tab) return;
+    syncTabState(tab);
     tab.hidden = false;
     tab.setAttribute("aria-expanded", "false");
+    tab.classList.remove("cookie-consent-tab--nudge");
     if (prefersReducedMotion()) {
       tab.classList.add("is-visible");
       return;
     }
     window.requestAnimationFrame(function () {
       tab.classList.add("is-visible");
+      tab.classList.add("cookie-consent-tab--nudge");
+      window.setTimeout(function () {
+        tab.classList.remove("cookie-consent-tab--nudge");
+      }, 1600);
     });
   }
 
   function hideTab(tab) {
     if (!tab) return;
-    tab.classList.remove("is-visible");
+    tab.classList.remove("is-visible", "cookie-consent-tab--nudge");
     tab.hidden = true;
     tab.setAttribute("aria-expanded", "true");
   }
@@ -371,12 +477,14 @@
     if (acceptBtn) {
       acceptBtn.addEventListener("click", function () {
         writeConsent("accepted");
+        syncTabState(tab);
         closeBanner(banner, tab, true);
       });
     }
     if (declineBtn) {
       declineBtn.addEventListener("click", function () {
         writeConsent("declined");
+        syncTabState(tab);
         closeBanner(banner, tab, true);
       });
     }
@@ -391,6 +499,10 @@
         // Close only; do not silently write declined when still undecided
         closeBanner(banner, tab, true);
       }
+    });
+
+    window.MatchaxConsent.onChange(function () {
+      syncTabState(tab);
     });
 
     if (consent === null) {

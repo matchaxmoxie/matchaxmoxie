@@ -37,16 +37,34 @@
     }
   }
 
-  function saveJson(key, value) {
+  function saveJson(key, value, options) {
     if (window.MatchaxConsent && typeof window.MatchaxConsent.save === "function") {
-      window.MatchaxConsent.save(storageKey(key), value);
-      return;
+      return window.MatchaxConsent.save(storageKey(key), value, options);
     }
     try {
       localStorage.setItem(storageKey(key), JSON.stringify(value));
     } catch (_e) {
       /* quota or private mode */
     }
+    return "saved";
+  }
+
+  function consentAllowsSave() {
+    return (
+      window.MatchaxConsent &&
+      typeof window.MatchaxConsent.allowsSave === "function" &&
+      window.MatchaxConsent.allowsSave()
+    );
+  }
+
+  function pickRememberLabel(restoring, label) {
+    if (restoring && consentAllowsSave()) {
+      return "Still saved on this device · " + label;
+    }
+    if (consentAllowsSave()) {
+      return "Saved on this device · " + label;
+    }
+    return "This visit only · " + label;
   }
 
   /* ── 1. Pick your situation → 3-step plan (index) ── */
@@ -159,9 +177,7 @@
         pathLink.textContent = "Full student path if you want the longer archive tour";
       }
       if (pickStatus) {
-        pickStatus.textContent = restoringSaved
-          ? "Your seat is still saved · " + data.label
-          : "Browsing · " + data.label;
+        pickStatus.textContent = pickRememberLabel(restoringSaved, data.label);
       }
       root.querySelectorAll(".situation-btn").forEach(function (btn) {
         var active = btn.getAttribute("data-situation") === key;
@@ -176,8 +192,8 @@
         var mark = btn.querySelector(".open-pick-selected");
         if (mark) mark.hidden = !active;
       });
-      saveJson("situation", key);
       if (!restoringSaved) {
+        saveJson("situation", key);
         scrollToEl(planEl);
         if (startLink && typeof startLink.focus === "function") {
           try {
@@ -514,7 +530,9 @@
         goLink.textContent = "Rebuild steps for " + proj.title + " →";
       }
 
-      saveJson("scratch-pick", key);
+      if (!restoring) {
+        saveJson("scratch-pick", key);
+      }
 
       document.querySelectorAll(".howto-card--picked").forEach(function (card) {
         card.classList.remove("howto-card--picked");
@@ -547,7 +565,7 @@
         welcomeBack.textContent =
           "Welcome back · " +
           SCRATCH_PROJECTS[saved].title +
-          " is still waiting. Green flag when you are ready.";
+          " is still saved on this device.";
       }
       selectProject(saved, { skipScroll: true });
       restoring = false;
