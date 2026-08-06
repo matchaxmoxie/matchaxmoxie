@@ -1,4 +1,4 @@
-# Miss Zhao Scratch starters (`.sb3`)
+# matchaxmoxie Scratch starters (`.sb3`)
 
 Original geometric costumes and teaching scripts for the
 [Scratch studio](../scratch-studio.html) how-tos.

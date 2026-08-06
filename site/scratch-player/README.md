@@ -3,7 +3,7 @@
 本站用 `@turbowarp/scaffolding` 的 **`scaffolding-min.js`**（约 1.8MB）在同域加载 `scratch-projects/*.sb3`，
 绿旗 / 停止都在 matchaxmoxie 上跑。主路径不跳转 scratch.mit.edu / turbowarp.org。
 
-音乐扩展若用到，min 版会向 `packagerdata.turbowarp.org` 拉音色；Miss Zhao 起步项目不含该扩展。
+音乐扩展若用到，min 版会向 `packagerdata.turbowarp.org` 拉音色；matchaxmoxie 起步项目不含该扩展。
 完整离线音乐包可换成 `scaffolding-with-music.js`（约 3.7MB）。
 
 ## 如何更新 / 重建

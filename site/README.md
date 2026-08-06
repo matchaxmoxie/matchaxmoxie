@@ -1,8 +1,8 @@
 # matchaxmoxie site
 
-**凤凰 · phoenix classroom archive.** Jade Zhao · Miss Zhao (on hiatus) · IU Luddy Informatics Class of 2027 · FASE MAP.
+**凤凰 · phoenix classroom archive.** Jade Zhao · matchaxmoxie (cookie classroom) · IU Luddy Informatics Class of 2027 · FASE MAP.
 
-**Quick version:** two sites, same person. `jadexzhao` = 龙 · dragon (builder · work site). this site = 凤凰 · phoenix (Miss Zhao classroom archive).
+**Quick version:** two sites, same person. `jadexzhao` = 龙 · dragon (builder · work site). this site = 凤凰 · phoenix (matchaxmoxie cookie classroom archive).
 
 School IG: [@zhao.langxi](https://instagram.com/zhao.langxi) (never @jadexzhao for Instagram)
 

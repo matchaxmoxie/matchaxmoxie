@@ -289,7 +289,7 @@
       }
       if (rewardName && count >= total) {
         rewardName.textContent =
-          "Miss Zhao path · " + FUNNEL_LABELS.join(" → ");
+          "matchaxmoxie path · " + FUNNEL_LABELS.join(" → ");
       }
     }
 
@@ -336,7 +336,7 @@
     if (downloadBtn) {
       downloadBtn.addEventListener("click", function () {
         var lines = [
-          "Miss Zhao · matchaxmoxie · your advice path",
+          "matchaxmoxie · your advice path",
           "https://matchaxmoxie.github.io/matchaxmoxie/",
           "",
           "Steps you marked done:",

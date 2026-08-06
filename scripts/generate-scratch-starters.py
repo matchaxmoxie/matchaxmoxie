@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate original Miss Zhao Scratch 3 starter .sb3 files.
+Generate original matchaxmoxie Scratch 3 starter .sb3 files.
 
 Original geometric SVG costumes + simple teaching scripts.
 Not affiliated with Scratch Team. No Scratch Team library assets.
@@ -17,14 +17,14 @@ from pathlib import Path
 OUT_DIR = Path(__file__).resolve().parents[1] / "site" / "scratch-projects"
 
 # ---------------------------------------------------------------------------
-# SVG costumes (original Miss Zhao / matchaxmoxie shapes)
+# SVG costumes (original matchaxmoxie shapes)
 # ---------------------------------------------------------------------------
 
 SVG_BACKDROP = """<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360">
   <rect width="480" height="360" fill="#FFF4E6"/>
   <rect y="280" width="480" height="80" fill="#F2C96B"/>
   <circle cx="400" cy="70" r="36" fill="#E0763A"/>
-  <text x="24" y="40" font-family="Comic Sans MS, Comic Neue, sans-serif" font-size="18" fill="#3D2E1F">Miss Zhao Studio</text>
+  <text x="24" y="40" font-family="Comic Sans MS, Comic Neue, sans-serif" font-size="18" fill="#3D2E1F">matchaxmoxie Studio</text>
 </svg>
 """
 
@@ -61,7 +61,7 @@ SVG_PLACE_B = """<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360
 SVG_ENDING = """<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360">
   <rect width="480" height="360" fill="#5C4B7A"/>
   <text x="140" y="180" font-family="Comic Sans MS, sans-serif" font-size="36" fill="#FFF4E6">The End</text>
-  <text x="150" y="220" font-family="Comic Sans MS, sans-serif" font-size="16" fill="#F2C96B">Miss Zhao Studio</text>
+  <text x="150" y="220" font-family="Comic Sans MS, sans-serif" font-size="16" fill="#F2C96B">matchaxmoxie Studio</text>
 </svg>
 """
 
@@ -655,7 +655,7 @@ def write_sb3(path: Path, targets: list[dict], assets: list[tuple[str, bytes]], 
         "meta": {
             "semver": "3.0.0",
             "vm": "0.2.0-prerelease",
-            "agent": "MissZhaoStudio/matchaxmoxie",
+            "agent": "matchaxmoxieStudio/matchaxmoxie",
         },
     }
     path.parent.mkdir(parents=True, exist_ok=True)
