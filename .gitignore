@@ -5,3 +5,18 @@ site/content
 # ben di nei bu cai liao，bu jin gong kai cang ku（han FASE MAP xie tiao yuan yun ying + ban gong shi shi duan PDF）
 # PDF yi qian chu site/assets → content/fase-26-27/office-hours/
 content/fase-26-27/
+
+# gen mu lu tu pian dui · zheng shi zi yuan zai site/assets/
+/assets/
+
+# Canvas / FASE attendance reviewer feedback（si mi WIP）
+content/fase-events-attendance-canvas-feedback.md
+
+# yuan shi xiao yuan zhao pian dui（da · fei zhan dian zi yuan）
+content/iu-campus-photos-2023/
+
+# LinkedIn posting drafts（ben di）
+docs/matchaxmoxie-linkedin-content-drafts.md
+
+# jaded-and-confused LaTeX/PDF WIP（ben di）
+latex/docs/jaded-and-confused/
