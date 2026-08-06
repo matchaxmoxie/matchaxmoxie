@@ -1,6 +1,6 @@
 /**
  * matchaxmoxie · classroom UX shell
- * Cookie / save consent + Miss Zhao status presence.
+ * Cookie / save consent + matchaxmoxie status presence.
  * No tracking. No third-party cookies.
  *
  * ── Consent ──
@@ -268,7 +268,7 @@
     el.setAttribute("role", "status");
     el.setAttribute(
       "aria-label",
-      "Miss Zhao status: " + status.label + ". " + status.detail
+      "matchaxmoxie status: " + status.label + ". " + status.detail
     );
 
     var dot = document.createElement("span");
@@ -277,7 +277,7 @@
 
     var kicker = document.createElement("span");
     kicker.className = "classroom-status-kicker";
-    kicker.textContent = "Miss Zhao";
+    kicker.textContent = "matchaxmoxie";
 
     var mode = document.createElement("span");
     mode.className = "classroom-status-mode";

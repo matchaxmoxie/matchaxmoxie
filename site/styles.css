@@ -3136,13 +3136,15 @@ body.kindergarten-home {
 }
 
 .choice-home .hero-cookie-line {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
-  font-weight: 400;
-  font-size: clamp(1.35rem, 3.8vw, 1.85rem);
-  line-height: 1.2;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.05rem, 2.8vw, 1.35rem);
+  line-height: 1.35;
+  text-transform: none;
+  letter-spacing: 0;
   color: var(--coral-ink);
   margin: 0 0 10px;
-  max-width: 22ch;
+  max-width: 36ch;
 }
 
 .choice-home .hero-bagel-quote {
