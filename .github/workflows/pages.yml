@@ -18,7 +18,8 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  # Cancel stuck/waiting deploys so a fresh main push can publish
+  cancel-in-progress: true
 
 jobs:
   deploy:

@@ -7360,13 +7360,17 @@ body.choice-home {
   .desk-photos-row > .desk-photo-link:nth-child(2):hover .photo-frame--desk,
   .desk-photos-row > .desk-photo-link:nth-child(2):focus-visible .photo-frame--desk,
   .desk-photos-row > .desk-photo-link:nth-child(4):hover .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(4):focus-visible .photo-frame--desk {
+  .desk-photos-row > .desk-photo-link:nth-child(4):focus-visible .photo-frame--desk,
+  .desk-photos-row > .desk-photo-link:nth-child(6):hover .photo-frame--desk,
+  .desk-photos-row > .desk-photo-link:nth-child(6):focus-visible .photo-frame--desk {
     transform: rotate(1deg) translateY(-2px);
     box-shadow: 5px 6px 0 var(--sunflower);
   }
 
   .desk-photos-row > .desk-photo-link:nth-child(3):hover .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(3):focus-visible .photo-frame--desk {
+  .desk-photos-row > .desk-photo-link:nth-child(3):focus-visible .photo-frame--desk,
+  .desk-photos-row > .desk-photo-link:nth-child(5):hover .photo-frame--desk,
+  .desk-photos-row > .desk-photo-link:nth-child(5):focus-visible .photo-frame--desk {
     transform: rotate(-1.2deg) translateY(-2px);
     box-shadow: 5px 6px 0 var(--dusty-pink);
   }
@@ -7394,6 +7398,16 @@ body.choice-home {
   box-shadow: 4px 4px 0 var(--sunflower);
 }
 
+.desk-photos-row > .desk-photo-link:nth-child(5) .photo-frame--desk {
+  transform: rotate(-0.7deg);
+  box-shadow: 4px 4px 0 var(--dusty-pink);
+}
+
+.desk-photos-row > .desk-photo-link:nth-child(6) .photo-frame--desk {
+  transform: rotate(1.05deg);
+  box-shadow: 4px 4px 0 var(--sage);
+}
+
 .photo-frame--desk img {
   width: 100%;
   height: auto;
@@ -7408,11 +7422,27 @@ body.choice-home {
   max-height: 220px;
 }
 
+.desk-photos-row > .desk-photo-link:nth-child(1) .photo-frame--desk img {
+  object-position: center 28%;
+}
+
+.desk-photos-row > .desk-photo-link:nth-child(2) .photo-frame--desk img {
+  object-position: center 18%;
+}
+
 .desk-photos-row > .desk-photo-link:nth-child(3) .photo-frame--desk img {
   object-position: center 18%;
 }
 
 .desk-photos-row > .desk-photo-link:nth-child(4) .photo-frame--desk img {
+  object-position: center 22%;
+}
+
+.desk-photos-row > .desk-photo-link:nth-child(5) .photo-frame--desk img {
+  object-position: center 20%;
+}
+
+.desk-photos-row > .desk-photo-link:nth-child(6) .photo-frame--desk img {
   object-position: center 22%;
 }
 
