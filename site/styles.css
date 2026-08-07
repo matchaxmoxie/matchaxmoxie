@@ -3145,7 +3145,7 @@ body.kindergarten-home {
   color: var(--sage);
 }
 
-/* Soft energy — whisper under brand, not a second headline */
+/* Soft energy ... whisper under brand, not a second headline */
 .choice-home .hero-energy-line {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-weight: 400;
@@ -3211,7 +3211,7 @@ body.kindergarten-home {
   color: var(--sage);
 }
 
-/* Deliberate CTA — restrained, not a shout */
+/* Deliberate CTA ... restrained, not a shout */
 .choice-home .hero-text h1 {
   font-size: clamp(1.65rem, 4.5vw, 2.15rem);
   max-width: 16ch;
@@ -3408,7 +3408,7 @@ body.kindergarten-home {
 }
 
 @media (max-width: 560px) {
-  /* Side-by-side on tiny phones became a postage stamp — stack photo above copy */
+  /* Side-by-side on tiny phones became a postage stamp ... stack photo above copy */
   .choice-home .hero,
   .kindergarten-home.choice-home .hero {
     grid-template-columns: 1fr;
@@ -7295,7 +7295,7 @@ body.choice-home {
   object-position: center 28%;
 }
 
-/* photo badge removed on choice home — brand lives in hero text only */
+/* photo badge removed on choice home ... brand lives in hero text only */
 .choice-home .hero-visual--photo .name-tag {
   display: none;
 }
@@ -7783,7 +7783,7 @@ body.choice-home {
 
 /*
   Photo frame must fill: aspect-ratio + absolute picture/img + object-fit cover.
-  Do NOT use height:auto on the img — that left the dusty-pink frame empty below
+  Do NOT use height:auto on the img ... that left the dusty-pink frame empty below
   a landscape source cropped into a tall 4/5 box.
 */
 .choice-home .hero-visual,
@@ -7884,7 +7884,7 @@ body.choice-home {
   padding-bottom: 0;
 }
 
-/* Kill the short stub bar — soft matcha lives on the CTA underline instead */
+/* Kill the short stub bar ... soft matcha lives on the CTA underline instead */
 .choice-home .hero-text h1::after {
   content: none;
 }
