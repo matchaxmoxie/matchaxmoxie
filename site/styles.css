@@ -3114,9 +3114,10 @@ body.kindergarten-home {
   margin-top: 8px;
 }
 
-/* ── choice-first home · one pick per viewport ── */
+/* ── choice-first home · one clear composition ── */
 .choice-home .hero--choice {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .choice-home .hiatus-banner {
@@ -3124,76 +3125,82 @@ body.kindergarten-home {
   max-width: none;
 }
 
+/* Brand = hero-level signal (not tiny courier label) */
 .choice-home .hero-brand-line,
 .choice-home .hero-iu {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--sunset-ink);
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.55rem, 4.2vw, 2.05rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--crayon-ink);
   margin: 0 0 4px;
+  line-height: 1.12;
 }
 
+.choice-home .hero-brand-line .sc {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 500;
+}
+
+/* Soft energy — whisper under brand, not a second headline */
 .choice-home .hero-energy-line {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
-  font-weight: 400;
-  font-size: clamp(1.25rem, 3vw, 1.55rem);
-  line-height: 1.15;
-  letter-spacing: 0.01em;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  line-height: 1.3;
+  letter-spacing: 0.02em;
   text-transform: none;
   color: var(--sage);
-  margin: 0 0 2px;
+  margin: 0 0 12px;
 }
 
-/* vibe whisper — stays, doesn’t fight brand or CTA */
+/* vibe moved below the fold · keep rule harmless if reintroduced */
 .choice-home .hero-vibe-line,
 .choice-home .hero-cookie-line {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-weight: 400;
-  font-size: clamp(0.82rem, 1.8vw, 0.92rem);
+  font-size: 0.85rem;
   line-height: 1.35;
-  text-transform: none;
-  letter-spacing: 0;
   color: var(--crayon-muted);
-  opacity: 0.78;
+  opacity: 0.75;
   margin: 0 0 10px;
   max-width: 34ch;
 }
 
+/* Cookie quote = one quiet unit */
 .choice-home .hero-bagel-quote {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   padding: 0;
   border: 0;
-  max-width: 32ch;
+  max-width: 30ch;
 }
 
 .choice-home .hero-bagel-quote p {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: clamp(0.95rem, 2.2vw, 1.08rem);
+  font-size: clamp(0.88rem, 2vw, 0.98rem);
   font-style: italic;
   line-height: 1.35;
-  color: var(--crayon-ink);
+  color: var(--crayon-muted);
   margin: 0 0 2px;
 }
 
-/* quiet cookie label — sentence case, not a second brand shout */
 .choice-home .hero-bagel-quote .hero-cookie-offer {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   text-transform: none;
   color: var(--crayon-muted);
-  opacity: 0.85;
+  opacity: 0.8;
   margin: 0 0 2px;
 }
 
 .choice-home .hero-bagel-quote cite {
   display: block;
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -3207,29 +3214,32 @@ body.kindergarten-home {
   text-underline-offset: 3px;
 }
 
+/* CTA wins the first viewport */
 .choice-home .hero-text h1 {
-  font-size: clamp(2rem, 6vw, 2.85rem);
-  max-width: 18ch;
-  margin: 2px 0 10px;
-  line-height: 1.08;
+  font-size: clamp(2.15rem, 6.5vw, 3.1rem);
+  max-width: 12ch;
+  margin: 0 0 8px;
+  line-height: 1.05;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
+  color: var(--crayon-ink);
 }
 
 .choice-home .hero-text h1::after {
   content: "";
   display: block;
-  width: 3.5rem;
+  width: 3.25rem;
   height: 4px;
   margin-top: 10px;
+  border-radius: 2px;
   background: var(--sunset-warm);
 }
 
 .choice-home .hero-hook {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  font-size: clamp(0.95rem, 2.2vw, 1.08rem);
   color: var(--crayon-muted);
-  max-width: 34ch;
+  max-width: 32ch;
   margin: 0;
   line-height: 1.4;
 }
@@ -3390,8 +3400,8 @@ body.kindergarten-home {
   /* Side-by-side hero · photo no longer eats the whole first viewport */
   .choice-home .hero,
   .kindergarten-home.choice-home .hero {
-    grid-template-columns: minmax(96px, 132px) minmax(0, 1fr);
-    gap: 12px 14px;
+    grid-template-columns: minmax(96px, 124px) minmax(0, 1fr);
+    gap: 10px 12px;
     align-items: center;
     text-align: left;
     margin-bottom: 14px;
@@ -3400,65 +3410,54 @@ body.kindergarten-home {
   .choice-home .hero-visual,
   .kindergarten-home.choice-home .hero-visual,
   .kindergarten-home.choice-home .hero-visual--photo {
-    max-width: 132px;
+    max-width: 124px;
     margin: 0;
-    transform: rotate(-1deg);
+    transform: none;
   }
 
   .choice-home .hero-brand-line,
   .choice-home .hero-iu {
-    font-size: 0.78rem;
+    font-size: clamp(1.25rem, 5.5vw, 1.55rem);
     margin-bottom: 2px;
   }
 
   .choice-home .hero-energy-line {
-    font-size: clamp(1.05rem, 4.5vw, 1.25rem);
-    margin-bottom: 1px;
-  }
-
-  .choice-home .hero-vibe-line,
-  .choice-home .hero-cookie-line {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 8px;
   }
 
   .choice-home .hero-bagel-quote {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .choice-home .hero-bagel-quote p {
-    font-size: 0.9rem;
+    font-size: 0.86rem;
   }
 
   .choice-home .hero-bagel-quote .hero-cookie-offer {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
   }
 
   .choice-home .hero-text h1 {
-    font-size: clamp(1.7rem, 7.5vw, 2.2rem);
+    font-size: clamp(1.75rem, 7.5vw, 2.25rem);
     margin-bottom: 4px;
     max-width: none;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
   }
 
   .choice-home .hero-text h1::after {
     margin-top: 6px;
-    width: 2.75rem;
+    width: 2.5rem;
   }
 
   .choice-home .hero-hook {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     max-width: none;
   }
 
   .choice-home .hiatus-banner {
     margin-bottom: 14px;
     padding: 12px 14px;
-  }
-
-  .kindergarten-home .hero-bagel {
-    width: 18px;
-    height: 18px;
   }
 }
 
@@ -7118,10 +7117,10 @@ body.choice-home {
   user-select: none;
 }
 
-/* ... hero lockup · bigger type, sunset-to-dusk underline ... */
+/* ... hero lockup · brand first, CTA clear, energy soft ... */
 .choice-home .hero-brand-line,
 .choice-home .hero-iu {
-  color: var(--sunset-ink);
+  color: var(--crayon-ink);
 }
 
 .choice-home .hero-energy-line {
@@ -7134,15 +7133,14 @@ body.choice-home {
 }
 
 .choice-home .hero-text h1 {
-  font-size: clamp(2.35rem, 7.2vw, 3.5rem);
   letter-spacing: 0;
 }
 
 .choice-home .hero-text h1::after {
-  width: 4.5rem;
-  height: 5px;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--sunset-warm) 0%, var(--lavender) 100%);
+  width: 3.25rem;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--sunset-warm);
 }
 
 /* ... section headings · chalk accent bar ... */
@@ -7315,7 +7313,12 @@ body.choice-home {
 }
 
 .choice-home .hero-text h1::after {
-  background: linear-gradient(90deg, var(--sunflower) 0%, var(--dusty-pink) 55%, var(--sage) 100%);
+  background: var(--sunset-warm);
+}
+
+.choice-home .hero-visual--photo {
+  transform: none;
+  box-shadow: 4px 4px 0 rgba(31, 22, 48, 0.14);
 }
 
 .choice-home .open-invest--hero {
@@ -7590,9 +7593,9 @@ body.choice-home {
   }
 }
 
-/* ── cookie + bagel personality · frames Pick a seat, does not replace it ── */
+/* ── hero CTA spacing · Pick a seat after quiet cookie unit ── */
 .choice-home .hero-text h1 {
-  margin-top: 4px;
+  margin-top: 0;
 }
 
 /* ── archive clarity pass · page-start, equal Scratch CTAs, footprint groups ── */
@@ -7761,4 +7764,66 @@ body.choice-home {
 
 .choice-home .desk-photos-row {
   list-style: none;
+}
+
+/* ── hero fix · one composition (2026-08-06) ── */
+.choice-home .hero--choice {
+  gap: 24px 28px;
+}
+
+.choice-home .hero-visual,
+.choice-home .hero-visual--photo {
+  transform: none !important;
+  animation: none !important;
+}
+
+.choice-home .hero-brand-line {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: clamp(1.55rem, 4.2vw, 2.05rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--crayon-ink);
+  line-height: 1.12;
+  margin: 0 0 4px;
+}
+
+.choice-home .hero-energy-line {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  color: var(--sage);
+  margin: 0 0 12px;
+}
+
+.choice-home .hero-bagel-quote {
+  margin: 0 0 18px;
+}
+
+.choice-home .hero-bagel-quote p {
+  color: var(--crayon-muted);
+  font-size: clamp(0.88rem, 2vw, 0.98rem);
+}
+
+.choice-home .hero-text h1 {
+  font-size: clamp(2.15rem, 6.5vw, 3.1rem);
+  margin: 0 0 8px;
+  max-width: 12ch;
+}
+
+.choice-home .hero-text h1::after {
+  width: 3.25rem;
+  height: 4px;
+  background: var(--sunset-warm);
+}
+
+@media (max-width: 560px) {
+  .choice-home .hero-brand-line {
+    font-size: clamp(1.25rem, 5.5vw, 1.55rem);
+  }
+
+  .choice-home .hero-text h1 {
+    font-size: clamp(1.75rem, 7.5vw, 2.25rem);
+    max-width: none;
+  }
 }
