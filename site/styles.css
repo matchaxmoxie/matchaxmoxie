@@ -3420,11 +3420,14 @@ body.kindergarten-home {
 
   .choice-home .hero-visual,
   .kindergarten-home.choice-home .hero-visual,
-  .kindergarten-home.choice-home .hero-visual--photo {
-    max-width: 220px;
+  .kindergarten-home.choice-home .hero-visual--photo,
+  .choice-home .hero-visual--photo {
+    max-width: 200px;
     width: 100%;
     margin: 0;
     transform: none;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
   }
 
   .choice-home .hero-brand-line,
@@ -3454,12 +3457,11 @@ body.kindergarten-home {
     font-size: clamp(1.75rem, 7.5vw, 2.25rem);
     margin-bottom: 4px;
     max-width: none;
-    padding-bottom: 2px;
+    padding-bottom: 0;
   }
 
   .choice-home .hero-text h1::after {
-    margin-top: 6px;
-    width: 2.5rem;
+    content: none;
   }
 
   .choice-home .hero-hook {
@@ -7331,9 +7333,9 @@ body.choice-home {
 .choice-home .hero-visual--photo {
   transform: none;
   box-shadow: 4px 4px 0 rgba(31, 22, 48, 0.14);
-  max-width: 320px;
+  max-width: 260px;
   width: 100%;
-  min-height: 200px;
+  min-height: 0;
 }
 
 .choice-home .open-invest--hero {
@@ -7775,33 +7777,59 @@ body.choice-home {
 
 /* ── Stanford warmer + IMAGE LOCK · hero calm · desk never opacity-0 ── */
 .choice-home .hero--choice {
-  gap: 28px 36px;
+  gap: 22px 32px;
   align-items: center;
 }
 
+/*
+  Photo frame must fill: aspect-ratio + absolute picture/img + object-fit cover.
+  Do NOT use height:auto on the img — that left the dusty-pink frame empty below
+  a landscape source cropped into a tall 4/5 box.
+*/
 .choice-home .hero-visual,
 .choice-home .hero-visual--photo {
+  position: relative;
   transform: none !important;
   animation: none !important;
   opacity: 1 !important;
   visibility: visible !important;
   display: block;
-  max-width: 280px;
+  aspect-ratio: 4 / 5;
+  max-width: 260px;
   width: 100%;
-  min-height: 200px;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  background: var(--dusty-pink-soft);
   box-shadow: 4px 4px 0 rgba(31, 22, 48, 0.14);
 }
 
-.choice-home .hero-visual--photo picture,
+.choice-home .hero-visual--photo picture {
+  position: absolute;
+  inset: 0;
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
 .choice-home .hero-visual--photo img {
   display: block !important;
   width: 100% !important;
-  height: auto !important;
-  min-height: 180px;
-  object-fit: cover;
-  object-position: center 28%;
+  height: 100% !important;
+  min-height: 0;
+  object-fit: cover !important;
+  object-position: center 22%;
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+.choice-home .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  min-width: 0;
 }
 
 .choice-home .hero-brand-line {
@@ -7812,7 +7840,7 @@ body.choice-home {
   text-transform: none;
   color: var(--crayon-ink);
   line-height: 1.12;
-  margin: 0 0 10px;
+  margin: 0 0 4px;
 }
 
 .choice-home .hero-energy-line {
@@ -7824,7 +7852,7 @@ body.choice-home {
   font-weight: 400;
   font-size: clamp(1.05rem, 2.4vw, 1.2rem);
   color: var(--sage);
-  margin: 0 0 16px;
+  margin: 0 0 12px;
   line-height: 1.35;
 }
 
@@ -7841,7 +7869,7 @@ body.choice-home {
 }
 
 .choice-home .hero-bagel-quote {
-  margin: 0 0 28px;
+  margin: 0 0 16px;
 }
 
 .choice-home .hero-bagel-quote p {
@@ -7851,14 +7879,32 @@ body.choice-home {
 
 .choice-home .hero-text h1 {
   font-size: clamp(1.65rem, 4.5vw, 2.15rem);
-  margin: 0 0 10px;
+  margin: 0 0 6px;
   max-width: 16ch;
+  padding-bottom: 0;
 }
 
+/* Kill the short stub bar — soft matcha lives on the CTA underline instead */
 .choice-home .hero-text h1::after {
-  width: 2.5rem;
-  height: 3px;
-  background: var(--sage);
+  content: none;
+}
+
+.choice-home .hero-cta-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--sage) 58%, transparent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.22em;
+}
+
+.choice-home .hero-cta-link:hover,
+.choice-home .hero-cta-link:focus-visible {
+  color: var(--sage);
+  text-decoration-color: var(--sage);
+}
+
+.choice-home .hero-hook {
+  margin: 0;
 }
 
 /* Kill scroll-reveal hide on desk + sunflower hero forever */
@@ -7892,16 +7938,18 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
   .choice-home .hero,
   .kindergarten-home.choice-home .hero {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
     text-align: left;
   }
 
   .choice-home .hero-visual,
   .choice-home .hero-visual--photo,
   .kindergarten-home.choice-home .hero-visual--photo {
-    max-width: 220px;
+    max-width: 200px;
     width: 100%;
     margin: 0;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
   }
 
   .choice-home .hero-brand-line {
@@ -7911,6 +7959,10 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
   .choice-home .hero-text h1 {
     font-size: clamp(1.45rem, 6vw, 1.85rem);
     max-width: none;
+  }
+
+  .choice-home .hero-text h1::after {
+    content: none;
   }
 
   .desk-photos {
