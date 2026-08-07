@@ -34,9 +34,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260805b">
-<link rel="stylesheet" href="classroom-ux.css?v=20260805-footer">
-<link rel="stylesheet" href="styles.css?v=20260805-footer">
+<link rel="stylesheet" href="a11y.css?v=20260806-archive">
+<link rel="stylesheet" href="classroom-ux.css?v=20260806-archive">
+<link rel="stylesheet" href="styles.css?v=20260806-archive">
 </head>
 <body class="kindergarten-home sunset-home kiss-home scratch-studio-page">
 
@@ -72,6 +72,15 @@
       Not affiliated with Scratch Team. Playground lives right here.
     </p>
   </header>
+
+  <section class="page-start" aria-labelledby="scratch-start-h">
+    <h2 id="scratch-start-h">Quick start</h2>
+    <ol>
+      <li><strong>What this is:</strong> starter projects with play / download / how-to, equal weight.</li>
+      <li><strong>What to do next:</strong> pick a starter below · green flag on this site.</li>
+      <li><strong>Official source:</strong> <a href="https://scratch.mit.edu/" rel="noopener noreferrer" target="_blank">scratch.mit.edu</a> for Create · we are not Scratch Team.</li>
+    </ol>
+  </section>
 
   <section id="scratch-project-picker" class="open-invest scratch-pick-block" aria-labelledby="scratch-pick-heading">
     <h2 id="scratch-pick-heading">Pick a starter</h2>
@@ -140,24 +149,22 @@
       <p id="scratch-pick-why" class="scratch-pick-why"></p>
       <p id="scratch-pick-path" class="scratch-pick-path" hidden></p>
 
-      <p class="scratch-primary-cta">
+      <p id="scratch-pick-practice" class="scratch-pick-practice" hidden></p>
+      <div class="scratch-equal-ctas" role="group" aria-label="Starter actions">
         <a
           id="scratch-pick-play"
-          class="open-cta"
+          class="howto-play"
           href="scratch-play.html?project=jumping"
         >
           Play here · green flag
         </a>
-      </p>
-      <p class="scratch-secondary-ctas">
-        <a id="scratch-pick-download" class="open-link-cta" href="scratch-projects/jumping-game.sb3" download>
-          Download .sb3 for offline remix
+        <a id="scratch-pick-download" class="howto-download" href="scratch-projects/jumping-game.sb3" download>
+          Download .sb3
         </a>
-      </p>
-
-      <p class="scratch-howto-link-wrap">
-        <a id="scratch-pick-go" class="open-link-cta" href="#jumping">Rebuild steps for Jumping →</a>
-      </p>
+        <a id="scratch-pick-go" class="howto-howto" href="#jumping">
+          Open how-to
+        </a>
+      </div>
     </div>
   </section>
 
@@ -186,7 +193,12 @@
         <h2>Jumping Game</h2>
         <p>Space to jump. Land on platforms. Learn motion, gravity, and when to listen for a key.</p>
         <p class="howto-status">How-to ready · starter .sb3</p>
-        <p class="howto-actions"><a class="howto-play" href="scratch-play.html?project=jumping">Play on this site</a> <span class="howto-download-hint">·</span> <a class="howto-download" href="scratch-projects/jumping-game.sb3" download>Download (.sb3)</a></p>
+        <p class="howto-practice">What you&rsquo;ll practice: variables for y speed, forever loops, key events.</p>
+        <div class="howto-actions scratch-equal-ctas" role="group" aria-label="Jumping Game actions">
+          <a class="howto-play" href="scratch-play.html?project=jumping">Play here · green flag</a>
+          <a class="howto-download" href="scratch-projects/jumping-game.sb3" download>Download .sb3</a>
+          <a class="howto-howto" href="#lesson-jumping">Open how-to</a>
+        </div>
       </div>
       <details class="howto-lesson" id="lesson-jumping">
         <summary>Open the how-to</summary>
@@ -234,7 +246,12 @@
         <h2>Catch Game</h2>
         <p>Things fall. You move. Score goes up. Practice forever loops and touching.</p>
         <p class="howto-status">How-to ready · starter .sb3</p>
-        <p class="howto-actions"><a class="howto-play" href="scratch-play.html?project=catch">Play on this site</a> <span class="howto-download-hint">·</span> <a class="howto-download" href="scratch-projects/catch-game.sb3" download>Download (.sb3)</a></p>
+        <p class="howto-practice">What you&rsquo;ll practice: forever loops, touching, score variables.</p>
+        <div class="howto-actions scratch-equal-ctas" role="group" aria-label="Catch Game actions">
+          <a class="howto-play" href="scratch-play.html?project=catch">Play here · green flag</a>
+          <a class="howto-download" href="scratch-projects/catch-game.sb3" download>Download .sb3</a>
+          <a class="howto-howto" href="#lesson-catch">Open how-to</a>
+        </div>
       </div>
       <details class="howto-lesson" id="lesson-catch">
         <summary>Open the how-to</summary>
@@ -282,7 +299,12 @@
         <h2>Pong Game</h2>
         <p>Paddle, ball, bounce. Classic energy with variables and bounce if on edge.</p>
         <p class="howto-status">How-to ready · starter .sb3</p>
-        <p class="howto-actions"><a class="howto-play" href="scratch-play.html?project=pong">Play on this site</a> <span class="howto-download-hint">·</span> <a class="howto-download" href="scratch-projects/pong-game.sb3" download>Download (.sb3)</a></p>
+        <p class="howto-practice">What you&rsquo;ll practice: direction, bounce, paddle follow, lives.</p>
+        <div class="howto-actions scratch-equal-ctas" role="group" aria-label="Pong Game actions">
+          <a class="howto-play" href="scratch-play.html?project=pong">Play here · green flag</a>
+          <a class="howto-download" href="scratch-projects/pong-game.sb3" download>Download .sb3</a>
+          <a class="howto-howto" href="#lesson-pong">Open how-to</a>
+        </div>
       </div>
       <details class="howto-lesson" id="lesson-pong">
         <summary>Open the how-to</summary>
@@ -330,7 +352,12 @@
         <h2>Clicker Game</h2>
         <p>Click for points. Buy upgrades. Variables and costumes sell a tiny game loop.</p>
         <p class="howto-status">How-to ready · starter .sb3</p>
-        <p class="howto-actions"><a class="howto-play" href="scratch-play.html?project=clicker">Play on this site</a> <span class="howto-download-hint">·</span> <a class="howto-download" href="scratch-projects/clicker-game.sb3" download>Download (.sb3)</a></p>
+        <p class="howto-practice">What you&rsquo;ll practice: click events, variables, one upgrade loop.</p>
+        <div class="howto-actions scratch-equal-ctas" role="group" aria-label="Clicker Game actions">
+          <a class="howto-play" href="scratch-play.html?project=clicker">Play here · green flag</a>
+          <a class="howto-download" href="scratch-projects/clicker-game.sb3" download>Download .sb3</a>
+          <a class="howto-howto" href="#lesson-clicker">Open how-to</a>
+        </div>
       </div>
       <details class="howto-lesson" id="lesson-clicker">
         <summary>Open the how-to</summary>
@@ -427,7 +454,12 @@
         <h2>Scrolling Background</h2>
         <p>Make the world move under your sprite. Keep the camera feeling alive.</p>
         <p class="howto-status">How-to ready · starter .sb3</p>
-        <p class="howto-actions"><a class="howto-play" href="scratch-play.html?project=scroll">Play on this site</a> <span class="howto-download-hint">·</span> <a class="howto-download" href="scratch-projects/scrolling-background.sb3" download>Download (.sb3)</a></p>
+        <p class="howto-practice">What you&rsquo;ll practice: looping x motion, costume cycles, layered scroll.</p>
+        <div class="howto-actions scratch-equal-ctas" role="group" aria-label="Scrolling Background actions">
+          <a class="howto-play" href="scratch-play.html?project=scroll">Play here · green flag</a>
+          <a class="howto-download" href="scratch-projects/scrolling-background.sb3" download>Download .sb3</a>
+          <a class="howto-howto" href="#lesson-scroll">Open how-to</a>
+        </div>
       </div>
       <details class="howto-lesson" id="lesson-scroll">
         <summary>Open the how-to</summary>
@@ -474,7 +506,12 @@
         <h2>Virtual Pet</h2>
         <p>Feed, play, rest. Hunger and mood as kid-friendly state.</p>
         <p class="howto-status">How-to ready · starter .sb3</p>
-        <p class="howto-actions"><a class="howto-play" href="scratch-play.html?project=pet">Play on this site</a> <span class="howto-download-hint">·</span> <a class="howto-download" href="scratch-projects/virtual-pet.sb3" download>Download (.sb3)</a></p>
+        <p class="howto-practice">What you&rsquo;ll practice: state variables, buttons, timers.</p>
+        <div class="howto-actions scratch-equal-ctas" role="group" aria-label="Virtual Pet actions">
+          <a class="howto-play" href="scratch-play.html?project=pet">Play here · green flag</a>
+          <a class="howto-download" href="scratch-projects/virtual-pet.sb3" download>Download .sb3</a>
+          <a class="howto-howto" href="#lesson-pet">Open how-to</a>
+        </div>
       </div>
       <details class="howto-lesson" id="lesson-pet">
         <summary>Open the how-to</summary>
@@ -523,7 +560,12 @@
         <h2>Story</h2>
         <p>Scenes, say blocks, and wait. Narrative structure as code.</p>
         <p class="howto-status">How-to ready · starter .sb3</p>
-        <p class="howto-actions"><a class="howto-play" href="scratch-play.html?project=story">Play on this site</a> <span class="howto-download-hint">·</span> <a class="howto-download" href="scratch-projects/story.sb3" download>Download (.sb3)</a></p>
+        <p class="howto-practice">What you&rsquo;ll practice: scenes, broadcasts, one choice fork.</p>
+        <div class="howto-actions scratch-equal-ctas" role="group" aria-label="Story actions">
+          <a class="howto-play" href="scratch-play.html?project=story">Play here · green flag</a>
+          <a class="howto-download" href="scratch-projects/story.sb3" download>Download .sb3</a>
+          <a class="howto-howto" href="#lesson-story">Open how-to</a>
+        </div>
       </div>
       <details class="howto-lesson" id="lesson-story">
         <summary>Open the how-to</summary>
@@ -571,7 +613,12 @@
         <h2>Character Designer</h2>
         <p>Mix costumes, hats, and colors. Layering without blank-page panic.</p>
         <p class="howto-status">How-to ready · starter .sb3</p>
-        <p class="howto-actions"><a class="howto-play" href="scratch-play.html?project=character">Play on this site</a> <span class="howto-download-hint">·</span> <a class="howto-download" href="scratch-projects/character-designer.sb3" download>Download (.sb3)</a></p>
+        <p class="howto-practice">What you&rsquo;ll practice: costumes, layers, next-costume buttons.</p>
+        <div class="howto-actions scratch-equal-ctas" role="group" aria-label="Character Designer actions">
+          <a class="howto-play" href="scratch-play.html?project=character">Play here · green flag</a>
+          <a class="howto-download" href="scratch-projects/character-designer.sb3" download>Download .sb3</a>
+          <a class="howto-howto" href="#lesson-character">Open how-to</a>
+        </div>
       </div>
       <details class="howto-lesson" id="lesson-character">
         <summary>Open the how-to</summary>
@@ -653,8 +700,8 @@
     · <span class="sc" lang="zh-Hans">龙</span>
   </p>
 </footer>
-<script src="classroom-ux.js?v=20260805-cookie-align" defer></script>
-<script src="invest-return.js?v=20260805-cookie-align" defer></script>
+<script src="classroom-ux.js?v=20260806-archive" defer></script>
+<script src="invest-return.js?v=20260806-archive" defer></script>
 <script>
   // dian ji suo lue tu mao dian shi，zi dong zhan kai dui ying de details jiao cheng mian ban
   document.querySelectorAll('a[href^="#lesson-"]').forEach(function (link) {

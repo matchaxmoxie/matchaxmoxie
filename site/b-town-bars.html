@@ -26,17 +26,44 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260805b">
-<link rel="stylesheet" href="classroom-ux.css?v=20260805-footer">
-<link rel="stylesheet" href="styles.css?v=20260805-footer">
+<link rel="stylesheet" href="a11y.css?v=20260806-archive">
+<link rel="stylesheet" href="classroom-ux.css?v=20260806-archive">
+<link rel="stylesheet" href="styles.css?v=20260806-archive">
 <style>
-  .bars-page .path-lede { max-width: 36ch; }
+  .bars-page .path-lede { max-width: 40ch; }
   .bars-persona {
     margin: 8px 0 0;
     font-size: 0.9rem;
     color: var(--crayon-muted);
     max-width: 44ch;
     line-height: 1.4;
+  }
+  .bars-start {
+    margin: 0 0 24px;
+    padding: 14px 16px;
+    max-width: 40rem;
+    background: #fffaf4;
+    border: 2px solid rgba(31, 22, 48, 0.14);
+    border-left: 5px solid var(--sunset-warm);
+  }
+  .bars-start h2 {
+    font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+    font-size: 1.15rem;
+    color: var(--crayon-ink);
+    margin: 0 0 8px;
+  }
+  .bars-start ol {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--crayon-ink);
+    line-height: 1.45;
+  }
+  .bars-start li { margin-bottom: 4px; }
+  .bars-verified {
+    margin: 0 0 20px;
+    font-size: 0.88rem;
+    color: var(--crayon-muted);
+    max-width: 44ch;
   }
   .bars-flexes {
     display: flex;
@@ -60,13 +87,13 @@
   .bars-section {
     margin: 0 0 28px;
   }
-  .bars-section h2 {
+  .bars-section > h2 {
     font-family: "Cooper Black", "Cooper Std", Georgia, serif;
     font-size: clamp(1.35rem, 4vw, 1.7rem);
     color: var(--crayon-ink);
     margin: 0 0 12px;
   }
-  .bars-section h2::after {
+  .bars-section > h2::after {
     content: "";
     display: block;
     width: 3rem;
@@ -84,7 +111,7 @@
   @media (min-width: 560px) {
     .bar-grid { grid-template-columns: repeat(2, 1fr); }
   }
-  .bar-grid article {
+  .bar-card {
     min-height: 88px;
     padding: 14px 16px;
     background: #fffaf4;
@@ -92,69 +119,61 @@
     border-left: 5px solid var(--sunset-warm);
     box-shadow: 3px 3px 0 rgba(31, 22, 48, 0.08);
   }
-  .bar-grid article[data-kind="cred"] { border-left-color: var(--lavender); }
-  .bar-grid article[data-kind="chill"] { border-left-color: var(--jade); }
-  .bar-name {
+  .bar-card[data-kind="cred"] { border-left-color: var(--lavender); }
+  .bar-card[data-kind="chill"] { border-left-color: var(--jade); }
+  .bar-card h3 {
     font-family: "Cooper Black", "Cooper Std", Georgia, serif;
     font-size: 1.15rem;
     color: var(--crayon-ink);
     line-height: 1.2;
+    margin: 0;
   }
   .bar-aka {
     font-size: 0.8rem;
     font-weight: 700;
     color: var(--sunset-ink);
-    margin-top: 2px;
+    margin: 2px 0 0;
   }
-  .bar-tip {
+  .bar-card dl {
+    margin: 8px 0 0;
+  }
+  .bar-card dt {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--crayon-muted);
+    margin: 6px 0 0;
+  }
+  .bar-card dd {
+    margin: 2px 0 0;
     font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
     font-size: 0.95rem;
-    color: var(--crayon-muted);
-    margin-top: 6px;
+    color: var(--crayon-ink);
     line-height: 1.35;
   }
-  .week-grid {
-    list-style: none;
-    display: grid;
-    gap: 8px;
-    margin: 0;
-    padding: 0;
-  }
-  @media (min-width: 560px) {
-    .week-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  .week-grid li {
-    display: flex;
-    gap: 10px;
-    align-items: baseline;
-    min-height: 48px;
-    padding: 10px 12px;
-    background: #fffaf4;
-    border: 2px solid rgba(31, 22, 48, 0.12);
-  }
-  .week-day {
-    font-family: "Cooper Black", "Cooper Std", Georgia, serif;
-    color: var(--sunset-ink);
-    min-width: 3.2rem;
-  }
-  .week-tip {
-    font-size: 0.95rem;
-    color: var(--crayon-ink);
-    line-height: 1.3;
-  }
+  .week-list,
   .route-list {
     margin: 0;
-    padding-left: 1.2rem;
+    padding-left: 1.35rem;
     color: var(--crayon-ink);
     line-height: 1.55;
-    max-width: 42ch;
+    max-width: 46ch;
   }
-  .route-list li { margin-bottom: 6px; }
+  .week-list li,
+  .route-list li {
+    margin-bottom: 8px;
+  }
+  .week-day,
+  .route-time {
+    font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+    color: var(--sunset-ink);
+  }
   .bars-note {
     font-size: 0.9rem;
     color: var(--crayon-muted);
     max-width: 40ch;
-    margin: 8px 0 0;
+    margin: 10px 0 0;
   }
   .bars-next {
     margin: 8px 0 32px;
@@ -191,7 +210,7 @@
     font-weight: 700;
   }
   @media (prefers-reduced-motion: reduce) {
-    .bar-grid article { transition: none; }
+    .bar-card { transition: none; }
   }
 </style>
 </head>
@@ -214,13 +233,26 @@
     <p class="path-kicker">matchaxmoxie · <span class="sc" lang="zh-Hans">凤凰</span> · 21+</p>
     <h1>b-town bars</h1>
     <p class="path-lede">
-      Kirkwood crawl · six blocks · say Kok, not the full name.
+      Kirkwood crawl cheat sheet · six blocks · say Kok, not the full name.
     </p>
     <p class="bars-persona">
       <span class="sc" lang="zh-Hans">凤凰</span> / phoenix = this FASE MAP classroom site.
       <span class="sc" lang="zh-Hans">龙</span> / dragon = my builder site on jadexzhao.
     </p>
   </header>
+
+  <section class="bars-start" aria-labelledby="bars-start-h">
+    <h2 id="bars-start-h">Quick start</h2>
+    <ol>
+      <li><strong>What this is:</strong> a local 21+ cheat sheet for the strip, not a hire page.</li>
+      <li><strong>What to do next:</strong> skim the strip cards, then pick a night from the weekly rundown.</li>
+      <li><strong>Sources:</strong> hours and deals change · check the venue before you go.</li>
+    </ol>
+  </section>
+
+  <p class="bars-verified">
+    Last verified · Spring 2025 student notes. Specials move. Ask a friend who was there last week.
+  </p>
 
   <ul class="bars-flexes" aria-label="Local flexes">
     <li>call it b-town</li>
@@ -233,55 +265,111 @@
     <h2 id="strip-h">the strip</h2>
     <ul class="bar-grid">
       <li>
-        <article>
-          <p class="bar-name">Kok</p>
-          <p class="bar-aka">Kilroy&rsquo;s on Kirkwood · 502 E Kirkwood</p>
-          <p class="bar-tip">the default. patio out back. &ldquo;you going to Kok?&rdquo;</p>
+        <article class="bar-card" aria-labelledby="bar-kok">
+          <h3 id="bar-kok">Kok</h3>
+          <p class="bar-aka">Kilroy&rsquo;s on Kirkwood</p>
+          <dl>
+            <dt>Address</dt>
+            <dd>502 E Kirkwood</dd>
+            <dt>Vibe</dt>
+            <dd>The default. Patio out back.</dd>
+            <dt>Tip</dt>
+            <dd>Say it like a local: &ldquo;you going to Kok?&rdquo;</dd>
+          </dl>
         </article>
       </li>
       <li>
-        <article>
-          <p class="bar-name">Sports</p>
-          <p class="bar-aka">Kilroy&rsquo;s Sports · 319 N Walnut</p>
-          <p class="bar-tip">five rooms: Jungle, Atrium, main, rooftop, ice bar. Thu–Sat main ~9pm–3am. not the default.</p>
+        <article class="bar-card" aria-labelledby="bar-sports">
+          <h3 id="bar-sports">Sports</h3>
+          <p class="bar-aka">Kilroy&rsquo;s Sports</p>
+          <dl>
+            <dt>Address</dt>
+            <dd>319 N Walnut</dd>
+            <dt>Vibe</dt>
+            <dd>Five rooms: Jungle, Atrium, main, rooftop, ice bar. Bigger energy, not the default.</dd>
+            <dt>Tip</dt>
+            <dd>Thu–Sat main ~9pm–3am when you want the rooms, not every night.</dd>
+          </dl>
         </article>
       </li>
       <li>
-        <article>
-          <p class="bar-name">Brothers</p>
-          <p class="bar-tip">$3 burger Tuesdays</p>
+        <article class="bar-card" aria-labelledby="bar-brothers">
+          <h3 id="bar-brothers">Brothers</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Kirkwood strip · near the walk</dd>
+            <dt>Vibe</dt>
+            <dd>Casual food-first stop on the crawl.</dd>
+            <dt>Tip</dt>
+            <dd>$3 burger Tuesdays when the deal is on.</dd>
+          </dl>
         </article>
       </li>
       <li>
-        <article>
-          <p class="bar-name">Stairs</p>
+        <article class="bar-card" aria-labelledby="bar-stairs">
+          <h3 id="bar-stairs">Stairs</h3>
           <p class="bar-aka">Upstairs Pub</p>
-          <p class="bar-tip">turns dance-y late</p>
+          <dl>
+            <dt>Address</dt>
+            <dd>Kirkwood strip · look for the stairs</dd>
+            <dt>Vibe</dt>
+            <dd>Starts chill, turns dance-y late.</dd>
+            <dt>Tip</dt>
+            <dd>Show later if you want the dance floor, not the early quiet.</dd>
+          </dl>
         </article>
       </li>
       <li>
-        <article data-kind="cred">
-          <p class="bar-name">Dunnkirk</p>
-          <p class="bar-tip">speakeasy behind Stairs · cocktails / date night · say it like you&rsquo;ve been</p>
+        <article class="bar-card" data-kind="cred" aria-labelledby="bar-dunnkirk">
+          <h3 id="bar-dunnkirk">Dunnkirk</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Speakeasy behind Stairs</dd>
+            <dt>Vibe</dt>
+            <dd>Cocktails / date night · quieter than the strip default.</dd>
+            <dt>Tip</dt>
+            <dd>Say it like you&rsquo;ve been. Cred lives here.</dd>
+          </dl>
         </article>
       </li>
       <li>
-        <article>
-          <p class="bar-name">Yogi&rsquo;s</p>
-          <p class="bar-tip">screens everywhere</p>
+        <article class="bar-card" aria-labelledby="bar-yogis">
+          <h3 id="bar-yogis">Yogi&rsquo;s</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Kirkwood strip</dd>
+            <dt>Vibe</dt>
+            <dd>Screens everywhere · game-day energy.</dd>
+            <dt>Tip</dt>
+            <dd>Go when you want a game on, not a quiet talk.</dd>
+          </dl>
         </article>
       </li>
       <li>
-        <article>
-          <p class="bar-name">Louie&rsquo;s</p>
+        <article class="bar-card" aria-labelledby="bar-louies">
+          <h3 id="bar-louies">Louie&rsquo;s</h3>
           <p class="bar-aka">Buffalouie&rsquo;s · the Gables</p>
-          <p class="bar-tip">best wings</p>
+          <dl>
+            <dt>Address</dt>
+            <dd>The Gables · near Stairs</dd>
+            <dt>Vibe</dt>
+            <dd>Wings first, bar second.</dd>
+            <dt>Tip</dt>
+            <dd>Best wings on this list · order before the late rush.</dd>
+          </dl>
         </article>
       </li>
       <li>
-        <article>
-          <p class="bar-name">The Vault</p>
-          <p class="bar-tip">inside the IMU</p>
+        <article class="bar-card" aria-labelledby="bar-vault">
+          <h3 id="bar-vault">The Vault</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Inside the IMU</dd>
+            <dt>Vibe</dt>
+            <dd>Campus bar · easy meet-up before the strip.</dd>
+            <dt>Tip</dt>
+            <dd>Use it when you&rsquo;re already on campus and want a short hop.</dd>
+          </dl>
         </article>
       </li>
     </ul>
@@ -291,23 +379,44 @@
     <h2 id="chill-h">games / chill</h2>
     <ul class="bar-grid">
       <li>
-        <article data-kind="chill">
-          <p class="bar-name">The Vid</p>
+        <article class="bar-card" data-kind="chill" aria-labelledby="bar-vid">
+          <h3 id="bar-vid">The Vid</h3>
           <p class="bar-aka">Video Saloon</p>
-          <p class="bar-tip">dive · pool · darts · cheap pitchers</p>
+          <dl>
+            <dt>Address</dt>
+            <dd>South of the main strip · walkable</dd>
+            <dt>Vibe</dt>
+            <dd>Dive · pool · darts · cheap pitchers.</dd>
+            <dt>Tip</dt>
+            <dd>End here when you want games over dancing.</dd>
+          </dl>
         </article>
       </li>
       <li>
-        <article data-kind="chill">
-          <p class="bar-name">The Cade</p>
-          <p class="bar-tip">arcade bar · Mario Kart · 21+</p>
+        <article class="bar-card" data-kind="chill" aria-labelledby="bar-cade">
+          <h3 id="bar-cade">The Cade</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Near Kirkwood · arcade bar</dd>
+            <dt>Vibe</dt>
+            <dd>Arcade bar · Mario Kart energy · 21+.</dd>
+            <dt>Tip</dt>
+            <dd>Good mid-route stop between food and the late strip.</dd>
+          </dl>
         </article>
       </li>
       <li>
-        <article data-kind="chill">
-          <p class="bar-name">Nick&rsquo;s</p>
-          <p class="bar-aka">English Hut · 423 E Kirkwood · since 1927</p>
-          <p class="bar-tip">order a sink the biz · biz fries upstairs · don&rsquo;t overthink it</p>
+        <article class="bar-card" data-kind="chill" aria-labelledby="bar-nicks">
+          <h3 id="bar-nicks">Nick&rsquo;s</h3>
+          <p class="bar-aka">English Hut · since 1927</p>
+          <dl>
+            <dt>Address</dt>
+            <dd>423 E Kirkwood</dd>
+            <dt>Vibe</dt>
+            <dd>Classic b-town · food + pint, not a dance floor.</dd>
+            <dt>Tip</dt>
+            <dd>Order a sink the biz · biz fries upstairs · don&rsquo;t overthink it.</dd>
+          </dl>
         </article>
       </li>
     </ul>
@@ -316,65 +425,248 @@
   <section class="bars-section" aria-labelledby="grown-h">
     <h2 id="grown-h">craft / grown-up</h2>
     <ul class="bar-grid">
-      <li><article><p class="bar-name">The Tap</p><p class="bar-tip">400+ beers · brews its own</p></article></li>
-      <li><article><p class="bar-name">Crazy Horse</p><p class="bar-tip">locals dive · 80 beers plaque challenge</p></article></li>
-      <li><article><p class="bar-name">Upland</p><p class="bar-tip">OG Bloomington brewery</p></article></li>
-      <li><article><p class="bar-name">Irish Lion</p><p class="bar-tip">historic Irish pub on Kirkwood</p></article></li>
+      <li>
+        <article class="bar-card" aria-labelledby="bar-tap">
+          <h3 id="bar-tap">The Tap</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Downtown Bloomington</dd>
+            <dt>Vibe</dt>
+            <dd>Beer-first · 400+ taps, brews its own.</dd>
+            <dt>Tip</dt>
+            <dd>Ask for a house pour if the board feels huge.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" aria-labelledby="bar-crazy">
+          <h3 id="bar-crazy">Crazy Horse</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Kirkwood · locals dive</dd>
+            <dt>Vibe</dt>
+            <dd>Locals dive · plaque-challenge energy.</dd>
+            <dt>Tip</dt>
+            <dd>80 beers plaque challenge if you like a slow grind.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" aria-labelledby="bar-upland">
+          <h3 id="bar-upland">Upland</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Near campus · OG Bloomington brewery</dd>
+            <dt>Vibe</dt>
+            <dd>Brewery sit-down · slower night.</dd>
+            <dt>Tip</dt>
+            <dd>Pick this when you want conversation over the strip crawl.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" aria-labelledby="bar-irish">
+          <h3 id="bar-irish">Irish Lion</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Historic Irish pub on Kirkwood</dd>
+            <dt>Vibe</dt>
+            <dd>Pub food + quieter tables than Kok.</dd>
+            <dt>Tip</dt>
+            <dd>Good early dinner before you decide on the strip.</dd>
+          </dl>
+        </article>
+      </li>
     </ul>
   </section>
 
   <section class="bars-section" aria-labelledby="date-h">
     <h2 id="date-h">cocktails / date</h2>
     <ul class="bar-grid">
-      <li><article data-kind="cred"><p class="bar-name">Dunnkirk</p><p class="bar-tip">behind Stairs</p></article></li>
-      <li><article data-kind="cred"><p class="bar-name">Serendipity</p><p class="bar-tip">martinis</p></article></li>
-      <li><article data-kind="cred"><p class="bar-name">C3 · Alchemy · Orbit Room</p><p class="bar-tip">Orbit: pinball + gourmet hot dogs</p></article></li>
+      <li>
+        <article class="bar-card" data-kind="cred" aria-labelledby="bar-dunnkirk-date">
+          <h3 id="bar-dunnkirk-date">Dunnkirk</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Behind Stairs</dd>
+            <dt>Vibe</dt>
+            <dd>Date-night cocktails · same speakeasy as above.</dd>
+            <dt>Tip</dt>
+            <dd>Book the quieter room energy before the strip gets loud.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" data-kind="cred" aria-labelledby="bar-serendipity">
+          <h3 id="bar-serendipity">Serendipity</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Downtown · cocktail bar</dd>
+            <dt>Vibe</dt>
+            <dd>Martini energy · dressier than the strip default.</dd>
+            <dt>Tip</dt>
+            <dd>Go for one good drink, not a full crawl.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" data-kind="cred" aria-labelledby="bar-orbit">
+          <h3 id="bar-orbit">C3 · Alchemy · Orbit Room</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Downtown cluster · Orbit is the easy landmark</dd>
+            <dt>Vibe</dt>
+            <dd>Cocktail / late-bite mix · Orbit: pinball + gourmet hot dogs.</dd>
+            <dt>Tip</dt>
+            <dd>Orbit when you want a snack and a game between bars.</dd>
+          </dl>
+        </article>
+      </li>
     </ul>
   </section>
 
   <section class="bars-section" aria-labelledby="music-h">
     <h2 id="music-h">music / dance</h2>
     <ul class="bar-grid">
-      <li><article><p class="bar-name">The Bird</p><p class="bar-aka">Bluebird</p><p class="bar-tip">real venue · three bars · lines move</p></article></li>
-      <li><article><p class="bar-name">Root Cellar</p><p class="bar-tip">most club-like · karaoke</p></article></li>
-      <li><article><p class="bar-name">Bishop / Blockhouse</p><p class="bar-tip">under the Back Door · honky tonk Tuesdays</p></article></li>
-      <li><article><p class="bar-name">Buskirk-Chumley</p><p class="bar-tip">historic theater · not a bar</p></article></li>
+      <li>
+        <article class="bar-card" aria-labelledby="bar-bird">
+          <h3 id="bar-bird">The Bird</h3>
+          <p class="bar-aka">Bluebird</p>
+          <dl>
+            <dt>Address</dt>
+            <dd>Walnut · real venue</dd>
+            <dt>Vibe</dt>
+            <dd>Real venue · three bars · lines move.</dd>
+            <dt>Tip</dt>
+            <dd>Only if the band&rsquo;s good · check the night before you commit.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" aria-labelledby="bar-root">
+          <h3 id="bar-root">Root Cellar</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Downtown · club-leaning</dd>
+            <dt>Vibe</dt>
+            <dd>Most club-like · karaoke nights.</dd>
+            <dt>Tip</dt>
+            <dd>Show when you want dance floor, not a patio chat.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" aria-labelledby="bar-bishop">
+          <h3 id="bar-bishop">Bishop / Blockhouse</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Under the Back Door</dd>
+            <dt>Vibe</dt>
+            <dd>Downstairs music rooms · honky tonk Tuesdays.</dd>
+            <dt>Tip</dt>
+            <dd>Tuesday honky tonk if that&rsquo;s your mood.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" aria-labelledby="bar-buskirk">
+          <h3 id="bar-buskirk">Buskirk-Chumley</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Historic theater on Kirkwood</dd>
+            <dt>Vibe</dt>
+            <dd>Historic theater · not a bar.</dd>
+            <dt>Tip</dt>
+            <dd>Shows and tickets, not a crawl stop. Listed so you don&rsquo;t confuse it with the strip bars.</dd>
+          </dl>
+        </article>
+      </li>
     </ul>
   </section>
 
   <section class="bars-section" aria-labelledby="townie-h">
     <h2 id="townie-h">townie cred</h2>
     <ul class="bar-grid">
-      <li><article data-kind="cred"><p class="bar-name">The Alley</p><p class="bar-tip">Alley Bar</p></article></li>
-      <li><article data-kind="cred"><p class="bar-name">Atlas</p><p class="bar-aka">Atlas Ballroom</p><p class="bar-tip">skee-ball · photo booth</p></article></li>
-      <li><article data-kind="cred"><p class="bar-name">off-strip locals</p><p class="bar-tip">Sleeper&rsquo;s · Sinkhole · Hoppy Wobbles · Office Lounge</p></article></li>
-      <li><article data-kind="cred"><p class="bar-name">The Back Door</p><p class="bar-tip">Bloomington&rsquo;s queer bar · drag · dance · beloved</p></article></li>
+      <li>
+        <article class="bar-card" data-kind="cred" aria-labelledby="bar-alley">
+          <h3 id="bar-alley">The Alley</h3>
+          <p class="bar-aka">Alley Bar</p>
+          <dl>
+            <dt>Address</dt>
+            <dd>Downtown alley · ask a local</dd>
+            <dt>Vibe</dt>
+            <dd>Townie-leaning · less first-year default.</dd>
+            <dt>Tip</dt>
+            <dd>Go with someone who already knows the door.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" data-kind="cred" aria-labelledby="bar-atlas">
+          <h3 id="bar-atlas">Atlas</h3>
+          <p class="bar-aka">Atlas Ballroom</p>
+          <dl>
+            <dt>Address</dt>
+            <dd>Downtown · ballroom vibe</dd>
+            <dt>Vibe</dt>
+            <dd>Skee-ball · photo booth · playful night.</dd>
+            <dt>Tip</dt>
+            <dd>Good when you want games without The Cade&rsquo;s arcade density.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" data-kind="cred" aria-labelledby="bar-offstrip">
+          <h3 id="bar-offstrip">off-strip locals</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Scattered off the main Kirkwood crawl</dd>
+            <dt>Vibe</dt>
+            <dd>Sleeper&rsquo;s · Sinkhole · Hoppy Wobbles · Office Lounge.</dd>
+            <dt>Tip</dt>
+            <dd>Ask a townie which one fits the night · don&rsquo;t force all four.</dd>
+          </dl>
+        </article>
+      </li>
+      <li>
+        <article class="bar-card" data-kind="cred" aria-labelledby="bar-backdoor">
+          <h3 id="bar-backdoor">The Back Door</h3>
+          <dl>
+            <dt>Address</dt>
+            <dd>Downtown · Bloomington&rsquo;s queer bar</dd>
+            <dt>Vibe</dt>
+            <dd>Drag · dance · beloved.</dd>
+            <dt>Tip</dt>
+            <dd>Show up for the community night, not as a drive-by photo stop.</dd>
+          </dl>
+        </article>
+      </li>
     </ul>
   </section>
 
   <section class="bars-section" aria-labelledby="week-h">
     <h2 id="week-h">weekly soft rundown</h2>
-    <ul class="week-grid">
-      <li><span class="week-day">Mon</span><span class="week-tip">quiet</span></li>
-      <li><span class="week-day">Tue</span><span class="week-tip">$2 Stairs (or Sports / Kok)</span></li>
-      <li><span class="week-day">Wed</span><span class="week-tip">Bird · dollar beers · bands</span></li>
-      <li><span class="week-day">Thu</span><span class="week-tip">Sports</span></li>
-      <li><span class="week-day">Fri</span><span class="week-tip">Stairs / The Vid</span></li>
-      <li><span class="week-day">Sat</span><span class="week-tip">Stairs · Kok into Vid</span></li>
-      <li><span class="week-day">Sun</span><span class="week-tip">rest · sometimes football @ Sports</span></li>
-    </ul>
+    <ol class="week-list">
+      <li><span class="week-day">Mon · evening</span> — quiet · rest or early food</li>
+      <li><span class="week-day">Tue · ~9pm</span> — $2 Stairs (or Sports / Kok)</li>
+      <li><span class="week-day">Wed · night</span> — Bird · dollar beers · bands</li>
+      <li><span class="week-day">Thu · ~9pm</span> — Sports</li>
+      <li><span class="week-day">Fri · late</span> — Stairs / The Vid</li>
+      <li><span class="week-day">Sat · late</span> — Stairs · Kok into Vid</li>
+      <li><span class="week-day">Sun · daytime / evening</span> — rest · sometimes football @ Sports</li>
+    </ol>
     <p class="bars-note">Little 500 weekend in April ... strip goes off early.</p>
   </section>
 
   <section class="bars-section" aria-labelledby="route-h">
     <h2 id="route-h">one soft route</h2>
     <ol class="route-list">
-      <li>~5pm Nick&rsquo;s · sink the biz</li>
-      <li>Brothers if there&rsquo;s a food deal</li>
-      <li>Cade as a mid-route stop</li>
-      <li>Bird only if the band&rsquo;s good</li>
-      <li>Kok + Stairs toward close</li>
-      <li>Vid or food to end</li>
+      <li><span class="route-time">~5pm</span> — Nick&rsquo;s · sink the biz</li>
+      <li><span class="route-time">early evening</span> — Brothers if there&rsquo;s a food deal</li>
+      <li><span class="route-time">mid-route</span> — Cade as a stop between food and late</li>
+      <li><span class="route-time">only if the bill&rsquo;s good</span> — Bird</li>
+      <li><span class="route-time">toward close</span> — Kok + Stairs</li>
+      <li><span class="route-time">end</span> — Vid or food</li>
     </ol>
     <p class="bars-note">Sports for moods / events, not every night.</p>
   </section>
@@ -406,6 +698,6 @@
     · <span class="sc" lang="zh-Hans">龙</span>
   </p>
 </footer>
-<script src="classroom-ux.js?v=20260805-cookie" defer></script>
+<script src="classroom-ux.js?v=20260806-archive" defer></script>
 </body>
 </html>

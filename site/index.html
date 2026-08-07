@@ -35,9 +35,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260805b">
+<link rel="stylesheet" href="a11y.css?v=20260806-archive">
 <link rel="stylesheet" href="classroom-ux.css?v=20260806-matcha">
-<link rel="stylesheet" href="styles.css?v=20260806-hero-quiet">
+<link rel="stylesheet" href="styles.css?v=20260806-archive">
 </head>
 <body class="kindergarten-home sunset-home kiss-home choice-home">
 
@@ -92,7 +92,7 @@
 
   <section id="situation-picker" class="open-invest open-invest--hero" aria-labelledby="situation-heading">
     <h2 id="situation-heading">Pick your seat</h2>
-    <p class="invest-lede">Tap one. Step 1 opens.</p>
+    <p class="invest-lede">Tap one. Next page opens your 6-step path with step 1 ready.</p>
     <p id="situation-pick-status" class="situation-pick-status" aria-live="polite"></p>
     <ul class="situation-choices open-pick-list">
       <li>
@@ -104,7 +104,7 @@
           <img class="open-pick-thumb" src="assets/iu-luddy-ap-scores.jpg" alt="" width="120" height="72" loading="eager" />
           <span class="open-pick-copy">
             <span class="situation-btn-label open-pick-label">AP CSP or curious about code</span>
-            <span class="situation-btn-hint open-pick-hint">Tiny Scratch game first</span>
+            <span class="situation-btn-hint open-pick-hint">Next: checklist step 1 + Scratch tip</span>
             <span class="open-pick-selected" hidden>Selected</span>
           </span>
         </a>
@@ -118,7 +118,7 @@
           <img class="open-pick-thumb" src="assets/iu-career-explore.jpg" alt="" width="120" height="72" loading="eager" />
           <span class="open-pick-copy">
             <span class="situation-btn-label open-pick-label">Undecided major · eyeing Informatics</span>
-            <span class="situation-btn-hint open-pick-hint">Try Luddy notes on for size</span>
+            <span class="situation-btn-hint open-pick-hint">Next: Luddy notes + official bulletin links</span>
             <span class="open-pick-selected" hidden>Selected</span>
           </span>
         </a>
@@ -132,15 +132,16 @@
           <img class="open-pick-thumb" src="assets/iu-orientation-welcome.jpg" alt="" width="120" height="72" loading="eager" />
           <span class="open-pick-copy">
             <span class="situation-btn-label open-pick-label">Visiting IU or already admitted</span>
-            <span class="situation-btn-hint open-pick-hint">Campus prep without the panic</span>
+            <span class="situation-btn-hint open-pick-hint">Next: campus prep path without the panic</span>
             <span class="open-pick-selected" hidden>Selected</span>
           </span>
         </a>
       </li>
     </ul>
-    <p class="situation-cookie-note">
-      Your picks can stay on this device if you say yes to the cookie.
-      Decline and everything still works. Just for this visit.
+    <p class="situation-cookie-note" role="note">
+      <strong>Cookie / localStorage:</strong>
+      your picks can stay on this device if you say yes (no tracking).
+      Decline and everything still works · just for this visit.
     </p>
     <div id="situation-plan" class="situation-plan" hidden>
       <p id="situation-plan-title" class="situation-plan-title"></p>
@@ -174,148 +175,102 @@
       matcha energy:
       <a href="https://www.youtube.com/watch?v=F57P9C4SAW4" rel="noopener noreferrer" target="_blank">California Gurls · Katy Perry (feat. Snoop Dogg)</a><br>
       My podcast for matchaxmoxie: <a href="https://open.spotify.com/show/43gSq07U5M1yyE2ap24HSM" rel="noopener noreferrer" target="_blank">&ldquo;Jaded and Confused&rdquo; with Matcha Moxie</a><br>
-      Fav ice cream this year: Ben &amp; Jerry's Cookie Dough
+      Fav Girl Scout cookie? tell me urs sometime
     </p>
-    <div class="desk-photos-row">
-      <a
-        class="desk-photo-link"
-        href="index.html#situation-picker"
-        aria-labelledby="desk-matcha-4531-cap"
-      >
-        <figure class="photo-frame photo-frame--desk">
-          <picture>
-            <source srcset="assets/matchaxmoxie-4531.webp?v=20260806-desk6" type="image/webp">
-            <img
-              src="assets/matchaxmoxie-4531.jpg?v=20260806-desk6"
-              alt="matchaxmoxie"
-              width="900"
-              height="675"
-              loading="lazy"
-              decoding="async"
-            >
-          </picture>
-          <figcaption id="desk-matcha-4531-cap">
-            matcha energy
-            <span class="visually-hidden"> — home</span>
-          </figcaption>
-        </figure>
-      </a>
-      <a
-        class="desk-photo-link"
-        href="archive.html"
-        aria-labelledby="desk-matcha-3826-cap"
-      >
-        <figure class="photo-frame photo-frame--desk photo-frame--desk-tall">
-          <picture>
-            <source srcset="assets/matchaxmoxie-3826.webp?v=20260806-desk6" type="image/webp">
-            <img
-              src="assets/matchaxmoxie-3826.jpg?v=20260806-desk6"
-              alt="matchaxmoxie"
-              width="675"
-              height="1200"
-              loading="lazy"
-              decoding="async"
-            >
-          </picture>
-          <figcaption id="desk-matcha-3826-cap">
-            bye love u
-            <span class="visually-hidden"> — archive</span>
-          </figcaption>
-        </figure>
-      </a>
-      <a
-        class="desk-photo-link"
-        href="campus-survival.html"
-        aria-labelledby="desk-garden-cap"
-      >
-        <figure class="photo-frame photo-frame--desk photo-frame--desk-tall">
-          <picture>
-            <source srcset="assets/miss-zhao-garden.webp?v=20260805-sun" type="image/webp">
-            <img
-              src="assets/miss-zhao-garden.jpg?v=20260805-sun"
-              alt="matchaxmoxie outdoors in a garden courtyard, smiling with sunglasses on her head"
-              width="506"
-              height="900"
-              loading="lazy"
-              decoding="async"
-            >
-          </picture>
-          <figcaption id="desk-garden-cap">
-            Garden day · soft light
-            <span class="visually-hidden"> — Campus survival notes, Year ’23</span>
-          </figcaption>
-        </figure>
-      </a>
-      <a
-        class="desk-photo-link"
-        href="archive.html"
-        aria-labelledby="desk-lilies-cap"
-      >
-        <figure class="photo-frame photo-frame--desk">
-          <picture>
-            <source srcset="assets/miss-zhao-lilies.webp?v=20260805-sun" type="image/webp">
-            <img
-              src="assets/miss-zhao-lilies.jpg?v=20260805-sun"
-              alt="matchaxmoxie smiling while holding a bouquet of pink and white lilies"
-              width="900"
-              height="900"
-              loading="lazy"
-              decoding="async"
-            >
-          </picture>
-          <figcaption id="desk-lilies-cap">
-            Lilies · after class energy
-            <span class="visually-hidden"> — Archive note</span>
-          </figcaption>
-        </figure>
-      </a>
-      <a
-        class="desk-photo-link"
-        href="footprint.html"
-        aria-labelledby="desk-bandana-cap"
-      >
-        <figure class="photo-frame photo-frame--desk photo-frame--desk-tall">
-          <picture>
-            <source srcset="assets/miss-zhao-bandana.webp?v=20260805-desk4" type="image/webp">
-            <img
-              src="assets/miss-zhao-bandana.jpg?v=20260805-desk4"
-              alt="matchaxmoxie outdoors in a red floral bandana, holding a pink book and a water bottle"
-              width="675"
-              height="1200"
-              loading="lazy"
-              decoding="async"
-            >
-          </picture>
-          <figcaption id="desk-bandana-cap">
-            Book walk · red bandana
-            <span class="visually-hidden"> — Leave a footprint</span>
-          </figcaption>
-        </figure>
-      </a>
-      <a
-        class="desk-photo-link"
-        href="b-town-bars.html"
-        aria-labelledby="desk-rive-cap"
-      >
-        <figure class="photo-frame photo-frame--desk photo-frame--desk-tall">
-          <picture>
-            <source srcset="assets/miss-zhao-rive.webp?v=20260805-desk4" type="image/webp">
-            <img
-              src="assets/miss-zhao-rive.jpg?v=20260805-desk4"
-              alt="matchaxmoxie in a green floral dress, mirror selfie at The Rive"
-              width="675"
-              height="1200"
-              loading="lazy"
-              decoding="async"
-            >
-          </picture>
-          <figcaption id="desk-rive-cap">
-            Floral dress · The Rive
-            <span class="visually-hidden"> — B-town bars notes</span>
-          </figcaption>
-        </figure>
-      </a>
+    <div class="desk-photos-row" role="list">
+      <figure class="photo-frame photo-frame--desk" role="listitem">
+        <picture>
+          <source srcset="assets/matchaxmoxie-4531.webp?v=20260806-desk6" type="image/webp">
+          <img
+            src="assets/matchaxmoxie-4531.jpg?v=20260806-desk6"
+            alt=""
+            width="900"
+            height="675"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <figcaption>matcha energy</figcaption>
+      </figure>
+      <figure class="photo-frame photo-frame--desk photo-frame--desk-tall" role="listitem">
+        <picture>
+          <source srcset="assets/matchaxmoxie-3826.webp?v=20260806-desk6" type="image/webp">
+          <img
+            src="assets/matchaxmoxie-3826.jpg?v=20260806-desk6"
+            alt=""
+            width="675"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <figcaption>bye love u</figcaption>
+      </figure>
+      <figure class="photo-frame photo-frame--desk photo-frame--desk-tall" role="listitem">
+        <picture>
+          <source srcset="assets/miss-zhao-garden.webp?v=20260805-sun" type="image/webp">
+          <img
+            src="assets/miss-zhao-garden.jpg?v=20260805-sun"
+            alt=""
+            width="506"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <figcaption>Garden day · soft light</figcaption>
+      </figure>
+      <figure class="photo-frame photo-frame--desk" role="listitem">
+        <picture>
+          <source srcset="assets/miss-zhao-lilies.webp?v=20260805-sun" type="image/webp">
+          <img
+            src="assets/miss-zhao-lilies.jpg?v=20260805-sun"
+            alt=""
+            width="900"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <figcaption>Lilies · after class energy</figcaption>
+      </figure>
+      <figure class="photo-frame photo-frame--desk photo-frame--desk-tall" role="listitem">
+        <picture>
+          <source srcset="assets/miss-zhao-bandana.webp?v=20260805-desk4" type="image/webp">
+          <img
+            src="assets/miss-zhao-bandana.jpg?v=20260805-desk4"
+            alt=""
+            width="675"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <figcaption>Book walk · red bandana</figcaption>
+      </figure>
+      <figure class="photo-frame photo-frame--desk photo-frame--desk-tall" role="listitem">
+        <picture>
+          <source srcset="assets/miss-zhao-rive.webp?v=20260805-desk4" type="image/webp">
+          <img
+            src="assets/miss-zhao-rive.jpg?v=20260805-desk4"
+            alt=""
+            width="675"
+            height="1200"
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+        <figcaption>Floral dress · The Rive</figcaption>
+      </figure>
     </div>
+    <p class="desk-photos-nav-soft">
+      Real doors live above ·
+      <a href="#situation-picker">pick a seat</a>
+      · <a href="archive.html">archive</a>
+      · <a href="footprint.html">footprint</a>
+      · <a href="b-town-bars.html">b-town bars</a>
+      · <a href="campus-survival.html">campus survival</a>.
+    </p>
   </section>
 
 </main>
@@ -335,7 +290,7 @@
     · <span class="sc" lang="zh-Hans">龙</span>
   </p>
 </footer>
-<script src="classroom-ux.js?v=20260806-matcha-energy" defer></script>
-<script src="invest-return.js?v=20260806-matcha-energy" defer></script>
+<script src="classroom-ux.js?v=20260806-archive" defer></script>
+<script src="invest-return.js?v=20260806-archive" defer></script>
 </body>
 </html>

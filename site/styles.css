@@ -7594,3 +7594,171 @@ body.choice-home {
 .choice-home .hero-text h1 {
   margin-top: 4px;
 }
+
+/* ── archive clarity pass · page-start, equal Scratch CTAs, footprint groups ── */
+.page-start {
+  margin: 0 0 24px;
+  padding: 14px 16px;
+  max-width: 42rem;
+  background: #fffaf4;
+  border: 2px solid rgba(31, 22, 48, 0.14);
+  border-left: 5px solid var(--sunset-warm, #E0763A);
+}
+
+.page-start h2 {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1.15rem;
+  color: var(--crayon-ink, #1F1630);
+  margin: 0 0 8px;
+}
+
+.page-start ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--crayon-ink, #1F1630);
+  line-height: 1.45;
+  max-width: 48ch;
+}
+
+.page-start li {
+  margin-bottom: 4px;
+}
+
+.page-start-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: center;
+  margin: 12px 0 8px;
+}
+
+.page-start-ctas .open-cta,
+.page-start-ctas .open-link-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 16px;
+}
+
+.page-start-more {
+  margin: 8px 0 0;
+  font-size: 0.95rem;
+  color: var(--crayon-muted, #4a3f5c);
+  line-height: 1.45;
+  max-width: 48ch;
+}
+
+.advice-why-order {
+  margin: 0 0 14px;
+  max-width: 58ch;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--crayon-ink, #1F1630);
+}
+
+.ap-credit-table {
+  width: 100%;
+  max-width: 52rem;
+}
+
+.ap-credit-table caption {
+  caption-side: top;
+  text-align: left;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.92rem;
+  color: var(--crayon-muted, #4a3f5c);
+  padding-bottom: 0.55rem;
+  line-height: 1.4;
+}
+
+.scratch-equal-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0.55rem 0 0;
+}
+
+.scratch-studio-page .scratch-equal-ctas .howto-play,
+.scratch-studio-page .scratch-equal-ctas .howto-download,
+.scratch-studio-page .scratch-equal-ctas .howto-howto,
+.scratch-pick-reveal .scratch-equal-ctas .howto-play,
+.scratch-pick-reveal .scratch-equal-ctas .howto-download,
+.scratch-pick-reveal .scratch-equal-ctas .howto-howto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 7.5rem;
+  padding: 0.45rem 0.85rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  touch-action: manipulation;
+  border: 3px solid var(--crayon-ink, #1F1630);
+}
+
+.scratch-studio-page .howto-howto,
+.scratch-pick-reveal .howto-howto {
+  color: var(--dusk, #2A1F3D);
+  background: transparent;
+  box-shadow: none;
+}
+
+.scratch-studio-page .howto-howto:hover,
+.scratch-studio-page .howto-howto:focus-visible,
+.scratch-pick-reveal .howto-howto:hover,
+.scratch-pick-reveal .howto-howto:focus-visible {
+  background: var(--coral-ink, #9A3D32);
+  color: #fff8f0;
+  outline: 3px solid var(--focus-ring, #2A1F3D);
+  outline-offset: 2px;
+}
+
+.scratch-studio-page .howto-practice,
+.scratch-pick-practice {
+  margin: 0.35rem 0 0;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--crayon-muted, #4a3f5c);
+}
+
+.fp-groups {
+  display: grid;
+  gap: 16px;
+  margin: 12px 0 16px;
+  max-width: 42rem;
+}
+
+.fp-group {
+  margin: 0;
+  padding: 12px 14px;
+  border: 2px solid rgba(31, 22, 48, 0.14);
+  background: #fffaf4;
+}
+
+.fp-group legend {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--crayon-ink, #1F1630);
+  padding: 0 4px;
+}
+
+.desk-photos-nav-soft {
+  margin: 14px 0 0;
+  max-width: 48ch;
+  font-size: 0.92rem;
+  color: var(--crayon-muted, #4a3f5c);
+  line-height: 1.45;
+}
+
+.desk-photos-row > .photo-frame--desk {
+  margin: 0;
+}
+
+.choice-home .desk-photos-row {
+  list-style: none;
+}

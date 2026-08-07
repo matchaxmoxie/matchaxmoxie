@@ -32,9 +32,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Cooper+Black&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="a11y.css?v=20260805b">
-<link rel="stylesheet" href="classroom-ux.css?v=20260805-footer">
-<link rel="stylesheet" href="styles.css?v=20260805-footer">
+<link rel="stylesheet" href="a11y.css?v=20260806-archive">
+<link rel="stylesheet" href="classroom-ux.css?v=20260806-archive">
+<link rel="stylesheet" href="styles.css?v=20260806-archive">
 </head>
 <body class="kindergarten-home sunset-home kiss-home guide-page footprint-page">
 
@@ -70,6 +70,15 @@
     </p>
   </header>
 
+  <section class="page-start" aria-labelledby="fp-start-h">
+    <h2 id="fp-start-h">Quick start</h2>
+    <ol>
+      <li><strong>What this is:</strong> a bucket list in three groups · Experience, Build, Share.</li>
+      <li><strong>What to do next:</strong> check one real box today · keyboard works.</li>
+      <li><strong>My notes:</strong> each trail stop keeps a &ldquo;my print so far&rdquo; line under it.</li>
+    </ol>
+  </section>
+
   <aside class="miss-zhao-tip" role="note" aria-label="matchaxmoxie tip">
     <span class="miss-zhao-tip-label">matchaxmoxie tip</span>
     <p>
@@ -97,27 +106,47 @@
     <h2 id="bucket-h">Bucket list · claim a print</h2>
     <p>
       Exact wording from the slide. Tap a box. Watch your count climb.
-      After the cookie, it sticks on this device.
+      Real checkboxes · keyboard operable.
     </p>
     <p id="footprint-progress" class="footprint-progress" hidden>
       <strong><span id="footprint-claimed-count">0</span></strong>
       <span data-footprint-msg>prints claimed · cookie remembered</span>
     </p>
-    <ul class="coord-checklist" aria-label="Leave a footprint bucket list">
-      <li><label for="fp-0"><input type="checkbox" id="fp-0"> Travel</label></li>
-      <li><label for="fp-1"><input type="checkbox" id="fp-1"> Pick up other skills</label></li>
-      <li><label for="fp-2"><input type="checkbox" id="fp-2"> Build a brand</label></li>
-      <li><label for="fp-3"><input type="checkbox" id="fp-3"> Journal</label></li>
-      <li><label for="fp-4"><input type="checkbox" id="fp-4"> Rescue dogs</label></li>
-      <li><label for="fp-5"><input type="checkbox" id="fp-5"> Find someone who doesn&rsquo;t look like you....</label></li>
-      <li><label for="fp-6"><input type="checkbox" id="fp-6"> Create a website, your own QR code, domain.</label></li>
-      <li><label for="fp-7"><input type="checkbox" id="fp-7"> Write an article</label></li>
-      <li><label for="fp-8"><input type="checkbox" id="fp-8"> Start a business or non-profit</label></li>
-      <li><label for="fp-9"><input type="checkbox" id="fp-9"> Give a speech, sing a song, write a poem, play an instrument somewhere other than your apartment.</label></li>
-      <li><label for="fp-10"><input type="checkbox" id="fp-10"> Leave a footprint</label></li>
-    </ul>
-    <p class="situation-cookie-note">
-      These stay on this device if you said yes to the cookie.
+
+    <div class="fp-groups">
+      <fieldset class="fp-group">
+        <legend>Experience</legend>
+        <ul class="coord-checklist" aria-label="Experience prints">
+          <li><label for="fp-0"><input type="checkbox" id="fp-0"> Travel</label></li>
+          <li><label for="fp-1"><input type="checkbox" id="fp-1"> Pick up other skills</label></li>
+          <li><label for="fp-4"><input type="checkbox" id="fp-4"> Rescue dogs</label></li>
+          <li><label for="fp-5"><input type="checkbox" id="fp-5"> Find someone who doesn&rsquo;t look like you....</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="fp-group">
+        <legend>Build</legend>
+        <ul class="coord-checklist" aria-label="Build prints">
+          <li><label for="fp-2"><input type="checkbox" id="fp-2"> Build a brand</label></li>
+          <li><label for="fp-3"><input type="checkbox" id="fp-3"> Journal</label></li>
+          <li><label for="fp-6"><input type="checkbox" id="fp-6"> Create a website, your own QR code, domain.</label></li>
+          <li><label for="fp-7"><input type="checkbox" id="fp-7"> Write an article</label></li>
+          <li><label for="fp-8"><input type="checkbox" id="fp-8"> Start a business or non-profit</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="fp-group">
+        <legend>Share</legend>
+        <ul class="coord-checklist" aria-label="Share prints">
+          <li><label for="fp-9"><input type="checkbox" id="fp-9"> Give a speech, sing a song, write a poem, play an instrument somewhere other than your apartment.</label></li>
+          <li><label for="fp-10"><input type="checkbox" id="fp-10"> Leave a footprint</label></li>
+        </ul>
+      </fieldset>
+    </div>
+
+    <p class="situation-cookie-note" role="note">
+      <strong>Cookie / localStorage:</strong>
+      say yes and these checks stay on this device (no tracking).
       Decline and they last for this visit only.
     </p>
   </section>
@@ -439,7 +468,7 @@
     · <span class="sc" lang="zh-Hans">龙</span>
   </p>
 </footer>
-<script src="classroom-ux.js?v=20260805-cookie-align" defer></script>
-<script src="invest-return.js?v=20260805-cookie-align" defer></script>
+<script src="classroom-ux.js?v=20260806-archive" defer></script>
+<script src="invest-return.js?v=20260806-archive" defer></script>
 </body>
 </html>

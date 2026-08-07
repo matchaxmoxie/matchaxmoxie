@@ -369,7 +369,9 @@
     var countEl = document.getElementById("footprint-claimed-count");
     var countWrap = countEl ? countEl.parentElement : null;
     var banner = document.getElementById("footprint-progress");
-    var boxes = list.querySelectorAll('input[type="checkbox"]');
+    var boxes = document.querySelectorAll(
+      ".footprint-page .coord-checklist input[type=\"checkbox\"]"
+    );
     var saved = loadJson("footprint", {});
 
     function updateCount() {
@@ -432,6 +434,7 @@
       title: "Jumping Game",
       get: "A jumper, a space bar, platforms. Something moves in two minutes.",
       why: "Best first win if you want motion right away.",
+      practice: "variables for y speed, forever loops, key events",
       href: "scratch-studio.html#jumping",
       file: "scratch-projects/jumping-game.sb3",
       pathHref: "informatics-class-of-2027.html#early-heading",
@@ -441,6 +444,7 @@
       title: "Catch Game",
       get: "Scoop falling items before they hit the ground.",
       why: "Forever loops and touching, without a wall of sprites.",
+      practice: "forever loops, touching, score variables",
       href: "scratch-studio.html#catch",
       file: "scratch-projects/catch-game.sb3",
       pathHref: "freshman.html",
@@ -450,6 +454,7 @@
       title: "Pong",
       get: "Paddle, ball, bounce. Classic and quick.",
       why: "Bounce logic without a huge sprite list.",
+      practice: "direction, bounce, paddle follow, lives",
       href: "scratch-studio.html#pong",
       file: "scratch-projects/pong-game.sb3",
     },
@@ -457,6 +462,7 @@
       title: "Clicker",
       get: "Tap for score, then buy one upgrade.",
       why: "Variables click faster here than in a long story.",
+      practice: "click events, variables, one upgrade loop",
       href: "scratch-studio.html#clicker",
       file: "scratch-projects/clicker-game.sb3",
     },
@@ -464,6 +470,7 @@
       title: "Scrolling Background",
       get: "Ground that loops so your hero feels like it is running.",
       why: "When you already like motion and want a world that moves.",
+      practice: "looping x motion, costume cycles, layered scroll",
       href: "scratch-studio.html#scroll",
       file: "scratch-projects/scrolling-background.sb3",
     },
@@ -471,6 +478,7 @@
       title: "Virtual Pet",
       get: "A pet that gets hungry. Feed, play, rest.",
       why: "State and buttons without needing perfect art.",
+      practice: "state variables, buttons, timers",
       href: "scratch-studio.html#pet",
       file: "scratch-projects/virtual-pet.sb3",
     },
@@ -478,6 +486,7 @@
       title: "Story",
       get: "Three scenes, one choice that forks the path.",
       why: "If you like writing more than platformers, start here.",
+      practice: "scenes, broadcasts, one choice fork",
       href: "scratch-studio.html#story",
       file: "scratch-projects/story.sb3",
       pathHref: "footprint.html#bucket",
@@ -487,6 +496,7 @@
       title: "Character Designer",
       get: "Dress-up station: body, hat, shirt. Cycle the looks.",
       why: "Low-pressure art practice before you build a game.",
+      practice: "costumes, layers, next-costume buttons",
       href: "scratch-studio.html#character",
       file: "scratch-projects/character-designer.sb3",
     },
@@ -552,6 +562,16 @@
       if (pickStatus) {
         pickStatus.textContent = pickRememberLabel(restoring, proj.title);
       }
+      var practiceLine = document.getElementById("scratch-pick-practice");
+      if (practiceLine) {
+        if (proj.practice) {
+          practiceLine.hidden = false;
+          practiceLine.textContent = "What you'll practice: " + proj.practice;
+        } else {
+          practiceLine.hidden = true;
+          practiceLine.textContent = "";
+        }
+      }
       if (playLink) {
         playLink.href = "scratch-play.html?project=" + encodeURIComponent(key);
         playLink.removeAttribute("target");
@@ -561,12 +581,11 @@
       if (downloadLink) {
         downloadLink.href = proj.file;
         downloadLink.setAttribute("download", "");
-        downloadLink.textContent =
-          "Download " + proj.title + " (.sb3) for offline remix";
+        downloadLink.textContent = "Download .sb3";
       }
       if (goLink) {
-        goLink.href = "#" + key;
-        goLink.textContent = "Rebuild steps for " + proj.title + " →";
+        goLink.href = "#lesson-" + key;
+        goLink.textContent = "Open how-to";
       }
 
       if (!restoring) {
