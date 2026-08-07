@@ -3135,6 +3135,17 @@ body.kindergarten-home {
   margin: 0 0 6px;
 }
 
+.choice-home .hero-energy-line {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1.35rem, 3.4vw, 1.75rem);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--sage);
+  margin: 0 0 8px;
+}
+
 .choice-home .hero-cookie-line {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-weight: 700;
@@ -3161,6 +3172,17 @@ body.kindergarten-home {
   line-height: 1.4;
   color: var(--crayon-ink);
   margin: 0 0 4px;
+}
+
+.choice-home .hero-bagel-quote .hero-cookie-offer {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--coral-ink);
+  margin: 0 0 6px;
 }
 
 .choice-home .hero-bagel-quote cite {
@@ -3381,6 +3403,11 @@ body.kindergarten-home {
   .choice-home .hero-iu {
     font-size: 0.78rem;
     margin-bottom: 2px;
+  }
+
+  .choice-home .hero-energy-line {
+    font-size: clamp(1.15rem, 5vw, 1.4rem);
+    margin-bottom: 4px;
   }
 
   .choice-home .hero-cookie-line {
@@ -7084,6 +7111,10 @@ body.choice-home {
 .choice-home .hero-brand-line,
 .choice-home .hero-iu {
   color: var(--sunset-ink);
+}
+
+.choice-home .hero-energy-line {
+  color: var(--sage);
 }
 
 .choice-home .hero-cookie-line {
