@@ -3143,23 +3143,23 @@ body.kindergarten-home {
   letter-spacing: 0.01em;
   text-transform: none;
   color: var(--sage);
-  margin: 0 0 8px;
+  margin: 0 0 4px;
 }
 
 .choice-home .hero-cookie-line {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-weight: 700;
-  font-size: clamp(1.05rem, 2.8vw, 1.35rem);
-  line-height: 1.35;
+  font-weight: 400;
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  line-height: 1.4;
   text-transform: none;
   letter-spacing: 0;
-  color: var(--coral-ink);
-  margin: 0 0 10px;
+  color: var(--crayon-muted);
+  margin: 0 0 14px;
   max-width: 36ch;
 }
 
 .choice-home .hero-bagel-quote {
-  margin: 0 0 14px;
+  margin: 0 0 20px;
   padding: 0;
   border: 0;
   max-width: 34ch;
@@ -3407,16 +3407,16 @@ body.kindergarten-home {
 
   .choice-home .hero-energy-line {
     font-size: clamp(1.15rem, 5vw, 1.4rem);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
   }
 
   .choice-home .hero-cookie-line {
-    font-size: clamp(1.15rem, 5.2vw, 1.4rem);
-    margin-bottom: 6px;
+    font-size: 0.92rem;
+    margin-bottom: 10px;
   }
 
   .choice-home .hero-bagel-quote {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
 
   .choice-home .hero-bagel-quote p {
@@ -7118,7 +7118,7 @@ body.choice-home {
 }
 
 .choice-home .hero-cookie-line {
-  color: var(--coral-ink);
+  color: var(--crayon-muted);
 }
 
 .choice-home .hero-text h1 {
@@ -7575,5 +7575,5 @@ body.choice-home {
 
 /* ── cookie + bagel personality · frames Pick a seat, does not replace it ── */
 .choice-home .hero-text h1 {
-  margin-top: 2px;
+  margin-top: 4px;
 }
