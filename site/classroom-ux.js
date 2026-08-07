@@ -550,8 +550,7 @@
 
   var SELECTOR = [
     ".gwc-block",
-    ".photo-frame",
-    ".desk-photos",
+    ".photo-frame:not(.photo-frame--desk)",
     ".kiss-home .quiet-links",
     ".footer-kiss",
     ".journey-year-nav",

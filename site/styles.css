@@ -7345,246 +7345,6 @@ body.choice-home {
   box-shadow: 5px 5px 0 var(--sage);
 }
 
-.desk-photos {
-  margin: 28px 0 12px;
-  padding: 20px 18px 18px;
-  max-width: 560px;
-  background: linear-gradient(160deg, var(--chalk-dust) 0%, var(--sage-wash) 100%);
-  border: 3px solid var(--crayon-ink);
-  box-shadow: 5px 5px 0 var(--dusty-pink);
-}
-
-.desk-photos-heading {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
-  font-weight: 400;
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
-  color: var(--crayon-ink);
-  margin: 0 0 4px;
-}
-
-.desk-photos-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: 1.05rem;
-  color: var(--crayon-muted);
-  margin: 0 0 10px;
-}
-
-.desk-listening {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.45;
-  color: var(--crayon-muted);
-  margin: 0 0 14px;
-  max-width: 40ch;
-}
-
-.desk-photos-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  align-items: end;
-}
-
-/* zheng zhang polaroid ke dian · bu yong kindergarten a xia hua xian */
-.kindergarten-home a.desk-photo-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  border-radius: 2px;
-  outline: none;
-}
-
-.kindergarten-home a.desk-photo-link:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-.kindergarten-home a.desk-photo-link:focus-visible {
-  outline: 4px solid var(--dusk);
-  outline-offset: 4px;
-}
-
-.desk-photo-link .photo-frame--desk {
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.desk-photo-link:hover .photo-frame--desk figcaption,
-.desk-photo-link:focus-visible .photo-frame--desk figcaption {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--dusk);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .desk-photo-link:hover .photo-frame--desk,
-  .desk-photo-link:focus-visible .photo-frame--desk {
-    transform: rotate(-0.8deg) translateY(-2px);
-    box-shadow: 5px 6px 0 var(--sage);
-  }
-
-  .desk-photos-row > .desk-photo-link:nth-child(2):hover .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(2):focus-visible .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(4):hover .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(4):focus-visible .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(6):hover .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(6):focus-visible .photo-frame--desk {
-    transform: rotate(1deg) translateY(-2px);
-    box-shadow: 5px 6px 0 var(--sunflower);
-  }
-
-  .desk-photos-row > .desk-photo-link:nth-child(3):hover .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(3):focus-visible .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(5):hover .photo-frame--desk,
-  .desk-photos-row > .desk-photo-link:nth-child(5):focus-visible .photo-frame--desk {
-    transform: rotate(-1.2deg) translateY(-2px);
-    box-shadow: 5px 6px 0 var(--dusty-pink);
-  }
-}
-
-.photo-frame--desk {
-  margin: 0;
-  box-shadow: 4px 4px 0 var(--sage);
-  transform: rotate(-0.8deg);
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(2) .photo-frame--desk,
-.photo-frame--desk:nth-child(2) {
-  transform: rotate(1deg);
-  box-shadow: 4px 4px 0 var(--sunflower);
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(3) .photo-frame--desk {
-  transform: rotate(-1.1deg);
-  box-shadow: 4px 4px 0 var(--dusty-pink);
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(4) .photo-frame--desk {
-  transform: rotate(0.9deg);
-  box-shadow: 4px 4px 0 var(--sunflower);
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(5) .photo-frame--desk {
-  transform: rotate(-0.7deg);
-  box-shadow: 4px 4px 0 var(--dusty-pink);
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(6) .photo-frame--desk {
-  transform: rotate(1.05deg);
-  box-shadow: 4px 4px 0 var(--sage);
-}
-
-.photo-frame--desk img {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
-  object-position: center 30%;
-  filter: saturate(0.92) sepia(0.06) contrast(1.02);
-}
-
-.photo-frame--desk-tall img {
-  object-position: center 20%;
-  max-height: 220px;
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(1) .photo-frame--desk img {
-  object-position: center 28%;
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(2) .photo-frame--desk img {
-  object-position: center 18%;
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(3) .photo-frame--desk img {
-  object-position: center 18%;
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(4) .photo-frame--desk img {
-  object-position: center 22%;
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(5) .photo-frame--desk img {
-  object-position: center 20%;
-}
-
-.desk-photos-row > .desk-photo-link:nth-child(6) .photo-frame--desk img {
-  object-position: center 22%;
-}
-
-.photo-frame--desk figcaption {
-  padding: 8px 10px 10px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--crayon-ink);
-  background: var(--chalk-dust);
-  border-top: 2px dashed var(--dusty-pink);
-}
-
-@media (max-width: 560px) {
-  .kindergarten-home .hero-visual--photo {
-    max-width: 132px;
-    margin: 0;
-  }
-
-  .desk-photos {
-    padding: 16px 12px 14px;
-    margin-left: 0;
-    margin-right: 0;
-    max-width: none;
-  }
-
-  .desk-photos-row {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .photo-frame--desk img,
-  .photo-frame--desk-tall img {
-    max-height: 148px;
-  }
-
-  .photo-frame--desk figcaption {
-    font-size: 0.68rem;
-    padding: 6px 7px 8px;
-    letter-spacing: 0.02em;
-  }
-
-  .desk-photo-link {
-    min-height: 44px;
-  }
-}
-
-/* Very narrow · stack polaroids so captions stay readable */
-@media (max-width: 360px) {
-  .choice-home .hero,
-  .kindergarten-home.choice-home .hero {
-    grid-template-columns: minmax(88px, 108px) minmax(0, 1fr);
-    gap: 10px 12px;
-  }
-
-  .kindergarten-home .hero-visual--photo {
-    max-width: 108px;
-  }
-
-  .desk-photos-row {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .photo-frame--desk img,
-  .photo-frame--desk-tall img {
-    max-height: 200px;
-  }
-
-  .photo-frame--desk figcaption {
-    font-size: 0.75rem;
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .kindergarten-home .hero-visual--photo {
     animation: kg-photo-settle 0.7s ease both;
@@ -7765,30 +7525,258 @@ body.choice-home {
   padding: 0 4px;
 }
 
+/* ── On the desk · full-width column · linked polaroids · Stanford calm ── */
+.desk-photos {
+  margin: 28px 0 24px;
+  padding: 22px 20px 20px;
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(160deg, var(--chalk-dust) 0%, var(--sage-wash) 100%);
+  border: 3px solid var(--crayon-ink);
+  box-shadow: 5px 5px 0 var(--dusty-pink);
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.desk-photos-heading {
+  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  color: var(--crayon-ink);
+  margin: 0 0 4px;
+}
+
+.desk-photos-lede {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.05rem;
+  color: var(--crayon-muted);
+  margin: 0 0 10px;
+}
+
+.desk-vibe {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.9rem;
+  color: var(--crayon-muted);
+  opacity: 0.85;
+  margin: 16px 0 10px;
+  max-width: 48ch;
+}
+
+.desk-listening {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--crayon-muted);
+  margin: 0 0 12px;
+  max-width: 48ch;
+}
+
+.desk-photos-row {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kindergarten-home a.desk-photo-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 2px;
+  outline: none;
+  min-width: 0;
+  height: 100%;
+}
+
+.kindergarten-home a.desk-photo-link:hover,
+.kindergarten-home a.desk-photo-link:focus-visible {
+  color: inherit;
+  text-decoration: none;
+}
+
+.kindergarten-home a.desk-photo-link:focus-visible {
+  outline: 4px solid var(--dusk);
+  outline-offset: 4px;
+}
+
+.desk-photo-link .photo-frame--desk {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .desk-photo-link:hover .photo-frame--desk,
+  .desk-photo-link:focus-visible .photo-frame--desk {
+    transform: translateY(-3px);
+    box-shadow: 5px 6px 0 var(--sage);
+  }
+}
+
+.photo-frame--desk,
+.choice-home .photo-frame--desk,
+.desk-photos-row > .photo-frame--desk,
+.desk-photo-link .photo-frame--desk {
+  margin: 0;
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: none !important;
+  box-shadow: 4px 4px 0 var(--sage);
+  opacity: 1 !important;
+  visibility: visible !important;
+  background: var(--chalk-dust);
+  border: 4px solid var(--crayon-ink);
+}
+
+.photo-frame--desk picture,
+.choice-home .photo-frame--desk picture {
+  display: block !important;
+  width: 100%;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.photo-frame--desk img,
+.choice-home .photo-frame--desk img,
+.choice-home .photo-frame--desk-tall img {
+  display: block !important;
+  width: 100% !important;
+  height: 220px !important;
+  min-height: 220px !important;
+  max-height: none !important;
+  object-fit: cover;
+  object-position: center 22%;
+  filter: saturate(0.92) sepia(0.06) contrast(1.02);
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.photo-frame--desk figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 11px 12px;
+  margin: 0;
+  flex: 1 1 auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--crayon-ink);
+  background: var(--chalk-dust);
+  border-top: 2px dashed var(--dusty-pink);
+  line-height: 1.35;
+}
+
+.desk-cap-title {
+  display: block;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.78rem;
+}
+
+.desk-cap-where {
+  display: block;
+  color: var(--sage);
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 0.72rem;
+}
+
+.desk-cap-why {
+  display: block;
+  color: var(--crayon-muted);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin-top: 2px;
+  line-height: 1.35;
+}
+
+.desk-photo-link:hover .desk-cap-where,
+.desk-photo-link:focus-visible .desk-cap-where {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .desk-photos-nav-soft {
-  margin: 14px 0 0;
+  margin: 16px 0 0;
   max-width: 48ch;
   font-size: 0.92rem;
   color: var(--crayon-muted, #4a3f5c);
   line-height: 1.45;
 }
 
-.desk-photos-row > .photo-frame--desk {
-  margin: 0;
+/* Desk arrival strip · only paints when linked with #desk-note */
+.desk-arrival {
+  display: none;
+  margin: 0 0 20px;
+  padding: 14px 16px;
+  max-width: none;
+  box-sizing: border-box;
+  background: #fffaf4;
+  border: 3px solid var(--crayon-ink);
+  border-left: 6px solid var(--sage);
+  box-shadow: 4px 4px 0 var(--dusty-pink);
+}
+
+.desk-arrival:target {
   display: block;
+}
+
+.desk-arrival-kicker {
+  margin: 0 0 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+
+.desk-arrival-where,
+.desk-arrival-why {
+  margin: 0 0 6px;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.4;
+  color: var(--crayon-ink);
+  max-width: 48ch;
+}
+
+.desk-arrival-back {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+}
+
+/* Align home column: hero, desk, banner, seat share one left edge */
+.choice-home .hero--choice,
+.choice-home .desk-photos,
+.choice-home .hiatus-banner,
+.choice-home .open-invest--hero {
   width: 100%;
-  min-height: 0;
+  max-width: none;
+  box-sizing: border-box;
 }
 
-.choice-home .desk-photos-row {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.choice-home .hiatus-banner {
+  margin: 0 0 24px;
 }
 
-/* ── Stanford warmer + IMAGE LOCK (2026-08-06) · photos must paint ── */
+/* ── Stanford warmer + IMAGE LOCK · hero calm · desk never opacity-0 ── */
 .choice-home .hero--choice {
   gap: 28px 36px;
+  align-items: center;
 }
 
 .choice-home .hero-visual,
@@ -7798,15 +7786,17 @@ body.choice-home {
   opacity: 1 !important;
   visibility: visible !important;
   display: block;
-  max-width: 320px;
+  max-width: 280px;
   width: 100%;
+  min-height: 200px;
+  box-shadow: 4px 4px 0 rgba(31, 22, 48, 0.14);
 }
 
 .choice-home .hero-visual--photo picture,
 .choice-home .hero-visual--photo img {
   display: block !important;
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
   min-height: 180px;
   object-fit: cover;
   object-position: center 28%;
@@ -7825,7 +7815,6 @@ body.choice-home {
   margin: 0 0 10px;
 }
 
-/* Quiet equation under brand: = matcha energy */
 .choice-home .hero-energy-line {
   display: flex;
   flex-wrap: wrap;
@@ -7872,65 +7861,31 @@ body.choice-home {
   background: var(--sage);
 }
 
-/* Desk gallery · always visible · never collapse / never stay at opacity 0 */
-.choice-home .desk-photos {
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  max-width: min(720px, 100%);
-  margin: 32px 0 20px;
-}
-
-.choice-home .desk-photos-row {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  align-items: stretch;
-}
-
-.choice-home .photo-frame--desk,
-.choice-home .desk-photos-row > .photo-frame--desk {
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  width: 100%;
-  margin: 0;
-  overflow: hidden;
-}
-
-.choice-home .photo-frame--desk picture,
-.choice-home .photo-frame--desk img {
-  display: block !important;
-  width: 100% !important;
-  height: auto !important;
-  min-height: 160px;
-  max-height: 280px;
-  object-fit: cover;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-.choice-home .photo-frame--desk-tall img {
-  max-height: 300px;
-  object-position: center 20%;
-}
-
-/* Kill scroll-reveal hide on desk polaroids + sunflower hero */
+/* Kill scroll-reveal hide on desk + sunflower hero forever */
+html.js-reveal .choice-home .desk-photos,
 html.js-reveal .choice-home .desk-photos.rv,
+html.js-reveal .choice-home .photo-frame--desk,
 html.js-reveal .choice-home .photo-frame--desk.rv,
+html.js-reveal .choice-home .desk-photo-link .photo-frame,
 html.js-reveal .choice-home .hero-visual.rv,
 html.js-reveal .choice-home .hero-visual--photo.rv {
   opacity: 1 !important;
   transform: none !important;
+  visibility: visible !important;
 }
 
-.desk-vibe {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: 0.9rem;
-  color: var(--crayon-muted);
-  opacity: 0.8;
-  margin: 0 0 10px;
-  max-width: 40ch;
+@media (max-width: 720px) {
+  .desk-photos-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .photo-frame--desk img,
+  .choice-home .photo-frame--desk img,
+  .choice-home .photo-frame--desk-tall img {
+    height: 180px !important;
+    min-height: 180px !important;
+  }
 }
 
 @media (max-width: 560px) {
@@ -7958,14 +7913,46 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
     max-width: none;
   }
 
-  .choice-home .desk-photos-row {
-    grid-template-columns: 1fr 1fr;
+  .desk-photos {
+    padding: 16px 12px 14px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .desk-photos-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
 
+  .photo-frame--desk img,
   .choice-home .photo-frame--desk img,
   .choice-home .photo-frame--desk-tall img {
-    min-height: 140px;
-    max-height: 200px;
+    height: 150px !important;
+    min-height: 150px !important;
+  }
+
+  .photo-frame--desk figcaption {
+    padding: 8px 8px 10px;
+  }
+
+  .desk-cap-title {
+    font-size: 0.7rem;
+  }
+
+  .desk-cap-why {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .desk-photos-row {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-frame--desk img,
+  .choice-home .photo-frame--desk img,
+  .choice-home .photo-frame--desk-tall img {
+    height: 200px !important;
+    min-height: 200px !important;
   }
 }
