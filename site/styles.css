@@ -3127,87 +3127,93 @@ body.kindergarten-home {
 .choice-home .hero-brand-line,
 .choice-home .hero-iu {
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--sunset-ink);
-  margin: 0 0 6px;
+  margin: 0 0 4px;
 }
 
 .choice-home .hero-energy-line {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-weight: 400;
-  font-size: clamp(1.35rem, 3.4vw, 1.75rem);
+  font-size: clamp(1.25rem, 3vw, 1.55rem);
   line-height: 1.15;
   letter-spacing: 0.01em;
   text-transform: none;
   color: var(--sage);
-  margin: 0 0 4px;
+  margin: 0 0 2px;
 }
 
+/* vibe whisper — stays, doesn’t fight brand or CTA */
+.choice-home .hero-vibe-line,
 .choice-home .hero-cookie-line {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-weight: 400;
-  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
-  line-height: 1.4;
+  font-size: clamp(0.82rem, 1.8vw, 0.92rem);
+  line-height: 1.35;
   text-transform: none;
   letter-spacing: 0;
   color: var(--crayon-muted);
-  margin: 0 0 14px;
-  max-width: 36ch;
+  opacity: 0.78;
+  margin: 0 0 10px;
+  max-width: 34ch;
 }
 
 .choice-home .hero-bagel-quote {
-  margin: 0 0 20px;
+  margin: 0 0 14px;
   padding: 0;
   border: 0;
-  max-width: 34ch;
+  max-width: 32ch;
 }
 
 .choice-home .hero-bagel-quote p {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  font-size: clamp(0.95rem, 2.2vw, 1.08rem);
   font-style: italic;
-  line-height: 1.4;
+  line-height: 1.35;
   color: var(--crayon-ink);
-  margin: 0 0 4px;
+  margin: 0 0 2px;
 }
 
+/* quiet cookie label — sentence case, not a second brand shout */
 .choice-home .hero-bagel-quote .hero-cookie-offer {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.88rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-size: 0.78rem;
   font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--coral-ink);
-  margin: 0 0 6px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--crayon-muted);
+  opacity: 0.85;
+  margin: 0 0 2px;
 }
 
 .choice-home .hero-bagel-quote cite {
   display: block;
   font-family: "Courier New", Courier, monospace;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   color: var(--crayon-muted);
+  margin-top: 2px;
 }
 
 .choice-home .hero-bagel-quote cite a {
   color: var(--dusk);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 .choice-home .hero-text h1 {
   font-size: clamp(2rem, 6vw, 2.85rem);
   max-width: 18ch;
-  margin-bottom: 14px;
+  margin: 2px 0 10px;
   line-height: 1.08;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .choice-home .hero-text h1::after {
@@ -3215,17 +3221,17 @@ body.kindergarten-home {
   display: block;
   width: 3.5rem;
   height: 4px;
-  margin-top: 12px;
+  margin-top: 10px;
   background: var(--sunset-warm);
 }
 
 .choice-home .hero-hook {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
-  font-size: clamp(1.2rem, 2.8vw, 1.4rem);
-  color: var(--crayon-ink);
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  color: var(--crayon-muted);
   max-width: 34ch;
   margin: 0;
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
 .open-invest--hero .invest-lede {
@@ -3406,37 +3412,42 @@ body.kindergarten-home {
   }
 
   .choice-home .hero-energy-line {
-    font-size: clamp(1.15rem, 5vw, 1.4rem);
-    margin-bottom: 2px;
+    font-size: clamp(1.05rem, 4.5vw, 1.25rem);
+    margin-bottom: 1px;
   }
 
+  .choice-home .hero-vibe-line,
   .choice-home .hero-cookie-line {
-    font-size: 0.92rem;
-    margin-bottom: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
   }
 
   .choice-home .hero-bagel-quote {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .choice-home .hero-bagel-quote p {
-    font-size: 0.98rem;
+    font-size: 0.9rem;
+  }
+
+  .choice-home .hero-bagel-quote .hero-cookie-offer {
+    font-size: 0.72rem;
   }
 
   .choice-home .hero-text h1 {
-    font-size: clamp(1.65rem, 7vw, 2.1rem);
-    margin-bottom: 6px;
+    font-size: clamp(1.7rem, 7.5vw, 2.2rem);
+    margin-bottom: 4px;
     max-width: none;
-    padding-bottom: 6px;
+    padding-bottom: 4px;
   }
 
   .choice-home .hero-text h1::after {
-    margin-top: 8px;
+    margin-top: 6px;
     width: 2.75rem;
   }
 
   .choice-home .hero-hook {
-    font-size: 1.05rem;
+    font-size: 0.92rem;
     max-width: none;
   }
 
@@ -7117,12 +7128,13 @@ body.choice-home {
   color: var(--sage);
 }
 
+.choice-home .hero-vibe-line,
 .choice-home .hero-cookie-line {
   color: var(--crayon-muted);
 }
 
 .choice-home .hero-text h1 {
-  font-size: clamp(2.2rem, 7vw, 3.4rem);
+  font-size: clamp(2.35rem, 7.2vw, 3.5rem);
   letter-spacing: 0;
 }
 
@@ -7271,7 +7283,12 @@ body.choice-home {
   object-position: center 28%;
 }
 
-.kindergarten-home .hero-visual--photo .name-tag {
+/* photo badge removed on choice home — brand lives in hero text only */
+.choice-home .hero-visual--photo .name-tag {
+  display: none;
+}
+
+.kindergarten-home:not(.choice-home) .hero-visual--photo .name-tag {
   top: auto;
   bottom: 8%;
   left: 8%;
