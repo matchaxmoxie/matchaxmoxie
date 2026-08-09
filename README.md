@@ -1,12 +1,26 @@
 # matchaxmoxie · 凤凰 · phoenix · Jade Zhao
 
+**Job of this repo:** live FASE MAP process site + cookie classroom (phoenix room). Matcha green lives here on purpose.
+
+**Front door (hub):** [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) ... resume / narrative. Start there if you only want one link.
+
 **Classroom rules I actually teach:**
 
 1. **If you can’t ELI5 it, you’re not done yet.** (ELI5 = *explain like I’m five* ... plain language, like explaining to a friend who’s new.) Explain the how-to so a freshman (or your past self) gets it.
 2. **If you don’t understand it, learn it.** Curiosity beats pretending. Official IU pages win over vibes.
 3. **Slow progress is the best progress.** One step today. KISS guides, not hustle checklists.
 
-**TLDR:** two sites, same me. [jadexzhao](https://jadexzhao.github.io/jadexzhao/) = **龙 · dragon** (builder · work site). this repo = **凤凰 · phoenix** (matchaxmoxie cookie classroom + FASE MAP archive).
+## where to look
+
+| surface | job |
+|---------|-----|
+| [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) | resume / narrative hub |
+| [jadexzhao](https://jadexzhao.github.io/jadexzhao/) | technical proof · ships (龙 · dragon) |
+| **this site** | FASE MAP process + cookie classroom (凤凰 · phoenix) |
+| [zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) | research + personal essay · code / writing |
+| Instagram [@zhao.langxi](https://instagram.com/zhao.langxi) | photos / behind-the-scenes |
+
+**Brand note:** Potstickers (family restaurant web) and Matcha and Moxie (related brand / content) are separate from this FASE MAP classroom site ... see the hub Work section and [Potstickers](https://sites.google.com/view/potstickers/home). Same me; not the same URL.
 
 IG: [@zhao.langxi](https://instagram.com/zhao.langxi) · live: [matchaxmoxie.github.io](https://matchaxmoxie.github.io/matchaxmoxie/) · builder: [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/) · [resume (PDF)](https://jlzhao.pages.iu.edu/resume.pdf) · email: [jlzhao@iu.edu](mailto:jlzhao@iu.edu)
 
