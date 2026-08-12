@@ -1,142 +1,203 @@
-% Site resume (informatics ATS layout). Build from this directory:
-%   pdflatex -interaction=nonstopmode jade-zhao-resume.tex
-% Copy outputs to ../../site/ per latex/BUILD.md (resume.pdf, jade-zhao-resume.pdf).
+%-------------------------
+% Resume in LaTeX
+% Optimized for readability, ATS compatibility, and concise technical storytelling
+%-------------------------
+\documentclass[letterpaper,11pt]{article}
 
-\documentclass[10pt]{article}
-
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\renewcommand{\familydefault}{\sfdefault}
-
-\usepackage[letterpaper,noheadfoot,left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
 
-\hypersetup{pdftitle={Jade Zhao - Resume}, pdfauthor={Jade Zhao}}
+%----------FONT----------
+\usepackage[sfdefault]{atkinson}
+\usepackage[T1]{fontenc}
 
-\pagestyle{empty}
-\setlength{\parskip}{0pt}
-\setlength{\parindent}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
 \raggedright
-\frenchspacing
+\setlength{\tabcolsep}{0in}
 
-\setlist[itemize]{
-  nosep,
-  leftmargin=1em,
-  labelsep=0.35em,
-  topsep=0.5pt,
-  itemsep=1.25pt,
-  parsep=0pt,
-  partopsep=0pt
-}
-\renewcommand{\labelitemi}{\textbullet}
+%----------SECTION FORMATTING----------
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-\newcommand{\ressection}[1]{%
-  \vspace{4pt plus 1pt minus 0pt}%
-  {\bfseries\fontsize{9.5}{11}\selectfont\MakeUppercase{#1}}\\[-1pt]%
-  \rule{\linewidth}{0.5pt}\\[2pt]%
-}
-
-\newcommand{\exphead}[3]{%
-  \noindent\textbf{#1}\hfill\textit{#3}\par
-  {\small #2}\par
-  \vspace{1.25pt}%
-}
-
-\newcommand{\expgap}{\vspace{3.75pt plus 0.5pt minus 0.5pt}}
-
-\newcommand{\skillline}[2]{\textbf{#1:} #2\par\vspace{1pt}}
-
-\begin{document}
-\linespread{0.97}\selectfont
-\fontsize{10}{11.35}\selectfont
-
-\begin{center}
-  {\LARGE\bfseries Jade Zhao}\\[3pt]
-  {\small
-  Bloomington, IN \textbar\ Open to relocation
-  \textbar\
-  \href{mailto:jlzhao@iu.edu}{\underline{jlzhao@iu.edu}}
-  }\\[2pt]
-  {\small
-  \href{https://www.linkedin.com/in/jadexzhao/}{\underline{linkedin.com/in/jadexzhao}}
-  \textbar\
-  \href{https://github.com/jazhao-ucm}{\underline{github.com/jazhao-ucm}}
-  \textbar\
-  \href{https://jadexzhao.github.io/jadexzhao/}{\underline{jadexzhao.github.io/jadexzhao}}
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
   }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{
+  \resumeItem{#1}\vspace{-4pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}
+}
+
+%----------PDF READABILITY----------
+\pdfgentounicode=1
+
+%-------------------------------------------
+%%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Jade Zhao} \\ \vspace{1pt}
+    \small
+    \href{mailto:jlzhao@iu.edu}{\faEnvelope\ \underline{jlzhao@iu.edu}} $|$
+    \href{https://linkedin.com/in/jadexzhao}{\faLinkedin\ \underline{linkedin.com/in/jadexzhao}} $|$
+    \href{https://github.com/jadexzhao}{\faGithub\ \underline{github.com/jadexzhao}} $|$
+    \href{https://jlzhao.pages.iu.edu/}{\faGlobe\ \underline{jlzhao.pages.iu.edu}}
 \end{center}
 
-\vspace{4.5pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
 
-\ressection{Education}
-\noindent\textbf{Indiana University}, Luddy School of Informatics, Computing, and Engineering\hfill Bloomington, IN\par
-{\small\textit{B.S. Informatics} (Business \& Society), Minor: Business (Kelley) \textbar\ \textbf{GPA: 3.70} \textbar\ Aug 2023 -- May 2027}
-\begin{itemize}
-  \item Hudson \& Holland Scholar (competitive \textbf{full merit scholarship}, tuition and mandatory fees) \textbar\ Dean's List \textbar\ Luddy Direct Admit
-  \item Hutton Honors International Experiences Scholar \textbar\ Study abroad: Universidad Complutense de Madrid, Spring 2026
-  \item Concurrent research, machine learning, and mentoring roles alongside a full course load, 2024--2025
-\end{itemize}
+    \resumeSubheading
+      {Indiana University Bloomington}{Bloomington, IN}
+      {B.S. Informatics, Business Minor \textbar\ Luddy School of Informatics, Computing, and Engineering \textbar\ GPA: 3.50}{Expected May 2027}
+      \resumeItemListStart
+        \resumeItem{\textbf{Hudson and Holland Scholar} (Full Merit) \textbar\ \textbf{First-Generation College Student}}
+        \resumeItem{Study Abroad: \textbf{Universidad Complutense de Madrid}, Spring 2026}
+      \resumeItemListEnd
 
-\ressection{Experience}
+  \resumeSubHeadingListEnd
 
-\exphead{Software Engineer}{Matcha Green Consulting \hfill Remote}{Jan 2026 -- Present}
-\begin{itemize}
-  \item Built full-stack features in TypeScript, React, and Node.js with modular architecture for maintainability
-  \item Developed RESTful APIs with accessibility checks, validation, and secure data handling across the SDLC
-  \item AI-assisted development with human review on all deliverables; WCAG 2.1 AA and secure coding standards
-\end{itemize}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
 
-\expgap
-\exphead{Undergraduate Research Assistant}{Proactive Health Informatics Lab, IU Luddy \hfill Bloomington, IN}{May 2024 -- Dec 2025}
-\begin{itemize}
-  \item Built HIPAA-compliant Python/SQL pipelines for patient data; reduced data entry errors by 30\%
-  \item Shipped real-time monitoring with anomaly detection; cut clinical workload an estimated 25--40\%; ethical AI controls (audit trails, bias detection, oversight)
-  \item Translated mixed-methods findings into design specs for underserved patients; briefed clinical, research, and ops stakeholders to support evidence-based decision-making
-\end{itemize}
+    \resumeSubheading
+      {Website Team Lead}{Jan 2024 -- Present}
+      {\href{https://serveit.luddy.indiana.edu/}{Serve IT Clinic, Luddy School, Indiana University}}{Bloomington, IN}
+      \resumeItemListStart
+        \resumeItem{Lead \textbf{5+ nonprofit web projects} for Bloomington partners without in-house developers; delivered accessible sites meeting \textbf{WCAG 2.1 standards} and \textbf{Python/PostgreSQL ETL pipelines} designed for long-term maintainability.}
+        \resumeItem{Founded \textbf{ServeAI}, a public-interest AI track (PIT-UN); built \textbf{responsible generative AI tools} and plain-language guides to help community organizations adopt AI without compromising trust or accessibility.}
+      \resumeItemListEnd
 
-\expgap
-\exphead{Machine Learning Researcher}{ServeIT Clinic, IU Luddy \hfill Bloomington, IN}{Jan 2024 -- Dec 2025}
-\begin{itemize}
-  \item Led Agile team of five on an adaptive learning platform for ELL and students with learning disabilities; \textbf{deployed to live nonprofit clients}; +45\% user engagement
-  \item Shipped engagement tools for community partners; bias checks, transparent decisions, educator oversight at design time
-  \item AI literacy workshops for 200+ non-technical users; dashboards on engagement, retention, and program impact
-\end{itemize}
+    \resumeSubheading
+      {Marketing \& Web Lead}{Jan 2024 -- Present}
+      {Potstickers}{New Palestine, IN}
+      \resumeItemListStart
+        \resumeItem{Manage social media, marketing, and web presence for a family restaurant; led a \textbf{full website rebuild} using HTML/CSS/JavaScript and content strategy across \textbf{Facebook, Instagram, and TikTok}.}
+        \resumeItem{Developed \textbf{Matcha and Moxie}, a related brand and content project.}
+      \resumeItemListEnd
 
-\expgap
-\exphead{Peer Mentor \& Teaching Assistant}{IU Office of Student Life, Mentoring \& Leadership \hfill Bloomington, IN}{Aug 2023 -- Dec 2025}
-\begin{itemize}
-  \item Mentored 15+ first-gen and low-income students; supported 20\% retention lift among underrepresented groups
-  \item Built tools that unified campus resources; automated advisor workflows to free time for high-impact student support
-  \item Guided students through study abroad and international program applications
-\end{itemize}
+    \resumeSubheading
+      {MAP Coordinator}{Aug 2023 -- Present}
+      {\href{https://studentlife.indiana.edu/}{IU Office of Student Life}}{Bloomington, IN}
+      \resumeItemListStart
+        \resumeItem{Run the \textbf{FASE Mentor Apprenticeship Program} day-to-day, overseeing mentor training, Canvas operations, and communications for \textbf{50+ first-generation and low-income students}.}
+        \resumeItem{Presented on \textbf{student leadership and engagement} at the \textbf{IU Leadership Conference 2025}.}
+      \resumeItemListEnd
 
-\expgap
-\exphead{Web Designer \& Instructor}{Girls Who Code \hfill Indianapolis, IN}{Jan 2018 -- Aug 2023 (pre-college)}
-\begin{itemize}
-  \item Taught coding and digital literacy to 50+ students through workshops and structured sessions
-  \item Facilitated twelve student-led technology projects with inclusive curricula across skill levels
-  \item Mentored 20+ students toward STEM paths through sustained one-on-one coaching
-\end{itemize}
+    \resumeSubheading
+      {Commercial Real Estate Document Support}{Dec 2017 -- Present}
+      {Intentionally Omitted}{Greenfield, IN}
+      \resumeItemListStart
+        \resumeItem{Prepare and redline \textbf{commercial lease agreements} for direct lease deals while maintaining \textbf{accuracy and version control} across long-term documentation.}
+      \resumeItemListEnd
 
-\expgap
-\exphead{Shift Manager}{Potstickers Chinese Restaurant \hfill New Palestine, IN}{May 2020 -- Aug 2023 (pre-college)}
-\begin{itemize}
-  \item Managed front-of-house service, scheduling, and shift handoffs for a family-owned restaurant
-  \item Trained staff, managed guest relations, and upheld service standards during high-volume periods
-  \item Ran inventory checks, vendor handoffs, and closing routines with owners for daily operational continuity
-\end{itemize}
+    \resumeSubheading
+      {Web Designer \& Instructor}{Jan 2018 -- Aug 2023}
+      {\href{https://girlswhocode.com/}{Girls Who Code}}{Indianapolis, IN}
+      \resumeItemListStart
+        \resumeItem{Taught \textbf{front-end fundamentals} and digital literacy to \textbf{50+ students}; mentored \textbf{20+ young women} toward STEM careers through workshops and student-led projects.}
+      \resumeItemListEnd
 
-\ressection{Technical Skills}
-{\small
-\skillline{Technical}{Python, TypeScript, JavaScript, SQL, HTML, CSS, React, Node.js, PostgreSQL, D3.js, Git, GitHub}
-\skillline{Data \& systems}{Real-time systems, HIPAA compliance, ETL, database design, data governance, statistical analysis}
-\skillline{AI \& ethics}{Ethical AI, bias detection, human oversight, LLM orchestration, prompt engineering, audit trails, responsible AI frameworks}
-\skillline{Design \& accessibility}{WCAG 2.1 AA/AAA, Figma, human-centred design, trauma-informed UX, user research}
-\skillline{Professional}{Agile/Scrum, cross-functional leadership, mixed-methods research, technical writing, code review}
-\skillline{Languages}{English (Native)\,\textperiodcentered\,Mandarin (Professional)\,\textperiodcentered\,Fuzhounese (Professional)\,\textperiodcentered\,Spanish (Elementary, improving)}
-\vspace{-4pt}
-}
+    \resumeSubheading
+      {Restaurant Team Member}{May 2017 -- Aug 2023}
+      {Potstickers}{Greenfield, IN}
+      \resumeItemListStart
+        \resumeItem{Worked across restaurant operations by bussing tables, running food, managing the register, and assisting in the kitchen during rushes. Built an early understanding of how systems need to work for the people using them.}
+      \resumeItemListEnd
 
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+  \resumeSubHeadingListStart
+
+    \resumeSubSubheading{\textbf{Technical}}{}
+    \resumeItemListStart
+      \resumeItem{\textbf{Languages:} Python, TypeScript, JavaScript, SQL, HTML/CSS}
+      \resumeItem{\textbf{Frameworks \& Technologies:} React.js, Node.js, PostgreSQL, Git, WCAG 2.1}
+      \resumeItem{\textbf{Tools \& Practices:} Figma, Technical Documentation, Accessibility Compliance, ETL}
+    \resumeItemListEnd
+
+    \vspace{-5pt}
+
+    \resumeSubSubheading{\textbf{Leadership \& Soft Skills}}{}
+    \resumeItemListStart
+      \resumeItem{Contract Review, Social Media Marketing, Mentoring, Content Strategy}
+      \resumeItem{\textbf{Spoken Languages:} English (Native), Fuzhounese (Native), Spanish (Intermediate)}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
 \end{document}
