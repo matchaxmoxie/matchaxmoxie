@@ -7748,12 +7748,29 @@ body.choice-home {
 
 /* Align home column: hero, desk, banner, seat share one left edge */
 .choice-home .hero--choice,
+.choice-home .path-page-header.interior-panel,
+.choice-home .photo-frame--home,
 .choice-home .desk-photos,
 .choice-home .hiatus-banner,
 .choice-home .open-invest--hero {
   width: 100%;
   max-width: none;
   box-sizing: border-box;
+}
+
+/* Home mast uses same panel as your path; keep Fraunces + ocean CTAs */
+.choice-home .path-page-header.interior-panel h1 {
+  font-family: var(--font-display, Fraunces, Georgia, serif);
+  color: var(--ocean-deep, #1e4a63);
+}
+
+.choice-home .path-page-header.interior-panel .path-kicker {
+  color: var(--joy-ink, #8a4a2f);
+}
+
+.choice-home .photo-frame--home {
+  max-width: 22rem;
+  margin: 0 0 28px;
 }
 
 .choice-home .hiatus-banner {
@@ -8286,12 +8303,19 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
   display: none !important;
 }
 
-.theme-matchaxmoxie .site-switcher {
+.theme-matchaxmoxie .site-switcher,
+.footer-kiss .site-switcher {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 0.75rem 1rem;
   margin-top: 0.85rem;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 0.65rem;
+  text-align: center;
+  width: 100%;
 }
 .theme-matchaxmoxie .site-switcher a {
   color: var(--ocean-deep, #1e4a63);
