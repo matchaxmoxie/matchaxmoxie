@@ -7984,3 +7984,45 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
   font-family: var(--font-display), Fraunces, Georgia, serif;
   font-weight: 700;
 }
+
+
+/* -- Audience invite line -- */
+.choice-home .hero-for {
+  margin: 0 0 0.55rem;
+  font-family: "Nunito Sans", system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ocean-deep, #2a5a75);
+  max-width: 28ch;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .choice-home .hero-visual--photo {
+    animation: mx-settle 0.7s ease both;
+  }
+
+  .choice-home .hero-text > * {
+    animation: mx-rise 0.5s ease both;
+  }
+
+  .choice-home .hero-text > *:nth-child(1) { animation-delay: 0.02s; }
+  .choice-home .hero-text > *:nth-child(2) { animation-delay: 0.06s; }
+  .choice-home .hero-text > *:nth-child(3) { animation-delay: 0.1s; }
+  .choice-home .hero-text > *:nth-child(4) { animation-delay: 0.14s; }
+  .choice-home .hero-text > *:nth-child(5) { animation-delay: 0.18s; }
+  .choice-home .hero-text > *:nth-child(6) { animation-delay: 0.22s; }
+
+  .choice-home .desk-photos {
+    animation: mx-rise 0.55s ease 0.2s both;
+  }
+
+  @keyframes mx-settle {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @keyframes mx-rise {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+}
