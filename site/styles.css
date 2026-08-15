@@ -1,81 +1,8 @@
 :root {
-  /* ri luo jiao shi pei se · matchaxmoxie · jin se huang hun */
-  --sunshine: #F4A261;
-  --golden-hour: #F4A261;
-  /* zhuang shi ju se（bian kuang / xi di）；bu yong zuo zheng wen / qian se di shang de lian jie */
-  --sunset-warm: #E0763A;
-  /* wen zi + CTA di se：nai you / bai di ≥4.5:1（#E0763A jin ~3:1） */
-  --sunset-ink: #B8511A;
-  --sunset-glow: rgba(224, 118, 58, 0.14);
-  --coral: #E76F51;
-  /* zheng wen yong shan hu（nai you di ≥4.5:1）；zhuang shi reng yong --coral */
-  --coral-ink: #9A3D32;
-  --peach: #FFB088;
-  --lavender: #7A6BA8;
-  /* lian jie/dao hang mo se：shen zi，nai you/peach di shang ying ke du */
-  --dusk: #2A1F3D;
-  --sky-blue: #7A6BA8;
-  --grass-green: #E76F51;
-  --apple-red: #C45C4A;
-  --chalkboard: #2F2942;
-  /* matcha classroom cream · pure cream (not crimson wash, not magenta takeover) */
-  --chalk-dust: #FFFAF4;
-  --paper-cream: #FFF4E8;
-  --paper-shadow: #D9C4B0;
-  /* zheng wen jin hei · yong hu ke du xing ying xu qiu */
-  --crayon-ink: #1a1a1a;
-  --ink: #1F1630; /* nai you ka pian qiang zhi mo se · a11y */
-  --crayon-muted: #2A1F30;
-
-  /* matcha green lives here on purpose · 凤凰 phoenix brand */
-  --matcha-deep: #006B45;
-  --matcha-mid: #3D6B4A;
-  --matcha-pale: #E8F0E4;
-  --matcha-ink: #004d32; /* hover / pressed on cream · readable */
-
-  --editorial-dark: var(--crayon-ink);
-  --matcha-ops: var(--matcha-deep);
-  --text-muted: var(--crayon-muted);
-  --bg-soft-warm: var(--paper-cream);
-  /* IU pride accent only · do not wire as site primary */
-  --accent-crimson: #990000;
-
-  /* jiu bian liang bie ming，ying she dao jiao shi zhu ti */
-  --tulip-petal: var(--sunshine);
-  --tulip-deep: var(--dusk);
-  --tulip-blush: var(--paper-cream);
-  --tulip-stem: var(--coral-ink);
-  --tulip-soil: var(--crayon-ink);
-  --tulip-light: var(--paper-cream);
-  --tulip-mist: var(--paper-shadow);
-
-  /* zhong wen dian zhui se：fei cui、zhu sha、jin（wen zi da biao；qian se jin zuo xi di） */
-  --jade: var(--matcha-deep);
-  --jade-soft: var(--matcha-mid);
-  --cinnabar: var(--accent-crimson);
-  --cinnabar-soft: #B8452F;
-  --gold: #7A5F14;
-  --gold-soft: #E8D5A3;
-  --matcha-wash: var(--matcha-pale);
-  /* xiang ri kui / hua yuan wen nuan dian zhui · yan xu ri luo jiao shi */
-  --sunflower: #E8C547;
-  --sage: #7A8F72;
-  --sage-wash: #E8EDE4;
-  --dusty-pink: #C9898F;
-  --dusty-pink-soft: #F3E4E2;
-
-  /* wen zi yan se */
-  --text-primary: var(--editorial-dark);
-  --text-secondary: var(--text-muted);
-  --text-ghost: #3D3232;
-
-  /* gong neng se · matcha-first links */
-  --link: var(--matcha-deep);
-  --link-hover: var(--matcha-ink);
-  --focus: var(--dusk);
-  --focus-ring: var(--dusk); /* nai you di jiao dian huan · jian a11y.css */
-  --border: var(--paper-shadow);
-  --shadow: rgba(26, 26, 26, 0.14);
+  /*
+   * Colour / brand tokens: brand-tokens.css (IU gear pink-cream + crimson).
+   * Sibling may swap that file for a shared import. Layout + type stay here.
+   */
 
   /* you er yuan shi bu ju can shu */
   --nav-h: 52px;
@@ -164,18 +91,18 @@ body {
   background-image:
     linear-gradient(
       180deg,
-      rgba(244, 162, 97, 0.1) 0%,
-      rgba(122, 107, 168, 0.06) 42%,
-      rgba(255, 250, 244, 0.94) 100%
+      rgba(153, 0, 0, 0.07) 0%,
+      rgba(243, 213, 213, 0.42) 38%,
+      rgba(250, 246, 246, 0.96) 100%
     ),
     repeating-linear-gradient(
       0deg,
       transparent,
       transparent 28px,
-      rgba(42, 31, 61, 0.045) 28px,
-      rgba(42, 31, 61, 0.045) 29px
+      rgba(74, 0, 0, 0.05) 28px,
+      rgba(74, 0, 0, 0.05) 29px
     );
-  /* nai you di yong yuan jin hei mo；jin zhi yi lai hui bei shen se mo shi gai xie de --text-primary */
+  /* fen hong nai you di yong yuan jin hei mo */
   color: #1F1630;
   font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
   font-size: var(--text-base);
@@ -276,15 +203,12 @@ body {
   color: var(--text-ghost);
   letter-spacing: 0.04em;
   font-size: calc(var(--text-xs) * 0.96);
-  opacity: 0.88;
 }
 .site-jump a.site-jump-soft:hover,
 .site-jump a.site-jump-soft:focus-visible {
-  opacity: 1;
   color: var(--accent-crimson);
 }
 .site-jump a.site-jump-soft[aria-current="page"] {
-  opacity: 1;
   color: var(--crayon-ink);
   font-weight: 700;
 }
@@ -638,18 +562,18 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--matcha-deep);
-  color: #fffaf4;
-  border-color: var(--matcha-deep);
-  box-shadow: 3px 3px 0 rgba(0, 77, 50, 0.28);
+  background-color: var(--accent-crimson);
+  color: #faf6f6;
+  border-color: var(--crimson-ink);
+  box-shadow: 3px 3px 0 rgba(74, 0, 0, 0.28);
   font-weight: 700;
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  background-color: var(--matcha-ink);
-  border-color: var(--matcha-ink);
-  color: #fffaf4;
+  background-color: var(--crimson-ink);
+  border-color: var(--dusk);
+  color: #ffffff;
 }
 
 .btn-primary:focus-visible {
@@ -659,15 +583,16 @@ body {
 
 .btn-secondary {
   background-color: var(--chalk-dust);
-  color: var(--matcha-deep);
-  border-color: var(--matcha-mid);
+  color: var(--crimson-ink);
+  border-color: var(--accent-crimson);
+  border-width: 3px;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  border-color: var(--matcha-deep);
-  color: var(--matcha-ink);
-  background-color: var(--matcha-pale);
+  border-color: var(--dusk);
+  color: var(--dusk);
+  background-color: var(--dusty-pink-soft);
 }
 
 .btn-secondary:focus-visible {
@@ -1022,7 +947,7 @@ body {
 .heritage-line {
   font-size: var(--text-xs);
   letter-spacing: 0.06em;
-  color: var(--jade-soft);
+  color: var(--jade); /* secondary matcha brand · AA on pink-cream */
   margin: 0.75rem 0 0;
 }
 
@@ -3162,7 +3087,7 @@ body.kindergarten-home {
 .choice-home .hero-brand-line .sc {
   font-family: "Noto Serif SC", serif;
   font-weight: 500;
-  color: var(--sage);
+  color: var(--accent-crimson);
 }
 
 /* Soft energy ... whisper under brand, not a second headline */
@@ -3173,7 +3098,7 @@ body.kindergarten-home {
   line-height: 1.35;
   letter-spacing: 0.01em;
   text-transform: none;
-  color: var(--sage);
+  color: var(--crimson-ink);
   margin: 0 0 16px;
 }
 
@@ -3186,7 +3111,6 @@ body.kindergarten-home {
   font-size: 0.85rem;
   line-height: 1.35;
   color: var(--crayon-muted);
-  opacity: 0.75;
   margin: 0 0 10px;
   max-width: 34ch;
 }
@@ -3216,7 +3140,6 @@ body.kindergarten-home {
   font-weight: 400;
   letter-spacing: 0.01em;
   color: var(--crayon-muted);
-  opacity: 0.7;
   margin-top: 4px;
 }
 
@@ -3228,7 +3151,7 @@ body.kindergarten-home {
 
 .choice-home .hero-bagel-quote cite a:hover,
 .choice-home .hero-bagel-quote cite a:focus-visible {
-  color: var(--sage);
+  color: var(--accent-crimson);
 }
 
 /* Deliberate CTA ... restrained, not a shout */
@@ -3249,7 +3172,7 @@ body.kindergarten-home {
   height: 3px;
   margin-top: 12px;
   border-radius: 2px;
-  background: var(--sage);
+  background: var(--accent-crimson);
 }
 
 .choice-home .hero-cta-link {
@@ -3259,7 +3182,7 @@ body.kindergarten-home {
 
 .choice-home .hero-cta-link:hover,
 .choice-home .hero-cta-link:focus-visible {
-  color: var(--matcha-deep);
+  color: var(--accent-crimson);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
@@ -3272,7 +3195,6 @@ body.kindergarten-home {
   max-width: 34ch;
   margin: 0;
   line-height: 1.45;
-  opacity: 0.85;
 }
 
 .open-invest--hero .invest-lede {
@@ -4931,19 +4853,19 @@ body.campus-survival-page {
   font-size: 0.95rem;
   font-weight: 700;
   padding: 0.55rem 1rem;
-  border: 3px solid var(--matcha-deep);
-  background: var(--matcha-pale);
-  color: var(--matcha-ink);
-  box-shadow: 3px 3px 0 var(--matcha-mid);
+  border: 3px solid var(--accent-crimson);
+  background: var(--dusty-pink-soft);
+  color: var(--crimson-ink);
+  box-shadow: 3px 3px 0 var(--dusk);
   cursor: pointer;
   min-height: 44px;
 }
 
 .guide-page .guide-pack-btn:hover,
 .guide-page .guide-pack-btn:focus-visible {
-  background: var(--matcha-deep);
-  border-color: var(--matcha-deep);
-  color: #fffaf4;
+  background: var(--accent-crimson);
+  border-color: var(--crimson-ink);
+  color: #faf6f6;
 }
 
 .guide-page .guide-pack-btn:focus-visible {
@@ -5913,10 +5835,10 @@ a.situation-btn {
   text-align: left;
   color: var(--crayon-ink);
   background: var(--chalk-dust);
-  border: 2px solid rgba(0, 107, 69, 0.22);
-  border-left: 5px solid var(--matcha-deep);
+  border: 2px solid rgba(153, 0, 0, 0.22);
+  border-left: 5px solid var(--accent-crimson);
   border-radius: 0;
-  box-shadow: 3px 3px 0 rgba(0, 77, 50, 0.12);
+  box-shadow: 3px 3px 0 rgba(74, 0, 0, 0.12);
   text-decoration: none;
   cursor: pointer;
   touch-action: manipulation;
@@ -5930,15 +5852,15 @@ a.situation-btn {
 }
 
 .situation-btn[data-situation="ap-csp"] {
-  border-left-color: var(--matcha-deep);
+  border-left-color: var(--accent-crimson);
 }
 
 .situation-btn[data-situation="undecided"] {
-  border-left-color: var(--matcha-mid);
+  border-left-color: var(--dusty-pink-ink);
 }
 
 .situation-btn[data-situation="visiting"] {
-  border-left-color: var(--sage);
+  border-left-color: var(--dusk);
 }
 
 .open-pick-btn:hover,
@@ -5946,11 +5868,11 @@ a.situation-btn {
 .scratch-pick-btn:hover,
 a.open-pick-btn:hover,
 a.situation-btn:hover {
-  background: var(--matcha-pale);
-  color: var(--matcha-ink);
-  border-color: rgba(0, 107, 69, 0.35);
-  border-left-color: var(--matcha-ink);
-  box-shadow: 5px 5px 0 rgba(0, 77, 50, 0.16);
+  background: var(--dusty-pink-soft);
+  color: var(--dusk);
+  border-color: rgba(153, 0, 0, 0.35);
+  border-left-color: var(--crimson-ink);
+  box-shadow: 5px 5px 0 rgba(74, 0, 0, 0.16);
   text-decoration: none;
 }
 
@@ -5978,11 +5900,11 @@ a.situation-btn:focus-visible {
 .scratch-pick-btn[aria-pressed="true"],
 a.situation-btn[aria-current="true"],
 a.open-pick-btn[aria-current="true"] {
-  background: var(--matcha-pale);
-  border-color: var(--matcha-deep);
+  background: var(--dusty-pink-soft);
+  border-color: var(--accent-crimson);
   border-left-width: 6px;
-  box-shadow: 4px 4px 0 rgba(0, 77, 50, 0.16);
-  color: var(--matcha-ink);
+  box-shadow: 4px 4px 0 rgba(74, 0, 0, 0.16);
+  color: var(--dusk);
 }
 
 .open-pick-btn[aria-pressed="true"] .open-pick-label,
@@ -5991,7 +5913,7 @@ a.open-pick-btn[aria-current="true"] {
 a.situation-btn[aria-current="true"] .open-pick-label,
 a.situation-btn[aria-current="true"] .situation-btn-label {
   text-decoration: none;
-  color: var(--matcha-deep);
+  color: var(--accent-crimson);
 }
 
 .open-pick-thumb {
@@ -6038,11 +5960,11 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
-  color: #fffaf4;
-  background: var(--matcha-deep);
-  border: 2px solid var(--matcha-ink);
+  color: #faf6f6;
+  background: var(--accent-crimson);
+  border: 2px solid var(--crimson-ink);
   border-radius: 0;
-  box-shadow: 3px 3px 0 var(--matcha-ink);
+  box-shadow: 3px 3px 0 var(--dusk);
   text-decoration: none;
   cursor: pointer;
   touch-action: manipulation;
@@ -6056,10 +5978,10 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .open-cta:hover,
 .open-link-cta:focus-visible,
 .open-cta:focus-visible {
-  color: #fffaf4;
-  background: var(--matcha-ink);
-  border-color: var(--matcha-ink);
-  box-shadow: 5px 5px 0 rgba(0, 77, 50, 0.35);
+  color: #ffffff;
+  background: var(--crimson-ink);
+  border-color: var(--dusk);
+  box-shadow: 5px 5px 0 rgba(74, 0, 0, 0.35);
 }
 
 .open-link-cta:focus-visible,
@@ -6087,7 +6009,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--matcha-deep);
+  color: var(--accent-crimson);
 }
 
 .open-pick-selected {
@@ -6096,7 +6018,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--matcha-deep);
+  color: var(--accent-crimson);
 }
 
 .situation-plan {
@@ -6110,7 +6032,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .situation-plan-title {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-size: clamp(1.25rem, 3vw, 1.5rem);
-  color: var(--matcha-deep);
+  color: var(--accent-crimson);
   margin: 0 0 6px;
 }
 
@@ -7176,7 +7098,7 @@ body.choice-home {
 }
 
 .choice-home .hero-energy-line {
-  color: var(--sage);
+  color: var(--crimson-ink);
 }
 
 .choice-home .hero-vibe-line,
@@ -7365,7 +7287,7 @@ body.choice-home {
 }
 
 .choice-home .hero-text h1::after {
-  background: var(--sage);
+  background: var(--accent-crimson);
 }
 
 .choice-home .hero-visual--photo {
@@ -7600,7 +7522,6 @@ body.choice-home {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-size: 0.9rem;
   color: var(--crayon-muted);
-  opacity: 0.85;
   margin: 16px 0 10px;
   max-width: 48ch;
 }
@@ -7653,7 +7574,7 @@ body.choice-home {
   .desk-photo-link:hover .photo-frame--desk,
   .desk-photo-link:focus-visible .photo-frame--desk {
     transform: translateY(-3px);
-    box-shadow: 5px 6px 0 var(--sage);
+    box-shadow: 5px 6px 0 var(--dusty-pink);
   }
 }
 
@@ -7669,7 +7590,7 @@ body.choice-home {
   box-sizing: border-box;
   overflow: hidden;
   transform: none !important;
-  box-shadow: 4px 4px 0 var(--sage);
+  box-shadow: 4px 4px 0 var(--dusty-pink);
   opacity: 1 !important;
   visibility: visible !important;
   background: var(--chalk-dust);
@@ -7726,7 +7647,7 @@ body.choice-home {
 
 .desk-cap-where {
   display: block;
-  color: var(--sage);
+  color: var(--accent-crimson);
   text-transform: none;
   letter-spacing: 0.01em;
   font-size: 0.72rem;
@@ -7766,7 +7687,7 @@ body.choice-home {
   box-sizing: border-box;
   background: #fffaf4;
   border: 3px solid var(--crayon-ink);
-  border-left: 6px solid var(--sage);
+  border-left: 6px solid var(--accent-crimson);
   box-shadow: 4px 4px 0 var(--dusty-pink);
 }
 
@@ -7781,7 +7702,7 @@ body.choice-home {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--sage);
+  color: var(--accent-crimson);
 }
 
 .desk-arrival-where,
@@ -7889,7 +7810,7 @@ body.choice-home {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-weight: 400;
   font-size: clamp(1.05rem, 2.4vw, 1.2rem);
-  color: var(--sage);
+  color: var(--crimson-ink);
   margin: 0 0 12px;
   line-height: 1.35;
 }
@@ -7898,8 +7819,7 @@ body.choice-home {
   font-family: "Courier New", Courier, monospace;
   font-weight: 400;
   font-size: 0.95em;
-  color: var(--sage);
-  opacity: 0.85;
+  color: var(--accent-crimson);
 }
 
 .choice-home .hero-eq-value {
@@ -7922,7 +7842,7 @@ body.choice-home {
   padding-bottom: 0;
 }
 
-/* Kill the short stub bar ... soft matcha lives on the CTA underline instead */
+/* Kill the short stub bar ... crimson underline on CTA instead */
 .choice-home .hero-text h1::after {
   content: none;
 }
@@ -7930,15 +7850,15 @@ body.choice-home {
 .choice-home .hero-cta-link {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--sage) 58%, transparent);
+  text-decoration-color: color-mix(in srgb, var(--accent-crimson) 70%, transparent);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.22em;
 }
 
 .choice-home .hero-cta-link:hover,
 .choice-home .hero-cta-link:focus-visible {
-  color: var(--sage);
-  text-decoration-color: var(--sage);
+  color: var(--accent-crimson);
+  text-decoration-color: var(--accent-crimson);
 }
 
 .choice-home .hero-hook {
