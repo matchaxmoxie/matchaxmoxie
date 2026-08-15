@@ -18,8 +18,8 @@
   font-size: var(--text-xs, 0.875rem);
   line-height: 1.4;
   color: var(--crayon-ink, #1a1a1a);
-  background: #fff1d6;
-  border-bottom: 1px solid rgba(42, 31, 61, 0.12);
+  background: #f5efef;
+  border-bottom: 1px solid rgba(74, 0, 0, 0.12);
   opacity: 0;
   transform: translateY(-4px);
   animation: classroom-status-in 0.45s ease forwards;
@@ -45,7 +45,7 @@
 
 .classroom-status-mode {
   font-weight: 700;
-  color: var(--accent-crimson, #9a3d32);
+  color: var(--accent-crimson, #990000);
 }
 
 .classroom-status-detail {
@@ -57,7 +57,7 @@
 .classroom-status--hiatus .classroom-status-dot,
 .classroom-status--offline .classroom-status-mode,
 .classroom-status--offline .classroom-status-dot {
-  color: var(--dusk, #2a1f3d);
+  color: var(--dusk, #4a0000);
 }
 
 .classroom-status--teaching .classroom-status-mode,
@@ -118,12 +118,12 @@
   color: var(--crayon-ink, #1f1630);
   background: linear-gradient(
     165deg,
-    #fffaf4 0%,
-    #fff4df 72%,
+    #ffffff 0%,
+    #f5efef 72%,
     #f8efe2 100%
   );
-  border: 1px solid rgba(42, 31, 61, 0.12);
-  border-radius: 12px 12px 0 0;
+  border: 1px solid rgba(74, 0, 0, 0.12);
+  border-radius: 10px 10px 0 0;
   box-shadow: 0 -10px 32px rgba(31, 22, 48, 0.1);
   transform: translateY(110%);
   opacity: 0;
@@ -189,32 +189,32 @@
 }
 
 .cookie-consent-accept {
-  background: var(--jade, #006b45);
-  color: #fffaf4;
-  border-color: var(--jade, #006b45);
+  background: var(--accent-crimson, #990000);
+  color: #ffffff;
+  border-color: var(--accent-crimson, #990000);
 }
 
 .cookie-consent-decline {
   background: transparent;
-  color: var(--dusk, #2a1f3d);
-  border-color: rgba(42, 31, 61, 0.28);
+  color: var(--dusk, #4a0000);
+  border-color: rgba(74, 0, 0, 0.28);
 }
 
 .cookie-consent-accept:hover {
-  background: #008555;
-  border-color: #008555;
+  background: #6d0000;
+  border-color: #6d0000;
   transform: translateY(-1px);
 }
 
 .cookie-consent-decline:hover {
-  background: rgba(42, 31, 61, 0.05);
+  background: rgba(74, 0, 0, 0.05);
   transform: translateY(-1px);
 }
 
 .cookie-consent-accept:focus-visible,
 .cookie-consent-decline:focus-visible,
 .cookie-consent-tab:focus-visible {
-  outline: 3px solid var(--focus-ring, #2a1f3d);
+  outline: 3px solid var(--focus-ring, #990000);
   outline-offset: 3px;
 }
 
@@ -240,10 +240,10 @@
   font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: var(--dusk, #2a1f3d);
-  background: #fffaf4;
-  border: 2px solid rgba(42, 31, 61, 0.32);
-  border-radius: 999px;
+  color: var(--dusk, #4a0000);
+  background: #ffffff;
+  border: 2px solid rgba(74, 0, 0, 0.32);
+  border-radius: 10px;
   cursor: pointer;
   touch-action: manipulation;
   box-shadow: 0 6px 20px rgba(31, 22, 48, 0.14);
@@ -263,27 +263,27 @@
 }
 
 .cookie-consent-tab--accepted {
-  border-color: rgba(0, 107, 69, 0.45);
-  background: #f3faf6;
+  border-color: rgba(153, 0, 0, 0.45);
+  background: #f8ecec;
 }
 
 .cookie-consent-tab--declined {
-  border-color: rgba(42, 31, 61, 0.28);
+  border-color: rgba(74, 0, 0, 0.28);
 }
 
 .cookie-consent-tab--nudge {
   box-shadow:
     0 6px 20px rgba(31, 22, 48, 0.16),
-    0 0 0 3px rgba(244, 162, 97, 0.45);
+    0 0 0 3px rgba(153, 0, 0, 0.35);
 }
 
 .cookie-consent-tab:hover {
-  background: #fff4df;
-  border-color: rgba(42, 31, 61, 0.45);
+  background: #f5efef;
+  border-color: rgba(74, 0, 0, 0.45);
 }
 
 .cookie-consent-tab--accepted:hover {
-  background: #e8f5ee;
+  background: #f3d5d5;
 }
 
 .cookie-consent-tab[hidden] {
@@ -304,8 +304,8 @@
   line-height: 1.3;
   text-align: center;
   color: var(--crayon-ink, #1f1630);
-  background: #fffaf4;
-  border: 1px solid rgba(0, 107, 69, 0.35);
+  background: #ffffff;
+  border: 1px solid rgba(153, 0, 0, 0.35);
   border-radius: 8px;
   box-shadow: 0 8px 22px rgba(31, 22, 48, 0.12);
   transform: translateX(-50%) translateY(6px);
@@ -376,7 +376,7 @@
     /* Clear fixed bottom classroom dock (~3.25rem) */
     margin: 0 0.5rem calc(4.25rem + env(safe-area-inset-bottom, 0px));
     padding: 0.85rem 1rem 0.85rem;
-    border-radius: 12px;
+    border-radius: 10px;
   }
 
   /*

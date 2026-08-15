@@ -4,23 +4,23 @@
   --golden-hour: #990000;
   /* zhuang shi ju se（bian kuang / xi di）；bu yong zuo zheng wen / qian se di shang de lian jie */
   --sunset-warm: #990000;
-  /* wen zi + CTA di se：nai you / bai di ≥4.5:1（#E0763A jin ~3:1） */
+  /* wen zi + CTA di se：nai you / bai di ≥4.5:1（IU gear crimson） */
   --sunset-ink: #6d0000;
-  --sunset-glow: rgba(224, 118, 58, 0.14);
+  --sunset-glow: rgba(153, 0, 0, 0.12);
   --coral: #990000;
   /* zheng wen yong shan hu（nai you di ≥4.5:1）；zhuang shi reng yong --coral */
   --coral-ink: #990000;
-  --peach: #FFB088;
-  --lavender: #7A6BA8;
+  --peach: #f3d5d5; /* IU gear soft wash */
+  --lavender: #7a0000; /* IU gear deep crimson accent */
   /* lian jie/dao hang mo se：shen zi，nai you/peach di shang ying ke du */
   --dusk: #4a0000;
-  --sky-blue: #7A6BA8;
-  --grass-green: #E76F51;
+  --sky-blue: #990000;
+  --grass-green: #990000;
   --apple-red: #990000;
   --chalkboard: #2F2942;
   --chalk-dust: #faf6f6;
   --paper-cream: #f5efef;
-  --paper-shadow: #D9C4B0;
+  --paper-shadow: #e0d0d0;
   /* zheng wen jin hei · yong hu ke du xing ying xu qiu */
   --crayon-ink: #1a1a1a;
   --ink: #1F1630; /* nai you ka pian qiang zhi mo se · a11y */
@@ -71,8 +71,8 @@
 
   /* you er yuan shi bu ju can shu */
   --nav-h: 52px;
-  --card-radius: 0;
-  --btn-radius: 0;
+  --card-radius: 10px;
+  --btn-radius: 10px;
 
   /* zi hao jie ti（zheng wen/dao hang tai gao，peach di ke du） */
   --text-xs: 0.875rem;
@@ -185,17 +185,19 @@ body {
   min-height: 48px;
   text-align: center;
   font-size: var(--text-xs);
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
   padding: calc(0.35rem + env(safe-area-inset-top, 0px)) 1rem 0.35rem;
-  background: var(--golden-hour);
-  color: var(--crayon-ink);
+  background: #990000;
+  color: #ffffff;
   text-decoration: none;
-  border-bottom: 3px solid var(--dusk);
+  border-bottom: 3px solid #6d0000;
 }
 
 .twin-banner:hover {
-  color: var(--crayon-ink);
-  background: var(--peach);
+  color: #ffffff;
+  background: #6d0000;
 }
 
 .site-jump {
@@ -251,7 +253,7 @@ body {
 .site-jump a[aria-current="page"] {
   color: var(--crayon-ink);
   border-bottom-color: var(--accent-crimson);
-  background: #fff4df;
+  background: #f5efef;
   font-weight: 700;
   text-decoration-color: var(--accent-crimson);
 }
@@ -610,7 +612,7 @@ body {
   font-size: var(--text-sm);
   font-weight: 700;
   text-decoration: none;
-  border-radius: 0;
+  border-radius: var(--btn-radius);
   border: 3px solid var(--crayon-ink);
   text-align: center;
   box-sizing: border-box;
@@ -2798,7 +2800,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .site-nav a.nav-home {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 14px;
   text-transform: none;
 }
@@ -2877,14 +2879,14 @@ body.kindergarten-home {
 }
 
 .kiss-home .door-who {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.15rem, 3.5vw, 1.35rem);
   line-height: 1.2;
   color: var(--ink);
 }
 
 .kiss-home .door-what {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.45;
   color: var(--crayon-muted);
@@ -3040,7 +3042,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .hero-text h1 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-weight: 400;
   font-size: clamp(32px, 6.5vw, 48px);
   line-height: 1.05;
@@ -3055,7 +3057,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .hero-tag {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(17px, 2.5vw, 20px);
   color: var(--crayon-muted);
   max-width: 44ch;
@@ -3064,7 +3066,7 @@ body.kindergarten-home {
 
 /* shou ping gou zi · HS senior reason-to-care（xian yu long feng shuang zhan） */
 .kindergarten-home .hero-hook {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-weight: 400;
   font-size: clamp(1.35rem, 3.6vw, 1.75rem);
   line-height: 1.25;
@@ -3074,7 +3076,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .hero-why {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.05rem, 2.4vw, 1.2rem);
   line-height: 1.45;
   color: var(--crayon-muted);
@@ -3087,7 +3089,7 @@ body.kindergarten-home {
   margin-bottom: 32px;
   padding: 24px 22px 22px;
   max-width: none;
-  background: linear-gradient(165deg, #fffaf4 0%, #fff0dc 55%, #ffe8cc 100%);
+  background: linear-gradient(165deg, #ffffff 0%, #f5efef 55%, #f3d5d5 100%);
   border: 3px solid var(--crayon-ink);
   border-radius: 0;
   box-shadow: 6px 6px 0 rgba(31, 22, 48, 0.12);
@@ -3095,7 +3097,7 @@ body.kindergarten-home {
 
 .open-invest--hero h2,
 .open-invest h2 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-weight: 400;
   font-size: clamp(1.55rem, 4vw, 1.9rem);
   line-height: 1.15;
@@ -3122,7 +3124,7 @@ body.kindergarten-home {
 /* Brand = hero-level signal (not tiny courier label) */
 .choice-home .hero-brand-line,
 .choice-home .hero-iu {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.55rem, 4.2vw, 2.05rem);
   font-weight: 400;
   letter-spacing: 0;
@@ -3140,7 +3142,7 @@ body.kindergarten-home {
 
 /* Soft energy ... whisper under brand, not a second headline */
 .choice-home .hero-energy-line {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: clamp(1.05rem, 2.4vw, 1.2rem);
   line-height: 1.35;
@@ -3154,7 +3156,7 @@ body.kindergarten-home {
 .choice-home .hero-vibe-line,
 .choice-home .hero-cookie-line,
 .choice-home .hero-bagel-quote .hero-cookie-offer {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 0.85rem;
   line-height: 1.35;
@@ -3173,7 +3175,7 @@ body.kindergarten-home {
 }
 
 .choice-home .hero-bagel-quote p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(0.95rem, 2.1vw, 1.05rem);
   font-style: italic;
   line-height: 1.4;
@@ -3239,7 +3241,7 @@ body.kindergarten-home {
 }
 
 .choice-home .hero-hook {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(0.92rem, 2vw, 1.02rem);
   color: var(--crayon-muted);
   max-width: 34ch;
@@ -3304,14 +3306,14 @@ body.kindergarten-home {
 }
 
 .footer-kiss .human {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: var(--crayon-ink);
   margin: 0 0 0.5rem;
 }
 
 .footer-kiss .footer-quote {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
   font-style: italic;
   color: var(--crayon-muted);
@@ -3319,7 +3321,7 @@ body.kindergarten-home {
 }
 
 .footer-kiss .footer-soft {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   line-height: 1.45;
   color: var(--crayon-muted);
@@ -3328,7 +3330,7 @@ body.kindergarten-home {
 }
 
 .footer-kiss > p:not(.human):not(.footer-quote):not(.footer-soft) {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   color: var(--crayon-muted);
   margin: 0 0 0.65rem;
@@ -3350,7 +3352,7 @@ body.kindergarten-home {
 }
 
 .path-page-header h1 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.9rem, 5vw, 2.5rem);
   line-height: 1.1;
   color: var(--crayon-ink);
@@ -3358,7 +3360,7 @@ body.kindergarten-home {
 }
 
 .path-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   line-height: 1.5;
   color: var(--crayon-muted);
@@ -3394,7 +3396,7 @@ body.kindergarten-home {
 }
 
 .scratch-path-open-hint {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
   color: var(--crayon-muted);
   line-height: 1.45;
@@ -3517,7 +3519,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .poem p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(16px, 2.3vw, 18px);
   line-height: 1.65;
   color: var(--crayon-ink);
@@ -3544,7 +3546,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .section-head h2 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-weight: 400;
   font-size: clamp(22px, 4vw, 28px);
   color: var(--crayon-ink);
@@ -3618,7 +3620,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .card-title {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 18px;
   color: var(--crayon-ink);
   margin-bottom: 6px;
@@ -3680,7 +3682,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .now-card h3 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 17px;
   margin-bottom: 8px;
   color: var(--crayon-ink);
@@ -3732,7 +3734,7 @@ body.kindergarten-home {
 
 .kindergarten-home .stat-chip {
   padding: 8px 12px;
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 14px;
   color: var(--crayon-ink);
   background: var(--golden-hour);
@@ -3762,7 +3764,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .footer .human {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: var(--crayon-ink);
   max-width: 40ch;
@@ -3835,7 +3837,7 @@ body.kindergarten-home {
 }
 
 .archive-page h1 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.75rem, 5vw, 2.25rem);
   margin-bottom: 1rem;
   color: var(--crayon-ink);
@@ -3958,14 +3960,14 @@ body.campus-survival-page {
 }
 
 .kiss-home .gwc-block h2 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.4rem, 4vw, 1.75rem);
   color: var(--ink);
   margin-bottom: 8px;
 }
 
 .kiss-home .gwc-block p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   color: var(--ink);
   margin-bottom: 8px;
@@ -3995,13 +3997,13 @@ body.campus-survival-page {
 }
 
 .kiss-home .footer-kiss .human {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: var(--crayon-ink);
 }
 
 .kiss-home .archive-kiss h1 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.75rem, 5vw, 2.25rem);
   margin-bottom: 12px;
   color: var(--crayon-ink);
@@ -4040,7 +4042,7 @@ body.campus-survival-page {
 }
 
 .scratch-studio-page .studio-hero h1 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.85rem, 5vw, 2.5rem);
   color: var(--crayon-ink);
   margin-bottom: 10px;
@@ -4048,7 +4050,7 @@ body.campus-survival-page {
 }
 
 .scratch-studio-page .studio-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.08rem;
   color: var(--crayon-ink);
   max-width: 44ch;
@@ -4107,7 +4109,7 @@ body.campus-survival-page {
 .scratch-studio-page .howto-bar {
   display: block;
   padding: 7px 10px;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.82rem;
   letter-spacing: 0.02em;
@@ -4129,7 +4131,7 @@ body.campus-survival-page {
   justify-content: center;
   text-align: center;
   padding: 12px 14px 4px;
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.15rem, 3.2vw, 1.45rem);
   line-height: 1.15;
   color: #1a1a1a;
@@ -4174,7 +4176,7 @@ body.campus-survival-page {
 
 .scratch-studio-page .howto-thumb--intro .howto-title {
   color: #fff8f0;
-  text-shadow: 1px 1px 0 rgba(42, 31, 61, 0.35);
+  text-shadow: 1px 1px 0 rgba(74, 0, 0, 0.35);
 }
 
 .scratch-studio-page .howto-thumb--scroll {
@@ -4194,14 +4196,14 @@ body.campus-survival-page {
 }
 
 .scratch-studio-page .howto-meta h2 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1.05rem;
   color: var(--crayon-ink);
   margin-bottom: 4px;
 }
 
 .scratch-studio-page .howto-meta p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   color: var(--crayon-muted);
   line-height: 1.45;
@@ -4265,7 +4267,7 @@ body.campus-survival-page {
   display: flex;
   align-items: center;
   padding: 0.65rem 0.9rem;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   color: var(--crayon-ink);
@@ -4295,14 +4297,14 @@ body.campus-survival-page {
 
 .scratch-studio-page .howto-body {
   padding: 0 0.9rem 1rem;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   color: var(--crayon-ink);
   line-height: 1.5;
 }
 
 .scratch-studio-page .howto-body h3 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1rem;
   margin: 0.85rem 0 0.4rem;
   color: var(--dusk);
@@ -4364,7 +4366,7 @@ body.campus-survival-page {
 }
 
 .scratch-studio-page .scratch-load-help h2 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1.15rem;
   margin: 0 0 0.55rem;
   color: var(--crayon-ink);
@@ -4373,7 +4375,7 @@ body.campus-survival-page {
 .scratch-studio-page .scratch-load-help ol {
   margin: 0;
   padding-left: 1.25rem;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--crayon-ink);
@@ -4400,7 +4402,7 @@ body.campus-survival-page {
   justify-content: center;
   min-height: 44px;
   padding: 0.45rem 0.85rem;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   color: #fff8f0;
@@ -4430,7 +4432,7 @@ body.campus-survival-page {
 .scratch-studio-page .howto-download-hint {
   display: inline-block;
   margin-left: 0.35rem;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.82rem;
   color: var(--crayon-ink);
 }
@@ -4479,7 +4481,7 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-hero h1 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.7rem, 4.8vw, 2.35rem);
   color: var(--ink);
   line-height: 1.15;
@@ -4488,7 +4490,7 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-hero .studio-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.12rem;
   color: var(--ink);
   max-width: 48ch;
@@ -4522,7 +4524,7 @@ body.campus-survival-page {
 }
 
 .guide-attr p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
   color: var(--crayon-ink);
   line-height: 1.55;
@@ -4552,7 +4554,7 @@ body.campus-survival-page {
 }
 
 .guide-list li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   color: var(--ink);
   line-height: 1.55;
@@ -4691,7 +4693,7 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-section h2 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.35rem, 3.5vw, 1.7rem);
   color: var(--crayon-ink);
   margin-bottom: 10px;
@@ -4699,7 +4701,7 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-section p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   color: var(--ink);
   line-height: 1.55;
@@ -4749,7 +4751,7 @@ body.campus-survival-page {
 }
 
 .campus-survival-page .year23-banner p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   color: var(--crayon-ink);
   line-height: 1.55;
@@ -4791,7 +4793,7 @@ body.campus-survival-page {
 }
 
 .campus-survival-page .campus-subh {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1.05rem;
   color: var(--crayon-ink);
   margin: 16px 0 8px;
@@ -4804,7 +4806,7 @@ body.campus-survival-page {
 }
 
 .campus-survival-page .coord-checklist label {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
   color: var(--crayon-ink);
   line-height: 1.45;
@@ -4826,7 +4828,7 @@ body.campus-survival-page {
 
 /* xiao yuan sheng cun ye · xiao jie biao ti / Q&A / da bao gou xuan */
 .guide-page .guide-subhead {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1.05rem;
   color: var(--crayon-ink);
   margin: 18px 0 8px;
@@ -4846,14 +4848,14 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-qna dt {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1rem;
   color: var(--crayon-ink);
   margin: 14px 0 6px;
 }
 
 .guide-page .guide-qna dd {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
   color: var(--crayon-ink);
   line-height: 1.5;
@@ -4882,7 +4884,7 @@ body.campus-survival-page {
   display: flex;
   gap: 0.55rem;
   align-items: flex-start;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
   color: var(--crayon-ink);
   line-height: 1.45;
@@ -4900,7 +4902,7 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-pack-btn {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   padding: 0.45rem 0.9rem;
@@ -5048,7 +5050,7 @@ body.campus-survival-page {
 }
 
 .year23-banner p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   color: var(--crayon-ink);
   line-height: 1.55;
@@ -5081,14 +5083,14 @@ body.campus-survival-page {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--crayon-ink);
-  background: rgba(244, 162, 97, 0.35);
+  background: rgba(153, 0, 0, 0.22);
   border: 2px solid var(--crayon-ink);
   padding: 5px 10px;
   margin: 0 0 12px;
 }
 
 .campus-survival-page .campus-subh {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1.05rem;
   color: var(--crayon-ink);
   margin: 18px 0 8px;
@@ -5100,7 +5102,7 @@ body.campus-survival-page {
 }
 
 .campus-survival-page .coord-checklist label {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--crayon-ink);
   font-size: 0.95rem;
   line-height: 1.45;
@@ -5126,7 +5128,7 @@ body.campus-survival-page {
 
 /* HS jian yi lou dou · you xu bu zhou · hai zi ke du */
 .advice-funnel-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   line-height: 1.5;
   color: var(--crayon-muted);
@@ -5136,7 +5138,7 @@ body.campus-survival-page {
 
 .kiss-home .gwc-block h3#advice-funnel-heading,
 .guide-page .gwc-block h2#advice-funnel-heading {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.2rem, 3.5vw, 1.45rem);
   line-height: 1.25;
   color: var(--ink);
@@ -5154,7 +5156,7 @@ body.campus-survival-page {
 .advice-funnel li,
 .kiss-home .gwc-block .advice-funnel li,
 .guide-page .gwc-block .advice-funnel li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   line-height: 1.5;
   color: var(--ink);
@@ -5163,7 +5165,7 @@ body.campus-survival-page {
 }
 
 .advice-funnel li::marker {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-weight: 700;
   color: var(--coral-ink);
 }
@@ -5251,7 +5253,7 @@ body.campus-survival-page {
 .kiss-home .gwc-block .journey-courses li,
 .journey-page .gwc-block .journey-courses li,
 .guide-page .gwc-block .journey-courses li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: var(--ink);
   line-height: 1.45;
@@ -5271,7 +5273,7 @@ body.campus-survival-page {
 }
 
 .journey-note {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   color: var(--crayon-muted);
   line-height: 1.5;
@@ -5318,7 +5320,7 @@ body.campus-survival-page {
 }
 
 .miss-zhao-tip p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   color: var(--ink);
   line-height: 1.55;
@@ -5361,7 +5363,7 @@ body.campus-survival-page {
 .classroom-credo {
   margin: 0;
   padding-left: 1.25rem;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   color: var(--ink);
   line-height: 1.55;
@@ -5651,7 +5653,7 @@ body {
 }
 
 .foot-copy h2 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.15rem, 3.2vw, 1.4rem);
   line-height: 1.25;
   color: var(--ink);
@@ -5659,7 +5661,7 @@ body {
 }
 
 .foot-copy p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   line-height: 1.55;
   color: var(--ink);
@@ -5699,7 +5701,7 @@ body {
 }
 
 .trail-legend p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--ink);
@@ -5712,7 +5714,7 @@ body {
 }
 
 .foot-print-so-far {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.55;
   color: var(--ink);
@@ -5830,7 +5832,7 @@ body {
 }
 
 .invest-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   line-height: 1.5;
   color: var(--crayon-muted);
@@ -5877,7 +5879,7 @@ a.situation-btn {
   font-size: 1rem;
   text-align: left;
   color: var(--crayon-ink);
-  background: #fffaf4;
+  background: #ffffff;
   border: 2px solid rgba(31, 22, 48, 0.14);
   border-left-width: 5px;
   border-radius: 0;
@@ -5910,7 +5912,7 @@ a.situation-btn {
 .scratch-pick-btn:hover,
 a.open-pick-btn:hover,
 a.situation-btn:hover {
-  background: #fff4df;
+  background: #f5efef;
   color: var(--coral-ink);
   border-color: rgba(31, 22, 48, 0.22);
   box-shadow: 5px 5px 0 rgba(31, 22, 48, 0.12);
@@ -5941,7 +5943,7 @@ a.situation-btn:focus-visible {
 .scratch-pick-btn[aria-pressed="true"],
 a.situation-btn[aria-current="true"],
 a.open-pick-btn[aria-current="true"] {
-  background: #fff0dc;
+  background: #f5efef;
   border-color: var(--crayon-ink);
   border-left-width: 6px;
   box-shadow: 4px 4px 0 rgba(31, 22, 48, 0.14);
@@ -5977,14 +5979,14 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 
 .open-pick-label,
 .situation-btn-label {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.2rem, 3vw, 1.45rem);
   line-height: 1.2;
 }
 
 .open-pick-hint,
 .situation-btn-hint {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.05rem, 2.3vw, 1.15rem);
   color: var(--crayon-muted);
   line-height: 1.35;
@@ -5996,12 +5998,12 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   align-items: center;
   min-height: 48px;
   padding: 10px 20px;
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.15rem, 2.8vw, 1.35rem);
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
-  color: #fffaf4;
+  color: #ffffff;
   background: var(--sunset-ink);
   border: 2px solid var(--crayon-ink);
   border-radius: 0;
@@ -6017,7 +6019,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 
 .open-link-cta:hover,
 .open-cta:hover {
-  color: #fffaf4;
+  color: #ffffff;
   background: var(--coral-ink);
   border-bottom-color: var(--crayon-ink);
   box-shadow: 5px 5px 0 var(--crayon-ink);
@@ -6063,7 +6065,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .situation-plan-title {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.25rem, 3vw, 1.5rem);
   color: var(--coral-ink);
   margin: 0 0 6px;
@@ -6087,13 +6089,13 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .situation-plan-steps li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.02rem, 2.4vw, 1.12rem);
   line-height: 1.5;
   color: var(--ink);
   margin-bottom: 12px;
   padding: 14px 16px 14px 14px;
-  background: #fffaf4;
+  background: #ffffff;
   border: 2px solid rgba(31, 22, 48, 0.12);
   border-left: 5px solid var(--sunset-warm);
   counter-increment: plan-step;
@@ -6110,7 +6112,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.82rem;
   font-weight: 700;
-  color: #fffaf4;
+  color: #ffffff;
   background: var(--sunset-ink);
   vertical-align: middle;
 }
@@ -6142,13 +6144,13 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   display: inline;
   min-height: 44px;
   padding: 0;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.02rem, 2.4vw, 1.12rem);
   font-weight: 700;
   color: var(--dusk);
   background: transparent;
   border: 0;
-  border-bottom: 2px solid rgba(42, 31, 61, 0.35);
+  border-bottom: 2px solid rgba(74, 0, 0, 0.35);
   border-radius: 0;
   box-shadow: none;
   text-decoration: none;
@@ -6232,14 +6234,14 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .advice-funnel-reward h4 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1.2rem;
   color: var(--ink);
   margin: 0 0 8px;
 }
 
 .advice-funnel-path-name {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.45;
   color: var(--ink);
@@ -6256,7 +6258,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   display: inline;
   min-height: 44px;
   padding: 0;
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.1rem, 2.6vw, 1.3rem);
   font-weight: 400;
   letter-spacing: 0;
@@ -6287,7 +6289,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .footprint-progress {
   margin: 0 0 14px;
   padding: 0 0 10px;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   color: var(--ink);
   background: transparent;
@@ -6328,7 +6330,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .scratch-pick-get,
 .scratch-pick-why,
 .scratch-pick-path {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   line-height: 1.5;
   color: var(--ink);
@@ -6353,7 +6355,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 
 .scratch-secondary-ctas {
   margin: 0 0 18px;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.05rem, 2.3vw, 1.15rem);
   line-height: 1.6;
 }
@@ -6390,7 +6392,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-howto-heading {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.15rem, 2.6vw, 1.3rem);
   color: var(--crayon-ink);
   margin: 0 0 8px;
@@ -6402,7 +6404,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-howto-steps li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.02rem, 2.3vw, 1.12rem);
   line-height: 1.45;
   color: var(--ink);
@@ -6414,7 +6416,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-howto-tip {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(0.98rem, 2.2vw, 1.05rem);
   line-height: 1.4;
   color: var(--crayon-muted);
@@ -6422,7 +6424,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-pick-switch-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.02rem, 2.3vw, 1.12rem);
   color: var(--crayon-muted);
   margin: 0 0 10px;
@@ -6432,7 +6434,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   min-height: 44px;
   min-width: 44px;
   padding: 0.55rem 1rem;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.05rem;
   border: 3px solid var(--crayon-ink);
@@ -6483,7 +6485,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   aspect-ratio: 4 / 3;
   max-width: 480px;
   background:
-    linear-gradient(160deg, rgba(255, 248, 240, 0.9), rgba(244, 162, 97, 0.18)),
+    linear-gradient(160deg, rgba(245, 239, 239, 0.92), rgba(153, 0, 0, 0.14)),
     repeating-linear-gradient(
       -12deg,
       transparent,
@@ -6502,7 +6504,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-pick-switch-heading {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.2rem, 2.8vw, 1.4rem);
   color: var(--crayon-ink);
   margin: 0 0 10px;
@@ -6515,7 +6517,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-steps-heading {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.25rem, 3vw, 1.45rem);
   color: var(--crayon-ink);
   margin: 0 0 10px;
@@ -6528,7 +6530,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-load-steps li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.08rem, 2.4vw, 1.2rem);
   line-height: 1.5;
   color: var(--ink);
@@ -6577,7 +6579,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   align-items: flex-start;
   min-height: 48px;
   padding: 12px 0;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1.08rem, 2.4vw, 1.2rem);
   line-height: 1.4;
   color: var(--ink);
@@ -6595,7 +6597,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-progress-reward {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.15rem, 2.8vw, 1.35rem);
   color: var(--coral-ink);
   margin: 0 0 14px;
@@ -6681,7 +6683,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .interior-panel {
   margin: 0 0 28px;
   padding: 22px 20px 20px;
-  background: linear-gradient(165deg, #fffaf4 0%, var(--paper-cream) 55%, rgba(224, 118, 58, 0.06) 100%);
+  background: linear-gradient(165deg, #ffffff 0%, var(--paper-cream) 55%, rgba(224, 118, 58, 0.06) 100%);
   border: 4px solid var(--crayon-ink);
   box-shadow: 5px 5px 0 var(--lavender);
   color: var(--ink);
@@ -6729,7 +6731,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   padding: 14px 16px;
   text-decoration: none;
   color: var(--crayon-ink);
-  background: #fffaf4;
+  background: #ffffff;
   border: 2px solid rgba(31, 22, 48, 0.14);
   border-left-width: 5px;
   border-left-color: var(--sunset-warm);
@@ -6743,7 +6745,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .archive-link-grid a:hover {
-  background: #fff0dc;
+  background: #f5efef;
   color: var(--coral-ink);
   border-color: rgba(31, 22, 48, 0.22);
   box-shadow: 5px 5px 0 rgba(31, 22, 48, 0.12);
@@ -6751,33 +6753,33 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .archive-link-grid .link-title {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1.05rem;
   line-height: 1.25;
 }
 
 .archive-link-grid .what {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   color: var(--crayon-muted);
   line-height: 1.4;
 }
 
 .kiss-home .gwc-block {
-  background: linear-gradient(165deg, #fffaf4 0%, var(--chalk-dust) 72%, rgba(224, 118, 58, 0.08) 100%);
+  background: linear-gradient(165deg, #ffffff 0%, var(--chalk-dust) 72%, rgba(224, 118, 58, 0.08) 100%);
   border-radius: 0;
 }
 
 .guide-page .guide-section {
   margin: 28px 0 32px;
   padding: 20px;
-  background: linear-gradient(165deg, #fffaf4 0%, var(--chalk-dust) 72%, rgba(224, 118, 58, 0.06) 100%);
+  background: linear-gradient(165deg, #ffffff 0%, var(--chalk-dust) 72%, rgba(224, 118, 58, 0.06) 100%);
   border: 4px solid var(--crayon-ink);
   box-shadow: 5px 5px 0 var(--coral);
 }
 
 .guide-page .guide-section h2 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.35rem, 3.8vw, 1.65rem);
   color: var(--ink);
   margin-bottom: 10px;
@@ -6797,7 +6799,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   position: relative;
   margin: 0 !important;
   padding: 16px 16px 16px 3.4rem !important;
-  background: #fffaf4;
+  background: #ffffff;
   border: 2px solid rgba(31, 22, 48, 0.14);
   border-left-width: 5px;
   border-left-color: var(--sunset-warm);
@@ -6823,16 +6825,16 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 0.95rem;
   font-weight: 700;
-  color: #fffaf4;
+  color: #ffffff;
   background: var(--sunset-ink);
   border: 2px solid var(--crayon-ink);
 }
 
 .advice-funnel li:hover {
-  background: #fff0dc;
+  background: #f5efef;
   box-shadow: 5px 5px 0 rgba(31, 22, 48, 0.12);
   transform: translateY(-2px);
 }
@@ -6844,7 +6846,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .journey-year-nav {
   margin: 0 0 28px;
   padding: 14px 16px;
-  background: #fffaf4;
+  background: #ffffff;
   border: 3px solid var(--crayon-ink);
   box-shadow: 4px 4px 0 var(--lavender);
   gap: 8px 10px;
@@ -6862,7 +6864,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--crayon-ink);
-  background: rgba(244, 162, 97, 0.2);
+  background: rgba(153, 0, 0, 0.16);
   border: 2px solid rgba(31, 22, 48, 0.18);
   border-bottom: 2px solid rgba(31, 22, 48, 0.18);
   touch-action: manipulation;
@@ -6874,7 +6876,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 
 .journey-year-nav a:hover,
 .journey-year-nav a[aria-current="page"] {
-  color: #fffaf4;
+  color: #ffffff;
   background: var(--sunset-ink);
   border-color: var(--crayon-ink);
 }
@@ -6903,11 +6905,11 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   align-items: flex-start;
   min-height: 56px;
   padding: 14px 16px;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.45;
   color: var(--crayon-ink);
-  background: #fffaf4;
+  background: #ffffff;
   border: 2px solid rgba(31, 22, 48, 0.14);
   border-left-width: 5px;
   border-left-color: var(--jade);
@@ -6920,7 +6922,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .footprint-page .coord-checklist label:hover {
-  background: #fff0dc;
+  background: #f5efef;
   box-shadow: 5px 5px 0 rgba(31, 22, 48, 0.12);
   transform: translateY(-1px);
 }
@@ -6975,14 +6977,14 @@ body.page-404 {
 }
 
 .page-404 h1 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(3rem, 12vw, 5rem);
   color: var(--dusk);
   margin-bottom: 8px;
 }
 
 .page-404 .lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--crayon-muted);
   max-width: 36ch;
   margin: 0 auto 20px;
@@ -7015,11 +7017,11 @@ body.page-404 {
   justify-content: center;
   min-height: 48px;
   padding: 10px 18px;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
-  color: #fffaf4;
+  color: #ffffff;
   background: var(--sunset-ink);
   border: 2px solid var(--crayon-ink);
   box-shadow: 3px 3px 0 rgba(31, 22, 48, 0.15);
@@ -7031,7 +7033,7 @@ body.page-404 {
 }
 
 .page-404 .page-404-actions a:not(:first-child) {
-  background: #fffaf4;
+  background: #ffffff;
   color: var(--coral-ink);
 }
 
@@ -7078,10 +7080,10 @@ html {
 /* ... home page · warm mesh over the ruled paper ... */
 body.choice-home {
   background-image:
-    radial-gradient(90% 26% at 50% 0%, rgba(244, 162, 97, 0.2), transparent 72%),
+    radial-gradient(90% 26% at 50% 0%, rgba(153, 0, 0, 0.16), transparent 72%),
     linear-gradient(
       180deg,
-      rgba(244, 162, 97, 0.1) 0%,
+      rgba(153, 0, 0, 0.08) 0%,
       rgba(122, 107, 168, 0.06) 42%,
       rgba(255, 250, 244, 0.94) 100%
     ),
@@ -7089,8 +7091,8 @@ body.choice-home {
       0deg,
       transparent,
       transparent 28px,
-      rgba(42, 31, 61, 0.045) 28px,
-      rgba(42, 31, 61, 0.045) 29px
+      rgba(74, 0, 0, 0.05) 28px,
+      rgba(74, 0, 0, 0.05) 29px
     );
 }
 
@@ -7332,7 +7334,7 @@ body.choice-home {
 }
 
 .choice-home .open-invest--hero {
-  background: linear-gradient(165deg, #fffaf4 0%, var(--dusty-pink-soft) 42%, var(--sage-wash) 100%);
+  background: linear-gradient(165deg, #ffffff 0%, var(--dusty-pink-soft) 42%, var(--sage-wash) 100%);
   box-shadow: 6px 6px 0 rgba(122, 143, 114, 0.28);
 }
 
@@ -7373,13 +7375,13 @@ body.choice-home {
   margin: 0 0 24px;
   padding: 14px 16px;
   max-width: 42rem;
-  background: #fffaf4;
+  background: #ffffff;
   border: 2px solid rgba(31, 22, 48, 0.14);
-  border-left: 5px solid var(--sunset-warm, #E0763A);
+  border-left: 5px solid var(--sunset-warm, #990000);
 }
 
 .page-start h2 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1.15rem;
   color: var(--crayon-ink, #1F1630);
   margin: 0 0 8px;
@@ -7425,7 +7427,7 @@ body.choice-home {
 .advice-why-order {
   margin: 0 0 14px;
   max-width: 58ch;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.45;
   color: var(--crayon-ink, #1F1630);
@@ -7439,7 +7441,7 @@ body.choice-home {
 .ap-credit-table caption {
   caption-side: top;
   text-align: left;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   color: var(--crayon-muted, #4a3f5c);
   padding-bottom: 0.55rem;
@@ -7465,7 +7467,7 @@ body.choice-home {
   min-height: 44px;
   min-width: 7.5rem;
   padding: 0.45rem 0.85rem;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   text-decoration: none;
@@ -7475,7 +7477,7 @@ body.choice-home {
 
 .scratch-studio-page .howto-howto,
 .scratch-pick-reveal .howto-howto {
-  color: var(--dusk, #2A1F3D);
+  color: var(--dusk, #4a0000);
   background: transparent;
   box-shadow: none;
 }
@@ -7484,16 +7486,16 @@ body.choice-home {
 .scratch-studio-page .howto-howto:focus-visible,
 .scratch-pick-reveal .howto-howto:hover,
 .scratch-pick-reveal .howto-howto:focus-visible {
-  background: var(--coral-ink, #9A3D32);
+  background: var(--coral-ink, #990000);
   color: #fff8f0;
-  outline: 3px solid var(--focus-ring, #2A1F3D);
+  outline: 3px solid var(--focus-ring, #990000);
   outline-offset: 2px;
 }
 
 .scratch-studio-page .howto-practice,
 .scratch-pick-practice {
   margin: 0.35rem 0 0;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   line-height: 1.4;
   color: var(--crayon-muted, #4a3f5c);
@@ -7510,11 +7512,11 @@ body.choice-home {
   margin: 0;
   padding: 12px 14px;
   border: 2px solid rgba(31, 22, 48, 0.14);
-  background: #fffaf4;
+  background: #ffffff;
 }
 
 .fp-group legend {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: 1.05rem;
   color: var(--crayon-ink, #1F1630);
   padding: 0 4px;
@@ -7537,7 +7539,7 @@ body.choice-home {
 }
 
 .desk-photos-heading {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-weight: 400;
   font-size: clamp(1.25rem, 3vw, 1.5rem);
   color: var(--crayon-ink);
@@ -7545,14 +7547,14 @@ body.choice-home {
 }
 
 .desk-photos-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.05rem;
   color: var(--crayon-muted);
   margin: 0 0 10px;
 }
 
 .desk-vibe {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   color: var(--crayon-muted);
   opacity: 0.85;
@@ -7561,7 +7563,7 @@ body.choice-home {
 }
 
 .desk-listening {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   line-height: 1.45;
   color: var(--crayon-muted);
@@ -7719,7 +7721,7 @@ body.choice-home {
   padding: 14px 16px;
   max-width: none;
   box-sizing: border-box;
-  background: #fffaf4;
+  background: #ffffff;
   border: 3px solid var(--crayon-ink);
   border-left: 6px solid var(--sage);
   box-shadow: 4px 4px 0 var(--dusty-pink);
@@ -7742,7 +7744,7 @@ body.choice-home {
 .desk-arrival-where,
 .desk-arrival-why {
   margin: 0 0 6px;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
   line-height: 1.4;
   color: var(--crayon-ink);
@@ -7826,7 +7828,7 @@ body.choice-home {
 }
 
 .choice-home .hero-brand-line {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: clamp(1.55rem, 4.2vw, 2.05rem);
   font-weight: 400;
   letter-spacing: 0;
@@ -7841,7 +7843,7 @@ body.choice-home {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.35em 0.45em;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: clamp(1.05rem, 2.4vw, 1.2rem);
   color: var(--sage);
