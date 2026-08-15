@@ -1,86 +1,35 @@
 /**
- * matchaxmoxie · brand tokens (local)
- *
- * Register: IU gear · pink-cream campus + crimson #990000 primary chrome.
- * WCAG AA body/link/CTA pairs verified on #f5efef / #990000.
- * Matcha greens stay secondary (凤凰 note only).
- *
- * Sibling may replace this file with a shared brand-tokens.css import.
- * Keep token names stable when merging.
+ * Vendored copy of jadexzhao/briefcase/brand-tokens.css
+ * Sync from source when tokens change.
+ * CDN: https://cdn.jsdelivr.net/gh/jadexzhao/jadexzhao@main/briefcase/brand-tokens.css
  */
 
 :root {
-  /* IU gear primary */
-  --sunshine: #990000;
-  --golden-hour: #990000;
-  --sunset-warm: #990000;
-  --sunset-ink: #6d0000;
-  --sunset-glow: rgba(153, 0, 0, 0.12);
-  --coral: #990000;
-  --coral-ink: #990000;
-  --peach: #f3d5d5;
-  --lavender: #7a0000;
-  --dusk: #4a0000;
-  --sky-blue: #990000;
-  --grass-green: #990000;
-  --apple-red: #990000;
-  --chalkboard: #2F2942;
+  --matcha-deep: #3f5b3f;
+  --matcha-mid: #6f8f6a;
+  --matcha-pale: #eef1e6;
+  --cream: #faf8f2;
+  --clay: #b3714f;
+  --clay-ink: #8a563c;
 
-  /* pink-cream paper */
-  --chalk-dust: #faf6f6;
-  --paper-cream: #f5efef;
-  --paper-shadow: #e0d0d0;
+  --navy: #0c447c;
+  --crimson: #990000;
+  --crimson-deep: #6d0000;
+  --blue: #378ADD;
+  --blue-ink: #2a6fad;
 
-  /* ink */
-  --crayon-ink: #1a1a1a;
-  --ink: #1F1630;
-  --crayon-muted: #2A1F30;
-  --editorial-dark: var(--crayon-ink);
-  --text-muted: var(--crayon-muted);
-  --text-primary: var(--editorial-dark);
-  --text-secondary: var(--text-muted);
-  --text-ghost: #3D3232;
+  --ink: #23291f;
+  --mute: #4a5248;
 
-  /* crimson chrome */
-  --accent-crimson: #990000;
-  --crimson-ink: #6d0000;
-  --cinnabar: var(--accent-crimson);
-  --cinnabar-soft: #b30000;
-  --matcha-ops: var(--accent-crimson);
-  --bg-soft-warm: var(--paper-cream);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sc: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --radius: 10px;
+  --rule: rgba(63, 91, 63, 0.18);
 
-  /* matcha · secondary 凤凰 brand note only */
-  --matcha-deep: #006B45;
-  --matcha-mid: #3D6B4A;
-  --matcha-pale: #E8F0E4;
-  --matcha-ink: #004d32;
-  --jade: var(--matcha-deep);
-  --jade-soft: var(--matcha-mid);
-  --matcha-wash: var(--matcha-pale);
-
-  /* aliases */
-  --tulip-petal: var(--sunshine);
-  --tulip-deep: var(--dusk);
-  --tulip-blush: #F3E4E2;
-  --tulip-stem: var(--coral-ink);
-  --tulip-soil: var(--crayon-ink);
-  --tulip-light: var(--paper-cream);
-  --tulip-mist: var(--paper-shadow);
-
-  --gold: #7A5F14;
-  --gold-soft: #E8D5A3;
-  --sunflower: #E8C547;
-  --sage: #5A6F52;
-  --sage-wash: #F3E4E2;
-  --dusty-pink: #C9898F;
-  --dusty-pink-soft: #F3E4E2;
-  --dusty-pink-ink: #8F454E;
-
-  /* functional */
-  --link: var(--accent-crimson);
-  --link-hover: var(--crimson-ink);
-  --focus: var(--accent-crimson);
-  --focus-ring: var(--accent-crimson);
-  --border: var(--paper-shadow);
-  --shadow: rgba(74, 0, 0, 0.14);
+  --focus-ring: var(--crimson);
+  --focus-ring-width: 3px;
+  --focus-ring-offset: 3px;
+  --tap: 44px;
+  --on-accent: #ffffff;
 }

@@ -1,7 +1,7 @@
 :root {
   /*
-   * Colour / brand tokens: brand-tokens.css (IU gear pink-cream + crimson).
-   * Sibling may swap that file for a shared import. Layout + type stay here.
+   * Colour: brand-tokens.css (shared) + register-campus.css (IU gear pink-cream + crimson).
+   * Layout + type scale stay here.
    */
 
   /* you er yuan shi bu ju can shu */

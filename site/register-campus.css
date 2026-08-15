@@ -1,0 +1,83 @@
+/**
+ * Register: campus / IU gear · matchaxmoxie
+ * Pink-cream paper + crimson chrome (playful). Matcha secondary.
+ * Shared tokens load first (HTML link or @import).
+ */
+
+:root {
+  /* IU gear primary paper / chrome */
+  --paper: #f5efef;
+  --paper-cream: #f5efef;
+  --chalk-dust: #faf6f6;
+  --paper-shadow: #e0d0d0;
+  --accent: var(--crimson);
+  --accent-crimson: var(--crimson);
+  --crimson-ink: var(--crimson-deep);
+  --link: var(--crimson);
+  --link-hover: var(--crimson-deep);
+  --focus: var(--crimson);
+  --focus-ring: var(--crimson);
+
+  /* Ink AA on pink-cream */
+  --crayon-ink: #1a1a1a;
+  --ink: #1f1630;
+  --mute: #2a1f30;
+  --crayon-muted: #2a1f30;
+  --editorial-dark: var(--crayon-ink);
+  --text-primary: var(--editorial-dark);
+  --text-secondary: var(--crayon-muted);
+  --text-muted: var(--crayon-muted);
+  --text-ghost: #3d3232;
+
+  /* Campus aliases used by styles.css */
+  --sunshine: var(--crimson);
+  --golden-hour: var(--crimson);
+  --sunset-warm: var(--crimson);
+  --sunset-ink: var(--crimson-deep);
+  --sunset-glow: rgba(153, 0, 0, 0.12);
+  --coral: var(--crimson);
+  --coral-ink: var(--crimson);
+  --peach: #f3d5d5;
+  --lavender: #7a0000;
+  --dusk: #4a0000;
+  --sky-blue: var(--crimson);
+  --grass-green: var(--crimson);
+  --apple-red: var(--crimson);
+  --chalkboard: #2f2942;
+  --cinnabar: var(--crimson);
+  --cinnabar-soft: #b30000;
+  --matcha-ops: var(--crimson);
+  --bg-soft-warm: var(--paper-cream);
+  --border: var(--paper-shadow);
+  --shadow: rgba(74, 0, 0, 0.14);
+
+  /* Matcha secondary (凤凰 note) ... locked site greens stay available */
+  --matcha-deep: #006b45;
+  --matcha-mid: #3d6b4a;
+  --matcha-pale: #e8f0e4;
+  --matcha-ink: #004d32;
+  --jade: var(--matcha-deep);
+  --jade-soft: var(--matcha-mid);
+  --matcha-wash: var(--matcha-pale);
+
+  --tulip-petal: var(--sunshine);
+  --tulip-deep: var(--dusk);
+  --tulip-blush: #f3e4e2;
+  --tulip-stem: var(--coral-ink);
+  --tulip-soil: var(--crayon-ink);
+  --tulip-light: var(--paper-cream);
+  --tulip-mist: var(--paper-shadow);
+
+  --gold: #7a5f14;
+  --gold-soft: #e8d5a3;
+  --sunflower: #e8c547;
+  --sage: #5a6f52;
+  --sage-wash: #f3e4e2;
+  --dusty-pink: #c9898f;
+  --dusty-pink-soft: #f3e4e2;
+  --dusty-pink-ink: #8f454e;
+
+  --font-display: "Comic Neue", "Cooper Black", "Fraunces", Georgia, serif;
+  --font-body: "Comic Neue", Arial, Helvetica, sans-serif;
+  --radius: 12px;
+}
