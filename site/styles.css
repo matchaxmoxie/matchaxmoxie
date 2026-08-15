@@ -1,25 +1,25 @@
 :root {
   /* ri luo jiao shi pei se · matchaxmoxie · jin se huang hun */
-  --sunshine: #F4A261;
-  --golden-hour: #F4A261;
+  --sunshine: #990000;
+  --golden-hour: #990000;
   /* zhuang shi ju se（bian kuang / xi di）；bu yong zuo zheng wen / qian se di shang de lian jie */
-  --sunset-warm: #E0763A;
+  --sunset-warm: #990000;
   /* wen zi + CTA di se：nai you / bai di ≥4.5:1（#E0763A jin ~3:1） */
-  --sunset-ink: #B8511A;
+  --sunset-ink: #6d0000;
   --sunset-glow: rgba(224, 118, 58, 0.14);
-  --coral: #E76F51;
+  --coral: #990000;
   /* zheng wen yong shan hu（nai you di ≥4.5:1）；zhuang shi reng yong --coral */
-  --coral-ink: #9A3D32;
+  --coral-ink: #990000;
   --peach: #FFB088;
   --lavender: #7A6BA8;
   /* lian jie/dao hang mo se：shen zi，nai you/peach di shang ying ke du */
-  --dusk: #2A1F3D;
+  --dusk: #4a0000;
   --sky-blue: #7A6BA8;
   --grass-green: #E76F51;
-  --apple-red: #C45C4A;
+  --apple-red: #990000;
   --chalkboard: #2F2942;
-  --chalk-dust: #FFFAF4;
-  --paper-cream: #FFF4E8;
+  --chalk-dust: #faf6f6;
+  --paper-cream: #f5efef;
   --paper-shadow: #D9C4B0;
   /* zheng wen jin hei · yong hu ke du xing ying xu qiu */
   --crayon-ink: #1a1a1a;
@@ -30,7 +30,7 @@
   --matcha-ops: var(--coral-ink);
   --text-muted: var(--crayon-muted);
   --bg-soft-warm: var(--paper-cream);
-  --accent-crimson: #9A3D32;
+  --accent-crimson: #990000;
 
   /* jiu bian liang bie ming，ying she dao jiao shi zhu ti */
   --tulip-petal: var(--sunshine);
@@ -45,7 +45,7 @@
   --jade: #006B45;
   --jade-soft: #3D6B4A;
   --cinnabar: var(--accent-crimson);
-  --cinnabar-soft: #B8452F;
+  --cinnabar-soft: #b30000;
   --gold: #7A5F14;
   --gold-soft: #E8D5A3;
   --matcha-wash: #E8F0E4;
@@ -62,10 +62,10 @@
   --text-ghost: #3D3232;
 
   /* gong neng se */
-  --link: var(--dusk);
-  --link-hover: var(--coral-ink);
-  --focus: var(--dusk);
-  --focus-ring: var(--dusk); /* nai you di jiao dian huan · jian a11y.css */
+  --link: #990000;
+  --link-hover: #6d0000;
+  --focus: #990000;
+  --focus-ring: #990000; /* IU gear · a11y.css */
   --border: var(--paper-shadow);
   --shadow: rgba(26, 26, 26, 0.14);
 
@@ -156,20 +156,13 @@ body {
   background-image:
     linear-gradient(
       180deg,
-      rgba(244, 162, 97, 0.1) 0%,
-      rgba(122, 107, 168, 0.06) 42%,
-      rgba(255, 250, 244, 0.94) 100%
-    ),
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 28px,
-      rgba(42, 31, 61, 0.045) 28px,
-      rgba(42, 31, 61, 0.045) 29px
+      rgba(153, 0, 0, 0.06) 0%,
+      rgba(245, 239, 239, 0.95) 48%,
+      #f5efef 100%
     );
   /* nai you di yong yuan jin hei mo；jin zhi yi lai hui bei shen se mo shi gai xie de --text-primary */
   color: #1F1630;
-  font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: var(--text-base);
   line-height: var(--leading-loose);
   -webkit-font-smoothing: antialiased;
@@ -375,7 +368,7 @@ body {
 }
 
 .stack-col h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-h3-mobile);
   font-weight: 400;
   color: var(--editorial-dark);
@@ -447,7 +440,7 @@ body {
 }
 
 .ops-epoch {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   color: var(--editorial-dark);
 }
@@ -455,7 +448,7 @@ body {
 .ops-years {
   display: inline-block;
   margin-left: 0.35rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: var(--text-xs);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -566,7 +559,7 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-hero-mobile);
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -690,7 +683,7 @@ body {
 }
 
 .stack-col h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-weight: 500;
   font-size: var(--text-md);
   color: var(--text-primary);
@@ -795,7 +788,7 @@ body {
 .year-content h2,
 .years-nav h2,
 .connect h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-h2-mobile);
   font-weight: 300;
   color: var(--text-primary);
@@ -849,7 +842,7 @@ body {
 .year-card h3,
 .class-card h3,
 .piece-name {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-h3-mobile);
   font-weight: 300;
   color: var(--text-primary);
@@ -1106,7 +1099,7 @@ body {
 }
 
 .coming-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-h3-mobile);
   font-weight: 400;
   color: var(--text-primary);
@@ -1255,7 +1248,7 @@ body {
 }
 
 .ops-table-title {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   font-weight: 400;
   color: var(--text-primary);
@@ -1285,7 +1278,7 @@ body {
 .protocol-steps li::before {
   content: counter(protocol, decimal-leading-zero);
   grid-row: 1 / span 2;
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   color: var(--tulip-deep);
   line-height: 1.2;
@@ -1310,7 +1303,7 @@ body {
 }
 
 .opus-subhead {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   font-weight: 400;
   color: var(--text-primary);
@@ -1349,7 +1342,7 @@ body {
 }
 
 .lab-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-h3-mobile);
   font-weight: 400;
   color: var(--text-primary);
@@ -1452,7 +1445,7 @@ body {
 }
 
 .matrix-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   font-weight: 400;
   margin: var(--space-md) 0 var(--space-xs);
@@ -1574,7 +1567,7 @@ body {
 
 .ops-dash-num {
   display: block;
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-sm);
   color: var(--tulip-deep);
   margin-bottom: 0.35rem;
@@ -1582,7 +1575,7 @@ body {
 }
 
 .ops-dash-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   font-weight: 400;
   color: var(--text-primary);
@@ -1673,7 +1666,7 @@ body {
 }
 
 .work-preview h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   color: var(--text-primary);
   margin: 0 0 var(--space-xs);
@@ -1827,7 +1820,7 @@ ol li::marker { color: var(--tulip-deep); }
 }
 
 .module-checklist-block h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   font-weight: 500;
   margin-bottom: var(--space-xs);
@@ -1934,14 +1927,14 @@ ol li::marker { color: var(--tulip-deep); }
 }
 
 main.container > h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-hero-mobile);
   color: var(--text-primary);
   margin: var(--space-lg) 0 var(--space-xs);
 }
 
 main.container > h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-h2-mobile);
   font-weight: 500;
   margin: var(--space-lg) 0 var(--space-sm);
@@ -1949,7 +1942,7 @@ main.container > h2 {
 }
 
 main.container > h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   font-weight: 500;
   margin: var(--space-md) 0 var(--space-xs);
@@ -2063,7 +2056,7 @@ body.coord-page {
 }
 
 .open-todos-panel h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   font-weight: 500;
   margin: 0 0 var(--space-sm);
@@ -2221,7 +2214,7 @@ body.coord-page {
 
 .status-stat .stat-num {
   display: block;
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-lg);
   font-weight: 500;
   color: var(--tulip-deep);
@@ -2266,7 +2259,7 @@ body.coord-page {
 }
 
 .hub-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif; font-weight: 700;
   font-size: var(--text-md);
   font-weight: 500;
   color: var(--text-primary);
