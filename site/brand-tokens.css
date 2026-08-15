@@ -16,8 +16,9 @@
   --joy-warm: #d9906a;
   --joy-warm-deep: #b56f4a;
   --joy-ink: #8f5338; /* AA small text on cream */
-  --gear-white: #eee9e0;
-  --cream: var(--gear-white);
+  --gear-white: #fffaf2;
+  --cream: #fffaf2;
+  --paper-cream: #fffaf2;
   --deck-white: #e4dfd4;
 
   --ink: #23292e;

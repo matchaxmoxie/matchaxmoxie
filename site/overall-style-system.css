@@ -161,3 +161,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
    3. keep all four sites' footers carrying a .site-switcher block
       linking to the other three, so nobody dead-ends on one site.
    ------------------------------------------------------------- */
+
+
+/* HARD RULE (all doors): navbars are solid opaque site paper.
+   Never backdrop-filter blur / glass / see-through sticky headers. */

@@ -5,8 +5,8 @@
  */
 
 :root {
-  --paper: var(--gear-white);
-  --paper-cream: var(--gear-white);
+  --paper: #fffaf2;
+  --paper-cream: #fffaf2;
   --chalk-dust: #fffaf2;
   --paper-shadow: var(--deck-white);
 
