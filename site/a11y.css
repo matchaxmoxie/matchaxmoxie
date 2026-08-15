@@ -3,15 +3,15 @@
  *
  * da biao：W3C WCAG 2.2 AA（dui bi du、jiao dian ke jian、tiao guo lian jie、jian dong xiao、mu biao chi cun）。
  * qing liang can kao IU Rivet：qing xi xia hua xian lian jie、hou jiao dian huan、chu kong jian ju · bu shi Rivet zi zhu ti ke long。
- * IU gear：pink-cream #f5efef / crimson #990000 · ke du you xian。
+ * Lily / charcoal：babys-breath #f5f2ea / lily-ink #96596e · ke du you xian。
  */
 
 :root {
-  /* IU gear focus ring on pink-cream ≥3:1（non-text） */
-  --focus-ring: #990000;
+  /* Lily focus ring on babys-breath ≥3:1（non-text） */
+  --focus-ring: #96596e;
   --focus-ring-width: 3px;
   --focus-ring-offset: 3px;
-  --a11y-ink: #1F1630;
+  --a11y-ink: #2b2d33;
 }
 
 /* tiao guo lian jie · jian pan you xian */
@@ -98,7 +98,7 @@
   min-height: 1.25rem;
   flex-shrink: 0;
   margin: 0.15rem 0 0;
-  accent-color: #990000;
+  accent-color: #96596e;
 }
 
 /* jiao yin zhuang shi bu qiang zhi zhen/jiao dian；lie biao yu yi reng kao ol */

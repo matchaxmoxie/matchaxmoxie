@@ -4,16 +4,16 @@
   "description": "matchaxmoxie cookie classroom archive (sunset). Builder portfolio is jadexzhao (sunrise). Same person. IG @zhao.langxi.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f5efef",
-  "theme_color": "#990000",
+  "background_color": "#f5f2ea",
+  "theme_color": "#d1728f",
   "icons": [
     {
-      "src": "favicon-32x32.png?v=20260814d",
+      "src": "favicon-32x32.png?v=20260814-lily",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "apple-touch-icon.png?v=20260814d",
+      "src": "apple-touch-icon.png?v=20260814-lily",
       "sizes": "180x180",
       "type": "image/png"
     }

@@ -1,6 +1,6 @@
 :root {
   /*
-   * Colour: brand-tokens.css (shared) + register-campus.css (IU gear pink-cream + crimson).
+   * Colour: brand-tokens.css (shared) + register-campus.css (lily / charcoal campus).
    * Layout + type scale stay here.
    */
 
@@ -91,19 +91,19 @@ body {
   background-image:
     linear-gradient(
       180deg,
-      rgba(153, 0, 0, 0.07) 0%,
-      rgba(243, 213, 213, 0.42) 38%,
-      rgba(250, 246, 246, 0.96) 100%
+      rgba(209, 114, 143, 0.10) 0%,
+      rgba(232, 164, 184, 0.28) 38%,
+      rgba(245, 242, 234, 0.96) 100%
     ),
     repeating-linear-gradient(
       0deg,
       transparent,
       transparent 28px,
-      rgba(74, 0, 0, 0.05) 28px,
-      rgba(74, 0, 0, 0.05) 29px
+      rgba(43, 45, 51, 0.06) 28px,
+      rgba(43, 45, 51, 0.06) 29px
     );
   /* fen hong nai you di yong yuan jin hei mo */
-  color: #1F1630;
+  color: var(--charcoal-fleece, #2b2d33);
   font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
   font-size: var(--text-base);
   line-height: var(--leading-loose);
@@ -568,7 +568,7 @@ body {
   background-color: var(--accent-crimson);
   color: #faf6f6;
   border-color: var(--crimson-ink);
-  box-shadow: 3px 3px 0 rgba(74, 0, 0, 0.28);
+  box-shadow: 3px 3px 0 rgba(209, 114, 143, 0.22);
   font-weight: 700;
 }
 
@@ -3054,7 +3054,7 @@ body.kindergarten-home {
   background: linear-gradient(165deg, #ffffff 0%, var(--chalk-dust) 55%, var(--dusty-pink-soft) 100%);
   border: 3px solid var(--crayon-ink);
   border-radius: 0;
-  box-shadow: 6px 6px 0 rgba(74, 0, 0, 0.14);
+  box-shadow: 6px 6px 0 rgba(209, 114, 143, 0.16);
 }
 
 .open-invest--hero h2,
@@ -3847,7 +3847,7 @@ body.kiss-home .quiet-links,
 body.kiss-home .footer-kiss,
 body.kiss-home .footer-kiss .human,
 body.kiss-home figcaption {
-  color: #1F1630 !important;
+  color: #2b2d33 !important;
 }
 
 body.kindergarten-home .gwc-block li,
@@ -3856,7 +3856,7 @@ body.guide-page .guide-section li,
 body.scratch-studio-page .howto-body li,
 body.scratch-studio-page .howto-body p,
 body.scratch-studio-page .howto-meta p {
-  color: #1F1630 !important;
+  color: #2b2d33 !important;
 }
 
 /* keep-it-simple ri luo zhu ye · shao ka pian · an jing gui dang */
@@ -3872,13 +3872,13 @@ body.journey-page,
 body.scratch-studio-page,
 body.campus-survival-page {
   color-scheme: light only;
-  color: #1F1630 !important;
-  --ink: #1F1630;
-  --crayon-ink: #1a1a1a;
-  --text-primary: #1F1630;
-  --text-secondary: #2F2438;
-  --text-ghost: #3D3232;
-  --text-muted: #2F2438;
+  color: #2b2d33 !important;
+  --ink: var(--charcoal-fleece, #2b2d33);
+  --crayon-ink: var(--charcoal-fleece, #2b2d33);
+  --text-primary: var(--charcoal-fleece, #2b2d33);
+  --text-secondary: var(--window-grey, #6b7178);
+  --text-ghost: #4a4e55;
+  --text-muted: var(--window-grey, #6b7178);
 }
 
 /* ying xiong qu / ke cheng biao：ying mo，fang huan cun jiu CSS ji cheng fen bi fen */
@@ -3899,7 +3899,7 @@ body.campus-survival-page {
 .scratch-studio-page .howto-body,
 .scratch-studio-page .howto-body p,
 .scratch-studio-page .howto-body li {
-  color: #1F1630 !important;
+  color: #2b2d33 !important;
 }
 
 .kiss-home .gwc-quiet,
@@ -4093,7 +4093,7 @@ body.campus-survival-page {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-size: clamp(1.15rem, 3.2vw, 1.45rem);
   line-height: 1.15;
-  color: #1a1a1a;
+  color: #2b2d33;
   position: relative;
   z-index: 1;
 }
@@ -4549,10 +4549,10 @@ body.campus-survival-page {
   font-size: 14px;
   line-height: 1.4;
   font-weight: 700;
-  color: var(--crayon-ink);
+  color: var(--charcoal-fleece, var(--crayon-ink));
   padding: 12px 14px 14px;
-  border-top: 3px solid var(--crayon-ink);
-  background: var(--paper-cream);
+  border-top: 3px solid var(--lily-pink, var(--border));
+  background: var(--babys-breath, var(--paper-cream));
 }
 
 .guide-photo--home {
@@ -5847,10 +5847,10 @@ a.situation-btn {
   text-align: left;
   color: var(--crayon-ink);
   background: var(--chalk-dust);
-  border: 2px solid rgba(153, 0, 0, 0.22);
+  border: 2px solid rgba(232, 164, 184, 0.55);
   border-left: 5px solid var(--accent-crimson);
   border-radius: 0;
-  box-shadow: 3px 3px 0 rgba(74, 0, 0, 0.12);
+  box-shadow: 3px 3px 0 rgba(43, 45, 51, 0.14);
   text-decoration: none;
   cursor: pointer;
   touch-action: manipulation;
@@ -5882,9 +5882,9 @@ a.open-pick-btn:hover,
 a.situation-btn:hover {
   background: var(--dusty-pink-soft);
   color: var(--dusk);
-  border-color: rgba(153, 0, 0, 0.35);
+  border-color: rgba(209, 114, 143, 0.35);
   border-left-color: var(--crimson-ink);
-  box-shadow: 5px 5px 0 rgba(74, 0, 0, 0.16);
+  box-shadow: 5px 5px 0 rgba(209, 114, 143, 0.16);
   text-decoration: none;
 }
 
@@ -5915,7 +5915,7 @@ a.open-pick-btn[aria-current="true"] {
   background: var(--dusty-pink-soft);
   border-color: var(--accent-crimson);
   border-left-width: 6px;
-  box-shadow: 4px 4px 0 rgba(74, 0, 0, 0.16);
+  box-shadow: 4px 4px 0 rgba(209, 114, 143, 0.16);
   color: var(--dusk);
 }
 
@@ -5993,7 +5993,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   color: #ffffff;
   background: var(--crimson-ink);
   border-color: var(--dusk);
-  box-shadow: 5px 5px 0 rgba(74, 0, 0, 0.35);
+  box-shadow: 5px 5px 0 rgba(209, 114, 143, 0.28);
 }
 
 .open-link-cta:focus-visible,
@@ -6660,7 +6660,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .interior-panel {
   margin: 0 0 28px;
   padding: 22px 20px 20px;
-  background: linear-gradient(165deg, #ffffff 0%, var(--paper-cream) 55%, rgba(153, 0, 0, 0.06) 100%);
+  background: linear-gradient(165deg, #ffffff 0%, var(--paper-cream) 55%, rgba(209, 114, 143, 0.08) 100%);
   border: 4px solid var(--crayon-ink);
   box-shadow: 5px 5px 0 var(--accent-crimson);
   color: var(--ink);
@@ -6743,14 +6743,14 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .kiss-home .gwc-block {
-  background: linear-gradient(165deg, #ffffff 0%, var(--chalk-dust) 72%, rgba(153, 0, 0, 0.06) 100%);
+  background: linear-gradient(165deg, #ffffff 0%, var(--chalk-dust) 72%, rgba(209, 114, 143, 0.08) 100%);
   border-radius: 0;
 }
 
 .guide-page .guide-section {
   margin: 28px 0 32px;
   padding: 20px;
-  background: linear-gradient(165deg, #ffffff 0%, var(--chalk-dust) 72%, rgba(153, 0, 0, 0.06) 100%);
+  background: linear-gradient(165deg, #ffffff 0%, var(--chalk-dust) 72%, rgba(209, 114, 143, 0.08) 100%);
   border: 4px solid var(--crayon-ink);
   box-shadow: 5px 5px 0 var(--accent-crimson);
 }
@@ -7048,35 +7048,35 @@ body.page-404 {
   color: var(--chalk-dust);
 }
 
-/* ... scrollbar · crimson chrome, non-breaking ... */
+/* ... scrollbar · lily chrome, non-breaking ... */
 html {
-  scrollbar-color: rgba(153, 0, 0, 0.45) transparent;
+  scrollbar-color: rgba(209, 114, 143, 0.45) transparent;
   scrollbar-width: thin;
 }
 
-/* Home uses the same pink-cream + crimson paper wash as every other page */
+/* Home uses the same babys-breath + lily paper wash as every other page */
 body.choice-home {
   background-color: var(--paper-cream);
   background-image:
     linear-gradient(
       180deg,
-      rgba(153, 0, 0, 0.07) 0%,
-      rgba(243, 213, 213, 0.42) 38%,
-      rgba(250, 246, 246, 0.96) 100%
+      rgba(209, 114, 143, 0.10) 0%,
+      rgba(232, 164, 184, 0.28) 38%,
+      rgba(245, 242, 234, 0.96) 100%
     ),
     repeating-linear-gradient(
       0deg,
       transparent,
       transparent 28px,
-      rgba(74, 0, 0, 0.05) 28px,
-      rgba(74, 0, 0, 0.05) 29px
+      rgba(43, 45, 51, 0.06) 28px,
+      rgba(43, 45, 51, 0.06) 29px
     );
 }
 
-/* ... hero visual · pink-cream to crimson sky + 凤 ... */
+/* ... hero visual · babys-breath to lily sky + 凤 ... */
 .kindergarten-home .hero-visual {
   background:
-    radial-gradient(58% 42% at 50% 32%, rgba(243, 213, 213, 0.7), transparent 74%),
+    radial-gradient(58% 42% at 50% 32%, rgba(232, 164, 184, 0.55), transparent 74%),
     linear-gradient(
       180deg,
       var(--peach) 0%,
@@ -7312,7 +7312,7 @@ body.choice-home {
 
 .choice-home .open-invest--hero {
   background: linear-gradient(165deg, #ffffff 0%, var(--dusty-pink-soft) 42%, var(--peach) 100%);
-  box-shadow: 6px 6px 0 rgba(74, 0, 0, 0.16);
+  box-shadow: 6px 6px 0 rgba(209, 114, 143, 0.16);
 }
 
 .choice-home .hiatus-banner {
@@ -7360,14 +7360,14 @@ body.choice-home {
 .page-start h2 {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-size: 1.15rem;
-  color: var(--crayon-ink, #1F1630);
+  color: var(--crayon-ink, #2b2d33);
   margin: 0 0 8px;
 }
 
 .page-start ol {
   margin: 0;
   padding-left: 1.2rem;
-  color: var(--crayon-ink, #1F1630);
+  color: var(--crayon-ink, #2b2d33);
   line-height: 1.45;
   max-width: 48ch;
 }
@@ -7407,7 +7407,7 @@ body.choice-home {
   font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
   font-size: 1rem;
   line-height: 1.45;
-  color: var(--crayon-ink, #1F1630);
+  color: var(--crayon-ink, #2b2d33);
 }
 
 .ap-credit-table {
@@ -7449,7 +7449,7 @@ body.choice-home {
   font-size: 0.9rem;
   text-decoration: none;
   touch-action: manipulation;
-  border: 3px solid var(--crayon-ink, #1F1630);
+  border: 3px solid var(--crayon-ink, #2b2d33);
 }
 
 .scratch-studio-page .howto-howto,
@@ -7495,7 +7495,7 @@ body.choice-home {
 .fp-group legend {
   font-family: "Cooper Black", "Cooper Std", Georgia, serif;
   font-size: 1.05rem;
-  color: var(--crayon-ink, #1F1630);
+  color: var(--crayon-ink, #2b2d33);
   padding: 0 4px;
 }
 

@@ -1,81 +1,86 @@
 /**
- * Register: campus / IU gear · matchaxmoxie
- * Pink-cream paper + crimson chrome (playful). Matcha secondary.
+ * Register: campus · matchaxmoxie
+ * Lily / charcoal paper + pink campus chrome (softer than lemonade).
  * Shared tokens load first (HTML link or @import).
  */
 
 :root {
-  /* IU gear primary paper / chrome */
-  --paper: #f5efef;
-  --paper-cream: #f5efef;
-  --chalk-dust: #faf6f6;
-  --paper-shadow: #e0d0d0;
-  --accent: var(--crimson);
-  --accent-crimson: var(--crimson);
-  --crimson-ink: var(--crimson-deep);
-  --link: var(--crimson);
-  --link-hover: var(--crimson-deep);
-  --focus: var(--crimson);
-  --focus-ring: var(--crimson);
+  /* Paper / bg */
+  --paper: var(--babys-breath);
+  --paper-cream: var(--babys-breath);
+  --chalk-dust: #faf8f4;
+  --paper-shadow: var(--sheer-curtain);
 
-  /* Ink AA on pink-cream */
-  --crayon-ink: #1a1a1a;
-  --ink: #1f1630;
-  --mute: #2a1f30;
-  --crayon-muted: #2a1f30;
-  --editorial-dark: var(--crayon-ink);
-  --text-primary: var(--editorial-dark);
-  --text-secondary: var(--crayon-muted);
-  --text-muted: var(--crayon-muted);
-  --text-ghost: #3d3232;
+  /* Primary chrome · lily (AA via lily-ink) */
+  --accent: var(--lily-ink);
+  --accent-crimson: var(--lily-ink);
+  --crimson-ink: var(--lily-ink-deep);
+  --link: var(--lily-ink);
+  --link-hover: var(--lily-ink-deep);
+  --focus: var(--lily-ink);
+  --focus-ring: var(--lily-ink);
 
-  /* Campus aliases used by styles.css */
-  --sunshine: var(--crimson);
-  --golden-hour: var(--crimson);
-  --sunset-warm: var(--crimson);
-  --sunset-ink: var(--crimson-deep);
-  --sunset-glow: rgba(153, 0, 0, 0.12);
-  --coral: var(--crimson);
-  --coral-ink: var(--crimson);
-  --peach: #f3d5d5;
-  --lavender: #7a0000;
-  --dusk: #4a0000;
-  --sky-blue: var(--crimson);
-  --grass-green: var(--crimson);
-  --apple-red: var(--crimson);
-  --chalkboard: #2f2942;
-  --cinnabar: var(--crimson);
-  --cinnabar-soft: #b30000;
-  --matcha-ops: var(--crimson);
+  /* Ink · charcoal on babys-breath (AA) */
+  --crayon-ink: var(--charcoal-fleece);
+  --ink: var(--charcoal-fleece);
+  --mute: var(--window-grey);
+  --crayon-muted: var(--window-grey);
+  --editorial-dark: var(--charcoal-fleece);
+  --text-primary: var(--charcoal-fleece);
+  --text-secondary: var(--window-grey);
+  --text-muted: var(--window-grey);
+  --text-ghost: #4a4e55;
+
+  /* Campus aliases used by styles.css → lily system */
+  --sunshine: var(--lily-ink);
+  --golden-hour: var(--lily-ink);
+  --sunset-warm: var(--lily-pink-deep);
+  --sunset-ink: var(--lily-ink-deep);
+  --sunset-glow: rgba(209, 114, 143, 0.16);
+  --coral: var(--lily-pink-deep);
+  --coral-ink: var(--lily-ink);
+  --peach: var(--lily-pink);
+  --lavender: var(--lily-ink-deep);
+  --dusk: var(--charcoal-fleece);
+  --sky-blue: var(--lily-ink);
+  --grass-green: var(--lily-ink);
+  --apple-red: var(--lily-ink);
+  --chalkboard: var(--charcoal-fleece);
+  --cinnabar: var(--lily-ink);
+  --cinnabar-soft: var(--lily-pink-deep);
+  --matcha-ops: var(--lily-ink);
   --bg-soft-warm: var(--paper-cream);
-  --border: var(--paper-shadow);
-  --shadow: rgba(74, 0, 0, 0.14);
 
-  /* Matcha secondary (凤凰 note) ... locked site greens stay available */
+  /* Frame hints: lily-pink border, charcoal faint, lily shadow */
+  --border: var(--lily-pink);
+  --border-faint: rgba(43, 45, 51, 0.14);
+  --shadow: rgba(209, 114, 143, 0.16);
+
+  /* Matcha secondary kept for status dots only */
   --matcha-deep: #006b45;
   --matcha-mid: #3d6b4a;
   --matcha-pale: #e8f0e4;
   --matcha-ink: #004d32;
   --jade: var(--matcha-deep);
   --jade-soft: var(--matcha-mid);
-  --matcha-wash: var(--matcha-pale);
+  --matcha-wash: var(--sheer-curtain);
 
-  --tulip-petal: var(--sunshine);
-  --tulip-deep: var(--dusk);
-  --tulip-blush: #f3e4e2;
-  --tulip-stem: var(--coral-ink);
-  --tulip-soil: var(--crayon-ink);
-  --tulip-light: var(--paper-cream);
-  --tulip-mist: var(--paper-shadow);
+  --tulip-petal: var(--lily-pink-deep);
+  --tulip-deep: var(--lily-ink-deep);
+  --tulip-blush: var(--lily-pink);
+  --tulip-stem: var(--lily-ink);
+  --tulip-soil: var(--charcoal-fleece);
+  --tulip-light: var(--babys-breath);
+  --tulip-mist: var(--sheer-curtain);
 
   --gold: #7a5f14;
   --gold-soft: #e8d5a3;
   --sunflower: #e8c547;
   --sage: #5a6f52;
-  --sage-wash: #f3e4e2;
-  --dusty-pink: #c9898f;
-  --dusty-pink-soft: #f3e4e2;
-  --dusty-pink-ink: #8f454e;
+  --sage-wash: var(--sheer-curtain);
+  --dusty-pink: var(--lily-pink-deep);
+  --dusty-pink-soft: var(--lily-pink);
+  --dusty-pink-ink: var(--lily-ink);
 
   --font-display: "Comic Neue", "Cooper Black", "Fraunces", Georgia, serif;
   --font-body: "Comic Neue", Arial, Helvetica, sans-serif;
