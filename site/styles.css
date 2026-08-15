@@ -8026,3 +8026,218 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
     to { opacity: 1; transform: none; }
   }
 }
+
+
+/* ============================================================
+   hero--doors · parity with IU / zhao / jadexzhao mast pattern
+   Ocean campus tokens. Kills leftover kindergarten/choice chrome
+   on the home hero only.
+   ============================================================ */
+.theme-matchaxmoxie.choice-home .hero--doors,
+.theme-matchaxmoxie .hero--doors {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 1.5rem !important;
+  align-items: center !important;
+  margin: 0 0 2rem !important;
+  padding: 1.25rem 0 1.75rem !important;
+  border-bottom: 2px solid var(--rule, rgba(30, 74, 99, 0.14)) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  text-align: left !important;
+}
+
+@media (min-width: 820px) {
+  .theme-matchaxmoxie .hero--doors {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr) !important;
+    gap: 2.25rem !important;
+  }
+}
+
+.theme-matchaxmoxie .hero--doors .hero-visual {
+  margin: 0 !important;
+  max-width: 20rem !important;
+  width: 100% !important;
+  border-radius: var(--radius, 20px) !important;
+  overflow: hidden !important;
+  border: 3px solid var(--ocean, #3f7fa3) !important;
+  box-shadow: var(--shadow, 0 14px 30px rgba(30, 74, 99, 0.16)) !important;
+  background: var(--sky-pale, #d9ecf4) !important;
+  transform: none !important;
+  rotate: none !important;
+}
+
+.theme-matchaxmoxie .hero--doors .hero-visual img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 1 !important;
+  object-fit: cover !important;
+  object-position: center 20% !important;
+}
+
+.theme-matchaxmoxie .hero--doors .hero-text {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+.theme-matchaxmoxie .hero--doors .eyebrow {
+  display: inline-block !important;
+  margin: 0 0 0.65rem !important;
+  padding: 4px 12px !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  color: var(--joy-warm-deep, #b56f4a) !important;
+  background: rgba(217, 144, 106, 0.14) !important;
+  border-radius: 999px !important;
+}
+
+.theme-matchaxmoxie .hero--doors .hero-brand-line {
+  margin: 0 0 0.45rem !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--ocean-deep, #1e4a63) !important;
+}
+
+.theme-matchaxmoxie .hero--doors .hero-brand-line .sc {
+  color: var(--ocean, #3f7fa3) !important;
+}
+
+.theme-matchaxmoxie .hero--doors h1,
+.theme-matchaxmoxie .hero--doors #hero-heading {
+  margin: 0 0 0.5rem !important;
+  font-family: var(--font-display, Fraunces, serif) !important;
+  font-weight: 700 !important;
+  font-size: clamp(2rem, 5vw, 2.85rem) !important;
+  line-height: 1.08 !important;
+  color: var(--ocean-deep, #1e4a63) !important;
+  border: none !important;
+}
+
+.theme-matchaxmoxie .hero--doors h1::after,
+.theme-matchaxmoxie .hero--doors .hero-text h1::after {
+  content: none !important;
+  display: none !important;
+}
+
+.theme-matchaxmoxie .hero--doors .credential-line {
+  margin: 0 0 0.85rem !important;
+  padding-left: 0.85rem !important;
+  border-left: 3px solid var(--joy-warm, #d9906a) !important;
+  color: var(--ink-soft, #4a5158) !important;
+  font-size: 1.02rem !important;
+  max-width: 40ch !important;
+}
+
+.theme-matchaxmoxie .hero--doors .hero-hook {
+  margin: 0 0 1.15rem !important;
+  max-width: 38ch !important;
+  color: var(--ink-soft, #4a5158) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.5 !important;
+}
+
+.theme-matchaxmoxie .hero--doors .cta-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.75rem !important;
+  margin: 0 !important;
+}
+
+.theme-matchaxmoxie .hero--doors .btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 48px !important;
+  padding: 12px 24px !important;
+  border-radius: 999px !important;
+  background: var(--ocean, #3f7fa3) !important;
+  color: var(--cream, #fffaf2) !important;
+  border: 2px solid var(--ocean, #3f7fa3) !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+.theme-matchaxmoxie .hero--doors .btn:hover {
+  background: var(--joy-warm, #d9906a) !important;
+  border-color: var(--joy-warm, #d9906a) !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+.theme-matchaxmoxie .hero--doors .btn-outline {
+  background: transparent !important;
+  color: var(--ocean-deep, #1e4a63) !important;
+  border: 2px solid var(--ocean, #3f7fa3) !important;
+}
+
+.theme-matchaxmoxie .hero--doors .btn-outline:hover {
+  background: var(--sky-pale, #d9ecf4) !important;
+  color: var(--ocean-deep, #1e4a63) !important;
+  border-color: var(--ocean-deep, #1e4a63) !important;
+}
+
+/* Hide old bagel/energy chrome if any remnant markup */
+.theme-matchaxmoxie .hero--doors .hero-energy-line,
+.theme-matchaxmoxie .hero--doors .hero-bagel-quote,
+.theme-matchaxmoxie .hero--doors .hero-cta-link {
+  display: none !important;
+}
+
+.theme-matchaxmoxie .site-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-top: 0.85rem;
+  padding-top: 0.65rem;
+}
+.theme-matchaxmoxie .site-switcher a {
+  color: var(--ocean-deep, #1e4a63);
+  font-weight: 700;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.theme-matchaxmoxie .site-switcher a:hover { text-decoration: underline; }
+.theme-matchaxmoxie .site-switcher .current {
+  color: var(--joy-warm-deep, #b56f4a);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .theme-matchaxmoxie .hero--doors .hero-visual {
+    animation: mx-doors-settle 0.65s ease both;
+  }
+  .theme-matchaxmoxie .hero--doors .hero-text {
+    animation: mx-doors-rise 0.55s ease 0.08s both;
+  }
+  @keyframes mx-doors-settle {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes mx-doors-rise {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
+@media (max-width: 819px) {
+  .theme-matchaxmoxie .hero--doors .hero-visual {
+    max-width: 16rem !important;
+  }
+  .theme-matchaxmoxie .hero--doors .cta-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .theme-matchaxmoxie .hero--doors .btn {
+    width: 100% !important;
+  }
+}
