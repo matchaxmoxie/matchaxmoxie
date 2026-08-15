@@ -210,7 +210,10 @@ body {
 }
 .site-jump a.site-jump-soft[aria-current="page"] {
   color: var(--crayon-ink);
+  border-bottom-color: var(--accent-crimson);
+  background: var(--dusty-pink-soft);
   font-weight: 700;
+  text-decoration-color: var(--accent-crimson);
 }
 .site-jump .site-jump-sep {
   flex: 0 0 auto;
@@ -1872,10 +1875,11 @@ ol li::marker { color: var(--tulip-deep); }
 }
 
 .nav-links a[aria-current="page"] {
-  color: var(--text-primary);
+  color: var(--crayon-ink);
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: var(--tulip-deep);
+  text-decoration-color: var(--accent-crimson);
+  background: var(--dusty-pink-soft);
 }
 
 main.container > h1 {
@@ -1957,11 +1961,11 @@ body.coord-page {
 }
 
 .coord-nav a[aria-current="page"] {
-  background: var(--tulip-blush);
-  color: var(--text-primary);
+  background: var(--dusty-pink-soft);
+  color: var(--crayon-ink);
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: var(--tulip-deep);
+  text-decoration-color: var(--accent-crimson);
 }
 
 .coord-nav .nav-divider {
@@ -2683,7 +2687,12 @@ body.kindergarten-home {
   }
 }
 
-.kindergarten-home a {
+/*
+ * Body copy links only. Do NOT style .site-jump here:
+ * same specificity as .site-jump a, later in the cascade, used to
+ * zero border-bottom and kill crimson active/hover highlights on home.
+ */
+.kindergarten-home a:not(.site-jump *) {
   color: var(--dusk);
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -2691,13 +2700,13 @@ body.kindergarten-home {
   border-bottom: 0;
 }
 
-.kindergarten-home a:hover {
-  color: var(--coral-ink);
-  text-decoration-color: var(--coral-ink);
+.kindergarten-home a:not(.site-jump *):hover {
+  color: var(--accent-crimson);
+  text-decoration-color: var(--accent-crimson);
 }
 
-.kindergarten-home a:focus-visible {
-  outline: 4px solid var(--dusk);
+.kindergarten-home a:not(.site-jump *):focus-visible {
+  outline: 4px solid var(--focus-ring, var(--accent-crimson));
   outline-offset: 3px;
 }
 
@@ -2711,6 +2720,7 @@ body.kindergarten-home {
   font-weight: 500;
 }
 
+/* Legacy top bar (kiss-home hides it) · same pink IU gear as .site-jump */
 .kindergarten-home .site-nav {
   position: fixed;
   top: 0;
@@ -2722,8 +2732,8 @@ body.kindergarten-home {
   justify-content: center;
   flex-wrap: wrap;
   min-height: var(--nav-h);
-  background: var(--golden-hour);
-  border-bottom: 4px solid var(--crayon-ink);
+  background: var(--paper-cream);
+  border-bottom: 4px solid var(--accent-crimson);
   padding: 0 max(12px, env(safe-area-inset-right, 0px)) 0 max(12px, env(safe-area-inset-left, 0px));
   padding-top: env(safe-area-inset-top, 0px);
 }
@@ -2738,15 +2748,17 @@ body.kindergarten-home {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: lowercase;
-  color: var(--crayon-ink);
+  color: var(--text-secondary);
   text-decoration: none;
   border: 0;
   border-bottom: 4px solid transparent;
 }
 
-.kindergarten-home .site-nav a:hover {
-  background: var(--chalk-dust);
-  border-bottom-color: var(--dusk);
+.kindergarten-home .site-nav a:hover,
+.kindergarten-home .site-nav a[aria-current="page"] {
+  color: var(--crayon-ink);
+  background: var(--dusty-pink-soft);
+  border-bottom-color: var(--accent-crimson);
 }
 
 .kindergarten-home .site-nav a.nav-home {
@@ -5187,12 +5199,12 @@ body.campus-survival-page {
 
 .journey-year-nav a:hover,
 .journey-year-nav a[aria-current="page"] {
-  color: var(--coral-ink);
-  border-bottom-color: var(--coral-ink);
+  color: var(--accent-crimson);
+  border-bottom-color: var(--accent-crimson);
 }
 
 .journey-year-nav a:focus-visible {
-  outline: 3px solid var(--focus-ring, var(--dusk));
+  outline: 3px solid var(--focus-ring, var(--accent-crimson));
   outline-offset: 3px;
 }
 
@@ -6811,9 +6823,9 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .journey-year-nav {
   margin: 0 0 28px;
   padding: 14px 16px;
-  background: #fffaf4;
+  background: var(--paper-cream);
   border: 3px solid var(--crayon-ink);
-  box-shadow: 4px 4px 0 var(--lavender);
+  box-shadow: 4px 4px 0 var(--accent-crimson);
   gap: 8px 10px;
 }
 
@@ -6829,9 +6841,9 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--crayon-ink);
-  background: rgba(244, 162, 97, 0.2);
-  border: 2px solid rgba(31, 22, 48, 0.18);
-  border-bottom: 2px solid rgba(31, 22, 48, 0.18);
+  background: var(--dusty-pink-soft);
+  border: 2px solid var(--paper-shadow);
+  border-bottom: 2px solid var(--paper-shadow);
   touch-action: manipulation;
   transition:
     background-color var(--transition-base),
@@ -6841,8 +6853,8 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 
 .journey-year-nav a:hover,
 .journey-year-nav a[aria-current="page"] {
-  color: #fffaf4;
-  background: var(--sunset-ink);
+  color: #ffffff;
+  background: var(--accent-crimson);
   border-color: var(--crayon-ink);
 }
 
