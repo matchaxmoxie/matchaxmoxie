@@ -562,18 +562,26 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--accent-crimson);
-  color: #faf6f6;
-  border-color: var(--crimson-ink);
-  box-shadow: 3px 3px 0 rgba(209, 114, 143, 0.22);
+  background-color: var(--ocean, #3f7fa3);
+  color: var(--on-accent, #ffffff) !important;
+  -webkit-text-fill-color: var(--on-accent, #ffffff) !important;
+  border-color: var(--ocean-deep, #1e4a63);
+  box-shadow: 3px 3px 0 rgba(30, 74, 99, 0.22);
   font-weight: 700;
+  text-decoration: none !important;
+}
+
+.btn-primary:visited {
+  color: var(--on-accent, #ffffff) !important;
+  -webkit-text-fill-color: var(--on-accent, #ffffff) !important;
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  background-color: var(--crimson-ink);
-  border-color: var(--dusk);
-  color: #ffffff;
+  background-color: var(--ocean-deep, #1e4a63);
+  border-color: var(--ocean-deep, #1e4a63);
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 
 .btn-primary:focus-visible {
@@ -2689,7 +2697,9 @@ body.kindergarten-home {
  * same specificity as .site-jump a, later in the cascade, used to
  * zero border-bottom and kill crimson active/hover highlights on home.
  */
-.kindergarten-home a:not(.site-jump *) {
+/* Body links inside main only (nav is outside). Exclude solid CTAs
+   so ocean --dusk cannot paint label text the same as the fill. */
+.kindergarten-home main a:not(.open-cta):not(.open-link-cta):not(.btn):not(.btn-primary):not(.btn-secondary):not(.btn-outline):not(.howto-play):not(.howto-download):not(.howto-howto):not(.scratch-primary-cta):not(.desk-photo-link) {
   color: var(--dusk);
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -2697,12 +2707,12 @@ body.kindergarten-home {
   border-bottom: 0;
 }
 
-.kindergarten-home a:not(.site-jump *):hover {
+.kindergarten-home main a:not(.open-cta):not(.open-link-cta):not(.btn):not(.btn-primary):not(.btn-secondary):not(.btn-outline):not(.howto-play):not(.howto-download):not(.howto-howto):not(.scratch-primary-cta):not(.desk-photo-link):hover {
   color: var(--accent-crimson);
   text-decoration-color: var(--accent-crimson);
 }
 
-.kindergarten-home a:not(.site-jump *):focus-visible {
+.kindergarten-home main a:not(.open-cta):not(.open-link-cta):not(.btn):not(.btn-primary):not(.btn-secondary):not(.btn-outline):not(.howto-play):not(.howto-download):not(.howto-howto):not(.scratch-primary-cta):not(.desk-photo-link):focus-visible {
   outline: 4px solid var(--focus-ring, var(--accent-crimson));
   outline-offset: 3px;
 }
@@ -5958,33 +5968,46 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   align-items: center;
   min-height: 48px;
   padding: 10px 20px;
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
-  font-size: clamp(1.15rem, 2.8vw, 1.35rem);
-  font-weight: 400;
+  font-family: var(--font-display, Fraunces, Georgia, serif);
+  font-size: clamp(1.05rem, 2.4vw, 1.2rem);
+  font-weight: 700;
   letter-spacing: 0;
   text-transform: none;
-  color: #faf6f6;
-  background: var(--accent-crimson);
-  border: 2px solid var(--crimson-ink);
-  border-radius: 0;
-  box-shadow: 3px 3px 0 var(--dusk);
-  text-decoration: none;
+  /* Cream on ocean: never inherit --dusk / link blue onto the label */
+  color: var(--on-accent, #ffffff) !important;
+  -webkit-text-fill-color: var(--on-accent, #ffffff) !important;
+  background: var(--ocean, #3f7fa3);
+  background-color: var(--ocean, #3f7fa3);
+  border: 2px solid var(--ocean-deep, #1e4a63);
+  border-radius: var(--radius, 20px);
+  box-shadow: 3px 3px 0 rgba(30, 74, 99, 0.22);
+  text-decoration: none !important;
   cursor: pointer;
   touch-action: manipulation;
   transition:
     background-color var(--transition-base),
+    color var(--transition-base),
     transform var(--transition-base),
     box-shadow var(--transition-base);
+}
+
+.open-link-cta:visited,
+.open-cta:visited {
+  color: var(--on-accent, #ffffff) !important;
+  -webkit-text-fill-color: var(--on-accent, #ffffff) !important;
 }
 
 .open-link-cta:hover,
 .open-cta:hover,
 .open-link-cta:focus-visible,
 .open-cta:focus-visible {
-  color: #ffffff;
-  background: var(--crimson-ink);
-  border-color: var(--dusk);
-  box-shadow: 5px 5px 0 rgba(209, 114, 143, 0.28);
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: var(--ocean-deep, #1e4a63);
+  background-color: var(--ocean-deep, #1e4a63);
+  border-color: var(--ocean-deep, #1e4a63);
+  box-shadow: 5px 5px 0 rgba(217, 144, 106, 0.28);
+  text-decoration: none !important;
 }
 
 .open-link-cta:focus-visible,
@@ -8041,7 +8064,7 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
 /* ============================================================
    hero--doors · parity with IU / zhao / jadexzhao mast pattern
    Ocean campus tokens. Kills leftover kindergarten/choice chrome
-   on the home hero only.
+   on the home hero only. Text + CTAs + framed photo = one block.
    ============================================================ */
 .theme-matchaxmoxie.choice-home .hero--doors,
 .theme-matchaxmoxie .hero--doors {
@@ -8059,38 +8082,85 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
 }
 
 @media (min-width: 820px) {
+  .theme-matchaxmoxie.choice-home .hero--doors,
   .theme-matchaxmoxie .hero--doors {
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr) !important;
+    /* copy first, framed photo second (doors mast) */
+    grid-template-columns: minmax(0, 1.15fr) minmax(12rem, 0.85fr) !important;
     gap: 2.25rem !important;
+    align-items: center !important;
+  }
+
+  .theme-matchaxmoxie .hero--doors .hero-text {
+    order: 0 !important;
+  }
+
+  .theme-matchaxmoxie .hero--doors .hero-visual {
+    order: 1 !important;
+    justify-self: end !important;
+    max-width: 20rem !important;
   }
 }
 
-.theme-matchaxmoxie .hero--doors .hero-visual {
+/* Kill choice-home 4/5 + sky-pale empty slab under square selfie */
+.theme-matchaxmoxie .hero--doors .hero-visual,
+.theme-matchaxmoxie.choice-home .hero--doors .hero-visual,
+.theme-matchaxmoxie .hero--doors .hero-visual--photo {
+  position: relative !important;
   margin: 0 !important;
-  max-width: 20rem !important;
+  max-width: 18rem !important;
   width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
   border-radius: var(--radius, 20px) !important;
   overflow: hidden !important;
   border: 3px solid var(--ocean, #3f7fa3) !important;
-  box-shadow: var(--shadow, 0 14px 30px rgba(30, 74, 99, 0.16)) !important;
-  background: var(--sky-pale, #d9ecf4) !important;
+  box-shadow: 0 14px 30px rgba(30, 74, 99, 0.16) !important;
+  background: transparent !important;
+  background-image: none !important;
   transform: none !important;
   rotate: none !important;
+  animation: none !important;
+}
+
+.theme-matchaxmoxie .hero--doors .hero-visual::before,
+.theme-matchaxmoxie .hero--doors .hero-visual::after {
+  content: none !important;
+  display: none !important;
+}
+
+.theme-matchaxmoxie .hero--doors .hero-visual picture {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
 }
 
 .theme-matchaxmoxie .hero--doors .hero-visual img {
   display: block !important;
   width: 100% !important;
-  height: auto !important;
-  aspect-ratio: 1 !important;
+  height: 100% !important;
+  max-width: none !important;
+  aspect-ratio: auto !important;
   object-fit: cover !important;
-  object-position: center 20% !important;
+  object-position: center 22% !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .theme-matchaxmoxie .hero--doors .hero-text {
   margin: 0 !important;
   padding: 0 !important;
   text-align: left !important;
+  order: 0 !important;
+}
+
+.theme-matchaxmoxie .hero--doors .hero-visual {
+  order: 1 !important;
+  justify-self: start !important;
 }
 
 .theme-matchaxmoxie .hero--doors .eyebrow {
@@ -8167,29 +8237,45 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
   padding: 12px 24px !important;
   border-radius: 999px !important;
   background: var(--ocean, #3f7fa3) !important;
-  color: var(--cream, #fffaf2) !important;
+  color: var(--on-accent, #ffffff) !important;
+  -webkit-text-fill-color: var(--on-accent, #ffffff) !important;
   border: 2px solid var(--ocean, #3f7fa3) !important;
   font-weight: 700 !important;
   text-decoration: none !important;
   box-shadow: none !important;
 }
 
-.theme-matchaxmoxie .hero--doors .btn:hover {
+.theme-matchaxmoxie .hero--doors .btn:visited {
+  color: var(--on-accent, #ffffff) !important;
+  -webkit-text-fill-color: var(--on-accent, #ffffff) !important;
+}
+
+.theme-matchaxmoxie .hero--doors .btn:hover,
+.theme-matchaxmoxie .hero--doors .btn:focus-visible {
   background: var(--joy-warm, #d9906a) !important;
   border-color: var(--joy-warm, #d9906a) !important;
   color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
   transform: translateY(-2px);
 }
 
 .theme-matchaxmoxie .hero--doors .btn-outline {
   background: transparent !important;
   color: var(--ocean-deep, #1e4a63) !important;
+  -webkit-text-fill-color: var(--ocean-deep, #1e4a63) !important;
   border: 2px solid var(--ocean, #3f7fa3) !important;
 }
 
-.theme-matchaxmoxie .hero--doors .btn-outline:hover {
+.theme-matchaxmoxie .hero--doors .btn-outline:visited {
+  color: var(--ocean-deep, #1e4a63) !important;
+  -webkit-text-fill-color: var(--ocean-deep, #1e4a63) !important;
+}
+
+.theme-matchaxmoxie .hero--doors .btn-outline:hover,
+.theme-matchaxmoxie .hero--doors .btn-outline:focus-visible {
   background: var(--sky-pale, #d9ecf4) !important;
   color: var(--ocean-deep, #1e4a63) !important;
+  -webkit-text-fill-color: var(--ocean-deep, #1e4a63) !important;
   border-color: var(--ocean-deep, #1e4a63) !important;
 }
 
@@ -8240,8 +8326,13 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
 }
 
 @media (max-width: 819px) {
+  .theme-matchaxmoxie .hero--doors .hero-text {
+    order: 0 !important;
+  }
   .theme-matchaxmoxie .hero--doors .hero-visual {
-    max-width: 16rem !important;
+    order: 1 !important;
+    max-width: 14rem !important;
+    justify-self: start !important;
   }
   .theme-matchaxmoxie .hero--doors .cta-row {
     flex-direction: column !important;
@@ -8250,6 +8341,31 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
   .theme-matchaxmoxie .hero--doors .btn {
     width: 100% !important;
   }
+}
+
+/* Site-wide solid CTA floor: cream/white label on ocean fill */
+a.open-cta,
+a.open-link-cta,
+a.btn-primary,
+.page-start-ctas .open-cta,
+.page-start-ctas .open-link-cta {
+  color: var(--on-accent, #ffffff) !important;
+  -webkit-text-fill-color: var(--on-accent, #ffffff) !important;
+  text-decoration: none !important;
+}
+
+a.open-cta:hover,
+a.open-link-cta:hover,
+a.open-cta:focus-visible,
+a.open-link-cta:focus-visible,
+a.open-cta:visited,
+a.open-link-cta:visited,
+a.btn-primary:hover,
+a.btn-primary:focus-visible,
+a.btn-primary:visited {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 
