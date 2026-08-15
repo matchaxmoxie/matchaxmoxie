@@ -6,7 +6,16 @@ CV hub: [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) · builder portfolio
 
 Live: [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) · IG [@zhao.langxi](https://instagram.com/zhao.langxi)
 
-Palette: lily pink / charcoal (`site/brand-tokens.css`). Matcha green stays here for classroom energy.
+**Palette / register:** campus / IU gear · ocean + joy-warm (`site/starter-campus.css`, `site/brand-tokens.css`). Fishing-photo ocean blue `#3f7fa3`, joy-warm `#d9906a`, gear-white `#eee9e0`. Fraunces bold + Nunito Sans. Rounder cards, photo-tiles, pill buttons.
+
+## Four-site map
+
+| Site | Job | Look |
+|------|-----|------|
+| [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/) | CV hub | Professional slate/sage |
+| [jadexzhao](https://jadexzhao.github.io/jadexzhao/) | Shipped builds | Matcha · Fraunces italic |
+| **This site** | Classroom / MAP | Ocean campus · playful |
+| [zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) | Essay / research | Rivet crimson |
 
 ## classroom rules
 

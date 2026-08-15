@@ -1,6 +1,6 @@
 :root {
   /*
-   * Colour: brand-tokens.css (shared) + register-campus.css (lily / charcoal campus).
+   * Colour: brand-tokens.css (shared) + register-campus.css (ocean / joy campus).
    * Layout + type scale stay here.
    */
 
@@ -7958,4 +7958,29 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
     height: 200px !important;
     min-height: 200px !important;
   }
+}
+
+
+/* ===== starter-campus bridge · ocean photo-tiles / pills (20260814-nails) ===== */
+.desk-photo-link .photo-frame--desk,
+.photo-frame--desk {
+  border-radius: var(--radius, 20px);
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(30, 74, 99, 0.16);
+}
+.desk-photos {
+  background: linear-gradient(160deg, var(--chalk-dust, #fffaf2) 0%, var(--sky-pale, #d9ecf4) 100%);
+  border-color: var(--ocean-deep, #1e4a63);
+  box-shadow: 5px 5px 0 rgba(217, 144, 106, 0.35);
+}
+.site-jump a,
+.hero-cta-link,
+.open-pick-btn,
+.situation-btn {
+  border-radius: 999px;
+}
+.hero-brand-line,
+.desk-photos-heading {
+  font-family: var(--font-display), Fraunces, Georgia, serif;
+  font-weight: 700;
 }
