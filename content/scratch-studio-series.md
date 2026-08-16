@@ -1,7 +1,7 @@
 # Scratch studio series · Jade Zhao / matchaxmoxie
 
 Jade Zhao (matchaxmoxie) is on archive pause for senior year at Indiana University Luddy.
-This series stays as teaching-craft archive from Girls Who Code Indianapolis roots.
+This series stays as teaching-craft archive from the cookie classroom.
 
 Public page: https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html
 
@@ -44,4 +44,4 @@ Same classroom phrase on the live studio page: **KISS** (keep it simple).
 
 ## Brand
 
-Jade Zhao · matchaxmoxie on archive pause · IU Luddy Class of 2027 · Girls Who Code Indianapolis · 凤凰 · phoenix classroom · work/school/job appropriate.
+Jade Zhao · matchaxmoxie on archive pause · IU Luddy Class of 2027 · 凤凰 · phoenix classroom · work/school/job appropriate.
