@@ -160,6 +160,7 @@ section { margin-top: 64px; }
 
 .rule-card {
   background: var(--sky-pale);
+  background-color: var(--sky-pale);
   border-radius: var(--radius-sm);
   padding: 18px 20px;
   border-left: 4px solid var(--ocean);

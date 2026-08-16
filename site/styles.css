@@ -6674,7 +6674,8 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .interior-panel {
   margin: 0 0 28px;
   padding: 22px 20px 20px;
-  background: linear-gradient(165deg, #ffffff 0%, var(--paper-cream) 55%, rgba(209, 114, 143, 0.08) 100%);
+  background: #fffaf2;
+  background-color: var(--cream, #fffaf2);
   border: 4px solid var(--crayon-ink);
   box-shadow: 5px 5px 0 var(--accent-crimson);
   color: var(--ink);
@@ -8019,7 +8020,8 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
   box-shadow: 0 14px 30px rgba(30, 74, 99, 0.16);
 }
 .desk-photos {
-  background: linear-gradient(160deg, var(--chalk-dust, #fffaf2) 0%, var(--sky-pale, #d9ecf4) 100%);
+  background: var(--cream, #fffaf2);
+  background-color: #fffaf2;
   border-color: var(--ocean-deep, #1e4a63);
   box-shadow: 5px 5px 0 rgba(217, 144, 106, 0.35);
 }
@@ -8277,7 +8279,8 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
 }
 
 .theme-matchaxmoxie .hero--doors .btn-outline {
-  background: transparent !important;
+  background: #fffaf2 !important;
+  background-color: #fffaf2 !important;
   color: var(--ocean-deep, #1e4a63) !important;
   -webkit-text-fill-color: var(--ocean-deep, #1e4a63) !important;
   border: 2px solid var(--ocean, #3f7fa3) !important;
@@ -8405,4 +8408,19 @@ a.btn-primary:visited {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   opacity: 1 !important;
+}
+
+/* No empty blue hero slabs */
+.hero,
+.hero--choice,
+.hero--doors,
+.path-page-header,
+.guide-hero,
+.studio-hero {
+  background-image: none;
+}
+.hero-visual,
+.hero-visual--photo {
+  background: transparent;
+  background-color: transparent;
 }
