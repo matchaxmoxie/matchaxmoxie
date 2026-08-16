@@ -14,6 +14,11 @@
   --a11y-ink: #2b2d33;
 }
 
+html {
+  /* WCAG 2.2 2.4.11: sticky classroom jump bar */
+  scroll-padding-top: 3.5rem;
+}
+
 /* tiao guo lian jie · jian pan you xian */
 .skip-link {
   position: absolute;
