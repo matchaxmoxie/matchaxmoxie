@@ -4,7 +4,7 @@
 
 Live: [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) · IG [@zhao.langxi](https://instagram.com/zhao.langxi)
 
-**Palette / register:** campus / IU gear · ocean + joy-warm (`site/starter-campus.css`, `site/brand-tokens.css`). Fishing-photo ocean blue `#3f7fa3`, joy-warm `#d9906a`, cream `#fffaf2`. Fraunces bold + Nunito Sans, Comic Neue for classroom text. Rounder cards, photo-tiles, pill buttons.
+**Palette / register:** cookie classroom · matcha + clay (`site/starter-campus.css`, `site/brand-tokens.css`). Matcha deep `#006B45`, mid `#3D6B4A`, pale `#E8F0E4`, cream `#FFF4E8` / chalk `#FFFAF4`. Fraunces bold + Nunito Sans, Comic Neue for classroom text. Rounder cards, photo-tiles, pill buttons.
 
 ## classroom rules
 
