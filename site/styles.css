@@ -26,7 +26,7 @@
   --text-h2-mobile: clamp(1.25rem, 4vw, 1.75rem);
   --text-h3-mobile: clamp(1rem, 3vw, 1.25rem);
   --text-body-mobile: clamp(1.0625rem, 2.5vw, 1.1875rem);
-  --text-caption-mobile: 0.8125rem;
+  --text-caption-mobile: 0.875rem; /* GOV.UK floor is 16; captions stay one step down */
 
   /* xing gao */
   --leading-tight: 1.2;
@@ -8423,4 +8423,24 @@ a.btn-primary:visited {
 .hero-visual--photo {
   background: transparent;
   background-color: transparent;
+}
+
+/* GOV.UK habit: 5px-ish vertical rhythm, 16px floor, 44px standalone controls.
+   Classroom voice stays loose; this only lifts chrome, not copy. */
+.site-jump a,
+.twin-banner,
+.btn,
+.btn-primary,
+.btn-secondary,
+.open-cta,
+.open-link-cta {
+  min-height: 44px;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--focus-ring, #96596e);
+  outline-offset: 3px;
 }

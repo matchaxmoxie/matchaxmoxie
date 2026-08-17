@@ -19,6 +19,14 @@ html {
   scroll-padding-top: 3.5rem;
 }
 
+@media (max-width: 640px) {
+  html {
+    /* dock + Cookie tab stacked at the bottom */
+    scroll-padding-top: 0.5rem;
+    scroll-padding-bottom: 7rem;
+  }
+}
+
 /* tiao guo lian jie · jian pan you xian */
 .skip-link {
   position: absolute;
