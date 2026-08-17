@@ -53,10 +53,12 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 
 /* ----------------------------------------------------------------
    2. THE FOUR REGISTERS — token summary
-      (full stylesheets for each already live as separate files:
-      iu-pages-starter.css, jadexzhao-starter.css,
-      matchaxmoxie-starter.css, zhao-langxi-starter.css.
-      This is the map of how they relate to each other.)
+
+   Reference only. Every name here is namespaced --door-* on purpose:
+   the theme class sits on <body>, so plain names like --accent or
+   --ink declared here would out-cascade the site's real tokens on
+   :root and silently repaint the page. Live values belong in each
+   site's own token file.
    ---------------------------------------------------------------- */
 
 /* --- IU Pages — jlzhao.pages.iu.edu — business professional ---
@@ -65,14 +67,14 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
    corners: 4px (sharp)   accent: used once, never decorative
 ------------------------------------------------------------------- */
 .theme-iu-pages {
-  --primary:      #5a7482;  /* slate */
-  --primary-deep: #3d5561;
-  --secondary:    #8a9a7a;  /* dulled sage */
-  --bg:           #fafaf8;
-  --ink:          #2b2f2c;
-  --font-display: 'Source Serif 4', serif;
-  --font-body:    'Inter', sans-serif;
-  --radius:       4px;
+  --door-primary:      #5a7482;  /* slate */
+  --door-primary-deep: #3d5561;
+  --door-secondary:    #8a9a7a;  /* dulled sage */
+  --door-bg:           #fafaf8;
+  --door-ink:          #2b2f2c;
+  --door-font-display: 'Source Serif 4', serif;
+  --door-font-body:    'Inter', sans-serif;
+  --door-radius:       4px;
 }
 
 /* --- jadexzhao — technical proof, shipped builds ---
@@ -81,32 +83,32 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
    corners: 10px            accent: clay, used sparingly
 ------------------------------------------------------------------- */
 .theme-jadexzhao {
-  --primary:      #3f5b3f;  /* matcha deep */
-  --primary-deep: #2c412c;
-  --secondary:    #6f8f6a;  /* matcha mid */
-  --accent:       #b3714f;  /* clay */
-  --bg:           #faf8f2;  /* cream */
-  --ink:          #23291f;
-  --font-display: 'Fraunces', serif;   /* italic weights used */
-  --font-body:    'Inter', sans-serif;
-  --radius:       10px;
+  --door-primary:      #3f5b3f;  /* matcha deep */
+  --door-primary-deep: #2c412c;
+  --door-secondary:    #6f8f6a;  /* matcha mid */
+  --door-accent:       #b3714f;  /* clay */
+  --door-bg:           #faf8f2;  /* cream */
+  --door-ink:          #23291f;
+  --door-font-display: 'Fraunces', serif;   /* italic weights used */
+  --door-font-body:    'Inter', sans-serif;
+  --door-radius:       10px;
 }
 
 /* --- matchaxmoxie — FASE MAP process + cookie classroom ---
    job: campus-facing, community, not a resume.
-   feel: playful. ocean blue + warm sun accent. photo-forward.
-   corners: 20px (roundest of the four)   accent: joy-warm, used often
+   feel: playful. matcha green + clay accent. photo-forward.
+   corners: 20px (roundest of the four)   accent: clay, used often
 ------------------------------------------------------------------- */
 .theme-matchaxmoxie {
-  --primary:      #3f7fa3;  /* ocean */
-  --primary-deep: #1e4a63;
-  --secondary:    #d9ecf4;  /* sky pale */
-  --accent:       #d9906a;  /* joy warm */
-  --bg:           #fffaf2;  /* cream */
-  --ink:          #23292e;
-  --font-display: 'Fraunces', serif;   /* bold weights, no italic */
-  --font-body:    'Nunito Sans', sans-serif;
-  --radius:       20px;
+  --door-primary:      #006b45;  /* matcha deep */
+  --door-primary-deep: #005537;
+  --door-secondary:    #e8f0e4;  /* matcha pale */
+  --door-accent:       #b3714f;  /* clay */
+  --door-bg:           #fff4e8;  /* cream */
+  --door-ink:          #222a25;
+  --door-font-display: 'Fraunces', serif;   /* bold weights, no italic */
+  --door-font-body:    'Nunito Sans', sans-serif;
+  --door-radius:       20px;
 }
 
 /* --- zhao-langxi — research + personal essay / BTS ---
@@ -117,15 +119,15 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
    that's the whole point of it staying visually IU-adjacent.
 ------------------------------------------------------------------- */
 .theme-zhao-langxi {
-  --primary:      #990000;  /* IU crimson — sparing use only */
-  --ink:          #1a1a1a;
-  --ink-soft:     #5c5c5c;
-  --bg:           #ffffff;
-  --panel:        #f4f4f4;
-  --rule:         #cfcfcf;
-  --font-display: Georgia, 'Times New Roman', serif;
-  --font-body:    Arial, Helvetica, sans-serif;
-  --radius:       2px;
+  --door-primary:      #990000;  /* IU crimson — sparing use only */
+  --door-ink:          #1a1a1a;
+  --door-ink-soft:     #5c5c5c;
+  --door-bg:           #ffffff;
+  --door-panel:        #f4f4f4;
+  --door-rule:         #cfcfcf;
+  --door-font-display: Georgia, 'Times New Roman', serif;
+  --door-font-body:    Arial, Helvetica, sans-serif;
+  --door-radius:       2px;
 }
 
 /* ----------------------------------------------------------------
@@ -145,10 +147,13 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 .site-switcher a { text-decoration: none; }
 .site-switcher a:hover { text-decoration: underline; }
 
+/* The you-are-here item used opacity: 0.6, which dragged the
+   label to 3.79:1. Weight and a muted ink carry the same
+   "already here" signal without dimming the text. */
 .site-switcher .current {
   font-weight: 700;
   pointer-events: none;
-  opacity: 0.6;
+  color: var(--ink-muted, #4a554c);
 }
 
 /* ----------------------------------------------------------------

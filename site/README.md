@@ -1,6 +1,6 @@
 # matchaxmoxie site
 
-Phoenix cookie classroom archive for FASE MAP. Starter: `starter-campus.css` (ocean + joy-warm). Tokens: `brand-tokens.css`. Status chip modes live in `classroom-ux.js`: `hiatus` · `teaching` · `office-hours` · `working` · `offline`.
+Phoenix cookie classroom archive for FASE MAP. Starter: `starter-campus.css` (matcha + clay). Tokens: `brand-tokens.css`. Status chip modes live in `classroom-ux.js`: `hiatus` · `teaching` · `office-hours` · `working` · `offline`.
 
 - **Ship for everyone:** edit `STATUS_DEFAULT`, commit, push.
 - **Local demo only:** `localStorage.setItem("matchax-status-override", JSON.stringify({ mode: "teaching" }))` then reload.

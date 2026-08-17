@@ -1,65 +1,144 @@
 /**
- * matchaxmoxie brand tokens · ocean / joy campus (fishing photo)
- * Starter sheet: starter-campus.css (Fraunces bold + Nunito Sans, round cards, photo-tiles).
+ * matchaxmoxie · design tokens
+ * Cookie classroom: matcha green, clay accent, cream and chalk paper.
+ *
+ * The palette is set by the workspace register rule, not by this file.
+ * Matcha deep / mid / pale + cream / chalk are the classroom's colours;
+ * this file only holds them and the type, spacing, shape, and motion
+ * scales built around them. register-campus.css maps the older names in
+ * styles.css onto these roles ... add new declarations here, not there.
  *
  * Four-site map:
- *   IU Pages     = professional slate/sage
+ *   IU Pages     = professional slate
  *   jadexzhao    = matcha casual
- *   matchaxmoxie = ocean campus (this file)
- *   zhao-langxi  = Rivet / IU WCMS only
+ *   matchaxmoxie = cookie classroom (this file)
+ *   zhao-langxi  = Rivet institutional
  */
 
 :root {
-  --ocean-blue: #3f7fa3;
-  --ocean: #3f7fa3;
-  --ocean-deep: #1e4a63;
-  --sky-pale: #d9ecf4;
-  --joy-warm: #d9906a;
-  --joy-warm-deep: #b56f4a;
-  --joy-ink: #8f5338; /* AA small text on cream */
-  --gear-white: #fffaf2;
-  --cream: #fffaf2;
-  --paper-cream: #fffaf2;
-  --deck-white: #e4dfd4;
+  /* ── palette · raw values, referenced only by roles below ──
+     matcha deep / mid / pale and cream / chalk are the register hexes.
+     Deep and mid sit at almost the same lightness and differ in
+     saturation, so hierarchy here comes from saturation, not tint:
+     --matcha-darkest is the one derived step, for pressed states. */
+  --matcha-deep: #006b45;
+  --matcha-mid: #3d6b4a;
+  --matcha-pale: #e8f0e4;
+  --matcha-darkest: #005537;
+  --cream: #fff4e8;
+  --chalk: #fffaf4;
 
-  --ink: #23292e;
-  --mute: #4a5158;
+  /* Clay is the warm counterweight the matcha system already uses on
+     the sibling door. Raw clay is a large-text and decorative value
+     only (3.59:1 on cream); small text takes --clay-ink. */
+  --clay: #b3714f;
+  --clay-deep: #96593a;
+  --clay-ink: #8a4e2e;
 
-  /* AA body links / CTAs with white text */
-  --ocean-ink: #1e4a63;
+  --deck: #e4dfd4;
 
-  --navy: #0c447c;
-  --crimson: #990000;
-  --crimson-deep: #6d0000;
-  --blue: var(--ocean-blue);
-  --blue-ink: var(--ocean-deep);
+  /* ── colour roles ── */
+  --surface: var(--cream);
+  --surface-raised: var(--chalk);
+  --surface-sunken: var(--matcha-pale);
+  --surface-warm: #fdf0e0;
 
-  /* Legacy names used by styles.css → ocean system */
-  --lily-pink: #a8c8d8;
-  --lily-pink-deep: var(--ocean-blue);
-  --lily-ink: var(--ocean-deep);
-  --lily-ink-deep: #16384c;
-  --babys-breath: var(--gear-white);
-  --charcoal-fleece: var(--ink);
-  --sheer-curtain: var(--deck-white);
-  --brick-warm: var(--joy-warm);
-  --window-grey: var(--mute);
+  --ink: #222a25;
+  --ink-muted: #4a554c;
+  --ink-subtle: #5a655c;
 
-  --matcha-deep: var(--ocean-deep);
-  --matcha-mid: var(--ocean-blue);
-  --matcha-pale: var(--sky-pale);
-  --clay: var(--joy-warm);
-  --clay-ink: var(--joy-ink);
+  --accent: var(--matcha-deep);
+  --accent-hover: var(--matcha-darkest);
+  --accent-quiet: var(--matcha-mid);
+  --accent-wash: rgba(0, 107, 69, 0.1);
+  --accent-wash-strong: rgba(0, 107, 69, 0.2);
+  --on-accent: #ffffff;
 
+  --warm: var(--clay);
+  --warm-ink: var(--clay-ink);
+  --warm-wash: rgba(179, 113, 79, 0.16);
+
+  /* --border is a decorative hairline. --border-strong is solid on
+     purpose: anywhere a boundary is what identifies a control it has to
+     clear 3:1, and a tinted alpha over cream tops out near 2.3:1. */
+  --border: rgba(0, 84, 55, 0.22);
+  --border-strong: var(--matcha-mid);
+  --focus: var(--ink);
+  --focus-halo: rgba(0, 107, 69, 0.3);
+
+  /* ── type ──
+     Classroom stack stays Comic Neue / Cooper Black. The fallback now
+     ends at the loaded Nunito Sans rather than generic `cursive`, so a
+     machine without Comic Sans still lands on the brand sans. */
   --font-display: "Fraunces", Georgia, serif;
+  --font-classroom: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, sans-serif;
   --font-body: "Nunito Sans", "Comic Neue", Arial, Helvetica, sans-serif;
+  --font-poster: "Cooper Black", "Cooper Std", Georgia, serif;
   --font-sc: "Noto Serif SC", "Songti SC", "SimSun", serif;
-  --radius: 20px;
-  --rule: rgba(30, 74, 99, 0.14);
 
-  --focus-ring: var(--joy-warm-deep);
+  /* fluid modular scale · 320px to 1200px */
+  --step--2: clamp(0.75rem, 0.73rem + 0.1vw, 0.8125rem);
+  --step--1: clamp(0.875rem, 0.855rem + 0.1vw, 0.9375rem);
+  --step-0: clamp(1rem, 0.965rem + 0.18vw, 1.125rem);
+  --step-1: clamp(1.125rem, 1.07rem + 0.28vw, 1.3125rem);
+  --step-2: clamp(1.3125rem, 1.2rem + 0.56vw, 1.625rem);
+  --step-3: clamp(1.5rem, 1.3rem + 1vw, 2.125rem);
+  --step-4: clamp(1.75rem, 1.4rem + 1.75vw, 2.75rem);
+  --step-5: clamp(2.125rem, 1.55rem + 2.9vw, 3.75rem);
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-body: 1.62;
+  --tracking-label: 0.1em;
+
+  /* ── space ── */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: clamp(1.75rem, 1.5rem + 1.1vw, 2.5rem);
+  --space-xl: clamp(2.5rem, 2rem + 2.2vw, 4rem);
+  --space-2xl: clamp(3.25rem, 2.5rem + 3.4vw, 5.5rem);
+
+  /* ── shape · rounder than the other doors, on purpose ── */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+  --radius: var(--radius-lg);
+
+  --shadow-xs: 0 1px 2px rgba(0, 84, 55, 0.06);
+  --shadow-sm:
+    0 1px 2px rgba(0, 84, 55, 0.06),
+    0 2px 8px rgba(0, 84, 55, 0.07);
+  --shadow-md:
+    0 2px 4px rgba(0, 84, 55, 0.07),
+    0 10px 26px rgba(0, 84, 55, 0.1);
+  --shadow-lg:
+    0 4px 10px rgba(0, 84, 55, 0.08),
+    0 22px 50px rgba(0, 84, 55, 0.14);
+
+  /* ── motion ── */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 120ms;
+  --dur-base: 220ms;
+  --dur-slow: 420ms;
+
+  /* ── layout ── */
+  --measure-tight: 52ch;
+  --measure: 66ch;
+  --wrap-max: 62rem;
+
+  /* ── layers ── */
+  --z-nav: 20;
+  --z-sticky: 30;
+  --z-skip: 300;
+
+  --focus-ring: var(--focus);
   --focus-ring-width: 3px;
   --focus-ring-offset: 3px;
-  --tap: 44px;
-  --on-accent: #ffffff;
+  --tap: 2.75rem;
+  --rule: var(--border);
 }

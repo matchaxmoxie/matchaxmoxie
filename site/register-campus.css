@@ -1,81 +1,106 @@
 /**
  * Register: campus · matchaxmoxie
- * Ocean blue + joy-warm · gear-white paper · rounder, photo-forward.
- * Starter: starter-campus.css
+ * Compatibility layer only.
+ *
+ * styles.css grew several palettes deep (kindergarten pink, tulip, ocean)
+ * before the classroom came back to matcha. Rather than rename every
+ * selector, each of those old token names is aliased onto a role from
+ * brand-tokens.css. Nothing here should hold a raw colour: if you need a
+ * new value, add a role to brand-tokens.css first.
+ *
+ * The matcha and clay names are NOT re-declared here. They are the raw
+ * palette in brand-tokens.css, and aliasing them back onto the roles that
+ * reference them would make a custom-property cycle and void both.
  */
 
 :root {
-  --paper: #fffaf2;
-  --paper-cream: #fffaf2;
-  --chalk-dust: #fffaf2;
-  --paper-shadow: var(--deck-white);
+  /* paper */
+  --paper: var(--surface);
+  --paper-cream: var(--surface);
+  --chalk-dust: var(--surface);
+  --paper-shadow: var(--deck);
+  --deck-white: var(--deck);
+  --babys-breath: var(--surface);
+  --bg-soft-warm: var(--surface-warm);
+  --sheer-curtain: var(--deck);
+  --tulip-light: var(--surface);
 
-  --accent: var(--ocean-deep);
-  --accent-crimson: var(--ocean-deep);
-  --crimson-ink: #16384c;
-  --link: var(--ocean-deep);
-  --link-hover: var(--joy-warm-deep);
-  --focus: var(--joy-warm-deep);
-  --focus-ring: var(--joy-warm-deep);
-
+  /* text */
+  --mute: var(--ink-muted);
+  --ink-soft: var(--ink-muted);
   --crayon-ink: var(--ink);
-  /* mute from brand-tokens */
-  --crayon-muted: var(--mute);
+  --crayon-muted: var(--ink-muted);
   --editorial-dark: var(--ink);
-  --text-primary: var(--ink);
-  --text-secondary: var(--mute);
-  --text-muted: var(--mute);
-  --text-ghost: #3a4148;
-
-  --sunshine: var(--joy-warm);
-  --golden-hour: var(--joy-warm-deep);
-  --sunset-warm: var(--joy-warm);
-  --sunset-ink: var(--joy-ink);
-  --sunset-glow: rgba(217, 144, 106, 0.16);
-  --coral: var(--joy-warm);
-  --coral-ink: var(--joy-ink);
-  --peach: #e8b896;
-  --lavender: var(--ocean-deep);
-  --dusk: var(--ocean-deep);
-  --sky-blue: var(--ocean-blue);
-  --grass-green: var(--ocean-blue);
-  --apple-red: var(--joy-warm-deep);
+  --charcoal-fleece: var(--ink);
   --chalkboard: var(--ink);
-  --cinnabar: var(--ocean-deep);
-  --cinnabar-soft: var(--ocean-blue);
-  --matcha-ops: var(--ocean-deep);
-  --bg-soft-warm: var(--paper-cream);
-
-  --border: var(--ocean-blue);
-  --border-faint: rgba(30, 74, 99, 0.14);
-  --shadow: rgba(30, 74, 99, 0.16);
-
-  --matcha-deep: #1e4a63;
-  --matcha-mid: #3f7fa3;
-  --matcha-pale: #d9ecf4;
-  --matcha-ink: #16384c;
-  --jade: var(--ocean-deep);
-  --jade-soft: var(--ocean-blue);
-  --matcha-wash: var(--sky-pale);
-
-  --tulip-petal: var(--joy-warm);
-  --tulip-deep: var(--ocean-deep);
-  --tulip-blush: #e8b896;
-  --tulip-stem: var(--ocean-deep);
   --tulip-soil: var(--ink);
-  --tulip-light: var(--gear-white);
-  --tulip-mist: var(--sky-pale);
+  --text-primary: var(--ink);
+  --text-secondary: var(--ink-muted);
+  --text-muted: var(--ink-muted);
+  --text-ghost: var(--ink-subtle);
+  --window-grey: var(--ink-muted);
+  --a11y-ink: var(--ink);
 
-  --gold: var(--joy-ink);
-  --gold-soft: #e8d5a3;
-  --sunflower: var(--joy-warm);
-  --sage: var(--ocean-blue);
-  --sage-wash: var(--sky-pale);
-  --dusty-pink: var(--joy-warm);
-  --dusty-pink-soft: #e8b896;
-  --dusty-pink-ink: var(--joy-ink);
+  /* matcha accents · every green-ish legacy name lands on a role */
+  --link: var(--accent);
+  --link-hover: var(--warm-ink);
+  --text-accent: var(--accent);
+  --accent-crimson: var(--accent);
+  --crimson-ink: var(--accent-hover);
+  --lavender: var(--accent);
+  --dusk: var(--accent);
+  --cinnabar: var(--accent);
+  --cinnabar-soft: var(--accent-quiet);
+  --matcha-ops: var(--accent);
+  --matcha-ink: var(--accent-hover);
+  --matcha-wash: var(--surface-sunken);
+  --jade: var(--accent);
+  --jade-soft: var(--accent-quiet);
+  --grass-green: var(--accent-quiet);
+  --sage: var(--accent-quiet);
+  --sage-wash: var(--surface-sunken);
+  --tulip-deep: var(--accent);
+  --tulip-stem: var(--accent);
+  --tulip-mist: var(--surface-sunken);
+  --lily-pink: var(--surface-sunken);
+  --lily-pink-deep: var(--accent-quiet);
+  --lily-ink: var(--accent);
+  --lily-ink-deep: var(--accent-hover);
 
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Nunito Sans", "Comic Neue", Arial, Helvetica, sans-serif;
-  --radius: 20px;
+  /* warm accents · clay family.
+     The -soft names are backgrounds, so they take a clay tint rather
+     than clay itself; the -ink names are the ones text uses.
+     The tint is held at #eedcc8 and no darker: the year-nav pills use it
+     behind matcha link text, and a deeper clay drops that pair under
+     4.5:1. */
+  --sunshine: var(--warm);
+  --sunset-warm: var(--warm);
+  --sunset-ink: var(--warm-ink);
+  --sunset-glow: var(--warm-wash);
+  /* Decorative clay fill / rule, not small-text ink. Pairings that
+     put body copy on this colour should use --gold-soft instead. */
+  --golden-hour: var(--warm);
+  --coral: var(--warm);
+  --coral-ink: var(--warm-ink);
+  --apple-red: var(--warm-ink);
+  --brick-warm: var(--warm);
+  --gold: var(--warm-ink);
+  --gold-soft: #eedcc8;
+  --sunflower: var(--warm);
+  --peach: #eedcc8;
+  --tulip-petal: var(--warm);
+  --tulip-blush: #eedcc8;
+  --dusty-pink: var(--warm);
+  --dusty-pink-soft: #eedcc8;
+  --dusty-pink-ink: var(--warm-ink);
+
+  /* institutional accents · kept for IU-facing pages.
+     Crimson stays a light IU pride accent, never the classroom's colour. */
+  --navy: #0c447c;
+  --crimson: #990000;
+  --crimson-deep: #6d0000;
+
+  /* lines and shadow */
+  --border-faint: var(--border);
+  --shadow: rgba(0, 84, 55, 0.16);
 }

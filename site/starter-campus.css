@@ -1,24 +1,27 @@
 /* ============================================
    matchaxmoxie — IU gear / campus / MAP identity
    the cookie classroom, phoenix room
-   Warm ocean blue + sun-warm accent, from the
-   fishing photo. Rounder, louder, more joy than
-   the other two — this one isn't a resume.
+   Matcha green + clay accent on cream paper.
+   Rounder, louder, more joy than the other two —
+   this one isn't a resume.
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap');
 
 :root {
-  /* --- color: ocean blue + warm sun tones --- */
-  --ocean:       #3f7fa3;
-  --ocean-deep:  #1e4a63;
-  --sky-pale:    #d9ecf4;
-  --joy-warm:    #d9906a;
-  --joy-warm-deep: #b56f4a;
-  --cream:       #fffaf2;
-  --ink:         #23292e;
-  --ink-soft:    #4a5158;
-  --rule:        rgba(30,74,99,0.14);
+  /* --- colour: matcha green + clay warmth ---
+     Raw hexes here mirror brand-tokens.css so this sheet still stands
+     up on its own; brand-tokens.css loads after it and wins. */
+  --matcha-mid:   #3d6b4a;
+  --matcha-deep:  #006b45;
+  --matcha-pale:  #e8f0e4;
+  --clay:         #b3714f;
+  --clay-deep:    #96593a;
+  --clay-ink:     #8a4e2e;
+  --cream:        #fff4e8;
+  --ink:          #222a25;
+  --ink-soft:     #4a554c;
+  --rule:         rgba(0, 84, 55, 0.22);
 
   --font-display: 'Fraunces', serif;
   --font-body:    'Nunito Sans', sans-serif;
@@ -33,7 +36,7 @@
 
   --radius: 20px;      /* rounder than the other two sites, on purpose */
   --radius-sm: 12px;
-  --shadow: 0 14px 30px rgba(30,74,99,0.16);
+  --shadow: 0 14px 30px rgba(0, 84, 55, 0.16);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -53,7 +56,7 @@ body {
 h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 700;
-  color: var(--ocean-deep);
+  color: var(--matcha-deep);
   margin: 0 0 0.45em;
   line-height: 1.08;
 }
@@ -65,16 +68,16 @@ h3 { font-size: var(--step-1); font-weight: 600; }
 p  { margin: 0 0 1em; color: var(--ink-soft); max-width: 60ch; }
 p b, p strong { color: var(--ink); font-weight: 700; }
 
-a { color: var(--ocean-deep); text-decoration-color: var(--ocean); text-underline-offset: 3px; }
-a:hover { color: var(--joy-warm-deep); }
+a { color: var(--matcha-deep); text-decoration-color: var(--matcha-mid); text-underline-offset: 3px; }
+a:hover { color: var(--clay-ink); }
 
 .eyebrow {
   display: inline-block;
   font-size: var(--step--1);
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: var(--joy-warm-deep);
-  background: rgba(217,144,106,0.14);
+  color: var(--clay-ink);
+  background: rgba(179, 113, 79, 0.16);
   padding: 4px 12px;
   border-radius: 999px;
   margin-bottom: 0.75em;
@@ -91,7 +94,7 @@ section { margin-top: 64px; }
 .section-head span {
   display: block;
   font-size: var(--step--1);
-  color: var(--ocean);
+  color: var(--matcha-mid);
   margin-top: 4px;
   font-weight: 600;
 }
@@ -146,11 +149,14 @@ section { margin-top: 64px; }
 
 .photo-tile:hover img { transform: scale(1.05) rotate(-1deg); }
 
+/* The scrim carries the caption, so it has to hold up over the pale
+   parts of a photo as well as the dark ones: at 0.82 over a light
+   frame the cream label still reads about 8:1. */
 .photo-tile figcaption {
   position: absolute;
   left: 0; right: 0; bottom: 0;
   padding: 14px 16px;
-  background: linear-gradient(to top, rgba(30,74,99,0.75), transparent);
+  background: linear-gradient(to top, rgba(0, 52, 34, 0.82), rgba(0, 52, 34, 0));
   color: var(--cream);
   font-size: var(--step--1);
   font-weight: 600;
@@ -159,11 +165,11 @@ section { margin-top: 64px; }
 /* ---------- rules pinned to the wall — classroom rule cards ---------- */
 
 .rule-card {
-  background: var(--sky-pale);
-  background-color: var(--sky-pale);
+  background: var(--matcha-pale);
+  background-color: var(--matcha-pale);
   border-radius: var(--radius-sm);
   padding: 18px 20px;
-  border-left: 4px solid var(--ocean);
+  border-left: 4px solid var(--matcha-mid);
 }
 
 .rule-card + .rule-card { margin-top: 12px; }
@@ -175,7 +181,7 @@ section { margin-top: 64px; }
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  background: var(--ocean);
+  background: var(--matcha-deep);
   color: var(--cream);
   border-radius: 999px;
   font-size: var(--step-0);
@@ -184,12 +190,14 @@ section { margin-top: 64px; }
   transition: background 0.15s ease, transform 0.15s ease;
 }
 
-.btn:hover { background: var(--joy-warm); transform: translateY(-2px); }
+/* Hover keeps the warm gesture, but at clay-ink rather than raw clay:
+   the cream label needs 4.5:1 and raw clay only gives about 2.5:1. */
+.btn:hover { background: var(--clay-ink); transform: translateY(-2px); }
 
 /* ---------- accessibility floor ---------- */
 
 a:focus-visible, .btn:focus-visible, .card:focus-visible {
-  outline: 3px solid var(--joy-warm-deep);
+  outline: 3px solid var(--ink);
   outline-offset: 2px;
 }
 
