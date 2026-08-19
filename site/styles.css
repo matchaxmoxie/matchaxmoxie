@@ -7814,6 +7814,12 @@ a.desk-photo-link:focus-visible {
 }
 
 /* Home mast uses same panel as your path; keep Fraunces + matcha CTAs */
+.choice-home .path-page-header.interior-panel {
+  border-left: 6px solid var(--accent, #006b45);
+  padding-left: var(--space-sm, 1rem);
+  background: linear-gradient(90deg, rgba(232, 240, 228, 0.55) 0%, transparent 42%);
+}
+
 .choice-home .path-page-header.interior-panel h1 {
   font-family: var(--font-display, Fraunces, Georgia, serif);
   color: var(--accent, #006b45);

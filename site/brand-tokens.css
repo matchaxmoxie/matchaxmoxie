@@ -141,4 +141,6 @@
   --focus-ring-offset: 3px;
   --tap: 2.75rem;
   --rule: var(--border);
+
+  color-scheme: light;
 }
