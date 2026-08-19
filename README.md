@@ -1,5 +1,7 @@
 # matchaxmoxie · 凤凰 · phoenix
 
+**Informatics · Luddy HIEP Scholar · Class of 2027**
+
 **This repo:** FASE MAP process + cookie classroom (phoenix room).
 
 Live: [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) · IG [@zhao.langxi](https://instagram.com/zhao.langxi)
