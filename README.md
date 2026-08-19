@@ -1,6 +1,6 @@
 # matchaxmoxie · 凤凰 · phoenix
 
-**Informatics · Luddy HIEP Scholar · Class of 2027**
+Jade Zhao · she/her · Informatics · Luddy HIEP Scholar · Class of 2027
 
 **This repo:** FASE MAP process + cookie classroom (phoenix room).
 
