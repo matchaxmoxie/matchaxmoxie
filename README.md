@@ -4,7 +4,7 @@ Jade Zhao · she/her · Informatics · Luddy HIEP Scholar · Class of 2027
 
 **This repo:** FASE MAP process + cookie classroom (phoenix room).
 
-Live: [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) · IG [@zhao.langxi](https://instagram.com/zhao.langxi)
+Live: [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) · Primary GitHub: [github.com/zhao-langxi](https://github.com/zhao-langxi) · IG [@zhao.langxi](https://instagram.com/zhao.langxi)
 
 **Palette / register:** cookie classroom · matcha + clay (`site/starter-campus.css`, `site/brand-tokens.css`). Matcha deep `#006B45`, mid `#3D6B4A`, pale `#E8F0E4`, cream `#FFF4E8` / chalk `#FFFAF4`. Fraunces bold + Nunito Sans, Comic Neue for classroom text. Rounder cards, photo-tiles, pill buttons.
 
