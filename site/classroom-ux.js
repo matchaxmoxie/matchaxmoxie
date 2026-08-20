@@ -523,6 +523,116 @@
   function init() {
     initStatusChip();
     initConsentUi();
+    initEggs();
+  }
+
+  function initEggs() {
+    var MATCHA = "#006b45";
+    var buffer = "";
+    var fired = {};
+    var BUFFER_MAX = 24;
+    var reduce = prefersReducedMotion();
+
+    console.log(
+      "%c🍵 matchaxmoxie · phoenix classroom · same person, other doors",
+      "color:" + MATCHA + ";font-size:14px;font-weight:600"
+    );
+    console.log(
+      "%chidden paths: type dragon · duck · essay (keyboard, not in a text field)",
+      "color:" + MATCHA + ";font-size:11px"
+    );
+
+    var DOORS = {
+      dragon: {
+        label: "SWE proof · jadewowgreen",
+        url: "https://jadexzhao.github.io/jadexzhao/",
+      },
+      duck: {
+        label: "Duck farm sandbox",
+        url: "https://jadexzhao.github.io/jadexzhao/duck-farm/",
+      },
+      essay: {
+        label: "Essays · zhao-langxi",
+        url: "https://zhao-langxi.github.io/zhao-langxi/",
+      },
+    };
+
+    function ensureEggToast() {
+      var el = document.getElementById("door-egg-toast");
+      if (el) return el;
+      el = document.createElement("p");
+      el.id = "door-egg-toast";
+      el.className = "door-egg-toast cookie-save-toast";
+      el.setAttribute("role", "status");
+      el.setAttribute("aria-live", "polite");
+      el.hidden = true;
+      document.body.appendChild(el);
+      return el;
+    }
+
+    function showEggToast(doorKey) {
+      var door = DOORS[doorKey];
+      if (!door) return;
+      var el = ensureEggToast();
+      el.innerHTML =
+        door.label +
+        ' · <a href="' +
+        door.url +
+        '" rel="noopener noreferrer">' +
+        door.url.replace(/^https:\/\//, "") +
+        "</a>";
+      el.hidden = false;
+      el.classList.add("is-visible");
+      window.setTimeout(function () {
+        el.classList.remove("is-visible");
+        window.setTimeout(function () {
+          el.hidden = true;
+        }, reduce ? 0 : 280);
+      }, 3200);
+    }
+
+    function fireOnce(key) {
+      if (fired[key]) return;
+      fired[key] = true;
+      showEggToast(key);
+      window.setTimeout(function () {
+        fired[key] = false;
+      }, 4000);
+    }
+
+    function isTypingContext(target) {
+      if (!target || !target.tagName) return false;
+      var tag = target.tagName.toLowerCase();
+      if (tag === "input" || tag === "textarea" || tag === "select") return true;
+      if (target.isContentEditable) return true;
+      return false;
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (isTypingContext(e.target)) return;
+      if (e.key.length !== 1) return;
+      buffer = (buffer + e.key.toLowerCase()).slice(-BUFFER_MAX);
+      Object.keys(DOORS).forEach(function (word) {
+        if (buffer.endsWith(word)) fireOnce(word);
+      });
+    });
+
+    var phoenix = document.querySelector(".egg-phoenix");
+    if (phoenix) {
+      var lastTap = 0;
+      phoenix.addEventListener("click", function () {
+        var now = Date.now();
+        if (now - lastTap < 420) fireOnce("essay");
+        lastTap = now;
+      });
+      phoenix.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          fireOnce("dragon");
+        }
+      });
+    }
   }
 
   if (document.readyState === "loading") {
