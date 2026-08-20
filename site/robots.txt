@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matchaxmoxie.github.io/matchaxmoxie/sitemap.xml
