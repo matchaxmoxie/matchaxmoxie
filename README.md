@@ -1,8 +1,8 @@
 # matchaxmoxie · 凤凰 · phoenix
 
-Jade Zhao · 赵郎溪 · zhao-langxi · she/her · Informatics · Luddy HIEP Scholar · Class of 2027 · MAP Coordinator
+Jade Zhao · 赵郎溪 · zhao-langxi · she/her · Informatics (Business and Society) · Luddy HIEP Scholar · Expected May 2027 · MAP Coordinator · FASE Peer Mentor · HHSP Platinum Scholar
 
-**This repo:** Faculty and Staff for Student Excellence (FASE) Mentor Apprenticeship Programme (MAP) process + cookie classroom (phoenix room). Clear next steps for first-generation and low-income students ... accuracy over polish.
+**This repo:** Faculty and Staff for Student Excellence (FASE) Mentor Apprenticeship Programme (MAP) process + cookie classroom (phoenix room). Clear next steps for first-generation and low-income students ... accuracy over polish. Family restaurant throughline: a system has to hold under real use.
 
 Live: [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/) · Primary GitHub: [github.com/zhao-langxi](https://github.com/zhao-langxi) · IG [@zhao.langxi](https://instagram.com/zhao.langxi)
 
