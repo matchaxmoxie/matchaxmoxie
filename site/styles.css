@@ -8539,16 +8539,24 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
 
 /* Phone + tablet · readable first.
    Comic Neue is not loaded from Google Fonts; Comic Sans / Cooper Black
-   read as handwriting-cute on small screens. Force loaded Nunito Sans
-   on everything (including headings). Keep CJK .sc / lang stacks.
-   File-end + !important so page-local Cooper / Comic rules lose. */
+   read as handwriting-cute on small screens. Rebind classroom tokens to
+   loaded Nunito Sans, then force every text node (including headings).
+   Keep CJK .sc / lang stacks and monospace for code. File-end + !important
+   so page-local Cooper / Comic / Fraunces rules lose under 1024px. */
 @media (max-width: 1024px) {
+  :root {
+    --font-classroom: "Nunito Sans", Arial, Helvetica, sans-serif;
+    --font-body: "Nunito Sans", Arial, Helvetica, sans-serif;
+    --font-display: "Nunito Sans", Arial, Helvetica, sans-serif;
+    --font-poster: "Nunito Sans", Arial, Helvetica, sans-serif;
+  }
+
   body,
   body *:not(.sc):not([lang="zh-Hans"]):not([lang="zh"]):not(code):not(pre):not(kbd):not(samp) {
     font-family: "Nunito Sans", Arial, Helvetica, sans-serif !important;
   }
 
-  /* Beat page/theme !important display stacks (Cooper / Fraunces / Comic) */
+  /* Beat page/theme display stacks (Cooper / Fraunces / Comic) */
   body h1,
   body h2,
   body h3,
