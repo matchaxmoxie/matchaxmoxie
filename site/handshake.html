@@ -34,69 +34,57 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="brand-tokens.css?v=20260819-matcha">
-<link rel="stylesheet" href="register-campus.css?v=20260819-matcha">
-<link rel="stylesheet" href="a11y.css?v=20260819-matcha">
-<link rel="stylesheet" href="classroom-ux.css?v=20260819-matcha">
-<link rel="stylesheet" href="styles.css?v=20260819-matcha">
+<link rel="stylesheet" href="brand-tokens.css?v=20260831-handshake">
+<link rel="stylesheet" href="register-campus.css?v=20260831-handshake">
+<link rel="stylesheet" href="a11y.css?v=20260831-handshake">
+<link rel="stylesheet" href="classroom-ux.css?v=20260831-handshake">
+<link rel="stylesheet" href="styles.css?v=20260831-handshake">
 <style>
-  .handshake-page .guide-section { max-width: 40rem; }
+  /* Career how-to · body stays loaded Nunito Sans (readable on phone).
+     Headings keep classroom Cooper / Fraunces like other guide pages. */
+  .handshake-page,
+  .handshake-page .guide-section p,
+  .handshake-page .guide-list li,
+  .handshake-page .guide-hero .studio-lede,
+  .handshake-page .miss-zhao-tip p,
+  .handshake-page .gwc-quiet,
+  .handshake-page .handshake-steps p,
+  .handshake-page .handshake-steps li,
+  .handshake-page .handshake-signoff,
+  .handshake-page .handshake-sources {
+    font-family: var(--font-body), "Nunito Sans", Arial, Helvetica, sans-serif;
+  }
+
   .handshake-linkbox {
-    margin: 0 0 1.25rem;
-    padding: 0.85rem 1rem;
+    margin: 0 0 var(--space-s, 1rem);
+    padding: var(--space-xs, 0.75rem) var(--space-s, 1rem);
     background: var(--matcha-pale, #E8F0E4);
     border-left: 4px solid var(--matcha-deep, #006B45);
-    max-width: 40rem;
+    max-width: 54ch;
   }
-  .handshake-linkbox a { word-break: break-all; }
-  .handshake-note {
-    margin: 0 0 1.25rem;
-    padding: 0.85rem 1rem;
-    max-width: 40rem;
-    background: #ffffff;
-    border: 1px solid rgba(0, 107, 69, 0.22);
-  }
-  .handshake-signoff {
-    margin: 2rem 0 0;
-    padding-top: 1rem;
-    border-top: 2px solid var(--matcha-pale, #E8F0E4);
-    max-width: 40rem;
-  }
-  .handshake-signoff .name { margin: 1rem 0 0; line-height: 1.45; }
-  .handshake-toc {
-    margin: 0 0 1.5rem;
-    padding: 0.85rem 1rem;
-    max-width: 40rem;
-    background: var(--matcha-pale, #E8F0E4);
-    font-size: 0.95rem;
-  }
-  .handshake-toc ul {
-    margin: 0.4rem 0 0;
-    padding-left: 1.15rem;
-  }
-  .handshake-toc li { margin: 0.2rem 0; }
+  .handshake-linkbox a { word-break: break-word; }
+
   .handshake-steps {
-    margin: 0 0 1rem;
+    margin: 0 0 var(--space-m, 1.25rem);
     padding-left: 0;
     list-style: none;
     counter-reset: hs;
-    max-width: 40rem;
   }
   .handshake-steps > li {
     position: relative;
-    margin: 0 0 1.15rem;
-    padding: 0.85rem 1rem 0.85rem 3rem;
-    background: #ffffff;
-    border: 1px solid rgba(0, 107, 69, 0.18);
+    margin: 0 0 var(--space-s, 1rem);
+    padding: var(--space-xs, 0.75rem) var(--space-s, 1rem) var(--space-xs, 0.75rem) 3rem;
+    background: var(--surface-raised, #fff);
+    border: 1px solid var(--border, rgba(0, 107, 69, 0.22));
   }
   .handshake-steps > li::before {
     counter-increment: hs;
     content: counter(hs);
     position: absolute;
     left: 0.75rem;
-    top: 0.85rem;
-    width: 1.6rem;
-    height: 1.6rem;
+    top: 0.75rem;
+    width: 1.55rem;
+    height: 1.55rem;
     border-radius: 999px;
     background: var(--matcha-deep, #006B45);
     color: #fff;
@@ -106,30 +94,40 @@
     align-items: center;
     justify-content: center;
     line-height: 1;
+    font-family: var(--font-body), "Nunito Sans", Arial, Helvetica, sans-serif;
   }
   .handshake-steps h3 {
     margin: 0 0 0.35rem;
     font-size: 1.05rem;
     color: var(--matcha-deep, #006B45);
+    font-family: var(--font-poster), "Cooper Black", Georgia, serif;
   }
   .handshake-steps p,
   .handshake-steps ul {
-    margin: 0 0 0.45rem;
+    margin: 0 0 0.4rem;
+    max-width: 54ch;
   }
-  .handshake-steps ul {
-    padding-left: 1.15rem;
+  .handshake-steps ul { padding-left: 1.15rem; }
+
+  .handshake-signoff {
+    margin: var(--space-l, 1.75rem) 0 0;
+    padding-top: var(--space-s, 1rem);
+    border-top: 2px solid var(--matcha-pale, #E8F0E4);
+    max-width: 54ch;
   }
+  .handshake-signoff .name { margin: var(--space-s, 1rem) 0 0; line-height: 1.45; }
+
   .handshake-sources {
-    margin: 1.5rem 0 0;
-    padding-top: 1rem;
-    max-width: 40rem;
-    font-size: 0.9rem;
+    margin: var(--space-l, 1.75rem) 0 0;
+    padding-top: var(--space-s, 1rem);
+    font-size: 0.95rem;
   }
   .handshake-sources ul {
     margin: 0.4rem 0 0;
     padding-left: 1.15rem;
+    max-width: 58ch;
   }
-  .handshake-sources a { word-break: break-all; }
+  .handshake-sources a { word-break: break-word; }
 </style>
 </head>
 <body class="kindergarten-home sunset-home kiss-home guide-page handshake-page">
@@ -151,7 +149,7 @@
 
   <p class="twin-note">
     <a href="index.html">classroom home</a>
-    · <a href="archive.html">archive</a>
+    · <a href="informatics-class-of-2027.html">IU guide</a>
     · <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
   </p>
 
@@ -164,15 +162,22 @@
     </p>
   </header>
 
-  <nav class="handshake-toc" aria-label="On this page">
-    <strong>On this page</strong>
-    <ul>
-      <li><a href="#what-h">What Handshake does</a></li>
-      <li><a href="#events-h">Events</a></li>
-      <li><a href="#peer-h">What we’ve practised</a></li>
-      <li><a href="#steps-h">Step by step</a></li>
-      <li><a href="#sources-h">Sources</a></li>
-    </ul>
+  <aside class="miss-zhao-tip" role="note" aria-label="matchaxmoxie tip">
+    <span class="miss-zhao-tip-label">matchaxmoxie tip</span>
+    <p>
+      If you’ve never used a campus job board, that’s normal. You need a working login and one honest profile line ... not a perfect plan.
+      First-generation friendly truth: asking a coach or mentor is a skill, not a failure.
+    </p>
+    <p class="you-got-this">One next step is enough for today.</p>
+  </aside>
+
+  <nav class="guide-toc" aria-label="On this page">
+    <a href="#what-h">what it does</a>
+    <a href="#events-h">events</a>
+    <a href="#peer-h">peer notes</a>
+    <a href="#steps-h">step by step</a>
+    <a href="#more-h">more guides</a>
+    <a href="#sources-h">sources</a>
   </nav>
 
   <section class="guide-section" aria-labelledby="what-h">
@@ -183,17 +188,17 @@
     </p>
     <ul class="guide-list">
       <li><strong>Jobs and internships</strong> ... part-time, summer, on-campus, remote, full-time later.</li>
-      <li><strong>Campus / student roles</strong> ... dining, front desk, tutoring, research help, work-study style postings on the same board.</li>
-      <li><strong>Career events</strong> ... fairs, info sessions, workshops (see Events below).</li>
-      <li><strong>Career-center appointments</strong> ... book a coach through Career Center → Appointments (on many campuses).</li>
-      <li><strong>Employer profiles</strong> ... research companies, follow ones you care about, see their open roles.</li>
-      <li><strong>Messaging</strong> ... if your visibility is open, approved employers can find you and write you. Community visibility also unlocks peer messaging on some campuses.</li>
+      <li><strong>Campus / student roles</strong> ... dining, front desk, tutoring, research help, work-study style postings.</li>
+      <li><strong>Career events</strong> ... fairs, info sessions, workshops.</li>
+      <li><strong>Career-center appointments</strong> ... book a coach through Career Center → Appointments on many campuses.</li>
+      <li><strong>Employer profiles</strong> ... research companies, follow ones you care about, see open roles.</li>
+      <li><strong>Messaging</strong> ... if visibility is open, approved employers can find you. Community also unlocks peer messaging where your school supports it.</li>
     </ul>
     <div class="handshake-linkbox">
       <strong>Your school’s Handshake</strong> ... search “[your university] Handshake” or use your career-center link.<br>
       <strong>IU Bloomington example:</strong>
       <a href="https://iubloomington.joinhandshake.com" rel="noopener noreferrer">https://iubloomington.joinhandshake.com</a><br>
-      <span class="muted">School SSO (not a random Gmail signup). Use the campus URL your school publishes.</span>
+      <span class="gwc-quiet">School SSO (not a random Gmail signup). Use the campus URL your school publishes.</span>
     </div>
   </section>
 
@@ -205,23 +210,18 @@
     </p>
     <ul class="guide-list">
       <li><strong>Find them:</strong> open Events (sometimes under Career Center). Filter by fair, info session, workshop, or date.</li>
-      <li><strong>RSVP / register:</strong> hit the register button early when seats are limited. Check for virtual vs in-person and any dress or prep notes.</li>
+      <li><strong>RSVP early</strong> when seats are limited. Check virtual vs in-person and any dress or prep notes.</li>
       <li><strong>Before you go:</strong> skim the employer list, save 2 to 3 booths or sessions, and have a one-line “what I’m looking for” ready.</li>
       <li><strong>Visibility tip:</strong> some virtual fair features ask you to raise visibility from Private before you can join certain sessions.</li>
     </ul>
   </section>
 
   <section class="guide-section" aria-labelledby="peer-h">
-    <h2 id="peer-h">What we’ve practised (peer side)</h2>
-    <div class="handshake-note">
-      I’ve lived in Handshake for a while ... career content creator season (the “Handshake influencer” year),
-      plus I presented Handshake for FASE MAP last year. Lately we’ve been poking around the platform again
-      so we’re ready to sit with someone and get them unstuck: login, visibility, résumé upload, first search.
-      Same muscle as MAP session work ... open the tab together and do one real next step.
-    </div>
+    <h2 id="peer-h">Peer notes</h2>
     <p>
-      If you’ve never used a campus job board, that’s normal. You don’t need a perfect plan.
-      You need a working login and one honest profile line.
+      I’ve lived in Handshake for a while ... career content season, plus I presented it for FASE MAP last year.
+      Lately we’ve been poking around again so we’re ready to sit with someone and get them unstuck:
+      login, visibility, résumé upload, first search. Same muscle as MAP session work ... open the tab together and do one real next step.
     </p>
   </section>
 
@@ -240,22 +240,19 @@
         <h3>Fix visibility</h3>
         <p>Account → Settings → Privacy. Schools often default new accounts to Private.</p>
         <ul>
-          <li><strong>Private</strong> ... you can browse and apply; employers can’t find or message you.</li>
+          <li><strong>Private</strong> ... browse and apply; employers can’t find or message you.</li>
           <li><strong>Employers</strong> ... school-approved employers can see you and reach out. Good default if you want outreach.</li>
-          <li><strong>Community</strong> ... employers plus students/alumni; unlocks peer messaging where your school supports it.</li>
+          <li><strong>Community</strong> ... employers plus students/alumni; unlocks peer messaging where supported.</li>
         </ul>
       </li>
       <li>
         <h3>Build a profile employers can search</h3>
-        <p>
-          Recruiters filter on work experience, skills, clubs, and job interests.
-          Complete profiles get reached out to far more often than empty ones.
-        </p>
+        <p>Recruiters filter on experience, skills, clubs, and job interests. Complete profiles get reached out to more often.</p>
         <ul>
           <li>Education + correct grad year (auto-fill lies sometimes ... edit by hand).</li>
           <li>Experience that counts: paid job, work-study, volunteer, research, family business, class project with a real deliverable, club officer.</li>
-          <li>5 to 10 real skills (technical + transferable). Pick from Handshake’s skill list when you can so searches match.</li>
-          <li>Photo optional. Short bio / “My Journey” optional. Interests (job type, location, role) help recommendations.</li>
+          <li>5 to 10 real skills. Prefer Handshake’s skill list so searches match.</li>
+          <li>Photo optional. Short bio optional. Interests (job type, location, role) help recommendations.</li>
         </ul>
       </li>
       <li>
@@ -275,7 +272,7 @@
       <li>
         <h3>Follow employers and watch Events</h3>
         <p>
-          Follow 1 to 2 employers you actually care about (not twenty). Check Events for fairs and info sessions.
+          Follow 1 to 2 employers you actually care about. Check Events for fairs and info sessions.
           When a recruiter messages you, reply ... even a short “thanks, here’s my availability.”
         </p>
       </li>
@@ -283,7 +280,7 @@
         <h3>Apply well (quality over spray)</h3>
         <p>
           One posting you read beats twenty empty Quick Apply clicks. Match one résumé bullet to the role.
-          Recruiters notice copy-paste. Track what you applied to so you’re not guessing next week.
+          Track what you applied to so you’re not guessing next week.
         </p>
       </li>
       <li>
@@ -295,10 +292,40 @@
         </p>
       </li>
     </ol>
-    <div class="handshake-note">
-      First-generation friendly truth: nobody hands you a manual that says résumés get rewritten or that cold applying is normal.
-      Asking a coach or mentor is a skill, not a failure. Campus jobs count. One next step is enough for today.
-    </div>
+  </section>
+
+  <section class="guide-section" aria-labelledby="more-h">
+    <h2 id="more-h">More guides · other schools</h2>
+    <p class="gwc-quiet">
+      Same platform, different campuses. Use these public career-center pages when you want a second explanation.
+      Login URLs stay school-specific.
+    </p>
+    <ul class="guide-list guide-list--links">
+      <li>
+        <a href="https://www.colorado.edu/career/handshake/profile" rel="noopener noreferrer" target="_blank">CU Boulder · 5 steps for your Handshake profile</a>
+        ... résumé upload, skills, and why public visibility matters.
+      </li>
+      <li>
+        <a href="https://career.virginia.edu/resources/student-guide-to-navigating-handshake-engaging-employers/" rel="noopener noreferrer" target="_blank">UVA Career Center · navigating Handshake + employers</a>
+        ... profile setup plus events, coffee chats, and recruiting flow.
+      </li>
+      <li>
+        <a href="https://cpd.emory.edu/resources/handshake-settings-privacy/" rel="noopener noreferrer" target="_blank">Emory CPD · Handshake settings &amp; privacy</a>
+        ... Private / Employers / Community in plain language.
+      </li>
+      <li>
+        <a href="https://www.cco.purdue.edu/Students/Handshake" rel="noopener noreferrer" target="_blank">Purdue CCO · Handshake for students</a>
+        ... Big Ten hub: jobs, events, and how their office uses the tool.
+      </li>
+      <li>
+        <a href="https://cals.wisc.edu/2019/11/12/student-guide-to-creating-a-handshake-profile/" rel="noopener noreferrer" target="_blank">UW-Madison CALS · creating a Handshake profile</a>
+        ... section-by-section tips (experience, orgs, projects, documents).
+      </li>
+      <li>
+        <a href="https://www.nyu.edu/students/student-information-and-resources/career-development-and-jobs/find-a-job-or-internship/handshake-info.html" rel="noopener noreferrer" target="_blank">NYU Wasserman · Handshake info</a>
+        ... first login, interests, notifications, and privacy checkbox defaults.
+      </li>
+    </ul>
   </section>
 
   <div class="handshake-signoff">
@@ -316,17 +343,17 @@
     <ul>
       <li><a href="https://support.joinhandshake.com/hc/en-us/articles/115007281988-Profile-Privacy-Options-in-Handshake" rel="noopener noreferrer">Handshake Help · Profile privacy (Private / Employers / Community)</a></li>
       <li><a href="https://support.joinhandshake.com/hc/en-us/articles/115009543967-Completing-your-Profile-in-Handshake" rel="noopener noreferrer">Handshake Help · Completing your profile</a></li>
-      <li><a href="https://careers.college.indiana.edu/about/explore-our-center/handshake/index.html" rel="noopener noreferrer">IU Walter Center · Handshake (what employers search)</a></li>
+      <li><a href="https://career.indiana.edu/handshake/index.html" rel="noopener noreferrer">IU Career Services · What is Handshake?</a></li>
+      <li><a href="https://careers.college.indiana.edu/about/explore-our-center/handshake/index.html" rel="noopener noreferrer">IU Walter Center · Handshake</a></li>
       <li><a href="https://studentemployment.indiana.edu/events-and-resources/create-handshake-account.html" rel="noopener noreferrer">IU Student Employment · Create your Handshake account</a></li>
-      <li><a href="https://careers.kelley.iu.edu/resources/tricks-to-mastering-handshake/" rel="noopener noreferrer">Kelley UCS · Tricks to mastering Handshake (save search, follow employers)</a></li>
-      <li><a href="https://www.montclair.edu/career-services/handshake/handshake-profile/" rel="noopener noreferrer">Montclair Career Services · Handshake profile (visibility + skills)</a></li>
+      <li><a href="https://careers.kelley.iu.edu/resources/tricks-to-mastering-handshake/" rel="noopener noreferrer">Kelley UCS · Tricks to mastering Handshake</a></li>
     </ul>
   </aside>
 
   <section class="quiet-links" aria-label="guide links">
     <a href="index.html">home</a>
     <span aria-hidden="true">·</span>
-    <a href="archive.html">archive</a>
+    <a href="informatics-class-of-2027.html">IU guide</a>
     <span aria-hidden="true">·</span>
     <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>
     <span aria-hidden="true">·</span>
