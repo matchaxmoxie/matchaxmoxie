@@ -4925,26 +4925,6 @@ body.campus-survival-page {
   outline-offset: 3px;
 }
 
-/* Phone + tablet · guide body uses loaded Nunito Sans.
-   Comic Neue is not in the Google Fonts link; many mobiles map the
-   `cursive` fallback to a handwriting face that is hard to read. */
-@media (max-width: 1024px) {
-  body.guide-page,
-  body.guide-page .guide-section p,
-  body.guide-page .guide-list li,
-  body.guide-page .guide-hero .studio-lede,
-  body.guide-page .guide-hero .studio-note,
-  body.guide-page .miss-zhao-tip p,
-  body.guide-page .gwc-quiet,
-  body.guide-page .gwc-block p,
-  body.guide-page .gwc-block li,
-  body.guide-page .journey-note,
-  body.kiss-home .gwc-block p,
-  body.kiss-home .gwc-block li {
-    font-family: var(--font-body), "Nunito Sans", Arial, Helvetica, sans-serif;
-  }
-}
-
 @media print {
   .guide-page .guide-toc,
   .guide-page .twin-note,
@@ -8555,4 +8535,38 @@ body.page-404 .page-404-actions .btn-outline:hover,
 body.page-404 .page-404-actions .btn-outline:focus-visible {
   background: var(--accent-wash);
   color: var(--accent);
+}
+
+/* Phone + tablet · guide body uses loaded Nunito Sans.
+   Comic Neue is not in the Google Fonts link; many mobiles map the
+   `cursive` fallback to a handwriting face that is hard to read.
+   Lives at file end so later Comic Neue body rules cannot win the cascade.
+   Headings keep Cooper Black / Fraunces via their own font-family rules. */
+@media (max-width: 1024px) {
+  body.guide-page,
+  body.guide-page .guide-section p,
+  body.guide-page .guide-list li,
+  body.guide-page .guide-hero .studio-lede,
+  body.guide-page .guide-hero .studio-note,
+  body.guide-page .guide-attr p,
+  body.guide-page .guide-attr-note,
+  body.guide-page .guide-qna dd,
+  body.guide-page .guide-pack label,
+  body.guide-page .miss-zhao-tip p,
+  body.guide-page .gwc-quiet,
+  body.guide-page .gwc-block p,
+  body.guide-page .gwc-block li,
+  body.guide-page .gwc-block .advice-funnel li,
+  body.guide-page .gwc-block .journey-courses li,
+  body.guide-page .journey-note,
+  body.guide-page .advice-funnel-lede,
+  body.guide-page .advice-funnel li,
+  body.guide-page .year23-banner p,
+  body.campus-survival-page .coord-checklist label,
+  body.campus-survival-page .year23-banner p,
+  body.footprint-page .coord-checklist label,
+  body.kiss-home.guide-page .gwc-block p,
+  body.kiss-home.guide-page .gwc-block li {
+    font-family: var(--font-body), "Nunito Sans", Arial, Helvetica, sans-serif;
+  }
 }
