@@ -2887,7 +2887,7 @@ body.kindergarten-home {
 }
 
 .kiss-home .door-what {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.45;
   color: var(--ink-muted);
@@ -3051,7 +3051,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .hero-tag {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(17px, 2.5vw, 20px);
   color: var(--ink-muted);
   max-width: 44ch;
@@ -3070,7 +3070,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .hero-why {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.05rem, 2.4vw, 1.2rem);
   line-height: 1.45;
   color: var(--ink-muted);
@@ -3139,7 +3139,7 @@ body.kindergarten-home {
 
 /* Soft energy ... whisper under brand, not a second headline */
 .choice-home .hero-energy-line {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: clamp(1.05rem, 2.4vw, 1.2rem);
   line-height: 1.35;
@@ -3153,7 +3153,7 @@ body.kindergarten-home {
 .choice-home .hero-vibe-line,
 .choice-home .hero-cookie-line,
 .choice-home .hero-bagel-quote .hero-cookie-offer {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 0.85rem;
   line-height: 1.35;
@@ -3171,7 +3171,7 @@ body.kindergarten-home {
 }
 
 .choice-home .hero-bagel-quote p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(0.95rem, 2.1vw, 1.05rem);
   font-style: italic;
   line-height: 1.4;
@@ -3236,7 +3236,7 @@ body.kindergarten-home {
 }
 
 .choice-home .hero-hook {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(0.92rem, 2vw, 1.02rem);
   color: var(--ink-muted);
   max-width: 34ch;
@@ -3301,14 +3301,14 @@ body.kindergarten-home {
 }
 
 .footer-kiss .human {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   margin: 0 0 var(--space-2xs);
 }
 
 .footer-kiss .footer-quote {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   font-style: italic;
   color: var(--ink-muted);
@@ -3316,7 +3316,7 @@ body.kindergarten-home {
 }
 
 .footer-kiss .footer-soft {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   line-height: 1.45;
   color: var(--ink-muted);
@@ -3325,7 +3325,7 @@ body.kindergarten-home {
 }
 
 .footer-kiss > p:not(.human):not(.footer-quote):not(.footer-soft) {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   color: var(--ink-muted);
   margin: 0 0 var(--space-2xs);
@@ -3355,7 +3355,7 @@ body.kindergarten-home {
 }
 
 .path-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   line-height: 1.5;
   color: var(--ink-muted);
@@ -3391,7 +3391,7 @@ body.kindergarten-home {
 }
 
 .scratch-path-open-hint {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
   color: var(--ink-muted);
   line-height: 1.45;
@@ -3514,7 +3514,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .poem p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(16px, 2.3vw, 18px);
   line-height: 1.65;
   color: var(--ink);
@@ -3759,7 +3759,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .footer .human {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: var(--ink);
   max-width: 40ch;
@@ -3962,7 +3962,7 @@ body.campus-survival-page {
 }
 
 .kiss-home .gwc-block p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   margin-bottom: var(--space-2xs);
@@ -3992,7 +3992,7 @@ body.campus-survival-page {
 }
 
 .kiss-home .footer-kiss .human {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
 }
@@ -4045,7 +4045,7 @@ body.campus-survival-page {
 }
 
 .scratch-studio-page .studio-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 1.08rem;
   color: var(--ink);
   max-width: 44ch;
@@ -4104,7 +4104,7 @@ body.campus-survival-page {
 .scratch-studio-page .howto-bar {
   display: block;
   padding: 7px var(--space-2xs);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.82rem;
   letter-spacing: 0.02em;
@@ -4202,7 +4202,7 @@ body.campus-survival-page {
 }
 
 .scratch-studio-page .howto-meta p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   color: var(--ink-muted);
   line-height: 1.45;
@@ -4266,7 +4266,7 @@ body.campus-survival-page {
   display: flex;
   align-items: center;
   padding: var(--space-2xs) var(--space-xs);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: var(--step-0);
   color: var(--ink);
@@ -4296,7 +4296,7 @@ body.campus-survival-page {
 
 .scratch-studio-page .howto-body {
   padding: 0 var(--space-xs) var(--space-s);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.5;
@@ -4374,7 +4374,7 @@ body.campus-survival-page {
 .scratch-studio-page .scratch-load-help ol {
   margin: 0;
   padding-left: var(--space-m);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.5;
   color: var(--ink);
@@ -4401,7 +4401,7 @@ body.campus-survival-page {
   justify-content: center;
   min-height: 44px;
   padding: 0.45rem var(--space-xs);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   color: #fff8f0;
@@ -4431,7 +4431,7 @@ body.campus-survival-page {
 .scratch-studio-page .howto-download-hint {
   display: inline-block;
   margin-left: var(--space-3xs);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 0.82rem;
   color: var(--ink);
 }
@@ -4489,7 +4489,7 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-hero .studio-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 1.12rem;
   color: var(--ink);
   max-width: 48ch;
@@ -4523,7 +4523,7 @@ body.campus-survival-page {
 }
 
 .guide-attr p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.55;
@@ -4553,7 +4553,7 @@ body.campus-survival-page {
 }
 
 .guide-list li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.55;
@@ -4700,7 +4700,7 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-section p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.55;
@@ -4750,7 +4750,7 @@ body.campus-survival-page {
 }
 
 .campus-survival-page .year23-banner p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.55;
@@ -4805,7 +4805,7 @@ body.campus-survival-page {
 }
 
 .campus-survival-page .coord-checklist label {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.45;
@@ -4854,7 +4854,7 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-qna dd {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.5;
@@ -4883,7 +4883,7 @@ body.campus-survival-page {
   display: flex;
   gap: var(--space-2xs);
   align-items: flex-start;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.45;
@@ -4901,7 +4901,7 @@ body.campus-survival-page {
 }
 
 .guide-page .guide-pack-btn {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   font-weight: 700;
   padding: var(--space-2xs) var(--space-s);
@@ -5057,7 +5057,7 @@ body.campus-survival-page {
 }
 
 .year23-banner p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.55;
@@ -5109,7 +5109,7 @@ body.campus-survival-page {
 }
 
 .campus-survival-page .coord-checklist label {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   color: var(--ink);
   font-size: var(--step-0);
   line-height: 1.45;
@@ -5135,7 +5135,7 @@ body.campus-survival-page {
 
 /* HS jian yi lou dou · you xu bu zhou · hai zi ke du */
 .advice-funnel-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.5;
   color: var(--ink-muted);
@@ -5163,7 +5163,7 @@ body.campus-survival-page {
 .advice-funnel li,
 .kiss-home .gwc-block .advice-funnel li,
 .guide-page .gwc-block .advice-funnel li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.5;
   color: var(--ink);
@@ -5260,7 +5260,7 @@ body.campus-survival-page {
 .kiss-home .gwc-block .journey-courses li,
 .journey-page .gwc-block .journey-courses li,
 .guide-page .gwc-block .journey-courses li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.45;
@@ -5280,7 +5280,7 @@ body.campus-survival-page {
 }
 
 .journey-note {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink-muted);
   line-height: 1.5;
@@ -5327,7 +5327,7 @@ body.campus-survival-page {
 }
 
 .miss-zhao-tip p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.55;
@@ -5370,7 +5370,7 @@ body.campus-survival-page {
 .classroom-credo {
   margin: 0;
   padding-left: var(--space-m);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   line-height: 1.55;
@@ -5668,7 +5668,7 @@ body {
 }
 
 .foot-copy p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.55;
   color: var(--ink);
@@ -5708,7 +5708,7 @@ body {
 }
 
 .trail-legend p {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.6;
   color: var(--ink);
@@ -5721,7 +5721,7 @@ body {
 }
 
 .foot-print-so-far {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.55;
   color: var(--ink);
@@ -5839,7 +5839,7 @@ body {
 }
 
 .invest-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   line-height: 1.5;
   color: var(--ink-muted);
@@ -5999,7 +5999,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 
 .open-pick-hint,
 .situation-btn-hint {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.05rem, 2.3vw, 1.15rem);
   color: var(--ink-muted);
   line-height: 1.35;
@@ -6123,7 +6123,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .situation-plan-steps li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.02rem, 2.4vw, 1.12rem);
   line-height: 1.5;
   color: var(--ink);
@@ -6178,7 +6178,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   display: inline;
   min-height: 44px;
   padding: 0;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.02rem, 2.4vw, 1.12rem);
   font-weight: 700;
   color: var(--dusk);
@@ -6275,7 +6275,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .advice-funnel-path-name {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.45;
   color: var(--ink);
@@ -6323,7 +6323,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .footprint-progress {
   margin: 0 0 var(--space-xs);
   padding: 0 0 var(--space-2xs);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink);
   background: transparent;
@@ -6364,7 +6364,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .scratch-pick-get,
 .scratch-pick-why,
 .scratch-pick-path {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   line-height: 1.5;
   color: var(--ink);
@@ -6389,7 +6389,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 
 .scratch-secondary-ctas {
   margin: 0 0 var(--space-s);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.05rem, 2.3vw, 1.15rem);
   line-height: 1.6;
 }
@@ -6438,7 +6438,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-howto-steps li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.02rem, 2.3vw, 1.12rem);
   line-height: 1.45;
   color: var(--ink);
@@ -6450,7 +6450,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-howto-tip {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(0.98rem, 2.2vw, 1.05rem);
   line-height: 1.4;
   color: var(--ink-muted);
@@ -6458,7 +6458,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-pick-switch-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.02rem, 2.3vw, 1.12rem);
   color: var(--ink-muted);
   margin: 0 0 var(--space-2xs);
@@ -6468,7 +6468,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   min-height: 44px;
   min-width: 44px;
   padding: var(--space-2xs) var(--space-s);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: var(--step-0);
   border: 3px solid var(--accent);
@@ -6564,7 +6564,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .scratch-load-steps li {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.08rem, 2.4vw, 1.2rem);
   line-height: 1.5;
   color: var(--ink);
@@ -6613,7 +6613,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   align-items: flex-start;
   min-height: 48px;
   padding: var(--space-xs) 0;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(1.08rem, 2.4vw, 1.2rem);
   line-height: 1.4;
   color: var(--ink);
@@ -6794,7 +6794,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 }
 
 .archive-link-grid .what {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   color: var(--ink-muted);
   line-height: 1.4;
@@ -6940,7 +6940,7 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
   align-items: flex-start;
   min-height: 56px;
   padding: var(--space-xs) var(--space-s);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.45;
   color: var(--ink);
@@ -7019,7 +7019,7 @@ body.page-404 {
 }
 
 .page-404 .lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   color: var(--ink-muted);
   max-width: 36ch;
   margin: 0 auto 20px;
@@ -7052,7 +7052,7 @@ body.page-404 {
   justify-content: center;
   min-height: 48px;
   padding: var(--space-2xs) var(--space-s);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   font-weight: 700;
   text-decoration: none;
@@ -7466,7 +7466,7 @@ body.choice-home {
 .advice-why-order {
   margin: 0 0 var(--space-xs);
   max-width: 58ch;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.45;
   color: var(--crayon-ink, #2b2d33);
@@ -7480,7 +7480,7 @@ body.choice-home {
 .ap-credit-table caption {
   caption-side: top;
   text-align: left;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
   color: var(--crayon-muted, #4a3f5c);
   padding-bottom: var(--space-2xs);
@@ -7506,7 +7506,7 @@ body.choice-home {
   min-height: 44px;
   min-width: 7.5rem;
   padding: 0.45rem var(--space-xs);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   text-decoration: none;
@@ -7534,7 +7534,7 @@ body.choice-home {
 .scratch-studio-page .howto-practice,
 .scratch-pick-practice {
   margin: var(--space-3xs) 0 0;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.4;
   color: var(--crayon-muted, #4a3f5c);
@@ -7587,14 +7587,14 @@ body.choice-home {
 }
 
 .desk-photos-lede {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   color: var(--ink-muted);
   margin: 0 0 var(--space-2xs);
 }
 
 .desk-vibe {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   color: var(--ink-muted);
   margin: var(--space-s) 0 var(--space-2xs);
@@ -7602,7 +7602,7 @@ body.choice-home {
 }
 
 .desk-listening {
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.45;
   color: var(--ink-muted);
@@ -7789,7 +7789,7 @@ a.desk-photo-link:focus-visible {
 .desk-arrival-where,
 .desk-arrival-why {
   margin: 0 0 var(--space-3xs);
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
   line-height: 1.4;
   color: var(--ink);
@@ -7911,7 +7911,7 @@ a.desk-photo-link:focus-visible {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.35em 0.45em;
-  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: clamp(1.05rem, 2.4vw, 1.2rem);
   color: var(--crimson-ink);
@@ -8537,36 +8537,33 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
   color: var(--accent);
 }
 
-/* Phone + tablet · guide body uses loaded Nunito Sans.
-   Comic Neue is not in the Google Fonts link; many mobiles map the
-   `cursive` fallback to a handwriting face that is hard to read.
-   Lives at file end so later Comic Neue body rules cannot win the cascade.
-   Headings keep Cooper Black / Fraunces via their own font-family rules. */
+/* Phone + tablet · readable first.
+   Comic Neue is not loaded from Google Fonts; Comic Sans / Cooper Black
+   read as handwriting-cute on small screens. Force loaded Nunito Sans
+   on everything (including headings). Keep CJK .sc / lang stacks.
+   File-end + !important so page-local Cooper / Comic rules lose. */
 @media (max-width: 1024px) {
-  body.guide-page,
-  body.guide-page .guide-section p,
-  body.guide-page .guide-list li,
-  body.guide-page .guide-hero .studio-lede,
-  body.guide-page .guide-hero .studio-note,
-  body.guide-page .guide-attr p,
-  body.guide-page .guide-attr-note,
-  body.guide-page .guide-qna dd,
-  body.guide-page .guide-pack label,
-  body.guide-page .miss-zhao-tip p,
-  body.guide-page .gwc-quiet,
-  body.guide-page .gwc-block p,
-  body.guide-page .gwc-block li,
-  body.guide-page .gwc-block .advice-funnel li,
-  body.guide-page .gwc-block .journey-courses li,
-  body.guide-page .journey-note,
-  body.guide-page .advice-funnel-lede,
-  body.guide-page .advice-funnel li,
-  body.guide-page .year23-banner p,
-  body.campus-survival-page .coord-checklist label,
-  body.campus-survival-page .year23-banner p,
-  body.footprint-page .coord-checklist label,
-  body.kiss-home.guide-page .gwc-block p,
-  body.kiss-home.guide-page .gwc-block li {
-    font-family: var(--font-body), "Nunito Sans", Arial, Helvetica, sans-serif;
+  body,
+  body *:not(.sc):not([lang="zh-Hans"]):not([lang="zh"]):not(code):not(pre):not(kbd):not(samp) {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif !important;
+  }
+
+  /* Beat page/theme !important display stacks (Cooper / Fraunces / Comic) */
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6,
+  body .theme-matchaxmoxie .hero--doors h1,
+  body .theme-matchaxmoxie .hero--doors #hero-heading,
+  body .handshake-steps h3 {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif !important;
+  }
+
+  .sc,
+  [lang="zh-Hans"],
+  [lang="zh"] {
+    font-family: var(--font-sc), "Noto Serif SC", "Songti SC", "SimSun", serif !important;
   }
 }

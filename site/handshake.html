@@ -34,14 +34,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="brand-tokens.css?v=20260831-handshake">
+<link rel="stylesheet" href="brand-tokens.css?v=20260831-readable">
 <link rel="stylesheet" href="register-campus.css?v=20260831-handshake">
 <link rel="stylesheet" href="a11y.css?v=20260831-handshake">
 <link rel="stylesheet" href="classroom-ux.css?v=20260831-handshake">
-<link rel="stylesheet" href="styles.css?v=20260831-nunito">
+<link rel="stylesheet" href="styles.css?v=20260831-nunito2">
 <style>
   /* Career how-to · body stays loaded Nunito Sans (readable on phone).
-     Headings keep classroom Cooper / Fraunces like other guide pages. */
+     Desktop headings may use Cooper; ≤1024px site CSS forces Nunito everywhere. */
   .handshake-page,
   .handshake-page .guide-section p,
   .handshake-page .guide-list li,
@@ -238,41 +238,47 @@
       </li>
       <li>
         <h3>Fix visibility</h3>
-        <p>Account → Settings → Privacy. Schools often default new accounts to Private.</p>
+        <p>Account → Settings → Privacy. Many schools default new accounts to Private. Some (like NYU) default toward public on first login ... read the checkbox before you skip it.</p>
         <ul>
           <li><strong>Private</strong> ... browse and apply; employers can’t find or message you.</li>
           <li><strong>Employers</strong> ... school-approved employers can see you and reach out. Good default if you want outreach.</li>
-          <li><strong>Community</strong> ... employers plus students/alumni; unlocks peer messaging where supported.</li>
+          <li><strong>Community</strong> ... employers plus students/alumni; unlocks peer messaging where supported. No more privacy pop-ups mid-action.</li>
+          <li><strong>Why it matters:</strong> CU Boulder cites ~5× more employer messages when you’re findable. Virtual fairs often require Employers or Community before you can join a session.</li>
+          <li><strong>Work authorisation:</strong> answer the two questions (or opt out) in Settings so filters don’t leave you as “Unknown.”</li>
         </ul>
       </li>
       <li>
         <h3>Build a profile employers can search</h3>
-        <p>Recruiters filter on experience, skills, clubs, and job interests. Complete profiles get reached out to more often.</p>
+        <p>Recruiters filter on experience, skills, clubs, and job interests. Complete profiles get reached out to more often. Skills are often the primary search field.</p>
         <ul>
           <li>Education + correct grad year (auto-fill lies sometimes ... edit by hand).</li>
-          <li>Experience that counts: paid job, work-study, volunteer, research, family business, class project with a real deliverable, club officer.</li>
-          <li>5 to 10 real skills. Prefer Handshake’s skill list so searches match.</li>
-          <li>Photo optional. Short bio optional. Interests (job type, location, role) help recommendations.</li>
+          <li>Experience that counts: paid job, work-study, volunteer, research, family business, class project with a real deliverable, club officer. Reverse chronological. Write org names out (not acronyms). Quantify when you can.</li>
+          <li>Employers also search by company names you’ve worked for ... list on-campus and volunteer roles too.</li>
+          <li>5 to 10 real skills (soft + technical). Prefer Handshake’s skill list so searches match.</li>
+          <li>Courses / projects that match roles you want (lab courses for lab jobs; class projects ... say if it was a group). Skip purely social clubs that say nothing about skills.</li>
+          <li>Add a portfolio, GitHub, or LinkedIn link if you have one. Photo optional. Short bio optional. Interests (job type, location, role) drive recommendations.</li>
         </ul>
       </li>
       <li>
         <h3>Upload your résumé and check auto-fill</h3>
         <p>
-          PDF résumé → let Handshake fill fields → fix weird lines. One clean page beats a blank fancy template.
-          Keep the file current; recruiters open what you uploaded.
+          PDF résumé → let Handshake fill fields → fix weird lines (major, grad date, GPA). One clean page beats a blank fancy template.
+          Document visibility is separate from profile privacy: mark one résumé “visible to employers” so fair RSVP lists and coffee-chat reviews can pull it. Keep the file current.
         </p>
       </li>
       <li>
         <h3>Search jobs and internships</h3>
         <p>
           Jobs → filters (job type, location, industry, keyword). Save the search so new matches show up later
-          instead of starting from zero every week.
+          instead of starting from zero every week. Turn on notification prefs (email / in-app) for fairs, events, and interviews.
+          Coffee chats are sometimes posted under Jobs ... try searching “coffee chat,” not only Events.
         </p>
       </li>
       <li>
         <h3>Follow employers and watch Events</h3>
         <p>
           Follow 1 to 2 employers you actually care about. Check Events for fairs and info sessions.
+          Desktop is steadier than phone for booking slots. RSVP early; if you can’t go, cancel so someone else can take the seat.
           When a recruiter messages you, reply ... even a short “thanks, here’s my availability.”
         </p>
       </li>
@@ -280,7 +286,7 @@
         <h3>Apply well (quality over spray)</h3>
         <p>
           One posting you read beats twenty empty Quick Apply clicks. Match one résumé bullet to the role.
-          Track what you applied to so you’re not guessing next week.
+          Track what you applied to so you’re not guessing next week. Use your school email on applications.
         </p>
       </li>
       <li>
@@ -289,6 +295,7 @@
           Career Center → Appointments (Walter Center for IU College students; other schools have their own coaches in the same menu).
           Use them for résumé rewrite, interview practice, or “I don’t know where to start.”
           Advising and scholarship holds stay with advisors ... not Handshake settings.
+          Some schools leave Handshake for another hub (Purdue moved to Career Gateway) ... always use the link your career center publishes.
         </p>
       </li>
     </ol>
@@ -297,33 +304,33 @@
   <section class="guide-section" aria-labelledby="more-h">
     <h2 id="more-h">More guides · other schools</h2>
     <p class="gwc-quiet">
-      Same platform, different campuses. Use these public career-center pages when you want a second explanation.
+      Same platform, different campuses. Tips above borrow from these public pages.
       Login URLs stay school-specific.
     </p>
     <ul class="guide-list guide-list--links">
       <li>
         <a href="https://www.colorado.edu/career/handshake/profile" rel="noopener noreferrer" target="_blank">CU Boulder · 5 steps for your Handshake profile</a>
-        ... résumé upload, skills, and why public visibility matters.
+        ... skills as the main search field; ~5× more messages when findable.
       </li>
       <li>
         <a href="https://career.virginia.edu/resources/student-guide-to-navigating-handshake-engaging-employers/" rel="noopener noreferrer" target="_blank">UVA Career Center · navigating Handshake + employers</a>
-        ... profile setup plus events, coffee chats, and recruiting flow.
+        ... coffee chats often under Jobs; desktop for booking; follow + alerts.
       </li>
       <li>
         <a href="https://cpd.emory.edu/resources/handshake-settings-privacy/" rel="noopener noreferrer" target="_blank">Emory CPD · Handshake settings &amp; privacy</a>
-        ... Private / Employers / Community in plain language.
+        ... Private / Employers / Community; work authorisation; résumé visibility.
       </li>
       <li>
-        <a href="https://www.cco.purdue.edu/Students/Handshake" rel="noopener noreferrer" target="_blank">Purdue CCO · Handshake for students</a>
-        ... Big Ten hub: jobs, events, and how their office uses the tool.
+        <a href="https://cco.purdue.edu/Students/CareerGateway" rel="noopener noreferrer" target="_blank">Purdue CCO · Career Gateway</a>
+        ... they left Handshake for a school hub; always use your center’s current link.
       </li>
       <li>
         <a href="https://cals.wisc.edu/2019/11/12/student-guide-to-creating-a-handshake-profile/" rel="noopener noreferrer" target="_blank">UW-Madison CALS · creating a Handshake profile</a>
-        ... section-by-section tips (experience, orgs, projects, documents).
+        ... section tips: write org names out, quantify, relevant courses/projects.
       </li>
       <li>
         <a href="https://www.nyu.edu/students/student-information-and-resources/career-development-and-jobs/find-a-job-or-internship/handshake-info.html" rel="noopener noreferrer" target="_blank">NYU Wasserman · Handshake info</a>
-        ... first login, interests, notifications, and privacy checkbox defaults.
+        ... first-login privacy checkbox can default public; turn on email notifications.
       </li>
     </ul>
   </section>
