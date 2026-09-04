@@ -28,6 +28,7 @@ Live: [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/match
 
 - Code and shipped builds → [jadexzhao](https://jadexzhao.github.io/jadexzhao/) (GitHub handle, not Instagram)
 - Essays and research notes → [zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/)
+- Resume (PDF) → [IU Pages](https://jlzhao.pages.iu.edu/resume.pdf) · [GitHub Pages mirror](https://jadexzhao.github.io/jadexzhao/resume.pdf) · [local site copy](https://matchaxmoxie.github.io/matchaxmoxie/resume.pdf)
 - CV hub → [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
 
 Potstickers restaurant web is separate from this classroom URL.
