@@ -70,41 +70,41 @@
   /* ── 1. Pick your situation → 3-step plan (index) ── */
   var SITUATIONS = {
     "ap-csp": {
-      label: "AP CSP or curious about code",
+      label: "Curious about code",
       steps: [
         {
-          title: "AP notes that map to IU",
-          body: "See how CSP credit lands before you stress the syllabus. Learn the live table.",
-          href: "informatics-class-of-2027.html#early-heading",
-        },
-        {
-          title: "Ship a tiny Scratch game",
+          title: "Try Scratch first",
           body: "Green flag on this site. Two minutes and something moves. Slow is fine.",
           href: "scratch-play.html?project=jumping",
         },
         {
+          title: "AP notes that map to IU",
+          body: "See how CSP credit lands before you stress the syllabus. Cookie rule: check the live table.",
+          href: "informatics-class-of-2027.html#early-heading",
+        },
+        {
           title: "Peek freshman year",
-          body: "Real Luddy course names from my first year. ELI5 the codes as you go.",
+          body: "Real Luddy course names from my first year. Next sip: one code you don't know yet.",
           href: "freshman.html",
         },
       ],
     },
     undecided: {
-      label: "Undecided major · eyeing Informatics",
+      label: "Undecided about your major",
       steps: [
         {
           title: "Official IU links first",
-          body: "Bulletin, AP credit, registrar. Live pages beat rumors. Learn it there.",
+          body: "Bulletin, AP credit, registrar. Live pages beat rumors. Cookie rule applies.",
           href: "informatics-class-of-2027.html#official-links",
         },
         {
-          title: "Career slides, not vibes only",
+          title: "Luddy and Informatics notes",
           body: "Learn about yourself before you lock a track. One step, not twenty tabs.",
           href: "informatics-class-of-2027.html#career-slides",
         },
         {
           title: "Claim a footprint",
-          body: "A dare list for college life outside the GPA grind. One box today.",
+          body: "A dare list for college life outside the GPA grind. Next sip: one box today.",
           href: "footprint.html#bucket",
         },
       ],
@@ -124,8 +124,28 @@
         },
         {
           title: "Four-year path peek",
-          body: "Freshman through senior, including Madrid spring. Slow progress still counts.",
+          body: "Freshman through senior, including Madrid spring. You do not need the whole plan today.",
           href: "junior.html",
+        },
+      ],
+    },
+    already: {
+      label: "Already here",
+      steps: [
+        {
+          title: "b-town bars",
+          body: "Skip the orientation speech. Bloomington after class · places worth knowing.",
+          href: "b-town-bars.html",
+        },
+        {
+          title: "Leave a footprint",
+          body: "Small campus dares outside the GPA grind. Next sip: check one box.",
+          href: "footprint.html#bucket",
+        },
+        {
+          title: "Handshake when you need it",
+          body: "Job hunt notes without the panic. Matcha check: what do you actually need this week?",
+          href: "handshake.html",
         },
       ],
     },
@@ -152,10 +172,10 @@
       var first = data.steps[0];
       planTitle.textContent = restoringSaved
         ? "Welcome back · " + data.label
-        : "Archive seat · " + data.label;
+        : "Your seat · " + data.label;
       if (planProgress) {
         planProgress.textContent =
-          "Three archive steps · start with step 1";
+          "Three next-sip steps · start with step 1";
       }
       planList.innerHTML = "";
       data.steps.forEach(function (step, i) {
@@ -225,12 +245,12 @@
 
   /* ── 2. Advice funnel · step X of 6 + reward (index) ── */
   var FUNNEL_LABELS = [
-    "AP & never too early",
-    "Official IU links",
-    "Campus survival",
-    "Four-year path peek",
-    "Scratch studio",
-    "Career progress slides",
+    "Find your footing",
+    "Learn the map",
+    "Try something",
+    "Find your people",
+    "Make a footprint",
+    "Keep going",
   ];
 
   function initAdviceFunnel() {

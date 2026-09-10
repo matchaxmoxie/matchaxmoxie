@@ -3324,6 +3324,28 @@ body.kindergarten-home {
   max-width: 36rem;
 }
 
+.footer-kiss .footer-bye {
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-1, 1.125rem);
+  font-weight: 700;
+  color: var(--accent, #006b45);
+  margin: 0 0 var(--space-2xs);
+}
+
+.footer-kiss .footer-pro {
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--ink-muted);
+  margin: var(--space-xs) auto 0;
+  max-width: 36rem;
+}
+
+.footer-kiss .footer-pro a {
+  color: var(--accent, #006b45);
+  font-weight: 700;
+}
+
 .footer-kiss > p:not(.human):not(.footer-quote):not(.footer-soft) {
   font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: 0.92rem;
@@ -8574,4 +8596,108 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
   [lang="zh"] {
     font-family: var(--font-sc), "Noto Serif SC", "Songti SC", "SimSun", serif !important;
   }
+}
+
+/* ── 2026-09-10 · classroom voice extras ── */
+.choice-home .path-lede--hero-soft {
+  font-weight: 700;
+  color: var(--accent, #006b45);
+  margin-bottom: var(--space-2xs);
+}
+
+.who-runs-room .about-questions {
+  margin: 0 0 var(--space-s);
+  padding-left: 1.25rem;
+  max-width: 42ch;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.who-runs-room .about-questions li {
+  margin-bottom: 0.35rem;
+}
+
+.brand-tagline {
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--accent, #006b45);
+  margin: var(--space-xs) 0 0;
+}
+
+.brand-device-list {
+  list-style: none;
+  margin: 0 0 var(--space-m);
+  padding: var(--space-s);
+  max-width: 48ch;
+  background: var(--surface-sunken, #e8f0e4);
+  border: 3px solid var(--accent, #006b45);
+  border-radius: var(--radius-md, 16px);
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.brand-device-list li + li {
+  margin-top: 0.4rem;
+}
+
+.brand-device-list strong {
+  color: var(--accent, #006b45);
+}
+
+.classroom-welcome,
+.classroom-reminder {
+  margin: 0 0 var(--space-l);
+}
+
+.classroom-room-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-s);
+  max-width: 52ch;
+}
+
+.classroom-room-list li {
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.55;
+  color: var(--ink);
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--border, rgba(0, 84, 55, 0.22));
+}
+
+.classroom-room-list a {
+  display: inline-block;
+  margin-right: 0.35rem;
+  color: var(--accent, #006b45);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.classroom-room-list a:hover,
+.classroom-room-list a:focus-visible {
+  text-decoration: underline;
+}
+
+.reminder-signoff {
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--accent, #006b45);
+  margin: var(--space-s) 0 0;
+  line-height: 1.4;
+}
+
+.choice-home .who-runs-room,
+.choice-home .classroom-welcome,
+.choice-home .classroom-reminder {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
 }
