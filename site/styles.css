@@ -8696,8 +8696,47 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
 
 .choice-home .who-runs-room,
 .choice-home .classroom-welcome,
-.choice-home .classroom-reminder {
+.choice-home .classroom-reminder,
+.choice-home .classroom-stats {
   width: 100%;
   max-width: none;
   box-sizing: border-box;
+}
+
+.classroom-stats {
+  margin: 0 0 var(--space-l);
+}
+
+.classroom-stat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-m);
+  max-width: 52ch;
+}
+
+.classroom-stat-list li {
+  padding: var(--space-s);
+  background: var(--surface-sunken, #e8f0e4);
+  border: 3px solid var(--accent, #006b45);
+  border-radius: var(--radius-md, 16px);
+}
+
+.classroom-stat-figure {
+  margin: 0 0 var(--space-2xs);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: var(--step-2);
+  font-weight: 700;
+  color: var(--accent, #006b45);
+  line-height: 1.2;
+}
+
+.classroom-stat-list .path-lede {
+  margin-bottom: 0;
+}
+
+.classroom-stat-list a {
+  color: var(--accent, #006b45);
+  font-weight: 700;
 }
