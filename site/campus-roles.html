@@ -40,41 +40,101 @@
 <link rel="stylesheet" href="classroom-ux.css?v=20260831-readable">
 <link rel="stylesheet" href="styles.css?v=20260914-classroom">
 <style>
+  /* Match Plain Disclosure worksheet CSS: square paper, no rounded AI cards */
+  .campus-roles-page {
+    --paper: #f7efe8;
+    --ink: #1f1a17;
+    --muted: #5c534c;
+    --line: #c9b6ae;
+    --pink: #c45b7a;
+    --pink-wash: #f3d6df;
+  }
+
+  .campus-roles-page.kindergarten-home,
+  .campus-roles-page {
+    background: var(--paper) !important;
+    color: var(--ink);
+  }
+
+  .campus-roles-page .wrap {
+    max-width: 920px;
+  }
+
   .campus-roles-page .studio-lede,
   .campus-roles-page .guide-section p,
   .campus-roles-page .guide-list li,
   .campus-roles-page .miss-zhao-tip p,
   .campus-roles-page .role-meta,
   .campus-roles-page .role-focus,
-  .campus-roles-page .gwc-quiet {
-    font-family: var(--font-body), "Nunito Sans", Arial, Helvetica, sans-serif;
+  .campus-roles-page .role-ship,
+  .campus-roles-page .gwc-quiet,
+  .campus-roles-page .page-start,
+  .campus-roles-page .page-start li {
+    font-family: Georgia, "Times New Roman", Times, serif !important;
+    color: var(--ink);
+  }
+
+  .campus-roles-page .guide-hero,
+  .campus-roles-page .interior-panel,
+  .campus-roles-page .miss-zhao-tip,
+  .campus-roles-page .page-start {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    max-width: 40em;
+  }
+
+  .campus-roles-page .guide-hero {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .campus-roles-page .studio-kicker,
+  .campus-roles-page .miss-zhao-tip-label {
+    font-family: ui-monospace, "Courier New", monospace !important;
+    font-size: 0.8rem;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--muted) !important;
+  }
+
+  .campus-roles-page h1,
+  .campus-roles-page .role-block h2 {
+    font-family: Georgia, "Times New Roman", Times, serif !important;
+    color: var(--ink) !important;
+    border-radius: 0 !important;
   }
 
   .role-block {
-    margin: 0 0 1.75rem;
-    padding: 1rem 1.1rem 1.15rem;
-    max-width: 58ch;
-    background: var(--surface-raised, #fff);
-    border: 1px solid rgba(0, 107, 69, 0.22);
-    border-left: 5px solid var(--matcha-deep, #006B45);
+    margin: 0 0 1.5rem;
+    padding: 0.85rem 0 1rem;
+    max-width: 40em;
+    background: transparent;
+    border: 0;
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px dotted var(--line);
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
 
   .role-block h2 {
     margin: 0 0 0.35rem;
-    font-size: 1.35rem;
-    color: var(--matcha-deep, #006B45);
+    font-size: 1.45rem;
   }
 
   .role-meta {
     margin: 0 0 0.75rem;
-    font-size: 0.95rem;
-    color: var(--ink-soft, #3d4a40);
+    font-family: ui-monospace, "Courier New", monospace !important;
+    font-size: 0.82rem;
+    color: var(--muted) !important;
     line-height: 1.45;
   }
 
   .role-block .guide-list {
     margin: 0.5rem 0 0.85rem;
-    padding-left: 1.2rem;
+    padding-left: 1.15rem;
   }
 
   .role-block .guide-list li {
@@ -83,33 +143,49 @@
 
   .role-focus {
     margin: 0;
-    padding: 0.65rem 0.75rem;
-    background: var(--matcha-pale, #E8F0E4);
+    padding: 0.55rem 0;
+    background: transparent;
+    border-top: 1px dotted var(--line);
     font-size: 0.95rem;
     line-height: 1.45;
-    color: var(--ink-soft, #3d4a40);
+    color: var(--muted) !important;
+    border-radius: 0 !important;
   }
 
   .role-focus strong {
-    color: var(--matcha-deep, #006B45);
+    color: var(--ink) !important;
   }
 
   .role-ship {
     margin: 0.75rem 0 0;
     font-size: 0.95rem;
     line-height: 1.45;
-    max-width: 58ch;
+    max-width: 40em;
   }
 
   .role-ship a {
     font-weight: 700;
+    color: var(--ink);
+    text-underline-offset: 2px;
+  }
+
+  .campus-roles-page .desk-arrival {
+    background: var(--pink-wash) !important;
+    border: 1px solid var(--ink) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .campus-roles-page .guide-toc a,
+  .campus-roles-page .site-jump a {
+    border-radius: 0 !important;
   }
 
   .campus-roles-signoff {
     margin: 1.75rem 0 0;
-    padding-top: 1rem;
-    border-top: 2px solid var(--matcha-pale, #E8F0E4);
-    max-width: 54ch;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--line);
+    max-width: 40em;
   }
 </style>
 </head>
@@ -201,11 +277,8 @@
       <strong>Focus:</strong> User Experience, Data Privacy, Consumer Trust
     </p>
     <p class="role-ship">
-      <strong>Live Make:</strong>
-      <a href="https://shared-caper-09568209.figma.site" rel="noopener noreferrer" target="_blank">User Experience Designer · IUB Undergraduate Education</a>
-      · <strong>Desk tool:</strong>
-      <a href="https://jadexzhao.github.io/jadexzhao/plain-disclosure.html" rel="noopener noreferrer">Plain Disclosure</a>
-      (<a href="https://zhao-langxi.github.io/zhao-langxi/work/plain-disclosure.html" rel="noopener noreferrer">zhao-langxi copy</a>)
+      <strong>Desk tool:</strong>
+      <a href="https://zhao-langxi.github.io/zhao-langxi/work/plain-disclosure.html" rel="noopener noreferrer">Plain Disclosure</a>
     </p>
   </article>
 
@@ -302,6 +375,7 @@
       · <a href="informatics-class-of-2027.html">IU guide</a>
       · <a href="handshake.html">Handshake</a>
       · <a href="databases-it-etl.html">Data seat</a>
+      · <a href="campus-survival.html">Campus survival</a>
       · <a href="archive.html">Archive</a>
     </p>
     <p class="footer-group"><span class="footer-label">Elsewhere</span>
