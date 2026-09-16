@@ -29,6 +29,6 @@ Live: [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/match
 - Code and shipped builds → [jadexzhao](https://jadexzhao.github.io/jadexzhao/) (GitHub handle, not Instagram)
 - Essays and research notes → [zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/) · start with the [Digital Humans case](https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html) if you want the hire-adjacent thinking
 - Resume (PDF) → [jlzhao.pages.iu.edu/cv.pdf](https://jlzhao.pages.iu.edu/cv.pdf)
-- CV hub → [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
+- Handshake influencer narrative (then Handshake content creator × Digital Humans) → [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
 
 Potstickers restaurant web is separate from this classroom URL.
