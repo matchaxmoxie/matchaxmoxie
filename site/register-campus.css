@@ -42,8 +42,8 @@
   --a11y-ink: var(--ink);
 
   /* matcha accents · every green-ish legacy name lands on a role */
-  --link: var(--accent);
-  --link-hover: var(--warm-ink);
+  --link: var(--usucha);
+  --link-hover: var(--koicha);
   --text-accent: var(--accent);
   --accent-crimson: var(--accent);
   --crimson-ink: var(--accent-hover);

@@ -12,7 +12,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-<meta name="description" content="matchaxmoxie · IU classroom hub for first-generation and low-income students, MAP mentees, and Informatics peers. Clear next steps from Jade Zhao, STEM Peer Mentor / MAP Coordinator.">
+<meta name="description" content="matchaxmoxie · IU classroom hub for first-generation and low-income students, MAP mentees, and Informatics peers. Pick a seat. Get the next step. Source on GitHub.">
 <title>matchaxmoxie · IU classroom hub</title>
 <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/">
 <link rel="icon" href="favicon.ico?v=20260915-face" sizes="any">
@@ -60,6 +60,8 @@
         "name": "Indiana University Luddy School of Informatics, Computing, and Engineering"
       },
       "sameAs": [
+        "https://github.com/matchaxmoxie",
+        "https://github.com/matchaxmoxie/matchaxmoxie",
         "https://jadexzhao.github.io/jadexzhao/",
         "https://instagram.com/zhao.langxi"
       ]
@@ -70,13 +72,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="overall-style-system.css?v=20260819-matcha">
-<link rel="stylesheet" href="starter-campus.css?v=20260919-ceremonial">
-<link rel="stylesheet" href="brand-tokens.css?v=20260919-ceremonial">
-<link rel="stylesheet" href="register-campus.css?v=20260819-matcha">
-<link rel="stylesheet" href="a11y.css?v=20260819-matcha">
-<link rel="stylesheet" href="classroom-ux.css?v=20260919-ceremonial">
-<link rel="stylesheet" href="styles.css?v=20260919-ceremonial">
+<link rel="stylesheet" href="overall-style-system.css?v=20260919-koicha">
+<link rel="stylesheet" href="starter-campus.css?v=20260919-koicha">
+<link rel="stylesheet" href="brand-tokens.css?v=20260919-koicha">
+<link rel="stylesheet" href="register-campus.css?v=20260919-koicha">
+<link rel="stylesheet" href="a11y.css?v=20260919-koicha">
+<link rel="stylesheet" href="classroom-ux.css?v=20260919-koicha">
+<link rel="stylesheet" href="styles.css?v=20260919-koicha">
 </head>
 <body class="theme-matchaxmoxie choice-home">
 
@@ -85,83 +87,46 @@
   <a href="index.html" aria-current="page">Home</a>
   <a href="student-path.html">Your path</a>
   <a href="campus-roles.html">Campus roles</a>
+  <a href="https://github.com/matchaxmoxie/matchaxmoxie" rel="noopener noreferrer">Source</a>
 </nav>
 <main id="main-content" class="wrap" tabindex="-1">
 
-  <!-- home hero · classroom hub job first -->
-  <header class="path-page-header interior-panel" aria-labelledby="hero-heading">
-    <p class="path-kicker">matcha energy · IU classroom hub · <span class="sc" lang="zh-Hans">凤凰</span></p>
-    <h1 id="hero-heading">matchaxmoxie</h1>
-    <p class="path-lede path-lede--hero-soft">
-      Your next step, made visible
-    </p>
-    <p class="path-lede">
-      An IU classroom hub for first-generation and low-income students, MAP mentees, and Informatics peers.
-      Honest campus notes ... what to do next, what to bring, who to ask, how to land softly.
-    </p>
-    <p class="path-lede">
-      I&rsquo;m Jade Zhao · STEM Peer Mentor / MAP Coordinator with Faculty and Staff for Student Excellence (FASE),
-      Programme Assistant with the Hudson &amp; Holland Scholars Programme (HHSP), and an Informatics student at IU Luddy.
-      Other campus desks:
-      <a href="campus-roles.html#ux">UX at Undergraduate Education</a>,
-      <a href="campus-roles.html#pitun">Business Technologist with PIT-UN</a>,
-      and
-      <a href="campus-roles.html#nsf">Web Developer with NSF</a>
-      (NDA-aware).
-    </p>
-    <p class="page-start-ctas">
-      <a class="open-cta" href="#situation-picker">pick your seat →</a>
-      <a class="open-link-cta" href="student-path.html">your path</a>
-    </p>
+  <header class="path-page-header interior-panel home-mast" aria-labelledby="hero-heading">
+    <div class="home-mast-copy">
+      <p class="path-kicker">IU classroom hub · <span class="sc" lang="zh-Hans">凤凰</span> · matcha energy</p>
+      <h1 id="hero-heading">matchaxmoxie</h1>
+      <p class="path-lede path-lede--hero-soft">Your next step, made visible.</p>
+      <p class="path-lede">
+        This room is for first-generation and low-income students, MAP mentees, and Informatics peers.
+        Honest campus notes ... what to do next, what to bring, who to ask, how to land softly.
+      </p>
+      <p class="path-lede">
+        Jade Zhao · STEM Peer Mentor / MAP Coordinator with Faculty and Staff for Student Excellence (FASE).
+        I write the next move, not another brochure.
+      </p>
+      <p class="page-start-ctas">
+        <a class="open-cta" href="#situation-picker">Pick a seat</a>
+        <a class="open-link-cta" href="student-path.html">Your path</a>
+      </p>
+    </div>
+    <figure class="photo-frame photo-frame--home">
+      <picture>
+        <source srcset="assets/matchaxmoxie-9791-hero.webp?v=20260814-9791" type="image/webp">
+        <img
+          src="assets/matchaxmoxie-9791-hero.jpg?v=20260814-9791"
+          alt="Jade Zhao by a window, holding pink lilies and baby's breath"
+          width="900"
+          height="900"
+          decoding="async"
+          fetchpriority="high"
+        >
+      </picture>
+    </figure>
   </header>
-
-  <aside class="interior-panel who-runs-room" aria-labelledby="who-runs-heading">
-    <h2 id="who-runs-heading" class="desk-photos-heading">who runs this room</h2>
-    <p class="path-lede">
-      I turn &ldquo;information exists somewhere&rdquo; into &ldquo;here is what you do this week.&rdquo;
-      That is this site.
-    </p>
-    <p class="path-lede">Guides for questions students actually ask:</p>
-    <ul class="about-questions">
-      <li>Where do I start?</li>
-      <li>What am I supposed to do next?</li>
-      <li>Who do I ask?</li>
-      <li>Is this actually required?</li>
-      <li>What if I am new to this and need a clear first move?</li>
-    </ul>
-    <p class="path-lede">
-      I grew up working in a family restaurant, so my organizational system is still
-      &ldquo;make sure everyone knows where the next thing is.&rdquo;
-    </p>
-    <p class="path-lede">
-      Outside MAP hours I sat campus desks on privacy, trust, and public-interest AI ...
-      <a href="campus-roles.html">read the three desks</a>.
-    </p>
-    <p class="brand-tagline">matcha energy, practical answers.</p>
-  </aside>
-
-  <figure class="photo-frame photo-frame--home">
-    <picture>
-      <source srcset="assets/matchaxmoxie-9791-hero.webp?v=20260814-9791" type="image/webp">
-      <img
-        src="assets/matchaxmoxie-9791-hero.jpg?v=20260814-9791"
-        alt="Jade Zhao by a window, holding pink lilies and baby's breath"
-        width="900"
-        height="900"
-        decoding="async"
-        fetchpriority="high"
-      >
-    </picture>
-  </figure>
-
-  <aside class="year23-banner hiatus-banner" role="status" aria-label="matchaxmoxie archive notice">
-    <p class="year23-banner-kicker">Senior year · classroom still open</p>
-    <p>Self-serve pages stay open. Browse at your pace ... I&rsquo;m not grading attendance.</p>
-  </aside>
 
   <section id="situation-picker" class="open-invest open-invest--hero" aria-labelledby="situation-heading">
     <h2 id="situation-heading">Pick a seat</h2>
-    <p class="invest-lede">Where are you right now? Tap one seat. I&rsquo;ll hand you a tiny next-sip plan.</p>
+    <p class="invest-lede">Where are you right now? One tap. I hand you a tiny next-sip plan.</p>
     <p id="situation-pick-status" class="situation-pick-status" aria-live="polite"></p>
     <ul class="situation-choices open-pick-list">
       <li>
@@ -243,10 +208,83 @@
     </div>
   </section>
 
-  <section id="welcome-classroom" class="classroom-welcome interior-panel" aria-labelledby="welcome-heading">
-    <h2 id="welcome-heading">Useful guides in this classroom</h2>
+  <section id="source" class="gh-readme interior-panel" aria-labelledby="source-heading">
+    <p class="gh-readme-kicker">README · public repo</p>
+    <h2 id="source-heading">Source</h2>
     <p class="path-lede">
-      Start with the page that matches your question. Official IU links win whenever dates or requirements matter.
+      This classroom is a live product with a public repo. Read the site, then read the source.
+      Static HTML in <code>site/</code>. No mystery build.
+    </p>
+    <ul class="gh-repo-grid">
+      <li>
+        <a class="gh-repo-card" href="https://github.com/matchaxmoxie/matchaxmoxie" rel="noopener noreferrer">
+          <span class="gh-repo-top">
+            <span class="gh-repo-name">matchaxmoxie/matchaxmoxie</span>
+            <span class="gh-repo-badge">Public</span>
+          </span>
+          <span class="gh-repo-desc">Cookie classroom Pages. The hub you are on right now.</span>
+          <span class="gh-repo-meta"><span class="gh-lang-dot" aria-hidden="true"></span>HTML · CSS</span>
+        </a>
+      </li>
+      <li>
+        <a class="gh-repo-card" href="https://github.com/matchaxmoxie" rel="noopener noreferrer">
+          <span class="gh-repo-top">
+            <span class="gh-repo-name">github.com/matchaxmoxie</span>
+            <span class="gh-repo-badge">Profile</span>
+          </span>
+          <span class="gh-repo-desc">Same Jade. Classroom account. Pins and Pages live here.</span>
+          <span class="gh-repo-meta"><span class="gh-lang-dot" aria-hidden="true"></span>org · classroom</span>
+        </a>
+      </li>
+      <li>
+        <a class="gh-repo-card" href="https://github.com/jadexzhao/jadexzhao" rel="noopener noreferrer">
+          <span class="gh-repo-top">
+            <span class="gh-repo-name">jadexzhao/jadexzhao</span>
+            <span class="gh-repo-badge">Sister</span>
+          </span>
+          <span class="gh-repo-desc">Dragon door. Shipped portfolio if you want the builder proof.</span>
+          <span class="gh-repo-meta"><span class="gh-lang-dot" aria-hidden="true"></span>HTML · Pages</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <aside class="interior-panel who-runs-room" aria-labelledby="who-runs-heading">
+    <h2 id="who-runs-heading">Who runs this room</h2>
+    <p class="path-lede">
+      I turn &ldquo;information exists somewhere&rdquo; into &ldquo;here is what you do this week.&rdquo;
+      That is this site.
+    </p>
+    <p class="path-lede">
+      Also a Programme Assistant with the Hudson &amp; Holland Scholars Programme (HHSP),
+      and an Informatics student at IU Luddy.
+    </p>
+    <ul class="about-questions">
+      <li>Where do I start?</li>
+      <li>What am I supposed to do next?</li>
+      <li>Who do I ask?</li>
+      <li>Is this actually required?</li>
+    </ul>
+    <p class="path-lede">
+      I grew up working in a family restaurant, so my organisational system is still
+      &ldquo;make sure everyone knows where the next thing is.&rdquo;
+    </p>
+    <p class="path-lede">
+      Outside MAP hours I sat campus desks on privacy, trust, and public-interest AI ...
+      <a href="campus-roles.html">read the three desks</a>.
+    </p>
+    <p class="brand-tagline">matcha energy, practical answers.</p>
+  </aside>
+
+  <aside class="year23-banner hiatus-banner" role="status" aria-label="matchaxmoxie archive notice">
+    <p class="year23-banner-kicker">Senior year · classroom still open</p>
+    <p>Self-serve pages stay open. Browse at your pace ... I&rsquo;m not grading attendance.</p>
+  </aside>
+
+  <section id="welcome-classroom" class="classroom-welcome interior-panel" aria-labelledby="welcome-heading">
+    <h2 id="welcome-heading">Guides</h2>
+    <p class="path-lede">
+      Start with the page that matches your question. Official IU links win on dates and requirements.
     </p>
     <ul class="classroom-room-list">
       <li>
@@ -490,7 +528,7 @@
       matchaxmoxie = matcha energy:
       <a href="https://www.youtube.com/watch?v=F57P9C4SAW4" rel="noopener noreferrer" target="_blank">California Gurls · Katy Perry (feat. Snoop Dogg)</a><br>
       My podcast for matchaxmoxie: <a href="https://open.spotify.com/show/43gSq07U5M1yyE2ap24HSM" rel="noopener noreferrer" target="_blank">&ldquo;Jaded and Confused&rdquo; with Matcha Moxie</a><br>
-      Fav Girl Scout cookie? tell me urs sometime
+      Favourite Girl Scout cookie? tell me urs sometime
     </p>
     <p class="desk-photos-nav-soft">
       Prefer buttons?
@@ -501,10 +539,8 @@
 
   <section id="small-reminder" class="classroom-reminder interior-panel" aria-labelledby="reminder-heading">
     <h2 id="reminder-heading">A soft landing</h2>
-    <p class="path-lede">You do not need the whole four-year plan today.</p>
-    <p class="path-lede">You do need a next step you can actually take.</p>
-    <p class="path-lede">Pick a seat. Check the official link. Ask one clear question.</p>
-    <p class="path-lede">That is how you move.</p>
+    <p class="path-lede">You do not need the whole four-year plan today. You need a next step you can actually take.</p>
+    <p class="path-lede">Pick a seat. Check the official link. Ask one clear question. That is how you move.</p>
     <p class="reminder-signoff">love,<br>Jade 🍵</p>
   </section>
 
@@ -531,6 +567,7 @@
     </p>
     <p class="footer-group"><span class="footer-label">Elsewhere</span>
       <a href="mailto:jlzhao@iu.edu">Email</a>
+      · <a href="https://github.com/matchaxmoxie" rel="noopener noreferrer">GitHub</a>
       · <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
       · <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>
       · <a href="https://zhao-langxi.github.io/zhao-langxi/" rel="noopener noreferrer">zhao-langxi</a>

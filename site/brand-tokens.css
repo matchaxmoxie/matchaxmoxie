@@ -47,21 +47,27 @@
 
   --deck: #e8dfd2;
 
+  /* Tea bowl · page reads as usucha, not mint fog.
+     Locked register hexes stay raw above. These mixes are the wash. */
+  --tea-bowl: #8fad82;
+  --tea-steam: #a3be98;
+  --tea-leaf: #c5d6bc;
+
   /* ── colour roles ── */
-  --surface: var(--cream);
-  --surface-raised: var(--foam);
-  --surface-sunken: var(--matcha-pale);
+  --surface: var(--tea-bowl);
+  --surface-raised: var(--tea-leaf);
+  --surface-sunken: var(--tea-steam);
   --surface-warm: var(--steamed-milk);
 
   --ink: #222a25;
-  --ink-muted: #4a554c;
-  --ink-subtle: #5a655c;
+  --ink-muted: #3a453c;
+  --ink-subtle: #4a554c;
 
   --accent: var(--matcha-deep);
-  --accent-hover: var(--matcha-darkest);
-  --accent-quiet: var(--matcha-mid);
-  --accent-wash: rgba(0, 107, 69, 0.1);
-  --accent-wash-strong: rgba(0, 107, 69, 0.2);
+  --accent-hover: var(--koicha);
+  --accent-quiet: var(--usucha);
+  --accent-wash: rgba(46, 122, 68, 0.16);
+  --accent-wash-strong: rgba(0, 61, 40, 0.22);
   --on-accent: #ffffff;
 
   --warm: var(--clay);
@@ -71,20 +77,18 @@
   /* --border is a decorative hairline. --border-strong is solid on
      purpose: anywhere a boundary is what identifies a control it has to
      clear 3:1, and a tinted alpha over cream tops out near 2.3:1. */
-  --border: rgba(46, 122, 68, 0.38);
+  --border: rgba(0, 107, 69, 0.42);
   --border-strong: var(--matcha-mid);
   --focus: var(--ink);
   --focus-halo: rgba(0, 61, 40, 0.32);
 
-  /* Thick foam with green, then milk, then dark tea in the chawan. */
+  /* Chawan: usucha body, a sip of foam, koicha at the bottom. */
   --latte-layers: linear-gradient(
     180deg,
-    var(--foam) 0%,
-    color-mix(in srgb, var(--usucha) 14%, var(--foam)) 12%,
-    var(--steamed-milk) 28%,
-    var(--cream) 48%,
-    color-mix(in srgb, var(--usucha) 22%, var(--cream)) 76%,
-    color-mix(in srgb, var(--koicha) 24%, var(--ceramic)) 100%
+    color-mix(in srgb, var(--usucha) 42%, var(--tea-steam)) 0%,
+    var(--tea-bowl) 28%,
+    color-mix(in srgb, var(--matcha-mid) 28%, var(--tea-bowl)) 62%,
+    color-mix(in srgb, var(--koicha) 26%, var(--tea-bowl)) 100%
   );
 
   /* ── type ──
