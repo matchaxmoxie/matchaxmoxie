@@ -1,12 +1,12 @@
 /**
  * matchaxmoxie · design tokens
- * Cookie classroom: matcha green, clay accent, cream and chalk paper.
+ * Cookie classroom: matcha green latte, clay warmth, cream paper.
  *
- * The palette is set by the workspace register rule, not by this file.
- * Matcha deep / mid / pale + cream / chalk are the classroom's colours;
- * this file only holds them and the type, spacing, shape, and motion
- * scales built around them. register-campus.css maps the older names in
- * styles.css onto these roles ... add new declarations here, not there.
+ * Locked register hexes stay: matcha deep / mid / pale + cream / chalk.
+ * Latte-layer names (foam, steamed milk, usucha, koicha, ceramic,
+ * pistachio, whisk wood) are sampled from European matcha-cafe looks
+ * (Ippodo tea-house paper, Matcha & Co Barcelona cream, Matchasome
+ * Berlin ceremonial green) and mapped onto roles. Not logos, not photos.
  *
  * Four-site map:
  *   IU Pages     = professional slate
@@ -28,6 +28,16 @@
   --cream: #fff4e8;
   --chalk: #fffaf4;
 
+  /* Latte layers · euro cafe matcha (cream + greens, not neon). */
+  --foam: #fffdf8;
+  --steamed-milk: #f6eee3;
+  --pistachio: #d5e3cf;
+  --usucha: #6f8f6a;
+  --koicha: #006b45;
+  --ceramic: #f3efe6;
+  --whisk-wood: #93806f;
+  --latte-gold: #d89c70;
+
   /* Clay is the warm counterweight the matcha system already uses on
      the sibling door. Raw clay is a large-text and decorative value
      only (3.59:1 on cream); small text takes --clay-ink. */
@@ -35,13 +45,13 @@
   --clay-deep: #96593a;
   --clay-ink: #8a4e2e;
 
-  --deck: #e4dfd4;
+  --deck: #e8dfd2;
 
   /* ── colour roles ── */
   --surface: var(--cream);
-  --surface-raised: var(--chalk);
+  --surface-raised: var(--foam);
   --surface-sunken: var(--matcha-pale);
-  --surface-warm: #fdf0e0;
+  --surface-warm: var(--steamed-milk);
 
   --ink: #222a25;
   --ink-muted: #4a554c;
@@ -61,17 +71,27 @@
   /* --border is a decorative hairline. --border-strong is solid on
      purpose: anywhere a boundary is what identifies a control it has to
      clear 3:1, and a tinted alpha over cream tops out near 2.3:1. */
-  --border: rgba(0, 84, 55, 0.22);
+  --border: rgba(111, 143, 106, 0.38);
   --border-strong: var(--matcha-mid);
   --focus: var(--ink);
   --focus-halo: rgba(0, 107, 69, 0.3);
 
+  /* Foam over steamed milk over usucha wash ... a glass of latte. */
+  --latte-layers: linear-gradient(
+    180deg,
+    var(--foam) 0%,
+    var(--steamed-milk) 16%,
+    var(--cream) 42%,
+    var(--matcha-pale) 78%,
+    color-mix(in srgb, var(--usucha) 16%, var(--cream)) 100%
+  );
+
   /* ── type ──
-     Desktop classroom stack: Comic Neue / Cooper Black.
-     Never end on generic `cursive` (phones map that to handwriting).
-     Phone + tablet (≤1024px) force Nunito Sans in styles.css. */
+     Euro matcha-latte: Fraunces display + Nunito Sans body.
+     Comic Neue / Cooper Black stay on classroom personality bits
+     (tips, pick-seat labels). Never end on generic `cursive`. */
   --font-display: "Fraunces", Georgia, serif;
-  --font-classroom: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  --font-classroom: "Nunito Sans", Arial, Helvetica, sans-serif;
   --font-body: "Nunito Sans", Arial, Helvetica, sans-serif;
   --font-poster: "Cooper Black", "Cooper Std", Georgia, serif;
   --font-sc: "Noto Serif SC", "Songti SC", "SimSun", serif;
@@ -109,16 +129,16 @@
   --radius-pill: 999px;
   --radius: var(--radius-lg);
 
-  --shadow-xs: 0 1px 2px rgba(0, 84, 55, 0.06);
+  --shadow-xs: 0 1px 2px rgba(147, 128, 111, 0.1);
   --shadow-sm:
-    0 1px 2px rgba(0, 84, 55, 0.06),
-    0 2px 8px rgba(0, 84, 55, 0.07);
+    0 1px 2px rgba(147, 128, 111, 0.08),
+    0 4px 14px rgba(0, 107, 69, 0.07);
   --shadow-md:
-    0 2px 4px rgba(0, 84, 55, 0.07),
-    0 10px 26px rgba(0, 84, 55, 0.1);
+    0 2px 6px rgba(147, 128, 111, 0.1),
+    0 12px 28px rgba(0, 107, 69, 0.1);
   --shadow-lg:
-    0 4px 10px rgba(0, 84, 55, 0.08),
-    0 22px 50px rgba(0, 84, 55, 0.14);
+    0 4px 10px rgba(147, 128, 111, 0.1),
+    0 22px 50px rgba(0, 107, 69, 0.12);
 
   /* ── motion ── */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);

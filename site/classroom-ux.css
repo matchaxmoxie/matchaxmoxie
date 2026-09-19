@@ -21,10 +21,10 @@
   font-size: var(--text-xs, 0.875rem);
   line-height: 1.4;
   color: var(--crayon-ink, #222a25);
-  background: #ffffff;
-  border: 2px solid var(--border, rgba(0, 84, 55, 0.22));
+  background: var(--foam, #fffdf8);
+  border: 1px solid var(--pistachio, #d5e3cf);
   border-radius: 999px;
-  box-shadow: 3px 3px 0 rgba(0, 84, 55, 0.14);
+  box-shadow: var(--shadow-xs, 0 1px 2px rgba(147, 128, 111, 0.1));
   opacity: 0;
   transform: translateY(-4px);
   animation: classroom-status-in 0.45s ease forwards;
@@ -123,11 +123,11 @@
   color: var(--crayon-ink, #222a25);
   background: linear-gradient(
     165deg,
-    #ffffff 0%,
-    var(--surface, #fff4e8) 72%,
-    var(--deck, #e4dfd4) 100%
+    var(--foam, #fffdf8) 0%,
+    var(--steamed-milk, #f6eee3) 72%,
+    var(--ceramic, #f3efe6) 100%
   );
-  border: 1px solid rgba(43, 45, 51, 0.14);
+  border: 1px solid var(--pistachio, #d5e3cf);
   border-radius: 10px 10px 0 0;
   box-shadow: 0 -10px 32px rgba(0, 84, 55, 0.1);
   transform: translateY(110%);
@@ -246,7 +246,7 @@
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--dusk, #222a25);
-  background: #ffffff;
+  background: var(--foam, #fffdf8);
   border: 2px solid var(--accent, #006b45);
   border-radius: 10px;
   cursor: pointer;

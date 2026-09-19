@@ -88,9 +88,10 @@ body {
   padding-top: env(safe-area-inset-top, 0px);
   overflow-x: clip;
   background-color: var(--surface);
-  background-image: none;
+  background-image: var(--latte-layers);
+  background-attachment: scroll;
   color: var(--ink);
-  font-family: var(--font-classroom);
+  font-family: var(--font-body);
   font-size: var(--step-0);
   line-height: var(--leading-body);
   font-synthesis-weight: none;
@@ -161,14 +162,14 @@ time,
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   overscroll-behavior: contain;
-  /* SOLID opaque nav ... never glass / clear.
-     White, not cream, so the bar reads against lined paper. */
-  background: #ffffff;
-  background-color: #ffffff;
+  /* Foam bar ... opaque, never glass. */
+  background: var(--foam, #fffdf8);
+  background-color: var(--foam, #fffdf8);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   opacity: 1;
-  border-bottom: 2px solid var(--accent, #006b45);
+  border-bottom: 1px solid var(--pistachio, #d5e3cf);
+  box-shadow: var(--shadow-xs);
   margin: 0 0 var(--space-sm);
 }
 
@@ -268,10 +269,10 @@ time,
     margin: 0;
     z-index: 95;
     border-bottom: none;
-    border-top: 2px solid var(--accent, #006b45);
+    border-top: 1px solid var(--pistachio, #d5e3cf);
     padding-bottom: env(safe-area-inset-bottom, 0px);
-    background: #ffffff;
-    background-color: #ffffff;
+    background: var(--foam, #fffdf8);
+    background-color: var(--foam, #fffdf8);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     opacity: 1;
@@ -3369,15 +3370,15 @@ body.kindergarten-home {
 }
 
 .path-page-header h1 {
-  font-family: "Cooper Black", "Cooper Std", Georgia, serif;
+  font-family: var(--font-display, Fraunces, Georgia, serif);
   font-size: clamp(1.9rem, 5vw, 2.5rem);
   line-height: 1.1;
-  color: var(--ink);
+  color: var(--accent, #006b45);
   margin: 0 0 var(--space-xs);
 }
 
 .path-lede {
-  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-family: var(--font-body, "Nunito Sans", Arial, Helvetica, sans-serif);
   font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   line-height: 1.5;
   color: var(--ink-muted);
@@ -5328,10 +5329,12 @@ body.campus-survival-page {
 /* matchaxmoxie xiao tie shi · shi yong gu li + you got this */
 .miss-zhao-tip {
   margin: var(--space-m) 0 var(--space-l);
-  padding: var(--space-s) var(--space-s);
-  background: #fff;
-  border: 4px solid var(--accent);
-  box-shadow: 5px 5px 0 var(--coral);
+  padding: var(--space-s) var(--space-m);
+  background: var(--foam, #fffdf8);
+  border: 1px solid var(--pistachio, #d5e3cf);
+  border-left: 4px solid var(--accent, #006b45);
+  border-radius: var(--radius-md, 16px);
+  box-shadow: var(--shadow-sm);
   color: var(--ink);
   max-width: 54ch;
 }
@@ -5908,11 +5911,11 @@ a.situation-btn {
   font-size: var(--step-0);
   text-align: left;
   color: var(--ink);
-  background: var(--surface);
-  border: 2px solid var(--accent-wash-strong);
+  background: var(--foam, #fffdf8);
+  border: 1px solid var(--pistachio, #d5e3cf);
   border-left: 5px solid var(--accent-crimson);
-  border-radius: 0;
-  box-shadow: 3px 3px 0 rgba(43, 45, 51, 0.14);
+  border-radius: var(--radius-md, 16px);
+  box-shadow: var(--shadow-xs);
   text-decoration: none;
   cursor: pointer;
   touch-action: manipulation;
@@ -6738,11 +6741,12 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 
 .interior-panel {
   margin: 0 0 var(--space-l);
-  padding: var(--space-m) var(--space-m) var(--space-m);
-  background: var(--surface, #fff4e8);
-  background-color: var(--cream, #fff4e8);
-  border: 4px solid var(--accent);
-  box-shadow: 5px 5px 0 var(--accent-crimson);
+  padding: var(--space-l) var(--space-m) var(--space-m);
+  background: var(--foam, #fffdf8);
+  background-color: var(--foam, #fffdf8);
+  border: 1px solid var(--pistachio, #d5e3cf);
+  border-radius: var(--radius-lg, 22px);
+  box-shadow: var(--shadow-sm);
   color: var(--ink);
 }
 
@@ -7134,26 +7138,12 @@ html {
   scrollbar-width: thin;
 }
 
-/* Home paper · matcha wash over ruled classroom lines.
-   This used to be a hard-coded pink lily wash left over from the
-   kindergarten palette, which fought every matcha token on the page. */
+/* Home paper · latte layers, not ruled kindergarten lines. */
 body.choice-home {
-  background-color: var(--surface);
-  background-image:
-    linear-gradient(
-      180deg,
-      var(--accent-wash) 0%,
-      rgba(0, 107, 69, 0.045) 34rem,
-      transparent 72rem
-    ),
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 28px,
-      rgba(0, 84, 55, 0.055) 28px,
-      rgba(0, 84, 55, 0.055) 29px
-    );
-  background-repeat: no-repeat, repeat;
+  background-color: var(--cream, #fff4e8);
+  background-image: var(--latte-layers);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 /* ... hero visual · babys-breath to lily sky + 凤 ... */
@@ -7835,11 +7825,16 @@ a.desk-photo-link:focus-visible {
   box-sizing: border-box;
 }
 
-/* Home mast uses same panel as your path; keep Fraunces + matcha CTAs */
+/* Home mast · foam card with a sip of usucha on the left */
 .choice-home .path-page-header.interior-panel {
-  border-left: 6px solid var(--accent, #006b45);
-  padding-left: var(--space-sm, 1rem);
-  background: linear-gradient(90deg, rgba(232, 240, 228, 0.55) 0%, transparent 42%);
+  border-left: 5px solid var(--accent, #006b45);
+  padding-left: var(--space-m, 1.5rem);
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--matcha-pale, #e8f0e4) 70%, var(--foam, #fffdf8)) 0%,
+      var(--foam, #fffdf8) 38%
+    );
 }
 
 .choice-home .path-page-header.interior-panel h1 {
@@ -8561,24 +8556,20 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
 
 /* Phone + tablet · readable first.
    Comic Neue is not loaded from Google Fonts; Comic Sans / Cooper Black
-   read as handwriting-cute on small screens. Rebind classroom tokens to
-   loaded Nunito Sans, then force every text node (including headings).
-   Keep CJK .sc / lang stacks and monospace for code. File-end + !important
-   so page-local Cooper / Comic / Fraunces rules lose under 1024px. */
+   read as handwriting-cute on small screens. Body stays Nunito Sans.
+   Headings keep Fraunces so the euro matcha-latte stack still reads. */
 @media (max-width: 1024px) {
   :root {
     --font-classroom: "Nunito Sans", Arial, Helvetica, sans-serif;
     --font-body: "Nunito Sans", Arial, Helvetica, sans-serif;
-    --font-display: "Nunito Sans", Arial, Helvetica, sans-serif;
     --font-poster: "Nunito Sans", Arial, Helvetica, sans-serif;
   }
 
   body,
-  body *:not(.sc):not([lang="zh-Hans"]):not([lang="zh"]):not(code):not(pre):not(kbd):not(samp) {
+  body *:not(.sc):not([lang="zh-Hans"]):not([lang="zh"]):not(code):not(pre):not(kbd):not(samp):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-family: "Nunito Sans", Arial, Helvetica, sans-serif !important;
   }
 
-  /* Beat page/theme display stacks (Cooper / Fraunces / Comic) */
   body h1,
   body h2,
   body h3,
@@ -8588,7 +8579,7 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
   body .theme-matchaxmoxie .hero--doors h1,
   body .theme-matchaxmoxie .hero--doors #hero-heading,
   body .handshake-steps h3 {
-    font-family: "Nunito Sans", Arial, Helvetica, sans-serif !important;
+    font-family: var(--font-display, Fraunces, Georgia, serif) !important;
   }
 
   .sc,
@@ -8632,8 +8623,8 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
   margin: 0 0 var(--space-m);
   padding: var(--space-s);
   max-width: 48ch;
-  background: var(--surface-sunken, #e8f0e4);
-  border: 3px solid var(--accent, #006b45);
+  background: var(--foam, #fffdf8);
+  border: 1px solid var(--pistachio, #d5e3cf);
   border-radius: var(--radius-md, 16px);
   font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
@@ -8718,8 +8709,8 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
 
 .classroom-stat-list li {
   padding: var(--space-s);
-  background: var(--surface-sunken, #e8f0e4);
-  border: 3px solid var(--accent, #006b45);
+  background: var(--foam, #fffdf8);
+  border: 1px solid var(--pistachio, #d5e3cf);
   border-radius: var(--radius-md, 16px);
 }
 
@@ -8739,4 +8730,25 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
 .classroom-stat-list a {
   color: var(--accent, #006b45);
   font-weight: 700;
+}
+
+/* ── 2026-09-19 · euro matcha-latte spacing ── */
+.wrap {
+  padding-inline: clamp(1.15rem, 4vw, 2.25rem);
+}
+
+.choice-home .wrap,
+.kindergarten-home .wrap {
+  padding-top: var(--space-s);
+}
+
+@media (max-width: 640px) {
+  .interior-panel {
+    padding: var(--space-m) var(--space-s) var(--space-s);
+    border-radius: var(--radius-md, 16px);
+  }
+
+  .choice-home .path-page-header.interior-panel {
+    padding-left: var(--space-s);
+  }
 }

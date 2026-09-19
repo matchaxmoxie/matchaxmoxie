@@ -19,9 +19,17 @@
   --clay-deep:    #96593a;
   --clay-ink:     #8a4e2e;
   --cream:        #fff4e8;
+  --foam:         #fffdf8;
+  --steamed-milk: #f6eee3;
+  --pistachio:    #d5e3cf;
+  --usucha:       #6f8f6a;
+  --koicha:       #006b45;
+  --ceramic:      #f3efe6;
+  --whisk-wood:   #93806f;
+  --latte-gold:   #d89c70;
   --ink:          #222a25;
   --ink-soft:     #4a554c;
-  --rule:         rgba(0, 84, 55, 0.22);
+  --rule:         rgba(111, 143, 106, 0.38);
 
   --font-display: 'Fraunces', serif;
   --font-body:    'Nunito Sans', sans-serif;
@@ -43,7 +51,8 @@
 
 body {
   margin: 0;
-  background: var(--cream);
+  background-color: var(--cream);
+  background-image: var(--latte-layers, none);
   color: var(--ink);
   font-family: var(--font-body);
   font-size: var(--step-0);
