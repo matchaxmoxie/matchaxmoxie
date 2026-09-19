@@ -7573,17 +7573,17 @@ body.choice-home {
   padding: 0 var(--space-3xs);
 }
 
-/* ── On the desk · full-width column · linked polaroids · Stanford calm ── */
+/* ── On the desk · foam tea-bowl · polaroids as a strip, not a scrapbook dump ── */
 .desk-photos {
   margin: var(--space-l) 0 var(--space-m);
-  padding: var(--space-m) var(--space-m) var(--space-m);
+  padding: var(--space-m);
   max-width: none;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(160deg, var(--surface-raised) 0%, var(--surface-sunken) 100%);
-  border: 3px solid var(--accent);
+  background: var(--foam, #f4f5ec);
+  border: 1px solid var(--pistachio, #b8c8b0);
   border-radius: var(--radius-lg);
-  box-shadow: 5px 5px 0 var(--warm-wash);
+  box-shadow: 0 10px 28px rgba(0, 61, 40, 0.1);
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
@@ -7679,10 +7679,10 @@ a.desk-photo-link:focus-visible {
   inline-size: 100%;
   box-sizing: border-box;
   transform: none !important;
-  border: 2px solid var(--border-strong);
+  border: 1px solid var(--pistachio, #b8c8b0);
   border-radius: var(--radius-md);
-  background: var(--surface-raised);
-  box-shadow: var(--shadow-sm);
+  background: var(--chalk, #fffaf4);
+  box-shadow: 0 6px 16px rgba(0, 61, 40, 0.08);
   opacity: 1 !important;
   visibility: visible !important;
 }
@@ -7749,12 +7749,7 @@ a.desk-photo-link:focus-visible {
 }
 
 .desk-cap-why {
-  display: block;
-  color: var(--ink-muted);
-  letter-spacing: 0;
-  font-weight: 400;
-  margin-block-start: var(--space-3xs);
-  line-height: 1.45;
+  display: none;
 }
 
 .desk-photo-link:hover .desk-cap-where,
@@ -8001,8 +7996,19 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
 
 @media (max-width: 720px) {
   .desk-photos-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex !important;
+    grid-template-columns: none;
     gap: var(--space-xs);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: var(--space-2xs);
+  }
+
+  .desk-photo-link {
+    flex: 0 0 min(70vw, 15.5rem);
+    scroll-snap-align: start;
   }
 
   .photo-frame--desk img,
@@ -8051,8 +8057,9 @@ html.js-reveal .choice-home .hero-visual--photo.rv {
   }
 
   .desk-photos-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--space-2xs);
+    display: flex !important;
+    grid-template-columns: none;
+    gap: var(--space-xs);
   }
 
   .photo-frame--desk img,
@@ -9144,6 +9151,11 @@ a.situation-btn:hover {
    Same tea-bowl classroom as home / path. Not worksheet paper.
    ============================================================ */
 
+.campus-roles-page .campus-desks {
+  max-width: none;
+  margin: 0 0 var(--space-m);
+}
+
 .campus-roles-page .role-block {
   margin: 0 0 var(--space-m);
   padding: var(--space-s) var(--space-m);
@@ -9365,5 +9377,134 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
   body.handshake-page,
   body.data-seat-page {
     padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* ── Campus desks · three jobs as scan cards, not a run-on ── */
+.who-runs-room .campus-desks {
+  margin-top: var(--space-m);
+  padding-top: var(--space-s);
+  border-top: 1px solid var(--pistachio, #b8c8b0);
+}
+
+.campus-desks-kicker {
+  margin: 0 0 var(--space-3xs);
+  font-family: ui-monospace, "SFMono-Regular", "Courier New", Courier, monospace;
+  font-size: var(--step--2, 0.8rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--usucha, #2e7a44);
+}
+
+.campus-desks h2,
+.campus-desks h3 {
+  margin: 0 0 var(--space-3xs);
+  font-family: var(--font-display, Fraunces, Georgia, serif);
+  font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+  color: var(--koicha, #003d28);
+}
+
+.campus-desks-lede {
+  margin: 0 0 var(--space-s);
+  max-width: 44ch;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.45;
+  color: var(--ink-muted, #3a453c);
+}
+
+.campus-desks-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-s);
+}
+
+.campus-desk-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: var(--space-s);
+  min-width: 0;
+  background: var(--foam, #f4f5ec);
+  border: 1px solid var(--matcha-mid, #3d6b4a);
+  border-left: 5px solid var(--koicha, #003d28);
+  border-radius: var(--radius-md, 16px);
+  box-shadow: 0 8px 20px rgba(0, 61, 40, 0.08);
+}
+
+.campus-desk-when {
+  margin: 0 0 var(--space-3xs);
+  font-family: ui-monospace, "SFMono-Regular", "Courier New", Courier, monospace;
+  font-size: var(--step--2, 0.8rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--usucha, #2e7a44);
+}
+
+.campus-desk-role {
+  margin: 0 0 0.15rem;
+  font-family: var(--font-display, Fraunces, Georgia, serif);
+  font-size: var(--step-1, 1.1rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--koicha, #003d28);
+}
+
+.campus-desk-where {
+  margin: 0 0 var(--space-xs);
+  font-size: var(--step--1, 0.9rem);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.campus-desk-where a {
+  color: var(--matcha-deep, #006b45);
+}
+
+.campus-desk-what {
+  margin: 0 0 var(--space-s);
+  flex: 1 1 auto;
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.45;
+  color: var(--ink, #222a25);
+}
+
+.campus-desk-go {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 44px;
+  font-weight: 700;
+  color: var(--koicha, #003d28);
+}
+
+.brand-device-list--chips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xs);
+  max-width: none;
+  padding: var(--space-xs);
+}
+
+.brand-device-list--chips li {
+  margin: 0;
+  padding: 0.45rem 0.75rem;
+  background: var(--chalk, #fffaf4);
+  border: 1px solid var(--pistachio, #b8c8b0);
+  border-radius: 999px;
+}
+
+.brand-device-list--chips li + li {
+  margin-top: 0;
+}
+
+@media (max-width: 820px) {
+  .campus-desks-grid {
+    grid-template-columns: 1fr;
   }
 }
