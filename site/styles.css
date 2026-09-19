@@ -9293,3 +9293,77 @@ input[type="radio"] {
     transition: none;
   }
 }
+
+/* ============================================================
+   2026-09-19 · every-page campus product
+   Nielsen 4 + 8: same chrome, less duplicate wayfinding.
+   WCAG 2.2 AA: cream-on-koicha, 44px standalone targets.
+   ============================================================ */
+
+.page-404 h1 {
+  color: var(--koicha, #003d28);
+}
+
+body.page-404 .page-404-actions .btn-primary,
+body.page-404 .page-404-actions .btn-primary:visited {
+  background: var(--koicha, #003d28);
+  border-color: var(--koicha, #003d28);
+  color: var(--cream, #fff4e8);
+  -webkit-text-fill-color: var(--cream, #fff4e8);
+}
+
+body.page-404 .page-404-actions .btn-primary:hover,
+body.page-404 .page-404-actions .btn-primary:focus-visible {
+  background: var(--matcha-deep, #006b45);
+  border-color: var(--matcha-deep, #006b45);
+  color: var(--cream, #fff4e8);
+  -webkit-text-fill-color: var(--cream, #fff4e8);
+}
+
+body.page-404 .page-404-actions .btn-outline,
+body.page-404 .page-404-actions .btn-outline:visited {
+  background: var(--tea-leaf, #c5d6bc);
+  border-color: var(--koicha, #003d28);
+  color: var(--koicha, #003d28);
+  -webkit-text-fill-color: var(--koicha, #003d28);
+}
+
+body.page-404 .page-404-actions .btn-outline:hover,
+body.page-404 .page-404-actions .btn-outline:focus-visible {
+  background: var(--cream, #fff4e8);
+  border-color: var(--koicha, #003d28);
+  color: var(--koicha, #003d28);
+  -webkit-text-fill-color: var(--koicha, #003d28);
+}
+
+.page-404 .page-404-actions a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.bars-page .bars-start,
+.bars-page .bar-card,
+.bars-page .bars-next,
+.bars-page .bars-flexes li {
+  background: var(--tea-leaf, #c5d6bc);
+  border-color: var(--matcha-mid, #3d6b4a);
+}
+
+.bars-page .bars-section > h2::after {
+  background: var(--koicha, #003d28);
+}
+
+.archive-link-grid a,
+.invest-btn,
+.advice-funnel-reward button {
+  min-height: 44px;
+}
+
+@media (max-width: 640px) {
+  body.bars-page,
+  body.page-404,
+  body.handshake-page,
+  body.data-seat-page {
+    padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px));
+  }
+}
