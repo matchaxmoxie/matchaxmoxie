@@ -163,12 +163,12 @@ time,
   scrollbar-width: none;
   overscroll-behavior: contain;
   /* Foam bar ... opaque, never glass. */
-  background: var(--foam, #fffdf8);
-  background-color: var(--foam, #fffdf8);
+  background: var(--foam, #f4f5ec);
+  background-color: var(--foam, #f4f5ec);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   opacity: 1;
-  border-bottom: 1px solid var(--pistachio, #d5e3cf);
+  border-bottom: 1px solid var(--pistachio, #b8c8b0);
   box-shadow: var(--shadow-xs);
   margin: 0 0 var(--space-sm);
 }
@@ -269,10 +269,10 @@ time,
     margin: 0;
     z-index: 95;
     border-bottom: none;
-    border-top: 1px solid var(--pistachio, #d5e3cf);
+    border-top: 1px solid var(--pistachio, #b8c8b0);
     padding-bottom: env(safe-area-inset-bottom, 0px);
-    background: var(--foam, #fffdf8);
-    background-color: var(--foam, #fffdf8);
+    background: var(--foam, #f4f5ec);
+    background-color: var(--foam, #f4f5ec);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     opacity: 1;
@@ -3317,11 +3317,11 @@ body.kindergarten-home {
 }
 
 .footer-kiss .footer-soft {
-  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
   line-height: 1.45;
   color: var(--ink-muted);
-  margin: 0;
+  margin: var(--space-xs) auto 0;
   max-width: 36rem;
 }
 
@@ -5330,8 +5330,8 @@ body.campus-survival-page {
 .miss-zhao-tip {
   margin: var(--space-m) 0 var(--space-l);
   padding: var(--space-s) var(--space-m);
-  background: var(--foam, #fffdf8);
-  border: 1px solid var(--pistachio, #d5e3cf);
+  background: var(--foam, #f4f5ec);
+  border: 1px solid var(--pistachio, #b8c8b0);
   border-left: 4px solid var(--accent, #006b45);
   border-radius: var(--radius-md, 16px);
   box-shadow: var(--shadow-sm);
@@ -5911,8 +5911,8 @@ a.situation-btn {
   font-size: var(--step-0);
   text-align: left;
   color: var(--ink);
-  background: var(--foam, #fffdf8);
-  border: 1px solid var(--pistachio, #d5e3cf);
+  background: var(--foam, #f4f5ec);
+  border: 1px solid var(--pistachio, #b8c8b0);
   border-left: 5px solid var(--accent-crimson);
   border-radius: var(--radius-md, 16px);
   box-shadow: var(--shadow-xs);
@@ -6742,9 +6742,9 @@ a.situation-btn[aria-current="true"] .situation-btn-label {
 .interior-panel {
   margin: 0 0 var(--space-l);
   padding: var(--space-l) var(--space-m) var(--space-m);
-  background: var(--foam, #fffdf8);
-  background-color: var(--foam, #fffdf8);
-  border: 1px solid var(--pistachio, #d5e3cf);
+  background: var(--foam, #f4f5ec);
+  background-color: var(--foam, #f4f5ec);
+  border: 1px solid var(--pistachio, #b8c8b0);
   border-radius: var(--radius-lg, 22px);
   box-shadow: var(--shadow-sm);
   color: var(--ink);
@@ -7832,8 +7832,8 @@ a.desk-photo-link:focus-visible {
   background:
     linear-gradient(
       90deg,
-      color-mix(in srgb, var(--matcha-pale, #e8f0e4) 70%, var(--foam, #fffdf8)) 0%,
-      var(--foam, #fffdf8) 38%
+      color-mix(in srgb, var(--matcha-pale, #e8f0e4) 70%, var(--foam, #f4f5ec)) 0%,
+      var(--foam, #f4f5ec) 38%
     );
 }
 
@@ -8623,8 +8623,8 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
   margin: 0 0 var(--space-m);
   padding: var(--space-s);
   max-width: 48ch;
-  background: var(--foam, #fffdf8);
-  border: 1px solid var(--pistachio, #d5e3cf);
+  background: var(--foam, #f4f5ec);
+  border: 1px solid var(--pistachio, #b8c8b0);
   border-radius: var(--radius-md, 16px);
   font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
   font-size: var(--step-0);
@@ -8709,8 +8709,8 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
 
 .classroom-stat-list li {
   padding: var(--space-s);
-  background: var(--foam, #fffdf8);
-  border: 1px solid var(--pistachio, #d5e3cf);
+  background: var(--foam, #f4f5ec);
+  border: 1px solid var(--pistachio, #b8c8b0);
   border-radius: var(--radius-md, 16px);
 }
 

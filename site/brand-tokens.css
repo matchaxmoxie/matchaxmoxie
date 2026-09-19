@@ -1,12 +1,12 @@
 /**
  * matchaxmoxie · design tokens
- * Cookie classroom: matcha green latte, clay warmth, cream paper.
+ * Cookie classroom: ceremonial matcha latte, clay warmth, cream paper.
  *
  * Locked register hexes stay: matcha deep / mid / pale + cream / chalk.
  * Latte-layer names (foam, steamed milk, usucha, koicha, ceramic,
- * pistachio, whisk wood) are sampled from European matcha-cafe looks
- * (Ippodo tea-house paper, Matcha & Co Barcelona cream, Matchasome
- * Berlin ceremonial green) and mapped onto roles. Not logos, not photos.
+ * pistachio as stone-mill wash, whisk wood) are inspired by Ippodo /
+ * Uji ceremonial latte (thick foam with green, dark tea bottom) and
+ * European matcha-cafe paper. Not logos, not photos.
  *
  * Four-site map:
  *   IU Pages     = professional slate
@@ -24,19 +24,19 @@
   --matcha-deep: #006b45;
   --matcha-mid: #3d6b4a;
   --matcha-pale: #e8f0e4;
-  --matcha-darkest: #005537;
+  --matcha-darkest: #004830;
   --cream: #fff4e8;
   --chalk: #fffaf4;
 
-  /* Latte layers · euro cafe matcha (cream + greens, not neon). */
-  --foam: #fffdf8;
-  --steamed-milk: #f6eee3;
-  --pistachio: #d5e3cf;
-  --usucha: #6f8f6a;
-  --koicha: #006b45;
-  --ceramic: #f3efe6;
-  --whisk-wood: #93806f;
-  --latte-gold: #d89c70;
+  /* Latte layers · ceremonial Uji / Ippodo (foam with green, koicha bottom). */
+  --foam: #f4f5ec;
+  --steamed-milk: #efe6d4;
+  --pistachio: #b8c8b0;
+  --usucha: #2e7a44;
+  --koicha: #003d28;
+  --ceramic: #e8e2d4;
+  --whisk-wood: #7a6554;
+  --latte-gold: #c08a52;
 
   /* Clay is the warm counterweight the matcha system already uses on
      the sibling door. Raw clay is a large-text and decorative value
@@ -71,23 +71,24 @@
   /* --border is a decorative hairline. --border-strong is solid on
      purpose: anywhere a boundary is what identifies a control it has to
      clear 3:1, and a tinted alpha over cream tops out near 2.3:1. */
-  --border: rgba(111, 143, 106, 0.38);
+  --border: rgba(46, 122, 68, 0.38);
   --border-strong: var(--matcha-mid);
   --focus: var(--ink);
-  --focus-halo: rgba(0, 107, 69, 0.3);
+  --focus-halo: rgba(0, 61, 40, 0.32);
 
-  /* Foam over steamed milk over usucha wash ... a glass of latte. */
+  /* Thick foam with green, then milk, then dark tea in the chawan. */
   --latte-layers: linear-gradient(
     180deg,
     var(--foam) 0%,
-    var(--steamed-milk) 16%,
-    var(--cream) 42%,
-    var(--matcha-pale) 78%,
-    color-mix(in srgb, var(--usucha) 16%, var(--cream)) 100%
+    color-mix(in srgb, var(--usucha) 14%, var(--foam)) 12%,
+    var(--steamed-milk) 28%,
+    var(--cream) 48%,
+    color-mix(in srgb, var(--usucha) 22%, var(--cream)) 76%,
+    color-mix(in srgb, var(--koicha) 24%, var(--ceramic)) 100%
   );
 
   /* ── type ──
-     Euro matcha-latte: Fraunces display + Nunito Sans body.
+     Tea-house restrained: Fraunces display + Nunito Sans body.
      Comic Neue / Cooper Black stay on classroom personality bits
      (tips, pick-seat labels). Never end on generic `cursive`. */
   --font-display: "Fraunces", Georgia, serif;
@@ -129,16 +130,16 @@
   --radius-pill: 999px;
   --radius: var(--radius-lg);
 
-  --shadow-xs: 0 1px 2px rgba(147, 128, 111, 0.1);
+  --shadow-xs: 0 1px 2px rgba(122, 101, 84, 0.12);
   --shadow-sm:
-    0 1px 2px rgba(147, 128, 111, 0.08),
-    0 4px 14px rgba(0, 107, 69, 0.07);
+    0 1px 2px rgba(122, 101, 84, 0.1),
+    0 4px 14px rgba(0, 61, 40, 0.08);
   --shadow-md:
-    0 2px 6px rgba(147, 128, 111, 0.1),
-    0 12px 28px rgba(0, 107, 69, 0.1);
+    0 2px 6px rgba(122, 101, 84, 0.12),
+    0 12px 28px rgba(0, 61, 40, 0.12);
   --shadow-lg:
-    0 4px 10px rgba(147, 128, 111, 0.1),
-    0 22px 50px rgba(0, 107, 69, 0.12);
+    0 4px 10px rgba(122, 101, 84, 0.12),
+    0 22px 50px rgba(0, 61, 40, 0.14);
 
   /* ── motion ── */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);

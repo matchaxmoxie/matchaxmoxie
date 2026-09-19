@@ -19,17 +19,17 @@
   --clay-deep:    #96593a;
   --clay-ink:     #8a4e2e;
   --cream:        #fff4e8;
-  --foam:         #fffdf8;
-  --steamed-milk: #f6eee3;
-  --pistachio:    #d5e3cf;
-  --usucha:       #6f8f6a;
-  --koicha:       #006b45;
-  --ceramic:      #f3efe6;
-  --whisk-wood:   #93806f;
-  --latte-gold:   #d89c70;
+  --foam:         #f4f5ec;
+  --steamed-milk: #efe6d4;
+  --pistachio:    #b8c8b0;
+  --usucha:       #2e7a44;
+  --koicha:       #003d28;
+  --ceramic:      #e8e2d4;
+  --whisk-wood:   #7a6554;
+  --latte-gold:   #c08a52;
   --ink:          #222a25;
   --ink-soft:     #4a554c;
-  --rule:         rgba(111, 143, 106, 0.38);
+  --rule:         rgba(46, 122, 68, 0.38);
 
   --font-display: 'Fraunces', serif;
   --font-body:    'Nunito Sans', sans-serif;
