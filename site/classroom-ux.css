@@ -301,7 +301,7 @@
   left: 50%;
   bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
   z-index: 115;
-  max-width: min(20rem, calc(100vw - 2rem));
+  max-width: min(20rem, calc(100% - 2rem));
   margin: 0;
   padding: 0.55rem 0.95rem;
   font-size: 0.9rem;
@@ -351,12 +351,6 @@
       background-color 0.2s ease;
   }
 
-  .open-pick-btn:hover,
-  .situation-btn:hover,
-  .scratch-pick-btn:hover {
-    transform: translateY(-2px);
-  }
-
   .open-pick-btn:focus-visible,
   .situation-btn:focus-visible,
   .scratch-pick-btn:focus-visible {
@@ -367,8 +361,6 @@
     transition: transform 0.25s ease, filter 0.25s ease;
   }
 
-  .open-pick-btn:hover .open-pick-thumb,
-  .situation-btn:hover .open-pick-thumb,
   .open-pick-btn:focus-visible .open-pick-thumb,
   .situation-btn:focus-visible .open-pick-thumb {
     transform: scale(1.03);
@@ -376,12 +368,31 @@
   }
 }
 
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .open-pick-btn:hover,
+  .situation-btn:hover,
+  .scratch-pick-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .open-pick-btn:hover .open-pick-thumb,
+  .situation-btn:hover .open-pick-thumb {
+    transform: scale(1.03);
+    filter: saturate(1) sepia(0.02) contrast(1.02);
+  }
+}
+
 @media (max-width: 640px) {
+  .cookie-consent {
+    bottom: calc(3.25rem + env(safe-area-inset-bottom, 0px));
+  }
+
   .cookie-consent-inner {
-    /* Clear fixed bottom classroom dock (~3.25rem) */
-    margin: 0 0.5rem calc(4.25rem + env(safe-area-inset-bottom, 0px));
+    margin: 0 0.5rem 0.5rem;
     padding: 0.85rem 1rem 0.85rem;
     border-radius: 10px;
+    max-height: min(46vh, 18rem);
+    overflow-y: auto;
   }
 
   /*

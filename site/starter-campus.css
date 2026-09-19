@@ -94,7 +94,7 @@ a:hover { color: var(--koicha); }
 
 /* ---------- layout shell: photo-forward, generous ---------- */
 
-.wrap { max-width: 960px; margin: 0 auto; padding: 64px 24px 120px; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 1.5rem 24px 3rem; }
 
 section { margin-top: 64px; }
 
@@ -118,9 +118,11 @@ section { margin-top: 64px; }
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+  }
 }
 
 .card-grid {
@@ -156,7 +158,9 @@ section { margin-top: 64px; }
   transition: transform 0.25s ease;
 }
 
-.photo-tile:hover img { transform: scale(1.05) rotate(-1deg); }
+@media (hover: hover) and (pointer: fine) {
+  .photo-tile:hover img { transform: scale(1.05) rotate(-1deg); }
+}
 
 /* The scrim carries the caption, so it has to hold up over the pale
    parts of a photo as well as the dark ones: at 0.82 over a light
@@ -199,7 +203,9 @@ section { margin-top: 64px; }
   transition: background 0.15s ease, transform 0.15s ease;
 }
 
-.btn:hover { background: var(--matcha-deep); transform: translateY(-2px); }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover { background: var(--matcha-deep); transform: translateY(-2px); }
+}
 
 /* ---------- accessibility floor ---------- */
 
