@@ -16,7 +16,10 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
-\input{glyphtounicode}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
 
 %----------FONT----------
 \usepackage[sfdefault]{atkinson}
@@ -97,7 +100,9 @@
 }
 
 %----------PDF READABILITY----------
-\pdfgentounicode=1
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
 
 %-------------------------------------------
 %%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%
@@ -140,12 +145,8 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {AI Client Team Lead}{Jan 2024 -- Present}
-      {\href{https://serveit.luddy.indiana.edu/}{Serve IT Clinic, Luddy School, Indiana University}}{Bloomington, IN}
-      \resumeItemListStart
-        \resumeItem{Lead \textbf{5+ nonprofit web projects} for Bloomington partners without in-house developers; delivered accessible sites meeting \textbf{WCAG 2.1 standards} and \textbf{Python/PostgreSQL ETL pipelines} designed for long-term maintainability.}
-        \resumeItem{Founded \textbf{Serve-AI}, a public-interest AI track (PIT-UN); built \textbf{responsible generative AI tools} and plain-language guides to help community organizations adopt AI without compromising trust or accessibility.}
-      \resumeItemListEnd
+      {Serve IT Clinic, Luddy School, Indiana University}{Jan 2024 -- Present}
+      {Middle Way House, City of Bloomington, Indiana Phenology, Bloomington Chamber}{Bloomington, IN}
 
     \resumeSubheading
       {Marketing \& Web Lead}{summers, 2024 to present}
