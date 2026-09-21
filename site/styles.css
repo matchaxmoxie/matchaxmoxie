@@ -121,7 +121,7 @@ time,
 }
 
 .sc {
-  font-family: 'Noto Serif SC', serif;
+  font-family: var(--font-sc, "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif);
   font-weight: 500;
 }
 
@@ -331,7 +331,7 @@ time,
 }
 
 .stack-col h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-h3-mobile);
   font-weight: 400;
   color: var(--ink);
@@ -403,7 +403,7 @@ time,
 }
 
 .ops-epoch {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   color: var(--ink);
 }
@@ -411,7 +411,7 @@ time,
 .ops-years {
   display: inline-block;
   margin-left: var(--space-3xs);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body, "Nunito Sans", Arial, Helvetica, sans-serif);
   font-size: var(--text-xs);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -522,7 +522,7 @@ time,
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-hero-mobile);
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -667,7 +667,7 @@ time,
 }
 
 .stack-col h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-weight: 500;
   font-size: var(--text-md);
   color: var(--ink);
@@ -772,7 +772,7 @@ time,
 .year-content h2,
 .years-nav h2,
 .connect h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-h2-mobile);
   font-weight: 300;
   color: var(--ink);
@@ -826,7 +826,7 @@ time,
 .year-card h3,
 .class-card h3,
 .piece-name {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-h3-mobile);
   font-weight: 300;
   color: var(--ink);
@@ -1045,7 +1045,7 @@ time,
 }
 
 .roots-block .sc-inline {
-  font-family: 'Noto Serif SC', serif;
+  font-family: var(--font-sc, "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif);
   color: var(--accent-quiet);
   font-weight: 500;
 }
@@ -1083,7 +1083,7 @@ time,
 }
 
 .coming-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-h3-mobile);
   font-weight: 400;
   color: var(--ink);
@@ -1232,7 +1232,7 @@ time,
 }
 
 .ops-table-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   font-weight: 400;
   color: var(--ink);
@@ -1262,7 +1262,7 @@ time,
 .protocol-steps li::before {
   content: counter(protocol, decimal-leading-zero);
   grid-row: 1 / span 2;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   color: var(--tulip-deep);
   line-height: 1.2;
@@ -1287,7 +1287,7 @@ time,
 }
 
 .opus-subhead {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   font-weight: 400;
   color: var(--ink);
@@ -1326,7 +1326,7 @@ time,
 }
 
 .lab-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-h3-mobile);
   font-weight: 400;
   color: var(--ink);
@@ -1341,7 +1341,7 @@ time,
 }
 
 .lab-card .sc-inline {
-  font-family: 'Noto Serif SC', serif;
+  font-family: var(--font-sc, "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif);
   color: var(--accent-quiet);
 }
 
@@ -1429,7 +1429,7 @@ time,
 }
 
 .matrix-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   font-weight: 400;
   margin: var(--space-md) 0 var(--space-xs);
@@ -1551,7 +1551,7 @@ time,
 
 .ops-dash-num {
   display: block;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-sm);
   color: var(--tulip-deep);
   margin-bottom: var(--space-3xs);
@@ -1559,7 +1559,7 @@ time,
 }
 
 .ops-dash-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   font-weight: 400;
   color: var(--ink);
@@ -1650,7 +1650,7 @@ time,
 }
 
 .work-preview h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   color: var(--ink);
   margin: 0 0 var(--space-xs);
@@ -1804,7 +1804,7 @@ ol li::marker { color: var(--tulip-deep); }
 }
 
 .module-checklist-block h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   font-weight: 500;
   margin-bottom: var(--space-xs);
@@ -1912,14 +1912,14 @@ ol li::marker { color: var(--tulip-deep); }
 }
 
 main.container > h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-hero-mobile);
   color: var(--ink);
   margin: var(--space-lg) 0 var(--space-xs);
 }
 
 main.container > h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-h2-mobile);
   font-weight: 500;
   margin: var(--space-lg) 0 var(--space-sm);
@@ -1927,7 +1927,7 @@ main.container > h2 {
 }
 
 main.container > h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   font-weight: 500;
   margin: var(--space-md) 0 var(--space-xs);
@@ -2041,7 +2041,7 @@ body.coord-page {
 }
 
 .open-todos-panel h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   font-weight: 500;
   margin: 0 0 var(--space-sm);
@@ -2199,7 +2199,7 @@ body.coord-page {
 
 .status-stat .stat-num {
   display: block;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-lg);
   font-weight: 500;
   color: var(--tulip-deep);
@@ -2244,7 +2244,7 @@ body.coord-page {
 }
 
 .hub-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
   font-size: var(--text-md);
   font-weight: 500;
   color: var(--ink);
@@ -2756,7 +2756,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .sc {
-  font-family: "Noto Serif SC", serif;
+  font-family: var(--font-sc, "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif);
   font-weight: 500;
 }
 
@@ -3133,7 +3133,7 @@ body.kindergarten-home {
 }
 
 .choice-home .hero-brand-line .sc {
-  font-family: "Noto Serif SC", serif;
+  font-family: var(--font-sc, "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif);
   font-weight: 500;
   color: var(--accent-crimson);
 }
@@ -3571,7 +3571,7 @@ body.kindergarten-home {
 }
 
 .kindergarten-home .section-head .sc-label {
-  font-family: "Noto Serif SC", serif;
+  font-family: var(--font-sc, "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif);
   font-size: 14px;
   color: var(--coral-ink);
 }
@@ -7167,7 +7167,7 @@ body.choice-home {
   top: 1%;
   transform: translateX(-50%) rotate(-3deg);
   z-index: 0;
-  font-family: "Noto Serif SC", serif;
+  font-family: var(--font-sc, "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif);
   font-weight: 500;
   font-size: clamp(84px, 20vw, 148px);
   line-height: 1.1;

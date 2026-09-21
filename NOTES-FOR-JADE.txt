@@ -1,0 +1,17 @@
+NOTES FOR JADE (1st-person) · matchaxmoxie
+Generated during site polish. Agent fixed 2nd-person items; these need your call.
+
+1. "The Rive" caption
+   Desk polaroid + b-town-bars copy say "The Rive" (photo file miss-zhao-rive).
+   Keep the nickname, expand to a place name, or retitle?
+
+2. Favicon at 16px
+   Same face-photo tradeoff as the other doors. Keep, or switch to a matcha mark at tiny sizes?
+
+3. Comic Neue / Cooper Black
+   Comic Neue is now loaded from Google Fonts. Cooper Black still relies on local/system fonts
+   (falls back to Georgia). OK for classroom poster bits, or drop Cooper?
+
+4. Campus "counseling" spelling
+   Pages that link IU CAPS / mental-health resources keep US "counseling" (institutional label).
+   Leave as IU wording, or soften surrounding prose to UK "counselling" while keeping the official name?
