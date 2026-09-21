@@ -18,6 +18,5 @@ Cookie campus energy. Soft college advice. Manifesting who you are becoming.
 
 - Builds → [jadexzhao.github.io/jadexzhao](https://jadexzhao.github.io/jadexzhao/)
 - Notes → [zhao-langxi.github.io/zhao-langxi](https://zhao-langxi.github.io/zhao-langxi/)
-- Narrative → [jlzhao.pages.iu.edu](https://jlzhao.pages.iu.edu/)
 
 [@zhao.langxi](https://instagram.com/zhao.langxi)
