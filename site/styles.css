@@ -9508,3 +9508,70 @@ body.page-404 .page-404-actions .btn-outline:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ------------------------------------------------------------------
+   WEEK ONE REMINDERS · MAP soft landings · matcha kept
+   ------------------------------------------------------------------ */
+.week-one-reminders,
+.tamara-credit {
+  margin: 0 0 var(--space-m);
+  padding: var(--space-s) var(--space-m);
+  background: color-mix(in srgb, var(--cream, #fff4e8) 55%, var(--matcha-pale, #e8f0e4));
+  border: 2px solid var(--matcha-mid, #3d6b4a);
+  box-shadow: 4px 4px 0 rgba(0, 61, 40, 0.12);
+  border-radius: var(--radius-md, 16px);
+}
+
+.week-one-kicker,
+.tamara-credit-kicker {
+  font-family: "Courier New", Courier, monospace;
+  font-size: var(--step--2);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--matcha-deep, #006b45);
+  margin: 0 0 var(--space-2xs);
+}
+
+.week-one-reminders h2 {
+  font-family: Fraunces, Georgia, serif;
+  color: var(--ink);
+  margin: 0 0 var(--space-2xs);
+}
+
+.week-one-lede,
+.tamara-credit p {
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.55;
+  color: var(--ink);
+  max-width: 58ch;
+  margin: 0 0 var(--space-s);
+}
+
+.week-one-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  max-width: 62ch;
+}
+
+.week-one-list li {
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  color: var(--ink);
+  margin-bottom: var(--space-2xs);
+}
+
+.week-one-list strong {
+  color: var(--matcha-deep, #006b45);
+}
+
+.tamara-credit a,
+.week-one-reminders a {
+  color: var(--ink);
+  font-weight: 700;
+  border-bottom: 3px solid var(--golden-hour, #c08a52);
+  text-underline-offset: 3px;
+}
