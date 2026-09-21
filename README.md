@@ -2,6 +2,8 @@
 
 Jade Zhao · 赵郎溪 · she/her
 
+Program Assistant, Office of Student Life, HHSP (Hudson & Holland Scholars Program).
+
 **IU Bloomington 🍪**
 
 Cookie campus energy. Soft college advice. Manifesting who you are becoming.
