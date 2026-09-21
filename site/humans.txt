@@ -3,7 +3,7 @@ Jade Zhao
 IU Bloomington
 
 /* SITE */
-matchaxmoxie · cookie campus energy
+matchaxmoxie · IU Bloomington 🍪 · phoenix · cookie campus
 last updated: 2026
 standards: HTML5, CSS custom properties
 language: English
