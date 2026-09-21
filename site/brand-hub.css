@@ -1,0 +1,221 @@
+/* matchaxmoxie · brand hub only */
+
+.brand-hub {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(232, 240, 228, 0.9), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 90% 10%, rgba(255, 244, 232, 0.95), transparent 50%),
+    linear-gradient(165deg, #e8f0e4 0%, #fff4e8 45%, #e8f0e4 100%);
+  color: var(--ink, #222a25);
+}
+
+.brand-hub-main {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.brand-hub-hero {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .brand-hub-hero {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 2.5rem;
+  }
+}
+
+.brand-hub-mark {
+  font-family: "Noto Serif SC", "Songti SC", Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--matcha-deep, #006b45);
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.04em;
+}
+
+.brand-hub-copy h1 {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 8vw, 4.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--matcha-deep, #006b45);
+  margin: 0 0 0.5rem;
+}
+
+.brand-hub-tagline {
+  font-family: "Comic Neue", "Comic Sans MS", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+  color: var(--matcha-mid, #3d6b4a);
+  margin: 0 0 1rem;
+}
+
+.brand-hub-lede {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: var(--ink-muted, #3a453c);
+  margin: 0 0 1.5rem;
+  max-width: 38ch;
+}
+
+.brand-hub-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+}
+
+.brand-hub .open-cta {
+  display: inline-block;
+  background: var(--matcha-deep, #006b45);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7rem 1.15rem;
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-weight: 700;
+  border: 2px solid var(--matcha-deep, #006b45);
+}
+
+.brand-hub .open-cta:hover,
+.brand-hub .open-cta:focus-visible {
+  background: var(--matcha-darkest, #004830);
+  border-color: var(--matcha-darkest, #004830);
+}
+
+.brand-hub .open-link-cta {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-weight: 700;
+  color: var(--matcha-deep, #006b45);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.brand-hub-photo {
+  margin: 0;
+  justify-self: center;
+  max-width: 320px;
+  width: 100%;
+}
+
+.brand-hub-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 3px solid var(--matcha-mid, #3d6b4a);
+  box-shadow: 8px 8px 0 rgba(0, 107, 69, 0.18);
+}
+
+.brand-hub-panel {
+  background: rgba(255, 250, 244, 0.78);
+  border: 2px solid rgba(0, 107, 69, 0.28);
+  padding: 1.35rem 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.brand-hub-panel h2 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.35rem;
+  color: var(--matcha-deep, #006b45);
+  margin: 0 0 0.65rem;
+}
+
+.brand-hub-panel p {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  margin: 0 0 0.75rem;
+  color: var(--ink, #222a25);
+}
+
+.brand-hub-vibe {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--ink, #222a25);
+}
+
+.brand-hub-vibe li {
+  position: relative;
+  padding: 0.55rem 0 0.55rem 1.15rem;
+  border-bottom: 1px solid rgba(0, 107, 69, 0.14);
+}
+
+.brand-hub-vibe li:last-child {
+  border-bottom: 0;
+}
+
+.brand-hub-vibe li::before {
+  content: "🍪";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+
+.brand-hub-soft {
+  font-family: "Comic Neue", "Comic Sans MS", sans-serif;
+  color: var(--matcha-mid, #3d6b4a) !important;
+  margin-bottom: 0 !important;
+}
+
+.brand-hub-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.brand-hub-links a {
+  color: var(--matcha-deep, #006b45);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.brand-hub-credit {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink-muted, #3a453c);
+  margin: 0.5rem 0 0;
+}
+
+.brand-hub-credit a {
+  color: var(--matcha-deep, #006b45);
+  font-weight: 700;
+}
+
+.brand-hub .footer-kiss {
+  text-align: center;
+  padding: 1.5rem 1rem 2.5rem;
+  color: var(--ink-muted, #3a453c);
+}
+
+.brand-hub .footer-bye {
+  font-family: "Comic Neue", "Comic Sans MS", sans-serif;
+  font-size: 1.15rem;
+  margin: 0 0 0.4rem;
+}
+
+.brand-hub .human {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  margin: 0 0 0.4rem;
+}
+
+.brand-hub .footer-soft {
+  font-size: 0.95rem;
+  margin: 0;
+}

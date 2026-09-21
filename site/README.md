@@ -1,8 +1,5 @@
 # matchaxmoxie site
 
-Phoenix cookie classroom archive for FASE MAP. Starter: `starter-campus.css` (matcha + clay). Tokens: `brand-tokens.css`. Status chip modes live in `classroom-ux.js`: `hiatus` · `teaching` · `office-hours` · `working` · `offline`.
+Brand hub. Tagline: IU Bloomington 🍪. Matcha palette. Miss Zhao lilies favicon.
 
-- **Ship for everyone:** edit `STATUS_DEFAULT`, commit, push.
-- **Local demo only:** `localStorage.setItem("matchax-status-override", JSON.stringify({ mode: "teaching" }))` then reload.
-
-Cookie / localStorage keeps seat picks on this device if the student says yes. Footer is short: hub · email · dragon · IG.
+Live: https://matchaxmoxie.github.io/matchaxmoxie/

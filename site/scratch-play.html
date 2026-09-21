@@ -1,203 +1,21 @@
 <!DOCTYPE html>
-<!--
-  matchaxmoxie · Scratch playground（zhan nei bo fang）
-  tong yu jia zai scratch-projects/*.sb3 + TurboWarp Scaffolding。
-  zhu lu jing bu tiao zhuan scratch.mit.edu / turbowarp.org。yu Scratch Team wu li shu guan xi。
--->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="matchaxmoxie Scratch playground. Play starter .sb3 files on this site with green flag and stop. Jade Zhao · cookie classroom archive.">
-<title>Jade Zhao · Scratch playground · matchaxmoxie</title>
-<link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/scratch-play.html">
-<link rel="icon" href="favicon.ico?v=20260921-lilies" sizes="any">
-<link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260921-lilies">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=20260921-lilies">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260921-lilies">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260921-lilies">
-<link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#006b45">
+<meta http-equiv="refresh" content="0; url=index.html">
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&family=Comic+Neue:wght@400;700&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="brand-tokens.css?v=20260919-ux">
-<link rel="stylesheet" href="register-campus.css?v=20260919-ux">
-<link rel="stylesheet" href="a11y.css?v=20260919-ux">
-<link rel="stylesheet" href="classroom-ux.css?v=20260919-ux">
-<link rel="stylesheet" href="styles.css?v=20260921-fonts">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>moved · matchaxmoxie</title>
+<link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/">
+<link rel="icon" href="favicon.ico?v=20260921-lilies" sizes="any">
+<style>
+  body{font-family:Georgia,serif;background:#fff4e8;color:#222a25;max-width:36rem;margin:3rem auto;padding:0 1.25rem;line-height:1.5}
+  a{color:#006b45;font-weight:700}
+</style>
 </head>
-<body class="theme-matchaxmoxie kindergarten-home sunset-home kiss-home scratch-studio-page scratch-play-page">
-
-<a href="#main-content" class="skip-link">skip to playground</a>
-<nav class="site-jump" aria-label="Classroom">
-  <a href="index.html">Home</a>
-  <a href="student-path.html">Your path</a>
-  <a href="campus-roles.html">Campus roles</a>
-  <a href="https://github.com/matchaxmoxie/matchaxmoxie" rel="noopener noreferrer">Source</a>
-</nav>
-
-<main id="main-content" class="wrap" tabindex="-1">
-
-
-  <header class="studio-hero scratch-play-hero">
-    <p class="studio-kicker">Jade Zhao · matchaxmoxie = matcha energy · cookie classroom</p>
-    <h1 id="scratch-play-title">Scratch playground</h1>
-    <p id="scratch-play-lede" class="studio-lede">
-      Wait for ready. Green flag starts the fun. Switch starters below anytime.
-    </p>
-    <p class="studio-note">
-      Same classroom site. Not affiliated with Scratch Team.
-      Want rebuild steps?
-      <a href="scratch-studio.html">Scratch studio</a>
-      has them.
-    </p>
-  </header>
-
-  <section id="scratch-play-stage" class="open-invest scratch-pick-block" aria-labelledby="scratch-play-heading">
-    <h2 id="scratch-play-heading" class="visually-hidden">Play stage</h2>
-
-    <div class="scratch-player-shell">
-      <div class="scratch-player-toolbar" role="group" aria-label="Play controls">
-        <button type="button" id="scratch-green-flag" class="scratch-control-btn scratch-control-btn--flag" aria-label="Green flag: start project" disabled>
-          Green flag
-        </button>
-        <button type="button" id="scratch-stop-all" class="scratch-control-btn scratch-control-btn--stop" aria-label="Stop all scripts" disabled>
-          Stop
-        </button>
-      </div>
-      <p id="scratch-player-status" class="scratch-player-status" aria-live="polite">
-        Loading player...
-      </p>
-
-      <aside class="scratch-howto-play" aria-labelledby="scratch-howto-heading">
-        <h2 id="scratch-howto-heading" class="scratch-howto-heading">How to play</h2>
-        <ol class="scratch-howto-steps">
-          <li><strong>Green flag</strong> when status says ready.</li>
-          <li id="scratch-howto-controls"><strong>This starter:</strong> Space to jump · arrows to move.</li>
-          <li><strong>Stop</strong> pauses. Flag again to restart.</li>
-        </ol>
-        <p id="scratch-howto-tip" class="scratch-howto-tip">
-          After green flag, Tab to the stage (or click it) once so Space and arrows hit the game, not the buttons.
-        </p>
-      </aside>
-
-      <div
-        id="scratch-stage"
-        class="scratch-stage"
-        role="application" tabindex="0"
-        aria-label="Scratch stage"
-      ></div>
-    </div>
-
-    <h2 class="scratch-pick-switch-heading">Try another</h2>
-    <p class="scratch-pick-switch-lede">Tap one. How to play updates. Green flag again.</p>
-    <ul class="scratch-pick-choices open-pick-list" role="list" id="scratch-play-pick-list">
-      <li>
-        <button type="button" class="scratch-pick-btn open-pick-btn" data-project="jumping" aria-pressed="false">
-          <span class="open-pick-label">Jumping Game</span>
-          <span class="open-pick-hint">Bounce in two minutes · Space + arrows</span>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="scratch-pick-btn open-pick-btn" data-project="catch" aria-pressed="false">
-          <span class="open-pick-label">Catch Game</span>
-          <span class="open-pick-hint">Scoop the falling stuff · arrows</span>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="scratch-pick-btn open-pick-btn" data-project="pong" aria-pressed="false">
-          <span class="open-pick-label">Pong</span>
-          <span class="open-pick-hint">Keep the ball alive · mouse or arrows</span>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="scratch-pick-btn open-pick-btn" data-project="clicker" aria-pressed="false">
-          <span class="open-pick-label">Clicker</span>
-          <span class="open-pick-hint">Tap, score, buy one upgrade</span>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="scratch-pick-btn open-pick-btn" data-project="scroll" aria-pressed="false">
-          <span class="open-pick-label">Scrolling Background</span>
-          <span class="open-pick-hint">World that runs under your feet</span>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="scratch-pick-btn open-pick-btn" data-project="pet" aria-pressed="false">
-          <span class="open-pick-label">Virtual Pet</span>
-          <span class="open-pick-hint">Feed, play, rest · keep it happy</span>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="scratch-pick-btn open-pick-btn" data-project="story" aria-pressed="false">
-          <span class="open-pick-label">Story</span>
-          <span class="open-pick-hint">Watch, then choose the fork</span>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="scratch-pick-btn open-pick-btn" data-project="character" aria-pressed="false">
-          <span class="open-pick-label">Character Designer</span>
-          <span class="open-pick-hint">Dress-up station · cycle the looks</span>
-        </button>
-      </li>
-    </ul>
-
-    <div class="scratch-pick-reveal scratch-play-secondary">
-      <p class="scratch-secondary-ctas">
-        <a id="scratch-pick-download" class="open-link-soft" href="scratch-projects/jumping-game.sb3" download>
-          Download starter (.sb3) to remix offline
-        </a>
-      </p>
-      <p class="scratch-howto-link-wrap">
-        <a id="scratch-pick-go" class="open-link-soft" href="scratch-studio.html#jumping">
-          Rebuild steps on the studio page →
-        </a>
-      </p>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer-kiss">
-  <p class="footer-bye">bye love u · see you next class 🍵</p>
-  <p class="human">Jade Zhao · 赵郎溪 · she/her · <span class="sc egg-phoenix" lang="zh-Hans" tabindex="0" title="凤凰 · double-click for essays">凤凰</span> · matchaxmoxie</p>
-  <div class="footer-groups">
-    <p class="footer-group"><span class="footer-label">On this site</span>
-      <a href="index.html">Home</a>
-      · <a href="student-path.html">Your path</a>
-      · <a href="campus-roles.html">Campus roles</a>
-    </p>
-    <p class="footer-group"><span class="footer-label">Classroom</span>
-      <a href="footprint.html">Footprint</a>
-      · <a href="b-town-bars.html">B-town bars</a>
-      · <a href="scratch-studio.html">Scratch</a>
-      · <a href="informatics-class-of-2027.html">IU guide</a>
-      · <a href="handshake.html">Handshake</a>
-      · <a href="databases-it-etl.html">Data seat</a>
-      · <a href="campus-survival.html">Campus survival</a>
-      · <a href="archive.html">Archive</a>
-    </p>
-    <p class="footer-group"><span class="footer-label">Elsewhere</span>
-      <a href="mailto:jlzhao@iu.edu">Email</a>
-      · <a href="https://github.com/matchaxmoxie" rel="noopener noreferrer">GitHub</a>
-      · <a href="https://instagram.com/zhao.langxi" class="link-instagram" rel="noopener noreferrer" target="_blank">@zhao.langxi</a>
-      · <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>
-      · <a href="https://zhao-langxi.github.io/zhao-langxi/" rel="noopener noreferrer">zhao-langxi</a>
-      · <a href="https://zhao-langxi.github.io/zhao-langxi/work/digital-humans.html" rel="noopener noreferrer">Digital Humans notes</a>
-      · <a href="https://jlzhao.pages.iu.edu/" rel="noopener noreferrer">IU Pages</a>
-    </p>
-  </div>
-  <p class="footer-soft">Palette inspired by ceremonial matcha / <a href="https://global.ippodo-tea.co.jp/" rel="noopener noreferrer" target="_blank">Ippodo</a> and European matcha latte cafes.</p>
-</footer>
-<!--
-  zhan nei bo fang qi：vendored @turbowarp/scaffolding@0.4.0 scaffolding-min.js（yue 1.8MB）。
-  geng xin：npm pack @turbowarp/scaffolding@0.4.0 → fu zhi dist/scaffolding-min.js dao ben mu lu shang ji scratch-player/。
-  xiang jian scratch-player/README.md。
--->
-<script src="classroom-ux.js?v=20260919-ux" defer></script>
-<script src="scratch-player/scaffolding-min.js?v=0.4.0" defer></script>
-<script src="scratch-player/player.js?v=20260724b" defer></script>
+<body>
+  <p>This page left with the old classroom stack.</p>
+  <p><a href="index.html">Back to matchaxmoxie · IU Bloomington 🍪</a></p>
 </body>
 </html>
+

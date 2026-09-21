@@ -1,13 +1,9 @@
 /* TEAM */
 Jade Zhao
-Indiana University, Informatics
-Madrid (IU education abroad · Spring 2026)
-
-/* THANKS */
-every professor who followed
-instructions literally and proved a point.
+IU Bloomington
 
 /* SITE */
-last updated: 2027
+matchaxmoxie · cookie campus energy
+last updated: 2026
 standards: HTML5, CSS custom properties
 language: English
