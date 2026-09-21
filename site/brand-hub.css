@@ -648,6 +648,14 @@ body.brand-hub .open-cta:focus-visible,
   box-shadow: 0 6px 0 rgba(0, 107, 69, 0.18) !important;
 }
 
+body.brand-hub .open-cta:active,
+.brand-hub .open-cta:active,
+body.brand-hub .open-link-cta:active,
+.brand-hub .open-link-cta:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: none !important;
+}
+
 body.brand-hub .open-link-cta:hover,
 body.brand-hub .open-link-cta:focus-visible,
 .brand-hub .open-link-cta:hover,
@@ -712,28 +720,58 @@ body.brand-hub .open-link-cta:focus-visible,
   padding-left: 1.35rem;
 }
 
-/* home entrance */
-.brand-hub-hero {
+/* enter-view · JS adds .hub-reveal then .hub-in */
+.brand-hub-hero.hub-reveal,
+.brand-hub-door.hub-reveal,
+.brand-hub-panel.hub-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s ease;
+}
+
+.brand-hub-door.hub-reveal:nth-child(1) {
+  transition-delay: 0.06s;
+}
+
+.brand-hub-door.hub-reveal:nth-child(2) {
+  transition-delay: 0.12s;
+}
+
+.brand-hub-door.hub-reveal:nth-child(3) {
+  transition-delay: 0.18s;
+}
+
+.brand-hub-hero.hub-reveal.hub-in,
+.brand-hub-door.hub-reveal.hub-in,
+.brand-hub-panel.hub-reveal.hub-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* first paint without JS still soft-rises once */
+.brand-hub-hero:not(.hub-reveal) {
   animation: hub-rise 0.55s ease both;
 }
 
-.brand-hub-doors .brand-hub-door:nth-child(1) {
+.brand-hub-doors .brand-hub-door:not(.hub-reveal):nth-child(1) {
   animation: hub-rise 0.5s ease 0.08s both;
 }
 
-.brand-hub-doors .brand-hub-door:nth-child(2) {
+.brand-hub-doors .brand-hub-door:not(.hub-reveal):nth-child(2) {
   animation: hub-rise 0.5s ease 0.16s both;
 }
 
-.brand-hub-doors .brand-hub-door:nth-child(3) {
+.brand-hub-doors .brand-hub-door:not(.hub-reveal):nth-child(3) {
   animation: hub-rise 0.5s ease 0.24s both;
 }
 
-.brand-hub-main > .brand-hub-panel:nth-of-type(1) {
+.brand-hub-main > .brand-hub-panel:not(.hub-reveal):nth-of-type(1) {
   animation: hub-rise 0.5s ease 0.28s both;
 }
 
-.brand-hub-main > .brand-hub-panel:nth-of-type(2) {
+.brand-hub-main > .brand-hub-panel:not(.hub-reveal):nth-of-type(2) {
   animation: hub-rise 0.5s ease 0.36s both;
 }
 
@@ -745,8 +783,14 @@ body.brand-hub .open-link-cta:focus-visible,
 
   .brand-hub-hero,
   .brand-hub-doors .brand-hub-door,
-  .brand-hub-main > .brand-hub-panel {
+  .brand-hub-main > .brand-hub-panel,
+  .brand-hub-hero.hub-reveal,
+  .brand-hub-door.hub-reveal,
+  .brand-hub-panel.hub-reveal {
     animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 
   body.brand-hub .site-jump a,
@@ -768,6 +812,8 @@ body.brand-hub .open-link-cta:focus-visible,
   .brand-hub-door:focus-visible,
   body.brand-hub .open-cta:hover,
   .brand-hub .open-cta:hover,
+  body.brand-hub .open-cta:active,
+  .brand-hub .open-cta:active,
   .brand-hub-photo:hover img,
   .brand-hub-vibe li:hover {
     transform: none;
