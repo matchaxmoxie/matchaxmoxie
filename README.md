@@ -4,10 +4,11 @@ Jade Zhao · 赵郎溪 · she/her
 
 **IU Bloomington 🍪**
 
-Cookie campus energy. Matcha green. Soft honesty for college life.
+Cookie campus energy. Soft college advice. Manifesting who you are becoming.
 This is the phoenix door ... not a syllabus, not MAP curriculum.
 
 **Live:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
+**Advice:** [soft college advice](https://matchaxmoxie.github.io/matchaxmoxie/advice.html)
 
 ## Elsewhere
 
