@@ -15,52 +15,81 @@
   padding: 2.5rem 1.25rem 4rem;
 }
 
-/* Hub chrome · beat styles.css koicha/crimson !important so every page matches */
+/*
+  Hub chrome must beat styles.css:
+  - .theme-matchaxmoxie .site-jump { background: koicha !important }
+  - .footer-kiss { max-width: 36rem } + our old margin:0 killed centering
+  - .open-link-cta paired as a dark twin button with .open-cta
+*/
+
 body.brand-hub .site-jump,
 .brand-hub .site-jump,
 .theme-matchaxmoxie.brand-hub .site-jump {
-  position: sticky;
-  top: 0;
+  position: sticky !important;
+  top: 0 !important;
+  bottom: auto !important;
+  left: 0;
+  right: 0;
   z-index: 90;
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: none !important;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.85rem;
+  flex-wrap: nowrap !important;
+  gap: 0.25rem 1rem;
   justify-content: center;
   align-items: center;
-  padding: 0.85rem 1.25rem;
-  margin: 0;
+  padding: 0.9rem 1.25rem;
+  margin: 0 !important;
   font-family: "Nunito Sans", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   text-transform: none;
-  overflow: visible;
-  border-bottom: 2px solid rgba(0, 107, 69, 0.22);
-  box-shadow: none;
-  background: #fffaf4 !important;
-  background-color: #fffaf4 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  border-top: 0 !important;
+  border-bottom: 2px solid rgba(0, 107, 69, 0.28);
+  box-shadow: 0 1px 0 rgba(0, 107, 69, 0.06);
+  background: #fff4e8 !important;
+  background-color: #fff4e8 !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   opacity: 1 !important;
 }
 
+body.brand-hub .site-jump::-webkit-scrollbar,
+.brand-hub .site-jump::-webkit-scrollbar {
+  display: none;
+}
+
 body.brand-hub .site-jump a,
 .brand-hub .site-jump a,
 .theme-matchaxmoxie.brand-hub .site-jump a {
-  flex: 0 0 auto;
-  display: inline-flex;
+  flex: 0 0 auto !important;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
   min-height: 2.5rem;
-  padding: 0.2rem 0.35rem;
+  padding: 0.15rem 0.35rem;
   color: #006b45 !important;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: none;
   text-decoration: none !important;
+  border: 0 !important;
+  border-top: 0 !important;
   border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
   background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
   white-space: nowrap;
 }
 
@@ -84,23 +113,36 @@ body.brand-hub .site-jump a[aria-current="page"],
 
 body.brand-hub .footer-kiss,
 .brand-hub .footer-kiss {
+  box-sizing: border-box;
+  display: block;
+  width: 100% !important;
+  max-width: none !important;
   text-align: center;
   padding: 2rem 1.25rem 2.75rem;
-  margin: 0;
-  border-top: 2px solid rgba(0, 107, 69, 0.22);
-  background: rgba(255, 250, 244, 0.65);
+  margin: 0 !important;
+  border-top: 2px solid rgba(0, 107, 69, 0.28);
+  background: #fff4e8;
   color: #3a453c;
+  float: none;
+}
+
+body.brand-hub .footer-kiss > p,
+.brand-hub .footer-kiss > p {
+  max-width: none !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body.brand-hub .footer-jump,
 .brand-hub .footer-jump {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 0.85rem;
+  gap: 0.25rem 1rem;
   justify-content: center;
   align-items: center;
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.15rem;
   padding: 0;
+  width: 100%;
   font-family: "Nunito Sans", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
@@ -108,15 +150,23 @@ body.brand-hub .footer-jump,
 
 body.brand-hub .footer-jump a,
 .brand-hub .footer-jump a {
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  max-width: none !important;
   min-height: 2.25rem;
-  padding: 0.15rem 0.3rem;
+  padding: 0.15rem 0.35rem;
   color: #006b45 !important;
   font-weight: 700;
   text-decoration: none !important;
+  border: 0 !important;
+  border-top: 0 !important;
   border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
   background: transparent !important;
+  box-shadow: none !important;
+  white-space: nowrap;
 }
 
 body.brand-hub .footer-jump a:hover,
@@ -130,6 +180,22 @@ body.brand-hub .footer-jump a:focus-visible,
 body.brand-hub .footer-jump a[aria-current="page"],
 .brand-hub .footer-jump a[aria-current="page"] {
   border-bottom-color: #006b45 !important;
+}
+
+.brand-hub .footer-bye {
+  font-family: "Comic Neue", "Comic Sans MS", sans-serif;
+  font-size: 1.15rem;
+  margin: 0 0 0.4rem;
+}
+
+.brand-hub .human {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  margin: 0 0 0.4rem;
+}
+
+.brand-hub .footer-soft {
+  font-size: 0.95rem;
+  margin: 0;
 }
 
 .brand-hub-hero {
@@ -189,33 +255,65 @@ body.brand-hub .footer-jump a[aria-current="page"],
 .brand-hub-ctas {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem 1rem;
+  gap: 0.75rem 1.25rem;
   align-items: center;
 }
 
+body.brand-hub .open-cta,
 .brand-hub .open-cta {
-  display: inline-block;
-  background: var(--matcha-deep, #006b45);
-  color: #fff;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  background: #006b45 !important;
+  background-color: #006b45 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  text-decoration: none !important;
   padding: 0.7rem 1.15rem;
   font-family: "Nunito Sans", Helvetica, sans-serif;
   font-weight: 700;
-  border: 2px solid var(--matcha-deep, #006b45);
+  border: 2px solid #006b45 !important;
+  border-radius: 4px;
+  box-shadow: none !important;
 }
 
+body.brand-hub .open-cta:hover,
+body.brand-hub .open-cta:focus-visible,
 .brand-hub .open-cta:hover,
 .brand-hub .open-cta:focus-visible {
-  background: var(--matcha-darkest, #004830);
-  border-color: var(--matcha-darkest, #004830);
+  background: #004830 !important;
+  background-color: #004830 !important;
+  border-color: #004830 !important;
 }
 
+body.brand-hub .open-link-cta,
 .brand-hub .open-link-cta {
-  font-family: "Nunito Sans", Helvetica, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.35rem 0.15rem !important;
+  font-family: "Nunito Sans", Helvetica, sans-serif !important;
   font-weight: 700;
-  color: var(--matcha-deep, #006b45);
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+  font-size: 1.05rem;
+  color: #006b45 !important;
+  -webkit-text-fill-color: #006b45 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.22em;
+}
+
+body.brand-hub .open-link-cta:hover,
+body.brand-hub .open-link-cta:focus-visible,
+body.brand-hub .open-link-cta:visited,
+.brand-hub .open-link-cta:hover,
+.brand-hub .open-link-cta:focus-visible,
+.brand-hub .open-link-cta:visited {
+  color: #004830 !important;
+  -webkit-text-fill-color: #004830 !important;
+  background: transparent !important;
 }
 
 .brand-hub-photo {
@@ -373,17 +471,6 @@ body.brand-hub .footer-jump a[aria-current="page"],
   font-weight: 700;
 }
 
-.brand-hub .footer-bye {
-  font-family: "Comic Neue", "Comic Sans MS", sans-serif;
-  font-size: 1.15rem;
-  margin: 0 0 0.4rem;
-}
-
-.brand-hub .human {
-  font-family: "Nunito Sans", Helvetica, sans-serif;
-  margin: 0 0 0.4rem;
-}
-
 .brand-hub-advice {
   list-style: decimal;
   padding-left: 1.5rem;
@@ -397,11 +484,6 @@ body.brand-hub .footer-jump a[aria-current="page"],
   content: none;
 }
 
-.brand-hub .footer-soft {
-  font-size: 0.95rem;
-  margin: 0;
-}
-
 .brand-hub-affirm {
   font-family: "Comic Neue", "Comic Sans MS", sans-serif;
   font-size: 1.2rem;
@@ -410,4 +492,73 @@ body.brand-hub .footer-jump a[aria-current="page"],
   text-align: center;
   margin: 0;
   padding: 0.5rem 0;
+}
+
+@media (max-width: 640px) {
+  .brand-hub-main {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .brand-hub-hero {
+    gap: 1.35rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .brand-hub-doors {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-hub-panel {
+    padding: 1.1rem 1rem;
+  }
+
+  .brand-hub-ctas {
+    gap: 0.65rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body.brand-hub,
+  .brand-hub {
+    overflow-x: hidden;
+  }
+
+  body.brand-hub .site-jump,
+  .brand-hub .site-jump {
+    gap: 0.1rem 0.55rem;
+    padding: 0.7rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  body.brand-hub .site-jump a,
+  .brand-hub .site-jump a {
+    min-height: 44px;
+    padding: 0.2rem 0.15rem;
+  }
+
+  body.brand-hub .footer-kiss,
+  .brand-hub .footer-kiss {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 1.5rem 0.85rem 2.25rem;
+  }
+
+  body.brand-hub .footer-jump,
+  .brand-hub .footer-jump {
+    gap: 0.1rem 0.55rem;
+  }
+
+  body.brand-hub .footer-jump a,
+  .brand-hub .footer-jump a {
+    min-height: 44px;
+    padding: 0.2rem 0.15rem;
+  }
+
+  .brand-hub-photo {
+    max-width: 260px;
+  }
+
+  .brand-hub-lede {
+    font-size: 1.05rem;
+  }
 }
