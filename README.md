@@ -5,10 +5,12 @@ Jade Zhao · 赵郎溪 · she/her
 **IU Bloomington 🍪**
 
 Cookie campus energy. Soft college advice. Manifesting who you are becoming.
-This is the phoenix door ... not a syllabus, not MAP curriculum.
 
 **Live:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
 **Advice:** [soft college advice](https://matchaxmoxie.github.io/matchaxmoxie/advice.html)
+**Vibes:** [manifesting vibes](https://matchaxmoxie.github.io/matchaxmoxie/vibes.html)
+**About:** [about](https://matchaxmoxie.github.io/matchaxmoxie/about.html)
+**Say hi:** [say hi](https://matchaxmoxie.github.io/matchaxmoxie/say-hi.html)
 
 ## Elsewhere
 

@@ -1,4 +1,4 @@
-/* matchaxmoxie · brand hub only */
+/* matchaxmoxie · brand hub */
 
 .brand-hub {
   min-height: 100vh;
@@ -13,6 +13,60 @@
   max-width: 920px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem 4rem;
+}
+
+.brand-hub .site-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.1rem;
+  justify-content: center;
+  padding: 1rem 1.25rem 0.25rem;
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.brand-hub .site-jump a {
+  color: var(--matcha-deep, #006b45);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.1rem;
+}
+
+.brand-hub .site-jump a:hover,
+.brand-hub .site-jump a:focus-visible {
+  border-bottom-color: var(--matcha-mid, #3d6b4a);
+}
+
+.brand-hub .site-jump a[aria-current="page"] {
+  border-bottom-color: var(--matcha-deep, #006b45);
+}
+
+.brand-hub .footer-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.1rem;
+  justify-content: center;
+  margin: 0 0 1rem;
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.brand-hub .footer-jump a {
+  color: var(--matcha-deep, #006b45);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.1rem;
+}
+
+.brand-hub .footer-jump a:hover,
+.brand-hub .footer-jump a:focus-visible {
+  border-bottom-color: var(--matcha-mid, #3d6b4a);
+}
+
+.brand-hub .footer-jump a[aria-current="page"] {
+  border-bottom-color: var(--matcha-deep, #006b45);
 }
 
 .brand-hub-hero {
@@ -37,7 +91,8 @@
   letter-spacing: 0.04em;
 }
 
-.brand-hub-copy h1 {
+.brand-hub-copy h1,
+.brand-hub-page-title {
   font-family: Fraunces, Georgia, serif;
   font-weight: 700;
   font-size: clamp(2.6rem, 8vw, 4.25rem);
@@ -45,6 +100,10 @@
   letter-spacing: -0.02em;
   color: var(--matcha-deep, #006b45);
   margin: 0 0 0.5rem;
+}
+
+.brand-hub-page-title {
+  font-size: clamp(2rem, 6vw, 3rem);
 }
 
 .brand-hub-tagline {
@@ -61,7 +120,7 @@
   line-height: 1.55;
   color: var(--ink-muted, #3a453c);
   margin: 0 0 1.5rem;
-  max-width: 38ch;
+  max-width: 42ch;
 }
 
 .brand-hub-ctas {
@@ -110,6 +169,49 @@
   border-radius: 4px;
   border: 3px solid var(--matcha-mid, #3d6b4a);
   box-shadow: 8px 8px 0 rgba(0, 107, 69, 0.18);
+}
+
+.brand-hub-doors {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .brand-hub-doors {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.brand-hub-door {
+  display: block;
+  background: rgba(255, 250, 244, 0.85);
+  border: 2px solid rgba(0, 107, 69, 0.28);
+  padding: 1.15rem 1.2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.brand-hub-door:hover,
+.brand-hub-door:focus-visible {
+  border-color: var(--matcha-deep, #006b45);
+  transform: translateY(-2px);
+}
+
+.brand-hub-door h2 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.25rem;
+  color: var(--matcha-deep, #006b45);
+  margin: 0 0 0.4rem;
+}
+
+.brand-hub-door p {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: var(--ink-muted, #3a453c);
+  margin: 0;
 }
 
 .brand-hub-panel {
@@ -198,6 +300,16 @@
   font-weight: 700;
 }
 
+.brand-hub-back {
+  margin-top: 1.5rem;
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+}
+
+.brand-hub-back a {
+  color: #006b45;
+  font-weight: 700;
+}
+
 .brand-hub .footer-kiss {
   text-align: center;
   padding: 1.5rem 1rem 2.5rem;
@@ -231,4 +343,14 @@
 .brand-hub .footer-soft {
   font-size: 0.95rem;
   margin: 0;
+}
+
+.brand-hub-affirm {
+  font-family: "Comic Neue", "Comic Sans MS", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--matcha-deep, #006b45);
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
 }
