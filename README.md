@@ -1,5 +1,7 @@
 # matchaxmoxie
 
-This site now lives at https://jadexzhao.github.io/jadexzhao/
+Code conversations and code help, in a Scratch style.
 
-The published homepage redirects there. Other classroom pages remain in the archive, so a direct link still opens that page.
+**Live Pages:** https://matchaxmoxie.github.io/matchaxmoxie/
+
+The homepage is the lesson. Older classroom pages remain in `site/` for a direct link.

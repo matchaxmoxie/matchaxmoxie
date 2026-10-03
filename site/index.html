@@ -3,12 +3,122 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>This site has moved</title>
-  <link rel="canonical" href="https://jadexzhao.github.io/jadexzhao/">
-  <meta http-equiv="refresh" content="0; url=https://jadexzhao.github.io/jadexzhao/">
-  <script>location.replace("https://jadexzhao.github.io/jadexzhao/");</script>
+  <title>Code conversations · matchaxmoxie</title>
+  <meta name="description" content="Question, then try, then revise. Code help in a Scratch style.">
+  <meta name="theme-color" content="#fff4e8">
+  <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/">
+  <meta property="og:title" content="Code conversations · matchaxmoxie">
+  <meta property="og:description" content="Question, then try, then revise. That is how I explain a programme.">
+  <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,650&family=Nunito+Sans:wght@400;700&family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap&text=%E5%87%A4%E5%87%B0" rel="stylesheet">
+  <link rel="stylesheet" href="conversations.css">
 </head>
 <body>
-  <p><a href="https://jadexzhao.github.io/jadexzhao/">This site now lives at jadexzhao.github.io/jadexzhao</a>.</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="top">
+    <div class="shell">
+      <a class="brand" href="index.html"><span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</a>
+    </div>
+  </header>
+  <main id="main-content" class="shell">
+    <header class="hero">
+      <p class="kicker">Code help</p>
+      <h1>Code conversations</h1>
+      <p class="lede">Question, then try, then revise. That is how I explain a programme.</p>
+    </header>
+
+    <section class="studio" aria-labelledby="stage-heading">
+      <div class="stage-card">
+        <div class="stage-bar">
+          <button type="button" class="flag" id="green-flag" aria-describedby="flag-hint">
+            <span class="flag-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Green flag</span>
+          </button>
+          <p id="flag-hint" class="stage-label">when green flag clicked</p>
+        </div>
+        <div class="stage" id="stage">
+          <div class="sprite" aria-hidden="true"></div>
+          <div class="say" id="say" role="status">Press the green flag. I will ask, then wait.</div>
+        </div>
+      </div>
+      <div class="stack" aria-label="Starter blocks">
+        <p class="block block--hat block--events">when green flag clicked</p>
+        <p class="block block--sensing">ask <span class="slot">What should happen?</span> and wait</p>
+        <p class="block block--looks">say <span class="reporter">answer</span> for <span class="reporter">2</span> seconds</p>
+        <p class="block block--variables">set <span class="slot">num</span> to <span class="reporter">3</span></p>
+        <p class="block block--operators"><span class="reporter">num</span> * <span class="reporter">num</span></p>
+      </div>
+    </section>
+
+    <div class="lesson">
+      <h2 id="stage-heading">Question, then try, then revise</h2>
+      <p>Not a chat log. Three steps, in beginner language.</p>
+      <ol class="steps">
+        <li>
+          <p class="step-label">Question</p>
+          <p class="block block--sensing">ask <span class="slot">What should happen when the name box is empty?</span> and wait</p>
+        </li>
+        <li>
+          <p class="step-label">Try</p>
+          <p class="block block--control">if <span class="reporter">answer</span> = <span class="reporter"></span> then</p>
+          <p class="block block--looks">say <span class="slot">The box is empty.</span> for <span class="reporter">2</span> seconds</p>
+        </li>
+        <li>
+          <p class="step-label">Revise</p>
+          <p class="block block--variables">set <span class="slot">name</span> to <span class="slot">first name</span></p>
+          <p>An empty answer is a costume with nothing in it. A hyphen does not belong in the name of the box. Change one thing, then run the flag again.</p>
+        </li>
+      </ol>
+
+      <h2>Same shape, smaller words</h2>
+      <p>Before the programme clicks, narrate the green flag: set a variable, say something, or the loop never ends.</p>
+      <div class="stack" aria-label="A short example">
+        <p class="block block--hat block--events">when green flag clicked</p>
+        <p class="block block--variables">set <span class="slot">num</span> to <span class="reporter">3</span></p>
+        <p class="block block--looks">say <span class="reporter">join num and squared</span> for <span class="reporter">2</span> seconds</p>
+      </div>
+      <p>In class, or when someone asks what a button should do: what did you expect, what happened, what would you change?</p>
+      <p class="note">Guessing games and full assignment submits stay off this page.</p>
+      <p>Pages and posts: <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <p>Jade Zhao · <span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</p>
+      <p><a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a></p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var flag = document.getElementById("green-flag");
+      var say = document.getElementById("say");
+      if (!flag || !say) return;
+
+      flag.addEventListener("click", function () {
+        say.innerHTML = "";
+        var prompt = document.createElement("p");
+        prompt.textContent = "What should happen when the name box is empty?";
+        var form = document.createElement("form");
+        form.className = "ask";
+        form.innerHTML = '<label for="scratch-answer">Your answer</label><input id="scratch-answer" name="answer" autocomplete="off"><button type="submit">answer</button>';
+        say.appendChild(prompt);
+        say.appendChild(form);
+        var input = form.querySelector("input");
+        if (input) input.focus();
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          var value = input && input.value ? input.value.trim() : "";
+          say.textContent = value
+            ? "You said: " + value + ". Next, change one thing and run the flag again."
+            : "The box is empty. That is a costume with nothing in it.";
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

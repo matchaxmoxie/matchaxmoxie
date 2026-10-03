@@ -552,8 +552,8 @@
         url: "https://jadexzhao.github.io/jadexzhao/duck-farm/",
       },
       essay: {
-        label: "Essays · zhao-langxi",
-        url: "https://zhao-langxi.github.io/zhao-langxi/",
+        label: "Writing · jadexzhao",
+        url: "https://jadexzhao.github.io/jadexzhao/writing.html",
       },
     };
 
