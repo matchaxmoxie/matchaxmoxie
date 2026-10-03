@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Code conversations · matchaxmoxie</title>
   <meta name="description" content="Code conversations and code help for students, in a Scratch style. INFO-I211 clips from weeks 1 to 5.">
   <meta name="theme-color" content="#fff4e8">
@@ -29,40 +29,42 @@
       </nav>
     </div>
   </header>
-  <main id="main-content" class="shell">
+  <main id="main-content" class="shell" tabindex="-1">
     <header class="hero">
-      <p class="kicker">Code help</p>
       <h1>Code conversations</h1>
-      <p class="lede">This site is code conversations and code help for students, in a Scratch style.</p>
-      <p class="intro">Ask what should happen, try an answer, then change one thing and run it again. INFO-I211 clips from weeks 1 to 5 are on one page. <a href="i211.html">Watch the videos</a>.</p>
+      <p>This site is code conversations and code help for students, in a Scratch style.</p>
+      <p>Ask what should happen, try an answer, then change one thing and run it again.</p>
+      <p><a href="i211.html">INFO-I211 clips, weeks 1 to 5</a></p>
     </header>
 
-    <section class="studio" aria-labelledby="stage-heading">
-      <h2 id="stage-heading" class="studio-title">When green flag clicked</h2>
-      <div class="stage-card">
-        <div class="stage-bar">
-          <button type="button" class="flag" id="green-flag" aria-describedby="flag-hint">
-            <span class="flag-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Green flag</span>
-          </button>
-          <p id="flag-hint" class="stage-label">when green flag clicked</p>
+    <section class="band" aria-labelledby="stage-heading">
+      <h2 id="stage-heading">When green flag clicked</h2>
+      <div class="studio">
+        <div class="stage-card">
+          <div class="stage-bar">
+            <button type="button" class="flag" id="green-flag" aria-describedby="flag-hint">
+              <span class="flag-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Green flag</span>
+            </button>
+            <p id="flag-hint" class="stage-label">when green flag clicked</p>
+          </div>
+          <div class="stage" id="stage">
+            <div class="sprite" aria-hidden="true"></div>
+            <div class="say" id="say" role="status">Press the green flag. I will ask, then wait.</div>
+          </div>
         </div>
-        <div class="stage" id="stage">
-          <div class="sprite" aria-hidden="true"></div>
-          <div class="say" id="say" role="status">Press the green flag. I will ask, then wait.</div>
+        <div class="stack" aria-label="Starter blocks">
+          <p class="block block--hat block--events">when green flag clicked</p>
+          <p class="block block--sensing">ask <span class="slot">What should happen?</span> and wait</p>
+          <p class="block block--looks">say <span class="reporter">answer</span> for <span class="reporter">2</span> seconds</p>
+          <p class="block block--variables">set <span class="slot">num</span> to <span class="reporter">3</span></p>
+          <p class="block block--operators"><span class="reporter">num</span> * <span class="reporter">num</span></p>
         </div>
-      </div>
-      <div class="stack" aria-label="Starter blocks">
-        <p class="block block--hat block--events">when green flag clicked</p>
-        <p class="block block--sensing">ask <span class="slot">What should happen?</span> and wait</p>
-        <p class="block block--looks">say <span class="reporter">answer</span> for <span class="reporter">2</span> seconds</p>
-        <p class="block block--variables">set <span class="slot">num</span> to <span class="reporter">3</span></p>
-        <p class="block block--operators"><span class="reporter">num</span> * <span class="reporter">num</span></p>
       </div>
     </section>
 
-    <div class="lesson">
-      <h2>Question, then try, then revise</h2>
+    <section class="band" aria-labelledby="lesson-heading">
+      <h2 id="lesson-heading">Question, then try, then revise</h2>
       <p>Three steps, in beginner language.</p>
       <ol class="steps">
         <li>
@@ -82,7 +84,7 @@
       </ol>
       <p>In class, or when someone asks what a button should do: what did you expect, what happened, what would you change?</p>
       <p class="note">Guessing games and full assignment submits stay off this page.</p>
-    </div>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="shell">

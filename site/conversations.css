@@ -4,6 +4,10 @@
  * Scratch reference (colours and the green-flag stage, not a copied stylesheet):
  * https://scratch.mit.edu/projects/editor/
  *
+ * Spacing only: one column, even section gaps, stacked clips.
+ * Looked at https://kellyleedekay.com/portfolio-kld-2026/ for that rhythm.
+ * CSS not copied.
+ *
  * Page: cream #fff4e8, ink #1c241c, matcha #006b45, mid #3d6b4a, pale #e8f0e4.
  * Blocks: motion #4C97FF, looks #9966FF, sound #CF63CF, events #FFBF00,
  * control #FFAB19, sensing #5CB1D6, operators #59C059, variables #FF8C1A.
@@ -28,10 +32,15 @@
   --operators: #59c059;
   --variables: #ff8c1a;
   --flag: #4cbf56;
-  --serif: "Fraunces", Georgia, serif;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Nunito Sans", Arial, Helvetica, sans-serif;
   --sc: "Noto Serif SC", "Songti SC", serif;
-  --measure: 46rem;
+  --measure: 40rem;
+  --section: 2.75rem;
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
 }
 
 *,
@@ -41,7 +50,8 @@
 }
 
 html {
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 7.5rem;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -55,18 +65,27 @@ body {
 }
 
 h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
+}
+
+h1,
 h2 {
   text-wrap: balance;
 }
 
 img,
 svg,
-iframe {
+iframe,
+video {
   max-width: 100%;
 }
 
 a {
   color: var(--matcha);
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
 
@@ -79,11 +98,15 @@ a:hover {
   outline-offset: 3px;
 }
 
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .skip-link {
   position: absolute;
-  left: 0.75rem;
+  left: max(0.75rem, var(--safe-l));
   top: -200%;
-  z-index: 20;
+  z-index: 50;
   padding: 0.6rem 0.9rem;
   background: var(--matcha);
   color: #fff;
@@ -91,14 +114,22 @@ a:hover {
   text-decoration: none;
 }
 
-.skip-link:focus {
-  top: 0.75rem;
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: calc(0.75rem + var(--safe-t));
+  color: #fff;
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+#main-content:focus {
+  outline: none;
 }
 
 .shell {
   width: min(var(--measure), 100%);
   margin-inline: auto;
-  padding-inline: 1.25rem;
+  padding-inline: max(1.25rem, var(--safe-l)) max(1.25rem, var(--safe-r));
 }
 
 .sc {
@@ -107,33 +138,52 @@ a:hover {
 }
 
 .top {
-  padding: 1.1rem 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  padding: calc(0.9rem + var(--safe-t)) 0 0.35rem;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
 }
 
 .top-bar {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
 }
 
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.15rem 1.1rem;
+  align-items: center;
+  gap: 0.15rem 1.25rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .site-nav a {
-  color: var(--matcha);
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.2rem 0;
+  color: var(--ink);
   font-weight: 700;
+  line-height: 1.2;
   text-decoration: none;
-  padding: 0.45rem 0.05rem;
+}
+
+.site-nav a:hover {
+  color: var(--matcha);
 }
 
 .site-nav a[aria-current="page"] {
-  color: var(--ink);
-  box-shadow: inset 0 -3px 0 var(--matcha);
+  color: var(--matcha);
+  text-decoration: underline;
+  text-decoration-color: var(--matcha);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.32em;
 }
 
 .brand {
@@ -143,6 +193,8 @@ a:hover {
   font-family: var(--serif);
   font-size: 1.35rem;
   font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   text-decoration: none;
   border-bottom: 3px solid var(--matcha);
 }
@@ -151,63 +203,66 @@ a:hover {
   color: var(--ink);
 }
 
-.hero {
-  padding: 2.25rem 0 1.75rem;
+.hero,
+.band {
+  padding-block: var(--section);
 }
 
-.intro {
-  max-width: 38rem;
-  margin: 0.95rem 0 0;
+.band {
+  border-top: 1px solid var(--line);
+}
+
+.hero > :last-child,
+.band > :last-child,
+.clip figcaption > :last-child,
+.site-footer .shell > :last-child {
+  margin-bottom: 0;
+}
+
+.hero h1,
+.band h2 {
+  margin: 0 0 0.9rem;
+  font-family: var(--serif);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 .hero h1 {
-  margin: 0.6rem 0 0.8rem;
-  font-family: var(--serif);
-  font-size: clamp(2.4rem, 7vw, 4rem);
-  font-weight: 650;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
+  font-size: clamp(2rem, 5vw, 2.6rem);
 }
 
-.kicker {
-  margin: 0;
-  color: var(--matcha);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.hero p,
+.band > p {
+  margin: 0 0 0.9rem;
 }
 
-.lede {
-  margin: 0;
-  max-width: 36rem;
-  font-size: 1.3rem;
-  line-height: 1.4;
+.band h2 {
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
 }
 
 .studio {
   display: grid;
-  gap: 1.5rem;
-  margin: 0 0 3rem;
+  gap: 1.25rem;
+  min-width: 0;
   padding: 1rem;
   background: var(--pale);
   border: 1px solid var(--line);
-  min-width: 0;
 }
 
-.studio-title {
-  grid-column: 1 / -1;
-  margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(1.7rem, 4vw, 2.3rem);
-  font-weight: 650;
-  letter-spacing: -0.02em;
+.stage-card,
+.stack,
+.clip,
+.video-frame,
+.band,
+.hero {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .stage-card {
   background: var(--stage);
   border: 1px solid var(--line);
-  min-width: 0;
 }
 
 .stage-bar {
@@ -246,8 +301,17 @@ a:hover {
 .stage {
   position: relative;
   aspect-ratio: 4 / 3;
+  overflow: hidden;
   background:
     linear-gradient(#d7ecdf, #f7fbf8 55%, #fff4e8);
+}
+
+.stage:has(.ask) {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: auto;
+  min-height: 18rem;
+  overflow: visible;
 }
 
 .sprite {
@@ -259,6 +323,15 @@ a:hover {
   transform: translate(-50%, -50%);
   border-radius: 40% 40% 46% 46%;
   background: var(--matcha-mid);
+}
+
+.stage:has(.ask) .sprite {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  margin: 1.25rem auto 0;
+  flex-shrink: 0;
 }
 
 .sprite::before {
@@ -283,6 +356,14 @@ a:hover {
   border-radius: 1rem;
 }
 
+.stage:has(.ask) .say {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  margin: 1rem 0.75rem 0.75rem;
+}
+
 .ask {
   display: grid;
   gap: 0.45rem;
@@ -296,6 +377,7 @@ a:hover {
 
 .ask input {
   width: 100%;
+  max-width: 100%;
   min-height: 2.75rem;
   padding: 0.4rem 0.6rem;
   border: 2px solid var(--sensing);
@@ -320,7 +402,6 @@ a:hover {
 .stack {
   display: grid;
   gap: 0.35rem;
-  min-width: 0;
   align-content: start;
 }
 
@@ -336,6 +417,7 @@ a:hover {
   font-weight: 700;
   line-height: 1.35;
   border-radius: 4px;
+  overflow-wrap: anywhere;
 }
 
 .block--hat {
@@ -354,10 +436,12 @@ a:hover {
 .slot,
 .reporter {
   display: inline-block;
+  max-width: 100%;
   padding: 0.05rem 0.45rem;
   background: #fff;
   color: var(--ink);
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .slot {
@@ -385,39 +469,31 @@ a:hover {
   border: 0;
 }
 
-.lesson {
-  min-width: 0;
-  max-width: 100%;
-  padding: 0 0 3rem;
-  overflow-wrap: break-word;
-}
-
-.lesson h2 {
-  margin: 0 0 0.8rem;
-  font-family: var(--serif);
-  font-size: clamp(1.7rem, 4vw, 2.3rem);
-  font-weight: 650;
-  letter-spacing: -0.02em;
-}
-
-.lesson p {
-  margin: 0 0 0.9rem;
-}
-
 .steps {
-  display: grid;
-  gap: 1.25rem;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0.4rem 0 1.15rem;
   padding: 0;
   list-style: none;
 }
 
 .steps li {
   min-width: 0;
+  padding-block: 1.15rem;
+  border-top: 1px solid var(--line);
+}
+
+.steps li .block + .block {
+  margin-top: 0.35rem;
+}
+
+.steps li > p:not(.step-label) {
+  margin: 0.75rem 0 0;
 }
 
 .step-label {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.45rem;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -426,7 +502,26 @@ a:hover {
 }
 
 .note {
+  margin: 0;
   color: var(--muted);
+  font-size: 1rem;
+}
+
+.clip-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.35rem;
+}
+
+.clip {
+  margin: 0;
+  padding: 0;
+}
+
+.clip + .clip {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
 }
 
 .video-frame {
@@ -434,9 +529,8 @@ a:hover {
   width: 100%;
   max-width: 100%;
   aspect-ratio: 16 / 9;
-  margin: 0 0 0.55rem;
   overflow: hidden;
-  background: #1c241c;
+  background: var(--ink);
 }
 
 .video-frame iframe {
@@ -449,27 +543,32 @@ a:hover {
   border: 0;
 }
 
-.clip {
-  margin: 0 0 1.75rem;
+.clip figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  width: 100%;
   max-width: 100%;
-  min-width: 0;
+  margin-top: 0.7rem;
 }
 
-.clip h3,
-.note,
-.note a {
+.clip-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.clip .note,
+.clip .note a {
   overflow-wrap: anywhere;
 }
 
-.clip h3 {
-  margin: 0 0 0.55rem;
-  font-family: var(--serif);
-  font-size: 1.25rem;
-  font-weight: 650;
-}
-
 .site-footer {
-  padding: 1.5rem 0 2.5rem;
+  padding: 1.5rem 0 calc(2rem + var(--safe-b));
   border-top: 1px solid var(--line);
   color: var(--muted);
 }
@@ -478,7 +577,7 @@ a:hover {
   margin: 0 0 0.4rem;
 }
 
-@media (min-width: 52rem) {
+@media (min-width: 48rem) {
   .studio {
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
     align-items: start;
