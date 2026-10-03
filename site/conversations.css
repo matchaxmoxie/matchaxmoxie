@@ -254,7 +254,11 @@ a:hover {
 }
 
 .cover-entry {
-  margin: 2rem 0 0;
+  margin: 1.35rem 0 0;
+}
+
+.cover-entry + .cover-entry {
+  margin-top: 0.85rem;
 }
 
 .cover-entry a {
@@ -649,6 +653,53 @@ a:hover {
 
 .site-footer p {
   margin: 0 0 0.4rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 1.35rem;
+  margin: 0.45rem 0 0.75rem;
+}
+
+.footer-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: var(--matcha);
+}
+
+.footer-nav a[aria-current="page"] {
+  color: var(--matcha);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.28em;
+}
+
+@media (max-width: 40rem) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    width: 100%;
+  }
+
+  .cover-inner {
+    padding-top: clamp(2.75rem, 8vw, 5rem);
+    padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+  }
+
+  .page-body {
+    gap: clamp(3.5rem, 7vw, 5.25rem);
+  }
 }
 
 @media (min-width: 48rem) {
