@@ -3,7 +3,7 @@
 Jade Zhao (matchaxmoxie) is on archive pause for senior year at Indiana University Luddy.
 This series stays as teaching-craft archive from the cookie classroom.
 
-Public page: https://matchaxmoxie.github.io/matchaxmoxie/scratch-studio.html
+Public page: https://matchaxmoxie.github.io/matchaxmoxie/
 
 Original teaching content. Format inspired by popular Scratch how-to videos.
 Not affiliated with Scratch Team. How-tos include step-by-step rebuilds plus

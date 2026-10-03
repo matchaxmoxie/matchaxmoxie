@@ -1,10 +1,10 @@
 # docs · matchaxmoxie
 
-Publish helpers and notes for the **matchaxmoxie** cookie + college brand hub (凤凰 · phoenix).
+Publish helpers and notes for **matchaxmoxie** (凤凰 · phoenix). Code conversations and code help, in a Scratch style.
 
 **Live:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
 
-Hub pages: [Home](https://matchaxmoxie.github.io/matchaxmoxie/) · [Advice](https://matchaxmoxie.github.io/matchaxmoxie/advice.html) · [Vibes](https://matchaxmoxie.github.io/matchaxmoxie/vibes.html) · [About](https://matchaxmoxie.github.io/matchaxmoxie/about.html) · [Say hi](https://matchaxmoxie.github.io/matchaxmoxie/say-hi.html)
+Pages: [Home](https://matchaxmoxie.github.io/matchaxmoxie/) · [I211 clips](https://matchaxmoxie.github.io/matchaxmoxie/i211.html)
 
 ## Related
 

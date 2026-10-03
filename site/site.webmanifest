@@ -1,7 +1,7 @@
 {
   "name": "matchaxmoxie",
   "short_name": "matchaxmoxie",
-  "description": "matchaxmoxie · IU Bloomington. Cookie campus energy. Jade Zhao · @zhao.langxi.",
+  "description": "Code conversations and code help, in a Scratch style.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#fff4e8",

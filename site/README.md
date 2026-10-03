@@ -1,6 +1,6 @@
 # matchaxmoxie site
 
-**IU Bloomington 🍪** · 凤凰 · phoenix · cookie campus energy
+Code conversations and code help, in a Scratch style, for students.
 
 Live: https://matchaxmoxie.github.io/matchaxmoxie/
 
@@ -9,9 +9,6 @@ Live: https://matchaxmoxie.github.io/matchaxmoxie/
 | Page | URL |
 | --- | --- |
 | Home | [index.html](https://matchaxmoxie.github.io/matchaxmoxie/) |
-| Advice | [advice.html](https://matchaxmoxie.github.io/matchaxmoxie/advice.html) |
-| Vibes | [vibes.html](https://matchaxmoxie.github.io/matchaxmoxie/vibes.html) |
-| About | [about.html](https://matchaxmoxie.github.io/matchaxmoxie/about.html) |
-| Say hi | [say-hi.html](https://matchaxmoxie.github.io/matchaxmoxie/say-hi.html) |
+| I211 clips | [i211.html](https://matchaxmoxie.github.io/matchaxmoxie/i211.html) |
 
-Matcha palette: `#006B45` / `#3D6B4A` / `#E8F0E4` / `#FFF4E8`. Miss Zhao lilies favicon.
+Matcha palette: `#006B45` / `#3D6B4A` / `#E8F0E4` / `#FFF4E8`. Scratch block colours on the code help stage.
