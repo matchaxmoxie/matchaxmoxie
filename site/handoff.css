@@ -1,24 +1,25 @@
 /*
  * matchaxmoxie handoffs.
  * Linked only from the handoff pages.
- * Cream #fff4e8, matcha #006b45, mid #3d6b4a, pale #e8f0e4.
+ * Cookie classroom: cream #FFF4E8, matcha #006B45, mid #3D6B4A, pale #E8F0E4.
  */
 
 :root {
   color-scheme: light;
   --cream: #fff4e8;
-  --ink: #1c241c;
-  --muted: #3e4a42;
+  --ink: #142018;
+  --muted: #3a4a40;
   --matcha: #006b45;
   --matcha-mid: #3d6b4a;
+  --matcha-deep: #004830;
   --pale: #e8f0e4;
-  --stage: #ffffff;
-  --line: #c9d7c4;
+  --stage: #fffcf7;
+  --line: #bfd0b8;
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Nunito Sans", Arial, Helvetica, sans-serif;
   --sc: "Noto Serif SC", "Songti SC", serif;
   --measure: 40rem;
-  --section: 2.15rem;
+  --section: 2.05rem;
   --safe-t: env(safe-area-inset-top, 0px);
   --safe-b: env(safe-area-inset-bottom, 0px);
   --safe-l: env(safe-area-inset-left, 0px);
@@ -44,7 +45,8 @@ body {
 body {
   margin: 0;
   overflow-x: clip;
-  background: var(--cream);
+  background:
+    linear-gradient(180deg, var(--pale) 0%, var(--cream) 14rem, var(--cream) 100%);
   color: var(--ink);
   font-family: var(--sans);
   font-size: 1.125rem;
@@ -80,7 +82,7 @@ a {
 }
 
 a:hover {
-  color: #004830;
+  color: var(--matcha-deep);
 }
 
 :focus-visible {
@@ -130,8 +132,8 @@ a:hover {
   top: 0;
   z-index: 30;
   padding: calc(0.9rem + var(--safe-t)) 0 0.35rem;
-  background: var(--cream);
-  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--cream) 92%, #fff);
+  border-bottom: 2px solid var(--matcha-mid);
 }
 
 .top-bar {
@@ -223,12 +225,12 @@ a:hover {
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-size: clamp(2.1rem, 5.2vw, 2.75rem);
 }
 
 .band h2,
 .guide-list h3 {
-  font-size: clamp(1.35rem, 3vw, 1.7rem);
+  font-size: clamp(1.3rem, 2.8vw, 1.65rem);
 }
 
 .hero p,
@@ -282,7 +284,9 @@ a:hover {
   max-width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: var(--ink);
+  background: #102418;
+  border: 2px solid var(--matcha);
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--matcha-mid) 45%, transparent);
 }
 
 .video-frame iframe {
@@ -301,6 +305,7 @@ a:hover {
   padding: 1rem;
   background: var(--pale);
   border: 2px dashed var(--matcha-mid);
+  box-shadow: none;
   color: var(--ink);
   text-align: center;
 }
@@ -347,14 +352,14 @@ a:hover {
 }
 
 .pdf-link:hover {
-  background: #004830;
+  background: var(--matcha-deep);
   color: #fff;
 }
 
 .guide-list,
 .link-list {
   display: grid;
-  gap: 0.75rem;
+  gap: 0.9rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -367,9 +372,10 @@ a:hover {
 }
 
 .guide-list li {
-  padding: 0.95rem 1rem 0.35rem;
+  padding: 1.05rem 1.1rem 0.55rem;
   background: var(--stage);
-  border: 1px solid var(--line);
+  border: 1.5px solid var(--line);
+  border-left: 4px solid var(--matcha);
 }
 
 .group + .group {
@@ -393,8 +399,8 @@ a:hover {
 }
 
 .jump a:hover {
-  color: #004830;
-  border-bottom-color: #004830;
+  color: var(--matcha-deep);
+  border-bottom-color: var(--matcha-deep);
 }
 
 .site-footer {

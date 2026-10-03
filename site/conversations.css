@@ -1,8 +1,8 @@
 /*
  * matchaxmoxie · code conversations
  * Cookie classroom, composed as a wide page: cover, then the work.
- * Palette: cream #fff4e8, chalk #fffaf4, matcha #006b45,
- * mid #3d6b4a, pale #e8f0e4.
+ * Palette: cream #FFF4E8, chalk #FFFAF4, matcha #006B45,
+ * mid #3D6B4A, pale #E8F0E4.
  * Scratch block colours stay on the stage and the steps only.
  * Blocks: motion #4C97FF, looks #9966FF, sound #CF63CF, events #FFBF00,
  * control #FFAB19, sensing #5CB1D6, operators #59C059, variables #FF8C1A.
@@ -12,13 +12,14 @@
   color-scheme: light;
   --cream: #fff4e8;
   --chalk: #fffaf4;
-  --ink: #1c241c;
-  --muted: #3e4a42;
+  --ink: #142018;
+  --muted: #3a4a40;
   --matcha: #006b45;
   --matcha-mid: #3d6b4a;
+  --matcha-deep: #004830;
   --pale: #e8f0e4;
-  --stage: #ffffff;
-  --line: #c9d7c4;
+  --stage: #fffcf7;
+  --line: #bfd0b8;
   --motion: #4c97ff;
   --looks: #9966ff;
   --sound: #cf63cf;
@@ -32,7 +33,7 @@
   --sans: "Nunito Sans", Arial, Helvetica, sans-serif;
   --sc: "Noto Serif SC", "Songti SC", serif;
   --shell: 72rem;
-  --display: clamp(3.15rem, 7.2vw, 6.25rem);
+  --display: clamp(3.25rem, 7.4vw, 6.4rem);
   --title: clamp(1.85rem, 2.6vw, 2.45rem);
   --lede: clamp(1.28rem, 1.7vw, 1.55rem);
   --space-week: clamp(4.75rem, 8vw, 6.75rem);
@@ -90,7 +91,7 @@ a {
 }
 
 a:hover {
-  color: #004830;
+  color: var(--matcha-deep);
 }
 
 :focus-visible {
@@ -142,8 +143,8 @@ a:hover {
   top: 0;
   z-index: 30;
   padding: calc(0.65rem + var(--safe-t)) 0 0.55rem;
-  background: var(--cream);
-  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--cream) 92%, #fff);
+  border-bottom: 2px solid var(--matcha-mid);
 }
 
 .top-bar {
@@ -209,13 +210,14 @@ a:hover {
 }
 
 .cover {
-  background: var(--pale);
-  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(165deg, var(--pale) 0%, #f3f8ef 42%, var(--cream) 100%);
+  border-bottom: 3px solid var(--matcha);
 }
 
 .cover-inner {
-  padding-top: clamp(3.5rem, 9vw, 7rem);
-  padding-bottom: clamp(3.25rem, 7vw, 5.75rem);
+  padding-top: clamp(3.25rem, 8.5vw, 6.5rem);
+  padding-bottom: clamp(2.85rem, 6.5vw, 5.25rem);
 }
 
 .cover h1 {
@@ -225,7 +227,7 @@ a:hover {
   font-size: var(--display);
   font-weight: 650;
   letter-spacing: -0.035em;
-  line-height: 0.96;
+  line-height: 0.94;
 }
 
 .kicker,
@@ -277,8 +279,8 @@ a:hover {
 }
 
 .cover-entry a:hover {
-  color: #004830;
-  border-bottom-color: #004830;
+  color: var(--matcha-deep);
+  border-bottom-color: var(--matcha-deep);
 }
 
 .page-body {
@@ -605,8 +607,9 @@ a:hover {
   max-width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: var(--pale);
-  border: 1px solid var(--line);
+  background: #102418;
+  border: 2px solid var(--matcha);
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--matcha-mid) 45%, transparent);
 }
 
 .video-frame iframe {
