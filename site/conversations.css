@@ -1,25 +1,26 @@
 /*
  * matchaxmoxie · code conversations
- * Cookie classroom, composed as a wide page: cover, then the work.
- * Palette: cream #FFF4E8, chalk #FFFAF4, matcha #006B45,
- * mid #3D6B4A, pale #E8F0E4.
- * Scratch block colours stay on the stage and the steps only.
- * Blocks: motion #4C97FF, looks #9966FF, sound #CF63CF, events #FFBF00,
- * control #FFAB19, sensing #5CB1D6, operators #59C059, variables #FF8C1A.
+ * Classic scratch.mit.edu web feel: orange top bar, white stage,
+ * grey borders, Helvetica, Scratch block chips.
+ * Block colours (Scratch 3): motion #4C97FF, looks #9966FF,
+ * sound #CF63CF, events #FFBF00, control #FFAB19, sensing #5CB1D6,
+ * operators #59C059, variables #FF8C1A. Brand orange #FF8C1A.
+ * Logo / Scratch Cat trademarks are not used.
  */
 
 :root {
   color-scheme: light;
-  --cream: #fff4e8;
-  --chalk: #fffaf4;
-  --ink: #142018;
-  --muted: #3a4a40;
-  --matcha: #006b45;
-  --matcha-mid: #3d6b4a;
-  --matcha-deep: #004830;
-  --pale: #e8f0e4;
-  --stage: #fffcf7;
-  --line: #bfd0b8;
+  --scratch-orange: #ff8c1a;
+  --scratch-orange-deep: #e46c00;
+  --scratch-orange-soft: #ffe4c2;
+  --paper: #e9eef2;
+  --well: #ffffff;
+  --ink: #222326;
+  --muted: #575e75;
+  --line: #d0d6dc;
+  --line-strong: #b3b9c0;
+  --stage: #ffffff;
+  --stage-sky: #cce9ff;
   --motion: #4c97ff;
   --looks: #9966ff;
   --sound: #cf63cf;
@@ -29,15 +30,16 @@
   --operators: #59c059;
   --variables: #ff8c1a;
   --flag: #4cbf56;
-  --serif: "Fraunces", Georgia, "Times New Roman", serif;
-  --sans: "Nunito Sans", Arial, Helvetica, sans-serif;
+  --flag-ink: #0d3d22;
+  --serif: Helvetica, Arial, sans-serif;
+  --sans: Helvetica, Arial, sans-serif;
   --sc: "Noto Serif SC", "Songti SC", serif;
   --shell: 72rem;
-  --display: clamp(3.25rem, 7.4vw, 6.4rem);
-  --title: clamp(1.85rem, 2.6vw, 2.45rem);
-  --lede: clamp(1.28rem, 1.7vw, 1.55rem);
-  --space-week: clamp(4.75rem, 8vw, 6.75rem);
-  --space-clip: 1.85rem;
+  --display: clamp(2.4rem, 5.5vw, 3.6rem);
+  --title: clamp(1.45rem, 2.2vw, 1.85rem);
+  --lede: clamp(1.12rem, 1.5vw, 1.3rem);
+  --space-week: clamp(3rem, 6vw, 4.5rem);
+  --space-clip: 1.65rem;
   --safe-t: env(safe-area-inset-top, 0px);
   --safe-b: env(safe-area-inset-bottom, 0px);
   --safe-l: env(safe-area-inset-left, 0px);
@@ -51,17 +53,17 @@
 }
 
 html {
-  scroll-padding-top: 8rem;
+  scroll-padding-top: 5.5rem;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   overflow-x: clip;
-  background: var(--cream);
+  background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   line-height: 1.55;
 }
 
@@ -85,13 +87,13 @@ video {
 }
 
 a {
-  color: var(--matcha);
+  color: var(--motion);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
 
 a:hover {
-  color: var(--matcha-deep);
+  color: #2e6fd6;
 }
 
 :focus-visible {
@@ -109,7 +111,7 @@ a:hover {
   top: -200%;
   z-index: 50;
   padding: 0.6rem 0.9rem;
-  background: var(--matcha);
+  background: var(--scratch-orange);
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -142,9 +144,10 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 30;
-  padding: calc(0.65rem + var(--safe-t)) 0 0.55rem;
-  background: color-mix(in srgb, var(--cream) 92%, #fff);
-  border-bottom: 2px solid var(--matcha-mid);
+  padding: calc(0.55rem + var(--safe-t)) 0 0.5rem;
+  background: var(--scratch-orange);
+  border-bottom: 3px solid var(--scratch-orange-deep);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
 }
 
 .top-bar {
@@ -159,7 +162,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.1rem 1.35rem;
+  gap: 0.1rem 1.15rem;
   margin: 0;
   padding: 0;
 }
@@ -167,88 +170,91 @@ a:hover {
 .site-nav a {
   display: inline-flex;
   align-items: center;
-  min-height: 2.75rem;
-  padding: 0.2rem 0;
-  color: var(--ink);
+  min-height: 2.5rem;
+  padding: 0.2rem 0.35rem;
+  color: #fff;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .site-nav a:hover {
-  color: var(--matcha);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .site-nav a[aria-current="page"] {
-  color: var(--matcha);
-  text-decoration: underline;
-  text-decoration-color: var(--matcha);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 0.32em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.16);
+  text-decoration: none;
 }
 
 .brand {
   display: inline-block;
   margin: 0;
-  padding: 0.35rem 0;
-  color: var(--ink);
-  font-family: var(--serif);
-  font-size: 1.2rem;
-  font-weight: 650;
+  padding: 0.35rem 0.4rem;
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 1.15rem;
+  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .brand .sc {
-  color: var(--matcha);
+  color: #fff;
   margin-right: 0.28rem;
 }
 
 .brand:hover {
-  color: var(--ink);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .cover {
-  background:
-    linear-gradient(165deg, var(--pale) 0%, #f3f8ef 42%, var(--cream) 100%);
-  border-bottom: 3px solid var(--matcha);
+  background: var(--well);
+  border-bottom: 2px solid var(--line);
 }
 
 .cover-inner {
-  padding-top: clamp(3.25rem, 8.5vw, 6.5rem);
-  padding-bottom: clamp(2.85rem, 6.5vw, 5.25rem);
+  padding-top: clamp(2rem, 5vw, 3.25rem);
+  padding-bottom: clamp(1.75rem, 4vw, 2.75rem);
 }
 
 .cover h1 {
-  max-width: 11em;
+  max-width: 14em;
   margin: 0;
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: var(--display);
-  font-weight: 650;
-  letter-spacing: -0.035em;
-  line-height: 0.94;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  color: var(--ink);
 }
 
 .kicker,
 .lede,
 .cover-note,
 .cover-entry {
-  max-width: 34rem;
+  max-width: 36rem;
 }
 
 .kicker {
-  margin: 0 0 1.15rem;
-  color: var(--matcha);
-  font-size: 1rem;
+  margin: 0 0 0.85rem;
+  color: var(--scratch-orange-deep);
+  font-size: 0.95rem;
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
 .lede {
-  margin: 1.35rem 0 0;
+  margin: 1rem 0 0;
   font-size: var(--lede);
-  line-height: 1.4;
+  line-height: 1.45;
+  color: var(--muted);
 }
 
 .cover-note {
@@ -256,39 +262,42 @@ a:hover {
 }
 
 .cover-entry {
-  margin: 1.35rem 0 0;
+  margin: 1.1rem 0 0;
 }
 
 .cover-entry + .cover-entry {
-  margin-top: 0.85rem;
+  margin-top: 0.55rem;
 }
 
 .cover-entry a {
   display: inline-flex;
   align-items: center;
-  min-height: 2.75rem;
-  padding: 0.15rem 0;
-  color: var(--matcha);
-  font-family: var(--serif);
-  font-size: clamp(1.25rem, 2vw, 1.6rem);
-  font-weight: 650;
-  letter-spacing: -0.02em;
+  min-height: 2.5rem;
+  padding: 0.35rem 0.75rem;
+  color: #fff;
+  background: var(--motion);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0;
   line-height: 1.25;
   text-decoration: none;
-  border-bottom: 2px solid var(--matcha);
+  border-radius: 6px;
+  border: 2px solid #2e6fd6;
 }
 
 .cover-entry a:hover {
-  color: var(--matcha-deep);
-  border-bottom-color: var(--matcha-deep);
+  color: #fff;
+  background: #2e6fd6;
+  border-bottom-color: #2e6fd6;
 }
 
 .page-body {
   display: flex;
   flex-direction: column;
   gap: var(--space-week);
-  padding-top: clamp(3.25rem, 6vw, 5rem);
-  padding-bottom: clamp(3.5rem, 7vw, 6rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 
 .band {
@@ -304,12 +313,12 @@ a:hover {
 
 .band h2,
 .week h2 {
-  margin: 0 0 0.85rem;
-  font-family: var(--serif);
+  margin: 0 0 0.75rem;
+  font-family: var(--sans);
   font-size: var(--title);
-  font-weight: 650;
-  letter-spacing: -0.03em;
-  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
 }
 
 .band > p,
@@ -323,11 +332,12 @@ a:hover {
 
 .studio {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
   min-width: 0;
-  padding: clamp(0.85rem, 2vw, 1.35rem);
-  background: var(--chalk);
-  border: 1px solid var(--line);
+  padding: clamp(0.75rem, 2vw, 1.1rem);
+  background: #f0f4f7;
+  border: 2px solid var(--line-strong);
+  border-radius: 8px;
 }
 
 .stage-card,
@@ -343,15 +353,18 @@ a:hover {
 
 .stage-card {
   background: var(--stage);
-  border: 1px solid var(--line);
+  border: 2px solid var(--line-strong);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .stage-bar {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.65rem 0.75rem;
-  border-bottom: 1px solid var(--line);
+  padding: 0.55rem 0.7rem;
+  background: #f7f9fb;
+  border-bottom: 2px solid var(--line);
 }
 
 .flag {
@@ -367,16 +380,21 @@ a:hover {
   cursor: pointer;
 }
 
+.flag:hover {
+  filter: brightness(1.05);
+}
+
 .flag-icon {
   width: 0.9rem;
   height: 1.05rem;
-  background: #0d3d22;
+  background: var(--flag-ink);
   clip-path: polygon(0 100%, 42% 0, 100% 52%);
 }
 
 .stage-label {
   margin: 0;
   font-weight: 700;
+  color: var(--muted);
 }
 
 .stage {
@@ -384,7 +402,7 @@ a:hover {
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background:
-    linear-gradient(#d7ecdf, #f7fbf8 55%, #fff4e8);
+    linear-gradient(180deg, var(--stage-sky) 0%, #e8f6ff 42%, #f7fbf8 70%, #fff 100%);
 }
 
 .stage:has(.ask) {
@@ -403,7 +421,8 @@ a:hover {
   height: 4.5rem;
   transform: translate(-50%, -50%);
   border-radius: 40% 40% 46% 46%;
-  background: var(--matcha-mid);
+  background: var(--scratch-orange);
+  border: 2px solid var(--scratch-orange-deep);
 }
 
 .stage:has(.ask) .sprite {
@@ -422,7 +441,7 @@ a:hover {
   top: 1.2rem;
   border-top: 0.45rem solid transparent;
   border-bottom: 0.45rem solid transparent;
-  border-left: 0.7rem solid #e7a04a;
+  border-left: 0.7rem solid #ffbf00;
 }
 
 .say {
@@ -500,6 +519,7 @@ a:hover {
   line-height: 1.35;
   border-radius: 4px;
   overflow-wrap: anywhere;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.12);
 }
 
 .block--hat {
@@ -561,9 +581,10 @@ a:hover {
 
 .steps li {
   min-width: 0;
-  padding: 1.15rem 1.15rem 1.3rem;
-  background: var(--pale);
-  border: 1px solid var(--line);
+  padding: 1.05rem 1.05rem 1.2rem;
+  background: var(--well);
+  border: 2px solid var(--line);
+  border-radius: 8px;
 }
 
 .steps li .block + .block {
@@ -576,11 +597,11 @@ a:hover {
 
 .step-label {
   margin: 0 0 0.7rem;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--matcha);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--scratch-orange-deep);
 }
 
 .note {
@@ -607,9 +628,10 @@ a:hover {
   max-width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: #102418;
-  border: 2px solid var(--matcha);
-  box-shadow: 4px 4px 0 color-mix(in srgb, var(--matcha-mid) 45%, transparent);
+  background: #1e2228;
+  border: 2px solid var(--line-strong);
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
 }
 
 .video-frame iframe {
@@ -635,10 +657,10 @@ a:hover {
 
 .clip-title {
   margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(1.2rem, 1.6vw, 1.4rem);
-  font-weight: 650;
-  letter-spacing: -0.02em;
+  font-family: var(--sans);
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-weight: 700;
+  letter-spacing: 0;
   line-height: 1.3;
 }
 
@@ -648,9 +670,9 @@ a:hover {
 }
 
 .site-footer {
-  padding: 2.25rem 0 calc(2.5rem + var(--safe-b));
-  background: var(--pale);
-  border-top: 1px solid var(--line);
+  padding: 1.75rem 0 calc(2.25rem + var(--safe-b));
+  background: #dfe6ec;
+  border-top: 2px solid var(--line-strong);
   color: var(--muted);
 }
 
@@ -675,11 +697,11 @@ a:hover {
 }
 
 .footer-nav a:hover {
-  color: var(--matcha);
+  color: var(--motion);
 }
 
 .footer-nav a[aria-current="page"] {
-  color: var(--matcha);
+  color: var(--scratch-orange-deep);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.28em;
@@ -696,12 +718,12 @@ a:hover {
   }
 
   .cover-inner {
-    padding-top: clamp(2.75rem, 8vw, 5rem);
-    padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+    padding-top: clamp(1.75rem, 6vw, 2.75rem);
+    padding-bottom: clamp(1.5rem, 5vw, 2.25rem);
   }
 
   .page-body {
-    gap: clamp(3.5rem, 7vw, 5.25rem);
+    gap: clamp(2.5rem, 6vw, 3.5rem);
   }
 }
 
@@ -713,7 +735,7 @@ a:hover {
   .studio {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
     align-items: start;
-    gap: 1.75rem;
+    gap: 1.5rem;
   }
 }
 
