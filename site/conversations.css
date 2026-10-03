@@ -1,14 +1,9 @@
 /*
  * matchaxmoxie · code conversations
- * Classroom chrome is matcha and phoenix. The blocks follow Scratch.
- * Scratch reference (colours and the green-flag stage, not a copied stylesheet):
- * https://scratch.mit.edu/projects/editor/
- *
- * Spacing only: one column, even section gaps, stacked clips.
- * Looked at https://kellyleedekay.com/portfolio-kld-2026/ for that rhythm.
- * CSS not copied.
- *
- * Page: cream #fff4e8, ink #1c241c, matcha #006b45, mid #3d6b4a, pale #e8f0e4.
+ * Cookie classroom, composed as a wide page: cover, then the work.
+ * Palette: cream #fff4e8, chalk #fffaf4, matcha #006b45,
+ * mid #3d6b4a, pale #e8f0e4.
+ * Scratch block colours stay on the stage and the steps only.
  * Blocks: motion #4C97FF, looks #9966FF, sound #CF63CF, events #FFBF00,
  * control #FFAB19, sensing #5CB1D6, operators #59C059, variables #FF8C1A.
  */
@@ -16,6 +11,7 @@
 :root {
   color-scheme: light;
   --cream: #fff4e8;
+  --chalk: #fffaf4;
   --ink: #1c241c;
   --muted: #3e4a42;
   --matcha: #006b45;
@@ -35,8 +31,12 @@
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Nunito Sans", Arial, Helvetica, sans-serif;
   --sc: "Noto Serif SC", "Songti SC", serif;
-  --measure: 40rem;
-  --section: 2.75rem;
+  --shell: 72rem;
+  --display: clamp(3.15rem, 7.2vw, 6.25rem);
+  --title: clamp(1.85rem, 2.6vw, 2.45rem);
+  --lede: clamp(1.28rem, 1.7vw, 1.55rem);
+  --space-week: clamp(4.75rem, 8vw, 6.75rem);
+  --space-clip: 1.85rem;
   --safe-t: env(safe-area-inset-top, 0px);
   --safe-b: env(safe-area-inset-bottom, 0px);
   --safe-l: env(safe-area-inset-left, 0px);
@@ -50,7 +50,7 @@
 }
 
 html {
-  scroll-padding-top: 7.5rem;
+  scroll-padding-top: 8rem;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -127,7 +127,7 @@ a:hover {
 }
 
 .shell {
-  width: min(var(--measure), 100%);
+  width: min(var(--shell), 100%);
   margin-inline: auto;
   padding-inline: max(1.25rem, var(--safe-l)) max(1.25rem, var(--safe-r));
 }
@@ -141,24 +141,24 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 30;
-  padding: calc(0.9rem + var(--safe-t)) 0 0.35rem;
+  padding: calc(0.65rem + var(--safe-t)) 0 0.55rem;
   background: var(--cream);
   border-bottom: 1px solid var(--line);
 }
 
 .top-bar {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.15rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem 1.75rem;
 }
 
 .site-nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.15rem 1.25rem;
-  width: 100%;
+  gap: 0.1rem 1.35rem;
   margin: 0;
   padding: 0;
 }
@@ -189,64 +189,138 @@ a:hover {
 .brand {
   display: inline-block;
   margin: 0;
+  padding: 0.35rem 0;
   color: var(--ink);
   font-family: var(--serif);
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 650;
   line-height: 1.2;
   letter-spacing: -0.02em;
   text-decoration: none;
-  border-bottom: 3px solid var(--matcha);
+}
+
+.brand .sc {
+  color: var(--matcha);
+  margin-right: 0.28rem;
 }
 
 .brand:hover {
   color: var(--ink);
 }
 
-.hero,
-.band {
-  padding-block: var(--section);
+.cover {
+  background: var(--pale);
+  border-bottom: 1px solid var(--line);
+}
+
+.cover-inner {
+  padding-top: clamp(3.5rem, 9vw, 7rem);
+  padding-bottom: clamp(3.25rem, 7vw, 5.75rem);
+}
+
+.cover h1 {
+  max-width: 11em;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: var(--display);
+  font-weight: 650;
+  letter-spacing: -0.035em;
+  line-height: 0.96;
+}
+
+.kicker,
+.lede,
+.cover-note,
+.cover-entry {
+  max-width: 34rem;
+}
+
+.kicker {
+  margin: 0 0 1.15rem;
+  color: var(--matcha);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.lede {
+  margin: 1.35rem 0 0;
+  font-size: var(--lede);
+  line-height: 1.4;
+}
+
+.cover-note {
+  margin: 1rem 0 0;
+}
+
+.cover-entry {
+  margin: 2rem 0 0;
+}
+
+.cover-entry a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.15rem 0;
+  color: var(--matcha);
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  text-decoration: none;
+  border-bottom: 2px solid var(--matcha);
+}
+
+.cover-entry a:hover {
+  color: #004830;
+  border-bottom-color: #004830;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-week);
+  padding-top: clamp(3.25rem, 6vw, 5rem);
+  padding-bottom: clamp(3.5rem, 7vw, 6rem);
 }
 
 .band {
-  border-top: 1px solid var(--line);
+  min-width: 0;
+  max-width: 100%;
 }
 
-.hero > :last-child,
 .band > :last-child,
 .clip figcaption > :last-child,
 .site-footer .shell > :last-child {
   margin-bottom: 0;
 }
 
-.hero h1,
-.band h2 {
-  margin: 0 0 0.9rem;
+.band h2,
+.week h2 {
+  margin: 0 0 0.85rem;
   font-family: var(--serif);
+  font-size: var(--title);
   font-weight: 650;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
 }
 
-.hero h1 {
-  font-size: clamp(2rem, 5vw, 2.6rem);
+.band > p,
+.week-folder {
+  margin: 0 0 1rem;
 }
 
-.hero p,
-.band > p {
-  margin: 0 0 0.9rem;
-}
-
-.band h2 {
-  font-size: clamp(1.45rem, 3vw, 1.85rem);
+.week-folder {
+  margin-bottom: 1.5rem;
 }
 
 .studio {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.5rem;
   min-width: 0;
-  padding: 1rem;
-  background: var(--pale);
+  padding: clamp(0.85rem, 2vw, 1.35rem);
+  background: var(--chalk);
   border: 1px solid var(--line);
 }
 
@@ -254,8 +328,9 @@ a:hover {
 .stack,
 .clip,
 .video-frame,
-.band,
-.hero {
+.week,
+.cover,
+.page-body {
   min-width: 0;
   max-width: 100%;
 }
@@ -401,7 +476,7 @@ a:hover {
 
 .stack {
   display: grid;
-  gap: 0.35rem;
+  gap: 0.4rem;
   align-content: start;
 }
 
@@ -410,6 +485,7 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.35rem 0.45rem;
+  width: fit-content;
   max-width: 100%;
   margin: 0;
   padding: 0.55rem 0.8rem 0.6rem;
@@ -470,35 +546,35 @@ a:hover {
 }
 
 .steps {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  margin: 0.4rem 0 1.15rem;
+  display: grid;
+  gap: 1rem;
+  margin: 1.35rem 0 1.5rem;
   padding: 0;
   list-style: none;
 }
 
 .steps li {
   min-width: 0;
-  padding-block: 1.15rem;
-  border-top: 1px solid var(--line);
+  padding: 1.15rem 1.15rem 1.3rem;
+  background: var(--pale);
+  border: 1px solid var(--line);
 }
 
 .steps li .block + .block {
-  margin-top: 0.35rem;
+  margin-top: 0.4rem;
 }
 
 .steps li > p:not(.step-label) {
-  margin: 0.75rem 0 0;
+  margin: 0.85rem 0 0;
 }
 
 .step-label {
-  margin: 0 0 0.45rem;
-  font-size: 0.8rem;
+  margin: 0 0 0.7rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--matcha-mid);
+  color: var(--matcha);
 }
 
 .note {
@@ -510,18 +586,13 @@ a:hover {
 .clip-list {
   display: flex;
   flex-direction: column;
-  margin-top: 0.35rem;
+  gap: var(--space-clip);
+  margin: 0;
 }
 
 .clip {
   margin: 0;
   padding: 0;
-}
-
-.clip + .clip {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
 }
 
 .video-frame {
@@ -530,7 +601,8 @@ a:hover {
   max-width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: var(--ink);
+  background: var(--pale);
+  border: 1px solid var(--line);
 }
 
 .video-frame iframe {
@@ -538,6 +610,7 @@ a:hover {
   inset: 0;
   display: block;
   width: 100%;
+  min-width: 0;
   max-width: 100%;
   height: 100%;
   border: 0;
@@ -549,14 +622,14 @@ a:hover {
   align-items: flex-start;
   gap: 0.35rem;
   width: 100%;
-  max-width: 100%;
-  margin-top: 0.7rem;
+  max-width: 40rem;
+  margin-top: 0.8rem;
 }
 
 .clip-title {
   margin: 0;
   font-family: var(--serif);
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 1.6vw, 1.4rem);
   font-weight: 650;
   letter-spacing: -0.02em;
   line-height: 1.3;
@@ -568,7 +641,8 @@ a:hover {
 }
 
 .site-footer {
-  padding: 1.5rem 0 calc(2rem + var(--safe-b));
+  padding: 2.25rem 0 calc(2.5rem + var(--safe-b));
+  background: var(--pale);
   border-top: 1px solid var(--line);
   color: var(--muted);
 }
@@ -578,8 +652,21 @@ a:hover {
 }
 
 @media (min-width: 48rem) {
+  .shell {
+    padding-inline: max(2rem, var(--safe-l)) max(2rem, var(--safe-r));
+  }
+
   .studio {
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    align-items: start;
+    gap: 1.75rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
     align-items: start;
   }
 }
