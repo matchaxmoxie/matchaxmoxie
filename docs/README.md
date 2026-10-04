@@ -4,7 +4,9 @@ Publish helpers and notes for **matchaxmoxie** (凤凰 · phoenix). Code convers
 
 **Live:** [matchaxmoxie.github.io/matchaxmoxie](https://matchaxmoxie.github.io/matchaxmoxie/)
 
-Pages: [Home](https://matchaxmoxie.github.io/matchaxmoxie/) · [I211 clips](https://matchaxmoxie.github.io/matchaxmoxie/i211.html)
+Pages: [Home](https://matchaxmoxie.github.io/matchaxmoxie/) · [I211 clips](https://matchaxmoxie.github.io/matchaxmoxie/i211.html) · [Handoffs](https://matchaxmoxie.github.io/matchaxmoxie/handoffs.html)
+
+Handoffs learn order: Google Sites → Wix → Squarespace → WordPress → CapCut → Square → Clover → Toast → DoorDash.
 
 ## Related
 
