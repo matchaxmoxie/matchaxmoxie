@@ -3,118 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Scratch playground · matchaxmoxie</title>
-  <meta name="description" content="Play matchaxmoxie Scratch starters in the browser. Green flag, stop, download .sb3 to remix.">
-  <meta name="theme-color" content="#ff8c1a">
-  <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/scratch-play.html">
-  <meta property="og:title" content="Scratch playground · matchaxmoxie">
-  <meta property="og:description" content="Play Scratch starters in the browser. Green flag, stop, download .sb3.">
-  <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/scratch-play.html">
-  <meta property="og:type" content="website">
+  <meta name="robots" content="noindex">
+  <title>Page retired · matchaxmoxie</title>
+  <meta name="theme-color" content="#d96a4a">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap&text=%E5%87%A4%E5%87%B0" rel="stylesheet">
-  <link rel="stylesheet" href="conversations.css?v=20261004-whitney">
-  <style>
-    .play-shell { max-width: 52rem; margin: 0 auto; padding: 1.25rem max(1rem, env(safe-area-inset-left)) 2.5rem max(1rem, env(safe-area-inset-right)); }
-    .play-toolbar { display: flex; flex-wrap: wrap; gap: 0.65rem; align-items: center; margin: 0.85rem 0 1rem; }
-    .play-toolbar button, .play-toolbar a.btn-dl {
-      min-height: 2.75rem; padding: 0.45rem 0.95rem; border: 2px solid #222326; border-radius: 4px;
-      font: inherit; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center;
-    }
-    #scratch-green-flag { background: #4cbf56; color: #0d3d22; }
-    #scratch-stop-all { background: #ff661a; color: #fff; }
-    .btn-dl { background: #fff; color: #222326; }
-    .scratch-picks { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0 0 1rem; }
-    .scratch-pick-btn {
-      min-height: 2.5rem; padding: 0.35rem 0.75rem; border: 2px solid #b3b9c0; border-radius: 999px;
-      background: #fff; font: inherit; font-weight: 600; cursor: pointer;
-    }
-    .scratch-pick-btn[aria-pressed="true"] { border-color: #ff8c1a; background: #ffe4c2; }
-    #scratch-stage {
-      width: 100%; min-height: 22rem; background: #cce9ff; border: 3px solid #222326; border-radius: 4px;
-      display: flex; align-items: center; justify-content: center; overflow: hidden;
-    }
-    #scratch-stage:focus { outline: 3px solid #222326; outline-offset: 3px; }
-    .scratch-player-status { margin: 0.75rem 0 0; font-weight: 600; color: #575e75; }
-    .scratch-player-status--error { color: #b00020; }
-    .howto { margin: 1rem 0; padding: 0.85rem 1rem; background: #fff; border: 2px solid #d0d6dc; border-radius: 8px; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="conversations.css?v=20261005-whitney">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="top">
-    <div class="shell top-bar">
+  <header class="topbar">
+    <div class="shell topbar-inner">
       <a class="brand" href="index.html"><span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</a>
-            <nav class="site-nav" aria-label="matchaxmoxie">
+      <nav class="site-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="scratch-play.html" aria-current="page">Playground</a>
-        <a href="i211.html">I211 clips</a>
+        <a href="i211.html">Code videos</a>
         <a href="handoffs.html">Handoffs</a>
       </nav>
     </div>
   </header>
   <main id="main-content" tabindex="-1">
-    <header class="cover">
-      <div class="shell cover-inner">
-        <p class="kicker">Scratch starters · in-browser</p>
-        <h1 id="scratch-play-title">Scratch playground</h1>
-        <p class="lede" id="scratch-play-lede">Wait for ready, then green flag. Download the .sb3 if you want to remix offline.</p>
+    <header class="hero">
+      <div class="shell hero-inner">
+        <p class="eyebrow">Page retired</p>
+        <h1>This section is no longer active.</h1>
+        <p class="lede">This section has been retired. Head back to the home page for the current AI and handoff direction.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="index.html">Back to home</a>
+          <a class="btn btn-secondary" href="handoffs.html">Open the handoffs</a>
+        </div>
       </div>
     </header>
-    <div class="play-shell">
-      <div class="scratch-picks" role="group" aria-label="Choose a starter">
-        <button type="button" class="scratch-pick-btn" data-project="jumping" aria-pressed="true">Jumping</button>
-        <button type="button" class="scratch-pick-btn" data-project="catch" aria-pressed="false">Catch</button>
-        <button type="button" class="scratch-pick-btn" data-project="pong" aria-pressed="false">Pong</button>
-        <button type="button" class="scratch-pick-btn" data-project="clicker" aria-pressed="false">Clicker</button>
-        <button type="button" class="scratch-pick-btn" data-project="scroll" aria-pressed="false">Scroll</button>
-        <button type="button" class="scratch-pick-btn" data-project="pet" aria-pressed="false">Pet</button>
-        <button type="button" class="scratch-pick-btn" data-project="story" aria-pressed="false">Story</button>
-        <button type="button" class="scratch-pick-btn" data-project="character" aria-pressed="false">Character</button>
-      </div>
-      <div class="play-toolbar">
-        <button type="button" id="scratch-green-flag" disabled>Green flag</button>
-        <button type="button" id="scratch-stop-all" disabled>Stop</button>
-        <a class="btn-dl" id="scratch-pick-download" href="scratch-projects/jumping-game.sb3" download>Download .sb3</a>
-        <a class="btn-dl" id="scratch-pick-go" href="index.html#stage-heading">Back to classroom demo</a>
-      </div>
-      <div id="scratch-stage" tabindex="0" aria-label="Scratch stage"></div>
-      <p id="scratch-player-status" class="scratch-player-status" role="status">Loading player…</p>
-      <aside class="howto">
-        <p id="scratch-howto-controls"><strong>This starter:</strong> Space to jump · ← → to move</p>
-        <p id="scratch-howto-tip">After green flag, click the stage so keys reach the game.</p>
-        <p>If the player fails to load, download the .sb3 and open it in <a href="https://scratch.mit.edu/" rel="noopener noreferrer">scratch.mit.edu</a> (File → Load from your computer).</p>
-      </aside>
-      <aside class="classroom-rule" style="margin-top:1.25rem">
-        <p class="classroom-rule-label">when green flag clicked · kindness</p>
-        <p>People deserve more rooms than one script. Ask, try, revise, and treat each other like we mean it.</p>
-      </aside>
-      <section class="door-handoff" aria-labelledby="play-handoff">
-        <h2 id="play-handoff">Next room</h2>
-        <p>This room is for trying blocks. Ships live on <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>. Essays live on <a href="https://zhao-langxi.github.io/zhao-langxi/" rel="noopener noreferrer">zhao-langxi</a>.</p>
-      </section>
-    </div>
   </main>
-    <footer class="site-footer">
-    <div class="shell">
+  <footer class="site-footer">
+    <div class="shell footer-inner">
       <p>Jade Zhao · <span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</p>
-      <nav class="footer-nav" aria-label="Site">
+      <nav class="footer-nav" aria-label="Footer">
         <a href="index.html">Home</a>
-        <a href="scratch-play.html" aria-current="page">Playground</a>
-        <a href="i211.html">I211</a>
+        <a href="i211.html">Code videos</a>
         <a href="handoffs.html">Handoffs</a>
-      </nav>
-      <nav class="site-switcher" aria-label="Other sites">
-        <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>
-        <a class="current" href="https://matchaxmoxie.github.io/matchaxmoxie/" aria-current="page">matchaxmoxie</a>
-        <a href="https://zhao-langxi.github.io/zhao-langxi/">zhao-langxi</a>
       </nav>
       <p><a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a></p>
     </div>
   </footer>
-  <script src="scratch-player/scaffolding-min.js" defer></script>
-  <script src="scratch-player/player.js" defer></script>
 </body>
 </html>
