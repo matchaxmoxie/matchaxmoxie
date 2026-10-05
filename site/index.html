@@ -15,15 +15,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap&text=%E5%87%A4%E5%87%B0" rel="stylesheet">
-  <link rel="stylesheet" href="conversations.css">
+  <link rel="stylesheet" href="conversations.css?v=20261004-whitney">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="top">
     <div class="shell top-bar">
       <a class="brand" href="index.html"><span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</a>
-      <nav class="site-nav" aria-label="matchaxmoxie">
+            <nav class="site-nav" aria-label="matchaxmoxie">
         <a href="index.html" aria-current="page">Home</a>
+        <a href="scratch-play.html">Playground</a>
         <a href="i211.html">I211 clips</a>
         <a href="handoffs.html">Handoffs</a>
       </nav>
@@ -32,10 +33,11 @@
   <main id="main-content" tabindex="-1">
     <header class="cover">
       <div class="shell cover-inner">
-        <p class="kicker">Jade Zhao · <span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</p>
+        <p class="kicker">Jade Zhao · <span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie · still practicing</p>
         <h1>Code conversations</h1>
         <p class="lede">Code conversations and code help, in a Scratch style. For students.</p>
-        <p>Ask what should happen, try an answer, then change one thing and run it again. What you expected versus what actually ran.</p>
+        <p>Ask what should happen, try an answer, then change one thing and run it again. What you expected versus what actually ran. Nobody arrives on the first green flag.</p>
+        <p class="cover-entry"><a href="scratch-play.html">Scratch playground</a>: try starters in the browser, then download the .sb3 to remix.</p>
         <p class="cover-entry"><a href="i211.html">INFO-I211 clips</a>: Weeks 1 to 5. Short clips from class, then the next try.</p>
         <p class="cover-entry"><a href="handoffs.html">Handoffs</a>: I built it. Someone else has to keep it. Site builders first, then CapCut, then POS and DoorDash.</p>
       </div>
@@ -50,6 +52,9 @@
             <button type="button" class="flag" id="green-flag" aria-describedby="flag-hint">
               <span class="flag-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Green flag</span>
+            </button>
+            <button type="button" class="stop" id="stop-all" disabled aria-label="Stop">
+              <span class="visually-hidden">Stop</span>
             </button>
             <p id="flag-hint" class="stage-label">when green flag clicked</p>
           </div>
@@ -95,48 +100,42 @@
       <h2 id="classroom-rule-heading">A classroom rule I keep</h2>
       <aside class="classroom-rule">
         <p class="classroom-rule-label">when green flag clicked · kindness</p>
-        <p>Whitney Wolfe Herd is a favourite influence ... not for dating apps, for kindness, control of your own choices, and respect. People deserve more rooms than one script. Same energy here: ask, try, revise, and treat each other like we mean it.</p>
+        <p>
+          Early Whitney energy is a favourite influence ... not dating apps, and not "already made it" founder myth.
+          Kindness, control of your own choices, and respect while you are still building.
+          People deserve more rooms than one script. Same energy here: ask, try, revise, and treat each other like we mean it.
+          First-generation and low-income students especially ... nobody owes a perfect first run.
+        </p>
       </aside>
+    </section>
+    <section class="band door-handoff" aria-labelledby="home-handoff">
+      <h2 id="home-handoff">Next room</h2>
+      <p>
+        This room is for practice. Ships live on
+        <a href="https://jadexzhao.github.io/jadexzhao/" rel="noopener noreferrer">jadexzhao</a>.
+        Essays live on
+        <a href="https://zhao-langxi.github.io/zhao-langxi/" rel="noopener noreferrer">zhao-langxi</a>.
+      </p>
     </section>
     </div>
   </main>
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="shell">
       <p>Jade Zhao · <span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</p>
       <nav class="footer-nav" aria-label="Site">
         <a href="index.html" aria-current="page">Home</a>
+        <a href="scratch-play.html">Playground</a>
         <a href="i211.html">I211</a>
         <a href="handoffs.html">Handoffs</a>
+      </nav>
+      <nav class="site-switcher" aria-label="Other sites">
+        <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>
+        <a class="current" href="https://matchaxmoxie.github.io/matchaxmoxie/" aria-current="page">matchaxmoxie</a>
+        <a href="https://zhao-langxi.github.io/zhao-langxi/">zhao-langxi</a>
       </nav>
       <p><a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a></p>
     </div>
   </footer>
-  <script>
-    (function () {
-      var flag = document.getElementById("green-flag");
-      var say = document.getElementById("say");
-      if (!flag || !say) return;
-
-      flag.addEventListener("click", function () {
-        say.innerHTML = "";
-        var prompt = document.createElement("p");
-        prompt.textContent = "What should happen when the name box is empty?";
-        var form = document.createElement("form");
-        form.className = "ask";
-        form.innerHTML = '<label for="scratch-answer">Your answer</label><input id="scratch-answer" name="answer" autocomplete="off"><button type="submit">answer</button>';
-        say.appendChild(prompt);
-        say.appendChild(form);
-        var input = form.querySelector("input");
-        if (input) input.focus();
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-          var value = input && input.value ? input.value.trim() : "";
-          say.textContent = value
-            ? "You said: " + value + ". Next, change one thing and run the flag again."
-            : "The box is empty. That is a costume with nothing in it.";
-        });
-      });
-    })();
-  </script>
+  <script src="scratch-demo.js?v=20261004-whitney" defer></script>
 </body>
 </html>

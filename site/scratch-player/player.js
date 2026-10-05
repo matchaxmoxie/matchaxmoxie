@@ -10,7 +10,7 @@
     jumping: {
       title: "Jumping Game",
       file: "scratch-projects/jumping-game.sb3",
-      howto: "scratch-studio.html#jumping",
+      howto: "index.html#stage-heading",
       controls: "Space to jump · ← → to move",
       tip: "After green flag, click the stage (or empty page) so Space reaches the game, not the buttons.",
       running: "Running. Space jumps · ← → move. Stop pauses.",
@@ -19,7 +19,7 @@
     catch: {
       title: "Catch Game",
       file: "scratch-projects/catch-game.sb3",
-      howto: "scratch-studio.html#catch",
+      howto: "index.html#stage-heading",
       controls: "← → to slide the catcher",
       tip: "After green flag, click the stage so arrow keys reach the game.",
       running: "Running. ← → move the catcher. Stop pauses.",
@@ -28,7 +28,7 @@
     pong: {
       title: "Pong",
       file: "scratch-projects/pong-game.sb3",
-      howto: "scratch-studio.html#pong",
+      howto: "index.html#stage-heading",
       controls: "Mouse to aim the paddle · or ← →",
       tip: "Move the mouse over the stage, or click the stage first if you use arrow keys.",
       running: "Running. Mouse or ← → for the paddle. Stop pauses.",
@@ -37,7 +37,7 @@
     clicker: {
       title: "Clicker",
       file: "scratch-projects/clicker-game.sb3",
-      howto: "scratch-studio.html#clicker",
+      howto: "index.html#stage-heading",
       controls: "Click the main sprite for points · click upgrade when you can afford it",
       tip: "No keyboard needed. Click on the stage sprites.",
       running: "Running. Click the sprite · buy the upgrade. Stop pauses.",
@@ -46,7 +46,7 @@
     scroll: {
       title: "Scrolling Background",
       file: "scratch-projects/scrolling-background.sb3",
-      howto: "scratch-studio.html#scroll",
+      howto: "index.html#stage-heading",
       controls: "Green flag runs the loop · watch the ground scroll",
       tip: "Mostly watch-mode. Optional remix later: hold right arrow in Scratch.",
       running: "Running. Watch the scroll. Stop pauses.",
@@ -55,7 +55,7 @@
     pet: {
       title: "Virtual Pet",
       file: "scratch-projects/virtual-pet.sb3",
-      howto: "scratch-studio.html#pet",
+      howto: "index.html#stage-heading",
       controls: "Click Feed · Play · Rest on the stage",
       tip: "No keyboard. Tap the buttons on the stage.",
       running: "Running. Click Feed, Play, or Rest. Stop pauses.",
@@ -64,7 +64,7 @@
     story: {
       title: "Story",
       file: "scratch-projects/story.sb3",
-      howto: "scratch-studio.html#story",
+      howto: "index.html#stage-heading",
       controls: "Green flag starts the scenes · click choices when they appear",
       tip: "Watch first. Click choice sprites when the story asks.",
       running: "Running. Watch scenes · click choices if you see them. Stop pauses.",
@@ -73,7 +73,7 @@
     character: {
       title: "Character Designer",
       file: "scratch-projects/character-designer.sb3",
-      howto: "scratch-studio.html#character",
+      howto: "index.html#stage-heading",
       controls: "Click the cycle buttons for body · hat · shirt",
       tip: "No keyboard. Click the buttons on the stage to change looks.",
       running: "Running. Click the cycle buttons. Stop pauses.",
@@ -171,8 +171,8 @@
       download.textContent = "Download " + proj.title + " (.sb3) to remix offline";
     }
     if (howto) {
-      howto.href = proj.howto;
-      howto.textContent = "Rebuild steps for " + proj.title + " →";
+      howto.href = "index.html#stage-heading";
+      howto.textContent = "Back to classroom demo";
     }
     if (stageLabel) {
       stageLabel.setAttribute("aria-label", proj.title + " stage");

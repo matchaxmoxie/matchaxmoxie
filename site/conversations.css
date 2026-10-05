@@ -777,3 +777,56 @@ a:hover {
     scroll-behavior: auto;
   }
 }
+
+
+/* Stop control + running state (classroom demo) */
+.stop {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  margin-left: 0.35rem;
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  background: #ff661a;
+  color: #fff;
+  cursor: pointer;
+}
+.stop:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.stage.is-running {
+  box-shadow: inset 0 0 0 3px rgba(76, 191, 86, 0.45);
+}
+.sprite.is-hopping {
+  animation: sprite-hop 0.45s ease-in-out infinite alternate;
+}
+@keyframes sprite-hop {
+  from { transform: translate(-50%, -50%); }
+  to { transform: translate(-50%, calc(-50% - 0.35rem)); }
+}
+.ask-prompt { margin: 0 0 0.35rem; font-weight: 700; }
+.ask-next { margin: 0.55rem 0 0; color: var(--muted); }
+
+.door-handoff {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 2px dashed var(--line-strong);
+}
+.door-handoff h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+.site-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.1rem;
+  margin: 1rem 0 0.5rem;
+  font-weight: 700;
+}
+.site-switcher a { color: var(--ink); text-decoration: none; }
+.site-switcher a:hover { text-decoration: underline; }
+.site-switcher .current {
+  color: var(--scratch-orange-deep);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
