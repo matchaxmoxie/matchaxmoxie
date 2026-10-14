@@ -1,6 +1,6 @@
 # matchaxmoxie site
 
-Code conversations and code help, in a Scratch style, for students.
+Campus classroom door for INFO-I211 code videos and handoff notes.
 
 Live: https://matchaxmoxie.github.io/matchaxmoxie/
 
@@ -18,4 +18,4 @@ Google Sites → Wix → Squarespace → WordPress → CapCut → Square → Clo
 
 Groups on the page: Website builders, then Short video, then POS / orders.
 
-Matcha palette: `#006B45` / `#3D6B4A` / `#E8F0E4` / `#FFF4E8`. Scratch block colours on the code help stage.
+Matcha palette: `#006B45` / `#3D6B4A` / `#E8F0E4` / `#FFF4E8`. Keep phoenix / matcha; do not recolour to IU crimson.

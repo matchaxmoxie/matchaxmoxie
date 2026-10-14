@@ -1,7 +1,7 @@
 {
   "name": "matchaxmoxie",
   "short_name": "matchaxmoxie",
-  "description": "Code conversations and code help, in a Scratch style.",
+  "description": "Campus classroom door for INFO-I211 code videos and handoff notes.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#fff4e8",
