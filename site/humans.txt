@@ -14,7 +14,8 @@ Language: English (en-GB)
 
 /* ALSO JADE */
 Portfolio (ships): https://jadexzhao.github.io/jadexzhao/
-IU Pages: https://jlzhao.pages.iu.edu/
+Narrative: https://www.linkedin.com/in/zhao-langxi/
+Résumé: https://jadexzhao.github.io/jadexzhao/resume.pdf
 Essays: https://zhao-langxi.github.io/zhao-langxi/
 GitHub: https://github.com/matchaxmoxie · https://github.com/jadexzhao
 LinkedIn: https://www.linkedin.com/in/zhao-langxi/

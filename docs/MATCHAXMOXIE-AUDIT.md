@@ -1,0 +1,100 @@
+# matchaxmoxie audit · 26 Oct 2026
+
+Local repo: `~/Documents/matchaxmoxie/`  
+Live: https://matchaxmoxie.github.io/matchaxmoxie/  
+Checker: `node scripts/check-site.mjs` (HTML under `site/` only)
+
+## Publishing pipeline (verified)
+
+| Item | Evidence |
+| --- | --- |
+| **Deployed tree** | Entire `site/` folder (`.github/workflows/pages.yml` → `upload-pages-artifact` path `site`) |
+| **Not deployed** | Repo root `index.html` (redirect to `site/` for local only), `content/` at repo root, `docs/`, `latex/`, `html-plain/`, `scripts/` |
+| **Build step** | None; `touch site/.nojekyll` only |
+| **Trigger** | Push to `main` when `site/**` or workflow changes |
+
+**Implication:** Anything under `site/` is public, including `site/content/` and `site/resume.pdf`, unless removed or blocked at host level.
+
+---
+
+## Executive summary
+
+| Priority | Finding |
+| --- | --- |
+| **P0** | `site/content/fase-26-27/` (MAP agendas, office-hours PDFs, tabling photos) is **world-readable** via GitHub Pages. Not linked from HTML but URL-guessable. Move to `~/Documents/jlzhao/` or repo `content/` (outside `site/`) and purge from git history only if Jade approves. |
+| **P0** | Missing `handoffs/handoff-facebook.pdf` while hub lists Facebook as primary family guide. |
+| **P1** | Homepage hub (Courses / Projects / Handoffs) exists locally but **not pushed** (`site/index.html`, `classroom-ux.css` modified vs `origin/main`). |
+| **P1** | Handoff HTML styling uneven (Facebook redesigned; others thinner). Markdown `**` literals still in some POS guides. |
+| **P1** | No site-wide course template (nav, “mock-up vs live”, reflection blocks vary). |
+| **P1** | `PUBLISH.md` / `humans.txt` still pointed at retired IU Pages (fixed locally). |
+| **P2** | Sitemap omits `scratch-play.html` (noindex OK), no filter/search on courses. |
+| **P2** | `co-create.html` names ChatGPT; acceptable for process transparency but conflicts with hire-site no-brand rule on jadexzhao only. |
+| **P2** | `site/resume.pdf` on classroom site; [VERIFY] canonical résumé is jadexzhao. |
+
+ChatGPT’s “campus survival / four-year path / bars” pages are **not** in current `site/*.html`; those may be historical README promises or unshipped `html-plain/`. Do not treat as live defects.
+
+---
+
+## Page inventory (published HTML)
+
+| File | URL | Purpose | Severity notes |
+| --- | --- | --- | --- |
+| `site/index.html` | `/` | Learning archive hub | P1: local hero + hub cards ahead of remote |
+| `site/i211.html` | `/i211.html` | Code conversation embeds | [VERIFY] Drive IDs for all weeks |
+| `site/handoffs.html` | `/handoffs.html` | Handoff directory | P0: Facebook PDF gap |
+| `site/handoff-*.html` (10) | `/handoff-….html` | Platform guides | P1: style parity; confirm “family uses” vs reference |
+| `site/courses/*.html` (11) | `/courses/…` | Course portfolios | P1: standardise sections; kelley had broken I453 link (fixed) |
+| `site/courses/stub.html` | `/courses/stub.html` | Legacy anchors | noindex; not in sitemap |
+| `site/scratch-play.html` | `/scratch-play.html` | Retired | noindex |
+| `site/404.html` | (error) | Branded 404 | OK |
+
+---
+
+## Handoffs · version matrix
+
+| Guide | HTML | MD | PDF | Notes |
+| --- | --- | --- | --- | --- |
+| Facebook | Yes | Yes | **Missing** | P0 export PDF |
+| CapCut, builders, POS | Yes | Yes | Yes | Re-export after MD edits |
+| Worksheets | N/A | Yes | Yes | |
+| Canonical rule | `site/handoffs/*.md` → Word → PDF per `HOW-TO-REFRESH.md` | | | |
+
+---
+
+## Cross-site links
+
+| Target | Status |
+| --- | --- |
+| jadexzhao ships / projects | Linked from homepage |
+| zhao-langxi | Footer site-switcher |
+| IU Pages | Remove (retired) |
+| LinkedIn | Add where narrative needed |
+
+---
+
+## Accessibility / QA (manual)
+
+- Skip links present on main templates.
+- Contrast toggle: not site-wide (classroom CSS only).
+- Keyboard/mobile: not certified this pass.
+- Run checker before push: `node scripts/check-site.mjs`.
+
+---
+
+## Safe fixes applied (local, not committed)
+
+- `kelley.html`: removed broken `i453.html` link.
+- `humans.txt`, `PUBLISH.md`: IU Pages → LinkedIn + jadexzhao résumé.
+- `404.html`, `scratch-play.html`, `courses/stub.html`: meta descriptions.
+- `robots.txt`: `Disallow: /content/` (mitigation only; files still downloadable).
+- `scripts/check-site.mjs`: new.
+
+---
+
+## Recommended next week
+
+1. **Privacy:** Remove `site/content/fase-26-27/` from deploy tree (highest urgency).
+2. Export `handoff-facebook.pdf`; spot-check PDFs against MD.
+3. Push homepage hub + CSS when copy approved.
+4. Course page template (one partial or documented section order).
+5. Optional: client-side course filter (term/tag) without framework migration.

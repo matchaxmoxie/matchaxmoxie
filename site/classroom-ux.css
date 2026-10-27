@@ -514,3 +514,46 @@
   margin-right: 0.35rem;
   opacity: 0.8;
 }
+
+/* Homepage learning directory */
+.hub-directory {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+@media (min-width: 36rem) {
+  .hub-directory {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hub-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 2px solid var(--matcha-deep, #006b45);
+  border-radius: 12px;
+  background: var(--cream, #fff4e8);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.hub-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 84, 55, 0.12);
+}
+
+.hub-card__title {
+  display: block;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--matcha-deep, #006b45);
+}
+
+.hub-card__dek {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.88rem;
+  opacity: 0.85;
+}

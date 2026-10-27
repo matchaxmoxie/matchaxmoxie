@@ -5,5 +5,6 @@ Allow: /
 # Stubs and retired demos (also noindex in HTML)
 Disallow: /courses/stub.html
 Disallow: /scratch-play.html
+Disallow: /content/
 
 Sitemap: https://matchaxmoxie.github.io/matchaxmoxie/sitemap.xml

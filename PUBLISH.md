@@ -30,7 +30,7 @@ Local repo: `~/Documents/matchaxmoxie/`
 | --- | --- | --- |
 | **matchaxmoxie** | this site | Classroom + informatics portfolio + handoffs |
 | **jadexzhao** | https://jadexzhao.github.io/jadexzhao/ | Technical proof / ships |
-| **IU Pages** | https://jlzhao.pages.iu.edu/ | Full narrative |
+| **LinkedIn** | https://www.linkedin.com/in/zhao-langxi/ | Hire-facing narrative (IU Pages retired) |
 | **zhao-langxi** | https://zhao-langxi.github.io/zhao-langxi/ | Essays / BTS |
 
 Cross-link in one line; do not paste the whole hire stack here.
