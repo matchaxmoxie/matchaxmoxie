@@ -1,4 +1,9 @@
+# matchaxmoxie · IU Informatics portfolio + handoff guides
 User-agent: *
 Allow: /
+
+# Stubs and retired demos (also noindex in HTML)
+Disallow: /courses/stub.html
+Disallow: /scratch-play.html
 
 Sitemap: https://matchaxmoxie.github.io/matchaxmoxie/sitemap.xml
