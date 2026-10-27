@@ -7,7 +7,7 @@ https://matchaxmoxie.github.io/matchaxmoxie/
 
 | Entry | File |
 | --- | --- |
-| Portfolio hub | `index.html` |
+| Learning archive hub | `index.html` |
 | Courses | `courses/` |
 | Python videos | `i211.html` |
 | Handoffs | `handoffs.html`, `handoff-*.html`, `handoffs/` |

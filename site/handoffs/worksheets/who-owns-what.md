@@ -1,5 +1,7 @@
 # SECTION 2 · Who owns what
 
+**Guide last reviewed:** 26 Oct 2026
+
 **matchaxmoxie | Account and responsibility worksheet**
 
 *Ownership means knowing who controls an account, who updates it and who handles problems. The person who built something is not necessarily its long-term owner.*

@@ -1,5 +1,7 @@
 # Account handoff · DoorDash Merchant
 
+**Guide last reviewed:** 26 Oct 2026
+
 **Last checked:** October 2026 · **Prepared by:** Jade Zhao  
 **Organisation:** _________________________________
 

@@ -1,18 +1,22 @@
 # matchaxmoxie
 
-**凤凰 · phoenix · cookie classroom** ... Jade Zhao's IU Luddy informatics portfolio and handoff guides.
+**凤凰 · phoenix · cookie classroom** ... Jade Zhao's IU Luddy **learning archive**: coursework, I211 videos, and website handoff guides.
 
 | | |
 | --- | --- |
 | **Live site** | https://matchaxmoxie.github.io/matchaxmoxie/ |
 | **Hire / ships** | https://jadexzhao.github.io/jadexzhao/ |
+| **Essays** | https://zhao-langxi.github.io/zhao-langxi/ |
 | **Publish notes** | [PUBLISH.md](./PUBLISH.md) (profile bio, deploy, site map) |
+| **Architecture** | [docs/LEARNING-ARCHITECTURE.md](./docs/LEARNING-ARCHITECTURE.md) |
+
+This is **not** a second hire portfolio. jadexzhao answers what she has done; this site answers what she has learned and documented.
 
 ## On the site
 
-- **Informatics portfolio** ... course pages (I101 through I211, Kelley, public health, ServeIT, career prep)
-- **I211** ... code conversation video embeds
-- **Handoffs** ... Facebook, site builders, POS, and worksheets for family / small nonprofits
+- **Courses** ... I101 through I211, Kelley, public health, ServeIT, career prep
+- **Projects** ... classroom artefacts and I211 code conversation videos
+- **Handoffs** ... Facebook, site builders, POS, worksheets for family / small nonprofits
 
 Static HTML in [`site/`](./site/). GitHub Actions deploys `site/` to Pages on push to `main`.
 
@@ -22,12 +26,18 @@ Static HTML in [`site/`](./site/). GitHub Actions deploys `site/` to Pages on pu
 ./scripts/serve.sh
 ```
 
+Before publish:
+
+```bash
+node scripts/check-site.mjs
+```
+
 ## Repo layout
 
 | Path | Role |
 | --- | --- |
 | `site/` | Pages artifact (edit this) |
-| `scripts/` | serve, handoff helpers, sync |
+| `scripts/` | serve, handoff helpers, `check-site.mjs` |
 | `content/` | drafts not deployed |
-| `docs/` | transparency / sync notes |
+| `docs/` | architecture, audit, sync notes |
 | `PUBLISH.md` | Profile + SEO + workflow (start here) |

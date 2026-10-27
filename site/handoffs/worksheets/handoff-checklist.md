@@ -1,5 +1,7 @@
 # SECTION 1 · Website handoff checklist
 
+**Guide last reviewed:** 26 Oct 2026
+
 **matchaxmoxie | Family restaurant**
 
 *For the people keeping the website, menu and social pages up to date after the student builder steps away.*

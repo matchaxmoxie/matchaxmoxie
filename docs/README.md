@@ -4,6 +4,8 @@ Internal notes for the matchaxmoxie repo (not deployed to Pages).
 
 | File | Purpose |
 | --- | --- |
+| [LEARNING-ARCHITECTURE.md](./LEARNING-ARCHITECTURE.md) | Door job, homepage hierarchy, course template |
+| [MATCHAXMOXIE-AUDIT.md](./MATCHAXMOXIE-AUDIT.md) | Oct 2026 findings (update after each pass) |
 | [TRANSPARENCY.md](./TRANSPARENCY.md) | How this site relates to other Jade surfaces |
 | [SYNC-FROM-MIRROR.md](./SYNC-FROM-MIRROR.md) | Mirror / sync scripts |
 | [matchaxmoxie-linkedin-content-drafts.md](./matchaxmoxie-linkedin-content-drafts.md) | Draft posts (local only) |

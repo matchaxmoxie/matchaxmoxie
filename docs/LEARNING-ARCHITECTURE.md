@@ -66,14 +66,14 @@ See `site/handoffs/HOW-TO-REFRESH.md`.
 ## Publishing
 
 - Static HTML/CSS · GitHub Pages
-- Before push: link check, PDF paths, image paths (`scripts/check-site.mjs` when present)
+- Before push: `node scripts/check-site.mjs`
 - Co-Create workflow documented on `courses/co-create.html` ... no product names on student-facing pages per local rules
 
 ---
 
-## Build order (agreed)
+## Build order
 
-1. Finish handoff PDFs + verify links  
-2. Standardise course pages to template  
-3. Homepage learning directory (three destinations)  
-4. Term/topic filter if still needed after (2)
+1. Homepage learning directory (three destinations) ... **shipped** 26 Oct 2026 (`6389b45`)  
+2. Finish handoff PDFs + verify links ... Facebook PDF still missing  
+3. Standardise course pages to template  
+4. Term/topic filter if still needed after (3)

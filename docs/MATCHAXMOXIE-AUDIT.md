@@ -23,10 +23,10 @@ Checker: `node scripts/check-site.mjs` (HTML under `site/` only)
 | --- | --- |
 | **P0** | `site/content/fase-26-27/` (MAP agendas, office-hours PDFs, tabling photos) is **world-readable** via GitHub Pages. Not linked from HTML but URL-guessable. Move to `~/Documents/jlzhao/` or repo `content/` (outside `site/`) and purge from git history only if Jade approves. |
 | **P0** | Missing `handoffs/handoff-facebook.pdf` while hub lists Facebook as primary family guide. |
-| **P1** | Homepage hub (Courses / Projects / Handoffs) exists locally but **not pushed** (`site/index.html`, `classroom-ux.css` modified vs `origin/main`). |
+| **P1** | Homepage hub (Courses / Projects / Handoffs) | **Shipped** 26 Oct 2026 (`6389b45`) |
 | **P1** | Handoff HTML styling uneven (Facebook redesigned; others thinner). Markdown `**` literals still in some POS guides. |
 | **P1** | No site-wide course template (nav, “mock-up vs live”, reflection blocks vary). |
-| **P1** | `PUBLISH.md` / `humans.txt` still pointed at retired IU Pages (fixed locally). |
+| **P1** | `PUBLISH.md` / `humans.txt` IU Pages | **Shipped** (LinkedIn + jadexzhao résumé) |
 | **P2** | Sitemap omits `scratch-play.html` (noindex OK), no filter/search on courses. |
 | **P2** | `co-create.html` names ChatGPT; acceptable for process transparency but conflicts with hire-site no-brand rule on jadexzhao only. |
 | **P2** | `site/resume.pdf` on classroom site; [VERIFY] canonical résumé is jadexzhao. |
@@ -39,7 +39,7 @@ ChatGPT’s “campus survival / four-year path / bars” pages are **not** in c
 
 | File | URL | Purpose | Severity notes |
 | --- | --- | --- | --- |
-| `site/index.html` | `/` | Learning archive hub | P1: local hero + hub cards ahead of remote |
+| `site/index.html` | `/` | Learning archive hub | Shipped hub (26 Oct 2026) |
 | `site/i211.html` | `/i211.html` | Code conversation embeds | [VERIFY] Drive IDs for all weeks |
 | `site/handoffs.html` | `/handoffs.html` | Handoff directory | P0: Facebook PDF gap |
 | `site/handoff-*.html` (10) | `/handoff-….html` | Platform guides | P1: style parity; confirm “family uses” vs reference |
@@ -67,7 +67,7 @@ ChatGPT’s “campus survival / four-year path / bars” pages are **not** in c
 | --- | --- |
 | jadexzhao ships / projects | Linked from homepage |
 | zhao-langxi | Footer site-switcher |
-| IU Pages | Remove (retired) |
+| IU Pages | Retired; LinkedIn + jadexzhao résumé |
 | LinkedIn | Add where narrative needed |
 
 ---
@@ -84,7 +84,7 @@ ChatGPT’s “campus survival / four-year path / bars” pages are **not** in c
 ## Safe fixes applied (local, not committed)
 
 - `kelley.html`: removed broken `i453.html` link.
-- `humans.txt`, `PUBLISH.md`: IU Pages → LinkedIn + jadexzhao résumé.
+- `humans.txt`, `PUBLISH.md`: IU Pages → LinkedIn + jadexzhao résumé (shipped).
 - `404.html`, `scratch-play.html`, `courses/stub.html`: meta descriptions.
 - `robots.txt`: `Disallow: /content/` (mitigation only; files still downloadable).
 - `scripts/check-site.mjs`: new.

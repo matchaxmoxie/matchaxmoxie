@@ -1,5 +1,7 @@
 # Account handoff · Facebook Page
 
+**Guide last reviewed:** 26 Oct 2026
+
 **Last checked:** _______________ · **Prepared by:** Jade Zhao  
 **Organisation:** _________________________________
 

@@ -12,7 +12,7 @@ Local repo: `~/Documents/matchaxmoxie/`
 
 | Area | URL path | Notes |
 | --- | --- | --- |
-| Informatics hub | `/` · `index.html` | Course grid, IU Informatics blurb, co-create link |
+| Learning archive hub | `/` · `index.html` | Courses / Projects / Handoffs directory, IU Informatics blurb, course grid |
 | Course pages | `/courses/*.html` | I101, I245, I300, I345, I308, ServeIT, public health, Kelley, career prep (I301), co-create |
 | I211 code videos | `/i211.html` | Weeks 1 to 6 (embeds when Drive IDs exist) |
 | Handoffs hub | `/handoffs.html` | Family / small org guides + worksheets |
@@ -24,16 +24,16 @@ Local repo: `~/Documents/matchaxmoxie/`
 
 ---
 
-## Four doors (do not merge)
+## Three web doors + LinkedIn (do not merge)
 
-| Door | URL | Job on matchaxmoxie |
+| Surface | URL | Job |
 | --- | --- | --- |
-| **matchaxmoxie** | this site | Classroom + informatics portfolio + handoffs |
-| **jadexzhao** | https://jadexzhao.github.io/jadexzhao/ | Technical proof / ships |
-| **LinkedIn** | https://www.linkedin.com/in/zhao-langxi/ | Hire-facing narrative (IU Pages retired) |
-| **zhao-langxi** | https://zhao-langxi.github.io/zhao-langxi/ | Essays / BTS |
+| **matchaxmoxie** | this site | What she learned: courses, videos, handoffs |
+| **jadexzhao** | https://jadexzhao.github.io/jadexzhao/ | What she has done (ships, résumé) |
+| **zhao-langxi** | https://zhao-langxi.github.io/zhao-langxi/ | What she thinks (essays) |
+| **LinkedIn** | https://www.linkedin.com/in/zhao-langxi/ | Hire-facing narrative |
 
-Cross-link in one line; do not paste the whole hire stack here.
+IU Pages is retired. Cross-link in one line; do not paste the whole hire stack here.
 
 ---
 
@@ -104,11 +104,9 @@ Goal: easier edits without changing the deploy story.
 
 1. **Shared layouts** for course pages and handoff guides (same matcha CSS).
 2. **One nav/footer source** so updates are not copied across 26 files.
-3. **Pre-publish check** ... broken internal links, missing `meta description`, images without `alt`.
+3. **Pre-publish check:** `node scripts/check-site.mjs` (internal links + meta descriptions).
 
-Implementation will be a **small build-time script** that writes plain HTML into `site/`. Published output stays static; no runtime framework on Pages.
-
-Until that exists, edit HTML directly and keep `sitemap.xml` in sync when you add routes.
+Until a shared layout exists, edit HTML directly and keep `sitemap.xml` in sync when you add routes.
 
 ---
 
@@ -116,6 +114,7 @@ Until that exists, edit HTML directly and keep `sitemap.xml` in sync when you ad
 
 Sources: `site/handoffs/handoff-*.md` and worksheets under `site/handoffs/worksheets/`.  
 Export: open in Word → PDF → save beside guides (e.g. `handoff-facebook.pdf`).  
+**Gap:** Facebook PDF is still missing; do not treat the hub TODO as a live download.  
 Refresh notes: `site/handoffs/HOW-TO-REFRESH.md`
 
 Helper script (optional): `scripts/generate-handoff-pdfs.py` if `pandoc` is installed locally.
