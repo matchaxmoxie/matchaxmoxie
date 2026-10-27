@@ -294,10 +294,13 @@
     el.appendChild(document.createTextNode(" · "));
     el.appendChild(detail);
 
+    var footer = document.querySelector(".site-footer .shell") || document.querySelector(".site-footer");
     if (nav && nav.parentNode) {
       nav.insertAdjacentElement("afterend", el);
+    } else if (footer) {
+      footer.appendChild(el);
     } else {
-      document.body.insertBefore(el, document.body.firstChild);
+      document.body.appendChild(el);
     }
   }
 

@@ -4,75 +4,88 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>WordPress handoff · matchaxmoxie</title>
-  <meta name="description" content="This page is for the person who will update the live WordPress site after the builder leaves.">
+  <meta name="description" content="The organisation website's content-management system (WordPress.com or self-hosted).">
   <meta name="theme-color" content="#006B45">
   <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/handoff-wordpress.html">
-  <meta property="og:title" content="WordPress handoff · matchaxmoxie">
-  <meta property="og:description" content="This page is for the person who will update the live WordPress site after the builder leaves.">
-  <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/handoff-wordpress.html">
-  <meta property="og:type" content="website">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap&text=%E5%87%A4%E5%87%B0" rel="stylesheet">
+  <link rel="stylesheet" href="bubble.css?v=20261026-portrait2">
+  <link rel="stylesheet" href="classroom-ux.css?v=20261026-portrait2">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="top">
-    <div class="shell top-bar">
+  <header class="topbar">
+    <div class="shell topbar-inner">
       <a class="brand" href="index.html"><span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</a>
-            <nav class="site-nav" aria-label="matchaxmoxie">
+      <nav class="site-nav" aria-label="matchaxmoxie">
         <a href="index.html">Home</a>
-                <a href="i211.html">Code videos</a>
+        <a href="i211.html">Code videos</a>
         <a href="handoffs.html" aria-current="page">Handoffs</a>
       </nav>
     </div>
   </header>
   <main id="main-content" class="shell" tabindex="-1">
     <header class="hero">
+      <p class="eyebrow">matchaxmoxie · Handoffs</p>
       <h1>WordPress handoff</h1>
       <p><a href="handoffs.html">All handoffs</a></p>
-      <p>This page is for the person who will update the live WordPress site after the builder leaves.</p>
-      <p>Handoff means you can sign in, change a page, and update it without the builder sitting there.</p>
-      <p class="note">Same stuck moment that turns into a support ticket. Short steps and a video so you do not have to ping the builder.</p>
+      <p class="note"><strong>Reference library.</strong> TODO: confirm whether the restaurant uses this platform.</p>
+      <p class="lede">The organisation website's content-management system (WordPress.com or self-hosted).</p>
     </header>
-    <section class="band" aria-labelledby="steps-heading">
-      <h2 id="steps-heading">Steps</h2>
-      <ol class="steps">
-        <li>Sign in to the dashboard with the account that owns the site. On many sites the dashboard address ends in /wp-admin. If the site is on WordPress.com, sign in at wordpress.com.</li>
-        <li>In the dashboard, open Pages. That list is where the pages live.</li>
-        <li>Open the page and click Edit. That opens the block editor.</li>
-        <li>Click a text block and type.</li>
-        <li>Click a picture. On the block toolbar, click Replace. Upload a file, or pick one from the Media Library.</li>
-        <li>If the page is already live, click Update. If it is still a draft, click Publish.</li>
-      </ol>
-      <p class="note">Button names move a little between editor versions. If a label is not on your screen, stay in the same places: the page list, the text, the picture, and the button that saves or publishes.</p>
-    </section>
+
     <section class="band" aria-labelledby="write-heading">
-      <h2 id="write-heading">Write this down</h2>
+      <h2 id="write-heading">Who owns the login?</h2>
       <ul class="write-down">
-        <li>Who owns the WordPress login, and whether it is the site dashboard or WordPress.com.</li>
-        <li>The live site address.</li>
-        <li>Who to ask if you cannot find the dashboard.</li>
-        <li>Do not write the password on this page.</li>
+        <li>**Flavour:** WordPress.com **or** self-hosted (circle one on paper copy)</li>
+        <li>**Site owner / admin:** _________________________________</li>
+        <li>**Hosting company (if self-hosted):** _________________________________</li>
+        <li>**Domain owner:** _________________________________</li>
+      </ul>
+      <p class="note">Never write passwords on this page or on a printed sheet.</p>
+    </section>
+
+    <section class="band" aria-labelledby="steps-heading">
+      <h2 id="steps-heading">Six steps</h2>
+      <ol class="steps">
+        <li>Confirm whether the site is WordPress.com or self-hosted (`/wp-admin`).</li>
+        <li>Sign in with your own account. Open **Users** to see who has access.</li>
+        <li>Add people with the lowest role that fits the job (Author or Editor often beats Administrator).</li>
+        <li>On **Add New User**, leave the password-email checkbox unchecked; they set their own password.</li>
+        <li>When someone leaves, remove or demote their user account.</li>
+        <li>If you forgot the password, use the official reset for WordPress.com or your host.</li>
+      </ol>
+    </section>
+
+    <section class="band" aria-labelledby="dont-heading">
+      <h2 id="dont-heading">Do not</h2>
+      <ul class="write-down">
+        <li>Share one Administrator password across the team.</li>
+        <li>Email passwords in plain text.</li>
       </ul>
     </section>
-        <section class="band" aria-labelledby="help-heading">
+
+    <section class="band" aria-labelledby="stuck-heading">
+      <h2 id="stuck-heading">When stuck</h2>
+      <ul class="write-down"><li>Text or call Jade first, then use official help links below.</li></ul>
+    </section>
+
+    <section class="band" aria-labelledby="help-heading">
       <h2 id="help-heading">Official help</h2>
-      <p>Access and ownership docs for WordPress.com and self-hosted. Say which the org uses. On Add New User, leave the email-password checkbox unchecked so they set their own password. Last checked: October 2026. Never put the password on this page.</p>
       <ul class="write-down">
-        <li><a href="https://wordpress.com/support/invite-people/user-roles/" rel="noopener noreferrer">WordPress.com invite people and user roles</a><br><span class="note">https://wordpress.com/support/invite-people/user-roles/</span></li>
-        <li><a href="https://wordpress.org/documentation/article/roles-and-capabilities/" rel="noopener noreferrer">WordPress.org roles and capabilities</a><br><span class="note">https://wordpress.org/documentation/article/roles-and-capabilities/</span></li>
-        <li><a href="https://wordpress.org/documentation/article/users-add-new-screen/" rel="noopener noreferrer">WordPress.org Users Add New screen</a><br><span class="note">https://wordpress.org/documentation/article/users-add-new-screen/</span></li>
+        <li><a href="https://wordpress.com/support/invite-people/user-roles/" rel="noopener noreferrer">https://wordpress.com/support/invite-people/user-roles/</a></li>
+        <li><a href="https://wordpress.org/documentation/article/roles-and-capabilities/" rel="noopener noreferrer">https://wordpress.org/documentation/article/roles-and-capabilities/</a></li>
       </ul>
     </section>
+
     <section class="band" aria-labelledby="pdf-heading">
       <h2 id="pdf-heading">PDF</h2>
-      <p>The same steps, for someone who wants a file.</p>
-      <p><a class="pdf-link" href="handoffs/handoff-wordpress.pdf" download="handoff-wordpress.pdf">Download the WordPress PDF</a></p>
+      <p><a class="pdf-link" href="handoffs/handoff-wordpress.pdf" download="handoff-wordpress.pdf">Download the PDF</a></p>
+      <p class="note">Editable source: <a href="handoffs/handoff-wordpress.md">handoffs/handoff-wordpress.md</a></p>
     </section>
-    <section class="band" aria-labelledby="video-heading">
+
+<section class="band" aria-labelledby="video-heading">
       <h2 id="video-heading">Video</h2>
       <p>Three beginner videos: WordPress.com beginners course, build and edit a site, then create and edit a page.</p>
     <figure class="clip">
@@ -106,51 +119,23 @@
       </figcaption>
     </figure>
     </section>
-<section class="band" aria-labelledby="more-heading">
+
+    <section class="band" aria-labelledby="more-heading">
       <h2 id="more-heading">Other handoffs</h2>
-        <div class="group">
-      <h3>Website builders</h3>
-      <ul class="link-list">
-        <li><a href="handoff-google-sites.html">Google Sites</a></li>
-        <li><a href="handoff-wix.html">Wix</a></li>
-        <li><a href="handoff-squarespace.html">Squarespace</a></li>
-        <li><span aria-current="page">WordPress</span></li>
-      </ul>
-    </div>
-    <div class="group">
-      <h3>Short video</h3>
-      <ul class="link-list">
-        <li><a href="handoff-capcut.html">CapCut</a></li>
-      </ul>
-    </div>
-    <div class="group">
-      <h3>POS / orders</h3>
-      <ul class="link-list">
-        <li><a href="handoff-square.html">Square</a></li>
-        <li><a href="handoff-clover.html">Clover</a></li>
-        <li><a href="handoff-toast.html">Toast</a></li>
-        <li><a href="handoff-doordash.html">DoorDash</a></li>
-      </ul>
-    </div>
-      <p><a href="index.html">Home</a> · <a href="i211.html">Code videos</a> · <a href="handoffs.html">All handoffs</a></p>
-      <p class="note">Everyday tools (email, Drive, Canva, social, reviews) live on <a href="https://jadexzhao.github.io/jadexzhao/handoffs.html" rel="noopener noreferrer">jadexzhao handoffs</a>.</p>
+      <p><a href="handoffs.html">All handoffs</a> · <a href="index.html">Home</a></p>
     </section>
   </main>
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="shell">
       <p>Jade Zhao · <span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</p>
       <nav class="footer-nav" aria-label="Site">
         <a href="index.html">Home</a>
-                <a href="i211.html">Code videos</a>
+        <a href="i211.html">Code videos</a>
         <a href="handoffs.html" aria-current="page">Handoffs</a>
-      </nav>
-      <nav class="site-switcher" aria-label="Other sites">
-        <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>
-        <a class="current" href="https://matchaxmoxie.github.io/matchaxmoxie/" aria-current="page">matchaxmoxie</a>
-        <a href="https://zhao-langxi.github.io/zhao-langxi/">zhao-langxi</a>
       </nav>
       <p><a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a></p>
     </div>
   </footer>
+  <script src="classroom-ux.js?v=20261026" defer></script>
 </body>
 </html>
