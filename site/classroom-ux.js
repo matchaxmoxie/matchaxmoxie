@@ -320,7 +320,7 @@
       '<div class="cookie-consent-inner">' +
       '<p id="cookie-consent-title" class="cookie-consent-title">Want a cookie?</p>' +
       '<p id="cookie-consent-desc" class="cookie-consent-desc">' +
-      "Say yes and this device remembers your seat, Scratch starter, and footprint checks. " +
+      "Say yes and this device remembers classroom filters on this browser. " +
       "One tiny first-party cookie. No tracking." +
       "</p>" +
       '<div class="cookie-consent-actions">' +

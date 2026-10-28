@@ -14,8 +14,8 @@ This is **not** a second hire portfolio. jadexzhao answers what she has done; th
 
 ## On the site
 
-- **Courses** ... I101 through I211, Kelley, public health, ServeIT, career prep
-- **Projects** ... classroom artefacts and I211 code conversation videos
+- **I211** ... Python code conversation videos (weeks 1 to 5 ready; week 6 placeholder)
+- **Notes** ... I101 through career prep, Kelley, public health, ServeIT
 - **Handoffs** ... Facebook, site builders, POS, worksheets for family / small nonprofits
 
 Static HTML in [`site/`](./site/). GitHub Actions deploys `site/` to Pages on push to `main`.

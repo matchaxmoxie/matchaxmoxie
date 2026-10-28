@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" data-base="../" data-page="notes">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Human + AI Co-Create · how these course pages get built</title>
-  <meta name="description" content="How Jade drafts informatics portfolio course pages with a generative chat, then revises against real files. I211-style co-create, not copy-paste and forget.">
+  <meta name="description" content="How Jade drafts classroom course pages with a generative chat, then revises against real files. I211-style co-create, not copy-paste and forget.">
   <meta name="theme-color" content="#006B45">
   <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/courses/co-create.html">
   <link rel="icon" href="../favicon.ico" sizes="any">
-  <link rel="stylesheet" href="../bubble.css?v=20261026-portrait2">
-  <link rel="stylesheet" href="../portfolio.css?v=20261026-portrait2">
+  <link rel="stylesheet" href="../bubble.css?v=20261028-cafe">
+  <link rel="stylesheet" href="../portfolio.css?v=20261028-cafe">
+  <link rel="stylesheet" href="../classroom-ux.css?v=20261028-cafe">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -25,7 +26,7 @@
 
   <main id="main-content" class="shell" tabindex="-1">
     <header class="hero">
-      <p class="eyebrow">Human + AI Co-Create · portfolio edition</p>
+      <p class="eyebrow">Human + AI Co-Create · classroom notes</p>
       <h1>Yes, part of this site is “paste the chaos, get a draft.”</h1>
       <p class="lede">
         Same spirit as INFO-I 211 Co-Create assignments: a generative chat can shape HTML and copy from whatever you dump in ...
@@ -41,7 +42,7 @@
         <li><strong>Not allowed:</strong> inventing clients, grades, or projects you did not do. If the chat hallucinates, delete it.</li>
       </ul>
       <p>
-        Course pages marked with the co-create note in the footer were started from chat-assisted drafts (ChatGPT, or any similar tool you already use for school).
+        Course pages marked with the co-create note in the footer were started from chat-assisted drafts (an AI writing assistant, or any similar tool you already use for school).
         The <strong>projects</strong> (I101 Hamilton campaign, I308 Team 39, etc.) are real; the <strong>web page</strong> is just packaging.
       </p>
     </section>
@@ -50,7 +51,7 @@
       <h2 id="workflow">Workflow you can copy</h2>
       <ol class="proof-list">
         <li>Export or copy: syllabus learning outcomes + one announcement + your team doc (text only).</li>
-        <li>Paste into ChatGPT (or your usual generative chat) with the prompt below.</li>
+        <li>Paste into an AI writing assistant with the prompt below.</li>
         <li>Save the HTML it returns into <code>matchaxmoxie/site/courses/your-course.html</code>.</li>
         <li>Re-read every sentence. Swap placeholders for Drive links, images, and names you are allowed to show.</li>
         <li>Link the page from <code>index.html</code>. Done.</li>
@@ -59,7 +60,9 @@
 
     <section class="band" aria-labelledby="prompt">
       <h2 id="prompt">Starter prompt (paste your course junk underneath)</h2>
-      <div class="prompt-box" role="region" aria-label="Copy-paste prompt for generative chat">You are helping me write one portfolio page for my IU Informatics degree (HTML fragment, matcha classroom tone, UK spelling, no em dash).
+      <div class="prompt-wrap">
+      <button type="button" class="copy-code" data-copy-target="cocreate-prompt">Copy prompt</button>
+      <div class="prompt-box" id="cocreate-prompt" role="region" aria-label="Copy-paste prompt for generative chat">You are helping me write one classroom notes page for my IU Informatics degree (HTML fragment, matcha classroom tone, UK spelling, no em dash).
 
 Input: [I will paste Canvas syllabus + announcements + my team notes below.]
 
@@ -72,6 +75,7 @@ Output:
 
 My paste starts here:
 </div>
+      </div>
       <p class="note">After you get HTML back, run it through your own eyes (or a friend’s) before publish. Co-create is draft speed, not outsource the truth.</p>
     </section>
 
@@ -79,11 +83,11 @@ My paste starts here:
       <h2 id="i211">Tie-in to I211</h2>
       <p>
         In <a href="../i211.html">INFO-I 211</a>, Co-Create assignments are graded on whether you can explain what the tool did and what you changed.
-        This portfolio is practice for that: generative first pass, human revision, accountable publish.
+        These classroom notes are practice for that: generative first pass, human revision, accountable publish.
       </p>
     </section>
 
-    <p><a href="../index.html">← Back to informatics portfolio</a></p>
+    <p><a href="../index.html">Back to classroom</a></p>
   </main>
 
   <footer class="site-footer">
@@ -92,6 +96,21 @@ My paste starts here:
       <p><a href="mailto:jlzhao@iu.edu">jlzhao@iu.edu</a></p>
     </div>
   </footer>
-  <script src="../classroom-ux.js?v=20261026" defer></script>
+  <script src="../site-chrome.js?v=20261028-cafe" defer></script>
+  <script src="../classroom-ux.js?v=20261028-cafe" defer></script>
+  <script>
+    (function () {
+      var btn = document.querySelector("[data-copy-target]");
+      if (!btn || !navigator.clipboard) return;
+      btn.addEventListener("click", function () {
+        var el = document.getElementById(btn.getAttribute("data-copy-target"));
+        if (!el) return;
+        navigator.clipboard.writeText(el.textContent).then(function () {
+          btn.textContent = "Copied";
+          window.setTimeout(function () { btn.textContent = "Copy prompt"; }, 1600);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

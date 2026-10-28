@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" data-base="" data-page="home">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -29,9 +29,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap&text=%E5%87%A4%E5%87%B0" rel="stylesheet">
-  <link rel="stylesheet" href="bubble.css?v=20261027-studio">
-  <link rel="stylesheet" href="portfolio.css?v=20261027-studio">
-  <link rel="stylesheet" href="classroom-ux.css?v=20261027-studio">
+  <link rel="stylesheet" href="bubble.css?v=20261028-cafe">
+  <link rel="stylesheet" href="portfolio.css?v=20261028-cafe">
+  <link rel="stylesheet" href="classroom-ux.css?v=20261028-cafe">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +41,7 @@
         "@id": "https://matchaxmoxie.github.io/matchaxmoxie/#website",
         "url": "https://matchaxmoxie.github.io/matchaxmoxie/",
         "name": "matchaxmoxie",
-        "description": "IU Luddy learning archive: coursework, I211 code videos, and website handoff guides.",
+        "description": "IU Luddy classroom archive: I211 Python videos, course notes, and website handoff guides.",
         "inLanguage": "en-GB",
         "publisher": { "@id": "https://matchaxmoxie.github.io/matchaxmoxie/#person" }
       },
@@ -66,11 +66,11 @@
         ]
       },
       {
-        "@type": "ProfilePage",
-        "@id": "https://matchaxmoxie.github.io/matchaxmoxie/#profile",
+        "@type": "CollectionPage",
+        "@id": "https://matchaxmoxie.github.io/matchaxmoxie/#classroom",
         "url": "https://matchaxmoxie.github.io/matchaxmoxie/",
-        "name": "Jade Zhao · matchaxmoxie learning archive",
-        "mainEntity": { "@id": "https://matchaxmoxie.github.io/matchaxmoxie/#person" },
+        "name": "matchaxmoxie · cookie classroom",
+        "description": "Independent classroom archive of real I211 videos, course notes, and handoff guides.",
         "isPartOf": { "@id": "https://matchaxmoxie.github.io/matchaxmoxie/#website" }
       }
     ]
@@ -84,21 +84,21 @@
       <a class="brand" href="index.html"><span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</a>
       <nav class="site-nav" aria-label="Site">
         <a href="index.html" aria-current="page">Home</a>
-        <a href="#courses-heading">Courses</a>
-        <a href="i211.html">Videos</a>
+        <a href="i211.html">I211</a>
+        <a href="#library">Notes</a>
         <a href="handoffs.html">Handoffs</a>
       </nav>
     </div>
   </header>
 
   <main id="main-content" tabindex="-1">
-    <header class="hero">
+    <header class="hero hero--compact">
       <div class="shell hero-grid">
         <div class="hero-portrait">
           <img
             src="assets/avatar-matchaxmoxie.jpg"
-            width="120"
-            height="120"
+            width="92"
+            height="92"
             alt="Jade Zhao, smiling in a garden, wearing a cream sweater"
             fetchpriority="high"
           >
@@ -107,39 +107,303 @@
           <p class="eyebrow">凤凰 · cookie classroom</p>
           <h1>Making STEM a little less intimidating.</h1>
           <p class="lede">
-            Coding tutorials, practical resources, and student-to-student guidance for people finding
-            their way into technology ... especially first-generation and low-income students.
-            Live ships live on <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>. This door is for learning in public.
+            A student-kept classroom archive: I211 Python videos, Informatics course notes, and
+            handoff guides. Written for people finding their way into technology ... especially
+            first-generation and low-income students. Live ships live on
+            <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>. This door is for learning in public.
           </p>
           <p class="hero-actions">
-            <a class="btn-primary" href="i211.html">Start learning</a>
-            <a class="btn-secondary" href="#start">Explore resources</a>
+            <a class="btn-primary" href="i211.html">I211 Python videos</a>
+            <a class="btn-secondary" href="#library">Course notes</a>
+            <a class="btn-secondary" href="handoffs.html">Handoffs</a>
           </p>
         </div>
       </div>
-      <div class="shell">
-        <nav class="hub-directory" id="start" aria-label="Choose a starting point">
+    </header>
+
+    <div class="shell desk">
+      <section aria-labelledby="start-heading" id="start">
+        <h2 id="start-heading">Start here</h2>
+        <p>Three real doors. No invented tracks.</p>
+        <nav class="hub-directory" aria-label="Choose a starting point">
           <a class="hub-card" href="i211.html">
             <span class="hub-card__title">I'm new to coding</span>
             <span class="hub-card__dek">I211 Python videos, week by week</span>
           </a>
-          <a class="hub-card" href="#courses-heading">
+          <a class="hub-card" href="#library">
             <span class="hub-card__title">I'm studying Informatics</span>
-            <span class="hub-card__dek">Course notes, term by term</span>
-          </a>
-          <a class="hub-card" href="scratch-play.html">
-            <span class="hub-card__title">I'm exploring STEM</span>
-            <span class="hub-card__dek">Scratch studio demos for play</span>
+            <span class="hub-card__dek">Course notes that already exist</span>
           </a>
           <a class="hub-card" href="handoffs.html">
-            <span class="hub-card__title">I need student resources</span>
-            <span class="hub-card__dek">Handoffs staff can keep running</span>
+            <span class="hub-card__title">I need a handoff</span>
+            <span class="hub-card__dek">Guides staff can keep running</span>
           </a>
         </nav>
-      </div>
-    </header>
+      </section>
+
+      <section aria-labelledby="featured-heading">
+        <h2 id="featured-heading">Featured in this archive</h2>
+        <p>Ready pages only. Week 6 I211 is a placeholder. Facebook PDF is still missing.</p>
+        <ul class="featured-list">
+          <li>
+            <a href="i211.html#week-1">I211 weeks 1 to 5</a>
+            <p>Variables through CSV. Week 6 embeds when Drive IDs are ready.</p>
+          </li>
+          <li>
+            <a href="courses/i101.html">INFO-I 101</a>
+            <p>First Luddy term · Margaret Hamilton campaign notes.</p>
+          </li>
+          <li>
+            <a href="courses/i308.html">INFO-I 308</a>
+            <p>ERD to SQL to web portal · Team 39.</p>
+          </li>
+          <li>
+            <a href="handoffs.html">Handoff hub</a>
+            <p>Family uses Facebook and CapCut. Other platforms are reference.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <div class="shell">
+      <section class="band" id="library" aria-labelledby="library-heading">
+        <div class="library-head">
+          <h2 id="library-heading">Learning library</h2>
+          <p>
+            Everything here already has a page. Filter by kind, or search a title, topic, or term.
+            Length and difficulty are not listed unless a page says so.
+          </p>
+        </div>
+        <div class="library-tools">
+          <div class="library-search">
+            <label for="library-search">Search this archive</label>
+            <input id="library-search" type="search" name="q" autocomplete="off" placeholder="I211, I101, Facebook, ServeIT">
+          </div>
+          <fieldset class="library-filters" id="library-filters">
+            <legend>Show</legend>
+            <div>
+              <button type="button" data-kind-filter="all" aria-pressed="true">All</button>
+              <button type="button" data-kind-filter="videos" aria-pressed="false">I211 videos</button>
+              <button type="button" data-kind-filter="notes" aria-pressed="false">Course notes</button>
+              <button type="button" data-kind-filter="handoffs" aria-pressed="false">Handoffs</button>
+            </div>
+          </fieldset>
+        </div>
+        <p class="library-status" id="library-status" role="status" aria-live="polite">30 pages in this archive</p>
+        <ul class="library-grid" id="library-list" data-src="library.json">
+          <li class="library-card" data-kind="videos" data-topic="Python" data-term="Fall 2026" data-status="ready">
+            <a href="i211.html#project-1-demo">
+              <span class="library-card__kicker">Fall 2026 · Python · I211 videos</span>
+              <strong>I211 Project 1 recorded demo</strong>
+              <span class="library-card__dek">Screen recording for Project 1 (Microsoft Teams Copilot, Table 1).</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="videos" data-topic="Python" data-term="Fall 2026" data-status="ready">
+            <a href="i211.html#week-1">
+              <span class="library-card__kicker">Fall 2026 · Python · I211 videos</span>
+              <strong>I211 Week 1 · variables, strings, input</strong>
+              <span class="library-card__dek">Number, exponent, f-string, syntax bugs, string clean-up, input().</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="videos" data-topic="Python" data-term="Fall 2026" data-status="ready">
+            <a href="i211.html#week-2">
+              <span class="library-card__kicker">Fall 2026 · Python · I211 videos</span>
+              <strong>I211 Week 2 · conditionals, loops, try / except</strong>
+              <span class="library-card__dek">if / elif / else, truthy values, while, for + break.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="videos" data-topic="Python" data-term="Fall 2026" data-status="ready">
+            <a href="i211.html#week-3">
+              <span class="library-card__kicker">Fall 2026 · Python · I211 videos</span>
+              <strong>I211 Week 3 · functions and return values</strong>
+              <span class="library-card__dek">Parameters, defaults, multiple return values, word indexing.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="videos" data-topic="Python" data-term="Fall 2026" data-status="ready">
+            <a href="i211.html#week-4">
+              <span class="library-card__kicker">Fall 2026 · Python · I211 videos</span>
+              <strong>I211 Week 4 · reading and writing text files</strong>
+              <span class="library-card__dek">open, with, read, append, write, line counts.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="videos" data-topic="Python" data-term="Fall 2026" data-status="ready">
+            <a href="i211.html#week-5">
+              <span class="library-card__kicker">Fall 2026 · Python · I211 videos</span>
+              <strong>I211 Week 5 · CSV reader and writer</strong>
+              <span class="library-card__dek">csv.reader, DictReader, writer, intentional import bug.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="videos" data-topic="Python" data-term="Fall 2026" data-status="placeholder">
+            <a href="i211.html#week-6">
+              <span class="library-card__kicker">Fall 2026 · Python · I211 videos</span>
+              <strong>I211 Week 6 · classes and bakery app</strong>
+              <span class="library-card__dek">OOP week. Embeds land when Drive file IDs are ready.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="Informatics" data-term="Fall 2023" data-status="ready">
+            <a href="courses/i101.html">
+              <span class="library-card__kicker">Fall 2023 · Informatics · Course notes</span>
+              <strong>INFO-I 101 · Introduction to informatics</strong>
+              <span class="library-card__dek">Innovator group site and presentation · Margaret Hamilton.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="UX" data-term="Fall 2023" data-status="ready">
+            <a href="courses/i245.html">
+              <span class="library-card__kicker">Fall 2023 · UX · Course notes</span>
+              <strong>INFO-I 245 · Interaction design thinking</strong>
+              <span class="library-card__dek">Research-led Team Mental Health showcase.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="HCI" data-term="Fall 2024" data-status="ready">
+            <a href="courses/i300.html">
+              <span class="library-card__kicker">Fall 2024 · HCI · Course notes</span>
+              <strong>INFO-I 300 · Human-computer interaction</strong>
+              <span class="library-card__dek">Usability methods · off-campus student housing team project.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="UX" data-term="Fall 2024" data-status="ready">
+            <a href="courses/i345.html">
+              <span class="library-card__kicker">Fall 2024 · UX · Course notes</span>
+              <strong>INFO-I 345 · Interaction design research</strong>
+              <span class="library-card__dek">Personas, journey maps, research ethics.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="Data" data-term="Spring 2025" data-status="ready">
+            <a href="courses/i308.html">
+              <span class="library-card__kicker">Spring 2025 · Data · Course notes</span>
+              <strong>INFO-I 308 · Information representation</strong>
+              <span class="library-card__dek">ERD to SQL to web portal · Team 39.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="Client work" data-term="ServeIT" data-status="ready">
+            <a href="courses/serveit.html">
+              <span class="library-card__kicker">ServeIT · Client work · Course notes</span>
+              <strong>I389 / I489 · ServeIT Website Team</strong>
+              <span class="library-card__dek">Website Team Lead · Bloomington and Nashville ACC partners.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="Public health" data-term="SPH" data-status="ready">
+            <a href="courses/public-health.html">
+              <span class="library-card__kicker">SPH · Public health · Course notes</span>
+              <strong>SPH-E / SPH-H · Public health notes</strong>
+              <span class="library-card__dek">Stress prevention, surveillance, chronic disease (population level).</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="Business" data-term="Kelley" data-status="ready">
+            <a href="courses/kelley.html">
+              <span class="library-card__kicker">Kelley · Business · Course notes</span>
+              <strong>Kelley business technology notes</strong>
+              <span class="library-card__dek">A200 · K201 · Z302 · Madrid BUS-J.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="Careers" data-term="Fall 2025" data-status="ready">
+            <a href="courses/career-prep.html">
+              <span class="library-card__kicker">Fall 2025 · Careers · Course notes</span>
+              <strong>INFO-I 301 · Career prep</strong>
+              <span class="library-card__dek">Presentations for IT professionals · Handshake Career Creator.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="notes" data-topic="Process" data-status="ready">
+            <a href="courses/co-create.html">
+              <span class="library-card__kicker">Process · Course notes</span>
+              <strong>How these pages get made</strong>
+              <span class="library-card__dek">Draft with a generative chat, then check every claim against real files.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Start here" data-status="ready">
+            <a href="handoffs.html">
+              <span class="library-card__kicker">Start here · Handoffs</span>
+              <strong>Handoff hub</strong>
+              <span class="library-card__dek">Worksheets, family-in-use guides, and the reference library.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Worksheets" data-status="ready">
+            <a href="handoffs/handoff-checklist.pdf">
+              <span class="library-card__kicker">Worksheets · Handoffs</span>
+              <strong>Handoff checklist</strong>
+              <span class="library-card__dek">Fill in ownership first. Never put passwords on paper.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Worksheets" data-status="ready">
+            <a href="handoffs/handoff-who-owns-what.pdf">
+              <span class="library-card__kicker">Worksheets · Handoffs</span>
+              <strong>Who owns what</strong>
+              <span class="library-card__dek">Account owner blanks before anyone touches a live tool.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Family uses" data-status="pdf-missing">
+            <a href="handoff-facebook.html">
+              <span class="library-card__kicker">Family uses · Handoffs</span>
+              <strong>Facebook Page</strong>
+              <span class="library-card__dek">Hours, photos, menu posts, comment replies. PDF still to export.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Family uses" data-status="ready">
+            <a href="handoff-capcut.html">
+              <span class="library-card__kicker">Family uses · Handoffs</span>
+              <strong>CapCut</strong>
+              <span class="library-card__dek">Short vertical video export for TikTok and Reels.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Reference" data-status="ready">
+            <a href="handoff-google-sites.html">
+              <span class="library-card__kicker">Reference · Handoffs</span>
+              <strong>Google Sites</strong>
+              <span class="library-card__dek">Website builder guide. Reference until marked in daily use.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Reference" data-status="ready">
+            <a href="handoff-wix.html">
+              <span class="library-card__kicker">Reference · Handoffs</span>
+              <strong>Wix</strong>
+              <span class="library-card__dek">Website builder guide. Reference until marked in daily use.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Reference" data-status="ready">
+            <a href="handoff-squarespace.html">
+              <span class="library-card__kicker">Reference · Handoffs</span>
+              <strong>Squarespace</strong>
+              <span class="library-card__dek">Website builder guide. Reference until marked in daily use.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Reference" data-status="ready">
+            <a href="handoff-wordpress.html">
+              <span class="library-card__kicker">Reference · Handoffs</span>
+              <strong>WordPress</strong>
+              <span class="library-card__dek">Website builder guide. Reference until marked in daily use.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Reference" data-status="ready">
+            <a href="handoff-square.html">
+              <span class="library-card__kicker">Reference · Handoffs</span>
+              <strong>Square</strong>
+              <span class="library-card__dek">POS guide. Confirm whether the restaurant uses this tool.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Reference" data-status="ready">
+            <a href="handoff-clover.html">
+              <span class="library-card__kicker">Reference · Handoffs</span>
+              <strong>Clover</strong>
+              <span class="library-card__dek">POS guide. Confirm whether the restaurant uses this tool.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Reference" data-status="ready">
+            <a href="handoff-toast.html">
+              <span class="library-card__kicker">Reference · Handoffs</span>
+              <strong>Toast</strong>
+              <span class="library-card__dek">POS guide. Confirm whether the restaurant uses this tool.</span>
+            </a>
+          </li>
+          <li class="library-card" data-kind="handoffs" data-topic="Reference" data-status="ready">
+            <a href="handoff-doordash.html">
+              <span class="library-card__kicker">Reference · Handoffs</span>
+              <strong>DoorDash</strong>
+              <span class="library-card__dek">Orders guide. Confirm whether DoorDash is active.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <section class="band" aria-labelledby="what-is-info">
         <h2 id="what-is-info">What IU Informatics is (2023 to 2027)</h2>
         <p>
@@ -149,7 +413,7 @@
         <p>
           Official framing:
           <a href="https://bulletins.iu.edu/iub/sice/2024-2025/undergraduate/degree-programs/bs-informatics/index.shtml" rel="noopener noreferrer">IU Academic Bulletin · Informatics B.S.</a>.
-          My thread here:
+          Thread on these notes:
           <span class="pill">interaction design / HCI</span>
           <span class="pill">business technology</span>
           <span class="pill">public health</span>
@@ -158,88 +422,11 @@
         </p>
       </section>
 
-      <section class="band" aria-labelledby="courses-heading">
-        <h2 id="courses-heading">Courses</h2>
-        <p>Each page answers what I learned, what the artefact actually is (mock-up vs live site), and what I would do differently now.</p>
-        <div class="course-grid">
-          <a class="course-card" href="courses/i101.html">
-            <span class="course-card__term">Fall 2023</span>
-            <h3>INFO-I 101</h3>
-            <p>Intro to informatics · innovator group site and presentation</p>
-            <p class="pill-row"><span class="pill">web</span><span class="pill">data viz</span><span class="pill">first Luddy term</span></p>
-          </a>
-          <a class="course-card" href="courses/i245.html">
-            <span class="course-card__term">Fall 2023</span>
-            <h3>INFO-I 245</h3>
-            <p>Interaction design thinking · Team Mental Health showcase</p>
-            <p class="pill-row"><span class="pill">research</span><span class="pill">portfolio presentation</span></p>
-          </a>
-          <a class="course-card" href="courses/i300.html">
-            <span class="course-card__term">Fall 2024</span>
-            <h3>INFO-I 300</h3>
-            <p>HCI · off-campus student housing team project</p>
-            <p class="pill-row"><span class="pill">usability</span><span class="pill">heuristics</span><span class="pill">user studies</span></p>
-          </a>
-          <a class="course-card" href="courses/i345.html">
-            <span class="course-card__term">Fall 2024</span>
-            <h3>INFO-I 345</h3>
-            <p>Interaction design research · field trip synthesis</p>
-            <p class="pill-row"><span class="pill">personas</span><span class="pill">journey maps</span><span class="pill">research ethics</span></p>
-          </a>
-          <a class="course-card" href="courses/i308.html">
-            <span class="course-card__term">Spring 2025</span>
-            <h3>INFO-I 308</h3>
-            <p>ERD to SQL to web portal · Team 39</p>
-            <p class="pill-row"><span class="pill">MySQL</span><span class="pill">SPECS grading</span><span class="pill">client project</span></p>
-          </a>
-          <a class="course-card" href="courses/serveit.html">
-            <span class="course-card__term">ServeIT</span>
-            <h3>I389 / I489</h3>
-            <p>Website Team Lead · Bloomington and Nashville ACC partners</p>
-            <p class="pill-row"><span class="pill">accessibility</span><span class="pill">handoffs</span><span class="pill">client work</span></p>
-          </a>
-          <a class="course-card" href="courses/public-health.html">
-            <span class="course-card__term">SPH</span>
-            <h3>SPH-E / SPH-H</h3>
-            <p>Stress prevention · surveillance · chronic disease (population level)</p>
-            <p class="pill-row"><span class="pill">SPH-H 180</span><span class="pill">SPH-E 250</span><span class="pill">SPH-E 353</span></p>
-          </a>
-          <a class="course-card" href="i211.html">
-            <span class="course-card__term">Fall 2026</span>
-            <h3>INFO-I 211</h3>
-            <p>Python infrastructure · projects and code conversations</p>
-            <p class="pill-row"><span class="pill">OOP</span><span class="pill">testing</span><span class="pill">videos</span></p>
-          </a>
-          <a class="course-card" href="courses/kelley.html">
-            <span class="course-card__term">Kelley</span>
-            <h3>Business</h3>
-            <p>A200 · K201 · Z302 · Madrid BUS-J</p>
-            <p class="pill-row"><span class="pill">accounting</span><span class="pill">ALDI pitch</span><span class="pill">OB</span></p>
-          </a>
-          <a class="course-card" href="courses/career-prep.html">
-            <span class="course-card__term">Fall 2025</span>
-            <h3>Career prep · I301</h3>
-            <p>Presentations for IT pros · Handshake Career Creator · LinkedIn and IG</p>
-            <p class="pill-row"><span class="pill">weekly talks</span><span class="pill">career narrative</span><span class="pill">student mentoring</span></p>
-          </a>
-        </div>
-      </section>
-
-      <section class="band" id="projects-heading" aria-labelledby="projects-title">
-        <h2 id="projects-title">Classroom projects</h2>
-        <p>Shipped builds and demos are catalogued on <a href="https://jadexzhao.github.io/jadexzhao/projects/">jadexzhao</a>. Here: walkthroughs and classroom artefacts.</p>
-        <ul class="proof-list">
-          <li><a href="i211.html">INFO-I 211 · Python code videos</a></li>
-          <li><a href="scratch-play.html">Scratch studio demos</a> (teaching / play)</li>
-          <li><a href="courses/co-create.html">Human + AI Co-Create · how these pages get built</a></li>
-        </ul>
-      </section>
-
       <section class="band" aria-labelledby="cocreate-heading">
         <h2 id="cocreate-heading">How these pages get made</h2>
         <p>
-          A lot of the HTML started as a syllabus-to-draft workflow, then I verified every claim against local course folders and cut anything fake.
-          That is intentional ... same muscle as I211 Co-Create.
+          A lot of the HTML started as a syllabus-to-draft workflow, then every claim was checked against local course folders and anything fake was cut.
+          Same muscle as I211 Co-Create.
         </p>
         <p><a href="courses/co-create.html">Read the workflow and copy the prompt</a></p>
       </section>
@@ -255,8 +442,8 @@
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <a href="index.html" aria-current="page">Home</a>
-        <a href="#courses-heading">Courses</a>
-        <a href="i211.html">Videos</a>
+        <a href="i211.html">I211</a>
+        <a href="#library">Notes</a>
         <a href="handoffs.html">Handoffs</a>
       </nav>
       <nav class="site-switcher" aria-label="Other sites">
@@ -266,6 +453,8 @@
       </nav>
     </div>
   </footer>
-  <script src="classroom-ux.js?v=20261027-studio" defer></script>
+  <script src="site-chrome.js?v=20261028-cafe" defer></script>
+  <script src="classroom-ux.js?v=20261028-cafe" defer></script>
+  <script src="library.js?v=20261028-cafe" defer></script>
 </body>
 </html>

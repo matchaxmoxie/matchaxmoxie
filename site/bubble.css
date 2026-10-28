@@ -6,12 +6,14 @@
 
 :root {
   color-scheme: light;
-  --paper: #faf6f1;
-  --cream: #fff4e8;
+  --paper: #faf3f1;
+  --cream: #fff8f4;
   --pale: #e8f0e4;
-  --blush: #e8c9bc;
-  --blush-soft: #f5e6df;
-  --panel: #f0ebe3;
+  --rose: #f3d4ce;
+  --blush: #e8b4ae;
+  --blush-soft: #f8e8e4;
+  --panel: #fff4ef;
+  --card: #ffffff;
   --ink: #2c2825;
   --body: #3a3531;
   --muted: #5c554e;
@@ -23,23 +25,24 @@
   --matcha-deep: #006b45;
   --matcha-mid: #3d6b4a;
   --matcha-pale: #e8f0e4;
-  --line: rgba(0, 107, 69, 0.22);
-  --shadow: 0 4px 24px rgba(44, 40, 37, 0.08);
-  --shadow-hover: 0 10px 28px rgba(44, 40, 37, 0.12);
-  --radius: 12px;
+  --line: rgba(184, 110, 102, 0.28);
+  --line-matcha: rgba(0, 107, 69, 0.22);
+  --shadow: 0 3px 16px rgba(44, 40, 37, 0.07);
+  --shadow-hover: 0 8px 22px rgba(44, 40, 37, 0.11);
+  --radius: 10px;
   --radius-sm: 8px;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
   --space-4: 1rem;
-  --space-5: 1.5rem;
-  --space-6: 2.25rem;
-  --space-7: 3.25rem;
+  --space-5: 1.35rem;
+  --space-6: 1.75rem;
+  --space-7: 2.5rem;
   --text-xs: 0.8125rem;
   --text-sm: 0.9375rem;
-  --text-md: 1.0625rem;
-  --measure: 40rem;
-  --shell: 46rem;
+  --text-md: 1.05rem;
+  --measure: 38rem;
+  --shell: 64rem;
   --touch: 2.75rem;
   --serif: Georgia, "Times New Roman", Times, serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -62,9 +65,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  overflow-x: hidden;
   background:
-    radial-gradient(ellipse 110% 70% at 100% 0%, var(--blush-soft) 0%, transparent 52%),
-    radial-gradient(ellipse 80% 50% at 0% 100%, rgba(232, 240, 228, 0.75) 0%, transparent 48%),
+    radial-gradient(ellipse 90% 55% at 100% 0%, var(--blush-soft) 0%, transparent 56%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(232, 240, 228, 0.55) 0%, transparent 50%),
     var(--paper);
   color: var(--body);
   font-family: var(--sans);
@@ -226,7 +230,11 @@ a:hover {
 
 .hero,
 .cover {
-  padding: var(--space-6) 0 var(--space-5);
+  padding: var(--space-5) 0 var(--space-4);
+}
+
+.hero--compact {
+  padding: var(--space-4) 0 var(--space-3);
 }
 
 .hero-grid {
@@ -275,8 +283,8 @@ h3 {
 }
 
 h1 {
-  margin: 0 0 0.6rem;
-  font-size: clamp(1.85rem, 4.6vw, 2.55rem);
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
 }
 
 h2 {
@@ -302,8 +310,8 @@ h3 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-top: 1.15rem;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
 }
 
 .btn,
@@ -420,7 +428,7 @@ h3 {
 .section-intro,
 .week,
 .group {
-  padding: var(--space-6) 0;
+  padding: var(--space-5) 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -580,7 +588,7 @@ blockquote {
 
 .site-footer {
   margin-top: 0;
-  padding: var(--space-6) 0 6rem;
+  padding: var(--space-5) 0 3.5rem;
   border-top: 1px solid var(--line);
   background: var(--panel);
   color: var(--muted);
@@ -652,20 +660,20 @@ blockquote {
 
 .hub-directory {
   display: grid;
-  gap: 0.85rem;
-  margin: 1.5rem 0 0;
+  gap: 0.65rem;
+  margin: 0;
 }
 
 .hub-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 6.25rem;
-  padding: 1.05rem 1.15rem;
+  min-height: 0;
+  padding: 0.75rem 0.9rem;
   border: 1px solid var(--line);
   border-left: 4px solid var(--accent);
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--card);
   text-decoration: none;
   color: inherit;
   box-shadow: var(--shadow);
@@ -711,12 +719,12 @@ blockquote {
 
 @media (min-width: 40rem) {
   .hero-grid {
-    grid-template-columns: 8.75rem minmax(0, 1fr);
-    gap: 2rem;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: 1.25rem;
   }
 
   .hub-directory {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .footer-grid {
@@ -768,5 +776,248 @@ blockquote {
 
   a {
     text-decoration-thickness: 2px;
+  }
+}
+
+/* ----- classroom desk + library ----- */
+
+.crumb {
+  margin: 0 0 0.65rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.desk {
+  display: grid;
+  gap: var(--space-5);
+  min-width: 0;
+  padding: var(--space-4) 0 var(--space-5);
+}
+
+.desk h2,
+.library-head h2 {
+  margin-bottom: 0.35rem;
+}
+
+.desk > section > p,
+.library-head p {
+  margin: 0 0 0.75rem;
+  max-width: var(--measure);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.featured-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.featured-list li {
+  margin: 0 0 0.55rem;
+  padding: 0.7rem 0.85rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.featured-list li:last-child {
+  margin-bottom: 0;
+}
+
+.featured-list a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.featured-list a:hover {
+  text-decoration: underline;
+}
+
+.featured-list p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: none;
+}
+
+.library-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.75rem;
+  align-items: flex-end;
+  margin: 0 0 0.85rem;
+}
+
+.library-search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: min(100%, 16rem);
+  flex: 1 1 14rem;
+}
+
+.library-search label,
+.library-filters legend {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-mid);
+}
+
+.library-search input {
+  min-height: var(--touch);
+  width: 100%;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--ink);
+  font: inherit;
+}
+
+.library-filters {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.library-filters div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.library-filters button {
+  min-height: 2.5rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--body);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.library-filters button[aria-pressed="true"] {
+  background: var(--pale);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.library-status {
+  margin: 0 0 0.65rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.library-grid {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 0;
+}
+
+.library-card {
+  margin: 0;
+  min-width: 0;
+}
+
+.library-card a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.7rem 0.85rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+}
+
+.library-card a:visited {
+  color: inherit;
+}
+
+.library-card a:hover {
+  border-color: var(--blush);
+  box-shadow: var(--shadow-hover);
+}
+
+.library-card__kicker {
+  color: var(--accent-mid);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.library-card strong {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.library-card span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.library-card__flag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.library-card__flag--quiet {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.hero-portrait img {
+  width: 5.75rem;
+  height: 5.75rem;
+}
+
+@media (min-width: 768px) {
+  .desk {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: start;
+    gap: 1.5rem;
+  }
+
+  .library-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .shell,
+  .hero-inner,
+  .cover-inner,
+  .page-body,
+  .topbar-inner,
+  .site-footer .shell {
+    width: min(90%, var(--shell));
+  }
+}
+
+@media (min-width: 1440px) {
+  .shell,
+  .hero-inner,
+  .cover-inner,
+  .page-body,
+  .topbar-inner,
+  .site-footer .shell {
+    width: min(88%, var(--shell));
   }
 }

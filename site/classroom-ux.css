@@ -420,9 +420,8 @@
     bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
   }
 
-  /* Dock + Cookie tab stacked · styles.css may override; keep in sync */
   body {
-    padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px));
   }
 }
 

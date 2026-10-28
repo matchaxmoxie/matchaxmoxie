@@ -1,0 +1,306 @@
+{
+  "generated": "2026-10-28",
+  "note": "Built from pages that already exist on this site. No invented tutorials, times, or difficulty.",
+  "items": [
+    {
+      "id": "i211-p1",
+      "title": "I211 Project 1 recorded demo",
+      "path": "i211.html#project-1-demo",
+      "kind": "videos",
+      "topic": "Python",
+      "term": "Fall 2026",
+      "summary": "Screen recording for Project 1 (Microsoft Teams Copilot, Table 1).",
+      "status": "ready"
+    },
+    {
+      "id": "i211-w1",
+      "title": "I211 Week 1 · variables, strings, input",
+      "path": "i211.html#week-1",
+      "kind": "videos",
+      "topic": "Python",
+      "term": "Fall 2026",
+      "summary": "Number, exponent, f-string, syntax bugs, string clean-up, input().",
+      "status": "ready"
+    },
+    {
+      "id": "i211-w2",
+      "title": "I211 Week 2 · conditionals, loops, try / except",
+      "path": "i211.html#week-2",
+      "kind": "videos",
+      "topic": "Python",
+      "term": "Fall 2026",
+      "summary": "if / elif / else, truthy values, while, for + break.",
+      "status": "ready"
+    },
+    {
+      "id": "i211-w3",
+      "title": "I211 Week 3 · functions and return values",
+      "path": "i211.html#week-3",
+      "kind": "videos",
+      "topic": "Python",
+      "term": "Fall 2026",
+      "summary": "Parameters, defaults, multiple return values, word indexing.",
+      "status": "ready"
+    },
+    {
+      "id": "i211-w4",
+      "title": "I211 Week 4 · reading and writing text files",
+      "path": "i211.html#week-4",
+      "kind": "videos",
+      "topic": "Python",
+      "term": "Fall 2026",
+      "summary": "open, with, read, append, write, line counts.",
+      "status": "ready"
+    },
+    {
+      "id": "i211-w5",
+      "title": "I211 Week 5 · CSV reader and writer",
+      "path": "i211.html#week-5",
+      "kind": "videos",
+      "topic": "Python",
+      "term": "Fall 2026",
+      "summary": "csv.reader, DictReader, writer, intentional import bug.",
+      "status": "ready"
+    },
+    {
+      "id": "i211-w6",
+      "title": "I211 Week 6 · classes and bakery app",
+      "path": "i211.html#week-6",
+      "kind": "videos",
+      "topic": "Python",
+      "term": "Fall 2026",
+      "summary": "OOP week. Embeds land when Drive file IDs are ready.",
+      "status": "placeholder"
+    },
+    {
+      "id": "i101",
+      "title": "INFO-I 101 · Introduction to informatics",
+      "path": "courses/i101.html",
+      "kind": "notes",
+      "topic": "Informatics",
+      "term": "Fall 2023",
+      "summary": "Innovator group site and presentation · Margaret Hamilton.",
+      "status": "ready"
+    },
+    {
+      "id": "i245",
+      "title": "INFO-I 245 · Interaction design thinking",
+      "path": "courses/i245.html",
+      "kind": "notes",
+      "topic": "UX",
+      "term": "Fall 2023",
+      "summary": "Research-led Team Mental Health showcase.",
+      "status": "ready"
+    },
+    {
+      "id": "i300",
+      "title": "INFO-I 300 · Human-computer interaction",
+      "path": "courses/i300.html",
+      "kind": "notes",
+      "topic": "HCI",
+      "term": "Fall 2024",
+      "summary": "Usability methods · off-campus student housing team project.",
+      "status": "ready"
+    },
+    {
+      "id": "i345",
+      "title": "INFO-I 345 · Interaction design research",
+      "path": "courses/i345.html",
+      "kind": "notes",
+      "topic": "UX",
+      "term": "Fall 2024",
+      "summary": "Personas, journey maps, research ethics.",
+      "status": "ready"
+    },
+    {
+      "id": "i308",
+      "title": "INFO-I 308 · Information representation",
+      "path": "courses/i308.html",
+      "kind": "notes",
+      "topic": "Data",
+      "term": "Spring 2025",
+      "summary": "ERD to SQL to web portal · Team 39.",
+      "status": "ready"
+    },
+    {
+      "id": "serveit",
+      "title": "I389 / I489 · ServeIT Website Team",
+      "path": "courses/serveit.html",
+      "kind": "notes",
+      "topic": "Client work",
+      "term": "ServeIT",
+      "summary": "Website Team Lead · Bloomington and Nashville ACC partners.",
+      "status": "ready"
+    },
+    {
+      "id": "sph",
+      "title": "SPH-E / SPH-H · Public health notes",
+      "path": "courses/public-health.html",
+      "kind": "notes",
+      "topic": "Public health",
+      "term": "SPH",
+      "summary": "Stress prevention, surveillance, chronic disease (population level).",
+      "status": "ready"
+    },
+    {
+      "id": "kelley",
+      "title": "Kelley business technology notes",
+      "path": "courses/kelley.html",
+      "kind": "notes",
+      "topic": "Business",
+      "term": "Kelley",
+      "summary": "A200 · K201 · Z302 · Madrid BUS-J.",
+      "status": "ready"
+    },
+    {
+      "id": "i301",
+      "title": "INFO-I 301 · Career prep",
+      "path": "courses/career-prep.html",
+      "kind": "notes",
+      "topic": "Careers",
+      "term": "Fall 2025",
+      "summary": "Presentations for IT professionals · Handshake Career Creator.",
+      "status": "ready"
+    },
+    {
+      "id": "cocreate",
+      "title": "How these pages get made",
+      "path": "courses/co-create.html",
+      "kind": "notes",
+      "topic": "Process",
+      "term": "",
+      "summary": "Draft with a generative chat, then check every claim against real files.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-hub",
+      "title": "Handoff hub",
+      "path": "handoffs.html",
+      "kind": "handoffs",
+      "topic": "Start here",
+      "term": "",
+      "summary": "Worksheets, family-in-use guides, and the reference library.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-checklist",
+      "title": "Handoff checklist",
+      "path": "handoffs/handoff-checklist.pdf",
+      "kind": "handoffs",
+      "topic": "Worksheets",
+      "term": "",
+      "summary": "Fill in ownership first. Never put passwords on paper.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-owns",
+      "title": "Who owns what",
+      "path": "handoffs/handoff-who-owns-what.pdf",
+      "kind": "handoffs",
+      "topic": "Worksheets",
+      "term": "",
+      "summary": "Account owner blanks before anyone touches a live tool.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-facebook",
+      "title": "Facebook Page",
+      "path": "handoff-facebook.html",
+      "kind": "handoffs",
+      "topic": "Family uses",
+      "term": "",
+      "summary": "Hours, photos, menu posts, comment replies. PDF still to export.",
+      "status": "pdf-missing"
+    },
+    {
+      "id": "handoff-capcut",
+      "title": "CapCut",
+      "path": "handoff-capcut.html",
+      "kind": "handoffs",
+      "topic": "Family uses",
+      "term": "",
+      "summary": "Short vertical video export for TikTok and Reels.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-gsites",
+      "title": "Google Sites",
+      "path": "handoff-google-sites.html",
+      "kind": "handoffs",
+      "topic": "Reference",
+      "term": "",
+      "summary": "Website builder guide. Reference until marked in daily use.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-wix",
+      "title": "Wix",
+      "path": "handoff-wix.html",
+      "kind": "handoffs",
+      "topic": "Reference",
+      "term": "",
+      "summary": "Website builder guide. Reference until marked in daily use.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-squarespace",
+      "title": "Squarespace",
+      "path": "handoff-squarespace.html",
+      "kind": "handoffs",
+      "topic": "Reference",
+      "term": "",
+      "summary": "Website builder guide. Reference until marked in daily use.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-wordpress",
+      "title": "WordPress",
+      "path": "handoff-wordpress.html",
+      "kind": "handoffs",
+      "topic": "Reference",
+      "term": "",
+      "summary": "Website builder guide. Reference until marked in daily use.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-square",
+      "title": "Square",
+      "path": "handoff-square.html",
+      "kind": "handoffs",
+      "topic": "Reference",
+      "term": "",
+      "summary": "POS guide. Confirm whether the restaurant uses this tool.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-clover",
+      "title": "Clover",
+      "path": "handoff-clover.html",
+      "kind": "handoffs",
+      "topic": "Reference",
+      "term": "",
+      "summary": "POS guide. Confirm whether the restaurant uses this tool.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-toast",
+      "title": "Toast",
+      "path": "handoff-toast.html",
+      "kind": "handoffs",
+      "topic": "Reference",
+      "term": "",
+      "summary": "POS guide. Confirm whether the restaurant uses this tool.",
+      "status": "ready"
+    },
+    {
+      "id": "handoff-doordash",
+      "title": "DoorDash",
+      "path": "handoff-doordash.html",
+      "kind": "handoffs",
+      "topic": "Reference",
+      "term": "",
+      "summary": "Orders guide. Confirm whether DoorDash is active.",
+      "status": "ready"
+    }
+  ]
+}

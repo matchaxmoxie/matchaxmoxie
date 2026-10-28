@@ -1,19 +1,19 @@
 /* TEAM */
-Jade Zhao — Informatics B.S., IU Luddy, Class of 2027
+Jade Zhao · Informatics B.S., IU Luddy, Class of 2027
 jlzhao@iu.edu
 Bloomington, Indiana, USA
 
 /* SITE */
 Name: matchaxmoxie
-Tagline: IU Informatics undergraduate portfolio · cookie classroom · phoenix 凤凰
+Tagline: IU Luddy cookie classroom · phoenix 凤凰 · learning archive
 URL: https://matchaxmoxie.github.io/matchaxmoxie/
 Sitemap: https://matchaxmoxie.github.io/matchaxmoxie/sitemap.xml
-Last update: 2026-10-26
+Last update: 2026-10-28
 Standards: HTML5, semantic landmarks, Open Graph, schema.org JSON-LD
 Language: English (en-GB)
 
 /* ALSO JADE */
-Portfolio (ships): https://jadexzhao.github.io/jadexzhao/
+Ships: https://jadexzhao.github.io/jadexzhao/
 Narrative: https://www.linkedin.com/in/zhao-langxi/
 Résumé: https://jadexzhao.github.io/jadexzhao/resume.pdf
 Essays: https://zhao-langxi.github.io/zhao-langxi/
@@ -22,4 +22,4 @@ LinkedIn: https://www.linkedin.com/in/zhao-langxi/
 Instagram: https://instagram.com/zhao.langxi
 
 /* FIND US */
-Topics: Indiana University informatics, HCI, UX research, ServeIT clinic, nonprofit web handoffs, INFO-I211 Python, Kelley business technology, public health coursework, Handshake career tips, small business Facebook guides
+Topics: Indiana University informatics, I211 Python videos, course notes, ServeIT clinic, nonprofit web handoffs, INFO-I211, Kelley business technology, public health coursework, Handshake career tips, small business Facebook guides

@@ -20,11 +20,12 @@
 
 | Block | Job |
 | --- | --- |
-| Kicker | MATCHAXMOXIE · LEARNING ARCHIVE |
-| H1 | A place for the work behind the work. |
-| Lead | Course projects, technical notes, practical guides · Informatics, design, business technology |
-| **Courses** | Learning by term → `#courses-heading` / course grid |
-| **Projects** | What I made → jadexzhao ships + on-site demos (I211, scratch) |
+| Kicker | 凤凰 · cookie classroom |
+| H1 | Making STEM a little less intimidating. |
+| Lead | I211 videos, course notes, handoffs · first-generation and low-income students |
+| **Start here** | Three real doors: I211 · notes · handoffs (Scratch player is retired) |
+| **Featured** | Weeks 1 to 5, existing course notes, handoff hub |
+| **Library** | Filter/search over `library.json` (real pages only) |
 | **Handoffs** | Guides to keep things running → `handoffs.html` |
 
 ---
@@ -56,7 +57,7 @@ See `site/handoffs/HOW-TO-REFRESH.md`.
 
 ## Navigation (lightweight)
 
-- Topbar: Home · Courses (anchor) · Code videos · Handoffs · Ships (jadexzhao)
+- Topbar: Home · I211 · Notes · Handoffs
 - Footer: same + door switcher (matchaxmoxie · jadexzhao · zhao-langxi)
 - Breadcrumbs on course + handoff pages (add incrementally)
 - Optional: term filter on course grid (JS or static sections later)

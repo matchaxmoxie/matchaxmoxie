@@ -7,10 +7,11 @@ https://matchaxmoxie.github.io/matchaxmoxie/
 
 | Entry | File |
 | --- | --- |
-| Learning archive hub | `index.html` |
-| Courses | `courses/` |
-| Python videos | `i211.html` |
+| Classroom hub | `index.html` |
+| Course notes | `courses/` |
+| I211 Python videos | `i211.html` |
 | Handoffs | `handoffs.html`, `handoff-*.html`, `handoffs/` |
+| Library data | `library.json` (filter on the homepage) |
 | SEO | `sitemap.xml`, `robots.txt`, `humans.txt` |
 
 Full profile, bios, and publish steps: [../PUBLISH.md](../PUBLISH.md)
