@@ -12,9 +12,9 @@
 
   var LINKS = [
     { id: "home", href: "index.html", label: "Home" },
-    { id: "i211", href: "i211.html", label: "I211" },
-    { id: "notes", href: "index.html#library", label: "Notes" },
-    { id: "handoffs", href: "handoffs.html", label: "Handoffs" },
+    { id: "learn", href: "learn/index.html", label: "Learn" },
+    { id: "notebook", href: "notebook/index.html", label: "Notebook" },
+    { id: "explore", href: "explore/index.html", label: "Explore" },
   ];
 
   function href(path) {

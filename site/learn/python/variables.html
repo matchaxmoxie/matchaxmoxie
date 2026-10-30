@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-base="../../" data-page="learn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Python 01 · Variables · matchaxmoxie</title>
+  <meta name="description" content="Beginner Python lesson: what a variable is, how to assign text, and how to print it. Includes a browser exercise that runs real Python.">
+  <meta name="theme-color" content="#006B45">
+  <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/learn/python/variables.html">
+  <meta property="og:title" content="Variables aren't as scary as they sound · matchaxmoxie">
+  <meta property="og:description" content="A first Python lesson with a real in-browser exercise. No account.">
+  <meta property="og:url" content="https://matchaxmoxie.github.io/matchaxmoxie/learn/python/variables.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://matchaxmoxie.github.io/matchaxmoxie/assets/og-share.jpg">
+  <link rel="icon" href="../../favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap&text=%E5%87%A4%E5%87%B0" rel="stylesheet">
+  <link rel="stylesheet" href="../../bubble.css?v=20261030-learn">
+  <link rel="stylesheet" href="../../classroom-ux.css?v=20261030-learn">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html"><span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="../../index.html">Home</a>
+        <a href="../index.html" aria-current="page">Learn</a>
+        <a href="../../notebook/index.html">Notebook</a>
+        <a href="../../explore/index.html">Explore</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="shell page-body" tabindex="-1" data-lesson-id="python-01-variables">
+    <header class="hero">
+      <p class="crumb"><a href="../../index.html">Home</a> · <a href="../index.html">Learn</a> · Python 01</p>
+      <p class="eyebrow">Matcha classroom · Python 01</p>
+      <h1>Variables aren't as scary as they sound.</h1>
+      <p class="lede">A variable is a name that points at a value, so you can use that value later. This page is an independently authored tutorial. The videos that Jade recorded for INFO-I211 Week 1 stay on the <a href="../../i211.html#week-1">I211 page</a>.</p>
+      <p id="lesson-progress" class="note" hidden></p>
+      <ul class="lesson-meta">
+        <li><span class="pill">Beginner</span></li>
+        <li><span class="pill">No account</span></li>
+        <li><span class="pill">About 15 minutes</span></li>
+      </ul>
+    </header>
+
+    <section class="band" aria-labelledby="objectives">
+      <h2 id="objectives">What you will be able to do</h2>
+      <ul>
+        <li>Say what a variable is, in ordinary language.</li>
+        <li>Assign a value with <code>=</code>.</li>
+        <li>Print a stored value.</li>
+        <li>Change a value and print again.</li>
+      </ul>
+      <p><strong>Prerequisites:</strong> none. This is the first Python lesson on this site.</p>
+    </section>
+
+    <section class="band" aria-labelledby="explain">
+      <h2 id="explain">In ordinary language</h2>
+      <p>Think of a labelled jar. The label is the name. What you put inside is the value. Later you can say “open the jar called <code>favorite_tea</code>” instead of repeating the word matcha every time.</p>
+      <p>In Python, the name goes on the left of <code>=</code>. The value goes on the right. Text values need quotes. A bare word without quotes is treated as another name.</p>
+      <pre class="lesson-code" tabindex="0"><code>name = "Jade"
+favorite_tea = "matcha"
+print(name)
+print(favorite_tea)</code></pre>
+      <p>If you change <code>"matcha"</code> to <code>"coffee"</code> and run again, the second line of output should change. The name <code>favorite_tea</code> stays the same. That is the whole point of a variable.</p>
+    </section>
+
+    <section class="band" aria-labelledby="try">
+      <h2 id="try">Try it yourself</h2>
+      <p>The editor below runs real Python in this browser with <a href="https://pyodide.org/" rel="noopener noreferrer">Pyodide</a> (Mozilla Public Licence 2.0). Nothing is sent to a matchaxmoxie server. The first load downloads the engine from a public CDN.</p>
+      <noscript>
+        <p>JavaScript is off, so the runner cannot start. Copy the example into any local Python 3 install, or turn JavaScript on and reload.</p>
+      </noscript>
+      <div
+        class="playground"
+        data-python-playground
+        data-lesson-id="python-01-variables"
+        data-min-lines="2"
+        data-starter="name = &quot;Jade&quot;&#10;favorite_tea = &quot;matcha&quot;&#10;print(name)&#10;"
+      >
+        <div class="playground-toolbar">
+          <button type="button" class="btn-primary" id="python-load">Load Python</button>
+          <button type="button" class="btn-primary" id="python-run" disabled>Run</button>
+          <button type="button" class="btn-secondary" id="python-reset" disabled>Reset</button>
+        </div>
+        <p class="note" id="python-status" role="status" aria-live="polite">Python is not loaded yet. Press Load Python, then Run.</p>
+        <label for="python-editor">Python editor</label>
+        <textarea id="python-editor" class="lesson-code playground-editor" rows="8" spellcheck="false" autocomplete="off" disabled>name = "Jade"
+favorite_tea = "matcha"
+print(name)
+</textarea>
+        <h3>Output</h3>
+        <pre class="playground-output" id="python-output" aria-live="polite"></pre>
+        <p class="note" id="python-check" role="status" aria-live="polite"></p>
+      </div>
+      <p><strong>Exercise:</strong> print both <code>name</code> and <code>favorite_tea</code>. The check looks at the real output. It should have two non-empty lines.</p>
+    </section>
+
+    <section class="band" aria-labelledby="hints">
+      <h2 id="hints">Hints, if you are stuck</h2>
+      <ol>
+        <li>A variable is a name that points at a value.</li>
+        <li>Text needs quotes: <code>"matcha"</code>, not <code>matcha</code>.</li>
+        <li><code>print()</code> shows a value. It does not delete the variable.</li>
+      </ol>
+    </section>
+
+    <section class="band" aria-labelledby="mistakes">
+      <h2 id="mistakes">A common mistake</h2>
+      <p>Writing <code>tea = matcha</code> without quotes. Python then looks for a variable named <code>matcha</code>. If you never assigned that name, you get <code>NameError</code>. Put quotes around text you want to store as-is.</p>
+    </section>
+
+    <section class="band" aria-labelledby="quiz">
+      <h2 id="quiz">Knowledge check</h2>
+      <p>Practice only. There is no grade, badge, or certificate.</p>
+      <form data-lesson-quiz>
+        <fieldset data-answer="b">
+          <legend>1. Which line stores the text Bloomington in a variable called city?</legend>
+          <label><input type="radio" name="q1" value="a"> city = Bloomington</label>
+          <label><input type="radio" name="q1" value="b"> city = "Bloomington"</label>
+          <label><input type="radio" name="q1" value="c"> print("Bloomington")</label>
+          <p class="quiz-why note" hidden>Text needs quotes. print only shows a value. It does not store one.</p>
+        </fieldset>
+        <fieldset data-answer="c">
+          <legend>2. What does print(name) do if name = "Jade" already ran?</legend>
+          <label><input type="radio" name="q2" value="a"> It creates a new variable called print.</label>
+          <label><input type="radio" name="q2" value="b"> It shows Jade, then deletes name.</label>
+          <label><input type="radio" name="q2" value="c"> It shows the value stored in name. name stays.</label>
+          <p class="quiz-why note" hidden>print looks up the name and writes the value to output. The variable is still there.</p>
+        </fieldset>
+        <fieldset data-answer="a">
+          <legend>3. You write tea = matcha with no quotes. What goes wrong?</legend>
+          <label><input type="radio" name="q3" value="a"> Python looks for a variable named matcha, and usually raises NameError.</label>
+          <label><input type="radio" name="q3" value="b"> Python stores the word matcha anyway.</label>
+          <label><input type="radio" name="q3" value="c"> The programme prints matcha and continues.</label>
+          <p class="quiz-why note" hidden>Without quotes, matcha is a name, not text. If that name was never assigned, Python stops with NameError.</p>
+        </fieldset>
+        <p>
+          <button type="submit" class="btn-primary">Check answers</button>
+        </p>
+        <p id="quiz-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="band" aria-labelledby="next">
+      <h2 id="next">Next</h2>
+      <p>Watch the recorded Week 1 conversations, then come back when you want the next written lesson. Week 2 on this site is still video-only.</p>
+      <p><a class="btn-primary" href="../../i211.html#week-1">I211 Week 1 videos</a> <a class="btn-secondary" href="../index.html">All Learn pages</a></p>
+    </section>
+
+    <section class="band" aria-labelledby="sources">
+      <h2 id="sources">Sources and review</h2>
+      <ul>
+        <li>Independently authored tutorial, reviewed 30 October 2026.</li>
+        <li>Related coursework: INFO-I211 Week 1 videos already on this site. This page does not replace those recordings.</li>
+        <li><a href="https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator" rel="noopener noreferrer">Python tutorial · variables</a></li>
+        <li>Runner: Pyodide 0.27.7, loaded on demand from jsDelivr.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <p class="footer-brand">Jade Zhao · <span class="sc" lang="zh-Hans">凤凰</span> matchaxmoxie</p>
+        <p>Independent classroom · no account required</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="../../index.html">Home</a>
+        <a href="../index.html" aria-current="page">Learn</a>
+        <a href="../../notebook/index.html">Notebook</a>
+        <a href="../../explore/index.html">Explore</a>
+      </nav>
+      <nav class="site-switcher" aria-label="Other sites">
+        <a href="https://jadexzhao.github.io/jadexzhao/">jadexzhao</a>
+        <a class="current" href="https://matchaxmoxie.github.io/matchaxmoxie/" aria-current="page">matchaxmoxie</a>
+        <a href="https://zhao-langxi.github.io/zhao-langxi/">zhao-langxi</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../../site-chrome.js?v=20261030-learn" defer></script>
+  <script src="../../classroom-ux.js?v=20261030-learn" defer></script>
+  <script src="../../classroom/python-runner.js?v=20261030-learn" defer></script>
+  <script src="../../classroom/quiz.js?v=20261030-learn" defer></script>
+  <script src="../../classroom/progress.js?v=20261030-learn" defer></script>
+</body>
+</html>

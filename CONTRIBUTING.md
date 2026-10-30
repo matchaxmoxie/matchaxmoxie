@@ -1,27 +1,37 @@
-# Contributing
+# Contributing to matchaxmoxie
 
-This is a student-kept classroom archive. Beginner pull requests are welcome. Jade reviews everything before it is merged.
+Thank you for wanting to help. This is a student-run classroom site.
 
-## Good first help
+Jade Zhao reviews every public change. Nothing merges automatically.
 
-- Fix a typo or a broken link
-- Clarify an I211 or course note that already exists
-- Improve alt text or a heading so a page is easier to follow
+## Useful first contributions
 
-## Please do not
+- Broken local links
+- Unclear wording on a published lesson
+- Keyboard or contrast problems
+- A small correction to a cited official URL
 
-- Add FASE MAP, protégé names, or office material
-- Put passwords, PINs, or recovery codes anywhere
-- Add an AI tutor, login wall, or a feature that does not actually work
-- Invent weeks, Drive embeds, or coursework that is not on the site yet
+## Do not send
 
-## How to try a change
+- Student records, office-hours lists, or private MAP files
+- Assignment answer keys from a current course
+- Secrets, tokens, or `.env` files
+- A request to publish work Jade has not seen
+
+## How to propose a change
+
+1. Open an issue: https://github.com/matchaxmoxie/matchaxmoxie/issues
+2. Or fork, edit files under `site/` (and `curriculum/` if you change a lesson), then open a pull request
+3. Run `node scripts/check-site.mjs` if you can
+4. Wait for review
+
+## Licence
+
+There is no approved root licence yet. Do not treat coursework, photographs, or third-party videos as freely relicensable.
+
+## Local preview
 
 ```bash
 ./scripts/serve.sh
 node scripts/check-site.mjs
 ```
-
-Edit files under `site/`. GitHub Actions publishes `site/` to Pages.
-
-Questions: jlzhao@iu.edu

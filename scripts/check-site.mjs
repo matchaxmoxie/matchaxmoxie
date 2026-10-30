@@ -62,15 +62,24 @@ for (const file of htmlFiles) {
 
 console.log(`Checked ${htmlFiles.length} HTML file(s) under ${siteRoot}\n`);
 
+const lessonJson = join(siteRoot, "learn", "data", "python-01-variables.json");
+if (!existsSync(lessonJson)) {
+  errors.push("learn/data/python-01-variables.json: missing lesson data");
+} else {
+  try {
+    const lesson = JSON.parse(readFileSync(lessonJson, "utf8"));
+    if (!lesson.id || !lesson.starter || !lesson.quiz) {
+      errors.push("learn/data/python-01-variables.json: missing id, starter, or quiz");
+    }
+  } catch (err) {
+    errors.push("learn/data/python-01-variables.json: invalid JSON");
+  }
+}
+
 if (errors.length) {
   console.log("Errors:");
   for (const e of errors) console.log(`  • ${e}`);
   process.exit(1);
 }
 
-if (warnings.length) {
-  console.log("Warnings:");
-  for (const w of warnings) console.log(`  • ${w}`);
-}
-
-console.log("OK: descriptions present; relative links resolve.");
+console.log("OK: descriptions present; relative links resolve; lesson JSON present.");

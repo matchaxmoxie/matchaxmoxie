@@ -1,0 +1,69 @@
+{
+  "id": "python-01-variables",
+  "track": "python",
+  "title": "Variables aren't as scary as they sound.",
+  "kicker": "Matcha classroom · Python 01",
+  "kind": "independently-authored-tutorial",
+  "kindLabel": "Independently authored tutorial",
+  "relatedCoursework": "INFO-I211 Week 1 videos (variables, strings, input)",
+  "level": "Beginner",
+  "prerequisites": ["None. This is the first Python lesson on this site."],
+  "minutes": 15,
+  "minutesNote": "Estimate for a first read plus one successful run. Not timed research.",
+  "objectives": [
+    "Say what a variable is, in ordinary language.",
+    "Assign a value with =.",
+    "Print a stored value.",
+    "Change a value and print again."
+  ],
+  "starter": "name = \"Jade\"\nfavorite_tea = \"matcha\"\nprint(name)\n",
+  "example": "name = \"Jade\"\nfavorite_tea = \"matcha\"\nprint(name)\nprint(favorite_tea)\n",
+  "check": {
+    "minPrintedLines": 2
+  },
+  "quiz": [
+    {
+      "id": "q1",
+      "prompt": "Which line stores the text Bloomington in a variable called city?",
+      "options": [
+        { "id": "a", "label": "city = Bloomington" },
+        { "id": "b", "label": "city = \"Bloomington\"" },
+        { "id": "c", "label": "print(\"Bloomington\")" }
+      ],
+      "answer": "b",
+      "why": "Text needs quotes. print only shows a value. It does not store one."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does print(name) do if name = \"Jade\" already ran?",
+      "options": [
+        { "id": "a", "label": "It creates a new variable called print." },
+        { "id": "b", "label": "It shows Jade, then deletes name." },
+        { "id": "c", "label": "It shows the value stored in name. name stays." }
+      ],
+      "answer": "c",
+      "why": "print looks up the name and writes the value to output. The variable is still there."
+    },
+    {
+      "id": "q3",
+      "prompt": "You write tea = matcha with no quotes. What goes wrong?",
+      "options": [
+        { "id": "a", "label": "Python looks for a variable named matcha, and usually raises NameError." },
+        { "id": "b", "label": "Python stores the word matcha anyway." },
+        { "id": "c", "label": "The programme prints matcha and continues." }
+      ],
+      "answer": "a",
+      "why": "Without quotes, matcha is a name, not text. If that name was never assigned, Python stops with NameError."
+    }
+  ],
+  "references": [
+    {
+      "label": "Python tutorial · Using Python as a calculator (variables)",
+      "href": "https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator"
+    },
+    {
+      "label": "I211 Week 1 videos on this site",
+      "href": "../../i211.html#week-1"
+    }
+  ]
+}

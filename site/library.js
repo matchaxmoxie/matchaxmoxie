@@ -16,6 +16,9 @@
     videos: "I211 videos",
     notes: "Course notes",
     handoffs: "Handoffs",
+    lessons: "Lessons",
+    notebook: "Notebook",
+    explore: "Explore",
   };
   var STATUS_LABEL = {
     ready: "",

@@ -1011,6 +1011,92 @@ blockquote {
   }
 }
 
+.lesson-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lesson-code,
+.playground-editor,
+.playground-output {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.playground-editor {
+  display: block;
+  width: 100%;
+  min-height: 10rem;
+  resize: vertical;
+  color: var(--ink);
+  white-space: pre;
+}
+
+.playground-output {
+  min-height: 4.5rem;
+  white-space: pre-wrap;
+  background: var(--pale);
+}
+
+.playground {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.playground-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.playground label {
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+#python-status.is-error,
+#python-check.is-error,
+.quiz-item--miss {
+  color: #7a2d2d;
+}
+
+#python-check.is-pass,
+.quiz-item--ok {
+  color: var(--matcha-deep);
+}
+
+[data-lesson-quiz] fieldset {
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+}
+
+[data-lesson-quiz] label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  min-height: var(--touch);
+  margin: 0.25rem 0;
+}
+
 @media (min-width: 1440px) {
   .shell,
   .hero-inner,

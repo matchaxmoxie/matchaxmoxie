@@ -8,7 +8,7 @@ Name: matchaxmoxie
 Tagline: IU Luddy cookie classroom · phoenix 凤凰 · learning archive
 URL: https://matchaxmoxie.github.io/matchaxmoxie/
 Sitemap: https://matchaxmoxie.github.io/matchaxmoxie/sitemap.xml
-Last update: 2026-10-28
+Last update: 2026-10-30
 Standards: HTML5, semantic landmarks, Open Graph, schema.org JSON-LD
 Language: English (en-GB)
 

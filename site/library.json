@@ -1,7 +1,57 @@
 {
-  "generated": "2026-10-28",
+  "generated": "2026-10-30",
   "note": "Built from pages that already exist on this site. No invented tutorials, times, or difficulty.",
   "items": [
+    {
+      "id": "python-01-variables",
+      "title": "Python 01 · variables",
+      "path": "learn/python/variables.html",
+      "kind": "lessons",
+      "topic": "Python",
+      "term": "2026",
+      "summary": "Independently authored. Assign, print, run real Python in the browser.",
+      "status": "ready"
+    },
+    {
+      "id": "notebook-api",
+      "title": "What is an API, actually?",
+      "path": "notebook/what-is-an-api.html",
+      "kind": "notebook",
+      "topic": "Concepts",
+      "term": "",
+      "summary": "Independently authored. A documented way for two programmes to talk.",
+      "status": "ready"
+    },
+    {
+      "id": "notebook-html",
+      "title": "Why a page needs HTML, CSS, and JavaScript",
+      "path": "notebook/html-css-js.html",
+      "kind": "notebook",
+      "topic": "Web",
+      "term": "",
+      "summary": "Independently authored. Three jobs: structure, look, behaviour.",
+      "status": "ready"
+    },
+    {
+      "id": "explore-github",
+      "title": "Your first GitHub repository",
+      "path": "explore/first-github.html",
+      "kind": "explore",
+      "topic": "Git",
+      "term": "",
+      "summary": "Create a repo, add a README, make a commit. Official docs cited.",
+      "status": "ready"
+    },
+    {
+      "id": "explore-informatics",
+      "title": "What Informatics actually covers",
+      "path": "explore/informatics.html",
+      "kind": "explore",
+      "topic": "College",
+      "term": "",
+      "summary": "IU Luddy B.S. framing with a bulletin link. Not advising.",
+      "status": "ready"
+    },
     {
       "id": "i211-p1",
       "title": "I211 Project 1 recorded demo",
