@@ -3,7 +3,7 @@
 site/content
 
 # ben di nei bu cai liao，bu jin gong kai cang ku（han FASE MAP xie tiao yuan yun ying + ban gong shi shi duan PDF）
-# PDF yi qian chu site/assets → content/fase-26-27/office-hours/
+# Never commit this path.
 content/fase-26-27/
 
 # gen mu lu tu pian dui · zheng shi zi yuan zai site/assets/

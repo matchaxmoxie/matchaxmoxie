@@ -21,7 +21,7 @@ Checker: `node scripts/check-site.mjs` (HTML under `site/` only)
 
 | Priority | Finding |
 | --- | --- |
-| **P0** | `site/content/fase-26-27/` (MAP agendas, office-hours PDFs, tabling photos) is **world-readable** via GitHub Pages. Not linked from HTML but URL-guessable. Move to `~/Documents/jlzhao/` or repo `content/` (outside `site/`) and purge from git history only if Jade approves. |
+| **P0** | `site/content/fase-26-27/` was removed from the working tree. It was gitignored, not on `origin/main`, and must not be recreated in this repository. |
 | **P0** | Missing `handoffs/handoff-facebook.pdf` while hub lists Facebook as primary family guide. |
 | **P1** | Homepage hub (Courses / Projects / Handoffs) | **Shipped** 26 Oct 2026 (`6389b45`) |
 | **P1** | Handoff HTML styling uneven (Facebook redesigned; others thinner). Markdown `**` literals still in some POS guides. |
@@ -93,7 +93,7 @@ ChatGPT’s “campus survival / four-year path / bars” pages are **not** in c
 
 ## Recommended next week
 
-1. **Privacy:** Remove `site/content/fase-26-27/` from deploy tree (highest urgency).
+1. **Privacy:** `site/content/fase-26-27/` removed locally. Do not add it back.
 2. Export `handoff-facebook.pdf`; spot-check PDFs against MD.
 3. Push homepage hub + CSS when copy approved.
 4. Course page template (one partial or documented section order).
