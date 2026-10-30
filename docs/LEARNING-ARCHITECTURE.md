@@ -1,80 +1,119 @@
-# matchaxmoxie · learning archive (source of truth)
+# matchaxmoxie · learning architecture
 
-**Door job:** Organised, public **learning library** ... not a second jadexzhao hire portfolio.
+**Door job:** A public classroom and learning archive. Not a second [jadexzhao](https://jadexzhao.github.io/jadexzhao/) hire portfolio.
 
-**Value:** How Jade learns, documents technical work, explains decisions, and makes information usable for someone else.
+**Audience:** Beginners, first-generation and low-income students finding their way into Informatics, and anyone who wants a plain-language note.
 
-**Do not:** Duplicate professional case studies from jadexzhao · migrate frameworks · paste zhao-langxi robotics essays.
+**Value:** How Jade learns, writes something down, and makes it usable for the next person.
 
----
+## Three purposes
 
-## Three visitor jobs
+| Purpose | What a visitor can do | What is live |
+| --- | --- | --- |
+| University learning archive | Open a course page and see what the term actually produced | `site/courses/*.html` plus homepage library |
+| Beginner coding classroom | Watch I211 videos; work one written Python lesson | `i211.html` and `learn/` |
+| Shared STEM notes | Keep a small org site running | `handoffs.html` and platform guides |
 
-1. **Find coursework quickly** (by term, course code, topic)
-2. **Understand what each project demonstrates** (problem, methods, artefact type, honest limits)
-3. **Use handoff guides** (family-in-use vs reference-only; MD / HTML / PDF agree)
+Do not duplicate professional case studies from jadexzhao. Do not paste zhao-langxi photographs or essays here.
 
----
+## Homepage (live)
 
-## Homepage hierarchy
+Shipped 26 Oct 2026 (`6389b45`), still the Pages front door.
 
 | Block | Job |
 | --- | --- |
 | Kicker | 凤凰 · cookie classroom |
 | H1 | Making STEM a little less intimidating. |
 | Lead | I211 videos, course notes, handoffs · first-generation and low-income students |
-| **Start here** | Three real doors: I211 · notes · handoffs (Scratch player is retired) |
-| **Featured** | Weeks 1 to 5, existing course notes, handoff hub |
-| **Library** | Filter/search over `library.json` (real pages only) |
-| **Handoffs** | Guides to keep things running → `handoffs.html` |
+| Start here | I211 · notes · handoffs |
+| Library | Filter over `library.json` (real pages only) |
+| Handoffs | Guides → `handoffs.html` |
 
----
+Homepage topbar is still Home · I211 · Notes · Handoffs. Learn, Notebook, and Explore are live routes (`/learn/`, `/notebook/`, `/explore/`) even when they are not the homepage lead.
 
-## Course page template (every `courses/*.html`)
+## Course page template
 
-Each page should answer:
+Every `site/courses/*.html` page should answer:
 
-1. **Short intro** ... what the course was, when, format (solo / team)
-2. **What you learned** ... concepts, not grade bragging
-3. **Selected artefacts** ... each labelled: presentation · group assignment · prototype · screenshot · external link · mock-up (not a live product)
-4. **How you applied concepts** ... one concrete example
-5. **What you'd do differently now** ... one honest line
+1. Short intro ... what the course was, when, solo or team
+2. What you learned ... concepts, not grade bragging
+3. Selected artefacts ... labelled: presentation, group assignment, prototype, screenshot, external link, mock-up
+4. One concrete example of using a concept
+5. One honest line about what you would do differently
 
-**Artefact rule:** A Facebook campaign mock-up is **not** a website homepage. Label artefact types in plain language.
+A Facebook campaign mock-up is not a website homepage. Label artefact types in plain language.
 
----
+## I211 pathway (implemented)
 
-## Handoffs (priority work)
+- Page: `site/i211.html`
+- Weeks 1 to 5: Drive embeds when IDs exist
+- Week 6: placeholder until a file ID is ready
+- Coursework recordings, not independently authored tutorials
 
-1. MD, HTML, and PDF agree on steps and warnings
-2. Hub sections: **Start here** · **Family uses** · **Reference library**
+## Written Python lesson (implemented)
+
+Lesson data lives in `curriculum/` so the classroom runner and the HTML can share one shape.
+
+| Path | Status |
+| --- | --- |
+| `curriculum/python/01-variables.json` | Source |
+| `site/learn/python/variables.html` | Published: explanation, in-browser run, quiz, then Week 1 videos |
+| `site/learn/index.html` | Published hub: Python, web intro, Git intro |
+
+Web and Git on that hub are short introductions, not empty tracks pretending to be a full syllabus.
+
+Copy a changed JSON file into `site/learn/data/` before previewing if the page fetches it. The first lesson also embeds the same object so it still reads without JavaScript.
+
+Do not invent I211 snippets. Week 1 videos remain the source for what Jade recorded.
+
+## Notebook and Explore (implemented)
+
+| Folder | Intent |
+| --- | --- |
+| `site/notebook/` | Course notes plus independently written "I wish someone had explained this" pages |
+| `site/explore/` | First GitHub repository, Informatics orientation, asking for help |
+
+Label coursework and independent writing separately. Do not invent weeks.
+
+## Handoffs (priority work, live)
+
+1. Markdown, HTML, and PDF should agree
+2. Hub sections: Start here · Family uses · Reference library
 3. Every guide: what they can change · what never to change · account owner · who to contact
-4. Missing PDFs (e.g. Facebook) ... export or remove TODO from public hub
+4. Facebook PDF is still missing; do not treat a hub TODO as a live download
 
 See `site/handoffs/HOW-TO-REFRESH.md`.
 
----
+## Educational standards (what we actually do)
 
-## Navigation (lightweight)
+- Pages work without an account
+- Skip links on main templates
+- Alt text and headings that a beginner can follow
+- `node scripts/check-site.mjs` before publish (meta description + relative links)
+- UK spelling in public copy; ranges use "to"; no em dash
+- No FASE MAP, protégé names, or payroll material
+- No feature that does not work (no fake tutor, no fake progress wall)
 
-- Topbar: Home · I211 · Notes · Handoffs
-- Footer: same + door switcher (matchaxmoxie · jadexzhao · zhao-langxi)
-- Breadcrumbs on course + handoff pages (add incrementally)
-- Optional: term filter on course grid (JS or static sections later)
+Co-Create workflow is documented on `courses/co-create.html`. Keep tool brand names off hire-facing jadexzhao copy; this classroom may name a process when the course requires it.
 
----
+## Retired and removed
+
+| Item | What to do |
+| --- | --- |
+| Scratch on the homepage | Keep off the main nav. `scratch-play.html` is noindex archive. |
+| `site/content/fase-26-27/` | Removed. Gitignored at `content/fase-26-27/`. Do not recreate. |
+| Campus survival / four-year path pages | Not in current `site/*.html`. Do not document as live. |
 
 ## Publishing
 
-- Static HTML/CSS · GitHub Pages
+- Static HTML/CSS · GitHub Pages from `site/`
+- Workflow: `.github/workflows/pages.yml`
 - Before push: `node scripts/check-site.mjs`
-- Co-Create workflow documented on `courses/co-create.html` ... no product names on student-facing pages per local rules
-
----
+- Preview: `./scripts/serve.sh`
 
 ## Build order
 
-1. Homepage learning directory (three destinations) ... **shipped** 26 Oct 2026 (`6389b45`)  
-2. Finish handoff PDFs + verify links ... Facebook PDF still missing  
-3. Standardise course pages to template  
-4. Term/topic filter if still needed after (3)
+1. Homepage learning directory ... **shipped** 26 Oct 2026 (`6389b45`)
+2. Finish handoff PDFs + verify links ... Facebook PDF still missing
+3. Standardise course pages to the template
+4. Add more written lessons only when a real JSON file and page exist. Do not invent a catalogue.

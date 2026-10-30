@@ -1,8 +1,21 @@
-# matchaxmoxie audit · 26 Oct 2026
+# matchaxmoxie audit
 
 Local repo: `~/Documents/matchaxmoxie/`  
 Live: https://matchaxmoxie.github.io/matchaxmoxie/  
 Checker: `node scripts/check-site.mjs` (HTML under `site/` only)
+
+## Addendum · 30 Oct 2026
+
+- Homepage three-door classroom (I211 / notes / handoffs) is still the live front door.
+- `site/content/fase-26-27/` remains absent. Do not recreate it.
+- Scratch is off the public nav. `scratch-play.html` is archive / noindex.
+- `site/learn/`, `site/notebook/`, and `site/explore/` are on `main` and live under those paths. Homepage nav still leads with I211, notes, and handoffs.
+- Facebook handoff PDF is still missing.
+- Canonical résumé for hire work is [jadexzhao resume.pdf](https://jadexzhao.github.io/jadexzhao/resume.pdf), not this classroom.
+
+---
+
+## Original pass · 26 Oct 2026
 
 ## Publishing pipeline (verified)
 

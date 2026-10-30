@@ -29,6 +29,7 @@ Jade Zhao keeps the site. The useful part is the lessons, not her job titles.
 
 | Path | What you get | Status |
 | --- | --- | --- |
+| [Learn](https://matchaxmoxie.github.io/matchaxmoxie/learn/) | Pathway hub | Python first, then honest web and Git introductions. |
 | [Python 01 · variables](https://matchaxmoxie.github.io/matchaxmoxie/learn/python/variables.html) | Written lesson plus in-browser Python | Independently authored. Requires JavaScript and a CDN load for Run. |
 | [I211 Python videos](https://matchaxmoxie.github.io/matchaxmoxie/i211.html) | Code conversation recordings | Weeks 1 to 5 ready. Week 6 is a placeholder until Drive IDs exist. |
 | [Notebook](https://matchaxmoxie.github.io/matchaxmoxie/notebook/) | Course notes plus “explained earlier” pages | Coursework stays labelled as coursework. |

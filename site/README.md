@@ -5,13 +5,18 @@ https://matchaxmoxie.github.io/matchaxmoxie/
 
 **Do not** add a Vite build step for deploy. Edit HTML/CSS here and push; Actions uploads this tree.
 
-| Entry | File |
-| --- | --- |
-| Classroom hub | `index.html` |
-| Course notes | `courses/` |
-| I211 Python videos | `i211.html` |
-| Handoffs | `handoffs.html`, `handoff-*.html`, `handoffs/` |
-| Library data | `library.json` (filter on the homepage) |
-| SEO | `sitemap.xml`, `robots.txt`, `humans.txt` |
+| Entry | File | On Pages? |
+| --- | --- | --- |
+| Classroom hub | `index.html` | Yes |
+| Course notes | `courses/` | Yes |
+| I211 Python videos | `i211.html` | Yes |
+| Handoffs | `handoffs.html`, `handoff-*.html`, `handoffs/` | Yes |
+| Library data | `library.json` | Yes |
+| SEO | `sitemap.xml`, `robots.txt`, `humans.txt` | Yes |
+| Scratch playground | `scratch-play.html` | Yes, noindex, off the homepage |
+| Learn / Notebook / Explore | `learn/`, `notebook/`, `explore/` | Yes. Homepage still leads with I211, notes, handoffs. |
 
-Full profile, bios, and publish steps: [../PUBLISH.md](../PUBLISH.md)
+`site/content/` is not a public content tree. `content/fase-26-27/` is gitignored and must not reappear.
+
+Learner intro: [../README.md](../README.md)  
+Publish steps: [../PUBLISH.md](../PUBLISH.md)

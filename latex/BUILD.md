@@ -4,7 +4,7 @@ Sources are in **`latex/docs/`** (`jade-zhao-*.tex`) and shared snippets are in 
 
 **`jade-zhao-resume.tex`** is a standalone informatics ATS one-pager (no `\input` of `shared/`). Other `jade-zhao-*.tex` files may still use the pink highlight and header partials.
 
-**Public PDF:** copy the compiled résumé to **`site/resume.pdf`** (and `site/jade-zhao-resume.pdf` if you keep both names). The homepage Download resume button uses `resume.pdf` on this site.
+**Optional classroom PDF:** copy a compiled résumé to **`site/resume.pdf`** only if the classroom still links it. Hire readers should use jadexzhao. This site is for learning, not for collecting professional PDFs.
 
 ## Requirements
 
@@ -58,4 +58,6 @@ The repo may ship minimal placeholder PDFs under **`site/`** so links never 404.
 
 If you add or edit body text in the `.tex` files, keeping **plain punctuation** (periods, commas, **and** instead of long dashes) matches the voice of [`../site/index.html`](../site/index.html). LaTeX `---` renders as an em dash; prefer rephrasing if you want the same feel as the static site.
 
-The **canonical** long-form explanation of **inline editing vs. agents**, **business--technology--law** triangulation, **SWOT**, and IU or UCM-shaped habits lives on the **static site**: [`#editing-and-agents`](https://jadexzhao.github.io/jadexzhao/how-i-work.html#editing-and-agents) (tooling), [`#business-tech-law`](https://jadexzhao.github.io/jadexzhao/how-i-work.html#business-tech-law) (governance vocabulary), then [`#how-i-work`](https://jadexzhao.github.io/jadexzhao/how-i-work.html#how-i-work) for the full memo. PDFs here stay short; point readers to the site for the full disclosure.
+The **canonical hire résumé** is [jadexzhao `resume.pdf`](https://jadexzhao.github.io/jadexzhao/resume.pdf), compiled from `briefcase/resume.tex` in that repository. PDFs copied into `site/` on this classroom are optional downloads. There is no `how-i-work.html` on the live jadexzhao garden site.
+
+`latex/docs/jaded-and-confused/` is local WIP and gitignored. Do not publish it.

@@ -1,6 +1,8 @@
 # Curriculum source
 
-Lesson data lives here so the classroom runner and the published pages share one shape.
+Lesson data lives here so a future classroom runner and the published pages can share one shape.
+
+This folder is **lesson source**, not a Pages URL. The matching public page is `site/learn/python/variables.html`.
 
 | Path | Status |
 | --- | --- |

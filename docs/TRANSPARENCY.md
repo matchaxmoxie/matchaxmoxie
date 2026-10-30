@@ -1,4 +1,6 @@
-# Transparency Log
+# Transparency log (internal)
+
+Historical review notes for this classroom repo. Not a public About page. Do not copy these cases onto jadexzhao.
 
 ## Case 001: Agent Draft Rejected During UI Refactor
 

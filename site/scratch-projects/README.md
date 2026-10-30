@@ -1,9 +1,8 @@
 # matchaxmoxie Scratch starters (`.sb3`)
 
-Original geometric costumes and teaching scripts for the
-[Scratch studio](../scratch-studio.html) how-tos.
+Archive. The Scratch studio is **retired from the public homepage**. There is no `scratch-studio.html` in `site/` right now. Playground: [`../scratch-play.html`](../scratch-play.html).
 
-Not affiliated with Scratch Team. No Scratch Team library art.
+Original geometric costumes and teaching scripts. Not affiliated with Scratch Team. No Scratch Team library art.
 
 | File | How-to |
 |------|--------|
@@ -18,11 +17,10 @@ Not affiliated with Scratch Team. No Scratch Team library art.
 
 Studio intro stays text-only (no starter file).
 
-## Play on this site (learners)
+## Play on this site (archive)
 
-1. Open [Scratch studio](../scratch-studio.html) or go straight to
-   [playground](../scratch-play.html?project=jumping).
-2. Tap **Play on this site**. Green flag runs on matchaxmoxie (same origin).
+1. Open the [playground](../scratch-play.html?project=jumping).
+2. Green flag runs on matchaxmoxie (same origin) when the player files are present.
 3. Optional: download the `.sb3` to remix offline in Scratch later.
 
 站内播放器用 `../scratch-player/`（TurboWarp Scaffolding）。重建说明见该目录 README。
