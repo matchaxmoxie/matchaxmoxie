@@ -198,6 +198,8 @@
       if (resetBtn) resetBtn.removeAttribute("disabled");
     }
 
+    readyToType();
+
     if (loadBtn) {
       loadBtn.addEventListener("click", function () {
         loadBtn.disabled = true;
@@ -205,19 +207,26 @@
           .then(function () {
             setStatus(statusEl, "Python is ready in this browser. Press Run when you want output.");
             readyToType();
-            if (loadBtn.parentNode) loadBtn.hidden = true;
+            loadBtn.hidden = true;
           })
           .catch(function (err) {
             loadBtn.disabled = false;
             setStatus(statusEl, err.message || "Could not load Python.", true);
           });
       });
-    } else {
-      readyToType();
     }
 
     runBtn.addEventListener("click", function () {
-      runCode(editor, output, statusEl, spec, checkEl);
+      runBtn.disabled = true;
+      loadEngine(statusEl)
+        .then(function () {
+          readyToType();
+          if (loadBtn) loadBtn.hidden = true;
+          return runCode(editor, output, statusEl, spec, checkEl);
+        })
+        .finally(function () {
+          runBtn.disabled = false;
+        });
     });
 
     if (resetBtn) {

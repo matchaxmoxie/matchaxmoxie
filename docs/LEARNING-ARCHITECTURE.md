@@ -18,18 +18,18 @@ Do not duplicate professional case studies from jadexzhao. Do not paste zhao-lan
 
 ## Homepage (live)
 
-Shipped 26 Oct 2026 (`6389b45`), still the Pages front door.
+Shipped 30 Oct 2026 (`3c8498e`).
 
 | Block | Job |
 | --- | --- |
-| Kicker | 凤凰 · cookie classroom |
-| H1 | Making STEM a little less intimidating. |
-| Lead | I211 videos, course notes, handoffs · first-generation and low-income students |
-| Start here | I211 · notes · handoffs |
+| Kicker | matchaxmoxie · learn together |
+| H1 | A little more confidence, one line of code at a time. |
+| Lead | Independent classroom · first-generation and low-income students · no account |
+| Start learning | Python 01 · web notebook · first GitHub repo |
+| Notebook / Explore | Coursework plus independently authored notes |
 | Library | Filter over `library.json` (real pages only) |
-| Handoffs | Guides → `handoffs.html` |
 
-Homepage topbar is still Home · I211 · Notes · Handoffs. Learn, Notebook, and Explore are live routes (`/learn/`, `/notebook/`, `/explore/`) even when they are not the homepage lead.
+Topbar: Home · Learn · Notebook · Explore. Handoffs stay published under Explore, not as a fourth primary door.
 
 ## Course page template
 
@@ -113,7 +113,7 @@ Co-Create workflow is documented on `courses/co-create.html`. Keep tool brand na
 
 ## Build order
 
-1. Homepage learning directory ... **shipped** 26 Oct 2026 (`6389b45`)
+1. Homepage + one Python lesson + notebook/explore hubs ... **shipped** 30 Oct 2026 (`3c8498e`)
 2. Finish handoff PDFs + verify links ... Facebook PDF still missing
-3. Standardise course pages to the template
+3. Keep standardising remaining course pages to the template
 4. Add more written lessons only when a real JSON file and page exist. Do not invent a catalogue.
