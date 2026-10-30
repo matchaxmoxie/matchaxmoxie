@@ -513,14 +513,10 @@
       syncTabState(tab);
     });
 
-    if (consent === null) {
-      openBanner(banner, tab, true);
-    } else {
-      banner.hidden = true;
-      banner.setAttribute("aria-hidden", "true");
-      banner.classList.remove("is-open", "is-leaving");
-      showTab(tab);
-    }
+    banner.hidden = true;
+    banner.setAttribute("aria-hidden", "true");
+    banner.classList.remove("is-open", "is-leaving");
+    showTab(tab);
   }
 
   function init() {
@@ -547,7 +543,7 @@
 
     var DOORS = {
       dragon: {
-        label: "SWE proof · jadewowgreen",
+        label: "Hire portfolio · jadexzhao",
         url: "https://jadexzhao.github.io/jadexzhao/",
       },
       duck: {
@@ -555,8 +551,8 @@
         url: "https://jadexzhao.github.io/jadexzhao/duck-farm/",
       },
       essay: {
-        label: "Writing · jadexzhao",
-        url: "https://jadexzhao.github.io/jadexzhao/writing.html",
+        label: "Writing · zhao-langxi",
+        url: "https://zhao-langxi.github.io/zhao-langxi/archive.html",
       },
     };
 
