@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Videos · matchaxmoxie</title>
-  <meta name="description" content="INFO-I211 Week 1 code conversation videos from Jade Zhao's cookie classroom.">
+  <meta name="description" content="INFO-I211 code conversation clips and Project 1 AI tool demo from Jade Zhao's cookie classroom.">
   <link rel="canonical" href="https://matchaxmoxie.github.io/matchaxmoxie/videos.html">
   <link rel="stylesheet" href="classroom.css">
 </head>
 <body>
-  <div class="shell">
+  <div class="shell shell-wide">
     <ul class="nav" aria-label="Site">
       <li><a href="index.html">Home</a></li>
       <li><a href="videos.html" aria-current="page">Videos</a></li>
@@ -19,63 +19,281 @@
 
     <main class="card">
       <p class="eyebrow">凤凰 · phoenix · cookie classroom</p>
-      <h1>Code conversation videos</h1>
-      <span class="pill">INFO-I211 · Week 1</span>
-      <p>
-        Short clips where Jade explains real Python snippets out loud. Starting with the local
-        Week 1 recordings already on this machine. More from Downloads can land here next.
+      <h1>Classroom videos</h1>
+      <p class="lede">
+        Short INFO-I211 (Indiana University) explainers where Jade talks through real Python snippets
+        out loud, plus her Project 1 AI tool recorded demo. Classroom explainers, not a polished
+        course product.
       </p>
 
-      <section class="video-list" aria-label="Week 1 snippets">
-        <article class="video-card">
-          <h2>Snippet 7 · Variables</h2>
-          <p class="meta">Types, arithmetic, and naming basics</p>
-          <video controls preload="metadata" playsinline>
-            <source src="videos/i211-week01/snippet-07-variables.mp4" type="video/mp4">
-            Your browser does not support embedded video.
-          </video>
-        </article>
+      <nav class="jump" aria-label="Jump to section">
+        <a href="#week01">Week 1</a>
+        <a href="#week02">Week 2</a>
+        <a href="#week03">Week 3</a>
+        <a href="#week04">Week 4</a>
+        <a href="#week05">Week 5</a>
+        <a href="#project1">Project 1 AI demo</a>
+      </nav>
 
-        <article class="video-card">
-          <h2>Snippet 2 · Exponent and f-string</h2>
-          <p class="meta"><code>**</code> power and formatting with f-strings</p>
-          <video controls preload="metadata" playsinline>
-            <source src="videos/i211-week01/snippet-02-exponent-fstring.mp4" type="video/mp4">
-            Your browser does not support embedded video.
-          </video>
-        </article>
+      <section id="week01" class="week-block" aria-labelledby="week01-title">
+        <header class="week-head">
+          <h2 id="week01-title">Week 1 · basics</h2>
+          <span class="pill">Variables · strings · input</span>
+        </header>
+        <div class="video-list">
+          <article class="video-card">
+            <h3>Snippet 7 · Variables</h3>
+            <p class="meta">Types, arithmetic, and naming basics</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week01/snippet-07-variables.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 2 · Exponent and f-string</h3>
+            <p class="meta"><code>**</code> power and formatting with f-strings</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week01/snippet-02-exponent-fstring.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 8 · Input and types</h3>
+            <p class="meta"><code>input()</code>, conversions, and naming bugs</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week01/snippet-08-input-types.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 4 · Syntax</h3>
+            <p class="meta">Illegal names and quote mismatches</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week01/snippet-04-syntax.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 6 · Strings</h3>
+            <p class="meta"><code>strip</code>, <code>lower</code>, index, and <code>len</code></p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week01/snippet-06-strings.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+      </section>
 
-        <article class="video-card">
-          <h2>Snippet 8 · Input and types</h2>
-          <p class="meta"><code>input()</code>, conversions, and naming bugs</p>
-          <video controls preload="metadata" playsinline>
-            <source src="videos/i211-week01/snippet-08-input-types.mp4" type="video/mp4">
-            Your browser does not support embedded video.
-          </video>
-        </article>
+      <section id="week02" class="week-block" aria-labelledby="week02-title">
+        <header class="week-head">
+          <h2 id="week02-title">Week 2 · control flow</h2>
+          <span class="pill">if · while · for · try</span>
+        </header>
+        <div class="video-list">
+          <article class="video-card">
+            <h3>Snippet 1 · Grade if / elif / else</h3>
+            <p class="meta">Branching on a numeric grade</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week02/snippet-01-grade-if-elif-else.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 2 · Empty name and truthy</h3>
+            <p class="meta">Empty strings and truthiness checks</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week02/snippet-02-empty-name-truthy.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 4 · try / except / finally</h3>
+            <p class="meta">Catching errors and cleaning up</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week02/snippet-04-try-except-finally.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 5 · while count by 2</h3>
+            <p class="meta">Looping with a step of two</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week02/snippet-05-while-count-by-2.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 7 · for / break (cat)</h3>
+            <p class="meta">Stopping a loop early</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week02/snippet-07-for-break-cat.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+      </section>
 
-        <article class="video-card">
-          <h2>Snippet 4 · Syntax</h2>
-          <p class="meta">Illegal names and quote mismatches</p>
-          <video controls preload="metadata" playsinline>
-            <source src="videos/i211-week01/snippet-04-syntax.mp4" type="video/mp4">
-            Your browser does not support embedded video.
-          </video>
-        </article>
+      <section id="week03" class="week-block" aria-labelledby="week03-title">
+        <header class="week-head">
+          <h2 id="week03-title">Week 3 · functions</h2>
+          <span class="pill">def · return · defaults</span>
+        </header>
+        <div class="video-list">
+          <article class="video-card">
+            <h3>Snippet 1 · add_two</h3>
+            <p class="meta">Parameters, return values, and calling a function</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week03/snippet-01-add-two.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 3 · greet syntax</h3>
+            <p class="meta">Missing colon, indentation, and call mistakes</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week03/snippet-03-greet-syntax.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 4 · Default parameter</h3>
+            <p class="meta"><code>major="Informatics"</code> when an argument is skipped</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week03/snippet-04-default-param.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 5 · Multiple returns</h3>
+            <p class="meta">Returning a total and a difference together</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week03/snippet-05-multiple-returns.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 9 · Index and len</h3>
+            <p class="meta">First character and length of a string</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week03/snippet-09-index-len.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+      </section>
 
-        <article class="video-card">
-          <h2>Snippet 6 · Strings</h2>
-          <p class="meta"><code>strip</code>, <code>lower</code>, index, and <code>len</code></p>
-          <video controls preload="metadata" playsinline>
-            <source src="videos/i211-week01/snippet-06-strings.mp4" type="video/mp4">
-            Your browser does not support embedded video.
-          </video>
-        </article>
+      <section id="week04" class="week-block" aria-labelledby="week04-title">
+        <header class="week-head">
+          <h2 id="week04-title">Week 4 · text files</h2>
+          <span class="pill">open · read · write · append</span>
+        </header>
+        <div class="video-list">
+          <article class="video-card">
+            <h3>Snippet 1 · open and read</h3>
+            <p class="meta"><code>with open(..., "r")</code> and <code>read()</code></p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week04/snippet-01-open-read.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 2 · Append journal</h3>
+            <p class="meta">Append mode and newline escapes</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week04/snippet-02-append-journal.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 3 · Line by line + strip</h3>
+            <p class="meta">Reading each line and cleaning whitespace</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week04/snippet-03-readlines-strip.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 4 · Open without with</h3>
+            <p class="meta">Why forgetting <code>close()</code> is risky</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week04/snippet-04-open-without-with.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 5 · Count lines</h3>
+            <p class="meta">Looping through a file to tally lines</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week04/snippet-05-count-lines.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 6 · Write with tab</h3>
+            <p class="meta">Write mode and the <code>\t</code> escape</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week04/snippet-06-write-tab.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+      </section>
+
+      <section id="week05" class="week-block" aria-labelledby="week05-title">
+        <header class="week-head">
+          <h2 id="week05-title">Week 5 · CSV files</h2>
+          <span class="pill">csv.reader · DictReader · writer</span>
+        </header>
+        <div class="video-list">
+          <article class="video-card">
+            <h3>Snippet 1 · csv.reader</h3>
+            <p class="meta">Print each row from a CSV</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week05/snippet-01-csv-reader.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 2 · DictReader name</h3>
+            <p class="meta">Access columns by header name</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week05/snippet-02-dictreader-name.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 3 · Sum scores</h3>
+            <p class="meta">Convert strings to ints and aggregate</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week05/snippet-03-sum-scores.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 4 · csv.writer</h3>
+            <p class="meta">Write a header row and a data row</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week05/snippet-04-csv-writer.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 5 · Student columns</h3>
+            <p class="meta">Print first name, last name, and major</p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week05/snippet-05-students-columns.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h3>Snippet 6 · Wrong import</h3>
+            <p class="meta">Importing <code>math</code> when you meant <code>csv</code></p>
+            <video controls preload="none" playsinline>
+              <source src="videos/i211-week05/snippet-06-import-error.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+      </section>
+
+      <section id="project1" class="week-block" aria-labelledby="project1-title">
+        <header class="week-head">
+          <h2 id="project1-title">Project 1 · AI tool recorded demo</h2>
+          <span class="pill">Class tutorial · Table 1</span>
+        </header>
+        <p class="section-intro">
+          Jade's Project 1 recorded demo for Table 1. Walkthrough of an AI assistant used in campus
+          Teams (class tutorial), covering overview, setup, a live prompt, and takeaways. Not a
+          coding IDE tutorial.
+        </p>
+        <div class="video-list video-list-single">
+          <article class="video-card">
+            <h3>Recorded demo · AI assistant (class tutorial)</h3>
+            <p class="meta">Overview · setup · hands-on walkthrough · takeaways</p>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/project1-ai-demo/recorded-demo.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
       </section>
 
       <p class="note">
-        These are classroom explainers, not a polished course product. Drop more short clips in
-        Downloads when you want the next batch added.
+        Week 8 OOP clips from Downloads were skipped: all six files were identical 86&nbsp;MB copies
+        of one export, so they are not trustworthy to publish yet. Drop a clean set in Downloads
+        when you want that week added.
       </p>
     </main>
   </div>

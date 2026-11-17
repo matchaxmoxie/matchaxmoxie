@@ -32,9 +32,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          mkdir -p _site/videos/i211-week01
+          mkdir -p _site/videos
           cp index.html videos.html classroom.css portfolio.pdf .nojekyll _site/
-          cp -R videos/i211-week01/. _site/videos/i211-week01/
+          cp -R videos/. _site/videos/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
