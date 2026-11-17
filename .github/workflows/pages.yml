@@ -5,7 +5,10 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "videos.html"
+      - "classroom.css"
       - "portfolio.pdf"
+      - "videos/**"
       - "README.md"
       - ".nojekyll"
       - ".github/workflows/pages.yml"
@@ -29,10 +32,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          mkdir -p _site
-          cp index.html _site/
-          cp portfolio.pdf _site/
-          cp .nojekyll _site/
+          mkdir -p _site/videos/i211-week01
+          cp index.html videos.html classroom.css portfolio.pdf .nojekyll _site/
+          cp -R videos/i211-week01/. _site/videos/i211-week01/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
